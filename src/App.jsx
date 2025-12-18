@@ -8,7 +8,6 @@ import {
   Brain,
   GraduationCap,
   ChevronRight,
-  ChevronDown,
   ChevronLeft,
   ExternalLink,
   Library,
@@ -16,30 +15,19 @@ import {
   FileText,
   ZoomIn,
   ZoomOut,
-  RefreshCw,
+  ChevronDown,
   CheckCircle2,
   XCircle,
-  Globe,
-  History,
-  Film,
-  Sparkles,
 } from "lucide-react";
 import { Document, Page, pdfjs } from "react-pdf";
 
+// Configurazione worker per PDF.js
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-const TABS = [
-  "introduzione",
-  "contesto",
-  "biografia",
-  "analysis",
-  "interpreters",
-  "glossary",
-  "impara",
-  "eredita",
-  "fonti",
-];
+// Tab principali
+const TABS = ["introduzione", "analysis", "interpreters", "glossary", "impara", "fonti"];
 
+// Error boundary per gestire errori a livello di componente
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -49,7 +37,6 @@ class ErrorBoundary extends React.Component {
     return { hasError: true, error };
   }
   componentDidCatch(error, info) {
-    // eslint-disable-next-line no-console
     console.error("App error:", error, info);
   }
   render() {
@@ -66,7 +53,6 @@ class ErrorBoundary extends React.Component {
               onClick={() => window.location.reload()}
               type="button"
             >
-              <RefreshCw className="w-4 h-4" />
               ricarica
             </button>
           </div>
@@ -77,39 +63,13 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-const cx = (...parts) => parts.filter(Boolean).join(" ");
-
-const Modal = ({ isOpen, onClose, title, children }) => {
-  if (!isOpen) return null;
-
-  return (
-    <div
-      className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 p-4"
-      role="dialog"
-      aria-modal="true"
-    >
-      <div className="w-full max-w-3xl bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden">
-        <div className="flex items-center justify-between px-5 py-4 border-b border-slate-700">
-          <h3 className="text-base sm:text-lg font-semibold text-slate-100">{title}</h3>
-          <button
-            type="button"
-            onClick={onClose}
-            className="text-slate-300 hover:text-white text-sm font-semibold"
-            aria-label="Chiudi"
-          >
-            chiudi
-          </button>
-        </div>
-        <div className="p-5">{children}</div>
-      </div>
-    </div>
-  );
-};
-
+// Componente per i tooltip
 const Tooltip = ({ text, children }) => {
   return (
     <span className="relative group cursor-help">
-      <span className="underline decoration-dotted decoration-slate-400">{children}</span>
+      <span className="underline decoration-dotted decoration-slate-400">
+        {children}
+      </span>
       <span className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-[260px] rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-xs p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-xl">
         {text}
       </span>
@@ -117,125 +77,133 @@ const Tooltip = ({ text, children }) => {
   );
 };
 
+// Pulsante per i tab
 const TabButton = ({ active, label, icon: Icon, onClick }) => (
   <button
     type="button"
     onClick={onClick}
-    className={cx(
+    className={[
       "flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold border transition-colors whitespace-nowrap",
       active
         ? "bg-blue-600 text-white border-blue-500"
-        : "bg-slate-900 text-slate-200 border-slate-700 hover:bg-slate-800"
-    )}
+        : "bg-slate-900 text-slate-200 border-slate-700 hover:bg-slate-800",
+    ].join(" ")}
   >
     <Icon className="w-4 h-4" />
     {label}
   </button>
 );
 
-const PdfScoreViewer = ({ pdfUrl, title }) => {
+// Componente PDF Score Viewer con scroll continuo
+const PdfScoreViewer = () => {
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-  const [scale, setScale] = useState(1.1);
+  const [scale, setScale] = useState(1.2);
+  const [pdfError, setPdfError] = useState(false);
 
-  const onDocumentLoadSuccess = ({ numPages: n }) => {
-    setNumPages(n);
-    setPageNumber(1);
+  // Percorso del PDF
+  const pdfUrl = '/gymnopedie-1-annotata.pdf';
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+    setPdfError(false);
+  }
+
+  function onDocumentLoadError(error) {
+    console.error('Errore caricamento PDF:', error);
+    setPdfError(true);
+  }
+
+  const zoomIn = () => {
+    setScale(prev => Math.min(prev + 0.2, 2.5));
   };
 
-  const onDocumentLoadError = (error) => {
-    // eslint-disable-next-line no-console
-    console.error("PDF load error:", error);
+  const zoomOut = () => {
+    setScale(prev => Math.max(prev - 0.2, 0.5));
   };
-
-  const canPrev = pageNumber > 1;
-  const canNext = numPages ? pageNumber < numPages : false;
 
   return (
-    <div className="bg-slate-900 border border-slate-700 rounded-xl p-4">
-      <div className="flex items-start justify-between gap-3 mb-3">
-        <div className="min-w-0">
-          <h3 className="text-base font-semibold text-slate-100">{title}</h3>
-          <p className="text-xs text-slate-400">pdf locale: {pdfUrl}</p>
+    <div className="mt-8 pt-6 border-t border-slate-700">
+      <div className="flex items-center justify-between mb-4">
+        {/* Titolo rimosso su richiesta */}
+      </div>
+
+      {pdfError ? (
+        <div className="bg-slate-800/50 border-2 border-dashed border-slate-600 rounded-lg p-8 text-center">
+          <FileText className="w-12 h-12 text-slate-500 mx-auto mb-3" />
+          <p className="text-slate-300 mb-2">
+            File PDF non trovato. Aggiungi il file <code className="bg-slate-700 px-2 py-1 rounded text-blue-400">spartito-primo-movimento.pdf</code> nella cartella <code className="bg-slate-700 px-2 py-1 rounded text-blue-400">public/</code>
+          </p>
+          <p className="text-slate-400 text-sm">
+            Il file deve essere nella cartella <code className="bg-slate-700 px-1 rounded">beethoven-app/public/</code>
+          </p>
         </div>
-        <a
-          className="inline-flex items-center gap-2 text-sm font-semibold text-blue-300 hover:text-blue-200"
-          href={pdfUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ExternalLink className="w-4 h-4" />
-          apri
-        </a>
-      </div>
+      ) : (
+        <div className="bg-slate-800 rounded-lg border border-slate-700 overflow-hidden">
+          {/* Controlli */}
+          <div className="bg-slate-700 p-4 flex flex-wrap items-center justify-between gap-3">
+            <div className="text-slate-200 text-sm font-medium">
+              {numPages ? `${numPages} pagine` : 'Caricamento...'}
+            </div>
 
-      <div className="flex flex-wrap items-center gap-2 mb-4">
-        <button
-          type="button"
-          onClick={() => setPageNumber((p) => Math.max(1, p - 1))}
-          disabled={!canPrev}
-          className={cx(
-            "inline-flex items-center gap-2 px-3 py-2 rounded bg-slate-800 border border-slate-700 text-slate-100 text-sm font-semibold",
-            !canPrev && "opacity-40 cursor-not-allowed"
-          )}
-        >
-          <ChevronLeft className="w-4 h-4" />
-          prev
-        </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={zoomOut}
+                className="p-2 bg-slate-600 hover:bg-slate-500 text-white rounded transition-colors"
+                title="Riduci zoom"
+              >
+                <ZoomOut className="w-5 h-5" />
+              </button>
+              <span className="text-slate-200 text-sm font-medium px-2">
+                {Math.round(scale * 100)}%
+              </span>
+              <button
+                onClick={zoomIn}
+                className="p-2 bg-slate-600 hover:bg-slate-500 text-white rounded transition-colors"
+                title="Aumenta zoom"
+              >
+                <ZoomIn className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
 
-        <button
-          type="button"
-          onClick={() => setPageNumber((p) => (numPages ? Math.min(numPages, p + 1) : p))}
-          disabled={!canNext}
-          className={cx(
-            "inline-flex items-center gap-2 px-3 py-2 rounded bg-slate-800 border border-slate-700 text-slate-100 text-sm font-semibold",
-            !canNext && "opacity-40 cursor-not-allowed"
-          )}
-        >
-          next
-          <ChevronRight className="w-4 h-4" />
-        </button>
-
-        <span className="text-xs text-slate-300 ml-1">
-          pagina {pageNumber}
-          {numPages ? ` / ${numPages}` : ""}
-        </span>
-
-        <div className="flex-1" />
-
-        <button
-          type="button"
-          onClick={() => setScale((s) => Math.max(0.7, +(s - 0.1).toFixed(2)))}
-          className="inline-flex items-center gap-2 px-3 py-2 rounded bg-slate-800 border border-slate-700 text-slate-100 text-sm font-semibold"
-        >
-          <ZoomOut className="w-4 h-4" />
-          zoom -
-        </button>
-        <button
-          type="button"
-          onClick={() => setScale((s) => Math.min(2.0, +(s + 0.1).toFixed(2)))}
-          className="inline-flex items-center gap-2 px-3 py-2 rounded bg-slate-800 border border-slate-700 text-slate-100 text-sm font-semibold"
-        >
-          <ZoomIn className="w-4 h-4" />
-          zoom +
-        </button>
-
-        <span className="text-xs text-slate-300">x{scale.toFixed(2)}</span>
-      </div>
-
-      <div className="bg-slate-950/40 border border-slate-700 rounded-lg p-3 overflow-auto">
-        <Document file={pdfUrl} onLoadSuccess={onDocumentLoadSuccess} onLoadError={onDocumentLoadError}>
-          <Page pageNumber={pageNumber} scale={scale} />
-        </Document>
-      </div>
+          {/* Visualizzatore PDF con scroll continuo */}
+          <div className="bg-slate-900 p-4 max-h-200 overflow-y-auto">
+            <div className="flex flex-col items-center gap-6">
+              <Document
+                file={pdfUrl}
+                onLoadSuccess={onDocumentLoadSuccess}
+                onLoadError={onDocumentLoadError}
+                loading={
+                  <div className="text-slate-400 text-center py-12">
+                    <FileText className="w-12 h-12 mx-auto mb-3 animate-pulse" />
+                    Caricamento spartito...
+                  </div>
+                }
+              >
+                {Array.from(new Array(numPages), (el, index) => (
+                  <div key={`page_${index + 1}`} className="shadow-lg mb-4">
+                    <Page
+                      pageNumber={index + 1}
+                      scale={scale}
+                      renderTextLayer={false}
+                      renderAnnotationLayer={false}
+                    />
+                  </div>
+                ))}
+              </Document>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-/* -----------------------------
-   contenuti: gymnopédie n. 1
------------------------------ */
+/* ----------------------------------
+   Contenuti specifici: Gymnopédie n. 1
+----------------------------------- */
 
+// Glossario: definizioni brevi per termini e contesto
 const glossaryData = [
   {
     category: "Termini musicali",
@@ -243,41 +211,42 @@ const glossaryData = [
       {
         term: "Gymnopédie",
         definition:
-          "Titolo volutamente enigmatico. Richiama la gymnopaedia (festa/danza dell’antica Grecia), ma l’origine precisa del riferimento resta discussa.",
+          "Neologismo francese dal greco Γυμνοπαιδίαι (Gymnopaedia), festività spartana annuale. 'Gymnos' significa 'nudo' o 'disarmato': giovani uomini danzavano nudi eseguendo esercizi ginnici e canti corali. Satie scelse questo titolo influenzato da: 1) il poema 'Les Antiques' di Contamine de Latour; 2) 'Salammbô' di Flaubert; 3) i dipinti simbolisti di Puvis de Chavannes, in particolare 'Jeunes filles au bord de la mer' (1879). La prima Gymnopédie fu originariamente intitolata 'Danse antique'.",
       },
       {
         term: "Lent et douloureux",
-        definition: "Indicazione di tempo e carattere del n. 1: lento e doloroso.",
+        definition:
+          "Indicazione di tempo e carattere della n. 1: lento e doloroso. Insolita perché Satie usa il francese invece dei termini italiani tradizionali (Adagio, Andante), aggiungendo una dimensione emotiva. Le tre Gymnopédies hanno indicazioni diverse: n.1 'Lent et douloureux' (Re maggiore), n.2 'Lent et triste' (Do maggiore), n.3 'Lent et grave' (La minore). Il critico Constant Lambert le paragonò a 'camminare attorno a una scultura, osservandola da angolazioni diverse'.",
       },
       {
         term: "3/4",
         definition:
-          "Metro ternario regolare. L’effetto può risultare cullante, ma conviene evitare un carattere da valzer.",
+          "Metro ternario con tre pulsazioni per battuta. Nella Gymnopédie occorre evitare un effetto valzeristico mantenendo la pulsazione regolare.",
       },
       {
         term: "Ostinato",
         definition:
-          "Figura ripetuta che stabilizza il flusso (spesso nel basso) e sostiene la percezione di immobilità controllata.",
+          "Figura ripetuta nella mano sinistra (basso) che stabilizza il flusso e crea un senso di ipnosi controllata.",
       },
       {
         term: "Accordi planati",
         definition:
-          "Accordi che si muovono in blocco, privilegiando tinta e timbro più che funzione armonica tradizionale.",
+          "Accordi che si muovono in blocco, spesso in parallelo, privilegiando il colore timbrico piuttosto che la funzione armonica tradizionale.",
       },
       {
         term: "Ambiguità tonale",
         definition:
-          "La sensazione di tonalità e di ‘arrivo’ è attenuata: il brano tende a un equilibrio sospeso più che a una traiettoria.",
+          "La percezione di tonalità e di arrivo è attenuata: la pagina tende a un equilibrio sospeso più che a una direzione teleologica.",
       },
       {
         term: "Pedale di risonanza",
         definition:
-          "Uso misurato: mantiene continuità, ma va gestito per evitare impasti che cancellano le voci.",
+          "Uso misurato del pedale destro per unire le frasi e creare un alone sonoro. È necessario evitare impasti confusi.",
       },
       {
         term: "Rubato sobrio",
         definition:
-          "Micro-flessioni per respirare, senza trasformare il brano in un gesto romantico espansivo.",
+          "Micro-flessioni del tempo per far respirare le frasi senza trasformare il brano in un gesto romantico espansivo.",
       },
     ],
   },
@@ -287,726 +256,983 @@ const glossaryData = [
       {
         term: "Montmartre",
         definition:
-          "Ambiente dei café-cabarets parigini con cui Satie ha legami nella fase giovanile (pianista e autore di brani brevi).",
+          "Quartiere parigino dei café-cabaret (Le Chat Noir, L'Auberge du Clou) dove Satie lavorò come pianista a 21 anni e trovò ispirazione per il suo stile sobrio. Ambiente frequentato da simbolisti e poeti come Contamine de Latour.",
       },
       {
         term: "Debussy",
         definition:
-          "Orchestra due Gymnopédies (n. 1 e n. 3) e contribuisce alla loro circolazione concertistica.",
+          "Claude Debussy orchestrò le Gymnopédies n. 1 e n. 3 nel 1896-1897 (invertendo la numerazione), favorendone la circolazione concertistica. Prima esecuzione: 20 febbraio 1897, Société Nationale.",
+      },
+      {
+        term: "Conservatorio di Parigi",
+        definition:
+          "Istituzione frequentata da Satie in due periodi (1879–1882 e 1885–1887) con risultati disastrosi. Giudicato 'dotato ma indolente', 'il più pigro', 'privo di valore'. Espulso nel 1882 dopo un'esecuzione mediocre di Beethoven.",
+      },
+      {
+        term: "Contamine de Latour",
+        definition:
+          "J. P. Contamine de Latour, poeta simbolista amico di Satie. La sua poesia Les Antiques accompagnò la prima pubblicazione della Gymnopédie n. 1 nell'estate 1888 sulla rivista La Musique des familles.",
       },
       {
         term: "Arcueil",
         definition:
-          "Luogo associato alla maturità di Satie e al suo immaginario biografico più noto.",
+          "Luogo in cui Satie si ritirò negli ultimi anni. La sua stanza chiamata 'l'Armadio', trovata alla sua morte nel 1925, testimonia la vita povera e disciplinata dell'autore. Visse lì per 27 anni.",
+      },
+      {
+        term: "Le Chat Noir",
+        definition:
+          "Celebre café-cabaret di Montmartre fondato nel 1881 da Rodolphe Salis. Satie vi lavorò come secondo pianista negli anni 1887-1888. Ambiente bohémien che ospitava artisti, poeti simbolisti e musicisti (Debussy, Verlaine, Toulouse-Lautrec). Luogo di sperimentazione dove l'arte 'alta' si mescolava con la cultura popolare.",
+      },
+      {
+        term: "Suzanne Valadon",
+        definition:
+          "Pittrice francese (1865-1938). Ebbe nel 1893 un breve ma intenso amore con Satie, l'unico documentato della sua vita. Quando lei lo lasciò, Satie ne rimase segnato profondamente. Fu madre del pittore Maurice Utrillo.",
+      },
+      {
+        term: "Dieta Bianca",
+        definition:
+          "Nelle Memorie di un Amnesico (1912) Satie descrive una dieta surreale: 'uova, ossa grattugiate, grasso di animali morti, vitello, pollo cotto in acqua bianca, frutta ammuffita, pasta, formaggio bianco'. Provocazione artistica che rivela l'ossessione per il bianco come simbolo di purezza, silenzio e assenza di 'colore' emotivo. Le Gymnopédies sono 'musica bianca': prive di ornamenti, trasparenti, essenziali.",
+      },
+      {
+        term: "Rosa-Croce",
+        definition:
+          "Ordine mistico-esoterico (Rosa-Croce Cattolica del Tempio e del Graal) fondato da Joséphin Péladan (Sâr Mérodack). Satie ne divenne compositore ufficiale (1891) ma ruppe con Péladan nel 1892, irritato dalla sua devozione wagneriana. Fondò poi la propria 'Chiesa Metropolitana d'Arte di Gesù Conduttore', di cui fu l'unico membro.",
+      },
+      {
+        term: "Puvis de Chavannes",
+        definition:
+          "Pierre Puvis de Chavannes (1824-1898), pittore simbolista francese. I suoi dipinti, in particolare 'Jeunes filles au bord de la mer' (1879), potrebbero aver ispirato Satie per le Gymnopédies. Satie aspirava a comporre musica 'decorativa' come gli affreschi del pittore.",
+      },
+      {
+        term: "Forme ternarie (ABA')",
+        definition:
+          "Struttura musicale dove una sezione iniziale (A) è seguita da una sezione contrastante (B) e poi dalla ripresa della prima (A). La Gymnopédie n.1 segue questa forma modificata: Introduzione (batt. 1-4), Sezione A (batt. 5-15), Sezione A' estesa (batt. 16-39), Ripresa A, Coda. Satie usa questa forma ma la svuota di contrasto drammatico.",
+      },
+      {
+        term: "Settima maggiore",
+        definition:
+          "Accordo formato da quattro note invece di tre. La quarta nota aggiunge 'colore' e tensione. Di solito un accordo di settima chiede di 'risolvere' su un altro accordo. Nella Gymnopédie n.1, Satie alterna Sol maggiore con settima e Re maggiore con settima senza mai risolvere, creando un effetto fluttuante privo del tipico movimento armonico. È come dondolarsi su un'altalena che non tocca mai terra.",
+      },
+      {
+        term: "Musique d'ameublement",
+        definition:
+          "Musica d'arredamento: concetto sviluppato da Satie nel 1917. Composizioni pensate per non essere ascoltate attentamente, ma per far parte dell'ambiente. Satie scrisse: 'Immagino una musica melodiosa che attenui il rumore di coltelli e forchette a cena, senza dominarli, senza imporsi'. Precorre la musica ambient di Brian Eno (Ambient 1: Music for Airports, 1978) che definì l'ambient come qualcosa che 'deve poter essere ignorata quanto ascoltata'.",
+      },
+      {
+        term: "John Cage",
+        definition:
+          "Compositore americano (1912-1992), grande riscopritore di Satie nel dopoguerra. Trovò in Satie un precursore: rifiuto della narrazione musicale, interesse per silenzio e spazio, musica come processo. 'Satie è indispensabile' (John Cage). Nel 1963 organizzò la prima esecuzione integrale di Vexations (tema ripetuto 840 volte, circa 18 ore), anticipando il minimalismo.",
+      },
+      {
+        term: "Minimalismo",
+        definition:
+          "Movimento musicale nato negli anni '60 (Steve Reich, Philip Glass, Terry Riley) che riconosce Satie come antenato. Caratteristiche: ripetizione di pattern, armonia statica o lentamente cangiante, rifiuto del climax drammatico, economia di mezzi. Le Gymnopédies anticipano tutte queste caratteristiche.",
       },
     ],
   },
 ];
 
+// Schede di analisi: punti chiave per lo studio
 const analysisCards = [
   {
-    title: "Struttura pratica",
+    title: "Struttura e materiali",
     icon: Music,
     bullets: [
-      "pezzo breve per pianoforte solo",
-      "metro 3/4, passo regolare",
-      "materiale ridotto: ostinato + linea cantabile",
-      "ritorno percettivo dell’idea iniziale (A–B–A′ come lettura operativa)",
+      "Pezzo breve per pianoforte solo con andamento ternario.",
+      "Ostinato regolare e melodia spoglia: la mano sinistra mantiene una pulsazione costante mentre la destra canta frasi essenziali.",
+      "Tre sezioni percepite (A–B–A′) con micro variazioni che evitano uno sviluppo tradizionale.",
+      "Uso di accordi planati e movimenti paralleli che creano un senso di sospensione.",
     ],
   },
   {
-    title: "Centro del lavoro esecutivo",
+    title: "Focali esecutivi",
     icon: Brain,
     bullets: [
-      "controllo del suono più che della velocità",
-      "separazione delle voci (basso, accordi, canto)",
-      "pedale per ‘finestre’ e cambi frequenti",
-      "dinamica contenuta, curve brevi",
+      "Controllo del tempo: stabile ma non rigido; il ritmo non deve diventare da valzer.",
+      "Gestione del pedale a finestre per mantenere trasparenza fra le voci.",
+      "Separazione delle voci: il basso sostiene, gli accordi colorano e la melodia canta con semplicità.",
+      "Dinamica contenuta con curve brevi e respirate; l'espressività risiede nel timbro.",
     ],
   },
   {
     title: "Cosa evitare",
     icon: XCircle,
     bullets: [
-      "trasformare il 3/4 in valzer",
-      "pedale continuo che impasta tutto",
-      "rubato ampio e romantico",
-      "accenti casuali che rompono la linea",
+      "Trasformare il 3/4 in un valzer caricaturale.",
+      "Rubato ampio e romantico che appesantisce la linea.",
+      "Pedale continuo che impasta le voci e cancella le dissonanze.",
+      "Sottolineare eccessivamente la progressione armonica: il brano vive di sospensioni.",
     ],
   },
   {
     title: "Cosa cercare",
     icon: CheckCircle2,
     bullets: [
-      "tempo stabile ma non rigido",
-      "chiarezza timbrica e risonanza controllata",
-      "fraseggi essenziali",
-      "sospensione, non teatralità",
-    ],
-  },
-  {
-    title: "Armonia sospesa",
-    icon: Sparkles,
-    bullets: [
-      "oscillazione Gmaj7 → Dmaj7 mantiene sempre la settima maggiore per eliminare arrivi definitivi",
-      "la nota Fa# funge da pedale interno e mantiene il flusso compresso",
-      "la ripetizione senza risoluzione anticipa ambient, jazz modale e lo-fi",
-      "ogni sezione aggiunge varianti minori senza rompere la calma generale",
+      "Sospensione e ambiguità tonale: la sensazione di percorso è attenuata.",
+      "Uniformità timbrica: ogni registro deve fondersi come in un'orchestrazione.",
+      "Legato omogeneo con piccole variazioni di respiro.",
+      "Colore e risonanza come elementi narrativi principali.",
     ],
   },
 ];
 
-const interpretersData = [
-  {
-    name: "piano solo",
-    items: [
-      {
-        label: "registrazioni (selezione personale)",
-        note:
-          "inserisci qui i link che preferisci. struttura pronta per incollare url e note.",
-        links: [
-          { title: "link 1", url: "" },
-          { title: "link 2", url: "" },
-        ],
-      },
-    ],
-  },
-  {
-    name: "orchestrazioni (debussy)",
-    items: [
-      {
-        label: "gymnopédies orchestrate",
-        note:
-          "debussy orchestra due numeri (1 e 3). utile per confrontare tinta e bilanciamento.",
-        links: [
-          { title: "link 1", url: "" },
-          { title: "link 2", url: "" },
-        ],
-      },
-    ],
-  },
-];
-
+// Flashcards: domande e risposte per memorizzare fatti chiave
 const flashcardsData = [
   {
-    q: "chi è l’autore delle gymnopédies?",
-    a: "erik satie",
+    q: "Chi è l'autore delle Gymnopédies?",
+    a: "Erik Satie",
     level: "base",
+    details: "Compositore e pianista francese, nato nel 1866 a Honfleur e morto nel 1925 a Parigi.",
   },
   {
-    q: "qual è l’indicazione di carattere della gymnopédie n. 1?",
-    a: "lent et douloureux",
+    q: "Quando fu completata la Gymnopédie n. 1?",
+    a: "1888",
     level: "base",
+    details: "Le tre pagine furono completate entro la primavera del 1888 e pubblicate separatamente negli anni seguenti. Satie aveva 21 anni e lavorava come pianista cabaret a Montmartre.",
   },
   {
-    q: "in quale metro è scritto il n. 1?",
+    q: "Qual è l'indicazione di carattere della n. 1?",
+    a: "Lent et douloureux",
+    level: "base",
+    details: "Tempo lento e doloroso: guida l'esecuzione e il colore timbrico del brano.",
+  },
+  {
+    q: "In quale metro è scritta la n. 1?",
     a: "3/4",
     level: "base",
+    details: "Metro ternario con tre pulsazioni per battuta; l'effetto deve essere cullante ma non valzeristico.",
   },
   {
-    q: "qual è una difficoltà principale del brano?",
-    a: "gestione del suono e del pedale (trasparenza delle voci)",
+    q: "Quale compositore orchestrò due Gymnopédies?",
+    a: "Claude Debussy",
     level: "intermedio",
+    details: "Debussy orchestrò le Gymnopédies n. 1 e n. 3 dopo averle sentite suonate da Satie nel 1896; l'esecuzione avvenne nel febbraio 1897. Invertì la numerazione.",
   },
   {
-    q: "cosa significa evitare un effetto ‘valzeristico’?",
-    a: "mantenere la pulsazione ternaria senza accenti da danza",
+    q: "Dove lavorava Satie quando compose le Gymnopédies?",
+    a: "Come pianista cabaret a Montmartre",
     level: "intermedio",
+    details: "Satie lavorava in locali come Le Chat Noir e L'Auberge du Clou, frequentati da simbolisti e poeti. Aveva 21 anni e aveva appena abbandonato il Conservatorio.",
   },
   {
-    q: "con quale poema fu pubblicata la prima gymnopédie?",
-    a: "con il poema Les Antiques di Contamine de Latour",
-    level: "base",
-  },
-  {
-    q: "chi orchestrò le gymnopédies e che numerazione cambiò?",
-    a: "claude debussy le orchestrò e invertì il numero 1 con il 3",
+    q: "Perché Satie venne espulso dal Conservatorio di Parigi?",
+    a: "Per scarsi risultati e mancanza di impegno",
     level: "intermedio",
+    details: "Nel 1882, a 16 anni, venne espulso dopo un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven. Fu giudicato 'dotato ma indolente', 'il più pigro del Conservatorio', 'privo di valore'.",
+  },
+  {
+    q: "Quando ebbero una prima esecuzione pubblica rilevante le orchestrazioni?",
+    a: "20 febbraio 1897",
+    level: "intermedio",
+    details: "Le orchestrazioni di Debussy furono presentate in un concerto della Société Nationale a Parigi il 20 febbraio 1897.",
+  },
+  {
+    q: "Cosa significa il titolo Gymnopédie?",
+    a: "Rimanda alla gymnopaedia, festa con danze dell'antica Grecia",
+    level: "intermedio",
+    details: "Il termine indica una festa spartana con danze rituali; Satie lo usa come suggestione poetica senza spiegarne l'origine. Si ispirò anche ai modi greci e a romanzi di Flaubert.",
+  },
+  {
+    q: "Con quale poeta collaborò Satie per la prima pubblicazione?",
+    a: "J. P. Contamine de Latour",
+    level: "avanzato",
+    details: "La Gymnopédie n. 1 fu pubblicata nell'estate 1888 sulla rivista La Musique des familles accompagnata da un estratto della poesia Les Antiques di Contamine de Latour, amico simbolista di Satie.",
+  },
+  {
+    q: "Chi fu Suzanne Valadon per Satie?",
+    a: "L'unico amore documentato della sua vita",
+    level: "avanzato",
+    details: "Pittrice francese. Ebbero un breve ma intenso amore nel 1893. Quando lei lo lasciò, Satie ne rimase segnato profondamente. Fu madre del pittore Maurice Utrillo.",
+  },
+  {
+    q: "Cosa trovarono gli amici nella stanza di Satie dopo la sua morte?",
+    a: "Due pianoforti sovrapposti, oltre 100 ombrelli, spartiti nascosti",
+    level: "avanzato",
+    details: "Nella stanza chiamata 'l'Armadio' ad Arcueil trovarono: due pianoforti a coda uno sopra l'altro, oltre 100 ombrelli, sette abiti di velluto identici, spartiti inediti nascosti, collezioni di oggetti bizzarri. Nessuno era entrato per 27 anni.",
+  },
+  {
+    q: "Cos'era la 'dieta bianca' di Satie?",
+    a: "Una provocazione artistica descritta nelle Memorie di un Amnesico",
+    level: "avanzato",
+    details: "Nel 1912 Satie descrisse una dieta surreale di soli cibi bianchi (uova, ossa grattugiate, pollo in acqua bianca, ecc.). Era una provocazione che rivelava l'ossessione per il bianco come simbolo di purezza e silenzio. Le Gymnopédies sono 'musica bianca': prive di ornamenti, trasparenti, essenziali.",
+  },
+  {
+    q: "Quando furono composte le tre Gymnopédies?",
+    a: "Tra febbraio e aprile 1888",
+    level: "intermedio",
+    details: "Satie le completò entro il 2 aprile 1888. Aveva 21 anni, era appena uscito dal Conservatorio e lavorava come pianista al Chat Noir. Un aneddoto racconta che annunciò l'intenzione di comporle al cabaret, e il proprietario Rodolphe Salis commentò sarcastico: 'Davvero una bella professione!'.",
+  },
+  {
+    q: "Qual era il titolo originale della prima Gymnopédie?",
+    a: "Danse antique",
+    level: "avanzato",
+    details: "Fu pubblicata il 18 agosto 1888 nel supplemento di 'La Musique des familles' (rivista diretta dal padre Alfred Satie) con il titolo 'Danse antique', dedicata a Jeanne de Bret. La terza fu pubblicata nel novembre 1888, la seconda solo nel 1895. La serie completa uscì nel 1898.",
+  },
+  {
+    q: "Chi fu Debussy a orchestrare le Gymnopédies e perché?",
+    a: "Nel 1896, per aiutare l'amico Satie",
+    level: "avanzato",
+    details: "Nel 1896 Satie eseguì le Gymnopédies a casa del direttore Gustave Doret. Debussy ne fu colpito e le orchestrò per aiutare Satie, che era in difficoltà finanziarie. Fu l'unica volta che Debussy orchestrò l'opera di un altro compositore. Orchestrò solo la n.1 e n.3 (invertendo la numerazione), ritenendo che la n.2 'non si prestasse all'orchestrazione'. Prima esecuzione: 20 febbraio 1897.",
+  },
+  {
+    q: "Qual è il legame tra Satie e la musica ambient?",
+    a: "Satie anticipò l'ambient con la 'Musique d'ameublement'",
+    level: "avanzato",
+    details: "Nel 1917 Satie concepì la 'musica d'arredamento': composizioni pensate per non essere ascoltate attentamente ma per far parte dell'ambiente. Brian Eno riconobbe il debito nel 1978 con 'Ambient 1: Music for Airports', definendo l'ambient come qualcosa che 'deve poter essere ignorata quanto ascoltata'. Le Gymnopédies condividono questa estetica.",
+  },
+  {
+    q: "Chi fu John Cage e quale ruolo ebbe per Satie?",
+    a: "Il grande riscopritore di Satie nel dopoguerra",
+    level: "avanzato",
+    details: "Compositore americano (1912-1992). Trovò in Satie un precursore: rifiuto della narrazione musicale, interesse per silenzio e spazio. 'Satie è indispensabile' (Cage). Nel 1963 organizzò la prima esecuzione integrale di Vexations (840 ripetizioni, 18 ore), anticipando il minimalismo.",
+  },
+  {
+    q: "In quali film famosi è stata usata la Gymnopédie n.1?",
+    a: "Fuoco fatuo, I Tenenbaum, Man on Wire, Hugo Cabret",
+    level: "intermedio",
+    details: "Film principali: Fuoco fatuo (1963, Louis Malle, sequenza iconica con Maurice Ronet), I Tenenbaum (2001, Wes Anderson), Man on Wire (2008, documentario su Philippe Petit), Un'altra donna (1988, Woody Allen), Hugo Cabret (2011, Scorsese), About Schmidt (2002), Chocolat (2000). Usata anche in spot pubblicitari e videogiochi (Mother 3, Zelda: Ocarina of Time).",
+  },
+  {
+    q: "Qual è la principale difficoltà nell'esecuzione della n. 1?",
+    a: "Controllo del suono e del pedale",
+    level: "avanzato",
+    details: "La sfida non è la velocità ma la qualità timbrica: equilibrio tra le voci, gestione del pedale e sospensione del tempo.",
   },
 ];
 
+// Fonti: link a spartiti, registrazioni e note contestuali
 const sourcesData = [
   {
-    group: "spartito e dominio pubblico",
+    group: "Spartito e dominio pubblico",
     items: [
       {
-        title: "imslp – 3 gymnopédies (pdf)",
+        title: "IMSLP – 3 Gymnopédies (PDF)",
         url: "https://imslp.org/wiki/3_Gymnop%C3%A9dies_(Satie,_Erik)",
-        note: "spartito e riferimenti editoriali",
+        note: "Partitura e riferimenti editoriali delle tre Gymnopédies.",
       },
       {
-        title: "musopen – gymnopédies (audio e spartiti)",
+        title: "Musopen – Gymnopédies (Audio e spartiti)",
         url: "https://musopen.org/music/8010-3-gymnopedies/",
-        note: "pagina con materiali pubblici (verifica disponibilità nel tempo)",
+        note: "Pagina con registrazioni e spartiti in pubblico dominio.",
       },
     ],
   },
   {
-    group: "contesto e cronologia",
+    group: "Contesto e cronologia",
     items: [
       {
-        title: "wikipedia – gymnopédies",
+        title: "Wikipedia – Gymnopédies",
         url: "https://en.wikipedia.org/wiki/Gymnop%C3%A9dies",
-        note: "panoramica rapida (usare solo come orientamento)",
+        note: "Panoramica generale su titolo, pubblicazione, metro e ricezione.",
       },
       {
-        title: "hyperion – note discografiche (debussy orchestration)",
+        title: "Hyperion – note discografiche (Debussy orchestrazioni)",
         url: "https://www.hyperion-records.co.uk/dw.asp?dc=W408_GBAJY8936508",
-        note: "approfondimento su orchestrazioni e ricezione",
+        note: "Approfondimento sulle orchestrazioni di Debussy e la loro prima esecuzione.",
       },
     ],
   },
 ];
 
-const contextHighlights = [
-  {
-    title: "Sottrazione contro il wagnerismo",
-    text: "Nel 1888 Wagner dominava l’Europa. Satie oppone un’armonia che crea vuoti, oscillazioni di settime maggiori e un futuro sospeso invece di tensioni drammatiche.",
-    tag: "1888",
-  },
-  {
-    title: "Montmartre e simbolismo",
-    text: "Il Chat Noir, il Simbolismo e l’amicizia con poeti come Contamine de Latour invitano Satie a pensare a una musica che sia descrizione sensoriale, non narrazione.",
-    tag: "Montmartre",
-  },
-  {
-    title: "Esoterismo e ritualità",
-    text: "L’Ordine della Rosa-Croce e la «Chiesa Metropolitana» sono esercizi di ermeticità, come la musica delle Gymnopédies: silenziosa, ieratica, priva di eccessi.",
-    tag: "Rosa-Croce",
-  },
-  {
-    title: "Les Antiques e la gymnopaedia",
-    text: "La prima pubblicazione (agosto 1888) accoppiava la Gymnopédie n. 1 ai versi di Contamine de Latour (Les Antiques) per accendere immagini di luce, sarabande dorate e rituali greci.",
-    tag: "Les Antiques",
-  },
-];
+/* ----------------------------------
+   Componenti di sezione
+----------------------------------- */
 
-const contextTimeline = [
-  {
-    label: "1888",
-    title: "Belle Époque e fermento scientifico",
-    detail:
-      "La Torre Eiffel si costruisce, Pasteur e Hertz rompono paradigmi, Kodak fotografa la vita quotidiana: la Gymnopédie nasce in uno spazio in cui arte e tecnologia coesistono.",
-  },
-  {
-    label: "1888",
-    title: "Montmartre e nuove forme",
-    detail:
-      "Satie lavora al Chat Noir, frequenta scrittori, assiste a concerti simbolisti e trova nel titolo gymnopaedia un collegamento con l’antichità visiva.",
-  },
-  {
-    label: "1888",
-    title: "Pubblicazione con Les Antiques",
-    detail:
-      "La prima Gymnopédie appare su La Musique des familles accanto al poema «Les Antiques»: un binomio che lega l’ancestrale (gymnopaedia) al nuovo minimalismo francese.",
-  },
-  {
-    label: "1891-1893",
-    title: "Rituali e comunità",
-    detail:
-      "L’ingresso nella Rosa-Croce e la fondazione della propria chiesa ribadiscono la scelta di una pratica musicale distante dagli accademismi ufficiali.",
-  },
-  {
-    label: "1896-1897",
-    title: "Debussy e la circolazione orchestrale",
-    detail:
-      "Debussy orchestra la Prima e la Terza (con numerazione invertita) per la Société Nationale, svelando a Parigi quanto la trasparenza di Satie potesse viaggiare oltre il pianoforte.",
-  },
-];
-
-const biographyHighlights = [
-  {
-    title: "Dieta Bianca",
-    text: "Nelle Memorie di un Amnesico (1912) elenca cibi bianchi (uova, ossa grattugiate, pollo in acqua bianca) per costruire un manifesto della purezza e del silenzio.",
-    note: "falsa autobiografia, vera indicazione estetica",
-  },
-  {
-    title: "Signore di velluto ad Arcueil",
-    text: "Per 27 anni vive in una stanza chiamata «l’Armadio», indossa abiti uguali e circonda due pianoforti uno sull’altro, accumulando ombrelli e spartiti nascosti.",
-    note: "1898-1925",
-  },
-  {
-    title: "Resistenza accademica",
-    text: "Espulso a 16 anni dal Conservatorio, giudicato pigro ma capace di capire Bach, Chopin e Schumann senza inseguire la tecnica lisztiana.",
-    note: "1879-1887",
-  },
-  {
-    title: "Letture e ascolti fuori dal coro",
-    text: "Tra il 1882 e il 1885 divorava Voltaire, Dumas, Andersen, odia la grand opéra e preferisce concerti sacri, seminando la base per un’arte pragmatica e anti-drammatica.",
-    note: "letture e discussioni con famiglie e amici",
-  },
-];
-
-const biographyTimeline = [
-  {
-    year: "1866",
-    title: "Nascita a Honfleur",
-    detail:
-      "Eric Alfred Leslie Satie nasce in Normandia da madre scozzese e padre francese e adotta presto la grafia «Erik» per rimarcare le sue radici vichinghe.",
-  },
-  {
-    year: "1870-1875",
-    title: "Infanzia tra Parigi e zii eccentrici",
-    detail:
-      "La famiglia si trasferisce a Parigi, la madre muore, lo zio «Sea-Bird» lo avvicina al teatro e Satie inizia a studiare canto gregoriano con l’organista Vinot.",
-  },
-  {
-    year: "1879-1887",
-    title: "Conservatorio e disillusione",
-    detail:
-      "Bocciato come pigro, espulso e riammesso, mal sopporta l’accademia e impara soprattutto osservando concerti e leggendo i classici.",
-  },
-  {
-    year: "1887-1888",
-    title: "Montmartre e le Gymnopédies",
-    detail:
-      "Lavora al Chat Noir, stringe amicizie con simbolisti e compone le tre Gymnopédies, pubblicate nel 1888 con titoli ispirati all’antichità.",
-  },
-  {
-    year: "1891-1893",
-    title: "Rosa-Croce, chiesa e amori",
-    detail:
-      "Diventa maestro di cappella dell’Ordine della Rosa-Croce, rompe con Péladan e fonda la sua chiesa: vive anche un breve amore con Suzanne Valadon.",
-  },
-  {
-    year: "1896-1897",
-    title: "Orchestrazioni e nuova visibilità",
-    detail:
-      "Debussy orchestra la Prima e la Terza Gymnopédie e il gesto spinge Satie sotto i riflettori di Parigi, confermando che la sua musica può abitare anche il colore orchestrale.",
-  },
-  {
-    year: "1917",
-    title: "Parade, surrealismo e scandalo",
-    detail:
-      "Con Picasso e Cocteau, Satie firma Parade, balletto che inventa nuovi linguaggi scenici e anticipa il surrealismo, generando scandalo ma anche nuove alleanze.",
-  },
-  {
-    year: "1925",
-    title: "Morte e influenza postuma",
-    detail:
-      "Muore a 59 anni di cirrosi, lasciando una borsa di spartiti nascosti che John Cage, Brian Eno e la musica ambient celebreranno.",
-  },
-];
-
-const legacyHighlights = [
-  {
-    title: "Debussy e l’orchestrazione sospesa",
-    text: "Nel 1896 Debussy orchestra la Prima e la Terza Gymnopédie (numerazione invertita) con oboe, archi con sordina, arpe e quattro corni per mantenere la trasparenza.",
-    note: "prima esecuzione 20 febbraio 1897",
-  },
-  {
-    title: "Cinema e media",
-    text: "Fuoco fatuo, Another Woman, I Tenenbaum e Man on Wire usano la Gymnopédie per accompagnare malinconia, ponderatezza e sospensione.",
-    note: "modulo usato per evocare riflessione",
-  },
-  {
-    title: "Pop, ambient e lo-fi",
-    text: "Blood, Sweat & Tears, Janet Jackson e PinkPantheress riarmonizzano o campionano la melodia, mentre Brian Eno e i minimalisti espandono l’idea di spazio sonoro.",
-    note: "campionamenti e riferimenti nei decenni successivi",
-  },
-];
-
-const legacyMedia = [
-  {
-    label: "Film e documentari",
-    items: [
-      "Fuoco fatuo (Le feu follet, 1963)",
-      "Another Woman (1988)",
-      "I Tenenbaum (2001)",
-      "Man on Wire (2008)",
-    ],
-  },
-  {
-    label: "Serie e pubblicità",
-    items: [
-      "Spot O2 «Be More Dog» (2013)",
-      "Serie 22.11.63",
-      "About Schmidt (2002)",
-      "Hugo Cabret (2011)",
-    ],
-  },
-  {
-    label: "Videogiochi e cultura pop",
-    items: [
-      "Mother 3 (2006) – «Leder's Gymnopedie»",
-      "The Legend of Zelda: Ocarina of Time – tema ispirato alla sospensione tonale",
-    ],
-  },
-];
-
-const legacyInfluences = [
-  {
-    title: "John Cage e il minimalismo",
-    text: "Cage lo definì indispensabile e portò in scena Vexations (840 ripetizioni), ribadendo il distacco dalla narrazione romantica.",
-  },
-  {
-    title: "Brian Eno e l’ambient d’arredamento",
-    text: "Eno riprende la Musique d’ameublement e pubblica Ambient 1: Music for Airports, sottolineando quanto la musica possa convivere con il quotidiano.",
-  },
-  {
-    title: "Jazz, pop e lo-fi contemporaneo",
-    text: "La struttura modale e l’ambiguità armonica motivano riarrangiamenti jazz-rock, hit pop e sonorità lo-fi, dimostrando la versatilità del brano.",
-  },
-];
-
-const ContestoSection = () => (
-  <div className="space-y-6 max-w-5xl mx-auto">
-    <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
-        <Globe className="w-5 h-5 text-blue-400" />
-        contesto storico e culturale
-      </h2>
-      <p className="text-sm text-slate-300 mt-2">
-        Le Gymnopédies nascono nella Parigi della Belle Époque, per mano di un artista che rifiuta la
-        grande orchestra wagneriana e sceglie le stanze del cabaret, dell’esoterismo e del Simbolismo.
-      </p>
-
-      <div className="mt-5 grid md:grid-cols-3 gap-4">
-        {contextHighlights.map((item) => (
-          <div key={item.title} className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-            <div className="text-xs text-slate-400 uppercase tracking-wide">{item.tag}</div>
-            <div className="text-sm text-slate-100 font-semibold mt-1">{item.title}</div>
-            <p className="text-xs text-slate-300 mt-2 leading-relaxed">{item.text}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-6 bg-slate-950/30 border border-slate-700 rounded-2xl p-5">
-        <div className="text-xs uppercase tracking-[0.2em] text-slate-400">fatti salienti</div>
-        <div className="mt-3 space-y-3">
-          {contextTimeline.map((entry) => (
-            <div key={entry.title} className="flex gap-3 bg-slate-900/40 border border-slate-800 rounded-xl p-4">
-              <div className="text-sm font-semibold text-blue-300">{entry.label}</div>
-              <div className="min-w-0">
-                <div className="text-sm text-slate-100 font-semibold">{entry.title}</div>
-                <p className="text-xs text-slate-300 mt-1 leading-relaxed">{entry.detail}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-const BiographySection = () => (
-  <div className="space-y-6 max-w-5xl mx-auto">
-    <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
-        <History className="w-5 h-5 text-blue-400" />
-        biografia e sensibilità
-      </h2>
-      <p className="text-sm text-slate-300 mt-2">
-        La vita di Satie è fatta di rifiuti accademici, amicizie bohémien, ritualità esoteriche e un
-        approccio pratico che trova nelle Gymnopédies il suo manifesto di sobrietà.
-      </p>
-
-      <div className="mt-5 grid md:grid-cols-3 gap-4">
-        {biographyHighlights.map((item) => (
-          <div key={item.title} className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-            <div className="text-sm text-slate-100 font-semibold">{item.title}</div>
-            <p className="text-xs text-slate-300 mt-2 leading-relaxed">{item.text}</p>
-            <div className="text-[10px] text-slate-500 uppercase tracking-wider mt-3">{item.note}</div>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-6 bg-slate-950/30 border border-slate-700 rounded-2xl p-5">
-        <div className="text-xs uppercase tracking-[0.2em] text-slate-400">cronologia selezionata</div>
-        <div className="mt-3 space-y-3">
-          {biographyTimeline.map((item) => (
-            <div key={item.title} className="bg-slate-900/40 border border-slate-800 rounded-xl p-4">
-              <div className="text-xs text-blue-300 font-semibold">{item.year}</div>
-              <div className="text-sm text-slate-100 font-semibold mt-1">{item.title}</div>
-              <p className="text-xs text-slate-300 mt-2 leading-relaxed">{item.detail}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-const LegacySection = () => (
-  <div className="space-y-6 max-w-5xl mx-auto">
-    <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
-        <Sparkles className="w-5 h-5 text-blue-400" />
-        ricezione e influenza
-      </h2>
-      <p className="text-sm text-slate-300 mt-2">
-        La Gymnopédie n. 1 continua a essere un punto di riferimento per orchestre, cinema, ambient music e
-        culture pop: il suo equilibrio riesce a convivere con media diversi senza perdere il rigore di partenza.
-      </p>
-
-      <div className="mt-5 grid md:grid-cols-3 gap-4">
-        {legacyHighlights.map((item) => (
-          <div key={item.title} className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-            <div className="flex items-center gap-2 text-sm text-slate-100 font-semibold">
-              <Sparkles className="w-4 h-4 text-blue-400" />
-              {item.title}
-            </div>
-            <p className="text-xs text-slate-300 mt-2 leading-relaxed">{item.text}</p>
-            <div className="text-[10px] text-slate-500 uppercase tracking-wider mt-3">{item.note}</div>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-5 grid md:grid-cols-3 gap-4">
-        {legacyMedia.map((entry) => (
-          <div key={entry.label} className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-            <div className="flex items-center gap-2 text-sm text-slate-100 font-semibold">
-              <Film className="w-4 h-4 text-blue-400" />
-              {entry.label}
-            </div>
-            <ul className="mt-3 space-y-1 text-xs text-slate-300">
-              {entry.items.map((it) => (
-                <li key={it} className="leading-relaxed">
-                  • {it}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-5 grid md:grid-cols-3 gap-4">
-        {legacyInfluences.map((entry) => (
-          <div key={entry.title} className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-            <div className="text-sm text-slate-100 font-semibold">{entry.title}</div>
-            <p className="text-xs text-slate-300 mt-2 leading-relaxed">{entry.text}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-);
-
-/* -----------------------------
-   sezioni
------------------------------ */
-
+// Sezione Introduzione
 const IntroduzioneSection = ({ onNavigateToFonti }) => {
   const [openCuriosita, setOpenCuriosita] = useState(false);
-  const [modal, setModal] = useState(null);
+  const [modalContent, setModalContent] = useState(null);
 
-  const openModal = (title, content) => setModal({ title, content });
-  const closeModal = () => setModal(null);
-
+  const openModal = (title, content) => setModalContent({ title, content });
+  const closeModal = () => setModalContent(null);
   const handleFontiNavigation = () => {
     closeModal();
     if (onNavigateToFonti) onNavigateToFonti();
   };
 
+  // Timeline dettagliata della vita di Satie
+  const satieLifeTimeline = [
+    {
+      year: "1866",
+      event: "Nascita a Honfleur, Normandia. Eric Alfred Leslie Satie nasce da madre scozzese e padre francese. Adotterà poi la grafia «Erik» con la k, in omaggio alle sue origini vichinghe."
+    },
+    {
+      year: "1870",
+      event: "Trasferimento a Parigi. Il padre viene arruolato nella Guardia Nazionale per la guerra Franco-Prussiana. La famiglia si trasferisce a Parigi nel 1871."
+    },
+    {
+      year: "1872",
+      event: "Morte della madre. Erik ha appena 6 anni. Viene mandato dai nonni paterni a Honfleur insieme al fratello Conrad, mentre la sorella Olga viene separata e mandata a Le Havre. La nonna Eulalie lo iscrive al Collège de Honfleur come pensionante. Inizia le prime lezioni di musica serie con Gustave Vinot, organista della chiesa di Saint-Léonard (pianoforte, organo, solfeggio, canto gregoriano)."
+    },
+    {
+      year: "1878",
+      event: "Morte della nonna. La nonna annega misteriosamente durante una nuotata quotidiana. I ragazzi tornano a Parigi dal padre che, pochi mesi dopo, nel 1879 si sposa con Eugénie, pianista e compositrice da salotto. Erik detesta la matrigna, lei, la sua musica, i suoi modi e sua madre."
+    },
+    {
+      year: "1879",
+      event: "Conservatorio di Parigi. La matrigna iscrive Erik al Conservatorio. L'esperienza sarà disastrosa. Studia pianoforte con un allievo di Chopin, ma viene giudicato 'dotato ma indolente' (1880), poi 'lo studente più pigro del Conservatorio' (1881)."
+    },
+    {
+      year: "1882",
+      event: "Espulsione dal Conservatorio. A 16 anni viene espulso dopo un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven. I rapporti ufficiali parlano di esecuzione 'passabile' ma 'senza colore'. Tra il 1882 e il 1883 si dedica a letture voraci (Voltaire, Dumas, Andersen) e sviluppa le sue preferenze musicali: Bach sopra tutto, seguito da Chopin e Schumann."
+    },
+    {
+      year: "1885",
+      event: "Rientro al Conservatorio. Viene riammesso nella classe di pianoforte intermedio ma i giudizi restano duri: 'insignificante e laborioso', 'privo di valore'. Impiegava tre mesi per imparare un pezzo e non sapeva leggere a prima vista."
+    },
+    {
+      year: "1886",
+      event: "Servizio militare. Per sfuggire al Conservatorio e ridurre il servizio di leva da 5 anni a 1 anno, si arruola volontariamente nel 33º Reggimento di Fanteria ad Arras. Si espone deliberatamente al freddo contraendo una grave bronchite che gli permette di essere congedato nel 1887."
+    },
+    {
+      year: "1887",
+      event: "Abbandona definitivamente il Conservatorio. A 21 anni lascia per sempre l'istituzione. Uno dei suoi biografi, Orledge, parla di dislessia e resistenza alla tecnica virtuosistica e alla complessità contrappuntistica."
+    },
+    {
+      year: "1887–1888",
+      event: "Montmartre e le Gymnopédies. Entra nella vita bohémien del Montmartre di fine secolo. Lavora come secondo pianista al Chat Noir (Il Gatto Nero), cabaret artistico fondato nel 1881 da Rodolphe Salis, ritrovo di poeti, pittori, musicisti e scrittori d'avanguardia (Debussy, Verlaine, Toulouse-Lautrec). È in questo ambiente che stringe amicizia con Claude Debussy e incontra il poeta Patrice Contamine de Latour. Compone le tre Gymnopédies, brani che diventeranno le basi per musica impressionista, minimalista e d'ambiente."
+    },
+    {
+      year: "1888",
+      event: "Prima pubblicazione. Le tre Gymnopédies vengono completate. In questa epoca la Parigi della Belle Époque vive trasformazioni politiche e l'arte si spoglia da romanticismo e regole accademiche. Wagner domina l'Europa, Satie oppone un'armonia che crea vuoti, oscillazioni di settime maggiori e un futuro sospeso."
+    },
+    {
+      year: "1891-1893",
+      event: "Rosa-Croce e amori. Entra nell'Ordine della Rosa-Croce Cattolica del Tempio e del Graal, setta occultista fondata da Joséphin Péladan (Sâr Mérodack). Diventa compositore ufficiale e maestro di cappella. Nel 1892 rompe con Péladan (irritato dalla sua devozione wagneriana) e fonda la 'Chiesa Metropolitana d'Arte di Gesù Conduttore', di cui sarà l'unico membro. Nel 1893 ha un breve ma intenso amore con la pittrice Suzanne Valadon, l'unico documentato della sua vita. Quando lei lo lascia, Satie ne rimane segnato profondamente."
+    },
+    {
+      year: "1896–1897",
+      event: "Debussy orchestra due Gymnopédies. Dopo averle sentite suonare da Satie nel 1896, Debussy orchestra la n. 1 e n. 3 e le presenta alla Société Nationale il 20 febbraio 1897."
+    },
+    {
+      year: "1898",
+      event: "Trasferimento ad Arcueil. Si trasferisce ad Arcueil, sobborgo industriale a sud di Parigi. Affitta una stanzetta minuscola che chiama 'l'Armadio'. Non farà entrare nessuno per 27 anni, fino alla sua morte. Veste sempre di grigio o nero, con abiti di velluto identici (gli valsero i soprannomi 'Monsieur le Pauvre' e 'Velvet Gentleman')."
+    },
+    {
+      year: "1925",
+      event: "Morte a Parigi. Muore a 59 anni di cirrosi epatica. Gli amici entrano finalmente nella stanza chiamata 'l'Armadio' ad Arcueil e trovano: due pianoforti a coda uno sopra l'altro (quello sopra usato come deposito per la posta non aperta), oltre 100 ombrelli, sette abiti di velluto identici, spartiti inediti nascosti ovunque, dozzine di fazzoletti e collezioni di oggetti bizzarri."
+    },
+  ];
+
+  // Modal con timeline biografica
   const LifeModal = () => (
     <div className="space-y-4">
-      <div className="rounded-lg overflow-hidden border border-slate-700">
+      <div className="mb-3 rounded-lg overflow-hidden bg-slate-950">
         <img
-          src="/images/satie-portrait-hero.jpg"
-          alt="Erik Satie - ritratto"
-          className="w-full h-56 object-cover"
+          src="/images/Bonjour-Biquii.jpg"
+          alt="Erik Satie - Bonjour Biquii"
+          className="w-full h-80 object-contain rounded-lg"
         />
+        <p className="text-sm text-slate-400 mt-2 italic text-center px-2 pb-2">
+          Erik Satie (1866–1925), Bonjour Biquii
+        </p>
       </div>
-
-      <div className="grid sm:grid-cols-2 gap-3">
-        {[
-          { k: "nascita", v: "17 maggio 1866, Honfleur" },
-          { k: "morte", v: "1 luglio 1925" },
-          { k: "ambiente", v: "parigi, montmartre; poi arcueil" },
-          { k: "profilo", v: "scrittura essenziale, anti-virtuosistica" },
-        ].map((x, i) => (
-          <div key={i} className="bg-slate-950/40 border border-slate-700 rounded-lg p-3">
-            <div className="text-xs text-slate-400">{x.k}</div>
-            <div className="text-sm text-slate-100 font-semibold">{x.v}</div>
-          </div>
+      <div className="space-y-2.5">
+        {satieLifeTimeline.map((item, idx) => (
+          <React.Fragment key={idx}>
+            <div
+              className="flex flex-col sm:flex-row sm:items-start p-3 rounded-lg bg-slate-700 border-l-2 border-blue-600 shadow-sm"
+            >
+              <span className="font-semibold text-slate-200 text-sm w-32 shrink-0">
+                {item.year}
+              </span>
+              <span className="text-slate-200 text-sm leading-relaxed">
+                {item.event}
+              </span>
+            </div>
+            {/* Immagini contestuali dopo eventi specifici */}
+            {item.year === "1866" && (
+              <div className="ml-4 rounded-lg overflow-hidden border border-slate-600">
+                <img
+                  src="/images/Honfleur.jpg"
+                  alt="Honfleur, città natale di Erik Satie"
+                  className="w-full h-48 object-cover"
+                />
+                <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                  Honfleur, Normandia: città natale di Satie sul porto della Senna
+                </p>
+              </div>
+            )}
+            {item.year === "1879–1887" && (
+              <div className="ml-4 rounded-lg overflow-hidden border border-slate-600">
+                <img
+                  src="/images/Conservatorio di Parigi.jpg"
+                  alt="Conservatoire de Paris"
+                  className="w-full h-48 object-cover"
+                />
+                <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                  Conservatoire de Paris: istituzione che giudicò Satie "il più pigro studente"
+                </p>
+              </div>
+            )}
+            {item.year === "1887–1888" && (
+              <div className="ml-4 grid sm:grid-cols-2 gap-3">
+                <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                  <img
+                    src="/images/Le chat noir.jpg"
+                    alt="Le Chat Noir cabaret"
+                    className="w-full max-h-80 object-contain mx-auto"
+                  />
+                  <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                    Le Chat Noir: celebre cabaret di Montmartre fondato da Rodolphe Salis (1881), dove Satie lavorò come secondo pianista
+                  </p>
+                </div>
+                <div className="rounded-lg overflow-hidden border border-slate-600">
+                  <img
+                    src="/images/Auberge du clou.jpg"
+                    alt="Auberge du Clou cabaret"
+                    className="w-full max-h-80 object-cover"
+                  />
+                  <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                    Auberge du Clou: altro celebre cabaret di Montmartre dove Satie suonò
+                  </p>
+                </div>
+                <div className="rounded-lg overflow-hidden border border-slate-600">
+                  <img
+                    src="/images/6_Rue_Cortot -.jpeg"
+                    alt="6 Rue Cortot, Montmartre"
+                    className="w-full max-h-80 object-cover"
+                  />
+                  <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                    6 Rue Cortot, Montmartre: abitazione di Satie durante il periodo parigino
+                  </p>
+                </div>
+                <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                  <img
+                    src="/images/El_bohemi_by_Ramon_Casas-1.jpg"
+                    alt="El bohemi di Ramon Casas"
+                    className="w-full max-h-80 object-contain mx-auto"
+                  />
+                  <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                    "El bohemi" (Ramon Casas, 1891): ritratto della vita bohémien a Montmartre
+                  </p>
+                </div>
+              </div>
+            )}
+            {item.year === "1891-1893" && (
+              <div className="ml-4 grid sm:grid-cols-2 gap-3">
+                <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                  <img
+                    src="/images/Peladan.jpg"
+                    alt="Joséphin Péladan, Sâr Mérodack"
+                    className="w-full max-h-80 object-contain mx-auto"
+                  />
+                  <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                    Joséphin Péladan (Sâr Mérodack): fondatore della Rosa-Croce Cattolica del Tempio e del Graal
+                  </p>
+                </div>
+                <div className="rounded-lg overflow-hidden border border-slate-600">
+                  <img
+                    src="/images/satie-e-valadon.jpg"
+                    alt="Erik Satie e Suzanne Valadon"
+                    className="w-full max-h-80 object-cover"
+                  />
+                  <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                    Erik Satie e Suzanne Valadon: l'unico amore documentato della sua vita (1893)
+                  </p>
+                </div>
+                <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                  <img
+                    src="/images/valadon-satie-1892-ritratto.jpg"
+                    alt="Ritratto di Valadon e Satie, 1892"
+                    className="w-full max-h-80 object-contain mx-auto"
+                  />
+                  <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                    Ritratto del 1892 nel contesto della relazione Valadon-Satie
+                  </p>
+                </div>
+                <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                  <img
+                    src="/images/Bonjour-Biquii.jpg"
+                    alt="Bonjour Biquii"
+                    className="w-full max-h-80 object-contain mx-auto"
+                  />
+                  <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+                    "Bonjour Biquii": regalo di Satie a Suzanne Valadon, stampa della cultura visiva parigina fin de siècle
+                  </p>
+                </div>
+              </div>
+            )}
+          </React.Fragment>
         ))}
       </div>
-
-      <div className="bg-slate-950/40 border border-slate-700 rounded-lg p-3">
-        <p className="text-sm text-slate-200">
-          per link e riferimenti approfonditi rimanda alla sezione{" "}
+      <div className="bg-slate-900/50 p-3 rounded border-l-4 border-blue-500">
+        <p className="text-sm text-slate-200 leading-relaxed">
+          Per ulteriori approfondimenti e riferimenti, consulta la sezione{' '}
           <button
             type="button"
             className="text-blue-300 underline decoration-dotted hover:text-blue-200"
             onClick={handleFontiNavigation}
           >
-            fonti
-          </button>
-          .
+            Fonti
+          </button>.
         </p>
       </div>
     </div>
   );
 
-  const DebussyModal = () => (
-      <div className="space-y-3 text-sm text-slate-200 leading-relaxed">
-        <p>
-          è utile per lo studio seguire la traiettoria di ricezione: il brano nasce come pagina
-          pianistica essenziale, poi entra in circuiti più ampi anche grazie a orchestrazioni e
-          programmazioni.
+  // Modal con cronologia del brano e della ricezione
+  const GymnopedieTimelineModal = () => (
+    <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
+      <div className="mb-3 rounded-lg overflow-hidden">
+        <img
+          src="/images/Manoscritto-di-Erik-Satie-della-prima-Gymnopedie.jpg"
+          alt="Manoscritto autografo della Gymnopédie n. 1"
+          className="w-full h-56 object-cover rounded-lg"
+        />
+        <p className="text-sm text-slate-400 mt-2 italic text-center">
+          Manoscritto autografo di Erik Satie della prima Gymnopédie (1888)
         </p>
+      </div>
+      <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-amber-500 mb-3">
+        <h5 className="text-base font-semibold text-slate-100 mb-2">Composizione e titolo misterioso (febbraio-aprile 1888)</h5>
+        <p className="mb-2">
+          Satie compose le tre Gymnopédies tra <strong>febbraio e aprile 1888</strong>, completandole entro il <strong>2 aprile</strong>. Aveva 21 anni, era appena uscito dal Conservatorio e lavorava come pianista al Chat Noir. Un aneddoto racconta che annunciò l'intenzione di comporle al cabaret, e il proprietario Rodolphe Salis commentò sarcastico: <em>«Davvero una bella professione!»</em>. La composizione iniziò due mesi dopo.
+        </p>
+        <p className="mb-2 text-sm">
+          Il titolo <strong>Gymnopédie</strong> deriva dal greco Γυμνοπαιδίαι (Gymnopaedia), festività spartana annuale. «Gymnos» significa «nudo» o «disarmato»: giovani uomini danzavano nudi eseguendo esercizi ginnici e canti corali.
+        </p>
+        <p className="text-xs text-slate-400 italic">
+          <strong>Perché Satie scelse questo titolo?</strong> Influenze: 1) Il poema <em>Les Antiques</em> di Contamine de Latour che descriveva danze greche; 2) Stava leggendo <em>Salammbô</em> di Gustave Flaubert, romanzo ambientato nell'antica Cartagine; 3) I dipinti simbolisti di <strong>Puvis de Chavannes</strong>, in particolare <em>Jeunes filles au bord de la mer</em> (1879). Satie aspirava a comporre musica «decorativa» come gli affreschi del pittore.
+        </p>
+      </div>
+
+      {/* Immagini contestuali per il titolo */}
+      <div className="grid sm:grid-cols-2 gap-3 my-4">
+        <div className="rounded-lg overflow-hidden border border-slate-600">
+          <img
+            src="/images/Gymnopedie greche.jpeg"
+            alt="Rappresentazione delle gymnopédie dell'antica Grecia"
+            className="w-full max-h-64 object-cover"
+          />
+          <p className="text-xs text-slate-400 p-2 italic bg-slate-800">
+            Gymnopédie spartane: danze rituali dell'antica Grecia con giovani guerrieri
+          </p>
+        </div>
+        <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+          <img
+            src="/images/PatriceContamine.jpg"
+            alt="J. P. Contamine de Latour"
+            className="w-full max-h-64 object-contain mx-auto"
+          />
+          <p className="text-xs text-slate-400 p-2 italic bg-slate-900">
+            J. P. Contamine de Latour: poeta simbolista, autore di "Les Antiques" pubblicata con la prima Gymnopédie
+          </p>
+        </div>
+        <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950 sm:col-span-2">
+          <img
+            src="/images/Arts_and_the_Muses_by_Pierre_Puvis_de_Chavannes.jpg"
+            alt="The Arts and the Muses di Pierre Puvis de Chavannes"
+            className="w-full max-h-64 object-contain mx-auto"
+          />
+          <p className="text-xs text-slate-400 p-2 italic bg-slate-900">
+            "The Arts and the Muses" (Pierre Puvis de Chavannes): pittura simbolista che ispirò Satie
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500 mb-3">
+        <h5 className="text-base font-semibold text-slate-100 mb-2">Storia editoriale complessa</h5>
+        <p className="mb-2 text-sm">
+          <strong>Prima Gymnopédie:</strong> Pubblicata il <strong>18 agosto 1888</strong> nel secondo supplemento di <em>La Musique des familles</em> (rivista diretta dal padre Alfred Satie). Originariamente intitolata <strong>«Danse antique»</strong>, dedicata a Jeanne de Bret. Accompagnata da un estratto della poesia <em>Les Antiques</em> di Contamine de Latour.
+        </p>
+        <p className="mb-2 text-sm">
+          <strong>Terza Gymnopédie:</strong> Pubblicata nel <strong>novembre 1888</strong>, dedicata al compositore Charles Levadé.
+        </p>
+        <p className="mb-2 text-sm">
+          <strong>Seconda Gymnopédie:</strong> Pubblicata solo nel <strong>1895</strong>, dedicata al fratello Conrad.
+        </p>
+        <p className="mb-2 text-sm">
+          <strong>Serie completa:</strong> Pubblicata nel <strong>1898</strong>, in coincidenza con l'orchestrazione di Debussy.
+        </p>
+        <p className="text-xs text-slate-400 italic">
+          L'accoglienza iniziale fu tiepida. I brani erano considerati avanguardistici: «infrangevano praticamente ogni regola musicale» dell'epoca. Solo vent'anni dopo, quando l'arte d'avanguardia divenne più accettata, le Gymnopédies iniziarono a godere di successo.
+        </p>
+      </div>
+
       <p>
-        per dati puntuali e link di appoggio, rimanda a{" "}
-        <button
-          type="button"
-          className="text-blue-300 underline decoration-dotted hover:text-blue-200"
-          onClick={handleFontiNavigation}
-        >
-          fonti
-        </button>
-        .
+        Il titolo richiama la <strong>gymnopaedia</strong>, festa spartana con danze rituali dell'antica Grecia. Questo binomio lega l'ancestrale (gymnopaedia) al nuovo minimalismo francese, costruendo un immaginario arcaico e volutamente enigmatico.
       </p>
+      <p>
+        Nel <strong>1896–1897</strong> Claude Debussy, dopo aver ascoltato Satie suonare le tre pagine, decise di
+        orchestrare i numeri <strong>1</strong> e <strong>3</strong> (invertendo la numerazione). La prima esecuzione orchestrale si tenne il
+        <strong> 20 febbraio 1897</strong> in un concerto della Société Nationale, svelando a Parigi quanto la trasparenza di Satie potesse viaggiare oltre il pianoforte.
+      </p>
+      <p>
+        La seconda Gymnopédie venne pubblicata solo nel <strong>1895</strong>, mentre l'edizione integrale dei tre
+        pezzi uscì nel <strong>1898</strong>. La ricezione fu lenta ma costante: dalla metà del XX secolo, la
+        n. 1 divenne un'icona del minimalismo e fu oggetto di innumerevoli arrangiamenti, campionamenti (Blood, Sweat & Tears, Janet Jackson, PinkPantheress), e utilizzi in film, serie TV e videogiochi.
+      </p>
+      <div className="bg-slate-900/50 p-3 rounded border-l-4 border-blue-500">
+        <p>
+          Per link precisi e riferimenti, rimanda alla sezione{' '}
+          <button
+            type="button"
+            className="text-blue-300 underline decoration-dotted hover:text-blue-200"
+            onClick={handleFontiNavigation}
+          >
+            Fonti
+          </button>.
+        </p>
+      </div>
+    </div>
+  );
+
+  // Modal con indicazioni esecutive
+  const InterpretazioneModal = () => (
+    <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
+      <div className="bg-slate-900/50 p-3 rounded border-l-4 border-amber-500">
+        <p className="text-slate-200">
+          Obiettivo: mantenere <strong>semplicità controllata</strong>. La difficoltà risiede nella gestione di tempo,
+          suono e pedale più che nella quantità di note.
+        </p>
+      </div>
+      <ul className="space-y-2 ml-1">
+        <li className="flex items-start space-x-2">
+          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
+          <span>
+            <strong>Pulsazione:</strong> 3/4 stabile, senza accenti marcati da danza.
+          </span>
+        </li>
+        <li className="flex items-start space-x-2">
+          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
+          <span>
+            <strong>Voce superiore:</strong> canto semplice, leggero e continuo senza pesantezza.
+          </span>
+        </li>
+        <li className="flex items-start space-x-2">
+          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
+          <span>
+            <strong>Pedale:</strong> cambi frequenti per evitare impasti; usare il pedale come filtro timbrico.
+          </span>
+        </li>
+        <li className="flex items-start space-x-2">
+          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
+          <span>
+            <strong>Dinamica:</strong> curva breve con crescendi e diminuendi contenuti; evitare forti improvvisi.
+          </span>
+        </li>
+      </ul>
     </div>
   );
 
   return (
-    <div className="space-y-6 max-w-5xl mx-auto">
-      <Modal isOpen={!!modal} onClose={closeModal} title={modal?.title || ""}>
-        {modal?.content}
-      </Modal>
-
-      <div className="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-700 rounded-2xl p-7 shadow-2xl">
-        <h2 className="text-2xl sm:text-3xl font-bold text-blue-300 tracking-wide text-center">
-          gymnopédie n. 1
-        </h2>
-        <p className="text-sm text-slate-300 text-center mt-2">
-          indicazione: <span className="font-semibold text-slate-100">lent et douloureux</span>
-        </p>
-
-        <div className="mt-6 grid lg:grid-cols-2 gap-6">
-          <div className="rounded-xl overflow-hidden border border-slate-700">
-            <img
-              src="/images/gymnopedie-score.jpg"
-              alt="gymnopédie n. 1 - spartito"
-              className="w-full h-64 object-cover"
-            />
-          </div>
-
-          <div className="space-y-4 text-sm text-slate-200 leading-relaxed">
-            <p>
-              gymnopédie n. 1 è una pagina breve costruita con pochi elementi ripetuti. il passo è
-              regolare (3/4) e la tensione nasce da tinta, risonanza e distanza tra le voci.
-            </p>
-            <p>
-              il titolo{" "}
-              <Tooltip text="richiamo alla gymnopaedia (danza dell’antica grecia). in satie il riferimento resta intenzionalmente ambiguo.">
-                gymnopédie
-              </Tooltip>{" "}
-              non “spiega”: aggiunge un livello di immaginario. l’indicazione{" "}
-              <Tooltip text="tempo e carattere: lento e doloroso. guida il tipo di suono e il respiro del fraseggio.">
-                lent et douloureux
-              </Tooltip>{" "}
-              delimita l’atteggiamento esecutivo.
-            </p>
-
-            <div className="grid sm:grid-cols-2 gap-3 mt-2">
-              <div className="bg-slate-950/40 border border-slate-700 rounded-lg p-4">
-                <div className="flex items-center gap-2 text-slate-100 font-semibold">
-                  <User className="w-4 h-4 text-blue-400" />
-                  satie in breve
-                </div>
-                <p className="text-xs text-slate-300 mt-2">
-                  coordinate biografiche essenziali per contesto e studio.
-                </p>
-                <button
-                  type="button"
-                  className="mt-3 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
-                  onClick={() => openModal("erik satie: dati essenziali", <LifeModal />)}
-                >
-                  apri <ChevronRight className="w-4 h-4" />
-                </button>
-              </div>
-
-              <div className="bg-slate-950/40 border border-slate-700 rounded-lg p-4">
-                <div className="flex items-center gap-2 text-slate-100 font-semibold">
-                  <Library className="w-4 h-4 text-blue-400" />
-                  ricezione
-                </div>
-                <p className="text-xs text-slate-300 mt-2">
-                  utile per spiegare come una pagina minimale diventa repertorio globale.
-                </p>
-                <button
-                  type="button"
-                  className="mt-3 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
-                  onClick={() => openModal("debussy e la circolazione", <DebussyModal />)}
-                >
-                  apri <ChevronRight className="w-4 h-4" />
-                </button>
-              </div>
+    <div className="space-y-6 animate-fadeIn max-w-4xl mx-auto">
+      {/* Modale principale */}
+      {modalContent && (
+        <div
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setModalContent(null)}
+        >
+          <div
+            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+                {modalContent.title}
+              </h3>
+              <button
+                type="button"
+                onClick={() => setModalContent(null)}
+                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+              >
+                chiudi
+              </button>
             </div>
+            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto">{modalContent.content}</div>
           </div>
         </div>
+      )}
 
-        <div className="mt-6 bg-slate-950/30 border border-slate-700 rounded-xl overflow-hidden">
+      {/* Hero */}
+      <div className="bg-gradient-to-br from-slate-800 to-slate-900 text-slate-100 p-8 rounded-2xl shadow-2xl border border-slate-600">
+        <h2 className="text-center text-3xl font-[family:'Cinzel',serif] font-bold tracking-[0.14em] mb-6 text-blue-300 leading-tight">
+          Gymnopédie n. 1 <br /> (Trois Gymnopédies)
+        </h2>
+        <div className="mb-6 bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+          <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-xl bg-slate-900 p-3">
+            <img
+              src="/images/Manoscritto-di-Erik-Satie-hero.jpg"
+              alt="Manoscritto autografo di Erik Satie - Gymnopédie n. 1"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+        <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
+          <p>
+            La <strong>Gymnopédie n. 1</strong> è la prima di tre pagine per pianoforte composte da Erik Satie e
+            completate entro la primavera del <strong>1888</strong>. L'autore le definì "danze lente", costruite
+            con pochi elementi ripetuti e dissonanze controllate. Satie stesso scrisse: <em>«Sono venuto al mondo molto giovane in un tempo molto vecchio»</em>, una frase che riassume la sua posizione di outsider in un'epoca dominata dal wagnerismo.
+          </p>
+          <p>
+            Nel <strong>1888</strong> Parigi vive le trasformazioni della Belle Époque: la Torre Eiffel si costruisce, Pasteur e Hertz rompono paradigmi scientifici, e l'arte si spoglia dal romanticismo e dalle regole accademiche. In questo contesto, Satie — un ragazzo di 21 anni, pianista cabaret a <Tooltip text="Quartiere parigino dei café-cabaret dove Satie lavorò come pianista e trovò ispirazione per il suo stile sobrio.">Montmartre</Tooltip> — compone tre piccoli brani che diventano le basi per la musica impressionista, minimalista e d'ambiente. Quanti pianisti principianti e non hanno desiderato suonarle, scoprendo poi che non era poi così semplice!
+          </p>
+          <p>
+            Il titolo{' '}
+            <Tooltip text="Richiama la gymnopaedia: festa con danze rituali dell'antica Grecia (festa spartana con danze rituali). In Satie il riferimento rimane un enigma poetico.">
+              Gymnopédie
+            </Tooltip>{' '}
+            suggerisce un contesto arcaico senza chiarirlo. Secondo alcune testimonianze, Satie trasse
+            spunto dai <em>modi greci</em>, da romanzi di <em>Gustave Flaubert</em> e dalla poesia <em>Les Antiques</em> di J. P. Contamine de
+            Latour (amico simbolista), pubblicata insieme alla n. 1 nell'estate del 1888.
+          </p>
+          <p>
+            La pagina uscì con l'indicazione{' '}
+            <Tooltip text="Tempo lento e doloroso: guida l'espressione e la qualità timbrica.">
+              Lent et douloureux
+            </Tooltip>{' '}
+            e rimase quasi sconosciuta fino a quando <strong>Claude Debussy</strong> non orchestrò due numeri (1 e 3, invertendo la numerazione) e li
+            presentò il 20 febbraio 1897 alla Société Nationale. Oggi la n. 1 è considerata un prototipo del minimalismo musicale e
+            continua a ispirare arrangiamenti in ogni genere.
+          </p>
+        </div>
+        {/* Quattro card principali */}
+        <div className="grid gap-6 lg:grid-cols-2 mt-6">
+          <div className="bg-slate-800 p-5 rounded-lg shadow-lg border border-slate-700 hover:border-blue-500 transition-all">
+            <h3 className="text-lg font-semibold text-slate-100 mb-2 flex items-center">
+              <User className="w-5 h-5 text-blue-400 mr-2" />
+              Satie in breve
+            </h3>
+            <p className="text-sm text-slate-300 mb-3">
+              Coordinate biografiche essenziali per inquadrare il contesto dell'autore e del brano.
+            </p>
+            <button
+              onClick={() => openModal("Erik Satie: cronologia essenziale", <LifeModal />)}
+              className="text-sm text-blue-400 hover:text-blue-300 font-semibold flex items-center group"
+            >
+              Apri
+              <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </div>
+          <div className="bg-slate-800 p-5 rounded-lg shadow-lg border border-slate-700 hover:border-blue-500 transition-all">
+            <h3 className="text-lg font-semibold text-slate-100 mb-2 flex items-center">
+              <Library className="w-5 h-5 text-blue-400 mr-2" />
+              Cronologia e ricezione
+            </h3>
+            <p className="text-sm text-slate-300 mb-3">
+              1888 (pubblicazione iniziale) → 1896–1897 (orchestrazioni di Debussy) → 1898 (edizione integrale).
+            </p>
+            <button
+              onClick={() => openModal("Gymnopédie n. 1: cronologia sintetica", <GymnopedieTimelineModal />)}
+              className="text-sm text-blue-400 hover:text-blue-300 font-semibold flex items-center group"
+            >
+              Apri
+              <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </div>
+          <div className="bg-slate-800 p-5 rounded-lg shadow-lg border border-slate-700 hover:border-blue-500 transition-all">
+            <h3 className="text-lg font-semibold text-slate-100 mb-2 flex items-center">
+              <Brain className="w-5 h-5 text-blue-400 mr-2" />
+              Linguaggio musicale
+            </h3>
+            <p className="text-sm text-slate-300 mb-3">
+              Ostinato, accordi planati, ambiguità tonale: il centro del discorso è il colore, non lo sviluppo
+              tematico.
+            </p>
+            <p className="text-xs text-slate-400 italic">
+              Suggerimento: per i dettagli consulta il glossario.
+            </p>
+          </div>
+          <div className="bg-slate-800 p-5 rounded-lg shadow-lg border border-slate-700 hover:border-blue-500 transition-all">
+            <h3 className="text-lg font-semibold text-slate-100 mb-2 flex items-center">
+              <Music className="w-5 h-5 text-blue-400 mr-2" />
+              Indicazioni di studio
+            </h3>
+            <p className="text-sm text-slate-300 mb-3">
+              La difficoltà non è la velocità ma il controllo del suono, del respiro e del pedale.
+            </p>
+            <button
+              onClick={() => openModal("Gymnopédie n. 1: impostazione esecutiva", <InterpretazioneModal />)}
+              className="text-sm text-blue-400 hover:text-blue-300 font-semibold flex items-center group"
+            >
+              Apri
+              <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </div>
+        </div>
+        {/* Curiosità espandibile */}
+        <div className="bg-slate-800 rounded-lg shadow overflow-hidden border border-slate-700 mt-6">
           <button
-            type="button"
-            onClick={() => setOpenCuriosita((v) => !v)}
-            className={cx(
-              "w-full px-5 py-4 flex items-center justify-between text-left",
-              openCuriosita ? "bg-slate-900" : "bg-transparent hover:bg-slate-900/60"
-            )}
+            onClick={() => setOpenCuriosita(!openCuriosita)}
+            className={`w-full p-5 flex justify-between items-center transition-all ${
+              openCuriosita
+                ? "sticky top-20 z-10 bg-slate-700 text-white"
+                : "bg-slate-800 text-slate-100 hover:bg-slate-900"
+            }`}
           >
-            <div className="flex items-center gap-3">
-              <BookOpen className="w-5 h-5 text-blue-400" />
-              <div>
-                <div className="text-slate-100 font-semibold">curiosità operative per lo studio</div>
-                <div className="text-xs text-slate-400">titolo, tempo, pedale, ricezione</div>
+            <div className="flex items-center space-x-3">
+              <BookOpen className="w-5 h-5" />
+              <div className="text-left">
+                <h3 className="text-lg font-semibold">Curiosità: Debussy e la svolta</h3>
+                <span className="text-sm opacity-90">Orchestrazioni e ricezione</span>
               </div>
             </div>
-            <ChevronDown className={cx("w-5 h-5 text-slate-200 transition-transform", openCuriosita && "rotate-180")} />
+            <ChevronDown className={`w-6 h-6 transition-transform ${openCuriosita ? "rotate-180" : ""}`} />
           </button>
-
           {openCuriosita && (
-            <div className="px-5 pb-5 pt-3 space-y-3 text-sm text-slate-200 leading-relaxed">
-              <div className="grid sm:grid-cols-2 gap-3">
-                {[
-                  {
-                    label: "il titolo non chiude il senso",
-                    text: "‘gymnopédie’ funziona come cornice: suggerisce un altrove senza definire una storia univoca.",
-                  },
-                  {
-                    label: "il tempo è una scelta di suono",
-                    text: "lent et douloureux implica un suono controllato e un respiro sobrio: poco gesto, molta qualità timbrica.",
-                  },
-                  {
-                    label: "pedale come filtro",
-                    text: "pedale misurato, cambi frequenti. l’obiettivo è risonanza senza perdita di disegno.",
-                  },
-                  {
-                    label: "ricezione",
-                    text: "pagina breve, facilmente trascrivibile e riusabile: è un motivo della sua diffusione in media e arrangiamenti.",
-                  },
-                ].map((b, i) => (
-                  <div key={i} className="bg-slate-950/40 border border-slate-700 rounded-lg p-4">
-                    <div className="text-slate-100 font-semibold">{b.label}</div>
-                    <div className="text-xs text-slate-300 mt-2">{b.text}</div>
+            <div className="p-6 pt-24 bg-slate-900 space-y-4 text-sm text-slate-300 leading-relaxed">
+              <h4 className="text-lg font-semibold text-slate-100 mb-3">
+                Contesto biografico e compositivo
+              </h4>
+
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-amber-500">
+                <h5 className="text-base font-semibold text-slate-100 mb-2">Il Conservatorio di Parigi: disillusione e resistenza</h5>
+                <p className="mb-2">
+                  Satie frequentò il Conservatorio in due periodi (1879–1882 e 1885–1887) con risultati disastrosi.
+                  Fu giudicato "dotato ma indolente" (1880), "lo studente più pigro del Conservatorio" (1881),
+                  "insignificante e laborioso" (1885), e "privo di valore". Nel 1882, a 16 anni, venne espulso dopo
+                  un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven.
+                </p>
+                <p className="text-xs text-slate-400 italic">
+                  Tra il 1882 e il 1883, fuori dal Conservatorio, si dedicò a letture voraci (Voltaire, Dumas, Andersen)
+                  e sviluppò le sue preferenze musicali: Bach sopra tutto, seguito da Chopin e Schumann. Orledge, uno dei
+                  suoi biografi, parla di dislessia e resistenza alla tecnica virtuosistica.
+                </p>
+              </div>
+
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
+                <h5 className="text-base font-semibold text-slate-100 mb-2">Montmartre 1887–1888: il pianista cabaret</h5>
+                <p className="mb-2">
+                  A 21 anni, dopo aver abbandonato definitivamente il Conservatorio e dopo un breve servizio militare
+                  (dal quale uscì dopo essersi procurato deliberatamente una bronchite), Satie trova lavoro come <strong>secondo pianista</strong> al <strong>Chat Noir</strong>, cabaret artistico fondato nel 1881 da Rodolphe Salis. Non è solo un locale dove bere: è un luogo di sperimentazione dove poeti, pittori e musicisti si mescolano, discutono, collaborano. Vi passarono Claude Debussy, Paul Verlaine, Toulouse-Lautrec.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-2 my-3">
+                  <div className="rounded-lg overflow-hidden border border-slate-600">
+                    <img
+                      src="/images/Auberge du clou.jpg"
+                      alt="Auberge du Clou cabaret"
+                      className="w-full h-32 object-cover"
+                    />
+                    <p className="text-xs text-slate-400 p-2 italic bg-slate-900/50">
+                      Auberge du Clou: altro celebre cabaret di Montmartre frequentato da artisti bohémien
+                    </p>
                   </div>
-                ))}
-              </div>
-
-              <div className="bg-slate-950/40 border border-slate-700 rounded-lg p-4">
-                <div className="flex items-center gap-2 text-slate-100 font-semibold">
-                  <FileText className="w-4 h-4 text-blue-400" />
-                  suggerimento pratico
+                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                    <img
+                      src="/images/Bonjour-Biquii.jpg"
+                      alt="Stampa d'epoca parigina"
+                      className="w-full h-28 object-contain"
+                    />
+                    <p className="text-xs text-slate-400 p-2 italic bg-slate-900/50">
+                      "Bonjour Biquii": stampa ironica della cultura visiva parigina fin de siècle
+                    </p>
+                  </div>
                 </div>
-                <p className="text-xs text-slate-300 mt-2">
-                  se ti serve una frase breve per chiudere il blocco: “qui la difficoltà non è la quantità di note,
-                  ma la qualità del tempo e della risonanza”.
+                <p className="mb-2">
+                  È in questo ambiente bohémien che Satie stringe amicizia con Claude Debussy e incontra il poeta <strong>Patrice Contamine de Latour</strong>, la cui influenza sarà determinante per la genesi delle Gymnopédies. La poesia <em>Les Antiques</em> di Contamine accompagnerà la prima pubblicazione della Gymnopédie n. 1 nell'estate 1888.
+                </p>
+                <p className="text-xs text-slate-400 italic">
+                  L'ambiente di Montmartre, con i suoi café-cabarets, il simbolismo e l'esoterismo, gli offre una libertà
+                  artistica che il Conservatorio gli aveva negato. La musica non è un rito religioso da sala da concerto, ma accompagnamento alla vita, al fumo, all'alcol, alla poesia. L'arte 'alta' si mescola con la cultura popolare. Satie oppone a Wagner — che domina l'Europa — un'armonia
+                  che crea vuoti, oscillazioni di settime maggiori e un futuro sospeso invece di tensioni drammatiche.
                 </p>
               </div>
 
-              <div className="bg-slate-950/40 border border-slate-700 rounded-lg p-4">
-                <p className="text-sm text-slate-200">
-                  per link e documenti:{" "}
-                  <button
-                    type="button"
-                    className="text-blue-300 underline decoration-dotted hover:text-blue-200"
-                    onClick={handleFontiNavigation}
-                  >
-                    fonti
-                  </button>
-                  .
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500 mt-4">
+                <h5 className="text-base font-semibold text-slate-100 mb-2">La Francia del 1888: Belle Époque e fermento</h5>
+                <p className="mb-2">
+                  Il 1888 è un anno di fermento culturale e scientifico. La <strong>Torre Eiffel</strong> è in costruzione per l'Esposizione Universale del 1889 (sarà inaugurata il 31 marzo 1889). <strong>Louis Pasteur</strong> fonda l'Istituto Pasteur (teoria dei germi che rivoluziona la medicina). <strong>Heinrich Hertz</strong> dimostra l'esistenza delle onde elettromagnetiche, aprendo la strada alla radio. <strong>George Eastman</strong> brevetta la prima fotocamera portatile Kodak.
                 </p>
+                <p className="mb-2 text-sm">
+                  In questo contesto di trasformazione, Parigi è la capitale mondiale dell'arte. L'Impressionismo ha già rivoluzionato la pittura, ma ora nascono nuove correnti. Il <strong>Simbolismo</strong> domina la letteratura e si infiltra nelle arti visive: i simbolisti rifiutano il realismo descrittivo in favore dell'evocazione, del sogno, della corrispondenza tra i sensi (sinestesia). Satie associa la sua musica al colore bianco, creando quello che definirà 'musica bianca': priva di ornamenti, trasparente, essenziale.
+                </p>
+              </div>
+
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-purple-500 mt-4">
+                <h5 className="text-base font-semibold text-slate-100 mb-2">La rivoluzione armonica: l'altalena che non tocca mai terra</h5>
+                <p className="mb-2">
+                  Le prime quattro battute della Gymnopédie n.1 sono tra le più innovative della storia della musica. Il brano non inizia sul Re (la 'casa' tonale), ma su un <strong>accordo di Sol maggiore</strong> (la sottodominante). Poi alterna continuamente:
+                </p>
+                <ul className="text-sm list-disc list-inside space-y-1 mb-2">
+                  <li><strong>Battuta 1:</strong> Sol maggiore con settima (Sol-Si-Re-Fa#)</li>
+                  <li><strong>Battuta 2:</strong> Re maggiore con settima (Re-Fa#-La-Do#)</li>
+                  <li><strong>Battute 3-4:</strong> ripetizione</li>
+                </ul>
+                <p className="text-xs text-slate-400 italic">
+                  Questa alternanza a pendolo crea un effetto fluttuante, privo del tipico movimento armonico. È come dondolarsi su un'altalena che non tocca mai terra. Le note Fa# e Do# funzionano da 'collante' tra i due accordi. Nella musica tradizionale, l'armonia funziona come una storia: c'è tensione (la dominante) che si risolve nella calma (la tonica). <strong>Satie elimina questa narrazione.</strong> Non c'è climax, non c'è conclusione. Solo contemplazione.
+                </p>
+              </div>
+
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-rose-500 mt-4">
+                <h5 className="text-base font-semibold text-slate-100 mb-2">Debussy e la svolta orchestrale: aiutare l'amico</h5>
+                <p className="mb-2">
+                  Nel 1896, a casa del direttore d'orchestra <strong>Gustave Doret</strong>, Satie eseguì le Gymnopédies al pianoforte. Secondo le cronache, non le suonò particolarmente bene. Ma Doret ne rimase così colpito da commissionare a Claude Debussy l'orchestrazione. L'intervento di Debussy aveva anche motivazioni pratiche: nel 1896 la popolarità e la situazione finanziaria di Satie erano in declino, mentre Debussy godeva di crescente successo.
+                </p>
+                <p className="mb-2 text-sm">
+                  <em>«Questa fu l'unica occasione in cui Debussy orchestrò l'opera di un altro compositore.»</em> — Robert Orledge, musicologo
+                </p>
+                <p className="mb-2">
+                  Debussy orchestrò solo la n.1 e n.3, ritenendo che la n.2 «non si prestasse all'orchestrazione». Curiosamente, <strong>invertì la numerazione</strong> nella pubblicazione: la Prima di Satie divenne la «Terza» orchestrale, e viceversa.
+                </p>
+                <p className="text-xs text-slate-400 italic">
+                  <strong>Scelte timbriche:</strong> Debussy scelse un organico contenuto per preservare il carattere intimo: 2 flauti, 1 oboe, 4 corni, 2 arpe, archi con sordina. L'oboe porta la linea melodica malinconica, le arpe ricreano le figure accompagnamentali gentili del pianoforte, gli archi con sordina forniscono supporto armonico mantenendo la trasparenza. Prima esecuzione: 20 febbraio 1897 alla Société Nationale. Riproposta il 25 marzo 1911 con la direzione dello stesso Debussy.
+                </p>
+              </div>
+
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-cyan-500 mt-4">
+                <h5 className="text-base font-semibold text-slate-100 mb-2">Eredità e influenze: da Cage all'ambient</h5>
+                <p className="mb-2">
+                  L'influenza di Satie sulla musica del Novecento è enorme. <strong>Claude Debussy</strong> fu profondamente influenzato dall'amico. <strong>Maurice Ravel</strong> ammirava Satie ed eseguì le sue opere in concerto. Il <strong>Gruppo dei Sei</strong> (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre) considerava Satie un padre spirituale: rifiutavano wagnerismo e impressionismo, cercando una musica più diretta e quotidiana.
+                </p>
+                <p className="mb-2 text-sm">
+                  <strong>John Cage</strong> (1912-1992) fu il grande riscopritore di Satie nel dopoguerra. <em>«Satie è indispensabile»</em> — trovò in lui un precursore: rifiuto della narrazione musicale, interesse per silenzio e spazio, musica come processo. Nel 1963 organizzò la prima esecuzione integrale di <em>Vexations</em> (tema ripetuto 840 volte, circa 18 ore), anticipando il minimalismo.
+                </p>
+                <div className="rounded-lg overflow-hidden border border-slate-600 my-3 bg-slate-950">
+                  <img
+                    src="/images/Commento su esecuzione vexations.jpg"
+                    alt="Commento su esecuzione di Vexations"
+                    className="w-full h-24 object-contain"
+                  />
+                  <p className="text-xs text-slate-400 p-2 italic bg-slate-900/50">
+                    Screenshot di un commento ironico sotto un video YouTube dell'esecuzione di Vexations: testimonianza dell'eredità cult di Satie
+                  </p>
+                </div>
+                <p className="mb-2 text-sm">
+                  I <strong>minimalisti americani</strong> (Steve Reich, Philip Glass, Terry Riley) riconoscono in Satie un antenato. Le Gymnopédies anticipano: ripetizione di pattern, armonia statica, rifiuto del climax, economia di mezzi.
+                </p>
+                <p className="text-xs text-slate-400 italic">
+                  <strong>Brian Eno e la musica ambient:</strong> Nel 1917 Satie concepì la <em>Musique d'ameublement</em> (musica d'arredamento): composizioni pensate per far parte dell'ambiente, non per essere ascoltate attentamente. Nel 1978 Eno pubblicò <em>Ambient 1: Music for Airports</em>, riconoscendo il debito: <em>«La musica ambiente deve poter ospitare molti livelli di attenzione d'ascolto senza imporne uno in particolare»</em>. Le Gymnopédies, sebbene non pensate come musica d'arredamento, ne condividono l'estetica. Le playlist «Lo-fi beats to study to» che spopolano oggi devono molto a Satie.
+                </p>
+              </div>
+
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-fuchsia-500 mt-4">
+                <h5 className="text-base font-semibold text-slate-100 mb-2">Cinema, TV e cultura pop: l'onnipresenza della Gymnopédie</h5>
+                <p className="mb-2">
+                  La Gymnopédie n.1 è una delle musiche classiche più utilizzate nei media. Perché funziona così bene? <strong>Riconoscibilità</strong> (bastano le prime note), <strong>neutralità emotiva</strong> (né troppo allegra né troppo triste), <strong>non invasività</strong> (accompagna senza sovrastare, perfetta per la «musica d'arredamento»), <strong>pubblico dominio</strong> (libera da copyright).
+                </p>
+                <div className="grid sm:grid-cols-2 gap-2 mb-2 text-xs">
+                  <div className="bg-slate-900/50 p-2 rounded">
+                    <strong>Film:</strong> Fuoco fatuo (1963, Louis Malle - sequenza iconica), I Tenenbaum (2001, Wes Anderson), Man on Wire (2008, Philippe Petit), Un'altra donna (1988, Woody Allen), Hugo Cabret (2011, Scorsese), About Schmidt (2002), Chocolat (2000)
+                  </div>
+                  <div className="bg-slate-900/50 p-2 rounded">
+                    <strong>TV & Videogiochi:</strong> Serie 22.11.63 (Stephen King), spot pubblicitari (profumi, auto di lusso), Mother 3 (2006, «Leder's Gymnopedie»), The Legend of Zelda: Ocarina of Time (tema schermata titolo)
+                  </div>
+                </div>
+                <p className="text-xs text-slate-400 italic">
+                  <strong>Arrangiamenti celebri:</strong> Blood, Sweat & Tears (1968, «Variations on a Theme by Erik Satie», Grammy Award), Sky (1979, album debutto), Gary Numan (1980), 12 Violoncellisti di Berlino (2007, arrangiamento Kaiser-Lindemann), Branford Marsalis (1990, sassofono jazz).
+                </p>
+              </div>
+
+              <div className="bg-slate-900/50 p-4 rounded-lg border-l-2 border-blue-500/30 mt-2">
+                <h4 className="text-base font-semibold text-slate-100 mb-2 flex items-center">
+                  <span className="mr-2">🎵</span>
+                  Ascolto e spartito
+                </h4>
+                <p className="text-sm text-slate-300 mb-3">
+                  Spartito e materiali pubblici: IMSLP (pagina "3 Gymnopédies").
+                </p>
+                <a
+                  href="https://imslp.org/wiki/3_Gymnop%C3%A9dies_(Satie,_Erik)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded text-sm font-semibold transition-colors"
+                >
+                  <FileText className="w-4 h-4" />
+                  Apri IMSLP
+                </a>
               </div>
             </div>
           )}
@@ -1016,18 +1242,18 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
   );
 };
 
+// Sezione Analisi: utilizza le schede definite sopra e il viewer PDF
 const AnalysisSection = () => {
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <Brain className="w-5 h-5 text-blue-400" />
-          analisi operativa
+          Analisi operativa
         </h2>
         <p className="text-sm text-slate-300 mt-2">
-          obiettivo: trasformare informazioni in scelte esecutive (tempo, suono, pedale).
+          Obiettivo: trasformare le informazioni in scelte esecutive (tempo, suono, pedale).
         </p>
-
         <div className="grid md:grid-cols-2 gap-4 mt-5">
           {analysisCards.map((c, i) => (
             <div key={i} className="bg-slate-950/40 border border-slate-700 rounded-xl p-5">
@@ -1048,34 +1274,99 @@ const AnalysisSection = () => {
         </div>
       </div>
 
-      <PdfScoreViewer pdfUrl="/spartito-gymnopedie-1.pdf" title="spartito: gymnopédie n. 1" />
+      {/* Immagini di supporto analitico */}
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h3 className="text-lg font-semibold text-slate-100 mb-4 flex items-center gap-2">
+          <FileText className="w-5 h-5 text-amber-400" />
+          Materiali di studio e analisi
+        </h3>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
+            <img
+              src="/images/Modi greci.jpg"
+              alt="Schema dei modi greci"
+              className="w-full h-48 object-contain bg-slate-950 p-3"
+            />
+            <div className="p-3">
+              <p className="text-sm font-semibold text-slate-200 mb-1">Schema dei modi greci</p>
+              <p className="text-xs text-slate-400 italic">
+                Dorico, frigio, lidio: i modi della musica antica greca che ispirarono Satie per l'ambientazione arcaica delle Gymnopédies. Il titolo stesso richiama le danze spartane della Grecia classica.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
+            <img
+              src="/images/nota ricorrente-Fa-diesis-gymnopedie-.jpeg"
+              alt="Analisi della nota ricorrente Fa diesis"
+              className="w-full h-64 object-contain bg-slate-900 p-2"
+            />
+            <div className="p-3">
+              <p className="text-sm font-semibold text-slate-200 mb-1">Nota ricorrente: Fa diesis</p>
+              <p className="text-xs text-slate-400 italic">
+                Analisi della ricorrenza del Fa# nella Gymnopédie n.1: questa nota funziona da "collante" armonico tra gli accordi di Sol maggiore e Re maggiore con settima, creando l'effetto di altalena fluttuante caratteristico del brano.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <PdfScoreViewer />
     </div>
   );
 };
 
+// Sezione Interpreti: struttura pronta per incollare link e note
 const InterpretersSection = () => {
+  // dati predefiniti: il front-end rimane vuoto se nessun link è fornito
+  const interpretersData = [
+    {
+      name: "piano solo",
+      items: [
+        {
+          label: "Registrazioni (selezione personale)",
+          note:
+            "Inserisci qui i link che preferisci. Struttura pronta per incollare URL e note.",
+          links: [
+            { title: "Link 1", url: "" },
+            { title: "Link 2", url: "" },
+          ],
+        },
+      ],
+    },
+    {
+      name: "orchestrazioni (Debussy)",
+      items: [
+        {
+          label: "Gymnopédies orchestrate",
+          note:
+            "Debussy orchestrò due numeri (1 e 3). Utile per confrontare tinta e bilanciamento.",
+          links: [
+            { title: "Link 1", url: "" },
+            { title: "Link 2", url: "" },
+          ],
+        },
+      ],
+    },
+  ];
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <Music className="w-5 h-5 text-blue-400" />
-          interpreti e ascolti
+          Interpreti e ascolti
         </h2>
         <p className="text-sm text-slate-300 mt-2">
-          struttura pronta: incolla link e note. nessun link è obbligatorio.
+          Struttura pronta: incolla link e note. Nessun link è obbligatorio.
         </p>
-
         <div className="mt-5 space-y-4">
           {interpretersData.map((block, i) => (
             <div key={i} className="bg-slate-950/40 border border-slate-700 rounded-xl p-5">
               <div className="text-slate-100 font-semibold">{block.name}</div>
-
               <div className="mt-3 space-y-4">
                 {block.items.map((it, j) => (
                   <div key={j} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
                     <div className="text-sm text-slate-100 font-semibold">{it.label}</div>
                     <div className="text-xs text-slate-300 mt-1">{it.note}</div>
-
                     <div className="mt-3 space-y-2">
                       {it.links.map((l, k) => (
                         <div key={k} className="flex items-center justify-between gap-3">
@@ -1090,7 +1381,7 @@ const InterpretersSection = () => {
                               apri <ExternalLink className="w-3 h-3" />
                             </a>
                           ) : (
-                            <span className="text-xs text-slate-500">url vuoto</span>
+                            <span className="text-xs text-slate-500">URL vuoto</span>
                           )}
                         </div>
                       ))}
@@ -1106,18 +1397,18 @@ const InterpretersSection = () => {
   );
 };
 
+// Sezione Glossario
 const GlossarySection = () => {
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <Library className="w-5 h-5 text-blue-400" />
-          glossario
+          Glossario
         </h2>
         <p className="text-sm text-slate-300 mt-2">
-          definizioni brevi per uso in app (tooltip, schede, spiegazioni).
+          Definizioni brevi per uso nell'applicazione (tooltip, schede, spiegazioni).
         </p>
-
         <div className="mt-5 space-y-5">
           {glossaryData.map((cat, i) => (
             <div key={i} className="bg-slate-950/40 border border-slate-700 rounded-xl p-5">
@@ -1126,7 +1417,9 @@ const GlossarySection = () => {
                 {cat.items.map((it, j) => (
                   <div key={j} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
                     <div className="text-sm text-slate-100 font-semibold">{it.term}</div>
-                    <div className="text-xs text-slate-300 mt-2 leading-relaxed">{it.definition}</div>
+                    <div className="text-xs text-slate-300 mt-2 leading-relaxed">
+                      {it.definition}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -1138,36 +1431,33 @@ const GlossarySection = () => {
   );
 };
 
+// Sezione Impara: flashcards per memorizzare
 const ImparaSection = () => {
   const [idx, setIdx] = useState(0);
   const [show, setShow] = useState(false);
-
   const card = flashcardsData[idx];
-
   const next = () => {
     setShow(false);
     setIdx((i) => (i + 1) % flashcardsData.length);
   };
-
   const prev = () => {
     setShow(false);
     setIdx((i) => (i - 1 + flashcardsData.length) % flashcardsData.length);
   };
-
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <GraduationCap className="w-5 h-5 text-blue-400" />
-          impara
+          Impara
         </h2>
-        <p className="text-sm text-slate-300 mt-2">flashcard essenziali per fissare i dati.</p>
-
+        <p className="text-sm text-slate-300 mt-2">
+          Flashcard essenziali per fissare i dati principali.
+        </p>
         <div className="mt-6 bg-slate-950/40 border border-slate-700 rounded-2xl p-6">
           <div className="flex items-center justify-between gap-3">
             <div className="text-xs text-slate-400">
-              carta {idx + 1} / {flashcardsData.length} · livello:{" "}
-              <span className="text-slate-200 font-semibold">{card.level}</span>
+              Carta {idx + 1} / {flashcardsData.length} · livello: <span className="text-slate-200 font-semibold">{card.level}</span>
             </div>
             <div className="flex items-center gap-2">
               <button
@@ -1188,24 +1478,24 @@ const ImparaSection = () => {
               </button>
             </div>
           </div>
-
           <div className="mt-5">
-            <div className="text-slate-100 font-semibold">domanda</div>
+            <div className="text-slate-100 font-semibold">Domanda</div>
             <div className="mt-2 text-sm text-slate-200 leading-relaxed">{card.q}</div>
-
             <button
               type="button"
               onClick={() => setShow((v) => !v)}
               className="mt-5 inline-flex items-center gap-2 px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold"
             >
-              {show ? "nascondi risposta" : "mostra risposta"}
-              <ChevronDown className={cx("w-4 h-4 transition-transform", show && "rotate-180")} />
+              {show ? "Nascondi risposta" : "Mostra risposta"}
+              <ChevronDown className={`w-4 h-4 transition-transform ${show ? "rotate-180" : ""}`} />
             </button>
-
             {show && (
               <div className="mt-4 bg-slate-900/60 border border-slate-700 rounded-lg p-4">
-                <div className="text-slate-100 font-semibold">risposta</div>
+                <div className="text-slate-100 font-semibold">Risposta</div>
                 <div className="mt-2 text-sm text-slate-200 leading-relaxed">{card.a}</div>
+                {card.details && (
+                  <div className="mt-1 text-xs text-slate-400">{card.details}</div>
+                )}
               </div>
             )}
           </div>
@@ -1215,24 +1505,25 @@ const ImparaSection = () => {
   );
 };
 
+// Sezione Fonti: elenco dei link e note
 const FontiSection = () => {
-  const [open, setOpen] = useState(null);
-
+  const [openIndex, setOpenIndex] = useState(null);
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <BookOpen className="w-5 h-5 text-blue-400" />
-          fonti
+          Fonti
         </h2>
-        <p className="text-sm text-slate-300 mt-2">link per spartito, audio e note di contesto.</p>
-
+        <p className="text-sm text-slate-300 mt-2">
+          Link per spartiti, audio e note di contesto.
+        </p>
         <div className="mt-6 space-y-4">
           {sourcesData.map((g, i) => (
             <div key={i} className="bg-slate-950/40 border border-slate-700 rounded-xl overflow-hidden">
               <button
                 type="button"
-                onClick={() => setOpen((v) => (v === i ? null : i))}
+                onClick={() => setOpenIndex((v) => (v === i ? null : i))}
                 className="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-slate-900/60"
               >
                 <div className="flex items-center gap-3">
@@ -1242,10 +1533,9 @@ const FontiSection = () => {
                     <div className="text-xs text-slate-400">{g.items.length} elementi</div>
                   </div>
                 </div>
-                <ChevronDown className={cx("w-5 h-5 text-slate-200 transition-transform", open === i && "rotate-180")} />
+                <ChevronDown className={`w-5 h-5 text-slate-200 transition-transform ${openIndex === i ? "rotate-180" : ""}`} />
               </button>
-
-              {open === i && (
+              {openIndex === i && (
                 <div className="px-5 pb-5 pt-1 space-y-3">
                   {g.items.map((it, j) => (
                     <div key={j} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
@@ -1276,15 +1566,13 @@ const FontiSection = () => {
   );
 };
 
-/* -----------------------------
-   app
------------------------------ */
+/* ----------------------------------
+   App principale
+----------------------------------- */
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("introduzione");
-
   const tabIndex = useMemo(() => TABS.indexOf(activeTab), [activeTab]);
-
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => {
       const nextIndex = Math.min(TABS.length - 1, tabIndex + 1);
@@ -1297,24 +1585,18 @@ export default function App() {
     trackMouse: true,
     preventScrollOnSwipe: true,
   });
-
   useEffect(() => {
-    // blocco semplice per evitare tab non validi
+    // Impedisce tab non validi
     if (!TABS.includes(activeTab)) setActiveTab("introduzione");
   }, [activeTab]);
-
   const tabMeta = {
     introduzione: { label: "introduzione", icon: BookOpen },
-    contesto: { label: "contesto", icon: Globe },
-    biografia: { label: "biografia", icon: History },
     analysis: { label: "analisi", icon: Brain },
     interpreters: { label: "interpreti", icon: Music },
     glossary: { label: "glossario", icon: Library },
     impara: { label: "impara", icon: GraduationCap },
-    eredita: { label: "eredità", icon: Sparkles },
     fonti: { label: "fonti", icon: FileText },
   };
-
   return (
     <ErrorBoundary>
       <div className="min-h-screen bg-slate-950 text-slate-100" {...swipeHandlers}>
@@ -1324,12 +1606,11 @@ export default function App() {
               <div className="min-w-0">
                 <div className="text-sm text-slate-400">satie</div>
                 <div className="text-lg sm:text-xl font-bold text-slate-100 truncate">
-                  gymnopédie n. 1
+                  Gymnopédie n. 1
                 </div>
               </div>
-              <div className="text-xs text-slate-400 whitespace-nowrap">app.jsx</div>
+              <div className="text-xs text-slate-400 whitespace-nowrap">satie.jsx</div>
             </div>
-
             <nav className="flex gap-2 overflow-x-auto pb-1">
               {TABS.map((t) => (
                 <TabButton
@@ -1343,22 +1624,17 @@ export default function App() {
             </nav>
           </div>
         </header>
-
         <main className="max-w-6xl mx-auto px-4 py-7">
           {activeTab === "introduzione" && (
             <IntroduzioneSection onNavigateToFonti={() => setActiveTab("fonti")} />
           )}
-          {activeTab === "contesto" && <ContestoSection />}
-          {activeTab === "biografia" && <BiographySection />}
           {activeTab === "analysis" && <AnalysisSection />}
           {activeTab === "interpreters" && <InterpretersSection />}
           {activeTab === "glossary" && <GlossarySection />}
           {activeTab === "impara" && <ImparaSection />}
-          {activeTab === "eredita" && <LegacySection />}
           {activeTab === "fonti" && <FontiSection />}
         </main>
-
-        <Footer />
+        <Footer setActiveTab={setActiveTab} />
       </div>
     </ErrorBoundary>
   );
