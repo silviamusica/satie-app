@@ -460,7 +460,7 @@ const flashcardsData = [
     q: "Quando furono composte le tre Gymnopédies?",
     a: "Tra febbraio e aprile 1888",
     level: "intermedio",
-    details: "Satie le completò entro il 2 aprile 1888. Aveva 21 anni, era appena uscito dal Conservatorio e lavorava come pianista al Chat Noir. Un aneddoto racconta che annunciò l'intenzione di comporle al cabaret, e il proprietario Rodolphe Salis commentò sarcastico: 'Davvero una bella professione!'.",
+    details: "Satie le completò entro il 2 aprile 1888. Aveva 21 anni, era appena uscito dal Conservatorio e lavorava come pianista al Chat Noir. Un aneddoto racconta che, presentato a Rodolphe Salis (proprietario del Chat Noir) nel dicembre 1887, Satie si definì 'gymnopediste'. Salis commentò sarcastico: 'Davvero una bella professione!'. Satie si sentì quindi in dovere di produrre effettivamente queste composizioni.",
   },
   {
     q: "Qual era il titolo originale della prima Gymnopédie?",
@@ -617,16 +617,6 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
   // Modal con timeline biografica
   const LifeModal = () => (
     <div className="space-y-4">
-      <div className="mb-3 rounded-lg overflow-hidden bg-slate-950">
-        <img
-          src="/images/Bonjour-Biquii.jpg"
-          alt="Erik Satie - Bonjour Biquii"
-          className="w-full h-80 object-contain rounded-lg"
-        />
-        <p className="text-sm text-slate-400 mt-2 italic text-center px-2 pb-2">
-          Erik Satie (1866–1925), Bonjour Biquii
-        </p>
-      </div>
       <div className="space-y-2.5">
         {satieLifeTimeline.map((item, idx) => (
           <React.Fragment key={idx}>
@@ -787,7 +777,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
       <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-amber-500 mb-3">
         <h5 className="text-base font-semibold text-slate-100 mb-2">Composizione e titolo misterioso (febbraio-aprile 1888)</h5>
         <p className="mb-2">
-          Satie compose le tre Gymnopédies tra <strong>febbraio e aprile 1888</strong>, completandole entro il <strong>2 aprile</strong>. Aveva 21 anni, era appena uscito dal Conservatorio e lavorava come pianista al Chat Noir. Un aneddoto racconta che annunciò l'intenzione di comporle al cabaret, e il proprietario Rodolphe Salis commentò sarcastico: <em>«Davvero una bella professione!»</em>. La composizione iniziò due mesi dopo.
+          Satie compose le tre Gymnopédies tra <strong>febbraio e aprile 1888</strong>, completandole entro il <strong>2 aprile</strong>. Aveva 21 anni, era appena uscito dal Conservatorio e lavorava come pianista al Chat Noir. Un aneddoto racconta che nel <strong>dicembre 1887</strong>, presentato a Rodolphe Salis (proprietario del Chat Noir), Satie si definì <em>«gymnopediste»</em>. Salis commentò sarcastico: <em>«Davvero una bella professione!»</em> Satie si sentì quindi in dovere di produrre effettivamente queste composizioni, iniziando la composizione due mesi dopo.
         </p>
         <p className="mb-2 text-sm">
           Il titolo <strong>Gymnopédie</strong> deriva dal greco Γυμνοπαιδίαι (Gymnopaedia), festività spartana annuale. «Gymnos» significa «nudo» o «disarmato»: giovani uomini danzavano nudi eseguendo esercizi ginnici e canti corali.
@@ -1320,29 +1310,51 @@ const InterpretersSection = () => {
   // dati predefiniti: il front-end rimane vuoto se nessun link è fornito
   const interpretersData = [
     {
-      name: "piano solo",
+      name: "Piano solo",
+      artistDescription: "<b>Khatia Buniatishvili</b>: pianista georgiana di fama internazionale, nota per la sua espressività e il repertorio romantico e impressionista.\n<b>Aldo Ciccolini</b>: pianista italo-francese, celebre interprete della musica francese, in particolare di Satie, e figura di riferimento per la scuola pianistica europea del Novecento.",
       items: [
         {
-          label: "Registrazioni (selezione personale)",
+          label: "Esecuzioni pianistiche celebri",
           note:
-            "Inserisci qui i link che preferisci. Struttura pronta per incollare URL e note.",
+            "Due interpretazioni di riferimento per la Gymnopédie n.1: una moderna e una storica.",
           links: [
-            { title: "Link 1", url: "" },
-            { title: "Link 2", url: "" },
+            {
+              title: "Khatia Buniatishvili (YouTube)",
+              url: "https://www.youtube.com/watch?v=TL0xzp4zzBE",
+              description:
+                "Interpretazione pianistica recente e molto ascoltata di Gymnopédie No.1 da parte di Khatia Buniatishvili. La performance si distingue per fraseggio fluido e attenzione alla dinamica, proponendo un equilibrio tra chiarezza e introspezione, adatto a un pubblico moderno."
+            },
+            {
+              title: "Aldo Ciccolini (YouTube)",
+              url: "https://www.youtube.com/watch?v=2WfaotSK3mI",
+              description:
+                "Registrazione storica di Aldo Ciccolini, pianista noto per il suo repertorio francese. La lettura è caratterizzata da un tocco morbido e tempi ponderati, che riflettono la tradizione interpretativa del Novecento francese."
+            },
           ],
         },
       ],
     },
     {
-      name: "orchestrazioni (Debussy)",
+      name: "Orchestrazioni (Debussy)",
+      artistDescription: "<b>Claude Debussy</b>: compositore francese, massimo esponente dell'impressionismo musicale. Le sue orchestrazioni delle Gymnopédies hanno reso celebre Satie in tutto il mondo.\n<b>hr-Sinfonieorchester</b>: orchestra sinfonica tedesca di Francoforte, nota per la qualità delle sue esecuzioni e per la valorizzazione del repertorio classico e moderno.",
       items: [
         {
-          label: "Gymnopédies orchestrate",
+          label: "Orchestrazioni celebri di Gymnopédie n.1 (Claude Debussy)",
           note:
-            "Debussy orchestrò due numeri (1 e 3). Utile per confrontare tinta e bilanciamento.",
+            "Due versioni orchestrali di riferimento: la classica e una moderna con hr-Sinfonieorchester.",
           links: [
-            { title: "Link 1", url: "" },
-            { title: "Link 2", url: "" },
+            {
+              title: "Orchestrazione Debussy – versione classica (YouTube)",
+              url: "https://www.youtube.com/watch?v=YqKpAHvrOjw",
+              description:
+                "Versione orchestrale delle Gymnopédies orchestrate da Claude Debussy, includendo la No.1. Debussy riveste la partitura di Satie con colori orchestrali impressionisti che amplificano l’atmosfera meditativa originaria."
+            },
+            {
+              title: "Orchestrazione Debussy – hr-Sinfonieorchester (YouTube)",
+              url: "https://www.youtube.com/watch?v=wxWx0GCc5CA",
+              description:
+                "Esecuzione orchestrale condotta dall’hr-Sinfonieorchester (alternanza di Gymnopédie n.1 e n.3). Questa versione evidenzia la delicatezza timbrica e la trasparenza orchestrale tipica delle orchestrazioni debussiane, mostrando come l’adattamento amplia la tessitura rispetto alla versione per piano."
+            },
           ],
         },
       ],
@@ -1356,12 +1368,12 @@ const InterpretersSection = () => {
           Interpreti e ascolti
         </h2>
         <p className="text-sm text-slate-300 mt-2">
-          Struttura pronta: incolla link e note. Nessun link è obbligatorio.
         </p>
         <div className="mt-5 space-y-4">
           {interpretersData.map((block, i) => (
             <div key={i} className="bg-slate-950/40 border border-slate-700 rounded-xl p-5">
               <div className="text-slate-100 font-semibold">{block.name}</div>
+              <div className="text-xs text-slate-400 mb-3">{block.artistDescription}</div>
               <div className="mt-3 space-y-4">
                 {block.items.map((it, j) => (
                   <div key={j} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
@@ -1406,9 +1418,7 @@ const GlossarySection = () => {
           <Library className="w-5 h-5 text-blue-400" />
           Glossario
         </h2>
-        <p className="text-sm text-slate-300 mt-2">
-          Definizioni brevi per uso nell'applicazione (tooltip, schede, spiegazioni).
-        </p>
+      
         <div className="mt-5 space-y-5">
           {glossaryData.map((cat, i) => (
             <div key={i} className="bg-slate-950/40 border border-slate-700 rounded-xl p-5">
@@ -1590,12 +1600,12 @@ export default function App() {
     if (!TABS.includes(activeTab)) setActiveTab("introduzione");
   }, [activeTab]);
   const tabMeta = {
-    introduzione: { label: "introduzione", icon: BookOpen },
-    analysis: { label: "analisi", icon: Brain },
-    interpreters: { label: "interpreti", icon: Music },
-    glossary: { label: "glossario", icon: Library },
-    impara: { label: "impara", icon: GraduationCap },
-    fonti: { label: "fonti", icon: FileText },
+    introduzione: { label: "Introduzione", icon: BookOpen },
+    analysis: { label: "Analisi", icon: Brain },
+    interpreters: { label: "Interpreti", icon: Music },
+    glossary: { label: "Glossario", icon: Library },
+    impara: { label: "Impara", icon: GraduationCap },
+    fonti: { label: "Fonti", icon: FileText },
   };
   return (
     <ErrorBoundary>
