@@ -1,0 +1,426 @@
+0001 
+0002 GYMNOPÉDIE N. 1
+0003 di Erik Satie
+0004 Guida all'ascolto e all'analisi
+0005 Storia, contesto, interpretazioni e fortuna
+0006 A cura di Silvia Platania
+0007 Sognandoilpiano
+0008 
+0009 Indice
+0010 Introduzione: il suono di una rivoluzione silenziosa
+0011 Parte Prima: l'uomo dietro la musica
+0012 • Biografia essenziale
+0013 • Aneddoti e stranezze
+0014 • Amicizie e influenze
+0015 Parte Seconda: il contesto storico
+0016 • La Francia del 1888
+0017 • La Belle Époque
+0018 • Montmartre e il Chat Noir
+0019 Parte Terza: genesi delle Gymnopédies
+0020 Parte Quarta: analisi musicale
+0021 Parte Quinta: le interpretazioni
+0022 Parte Sesta: l'orchestrazione di Debussy
+0023 Parte Settima: la fortuna nei media
+0024 Parte Ottava: eredità e influenze
+0025 Appendice A: glossario dei termini musicali
+0026 Appendice B: cronologia
+0027 Appendice C: discografia consigliata
+0028 Bibliografia
+0029 
+0030 Parigi 1888: trasformazioni politiche e arte che si spoglia da romanticismo e regole accademiche
+0031 Ragazzo di 21 anni pianista cabaret (una sorta di pianobar dei giorni nostri) a Montmartre.
+0032 Compone tre piccoli brani che diventano le basi per musica impressionista, minimalista e d’ambiente. Quanti pianisti principianti e non hanno desiderato suonarla (e ci hanno anche provato scoprendo che non era poi così semplice!)
+0033 Stiamo parlando delle gymnopédie di Erik SATIE. 
+0034 Oggi scopriamo questo capolavoro per capire come un brano di 3 minuti sia diventato così importante nella storia delle musica.
+0035 1866/69 Honfleur
+0036 Eric Satie nasce nel 1866 a Honfleur, una cittadina portuale della Normandia, nel nord della Francia. 
+0037 Modificherà poi il suo nome in Erik con la «k», in omaggio alle sue origini vichinghe. La mamma era di origini scozzesi, il padre della Normandia.
+0038 Ha una sorella, Olga, e un fratello, Conrad, nati rispettivamente 2 e 3 anni dopo.
+0039 1870 Parigi (4 anni)
+0040 Nel 1870, quando ha 4 anni, il padre viene arruolato nella GUARDIA Nazionale per la guerra Franco-Prussiana e li lascia soli con la madre fino al 1871 quando torna per fare i bagagli e trovare fortuna a Parigi come traduttore (7 lingue)  con tutta la famiglia, dopo aver venduto la sua attvità A Honfleur.
+0041 1872 Honfleur (6 anni)
+0042 Purtroppo, l’anno successivo, Erik ha appena sei anni, la madre muore improvvisamente a soli 34 anni.
+0043 Mentre Erik e Conrad vengono mandati dai nonni paterni a Honfleur, la sorella Olga viene separata dai fratelli e mandata a vivere a Le Havre, sempre in Normandia, da un prozio materno.
+0044 
+0045 La nonna paterna, Eulalie, accetta i nipoti solo a condizione che vengano ribattezzati nella Chiesa Cattolica.
+0046 ISTRUZIONE FORMALE Erik (6 anni) viene iscritto come pensionante (interno) al Collège de Honfleur. Studia religione, lettura, scrittura, francese, inglese, tedesco, storia, geografia, aritmetica, letteratura, geometria, fisica e chimica. Viene descritto come uno studente mediocre e Satie stesso ricorderà quel periodo come insignificante; i suoi insegnanti avevano una bassa stima di lui ed era considerato un alunno difficile e non docile. Se la cava bene in latino.
+0047 ISTRUZIONE MUSICALE Prende le sue prime lezioni di musica serie con Gustave Vinot, organista della chiesa di Saint-Léonard ed ex allievo della Scuola Niedermeyer.Vinot gli insegnò il pianoforte, l'organo, il solfeggio e il canto gregoriano.
+0048 Lo Zio "Sea-Bird"Trascorre del tempo con suo zio Adrien (detto "Sea-Bird"), fratello del padre, un eccentrico personaggio proprietario di una barca che non usava mai per paura di rovinarla; con lui va a teatro, conosce i piaceri dell’alcol e di un mondo più stravagante rispetto alla severità della scuola e della nonna.
+0049 
+0050 1878-79 (12-13 anni)
+0051 Nel 1878 la nonna annega misteriosamente durante una nuotata quotidiana: 
+0052 I ragazzi sono costretti a tornare a Parigi, dal padre che, pochi mesi dopo, nel 1879, si sposa con Eugénie, pianista e compositrice da salotto. Da lei, Erik prende lezioni di piano, ma la detesta: lei, la sua musica, i suoi modi e sua madre.
+0053 ISTRUZIONE FORMALE
+0054 A Parigi la sua educazione scolastica formale termina bruscamente. Suo padre, Alfred non lo iscrive a una nuova scuola e lo porta a conferenze e lezioni al Collège de France e alla Sorbona, esponendolo a un ambiente accademico adulto in modo non strutturato. Per completare la sua istruzione, il padre organizza uno scambio: la matrigna di Satie dà lezioni di piano alla figlia di un certo M. Mallet, e in cambio Mallet dà lezioni a Erik. È un fallimento: Satie non impara nulla e le lezioni consistono spesso nel fissare il professore finché questi non si addormenta.
+0055 
+0056 La matrigna iscrive Erik al Conservatorio di Parigi. L'esperienza sarà disastrosa.Satie descriverà l'istituzione come "un vasto edificio molto scomodo e piuttosto brutto; una sorta di prigione distrettuale senza alcuna bellezza".  
+0057 STUDI MUSICALI
+0058 Studia pianoforte con un allievo di Chopin, ma i giudizi dei docenti sono impietosi:
+0059 • 1880 a 14 anni viene giudicato "dotato ma indolente".
+0060 • 1881 viene definito dal suo insegnante "lo studente più pigro del Conservatorio".
+0061 • 1882 a 16 anni, viene espulso per non aver ottenuto risultati soddisfacenti, in particolare dopo un'esecuzione mediocre di Beethoven della quale abbiamo ancora i rapporti ufficiali dall’archivio del Conservatorio: il 15 luglio 1882, durante l'esame annuale,  Satie, allora sedicenne, esegue il Finale della Sonata in La bemolle maggiore, Op. 26 di Ludwig van Beethoven. L'esecuzione viene giudicata tecnicamente "passabile" ma priva di qualità artistica, portando alla sua espulsione. Al riguardo viene scritto: «Passabile. Abbastanza comune. Lettura debole»; «Senza colore, ma esecuzione abbastanza buona. Lettura debole».
+0062 • Émile Decombes, il suo insegnante, dice che ha «lavorato meglio quest'anno» e che ha una «buona digitazione», pur ammettendo che suona «un po' automaticamente»
+0063 
+0064 1882 FUORI DAL CONSERVATORIO Satie ha 16 anni 
+0065 Il periodo che intercorre tra l'espulsione di Satie dal Conservatorio (giugno 1882) e il suo rientro come uditore nella classe di armonia (4 dicembre 1883) fu caratterizzato da letture personali, ascolto di musica e cambiamenti nell'attività di famiglia.
+0066 Letture voraci: Satie passava molto tempo a leggere. Gli autori che frequentava in questo periodo includevano Voltaire, i romanzi di Alexandre Dumas padre e di Eugène Chavette. Fu proprio in questo lasso di tempo che scoprì Hans Christian Andersen, che divenne una passione per tutta la vita.
+0067 Formazione del gusto musicale:
+0068 Sviluppò le sue preferenze musicali, ponendo Bach al di sopra di tutto, seguito da Chopin e Schumann.
+0069 Si recava alla chiesa della Trinité (probabilmente per ammirazione o per obbedire alla matrigna) per ascoltare l'organista Alexandre Guilmant, che visitava frequentemente,.
+0070 Era un assiduo frequentatore dei concerti al Trocadéro.
+0071 Già in quest'epoca derideva la grand opéra, preferendo invece le operette di Messager.
+0072 Contesto familiare (Editoria musicale): Mentre Erik era fuori dal Conservatorio, suo padre Alfred cambiò carriera. Nel 1882-1883, Alfred iniziò a pubblicare musica (inclusi brani della matrigna di Erik, Eugénie) e a comporre lui stesso (scrisse una polka intitolata Souvenir d'Honfleur nel 1883), immergendo il figlio in un ambiente di musica "commerciale" e da salotto. La famiglia si trasferì inoltre al numero 6 di rue de Marseilles nel 1883.
+0073 Durante una vacanza a Honfleur, compone la sua prima opera nota, un breve pezzo per pianoforte intitolato Allegro. È in questa occasione che firma per la prima volta come "Erik" (con la k) invece di Eric. Questo brano include una citazione della canzone Ma Normandie. 
+0074 
+0075 
+0076 Rientro in conservatorio
+0077 Dicembre 1883, 17 anni
+0078 Anche qui i giudizi furono duri: "Insignificante e laborioso" e "privo di valore". In realtà, a Satie non importava nulla degli studi in sé; l'unico vero vantaggio che traeva dall'iscrizione al Conservatorio era la possibilità di ridurre il servizio di leva obbligatorio dai canonici cinque anni a un solo anno. 
+0079 Non sopportava quell’ambiente accademico, pieno di restrizioni e di baroni.
+0080 
+0081 Nel novembre 1886, per sfuggire a questo ambiente, Satie si arruolò volontariamente nel 33º Reggimento di Fanteria ad Arras. La vita militare gli piacque ancor meno: si espose deliberatamente al freddo invernale a petto nudo, contraendo una grave bronchite che gli permise di essere congedato nel novembre 1887.1882 Dopo circa tre anni di scarsi risultati e valutazioni negative (tra cui giudizi come"mediocre" e "debole"), Satie viene espulso dal Conservatorio (16 anni)
+0082 1885 Tre anni dopo, nel  19 anni, Satie viene riammesso nella classe di pianoforte intermedio di Georges Mathias (che era stato insegnante della matrigna di Satie). Mathias valuta la sua esecuzione come "insignificante e laboriosa" e lo definisce uno studente "privo di valore" anche perché -ASCOLTATE- impiegava tre mesi per imparare un pezzo e non sapeva leggere a prima vista.
+0083 
+0084 Nel 1887,  Satie ha 21 anni e lascia definitivamente il Conservatorio. 
+0085 Orledge, uno dei più grandi biografi di Satie, parla di dislessia e resistenzaalla tecnica virtuosistica né alla complessità contrappuntistica. Cercava una purezza sonora che il Conservatorio non poteva insegnare.
+0086 «Sono venuto al mondo molto giovane in un tempo molto vecchio.» — Erik Satie
+0087 Montmartre e la vita bohémien
+0088 Lasciato il Conservatorio, Satie entra nella vita bohémien del Montmartre di fine secolo. Frequenta caffè-cabaret come Le Chat Noir (Il Gatto Nero), dove lavora come secondo pianista e conosce artisti e pittori dell'avanguardia.
+0089 📌 Nota: Il Chat Noir era un cabaret artistico fondato nel 1881 da Rodolphe Salis. Divenne il ritrovo di poeti, pittori, musicisti e scrittori d'avanguardia. Vi passarono personaggi come Claude Debussy, Paul Verlaine, Toulouse-Lautrec.
+0090 È in questo ambiente che stringe amicizia con Claude Debussy, destinato a diventare uno dei più grandi compositori francesi. È anche qui che incontra la pittrice Suzanne Valadon, con cui avrà nel 1893 un breve ma intenso amore, l'unico documentato della sua vita. Quando lei lo lascia, Satie ne rimane segnato profondamente.
+0091 Il mistico e l'eccentrico
+0092 Negli anni '90 Satie si avvicina a movimenti spirituali ed esoterici. Entra nell'Ordine della Rosa-Croce Cattolica del Tempio e del Graal, una setta occultista fondata da Joséphin Péladan, un romanziere che si faceva chiamare «Sâr Mérodack» e affermava di discendere da re babilonesi.
+0093 📌 Nota: I Rosacroce erano un ordine mistico-esoterico che univa elementi di cristianesimo, occultismo e simbolismo artistico. Péladan organizzava i «Saloni della Rosa-Croce», mostre d'arte che attiravano migliaia di visitatori.
+0094 Satie diventa compositore ufficiale e maestro di cappella dell'ordine. Ma nel 1892 rompe con Péladan — irritato dalla sua devozione wagneriana — e fonda una propria setta: la «Chiesa Metropolitana d'Arte di Gesù Conduttore», di cui sarà l'unico membro, parroco e maestro di cappella.
+0095 L'eremita di Arcueil
+0096 Nel 1898 Satie si trasferisce ad Arcueil, un sobborgo industriale a sud di Parigi. Affitta una stanzetta minuscola che chiama «l'Armadio». Non farà entrare nessuno per 27 anni, fino alla sua morte.
+0097 Ogni giorno cammina per chilometri fino a Parigi, in qualsiasi condizione meteo. Veste sempre di grigio o nero, con abiti di velluto identici — gli valsero il soprannome di «Monsieur le Pauvre» e poi, ironicamente, di «Velvet Gentleman» (il Signore di Velluto).
+0098 Quando Satie muore nel 1925 di cirrosi epatica, a soli 59 anni, gli amici entrano finalmente nella sua stanza. Trovano:
+0099 Due pianoforti a coda uno sopra l'altro, quello sopra usato come deposito per la posta non aperta
+0100 Oltre cento ombrelli
+0101 Sette abiti di velluto identici
+0102 Spartiti inediti nascosti ovunque
+0103 Dozzine di fazzoletti e collezioni di oggetti bizzarri
+0104 La «dieta bianca»: un manifesto estetico
+0105 Nelle sue Memorie di un Amnesico (1912), Satie descrive una dieta che ha affascinato studiosi e psicologi. Scrive che si nutre solo di «cibi bianchi: uova, zucchero, ossa grattugiate, grasso di animali morti, vitello, sale, noci di cocco, pollo cotto in acqua bianca, frutta ammuffita, riso, rape, salsiccia alla canfora, pasta, formaggio bianco, insalata di cotone e certi pesci senza pelle».
+0106 L'elenco è surreale e provocatorio. Ma rivela un'ossessione per il colore bianco come simbolo di purezza, silenzio e assenza di «colore» emotivo eccessivo. Le Gymnopédies sono «musica bianca»: prive di ornamenti, trasparenti, essenziali. Come la sua dieta immaginaria, la sua musica rifiuta le «spezie forti» del Romanticismo per concentrarsi sulla consistenza pura del suono.
+0107 📌 Nota: In realtà, gli amici testimoniavano che Satie era un buongustaio. Suo fratello Conrad raccontò che poteva mangiare 150 ostriche in una sola seduta o un'omelette di 30 uova. La «dieta bianca» era una provocazione artistica, non una verità biografica.
+0108 
+0109 Parte Seconda
+0110 Il contesto storico
+0111 La Francia del 1888
+0112 Le Gymnopédies vengono composte nel 1888, in piena Belle Époque francese, quel periodo che va circa dal 1871 al 1914.
+0113 📌 Nota: Il termine «Belle Époque» (letteralmente «Bella Epoca») fu coniato dopo la Prima Guerra Mondiale, per nostalgia di quegli anni di relativa pace e prosperità. In francese si pronuncia approssimativamente «bèl epòk».
+0114 La Francia sta ancora elaborando il trauma della sconfitta nella Guerra Franco-Prussiana (1870-1871). Ha perso l'Alsazia e la Lorena, regioni ricche di carbone e acciaio. Parigi ha vissuto l'esperienza traumatica della Comune, la breve rivoluzione socialista repressa nel sangue.
+0115 Ma ora è tempo di ricostruzione. La Terza Repubblica, nata nel 1870, garantisce stabilità politica. L'economia cresce. La Francia si lancia nella corsa alle colonie, espandendosi in Africa e Indocina.
+0116 Invenzioni e scoperte del periodo
+0117 Il 1888 è un anno di fermento. Ecco cosa accade nel mondo mentre Satie compone le sue Gymnopédies:
+0118 Torre Eiffel: È in costruzione per l'Esposizione Universale del 1889. Sarà inaugurata il 31 marzo 1889, diventando il simbolo di Parigi.
+0119 Louis Pasteur: Fonda l'Istituto Pasteur nel 1888. Ha già sviluppato il vaccino contro la rabbia (1885). La teoria dei germi sta rivoluzionando la medicina.
+0120 Heinrich Hertz: Nel 1888 dimostra l'esistenza delle onde elettromagnetiche, aprendo la strada alla radio.
+0121 Kodak: George Eastman brevetta la prima fotocamera portatile nel 1888, con lo slogan «Voi premete il bottone, noi facciamo il resto».
+0122 Vincent van Gogh: Nel febbraio 1888 si trasferisce ad Arles, nel sud della Francia. Qui dipingerà alcuni dei suoi capolavori più celebri.
+0123 Jack lo Squartatore: A Londra, nell'autunno del 1888, terrorizza il quartiere di Whitechapel.
+0124 L'arte a Parigi
+0125 Parigi è la capitale mondiale dell'arte. L'Impressionismo ha già rivoluzionato la pittura: Monet, Renoir, Degas hanno esposto dal 1874. Ma ora nascono nuove correnti.
+0126 Il Simbolismo domina la letteratura e si infiltra nelle arti visive. I simbolisti rifiutano il realismo descrittivo in favore dell'evocazione, del sogno, della corrispondenza tra i sensi.
+0127 📌 Nota: Sinestesia: dal greco «percepire insieme». È l'associazione tra sensi diversi, come «vedere» un suono o «sentire» un colore. I simbolisti amavano questo concetto. Satie stesso associava la sua musica al colore bianco.
+0128 Nel 1888 Paul Gauguin ed Émile Bernard sviluppano il Sintetismo, con forme semplificate e colori non naturalistici. Gauguin dipinge La visione dopo il sermone, dove donne bretoni vedono Giacobbe lottare con l'angelo su un prato rosso vivo.
+0129 L'ombra di Wagner
+0130 In ambito musicale, il nemico non è più la Prussia militare ma la Germania musicale: Richard Wagner.
+0131 Il wagnerismo domina l'Europa. La sua estetica dell'opera d'arte totale (Gesamtkunstwerk in tedesco) si caratterizza per armonie cromatiche dense, orchestrazioni massicce, tensione emotiva parossistica. Wagner è morto nel 1883, ma la sua influenza è onnipresente.
+0132 📌 Nota: Cromatismo: in musica, l'uso frequente di note estranee alla scala principale (i «tasti neri» del pianoforte, per intenderci). Wagner lo usa per creare tensione continua, come nel preludio del Tristano e Isotta.
+0133 I compositori francesi si dividono tra imitatori e reazionari. Satie sceglie una terza via: la sottrazione radicale. Dove Wagner riempie ogni spazio sonoro, Satie crea vuoti. Dove Wagner cerca l'infinito attraverso la tensione irrisolta, Satie cerca l'eterno attraverso la stasi.
+0134 Montmartre: il quartiere degli artisti
+0135 Montmartre, la collina a nord di Parigi, è il quartiere bohémien per eccellenza. Qui, lontano dalle accademie, fiorisce la cultura alternativa.
+0136 Il Chat Noir (Gatto Nero), fondato nel 1881, è il cabaret più famoso. Rodolphe Salis, il proprietario, lo definisce un «cabaret artistico». Non è solo un locale dove bere: è un luogo di sperimentazione dove poeti, pittori e musicisti si mescolano, discutono, collaborano.
+0137 L'ambiente del cabaret è fondamentale per Satie:
+0138 Desacralizzazione: La musica non è un rito religioso da sala da concerto, ma accompagnamento alla vita, al fumo, all'alcol, alla poesia.
+0139 Sperimentazione: L'arte «alta» si mescola con la cultura popolare. Satie assorbe la libertà formale del cabaret.
+0140 Amicizie letterarie: Qui Satie incontra il poeta Patrice Contamine de Latour, la cui influenza sarà determinante per la genesi delle Gymnopédies.
+0141 
+0142 Parte Terza
+0143 Genesi delle Gymnopédies
+0144 Il titolo misterioso
+0145 «Gymnopédie» è un neologismo francese. Deriva dal greco antico Γυμνοπαιδίαι (Gymnopaedia), che indicava una festività spartana annuale.
+0146 📌 Nota: «Gymnos» in greco significa «nudo» o «disarmato». Durante le Gimnopedie spartane, giovani uomini danzavano nudi (o forse solo senza armi) eseguendo esercizi ginnici e canti corali per dimostrare la loro prestanza fisica e disciplina.
+0147 Perché Satie scelse questo titolo? Le ipotesi sono diverse:
+0148 L'influenza letteraria: Il poeta Contamine de Latour aveva scritto un poema intitolato «Les Antiques» che descriveva le danze greche. La prima Gymnopédie fu pubblicata insieme a un estratto di questo poema.
+0149 Flaubert: Satie stava leggendo «Salammbô» di Gustave Flaubert, romanzo ambientato nell'antica Cartagine, ricco di riferimenti all'antichità.
+0150 L'ispirazione visiva: I dipinti simbolisti di Puvis de Chavannes, in particolare «Jeunes filles au bord de la mer» (1879), potrebbero averlo ispirato. Satie aspirava a comporre musica «decorativa» come gli affreschi del pittore.
+0151 Circostanze della composizione
+0152 Satie compone le tre Gymnopédies tra febbraio e aprile 1888, completandole entro il 2 aprile. Ha ventuno anni. È appena uscito dal fallimentare percorso al Conservatorio. È immerso nell'atmosfera bohémien di Montmartre, lavora come pianista al Chat Noir.
+0153 Un aneddoto racconta che Satie annunciò l'intenzione di comporre le Gymnopédies al cabaret. Il proprietario Rodolphe Salis commentò sarcastico: «Davvero una bella professione!». La composizione iniziò due mesi dopo.
+0154 La pubblicazione
+0155 La storia editoriale è complessa:
+0156 Prima Gymnopédie: Pubblicata il 18 agosto 1888 nel secondo supplemento di «La Musique des familles», rivista diretta dal padre Alfred Satie. Originariamente intitolata «Danse antique», era dedicata a Jeanne de Bret.
+0157 Terza Gymnopédie: Pubblicata nel novembre 1888, dedicata al compositore Charles Levadé.
+0158 Seconda Gymnopédie: Pubblicata solo nel 1895, dedicata al fratello Conrad.
+0159 Serie completa: Pubblicata nel 1898, in coincidenza con l'orchestrazione di Debussy.
+0160 L'accoglienza iniziale fu tiepida. I brani erano considerati avanguardistici: «infrangevano praticamente ogni regola musicale» dell'epoca. Solo vent'anni dopo, quando l'arte d'avanguardia divenne più accettata, le Gymnopédies iniziarono a godere di successo.
+0161 Le tre Gymnopédies a confronto
+0162 Gymnopédie
+0163 Indicazione
+0164 Traduzione
+0165 Tonalità
+0166 N. 1
+0167 Lent et douloureux
+0168 Lento e doloroso
+0169 Re maggiore
+0170 N. 2
+0171 Lent et triste
+0172 Lento e triste
+0173 Do maggiore
+0174 N. 3
+0175 Lent et grave
+0176 Lento e grave
+0177 La minore
+0178 Il critico Constant Lambert paragonò i tre pezzi a «camminare attorno a una scultura, osservandola da angolazioni diverse». La seconda è leggermente più chiara, con una conclusione più risolta. La terza è la più contemplativa e cupa.
+0179 
+0180 Parte Quarta
+0181 Analisi musicale della Prima Gymnopédie
+0182 Questa sezione è pensata per chi non ha formazione musicale. Spiegherò i concetti tecnici man mano che li incontriamo. L'obiettivo è farti «vedere» la struttura del brano mentre lo ascolti.
+0183 L'indicazione di tempo
+0184 Il brano è in 3/4, un tempo di valzer. Significa che ogni battuta contiene tre movimenti, e ogni movimento dura una semiminima (quella nota che sembra un pallino pieno con una gambetta).
+0185 📌 Nota: Battuta: la «scatola» in cui la musica è organizzata. Nello spartito, le battute sono separate da linee verticali. Una battuta in 3/4 contiene l'equivalente di tre quarti.
+0186 L'indicazione espressiva è «Lent et douloureux», cioè «Lento e doloroso». È un'indicazione insolita: di solito i compositori scrivono termini italiani come «Adagio» o «Andante». Satie usa il francese, e aggiunge una dimensione emotiva («doloroso») che va oltre il semplice tempo.
+0187 L'armatura di chiave e la tonalità
+0188 L'armatura di chiave indica Re maggiore: due diesis (Fa# e Do#) all'inizio di ogni rigo.
+0189 📌 Nota: Tonalità: è come la «casa» di una melodia, la nota su cui tutto gravita. «Maggiore» indica un carattere generalmente luminoso, «minore» un carattere più scuro. Ma Satie gioca con queste convenzioni.
+0190 Ma ecco la prima sorpresa: il brano non inizia sul Re. Inizia con un accordo di Sol maggiore, la cosiddetta «sottodominante». Questa scelta crea subito un senso di sospensione, di non-arrivo. Come se entrassi in una stanza dalla finestra invece che dalla porta.
+0191 La progressione d'apertura: la rivoluzione
+0192 Le prime quattro battute sono tra le più innovative della storia della musica. Ascolta:
+0193 Battuta 1: Sol maggiore con settima (Sol-Si-Re-Fa#)
+0194 Battuta 2: Re maggiore con settima (Re-Fa#-La-Do#)
+0195 Battute 3-4: Si ripete
+0196 📌 Nota: Accordo di settima: un accordo formato da quattro note invece di tre. La quarta nota aggiunge «colore» e tensione. Di solito un accordo di settima chiede di «risolvere» su un altro accordo. Ma qui Satie li alterna senza mai risolvere.
+0197 Questa alternanza a pendolo crea un effetto fluttuante, privo del tipico movimento armonico. È come dondolarsi su un'altalena che non tocca mai terra. Le note Fa# e Do# funzionano da «collante» tra i due accordi, creando continuità nell'oscillazione.
+0198 Perché è rivoluzionario? Nella musica tradizionale, l'armonia funziona come una storia: c'è tensione (la dominante) che si risolve nella calma (la tonica). Satie elimina questa narrazione. Non c'è climax, non c'è conclusione. Solo contemplazione.
+0199 La melodia
+0200 Il tema principale entra alla battuta 5. È una linea singola e fluente di semiminime, descritta come «ondeggiante come le onde dell'oceano».
+0201 Caratteristiche della melodia:
+0202 Andamento per gradi congiunti: le note si muovono per lo più per «passi» (da una nota a quella vicina), raramente per «salti».
+0203 Assenza di ornamenti: niente trilli, niente abbellimenti. Nudità assoluta.
+0204 Ambito limitato: la melodia si muove in uno spazio ridotto, senza grandi escursioni.
+0205 La melodia ricorda il canto gregoriano che Satie aveva appreso da bambino. Ma anche le danze rituali dell'antica Grecia evocate dal titolo. C'è qualcosa di arcaico, di atemporale.
+0206 La struttura formale
+0207 La Prima Gymnopédie segue una forma ternaria modificata (ABA'):
+0208 Introduzione (battute 1-4): la progressione alternata dei due accordi
+0209 Sezione A (battute 5-15): prima esposizione del tema principale
+0210 Sezione A' con estensione (battute 16-39): ripresa tematica con variazione armonica
+0211 Ripresa della Sezione A: ritorno al materiale iniziale, in pianissimo
+0212 Coda: ultime battute con spostamento verso Re minore
+0213 📌 Nota: Forma ternaria: una struttura musicale dove una sezione iniziale (A) è seguita da una sezione contrastante (B) e poi dalla ripresa della prima (A). Molto comune nei minuetti, nelle arie. Satie la usa ma la svuota di contrasto.
+0214 La struttura frasale si basa su raggruppamenti di 4-8 battute, con sottili asimmetrie. La cadenza finale, con l'abbassamento del Fa# a Fa naturale, conclude in Re minore invece che Re maggiore, lasciando un senso di irrisoluzione e abbandono.
+0215 Indicazioni per l'esecuzione
+0216 Se stai imparando questo brano, ecco i punti su cui lavorare:
+0217 La mano sinistra: gli accordi devono essere leggeri, quasi sussurrati. Non devono coprire la melodia. Polso morbido, niente colpi.
+0218 La melodia: deve «cantare». Immagina una voce che intona questa linea. Cura il fraseggio, la direzione di ogni frase.
+0219 Il pedale: essenziale per creare l'atmosfera fluttuante. Ma attenzione a non impastare: alza-abbassa a ogni cambio di accordo, o anche più spesso se necessario.
+0220 Il tempo: deve essere stabile ma non rigido. Un leggero rubato è appropriato, ma senza sentimentalismi eccessivi.
+0221 La dinamica: tutto si svolge in una gamma ristretta, dal piano al pianissimo. Niente fortissimi. È musica intima.
+0222 
+0223 Parte Quinta
+0224 Le interpretazioni
+0225 Non esiste un'unica versione «giusta» delle Gymnopédies. Ogni grande pianista ne offre una lettura diversa. Qui analizzo alcune interpretazioni di riferimento, per aiutarti a sviluppare il tuo ascolto critico.
+0226 Aldo Ciccolini
+0227 Il pianista italiano Aldo Ciccolini (1925-2015) fu determinante per la riscoperta di Satie nel secondo Novecento. Le sue registrazioni degli anni '60 per EMI aprirono le porte a un pubblico più vasto.
+0228 Caratteristiche: tocco elegante, tempo moderato, grande chiarezza. Ciccolini non sentimentalizza mai, ma non è freddo. La sua lettura è equilibrata, «francese» nel senso migliore: raffinata, contenuta, luminosa.
+0229 Nota: alcune registrazioni hanno un rumore di fondo che può disturbare, ma l'interpretazione resta di riferimento.
+0230 Pascal Rogé
+0231 Il francese Pascal Rogé (nato nel 1951) è considerato uno specialista del repertorio francese. Le sue registrazioni Decca sono tra le più apprezzate.
+0232 Caratteristiche: raffinatezza, meditazione, fluidità. Rogé trova un equilibrio perfetto tra espressività e ritegno. I tempi sono scorrevoli ma mai frettolosi. È probabilmente la versione più raccomandata per un primo ascolto.
+0233 Reinbert de Leeuw
+0234 Il pianista e direttore olandese Reinbert de Leeuw (1938-2020) offre una lettura radicalmente diversa.
+0235 Caratteristiche: tempi estremamente lenti, quasi sospesi. De Leeuw trasforma le Gymnopédies in paesaggi sonori, anticipando la musica ambient. È una versione che divide: alcuni la trovano illuminante, altri eccessivamente lenta.
+0236 Nota: probabilmente non è il Satie «autentico» dei cabaret di Montmartre, ma è una lettura originale e affascinante che getta nuova luce sulla musica.
+0237 Anne Queffélec
+0238 La pianista francese Anne Queffélec (nata nel 1948) offre una versione particolarmente adatta al rilassamento.
+0239 Caratteristiche: tempi rilassati, colori pastello, atmosfera contemplativa. La terza Gymnopédie, in particolare, è una tavolozza di sfumature delicate. Se cerchi una versione per accompagnare la meditazione o il relax, questa è ideale.
+0240 Jean-Yves Thibaudet
+0241 Il francese Jean-Yves Thibaudet (nato nel 1961) ha registrato l'integrale delle opere per pianoforte di Satie.
+0242 Caratteristiche: suono più scuro rispetto a Ciccolini, tecnica impeccabile, spirito arguto. Thibaudet coglie anche l'umorismo sottile di Satie, non solo la malinconia. È una lettura completa e sfaccettata.
+0243 
+0244 Parte Sesta
+0245 L'orchestrazione di Debussy
+0246 Storia della collaborazione
+0247 Nel 1896, a casa del direttore d'orchestra Gustave Doret, Satie eseguì le Gymnopédies al pianoforte. Secondo le cronache, non le suonò particolarmente bene. Ma Doret ne rimase così colpito da commissionare a Claude Debussy l'orchestrazione.
+0248 L'intervento di Debussy aveva anche motivazioni pratiche. Nel 1896 la popolarità e la situazione finanziaria di Satie erano in declino, mentre Debussy godeva di crescente successo. Orchestrando le Gymnopédies, Debussy cercava di aiutare l'amico a farsi conoscere.
+0249 Questa fu l'unica occasione in cui Debussy orchestrò l'opera di un altro compositore. — Robert Orledge, musicologo
+0250 Scelte artistiche
+0251 Debussy orchestrò solo la Prima e la Terza, ritenendo che la Seconda «non si prestasse all'orchestrazione». Curiosamente, invertì la numerazione nella pubblicazione: la Prima di Satie divenne la «Terza» orchestrale, e viceversa.
+0252 📌 Nota: Orchestrazione: il processo di adattare una composizione scritta per uno strumento (come il pianoforte) a un'orchestra completa, distribuendo le note tra i vari strumenti.
+0253 L'organico orchestrale
+0254 Debussy scelse un organico volutamente contenuto, per preservare il carattere intimo degli originali:
+0255 Legni: 2 flauti, 1 oboe
+0256 Ottoni: 4 corni
+0257 Percussioni: 1 esecutore
+0258 Arpe: 2
+0259 Archi: sezione completa
+0260 Colori timbrici
+0261 Debussy tradusse la texture pianistica attraverso scelte timbriche raffinate:
+0262 Arpe: ricreano le figure accompagnamentali gentili del pianoforte
+0263 Oboe: porta la linea melodica malinconica, perfetto per la qualità solitaria del tema
+0264 Archi con sordina: forniscono supporto armonico mantenendo la trasparenza
+0265 Texture rarefatte: evitano la densità che contraddirebbe l'estetica di Satie
+0266 📌 Nota: Sordina: un dispositivo che si applica agli strumenti ad arco per attenuarne e modificarne il suono, rendendolo più velato e intimo.
+0267 Prima esecuzione
+0268 L'orchestrazione fu eseguita per la prima volta alla Société Nationale il 20 febbraio 1897 a Parigi. La versione orchestrale fu riproposta il 25 marzo 1911 con la direzione dello stesso Debussy.
+0269 Altre versioni e arrangiamenti
+0270 Nel tempo, le Gymnopédies hanno ispirato numerosi altri arrangiamenti:
+0271 Blood, Sweat & Tears (1968): La band jazz-rock arrangiò la prima e la seconda in «Variations on a Theme by Erik Satie». La registrazione vinse un Grammy.
+0272 Sky (1979): La band strumentale britannica incluse la Prima nel loro album di debutto.
+0273 Gary Numan (1980): Pubblicò «Trois Gymnopedies (First Movement)» come lato B del singolo «We Are Glass».
+0274 12 Violoncellisti di Berlino (2007): Wilhelm Kaiser-Lindemann arrangiò la Prima e la Terza per questo ensemble.
+0275 Branford Marsalis (1990): Registrò una versione per sassofono nell'album «Romances for Saxophone».
+0276 
+0277 Parte Settima
+0278 La fortuna nei media
+0279 La Prima Gymnopédie è diventata una delle musiche classiche più utilizzate nel cinema, nella televisione e nella pubblicità. Vediamo perché funziona così bene e dove puoi averla sentita.
+0280 Perché funziona nel cinema
+0281 La Gymnopédie n. 1 possiede caratteristiche che la rendono perfetta per il cinema:
+0282 Riconoscibilità: bastano le prime note per evocare immediatamente un'atmosfera.
+0283 Neutralità emotiva: non è né troppo allegra né troppo triste. Può accompagnare scene di malinconia, ma anche di riflessione serena.
+0284 Non invasività: non sovrasta le immagini, le accompagna. È l'incarnazione dell'idea di Satie di «musica d'arredamento».
+0285 Pubblico dominio: la composizione non è più protetta da copyright, quindi può essere usata liberamente.
+0286 Film principali
+0287 Ecco alcuni dei film più significativi che hanno utilizzato la Gymnopédie n. 1:
+0288 Fuoco fatuo (Le feu follet, 1963) di Louis Malle — La sequenza finale del caffè, con Maurice Ronet, è diventata iconica. Molti considerano questo il primo uso memorabile del brano al cinema.
+0289 La mia cena con André (1981) di Louis Malle — Nei titoli di coda, la Gymnopédie accompagna la riflessione finale.
+0290 Man on Wire (2008) — Il documentario sulla traversata delle Twin Towers di Philippe Petit usa la musica nel momento in cui il funambolo compie il primo passo sul filo.
+0291 Un'altra donna (Another Woman, 1988) di Woody Allen — La protagonista attraversa una crisi esistenziale accompagnata dalla musica di Satie.
+0292 I Tenenbaum (The Royal Tenenbaums, 2001) di Wes Anderson — Il regista usa Satie per sottolineare momenti di malinconia e inadeguatezza.
+0293 A proposito di Schmidt (About Schmidt, 2002) — Jack Nicholson in una storia di solitudine e disillusione.
+0294 Hugo Cabret (2011) di Martin Scorsese — Omaggio al cinema delle origini, nella Parigi di inizio Novecento.
+0295 Chocolat (2000) — Il brano accompagna l'atmosfera sospesa del villaggio francese.
+0296 Televisione e pubblicità
+0297 La Gymnopédie è stata usata in innumerevoli spot pubblicitari, spesso per evocare eleganza, raffinatezza, tranquillità. È apparsa in pubblicità di profumi, automobili di lusso, prodotti finanziari.
+0298 In televisione, compare regolarmente in serie come sfondo per scene introspettive. La serie 22.11.63 (basata sul romanzo di Stephen King) la usa in momenti chiave.
+0299 Videogiochi
+0300 Il mondo dei videogiochi ha scoperto Satie:
+0301 Mother 3 (2006): Il gioco giapponese include la Gymnopédie n. 1 nella colonna sonora, come «Leder's Gymnopedie».
+0302 The Legend of Zelda: Ocarina of Time: La schermata del titolo presenta un tema che ricorda fortemente la Gymnopédie.
+0303 
+0304 Parte Ottava
+0305 Eredità e influenze
+0306 Da Debussy al minimalismo
+0307 L'influenza di Satie sulla musica del Novecento è stata enorme, anche se non sempre riconosciuta. Vediamo le principali linee di discendenza.
+0308 Claude Debussy fu profondamente influenzato dall'amico. Alcuni storici sostengono che certe armonie di Debussy derivino direttamente da Satie. Ma Debussy sviluppò queste intuizioni in una direzione più complessa e «impressionista».
+0309 Maurice Ravel ammirava Satie e ne eseguì le opere in concerto. La sua musica condivide con Satie la chiarezza francese e il rifiuto del gigantismo tedesco.
+0310 Il Gruppo dei Sei (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre) considerava Satie un padre spirituale. Questi compositori francesi degli anni '20 rifiutavano sia il wagnerismo sia l'impressionismo, cercando una musica più diretta e quotidiana.
+0311 John Cage e l'avanguardia americana
+0312 Il compositore americano John Cage (1912-1992) fu il grande riscopritore di Satie nel dopoguerra. Cage trovò in Satie un precursore delle sue idee:
+0313 Il rifiuto della «narrazione» musicale
+0314 L'interesse per il silenzio e lo spazio
+0315 La musica come processo, non come prodotto
+0316 «Satie è indispensabile.» — John Cage
+0317 Nel 1963 Cage organizzò la prima esecuzione integrale di Vexations, il brano di Satie che consiste in un tema ripetuto 840 volte (circa 18 ore di musica). Questo evento anticipò la musica minimalista.
+0318 Il minimalismo
+0319 I compositori minimalisti americani — Steve Reich, Philip Glass, Terry Riley — riconoscono in Satie un antenato. Le Gymnopédies anticipano molte caratteristiche del minimalismo:
+0320 Ripetizione di pattern
+0321 Armonia statica o lentamente cangiante
+0322 Rifiuto del climax drammatico
+0323 Economia di mezzi
+0324 📌 Nota: Minimalismo: movimento musicale nato negli anni '60 basato su ripetizione, processi graduali, armonie semplici. I brani possono durare ore, ipnotizzando l'ascoltatore.
+0325 Brian Eno e la musica ambient
+0326 La connessione più diretta è con Brian Eno e la musica ambient. Eno ha sempre riconosciuto il debito verso Satie.
+0327 Nel 1917, Satie aveva concepito la «Musique d'ameublement» (musica d'arredamento): composizioni pensate per non essere ascoltate attentamente, ma per far parte dell'ambiente. Satie scrisse: «Immagino una musica melodiosa che attenui il rumore di coltelli e forchette a cena, senza dominarli, senza imporsi».
+0328 Nel 1978, Eno pubblicò Ambient 1: Music for Airports, dove definì la musica ambient come qualcosa che «deve poter essere ignorata quanto ascoltata». La definizione ricalca esattamente l'idea di Satie.
+0329 «La musica ambiente deve poter ospitare molti livelli di attenzione d'ascolto senza imporne uno in particolare.» — Brian Eno
+0330 Le Gymnopédies, sebbene non pensate esplicitamente come «musica d'arredamento», ne condividono l'estetica: non richiedono attenzione focalizzata, possono essere sottofondo ma anche oggetto di ascolto attento.
+0331 Perché Satie parla ancora oggi
+0332 In un'epoca di sovraccarico sensoriale, la musica di Satie offre qualcosa di raro: silenzio organizzato, spazio per respirare, bellezza senza pretese.
+0333 Le playlist «Lo-fi beats to study to» che spopolano su YouTube e Spotify devono molto a Satie. L'idea che la musica possa accompagnare altre attività — studiare, lavorare, rilassarsi — senza pretendere attenzione esclusiva, è satiana.
+0334 Erik Satie morì nel 1925, povero e convinto del proprio fallimento. Un secolo dopo, la sua musica risuona ovunque. La semplicità, quando raggiunge la perfezione, è la forma più duratura di rivoluzione.
+0335 
+0336 Appendice A
+0337 Glossario dei termini musicali
+0338 Accordo: insieme di tre o più note suonate simultaneamente.
+0339 Accordo di settima: accordo formato da quattro note. La quarta nota è la «settima» rispetto alla fondamentale. Aggiunge colore e tensione.
+0340 Armatura di chiave: i diesis o bemolli scritti all'inizio di ogni rigo, che indicano la tonalità del brano.
+0341 Battuta: unità ritmica della musica, delimitata nello spartito da linee verticali.
+0342 Coda: sezione conclusiva di un brano, che chiude e riassume il materiale musicale.
+0343 Cromatismo: uso di note estranee alla scala principale, che creano tensione e instabilità.
+0344 Dominante: il quinto grado della scala, la nota che crea tensione e «chiede» di tornare alla tonica.
+0345 Forma ternaria (ABA): struttura musicale in tre parti: esposizione, sezione contrastante, ripresa dell'esposizione.
+0346 Fraseggio: l'articolazione espressiva delle frasi musicali, con respirazioni e direzioni.
+0347 Gradi congiunti: movimento melodico per note vicine (es. Do-Re-Mi), opposto al «salto» (es. Do-Sol).
+0348 Maggiore/minore: i due «modi» principali della musica tonale. Maggiore suona generalmente luminoso, minore più scuro.
+0349 Orchestrazione: l'arte di distribuire le note di una composizione tra i vari strumenti dell'orchestra.
+0350 Ostinato: figura melodica o ritmica ripetuta insistentemente.
+0351 Pedale (armonico): nota tenuta a lungo mentre le altre voci si muovono, creando tensione.
+0352 Rubato: lieve flessibilità del tempo, «rubando» durata ad alcune note per darne ad altre.
+0353 Semiminima: nota che dura un quarto della battuta in tempo 4/4. Ha la forma di un pallino pieno con gambetta.
+0354 Sinestesia: associazione tra sensi diversi, come «vedere» un suono o «sentire» un colore.
+0355 Sordina: dispositivo che attenua il suono degli strumenti ad arco o ottoni.
+0356 Sottodominante: il quarto grado della scala (es. Sol in tonalità di Re).
+0357 Tempo (indicazione di): specifica quanti movimenti ci sono in ogni battuta (es. 3/4 = tre quarti).
+0358 Tonica: la nota principale di una tonalità, quella su cui tutto gravita e che dà senso di «casa».
+0359 Tonalità: sistema che organizza la musica attorno a una nota centrale (tonica). Es: «Re maggiore».
+0360 
+0361 Appendice B
+0362 Cronologia
+0363 1866 — 17 maggio: nasce Eric Alfred Leslie Satie a Honfleur, Normandia.
+0364 1872 — Muore la madre Jane. Erik viene affidato ai nonni.
+0365 1878 — Muore la nonna. Erik torna a Parigi.
+0366 1879 — Entra al Conservatorio di Parigi.
+0367 1882 — Espulso dal Conservatorio.
+0368 1885 — Riammesso al Conservatorio nella classe di Mathias.
+0369 1887 — Lascia definitivamente il Conservatorio. Si trasferisce a Montmartre.
+0370 1888 — Febbraio-aprile: compone le Trois Gymnopédies. Agosto: pubblicata la Prima.
+0371 1891 — Diventa compositore ufficiale dell'Ordine della Rosa-Croce.
+0372 1892 — Fonda la «Chiesa Metropolitana d'Arte di Gesù Conduttore».
+0373 1893 — Breve relazione con Suzanne Valadon.
+0374 1895 — Pubblicata la Seconda Gymnopédie.
+0375 1896 — Debussy orchestra la Prima e la Terza Gymnopédie.
+0376 1897 — 20 febbraio: prima esecuzione dell'orchestrazione di Debussy.
+0377 1898 — Pubblicazione della serie completa delle Gymnopédies. Trasferimento ad Arcueil.
+0378 1905-1908 — Studia alla Schola Cantorum.
+0379 1917 — Prima di «Parade», balletto con Picasso e Cocteau. Scandalo. Nasce il termine «surrealismo».
+0380 1925 — 1° luglio: muore a Parigi di cirrosi epatica.
+0381 1963 — John Cage organizza la prima esecuzione integrale di «Vexations».
+0382 1968 — Blood, Sweat & Tears vincono un Grammy con il loro arrangiamento delle Gymnopédies.
+0383 1978 — Brian Eno pubblica «Ambient 1: Music for Airports», riconoscendo il debito verso Satie.
+0384 
+0385 Appendice C
+0386 Discografia consigliata
+0387 Versioni pianistiche
+0388 Aldo Ciccolini — Satie: Piano Works (EMI). L'integrale di riferimento, fondamentale per la riscoperta di Satie.
+0389 Pascal Rogé — Satie: Piano Works (Decca). Raffinato, meditativo, ideale per un primo approccio.
+0390 Anne Queffélec — Satie: Piano Music (Virgin Classics). Atmosferico, perfetto per il relax.
+0391 Jean-Yves Thibaudet — The Complete Solo Piano Music (Decca). Completo, tecnicamente impeccabile.
+0392 Reinbert de Leeuw — Satie: Piano Works (Philips). Tempi lentissimi, controverso ma affascinante.
+0393 Yitkin Seow — Satie: Piano Music (Hyperion). Ottima qualità sonora, interpretazione elegante.
+0394 Versioni orchestrali
+0395 André Previn / London Symphony Orchestra — (RCA). Registrazione di riferimento, ingegneria audio eccellente.
+0396 Michel Plasson / Orchestre du Capitole de Toulouse — (EMI). Lettura autenticamente francese.
+0397 Maurice Abravanel / Utah Symphony — (Vanguard). Raccolta completa delle opere orchestrali e orchestrate.
+0398 Arrangiamenti alternativi
+0399 Blood, Sweat & Tears — «Variations on a Theme by Erik Satie» (1968). L'arrangiamento jazz-rock che vinse il Grammy.
+0400 Sky — Sky (1979). La versione strumentale rock della band britannica.
+0401 12 Violoncellisti di Berlino — Arrangiamento di Kaiser-Lindemann (2007). Sonorità calde e avvolgenti.
+0402 Branford Marsalis — Romances for Saxophone (1990). Versione per sassofono jazz.
+0403 
+0404 Bibliografia
+0405 Testi principali
+0406 Orledge, Robert — Satie the Composer, Cambridge University Press.
+0407 Orledge, Robert — Satie Remembered, 1995.
+0408 Volta, Ornella — Satie Seen Through His Letters.
+0409 Volta, Ornella — A Mammal's Notebook: Collected Writings of Erik Satie.
+0410 Davis, Mary E. — Erik Satie, Critical Lives, Reaktion Books, 2007.
+0411 Gillmor, Alan — Erik Satie, Twayne/W.W. Norton.
+0412 Studi specifici sulle Gymnopédies
+0413 Jensen, Eric Frederick — «Satie and the 'Gymnopédie'», Music & Letters, Vol. 75, No. 2, maggio 1994.
+0414 Whiting, Steven Moore — Studi sulla storia della pubblicazione delle opere di Satie.
+0415 Gillmor, Alan — Analisi delle proporzioni della Sezione Aurea nelle opere Rosa-Croce.
+0416 Risorse online
+0417 IMSLP (International Music Score Library Project) — Spartiti in pubblico dominio.
+0418 Archives de la Fondation Erik Satie, Parigi.
+0419 Bibliothèque nationale de France — Manoscritti e prime edizioni.
+0420 
+0421 ✦
+0422 Questo libretto è stato realizzato
+0423 come materiale di accompagnamento al video
+0424 «La Gymnopédie n. 1 di Erik Satie»
+0425 Sognandoilpiano
+0426 www.sognandoilpiano.it
