@@ -1,0 +1,104 @@
+INTRODUZIONE:
+- Hero:
+  * "La Gymnopédie n. 1 è la prima di tre pagine per pianoforte composte da Erik Satie e completate entro la primavera del 1888. L'autore le definì 'danze lente', costruite con pochi elementi ripetuti e dissonanze controllate. Satie stesso scrisse: 'Sono venuto al mondo molto giovane in un tempo molto vecchio', una frase che riassume la sua posizione di outsider in un'epoca dominata dal wagnerismo."
+  * "Nel 1888 Parigi vive le trasformazioni della Belle Époque: la Torre Eiffel si costruisce, Pasteur e Hertz rompono paradigmi scientifici, e l'arte si spoglia dal romanticismo e dalle regole accademiche. In questo contesto, Satie — un ragazzo di 21 anni, pianista cabaret a Montmartre — compone tre piccoli brani che diventano le basi per la musica impressionista, minimalista e d'ambiente."
+  * "Il titolo Gymnopédie suggerisce un contesto arcaico senza chiarirlo. Secondo alcune testimonianze, Satie trasse spunto dai modi greci, da romanzi di Gustave Flaubert e dalla poesia Les Antiques di J. P. Contamine de Latour, pubblicata insieme alla n. 1 nell'estate del 1888."
+  * "La pagina uscì con l'indicazione Lent et douloureux e rimase quasi sconosciuta fino a quando Claude Debussy non orchestrò due numeri (1 e 3, invertendo la numerazione) e li presentò il 20 febbraio 1897 alla Société Nationale. Oggi la n. 1 è considerata un prototipo del minimalismo musicale e continua a ispirare arrangiamenti in ogni genere."
+- Card: Satie in breve (coordinate biografiche essenziali). Timeline:
+  * 1897 – La circolazione orchestrale di Debussy porta Satie sulle scene sinfoniche e amplia la ricezione.
+  * 1917 – Parade (con Picasso, Cocteau e Massine) rompe gli schemi ballettistici e anticipa il surrealismo.
+  * 1925 – Muore ad Arcueil, lasciando spartiti nascosti e un’eredità raccolta da Cage, Eno e i minimalisti.
+- Card: Cronologia e ricezione – 1888 (pubblicazione) → 1896‑1897 (orchestrazioni Debussy) → 1898 (edizione integrale).
+- Card: Linguaggio musicale – ostinato, accordi planati e ambiguità tonale; il discorso privilegia il colore rispetto allo sviluppo tematico.
+- Card: Indicazioni di studio – la difficoltà sta nel controllo di tempo, suono e pedale, non nella quantità di note.
+- Curiosità "Debussy e la svolta":
+  * Il Conservatorio di Parigi fu vissuto da Satie come disillusione e resistenza; giudicato "dotato ma indolente" e alla fine espulso dopo la Sonata Op. 26 di Beethoven. Tra il 1882 e il 1883 si dedicò a letture (Voltaire, Dumas, Andersen) e sviluppò preferenze per Bach, Chopin e Schumann.
+  * A Montmartre (1887–1888) lavorò come secondo pianista al Chat Noir, frequentando simbolisti e poeti; incontrò Contamine de Latour e compose le Gymnopédies.
+  * La Belle Époque (1888) è caratterizzata da nuovi fermenti scientifici e artistici; il simbolismo valorizza l'evocazione, l'immagine e l'idea di "musica bianca" senza ornamenti.
+  * Rivoluzione armonica: le prime battute alternano Sol maggiore con settima e Re maggiore con settima senza risoluzione, creando sospensione e un altalena che non tocca terra.
+  * Debussy orchestrò nel 1896 per aiutare l'amico Satie; l'orchestra era contenuta (flauti, oboe, corni, archi, arpe) e la prima esecuzione fu il 20 febbraio 1897.
+  * Eredità: Debussy, Ravel e il Gruppo dei Sei riconobbero in Satie un padre spirituale; Cage, Reich e Glass lo videro come precursore di minimalismo e processualismo; Brian Eno riconobbe la Musique d'ameublement come antesignana dell'ambient.
+  * Cinema e cultura pop: la n.1 appare in Fuoco fatuo, I Tenenbaum, Man on Wire, Hugo Cabret, About Schmidt, Chocolat, in serie TV, spot e videogiochi; Blood, Sweat & Tears, Sky, Gary Numan e altri la hanno arrangiata.
+  * Ascolto e spartito: il materiale pubblicato su IMSLP è citato come riferimento cards.
+- MODALI:
+  * "Erik Satie: cronologia essenziale" (LifeModal): linea temporale con eventi dal 1866 (nascita a Honfleur) fino al 1925 (morte ad Arcueil). Include l'infanzia, la permanenza al Conservatorio, l'espulsione, il periodo a Montmartre con contatti simbolisti, la fase Rosa-Croce e l'amore con Valadon, le orchestrazioni di Debussy, il trasferimento ad Arcueil e la morte con la scoperta degli oggetti bizzarri.
+  * "Gymnopédie n. 1: cronologia sintetica" (GymnopedieTimelineModal): descrive la composizione tra febbraio e aprile 1888 (completata entro il 2 aprile), l'origine del titolo greco Gymnopaedia, le influenze letterarie (Les Antiques, Salammbô, Puvis de Chavannes), l'editoria (pubblicazioni del 1888/1895/1898) e l'accoglienza iniziale cauta. Incluse anche note editoriale e riferimenti storici.
+  * "Gymnopédie n. 1: impostazione esecutiva" (InterpretazioneModal): obiettivo di semplicità controllata; bullet su pulsazione (3/4 stabile, senza accenti marcati), voce superiore (leggera e continua), pedale (cambi frequenti per trasparenza) e dinamica (curve brevi senza forti improvvisi).
+  * Curiosità operative: note su titolazione, tempo, pedale come filtro e ricezione (pagina breve replicabile in media e arrangiamenti). Dettagli su Montmartre e simbolismo, esoterismo e dieta bianca, suggerimenti per chiudere il blocco, e link a fonti.
+
+ANALISI:
+- Paragrafo introduttivo: "Obiettivo: trasformare le informazioni in scelte esecutive (tempo, suono, pedale)."
+- Schede analisi:
+  * Struttura e materiali: pezzo breve per pianoforte solo in forma percepita A–B–A', ostinato regolare, mano sinistra pulsante, accordi planati e movimenti paralleli che generano sospensione.
+  * Focali esecutivi: controllo del tempo senza valzer, pedale a finestre, separazione delle voci, dinamica contenuta e resa timbrica.
+  * Cosa evitare: valzer caricaturale, rubato romantico, pedale continuo impastante, eccessiva enfasi armonica (il brano vive di sospensioni).
+  * Cosa cercare: sospensione, ambiguità tonale, uniformità timbrica, legato omogeneo e colore/risonanza come narrazione.
+- Materiali di studio: paragrafi che commentano immagini su modi greci (dorico, frigio, lidio e legami con l'arcaico) e sulla nota Fa# ricorrente come "collante" armonico.
+- PdfScoreViewer: include controlli zoom (zoomIn, zoomOut), indicatori di numPages e messaggio di caricamento o errore (file mancante). Testo esplicita che serve pdf "gymnopedie-1-annotata.pdf" e che appare un messaggio di errore se assente.
+
+INTERPRETI E ASCOLTI:
+- Descrizione generale: sezione dedica spazio a versioni di riferimento per studio.
+- Piano solo:
+  * Khatia Buniatishvili: pianista georgiana espressiva, nota per repertorio romantico/impressionista; link YouTube (TL0xzp4zzBE) con fraseggio fluido e dinamica calibrata.
+  * Aldo Ciccolini: pianista italo-francese esperto di musica francese, con registrazione storica (2WfaotSK3mI) caratterizzata da tocco morbido e tempi ponderati.
+- Orchestrazioni (Debussy):
+  * Claude Debussy: orchestratore delle Gymnopédies, espressione dell'impressionismo.
+  * hr-Sinfonieorchester: orchestra tedesca che propone versioni trasparenti e delicate.
+  * Due link: orchestrazione classica (YqKpAHvrOjw) e versione hr-Sinfonieorchester (wxWx0GCc5CA) che mostra il processo di amplificazione timbrica mantenendo trasparenza.
+
+GLOSSARIO:
+- Termini musicali:
+  * Gymnopédie – neologismo dal greco, richiama danze spartane e fonti simboliste; prima pubblicata come "Danse antique".
+  * Lent et douloureux – indicazione di carattere della n.1, italiano sostituito dal francese; Lambert la descrive come una camminata attorno a una scultura.
+  * 3/4 – metro ternario che deve restare regolare e non valzerato.
+  * Ostinato – figura ripetuta nella mano sinistra per ipnosi.
+  * Accordi planati – blocchi paralleli in cui il colore vince sulla funzione armonica.
+  * Ambiguità tonale – mancanza di senso di arrivo e direzione.
+  * Pedale di risonanza – uso misurato per unire frasi senza impasti.
+  * Rubato sobrio – micro-flessioni per dare respiro senza romanticismo extralarge.
+- Contesto:
+  * Montmartre – quartiere bohémien e cabaret (Le Chat Noir, L'Auberge du Clou) che ha formato Satie e ospitato simbolisti.
+  * Debussy – amico che orchestrò le n.1 e n.3 invertendo numerazione; prima esecuzione 20 febbraio 1897.
+  * Conservatorio di Parigi – luogo di fallimenti, espulsione del 1882 e giudizi pesanti.
+  * Contamine de Latour – poeta simbolista autore di Les Antiques, pubblicato con la n.1.
+  * Arcueil – sobborgo dove Satie visse 27 anni nella stanza "l'Armadio".
+  * Le Chat Noir – cabaret dove lavorò e sviluppò il suo stile sobrio.
+  * Suzanne Valadon – pittrice e unico amore documentato del 1893.
+  * Dieta Bianca – provocazione letteraria con cibi bianchi, metafora della purezza sonora delle Gymnopédies.
+  * Rosa-Croce – Ordine di Péladan in cui Satie fu compositore ufficiale (1891) prima di fondare la propria Église Métropolitaine.
+  * Puvis de Chavannes – pittore simbolista fonte di ispirazione per l'estetica decorativa.
+  * Forme ternarie (ABA') – struttura dell'opera con ripresa e coda; Satie svuota la forma dei nostri contrasti drammatici.
+  * Settima maggiore – crea sospensione perché non risolve; altalena fluttuante.
+  * Musique d'ameublement – musica d'arredamento (1917) che anticipa l'ambient e la teoria di Brian Eno.
+  * John Cage – riscopritore nel dopoguerra, organizzatore di Vexations e sostenitore della musica di processo.
+  * Minimalismo – movimento anni '60 (Reich, Glass, Riley) che vede Satie come antenato.
+
+IMPARA:
+- Flashcard 1: "Chi è l'autore delle Gymnopédies?" → Erik Satie (1866–1925).
+- Flashcard 2: "Quando fu completata la Gymnopédie n. 1?" → 1888.
+- Flashcard 3: "Qual è l'indicazione di carattere della n. 1?" → Lent et douloureux.
+- Flashcard 4: "In quale metro è scritta la n. 1?" → 3/4.
+- Flashcard 5: "Quale compositore orchestrò due Gymnopédies?" → Claude Debussy.
+- Flashcard 6: "Dove lavorava Satie quando compose le Gymnopédies?" → come pianista cabaret a Montmartre.
+- Flashcard 7: "Perché Satie venne espulso dal Conservatorio?" → scarsi risultati e mancanza di impegno.
+- Flashcard 8: "Quando avvenne la prima esecuzione orchestrale rilevante?" → 20 febbraio 1897.
+- Flashcard 9: "Cosa significa Gymnopédie?" → richiamo alla gymnopaedia greca.
+- Flashcard 10: "Con quale poeta collaborò per la prima pubblicazione?" → J. P. Contamine de Latour.
+- Flashcard 11: "Chi fu Suzanne Valadon?" → unico amore documentato, pittrice madre di Utrillo.
+- Flashcard 12: "Cosa trovarono nella stanza di Satie dopo la morte?" → due pianoforti sovrapposti, oltre 100 ombrelli, spartiti nascosti.
+- Flashcard 13: "Cos'era la dieta bianca?" → provocazione nelle Memorie di un Amnesico.
+- Flashcard 14: "Quando furono composte le tre Gymnopédies?" → Febbraio‑aprile 1888.
+- Flashcard 15: "Qual era il titolo originale della prima Gymnopédie?" → Danse antique.
+- Flashcard 16: "Perché Debussy orchestrò le Gymnopédies?" → per aiutare Satie in difficoltà finanziarie (1896) e l'unica volta che orchestrò un altro compositore.
+- Flashcard 17: "Qual è il legame con la musica ambient?" → la Musique d'ameublement anticipa l'ambient.
+- Flashcard 18: "Chi fu John Cage per Satie?" → grande riscopritore, promoter di Vexations.
+- Flashcard 19: "In quali film famosi appare la n.1?" → Fuoco fatuo, I Tenenbaum, Man on Wire, Hugo Cabret, Un'altra donna, About Schmidt, Chocolat.
+- Flashcard 20: "Qual è la principale difficoltà dell'esecuzione?" → controllo del suono e del pedale.
+
+FONTI:
+- Spartito e dominio pubblico:
+  * IMSLP – 3 Gymnopédies (PDF): partitura e riferimenti editoriali, accessible URL https://imslp.org/wiki/3_Gymnop%C3%A9dies_(Satie,_Erik).
+  * Musopen – Gymnopédies (audio e spartiti): pagina con registrazioni e spartiti in pubblico dominio, URL https://musopen.org/music/8010-3-gymnopedies/.
+- Contesto e cronologia:
+  * Wikipedia – Gymnopédies: panoramica generale su titolo, pubblicazione, metro e ricezione, URL https://en.wikipedia.org/wiki/Gymnop%C3%A9dies.
+  * Hyperion – note discografiche (Debussy orchestrazioni): approfondimento sulle orchestrazioni e prima esecuzione, URL https://www.hyperion-records.co.uk/dw.asp?dc=W408_GBAJY8936508.
