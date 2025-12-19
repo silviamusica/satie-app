@@ -74,7 +74,7 @@ const Tooltip = ({ text, children }) => {
       <span className="underline decoration-dotted decoration-slate-400">
         {children}
       </span>
-      <span className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-[260px] rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-xl">
+      <span className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[min(260px,calc(100vw-2rem))] whitespace-normal break-words rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-xl z-50">
         {text}
       </span>
     </span>
@@ -1011,7 +1011,7 @@ const BenvenutoSection = ({ goTo }) => (
           { title: "L'Eredità", desc: "Dal minimalismo all'ambient: l'impatto di Satie", icon: Sparkles, tab: "eredita" },
           { title: "Glossario", desc: "Termini musicali e contesto in schede rapide", icon: Library, tab: "glossario" },
           { title: "Impara", desc: "Quiz interattivo e flashcard", icon: GraduationCap, tab: "impara" },
-          { title: "Fonti", desc: "Spartiti, registrazioni e approfondimenti", icon: FileText, tab: "fonti" },
+          { title: "Bibliografia", desc: "Libri e riferimenti essenziali", icon: FileText, tab: "fonti" },
         ].map((item) => (
           <button
             key={item.tab}
@@ -1103,8 +1103,8 @@ const Parigi1888Section = () => {
       </h1>
       <p className="text-sm text-slate-300 leading-relaxed">
         Per capire le Gymnopédies, dobbiamo prima immergerci nella Parigi di fine Ottocento: una città in fermento,
-        dove scienza e arte si rinnovavano, dove i café-cabaret di Montmartre erano laboratori di sperimentazione
-        e dove un giovane pianista stava per cambiare il corso della musica.
+        dove l'arte si rinnova, dove i café-cabaret di Montmartre diventano laboratori di sperimentazione
+        e dove un giovane pianista sta per cambiare il corso della musica.
       </p>
     </div>
     <div className="bg-slate-900/70 border border-slate-700 rounded-2xl p-6">
@@ -1112,14 +1112,35 @@ const Parigi1888Section = () => {
       <p className="text-sm text-slate-300 leading-relaxed mb-3">
         La <strong>Belle Époque</strong> (circa 1871-1914) è un periodo di ottimismo, crescita economica e fiducia nel
         progresso tecnico: Parigi diventa una capitale moderna, illuminata, piena di nuove invenzioni e di spinta verso il futuro.
-        La <strong>bohème</strong> è la controfaccia artistica di questa modernità: vita libera, notti nei caffè, rifiuto
-        delle regole borghesi, sperimentazione continua.
+        La{" "}
+        <Tooltip text="Vita artistica fuori dalle regole borghesi: caffè, atelier, precarietà e sperimentazione.">
+          <strong>bohème</strong>
+        </Tooltip>{" "}
+        è la controfaccia artistica di questa modernità: vita libera, notti nei caffè, rifiuto delle regole borghesi,
+        sperimentazione continua.
       </p>
       <p className="text-sm text-slate-300 leading-relaxed mb-3">
-        Il <strong>Simbolismo</strong> rompe con il realismo e privilegia immagini evocative, sogni, allusioni:
-        in letteratura spiccano <strong>Verlaine</strong> e <strong>Mallarmé</strong>, mentre in pittura e grafica
-        si affermano i manifesti e l'estetica notturna dei locali di Montmartre. In musica, l'<strong>Impressionismo</strong>
-        cerca colore timbrico e atmosfera: i nomi chiave sono <strong>Claude Debussy</strong> e <strong>Maurice Ravel</strong>.
+        Il{" "}
+        <Tooltip text="Movimento che privilegia simboli ed evocazioni rispetto alla descrizione diretta.">
+          <strong>Simbolismo</strong>
+        </Tooltip>{" "}
+        rompe con il{" "}
+        <Tooltip text="Rappresentazione fedele e oggettiva della realtà.">
+          <span>realismo</span>
+        </Tooltip>{" "}
+        e privilegia immagini evocative, sogni, allusioni: in letteratura spiccano{" "}
+        <Tooltip text="Poeta simbolista francese (1844-1896).">
+          <strong>Verlaine</strong>
+        </Tooltip>{" "}
+        e{" "}
+        <Tooltip text="Poeta simbolista francese (1842-1898).">
+          <strong>Mallarmé</strong>
+        </Tooltip>, mentre in pittura e grafica si affermano i manifesti e l'estetica notturna dei locali di Montmartre.
+        In musica, l'<strong>Impressionismo</strong> cerca colore timbrico e atmosfera: i nomi chiave sono{" "}
+        <Tooltip text="Compositore francese (1862-1918), padre dell'impressionismo musicale.">
+          <strong>Claude Debussy</strong>
+        </Tooltip>{" "}
+        e <strong>Maurice Ravel</strong>.
       </p>
       <p className="text-sm text-slate-300 leading-relaxed mb-4">
         Il <strong>cabaret francese</strong> (café-concert) è il punto di incontro tra arti diverse: musica dal vivo, poesia,
@@ -1162,35 +1183,65 @@ const Parigi1888Section = () => {
         </p>
 
         <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-          <h3 className="text-base font-semibold text-slate-100 mb-3">Cosa succede nel 1888:</h3>
+          <h3 className="text-base font-semibold text-slate-100 mb-3">Cosa succede nel 1888</h3>
           <ul className="space-y-2 text-sm text-slate-300">
             <li className="flex items-start gap-2">
               <span className="text-blue-400 mt-1">•</span>
-              <span>La <strong>Torre Eiffel</strong> è in costruzione per l'Esposizione Universale del 1889</span>
+              <span>
+                La <strong>Torre Eiffel</strong> è in costruzione per l'
+                <Tooltip text="Grande esposizione internazionale a Parigi (1889) che celebra il progresso tecnico e industriale.">
+                  <span>Esposizione Universale</span>
+                </Tooltip>{" "}
+                del 1889
+              </span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-blue-400 mt-1">•</span>
-              <span><strong>Louis Pasteur</strong> fonda l'Istituto Pasteur, rivoluzionando la medicina</span>
+              <span>
+                <Tooltip text="Chimico e microbiologo francese; pioniere della vaccinazione e della teoria dei germi.">
+                  <strong>Louis Pasteur</strong>
+                </Tooltip>{" "}
+                fonda l'Istituto Pasteur, rivoluzionando la medicina
+              </span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-blue-400 mt-1">•</span>
-              <span><strong>Heinrich Hertz</strong> dimostra l'esistenza delle onde elettromagnetiche</span>
+              <span>
+                <Tooltip text="Fisico tedesco che dimostra sperimentalmente le onde elettromagnetiche.">
+                  <strong>Heinrich Hertz</strong>
+                </Tooltip>{" "}
+                dimostra l'esistenza delle onde elettromagnetiche
+              </span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-blue-400 mt-1">•</span>
-              <span><strong>George Eastman</strong> brevetta la prima fotocamera portatile Kodak</span>
+              <span>
+                <Tooltip text="Imprenditore statunitense; fondatore della Eastman Kodak Company.">
+                  <strong>George Eastman</strong>
+                </Tooltip>{" "}
+                brevetta la prima fotocamera portatile Kodak
+              </span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-blue-400 mt-1">•</span>
-              <span>L'arte si libera dal <strong>romanticismo</strong> e dalle regole accademiche</span>
+              <span>
+                L'arte si libera dal{" "}
+                <Tooltip text="Corrente ottocentesca caratterizzata da enfasi emotiva e culto del genio artistico.">
+                  <strong>romanticismo</strong>
+                </Tooltip>{" "}
+                e dalle regole accademiche
+              </span>
             </li>
           </ul>
         </div>
 
         <p className="text-sm text-slate-300 leading-relaxed">
-          In musica, <strong className="text-slate-100">Wagner</strong> domina l'Europa con le sue opere monumentali
-          e le tensioni armoniche drammatiche. Ma a Parigi, nei café-cabaret di Montmartre, sta nascendo qualcosa
-          di completamente diverso.
+          In musica,{" "}
+          <Tooltip text="Richard Wagner (1813-1883), compositore tedesco noto per drammi musicali monumentali e armonie dense.">
+            <strong className="text-slate-100">Wagner</strong>
+          </Tooltip>{" "}
+          domina l'Europa con le sue opere monumentali e le tensioni armoniche drammatiche; ma a Parigi,
+          nei café-cabaret di Montmartre, sta nascendo qualcosa di completamente diverso.
         </p>
 
         {/* Immagine Belle Époque */}
@@ -1242,8 +1293,7 @@ const Parigi1888Section = () => {
           <Tooltip text="Quartiere parigino dei café-cabaret dove Satie lavorò come pianista e trovò ispirazione per il suo stile sobrio">
             <strong className="text-slate-100">Montmartre</strong>
           </Tooltip>,
-          sulla collina a nord di Parigi, era il cuore della vita artistica bohémien.
-          Qui si mescolavano pittori, poeti, musicisti e intellettuali in un'atmosfera di libertà e sperimentazione.
+          sulla collina a nord di Parigi, era il cuore della vita artistica bohémien: qui si mescolavano pittori, poeti, musicisti e intellettuali in un'atmosfera di libertà e sperimentazione.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-4">
@@ -1291,8 +1341,7 @@ const Parigi1888Section = () => {
         <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
           <h3 className="text-base font-semibold text-slate-100 mb-3">L'atmosfera dei café-cabaret</h3>
           <p className="text-sm text-slate-300 leading-relaxed mb-3">
-            Nei cabaret di Montmartre, l'<strong>arte "alta"</strong> si mescolava con la <strong>cultura popolare</strong>.
-            La musica non era un rito religioso da sala da concerto, ma accompagnamento alla vita quotidiana:
+            Nei cabaret di Montmartre, l'<strong>arte "alta"</strong> si mescolava con la <strong>cultura popolare</strong>: la musica non era un rito religioso da sala da concerto, ma accompagnamento alla vita quotidiana con
             conversazioni, fumo, alcol, poesia.
           </p>
           <p className="text-sm text-slate-300 leading-relaxed">
@@ -1362,16 +1411,9 @@ const Parigi1888Section = () => {
       </h2>
       <div className="space-y-4">
         <p className="text-sm text-slate-300 leading-relaxed">
-          Montmartre era il centro del{" "}
-          <Tooltip text="Movimento artistico e letterario che predilige simboli ed evocazioni rispetto alla rappresentazione diretta della realtà">
-            <strong className="text-slate-100">movimento simbolista</strong>
-          </Tooltip>,
-          che rifiutava il{" "}
-          <Tooltip text="Rappresentazione fedele e oggettiva della realtà">
-            <span>realismo</span>
-          </Tooltip>{" "}
-          e l'accademismo in favore dell'evocazione, del sogno, dell'immagine
-          e della suggestione.
+          Montmartre era il centro del <strong className="text-slate-100">movimento simbolista</strong>,
+          che rifiutava il <span>realismo</span> e l'accademismo in favore dell'evocazione, del sogno,
+          dell'immagine e della suggestione.
         </p>
 
         <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
@@ -1414,9 +1456,7 @@ const Parigi1888Section = () => {
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
             <h3 className="text-base font-semibold text-slate-100 mb-2">J. P. Contamine de Latour</h3>
             <p className="text-sm text-slate-300">
-              <Tooltip text="Movimento artistico e letterario che predilige simboli ed evocazioni rispetto alla rappresentazione diretta della realtà">
-                <span>Poeta simbolista</span>
-              </Tooltip>, amico di Satie. La sua poesia <em>Les Antiques</em> fu pubblicata insieme
+              <span>Poeta simbolista</span>, amico di Satie. La sua poesia <em>Les Antiques</em> fu pubblicata insieme
               alla Gymnopédie n. 1 nell'estate del 1888 e ispirò il titolo arcaico.{" "}
               <button
                 type="button"
@@ -1426,16 +1466,22 @@ const Parigi1888Section = () => {
                 Leggi la poesia
               </button>
             </p>
+            <div className="mt-3 text-sm text-slate-400 leading-relaxed">
+              Satie e de Latour erano amici intimi e collaboravano spesso, condividendo i pochi averi e, a volte, pure l'unico paio di pantoloni "buoni".
+              La poesia appare accanto allo spartito nel 1888; alcuni studiosi ipotizzano che la musica
+              preceda il testo (con il verso sulla <em>sarabande</em> come omaggio alle <em>Sarabandes</em> del 1887),
+              altri pensano l'opposto.
+            </div>
           </div>
 
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
             <h3 className="text-base font-semibold text-slate-100 mb-2">Puvis de Chavannes</h3>
             <p className="text-sm text-slate-300">
               Satie adorava il pittore simbolista Puvis. Non esiste un'unica "ispirazione", ma un chiaro parallelo
-              tra la sua musica statica e dipinti come <em>Jeune fille au bord de la mer</em> (1879). L'opera
-              <em>The Arts and the Muses</em> ("Les Muses") riassume bene la sua estetica di semplicità, mentre
+              tra la sua musica statica e dipinti come <em>Jeune fille au bord de la mer</em> (1879). <br /> L'opera
+              <em>"Les Muses"</em> riassume bene la sua estetica di semplicità, mentre
               Rusiñol scrisse che Satie cercava in musica la stessa essenzialità raggiunta da Puvis in pittura.
-              Templier parlò di "esatte rappresentazioni musicali" dei suoi quadri. Per le <em>Sonneries de la Rose+Croix</em>
+              <br /> <br /> Templier parlò di "esatte rappresentazioni musicali" dei suoi quadri. Per le <em>Sonneries de la Rose+Croix</em>
               Satie scelse un frammento di <em>La Guerre</em> per il frontespizio.
             </p>
           </div>
@@ -1449,7 +1495,7 @@ const Parigi1888Section = () => {
             className="w-full object-contain bg-slate-950 p-2"
           />
           <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-            "The Arts and the Muses" ("Les Muses") di Puvis de Chavannes
+            "Les Muses" di Puvis de Chavannes
           </p>
         </div>
 
@@ -1707,13 +1753,13 @@ const SatieSection = () => {
             <p className="text-sm text-slate-300 leading-relaxed mb-3">
               Il Chat Noir non è solo un locale dove bere, è un <strong>laboratorio di sperimentazione</strong>
               dove poeti, pittori e musicisti si mescolano, discutono, collaborano. Vi passano{" "}
-              <strong>Claude Debussy</strong>, <strong>Paul Verlaine</strong>, <strong>Toulouse-Lautrec</strong>.
+              <strong>Claude Debussy</strong>, <strong>Paul Verlaine</strong> e{" "}
+              <Tooltip text="Pittore e illustratore (1864-1901), celebre per la vita notturna di Montmartre.">
+                <strong>Toulouse-Lautrec</strong>
+              </Tooltip>.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Qui Satie incontra <strong>J. P. Contamine de Latour</strong>,{" "}
-              <Tooltip text="Movimento artistico e letterario che predilige simboli ed evocazioni rispetto alla rappresentazione diretta della realtà">
-                <span>poeta simbolista</span>
-              </Tooltip>{" "}
+              Qui Satie incontra <strong>J. P. Contamine de Latour</strong>, <span>poeta simbolista</span>,
               la cui poesia <em>Les Antiques</em> ispirerà il titolo <em>Gymnopédie</em>.
             </p>
           </div>
@@ -3526,24 +3572,21 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
             con pochi elementi ripetuti e dissonanze controllate. Satie stesso scrisse: <em>«Sono venuto al mondo molto giovane in un tempo molto vecchio»</em>, una frase che riassume la sua posizione di outsider in un'epoca dominata dal wagnerismo.
           </p>
           <p>
-            Nel <strong>1888</strong> Parigi vive le trasformazioni della <Tooltip text="Periodo di grande fermento artistico, scientifico e culturale (fine Ottocento – 1914), con grandi saloni, progresso e fiducia nel futuro.">Belle Époque</Tooltip>: la Torre Eiffel si costruisce, Pasteur e Hertz rompono paradigmi scientifici, e l'arte si spoglia dal romanticismo e dalle regole accademiche. In questo contesto, Satie — un ragazzo di 21 anni, pianista cabaret a <Tooltip text="Quartiere parigino dei café-cabaret dove Satie lavorò come pianista e trovò ispirazione per il suo stile sobrio.">Montmartre</Tooltip> — compone tre piccoli brani che diventano le basi per la musica impressionista, minimalista e d'ambiente. Quanti pianisti principianti e non hanno desiderato suonarle, scoprendo poi che non era poi così semplice!
+            Nel <strong>1888</strong> Parigi vive le trasformazioni della <strong>Belle Époque</strong>: la Torre Eiffel si
+            costruisce, Pasteur e Hertz rompono paradigmi scientifici, e l'arte si spoglia dal romanticismo e dalle regole
+            accademiche. In questo contesto, Satie — un ragazzo di 21 anni, pianista cabaret a <strong>Montmartre</strong> —
+            compone tre piccoli brani che diventano le basi per la musica impressionista, minimalista e d'ambiente. Quanti
+            pianisti principianti e non hanno desiderato suonarle, scoprendo poi che non era poi così semplice!
           </p>
           <p>
-            Il titolo{' '}
-            <Tooltip text="Richiama la gymnopaedia: festa con danze rituali dell'antica Grecia (festa spartana con danze rituali). In Satie il riferimento rimane un enigma poetico.">
-              Gymnopédie
-            </Tooltip>{' '}
-            suggerisce un contesto arcaico senza chiarirlo. Secondo alcune testimonianze, Satie trasse
-            spunto dai <em>modi greci</em>, da romanzi di <em>Gustave Flaubert</em> e dalla poesia <em>Les Antiques</em> di J. P. Contamine de
-            Latour (amico simbolista), pubblicata insieme alla n. 1 nell'estate del 1888.
+            Il titolo <strong>Gymnopédie</strong> suggerisce un contesto arcaico senza chiarirlo. Secondo alcune testimonianze,
+            Satie trasse spunto dai <em>modi greci</em>, da romanzi di <em>Gustave Flaubert</em> e dalla poesia <em>Les Antiques</em>
+            di J. P. Contamine de Latour (amico simbolista), pubblicata insieme alla n. 1 nell'estate del 1888.
           </p>
           <p>
-            La pagina uscì con l'indicazione{' '}
-            <Tooltip text="Tempo lento e doloroso: guida l'espressione e la qualità timbrica.">
-              Lent et douloureux
-            </Tooltip>{' '}
-            e rimase quasi sconosciuta fino a quando <strong>Claude Debussy</strong> non orchestrò due numeri (1 e 3, invertendo la numerazione) e li
-            presentò il 20 febbraio 1897 alla Société Nationale. Oggi la n. 1 è considerata un prototipo del minimalismo musicale e
+            La pagina uscì con l'indicazione <strong>Lent et douloureux</strong> e rimase quasi sconosciuta fino a quando{" "}
+            <strong>Claude Debussy</strong> non orchestrò due numeri (1 e 3, invertendo la numerazione) e li presentò il{" "}
+            20 febbraio 1897 alla Société Nationale. Oggi la n. 1 è considerata un prototipo del minimalismo musicale e
             continua a ispirare arrangiamenti in ogni genere.
           </p>
         </div>
@@ -3679,7 +3722,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                   </div>
                 </div>
                 <p className="mb-2">
-                  È in questo <Tooltip text="Spirito libero, anti-accademico e nomade delle arti, che abbraccia irriverenza, performance e libertà espressiva.">ambiente bohémien</Tooltip> che Satie stringe amicizia con Claude Debussy e incontra il poeta <strong>Patrice Contamine de Latour</strong>, la cui influenza sarà determinante per la genesi delle Gymnopédies. La poesia <em>Les Antiques</em> di Contamine accompagnerà la prima pubblicazione della Gymnopédie n. 1 nell'estate 1888.
+                  È in questo ambiente bohémien che Satie stringe amicizia con Claude Debussy e incontra il poeta <strong>Patrice Contamine de Latour</strong>, la cui influenza sarà determinante per la genesi delle Gymnopédies. La poesia <em>Les Antiques</em> di Contamine accompagnerà la prima pubblicazione della Gymnopédie n. 1 nell'estate 1888.
                 </p>
                 <p className="text-sm text-slate-400 italic">
                   L'ambiente di Montmartre, con i suoi café-cabarets, il simbolismo e l'esoterismo, gli offre una libertà
