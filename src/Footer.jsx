@@ -42,28 +42,34 @@ export default function Footer({ setActiveTab }) {
           <hr className="w-32 border-t border-slate-700/60" />
           <div className="flex flex-wrap gap-2 justify-center w-full mt-2">
             <button
-              onClick={() => goto('introduzione')}
+              onClick={() => goto('benvenuto')}
               className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
             >
-              Introduzione
+              Benvenuto
             </button>
             <button
-              onClick={() => goto('analysis')}
+              onClick={() => goto('parigi1888')}
               className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
             >
-              Analisi
+              Parigi 1888
             </button>
             <button
-              onClick={() => goto('interpreters')}
+              onClick={() => goto('satie')}
               className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
             >
-              Interpreti
+              Erik Satie
             </button>
             <button
-              onClick={() => goto('glossary')}
+              onClick={() => goto('brano')}
               className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
             >
-              Glossario
+              Il Brano
+            </button>
+            <button
+              onClick={() => goto('eredita')}
+              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
+            >
+              Eredità
             </button>
             <button
               onClick={() => goto('impara')}

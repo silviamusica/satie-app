@@ -1161,7 +1161,6 @@ const SatieSection = () => {
           Erik Satie con occhiali: l'outsider che rifiuta le convenzioni accademiche
         </p>
       </div>
-
       {/* Il giovane ribelle */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
@@ -1242,16 +1241,15 @@ const SatieSection = () => {
         </div>
       </div>
 
-      {/* Il pianista di Montmartre */}
+      {/* Montmartre e Gymnopédies */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
           <Music className="w-6 h-6 text-blue-400" />
-          Il pianista di Montmartre (1887-1888)
+          Montmartre e le Gymnopédies (1887-1888)
         </h2>
         <div className="space-y-4">
           <p className="text-sm text-slate-300 leading-relaxed">
-            A <strong>21 anni</strong>, dopo un breve servizio militare (dal quale uscì procurandosi
-            deliberatamente una bronchite), Satie trova lavoro come <strong>secondo pianista</strong> al
+            A <strong>21 anni</strong>, dopo un breve servizio militare, Satie trova lavoro come <strong>secondo pianista</strong> al
             <Tooltip text="Celebre café-cabaret di Montmartre fondato nel 1881 da Rodolphe Salis">
               <strong className="text-slate-100">Chat Noir</strong>
             </Tooltip>.
@@ -1281,11 +1279,10 @@ const SatieSection = () => {
                 className="w-full h-72 object-contain bg-slate-950 p-2"
               />
               <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-                6 Rue Cortot, Montmartre
+                6 Rue Cortot, Montmartre: abitazione di Satie durante gli anni delle Gymnopédies.
               </p>
             </div>
 
-            {/* Ritratto bohémien */}
             <div className="rounded-lg overflow-hidden border border-slate-600">
               <img
                 src="/images/The bohemien SATIE.jpg"
@@ -1293,7 +1290,7 @@ const SatieSection = () => {
                 className="w-full h-72 object-contain bg-slate-950 p-2"
               />
               <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-                Erik Satie in abito bohémien
+                Erik Satie in abito bohémien: ritratto del compositore negli anni di Montmartre.
               </p>
             </div>
           </div>
@@ -1304,10 +1301,168 @@ const SatieSection = () => {
               Febbraio-aprile 1888 — la composizione
             </h3>
             <p className="text-sm text-slate-300 leading-relaxed">
-              In questo ambiente di libertà artistica, Satie — a soli 21 anni — compone le
-              <strong> tre Gymnopédies</strong>. Pagine brevi, apparentemente semplici, ma rivoluzionarie:
-              armonie sospese, forme svuotate di drammaticità, un suono "bianco" che oppone al wagnerismo
-              dominante un'<strong>estetica dell'essenziale</strong>.
+              In questo ambiente di libertà artistica, Satie compone le <strong>tre Gymnopédies</strong>.
+              Pagine brevi, apparentemente semplici, ma rivoluzionarie: armonie sospese, forme svuotate di drammaticità,
+              un suono "bianco" che oppone al wagnerismo dominante un'<strong>estetica dell'essenziale</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Periodo rosacrociano */}
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+          <Sparkles className="w-6 h-6 text-amber-400" />
+          Il periodo rosacrociano (1891-1893)
+        </h2>
+        <p className="text-sm text-slate-300 leading-relaxed mb-4">
+          In questi anni Satie entra nell'Ordine della Rosa-Croce di <strong>Joséphin Péladan</strong>, diventandone
+          compositore ufficiale e maestro di cappella. È una fase di misticismo, simbolismo e disciplina estetica,
+          in cui cerca una musica essenziale e rituale.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="rounded-lg overflow-hidden border border-slate-600">
+            <img
+              src="/images/Peladan.jpg"
+              alt="Joséphin Péladan"
+              className="w-full h-80 object-contain bg-slate-950 p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              Joséphin Péladan, fondatore dell'Ordine della Rosa-Croce
+            </p>
+          </div>
+          <div className="rounded-lg overflow-hidden border border-slate-600">
+            <img
+              src="/images/erik-satie-son-of-stars_u-l-q1nt8j80.jpg"
+              alt="Manoscritto Le Fils des Étoiles"
+              className="w-full h-80 object-contain bg-slate-950 p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              Manoscritto "Le Fils des Étoiles" (1891)
+            </p>
+          </div>
+        </div>
+        <div className="mt-4 bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+          <h3 className="text-base font-semibold text-slate-100 mb-2">"Esoterik Satie"</h3>
+          <p className="text-sm text-slate-300 leading-relaxed">
+            A Montmartre, lo scrittore Alphonse Allais lo soprannominò <em>"Esoterik Satie"</em> — un gioco di parole
+            che univa il suo nome ai suoi interessi mistici. L'aspetto caratteristico: cappello a cilindro, lunghi capelli,
+            mantello nero.
+          </p>
+        </div>
+      </div>
+
+      {/* Suzanne Valadon */}
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+          <User className="w-6 h-6 text-blue-400" />
+          Suzanne Valadon (1893)
+        </h2>
+        <p className="text-sm text-slate-300 leading-relaxed mb-3">
+          Nel 1893 Satie vive una relazione intensa con <strong>Suzanne Valadon</strong>, pittrice e madre di Maurice
+          Utrillo. È l'unico amore documentato della sua vita: lei lo chiama affettuosamente <em>"Biqui"</em>, lui le
+          dedica una minuscola canzone di quattro battute come regalo di Pasqua. Quando la relazione si interrompe,
+          Satie ne rimane profondamente segnato.
+        </p>
+        <p className="text-sm text-slate-300 leading-relaxed">
+          In quegli stessi mesi si scambiano ritratti: Valadon dipinge Satie, mentre lui la ritrae su carta da musica.
+          Due immagini complementari che raccontano un momento intimo e raro nella biografia del compositore.
+        </p>
+        <div className="grid sm:grid-cols-3 gap-4 mt-4">
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+            <img
+              src="/images/valadon-satie-1892-ritratto.jpg"
+              alt="Ritratto di Erik Satie di Suzanne Valadon"
+              className="w-full h-56 object-contain p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              Suzanne Valadon, "Ritratto di Erik Satie" (1892-93)
+            </p>
+          </div>
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+            <img
+              src="/images/Bonjour-Biquii.jpg"
+              alt="Spartito di Bonjour Biqui, Bonjour!"
+              className="w-full h-56 object-contain p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              "Bonjour Biqui, Bonjour!" (1893): canzone-regalo per Valadon
+            </p>
+          </div>
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+            <img
+              src="/images/Satie_portret_Valadon_1893.jpg"
+              alt="Ritratto di Suzanne Valadon disegnato da Erik Satie"
+              className="w-full h-56 object-contain p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              Disegno originale di Erik Satie raffigurante Suzanne Valadon (1893)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Arcueil */}
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+          <Home className="w-6 h-6 text-blue-400" />
+          Arcueil e l'"Armadio" (1898-1925)
+        </h2>
+        <div className="grid sm:grid-cols-2 gap-4 items-stretch">
+          <div className="rounded-lg overflow-hidden border border-slate-600">
+            <img
+              src="/images/2015-Arcueil-Erik-Satie-house.jpg"
+              alt="Casa di Erik Satie ad Arcueil"
+              className="w-full h-80 object-contain bg-slate-950 p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              Arcueil: la casa di Satie per gli ultimi 27 anni della sua vita (1898-1925).
+            </p>
+          </div>
+          <div className="space-y-4">
+            <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+              <h3 className="text-base font-semibold text-slate-100 mb-2">La stanza "l'Armadio"</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Dal 1898 visse ad <strong>Arcueil</strong> in una stanza chiamata "l'Armadio". Nessuno vi entrò mai
+                fino alla sua morte nel 1925. Gli amici trovarono: due pianoforti sovrapposti, oltre 100 ombrelli
+                e spartiti nascosti ovunque.
+              </p>
+            </div>
+            <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+              <h3 className="text-base font-semibold text-slate-100 mb-2">La "dieta bianca"</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Nelle sue <em>Memorie di un Amnesico</em> (1912), Satie affermò di nutrirsi solo di cibi bianchi:
+                uova, zucchero, ossa grattugiate, sale, cocco. Una provocazione artistica che rifletteva
+                la sua estetica della <strong>purezza sonora</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Parade e avanguardie */}
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+          <Sparkles className="w-6 h-6 text-amber-400" />
+          Parade e avanguardie (1917)
+        </h2>
+        <div className="grid sm:grid-cols-[1.1fr_0.9fr] gap-4 items-stretch">
+          <div className="rounded-lg overflow-hidden border border-slate-600">
+            <img
+              src="/images/jean-cocteau---erik-satie--arcueil--mais-JKLTD-570.webp"
+              alt="Schizzo di Jean Cocteau su Erik Satie"
+              className="w-full h-72 object-contain bg-slate-950 p-2"
+            />
+          </div>
+          <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
+            <h3 className="text-base font-semibold text-slate-100 mb-2">Jean Cocteau</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Poeta, drammaturgo, artista e cineasta francese. Collaborò con Satie nel balletto <em>Parade</em> (1917),
+              insieme a Picasso e Massine. Fu una figura chiave dell'avanguardia parigina e un interprete precoce
+              dell'estetica essenziale di Satie.
+            </p>
+            <p className="text-sm text-slate-400 italic mt-3">
+              Schizzo di Cocteau dedicato a Satie.
             </p>
           </div>
         </div>
@@ -1374,93 +1529,6 @@ const SatieSection = () => {
         )}
       </div>
 
-      {/* Curiosità e carattere */}
-      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-        <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
-          <Sparkles className="w-6 h-6 text-amber-400" />
-          Il personaggio Satie
-        </h2>
-        <div className="space-y-4">
-          <div className="grid sm:grid-cols-2 gap-4">
-            {/* Esoterik Satie */}
-            <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-              <h3 className="text-base font-semibold text-slate-100 mb-2">"Esoterik Satie"</h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                A Montmartre, lo scrittore Alphonse Allais lo soprannominò <em>"Esoterik Satie"</em> —
-                un gioco di parole che univa il suo nome ai suoi interessi mistici. L'aspetto caratteristico:
-                cappello a cilindro, lunghi capelli, mantello nero.
-              </p>
-            </div>
-
-            {/* La dieta bianca */}
-            <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-              <h3 className="text-base font-semibold text-slate-100 mb-2">La "dieta bianca"</h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                Nelle sue <em>Memorie di un Amnesico</em>, Satie affermò di nutrirsi solo di cibi bianchi:
-                uova, zucchero, ossa grattugiate, sale, cocco. Una provocazione artistica che rifletteva
-                la sua estetica della <strong>purezza sonora</strong>.
-              </p>
-            </div>
-
-            {/* L'Armadio */}
-            <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-              <h3 className="text-base font-semibold text-slate-100 mb-2">La stanza "l'Armadio"</h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                Dal 1898 visse ad <strong>Arcueil</strong> in una stanza chiamata "l'Armadio". Nessuno vi entrò mai
-                fino alla sua morte nel 1925. Gli amici trovarono: due pianoforti sovrapposti, oltre 100 ombrelli
-                e spartiti nascosti ovunque.
-              </p>
-            </div>
-
-            {/* Suzanne Valadon */}
-            <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-              <h3 className="text-base font-semibold text-slate-100 mb-2">L'unico amore</h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                <strong>Suzanne Valadon</strong>, pittrice e madre di Maurice Utrillo, fu l'unico amore
-                documentato di Satie (1893). Le compose la brevissima canzone <em>"Bonjour Biqui, Bonjour!"</em>
-                come regalo pasquale.
-              </p>
-            </div>
-          </div>
-
-          {/* Immagine HERO - Disegno originale Valadon */}
-          <div className="rounded-lg overflow-hidden border border-slate-600">
-            <img
-              src="/images/Satie_portret_Valadon_1893.jpg"
-              alt="Ritratto di Suzanne Valadon disegnato da Erik Satie"
-              className="w-full h-[32rem] object-contain bg-slate-950 p-2"
-            />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-              Disegno originale di Erik Satie raffigurante Suzanne Valadon (1893)
-            </p>
-          </div>
-
-          {/* Grid Rosa-Croce e altro */}
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="rounded-lg overflow-hidden border border-slate-600">
-              <img
-                src="/images/Peladan.jpg"
-                alt="Joséphin Péladan"
-                className="w-full h-80 object-contain bg-slate-950 p-2"
-              />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-                Joséphin Péladan, fondatore dell'Ordine della Rosa-Croce
-              </p>
-            </div>
-            <div className="rounded-lg overflow-hidden border border-slate-600">
-              <img
-                src="/images/erik-satie-son-of-stars_u-l-q1nt8j80.jpg"
-                alt="Manoscritto Le Fils des Étoiles"
-                className="w-full h-80 object-contain bg-slate-950 p-2"
-              />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-                Manoscritto "Le Fils des Étoiles" (1891)
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* CTA */}
       <div className="text-center">
         <p className="text-sm text-slate-400 mb-3">
@@ -1472,8 +1540,10 @@ const SatieSection = () => {
 };
 
 // Sezione 4: Il Brano
-const BranoSection = () => (
-  <div className="space-y-6 max-w-5xl mx-auto">
+const BranoSection = () => {
+  const [showScore, setShowScore] = useState(false);
+  return (
+    <div className="space-y-6 max-w-5xl mx-auto">
     {/* Header */}
     <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
       <h1 className="text-3xl font-bold text-slate-100 mb-3 flex items-center gap-3">
@@ -1721,6 +1791,18 @@ const BranoSection = () => (
           </div>
         </div>
       </div>
+
+      <div className="mt-6 text-center">
+        <button
+          type="button"
+          onClick={() => setShowScore((prev) => !prev)}
+          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+        >
+          {showScore ? "Nascondi lo spartito completo" : "Mostra lo spartito completo"}
+          <ChevronDown className={`w-4 h-4 transition-transform ${showScore ? "rotate-180" : ""}`} />
+        </button>
+      </div>
+      {showScore && <PdfScoreViewer />}
     </div>
 
     {/* CTA */}
@@ -1729,8 +1811,9 @@ const BranoSection = () => (
         Ora che conosci il brano, scopriamo la sua eredità nella musica moderna
       </p>
     </div>
-  </div>
-);
+    </div>
+  );
+};
 
 // Sezione 5: Eredità
 const EreditaSection = () => {
@@ -3400,6 +3483,10 @@ export default function App() {
       }
     }, 200);
   };
+  const handleNextTab = () => {
+    const nextIndex = Math.min(TABS.length - 1, tabIndex + 1);
+    if (nextIndex !== tabIndex) setActiveTab(TABS[nextIndex]);
+  };
 
   return (
     <ErrorBoundary>
@@ -3426,7 +3513,7 @@ export default function App() {
             </nav>
           </div>
         </header>
-        <main className="max-w-6xl mx-auto px-4 py-7">
+        <main className="max-w-6xl mx-auto px-4 py-7 space-y-10">
           {activeTab === "benvenuto" && <BenvenutoSection goTo={setActiveTab} />}
           {activeTab === "parigi1888" && <Parigi1888Section />}
           {activeTab === "satie" && <SatieSection />}
@@ -3434,6 +3521,18 @@ export default function App() {
           {activeTab === "eredita" && <EreditaSection />}
           {activeTab === "impara" && <ImparaSection />}
           {activeTab === "fonti" && <FontiSection />}
+          {activeTab !== "benvenuto" && tabIndex < TABS.length - 1 && (
+            <div className="text-center">
+              <button
+                type="button"
+                onClick={handleNextTab}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+              >
+                Prosegui
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          )}
         </main>
         <Footer setActiveTab={setActiveTab} />
       </div>
