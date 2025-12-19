@@ -28,7 +28,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 // Tab principali - Nuova struttura in 7 sezioni
-const TABS = ["benvenuto", "parigi1888", "satie", "brano", "eredita", "impara", "fonti"];
+const TABS = ["benvenuto", "parigi1888", "satie", "brano", "eredita", "glossario", "impara", "fonti"];
 
 // Error boundary per gestire errori a livello di componente
 class ErrorBoundary extends React.Component {
@@ -711,7 +711,8 @@ const BenvenutoSection = ({ goTo }) => (
           { title: "Erik Satie", desc: "Il giovane outsider che rivoluzionò la musica", icon: User, tab: "satie" },
           { title: "Il Brano", desc: "Genesi, linguaggio musicale e come suonarlo", icon: Music, tab: "brano" },
           { title: "L'Eredità", desc: "Dal minimalismo all'ambient: l'impatto di Satie", icon: Sparkles, tab: "eredita" },
-          { title: "Impara", desc: "Quiz interattivo e glossario completo", icon: GraduationCap, tab: "impara" },
+          { title: "Glossario", desc: "Termini musicali e contesto in schede rapide", icon: Library, tab: "glossario" },
+          { title: "Impara", desc: "Quiz interattivo e flashcard", icon: GraduationCap, tab: "impara" },
           { title: "Fonti", desc: "Spartiti, registrazioni e approfondimenti", icon: FileText, tab: "fonti" },
         ].map((item) => (
           <button
@@ -937,18 +938,6 @@ const Parigi1888Section = () => (
           <p className="text-sm text-slate-300 leading-relaxed">
             Vi passarono <strong>Claude Debussy</strong>, <strong>Paul Verlaine</strong>, <strong>Toulouse-Lautrec</strong>
             e molti altri artisti che avrebbero segnato l'epoca.
-          </p>
-        </div>
-
-        {/* Mappa Montmartre */}
-        <div className="rounded-lg overflow-hidden border border-slate-600">
-          <img
-            src="/images/mappa-montmartre-1880-1900.jpg"
-            alt="Mappa di Montmartre"
-            className="w-full object-contain bg-slate-950 p-2"
-          />
-          <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-            Mappa di Montmartre (1880-1900)
           </p>
         </div>
 
@@ -3147,6 +3136,12 @@ const InterpretersSection = () => {
 
 // Sezione Glossario
 const GlossarySection = () => {
+  const [openItem, setOpenItem] = useState({});
+  const toggleItem = (catIndex, itemIndex) => {
+    const key = `${catIndex}-${itemIndex}`;
+    setOpenItem((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
   return (
     <div id="glossary" className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
@@ -3160,27 +3155,29 @@ const GlossarySection = () => {
             <React.Fragment key={i}>
               <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-5">
                 <div className="text-slate-100 font-semibold mb-4">{cat.category}</div>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-3">
-                    {cat.items.slice(0, Math.ceil(cat.items.length / 2)).map((it, j) => (
-                      <div key={j} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
-                        <div className="text-sm text-slate-100 font-semibold">{it.term}</div>
-                        <div className="text-sm text-slate-300 mt-2 leading-relaxed">
-                          {it.definition}
-                        </div>
+                <div className="space-y-2">
+                  {[...cat.items]
+                    .sort((a, b) => a.term.localeCompare(b.term, "it", { sensitivity: "base" }))
+                    .map((it, j) => {
+                    const key = `${i}-${j}`;
+                    return (
+                      <div key={key} className="bg-slate-900/60 border border-slate-700 rounded-lg overflow-hidden">
+                        <button
+                          type="button"
+                          onClick={() => toggleItem(i, j)}
+                          className="w-full px-4 py-3 flex items-center justify-between text-left hover:bg-slate-900/80"
+                        >
+                          <span className="text-sm text-slate-100 font-semibold">{it.term}</span>
+                          <ChevronDown className={`w-4 h-4 text-slate-300 transition-transform ${openItem[key] ? "rotate-180" : ""}`} />
+                        </button>
+                        {openItem[key] && (
+                          <div className="px-4 pb-4 text-sm text-slate-300 leading-relaxed">
+                            {it.definition}
+                          </div>
+                        )}
                       </div>
-                    ))}
-                  </div>
-                  <div className="space-y-3">
-                    {cat.items.slice(Math.ceil(cat.items.length / 2)).map((it, j) => (
-                      <div key={j} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
-                        <div className="text-sm text-slate-100 font-semibold">{it.term}</div>
-                        <div className="text-sm text-slate-300 mt-2 leading-relaxed">
-                          {it.definition}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -3208,20 +3205,6 @@ const GlossarySection = () => {
                       <p className="text-sm font-semibold text-slate-200 mb-1">Diagramma accordi di settima</p>
                       <p className="text-sm text-slate-400 italic">Visualizzazione armonica</p>
                     </div>
-                  </div>
-                </div>
-              )}
-
-              {cat.category === "Contesto" && (
-                <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
-                  <img
-                    src="/images/mappa-montmartre-1880-1900.jpg"
-                    alt="Mappa di Montmartre (1880-1900)"
-                    className="w-full h-80 object-cover"
-                  />
-                  <div className="p-3">
-                    <p className="text-sm font-semibold text-slate-200 mb-1">Mappa di Montmartre (1880-1900)</p>
-                    <p className="text-sm text-slate-400 italic">Localizzazione dei cabaret: Chat Noir, Auberge du Clou</p>
                   </div>
                 </div>
               )}
@@ -3471,6 +3454,7 @@ export default function App() {
     satie: { label: "Erik Satie", icon: User },
     brano: { label: "Il Brano", icon: Music },
     eredita: { label: "Eredità", icon: Sparkles },
+    glossario: { label: "Glossario", icon: Library },
     impara: { label: "Impara", icon: GraduationCap },
     fonti: { label: "Fonti", icon: FileText },
   };
@@ -3519,10 +3503,26 @@ export default function App() {
           {activeTab === "satie" && <SatieSection />}
           {activeTab === "brano" && <BranoSection />}
           {activeTab === "eredita" && <EreditaSection />}
+          {activeTab === "glossario" && <GlossarySection />}
           {activeTab === "impara" && <ImparaSection />}
           {activeTab === "fonti" && <FontiSection />}
           {activeTab !== "benvenuto" && tabIndex < TABS.length - 1 && (
             <div className="text-center">
+              {activeTab === "eredita" && (
+                <p className="text-sm text-slate-400 mb-3">
+                  Scopri i termini chiave nel glossario completo prima di passare ai quiz.
+                </p>
+              )}
+              {activeTab === "glossario" && (
+                <p className="text-sm text-slate-400 mb-3">
+                  Ora puoi metterti alla prova con quiz e flashcard.
+                </p>
+              )}
+              {activeTab === "impara" && (
+                <p className="text-sm text-slate-400 mb-3">
+                  Se vuoi approfondire, trovi tutte le fonti e i materiali di riferimento.
+                </p>
+              )}
               <button
                 type="button"
                 onClick={handleNextTab}

@@ -72,6 +72,12 @@ export default function Footer({ setActiveTab }) {
               Eredità
             </button>
             <button
+              onClick={() => goto('glossario')}
+              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
+            >
+              Glossario
+            </button>
+            <button
               onClick={() => goto('impara')}
               className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
             >
