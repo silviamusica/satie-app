@@ -324,7 +324,7 @@ const glossaryData = [
       {
         term: "Maurice Ravel e la riscoperta (1911)",
         definition:
-          "Oltre a Debussy (che orchestrò la n.1 e n.3 nel 1897), anche Maurice Ravel fu fondamentale per la fama delle Gymnopédies. Nel 1911, Ravel eseguì pubblicamente la Gymnopédie n.3, contribuendo alla 'riscoperta' di Satie dopo anni di relativo oblio. Questo evento segnò l'inizio del riconoscimento di Satie presso i giovani compositori (Groupe des Six), che lo acclamarono come 'maestro' e precursore dell'anti-romanticismo.",
+          "Oltre a Debussy (che orchestrò la n.1 e n.3 nel 1897), anche Maurice Ravel fu fondamentale per la fama delle Gymnopédies. Nel 1911, Ravel eseguì pubblicamente la Gymnopédie n.3, contribuendo alla 'riscoperta' di Satie dopo anni di relativo oblio. Questo evento segnò l'inizio del riconoscimento di Satie presso i giovani compositori del Groupe des Six (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre), che lo acclamarono come 'maestro' e precursore dell'anti-romanticismo.",
       },
       {
         term: "Puvis de Chavannes",
@@ -365,6 +365,81 @@ const glossaryData = [
         term: "Minimalismo",
         definition:
           "Movimento musicale nato negli anni '60 (Steve Reich, Philip Glass, Terry Riley) che riconosce Satie come antenato. Caratteristiche: ripetizione di pattern, armonia statica o lentamente cangiante, rifiuto del climax drammatico, economia di mezzi. Le Gymnopédies anticipano tutte queste caratteristiche.",
+      },
+    ],
+  },
+  {
+    category: "Personaggi",
+    items: [
+      {
+        term: "Erik Satie (1866-1925)",
+        definition:
+          "Compositore francese nato a Honfleur. Rivoluzionò la musica moderna con uno stile minimalista, ironico e anti-accademico. Espulso dal Conservatorio di Parigi, lavorò come pianista nei café-cabaret di Montmartre dove compose le tre Gymnopédies (1888). Visse una vita bohémien, segnata da relazioni intense (Suzanne Valadon), affiliazioni mistiche (Rosa-Croce), e collaborazioni d'avanguardia (Parade con Cocteau e Picasso, 1917). Considerato precursore dell'impressionismo, del minimalismo e della musica ambient.",
+      },
+      {
+        term: "Claude Debussy (1862-1918)",
+        definition:
+          "Compositore francese, massimo esponente dell'impressionismo musicale. Amico di lunga data di Satie, ne riconobbe il genio definendolo nel 1892 'un musicista medievale e dolce smarrito in questo secolo'. Nel 1896-1897 orchestrò le Gymnopédies n. 1 e n. 3, consacrandole come opere fondamentali del nuovo linguaggio musicale francese. L'amicizia fu profonda ma complessa, segnata da tensioni e divergenze estetiche. Opere celebri: Prélude à l'après-midi d'un faune (1894), La Mer (1905), Clair de lune.",
+      },
+      {
+        term: "Suzanne Valadon (1865-1938)",
+        definition:
+          "Pittrice francese e madre del pittore Maurice Utrillo. Nel 1893 visse con Satie una relazione breve ma intensa, l'unico amore documentato della vita del compositore. Lei lo chiamava affettuosamente 'Biqui'. Quando la relazione finì, Satie ne rimase profondamente segnato e non ebbe più relazioni sentimentali. Si scambiarono ritratti: lei dipinse un olio su tela di Satie con binocoli e barba rossastra (1892-93), lui la disegnò su carta da musica (1893). Ex modella di Renoir e Toulouse-Lautrec, divenne una delle prime pittrici professioniste riconosciute in Francia.",
+      },
+      {
+        term: "Joséphin Péladan (1858-1918)",
+        definition:
+          "Scrittore, critico d'arte e occultista francese, fondatore dell'Ordine della Rosa-Croce Cattolica del Tempio e del Graal. Si faceva chiamare 'Sâr Mérodack' (titolo assiro-babilonese). Nel 1891 nominò Satie compositore ufficiale e maestro di cappella dell'Ordine. La collaborazione durò solo un anno: nel 1892 Satie ruppe i rapporti, irritato dalla devozione wagneriana di Péladan e dalla sua autorità mistica. Durante questo periodo Satie compose opere esoteriche come Le Fils des Étoiles (1891) e le Sonneries de la Rose-Croix.",
+      },
+      {
+        term: "Maurice Ravel (1875-1937)",
+        definition:
+          "Compositore francese, maestro dell'orchestrazione. Ammirava profondamente Satie e nel 1911 eseguì pubblicamente la Gymnopédie n. 3, contribuendo alla 'riscoperta' di Satie dopo anni di relativo oblio. Questo evento segnò l'inizio del riconoscimento di Satie presso i giovani compositori del Groupe des Six. Ravel apprezzava la chiarezza formale e l'economia di mezzi di Satie. Opere celebri: Boléro (1928), Pavane pour une infante défunte (1899), Concerto per la mano sinistra (1930).",
+      },
+      {
+        term: "Jean Cocteau (1889-1963)",
+        definition:
+          "Poeta, scrittore, artista e cineasta francese. Nel 1915 iniziò la collaborazione con Satie per il balletto Parade (1917), unendosi a Picasso (scene e costumi) e Massine (coreografia). Cocteau considerava Satie un maestro dell'anti-romanticismo e nel 1918 scrisse il manifesto Le Coq et l'Arlequin ispirandosi alla sua estetica: musica essenziale, ironica, quotidiana. Fu teorico e promotore del Groupe des Six, di cui Satie divenne il 'padre spirituale'. Opere celebri: film Orfeo (1950), romanzo Les Enfants terribles (1929).",
+      },
+      {
+        term: "Pablo Picasso (1881-1973)",
+        definition:
+          "Pittore spagnolo, massimo esponente del cubismo. Collaborò con Satie e Cocteau per il balletto Parade (1917), creando scene e costumi rivoluzionari. Fu l'incontro tra cubismo, musica modernista e poesia d'avanguardia. Il debutto al Théâtre du Châtelet provocò scandalo e consolidò Satie come patriarca delle nuove avanguardie artistiche parigine.",
+      },
+      {
+        term: "J. P. Contamine de Latour (1867-1926)",
+        definition:
+          "Poeta simbolista francese, amico intimo di Satie a Montmartre. La sua poesia Les Antiques accompagnò la prima pubblicazione della Gymnopédie n. 1 nell'estate 1888 sulla rivista La Musique des familles. Il poema menziona esplicitamente il termine 'gymnopédie', ispirando probabilmente il titolo scelto da Satie. Frequentava il Chat Noir e condivideva con Satie l'interesse per l'antichità classica e il simbolismo.",
+      },
+      {
+        term: "Rodolphe Salis (1851-1897)",
+        definition:
+          "Fondatore e proprietario del cabaret Le Chat Noir (1881), celebre locale artistico di Montmartre. Accolse Satie come secondo pianista tra il 1887 e il 1888. Un aneddoto racconta che nel dicembre 1887, quando gli presentarono 'Erik Satie, gymnopediste', Salis commentò sarcastico: 'Davvero una bella professione!'. Satis creò al Chat Noir un ambiente bohémien unico dove artisti, poeti e musicisti (Debussy, Verlaine, Toulouse-Lautrec) si mescolavano liberamente.",
+      },
+      {
+        term: "John Cage (1912-1992)",
+        definition:
+          "Compositore americano sperimentale, figura chiave della musica d'avanguardia del XX secolo. Fu il grande riscopritore di Satie nel dopoguerra americano. Scrisse: 'Satie è indispensabile'. Trovò in lui un precursore del rifiuto della narrazione musicale, dell'interesse per silenzio e spazio, della musica come processo. Nel 1963 organizzò la prima esecuzione integrale di Vexations di Satie (tema ripetuto 840 volte, circa 18 ore), anticipando il minimalismo. Opera celebre: 4'33'' (1952), brano di silenzio in cui il pubblico ascolta i suoni ambientali.",
+      },
+      {
+        term: "Brian Eno (1948-)",
+        definition:
+          "Musicista, produttore e teorico inglese, inventore del concetto di 'ambient music'. Nel 1978 pubblicò Ambient 1: Music for Airports, riconoscendo il debito verso la Musique d'ameublement (musica d'arredamento) di Satie. Eno definì l'ambient come qualcosa che 'deve poter essere ignorata quanto ascoltata', citando direttamente Satie. Le Gymnopédies condividono questa estetica: musica che può accompagnare l'ambiente senza imporsi. Collaborò con David Bowie, U2, Talking Heads.",
+      },
+      {
+        term: "Francis Poulenc (1899-1963)",
+        definition:
+          "Compositore francese, membro più celebre del Groupe des Six. Considerava Satie un maestro dell'anti-romanticismo. Compose musica raffinata e ironica, dal balletto Les Biches (1924) alle Mélodies per voce e pianoforte. Opere celebri: Concerto per due pianoforti (1932), Gloria (1959).",
+      },
+      {
+        term: "Darius Milhaud (1892-1974)",
+        definition:
+          "Compositore francese, membro del Groupe des Six. Prolifico e sperimentale, fu pioniere del politonalismo (sovrapposizione di tonalità diverse). Incorporò elementi jazz nella musica classica. Opera celebre: La Création du monde (1923), balletto ispirato al jazz afroamericano.",
+      },
+      {
+        term: "Arthur Honegger (1892-1955)",
+        definition:
+          "Compositore svizzero-francese, membro del Groupe des Six. Celebre per Pacific 231 (1923), composizione orchestrale che imita il movimento di una locomotiva a vapore, mescolando musica e modernità industriale. Opera celebre: Sinfonia n. 3 'Liturgica' (1946).",
       },
     ],
   },
@@ -553,7 +628,7 @@ const flashcardsData = [
     q: "Quale ruolo ebbe Maurice Ravel nella riscoperta di Satie?",
     a: "Eseguì la Gymnopédie n.3 nel 1911",
     level: "avanzato",
-    details: "Oltre a Debussy (che orchestrò la n.1 e n.3 nel 1897), anche Maurice Ravel fu fondamentale. Nel 1911, Ravel eseguì pubblicamente la Gymnopédie n.3, contribuendo alla 'riscoperta' di Satie dopo anni di relativo oblio. Questo evento segnò l'inizio del riconoscimento presso i giovani compositori del Groupe des Six, che acclamarono Satie come 'maestro' e precursore dell'anti-romanticismo.",
+    details: "Oltre a Debussy (che orchestrò la n.1 e n.3 nel 1897), anche Maurice Ravel fu fondamentale. Nel 1911, Ravel eseguì pubblicamente la Gymnopédie n.3, contribuendo alla 'riscoperta' di Satie dopo anni di relativo oblio. Questo evento segnò l'inizio del riconoscimento presso i giovani compositori del Groupe des Six (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre), che acclamarono Satie come 'maestro' e precursore dell'anti-romanticismo.",
   },
   {
     q: "Perché Satie scrisse TRE Gymnopédies?",
@@ -745,7 +820,13 @@ const BenvenutoSection = ({ goTo }) => (
       </p>
       <p className="text-sm text-slate-300 leading-relaxed">
         Questa app ti guida alla scoperta di un brano che ha cambiato il corso della musica, della persona che lo compose e del
-        contesto storico che lo rese possibile.
+        contesto storico che lo rese possibile. Tutti i termini e i personaggi meno conosciuti sono spiegati nel{" "}
+        <button
+          onClick={() => goTo("glossario")}
+          className="text-blue-400 hover:text-blue-300 font-semibold underline"
+        >
+          glossario
+        </button>.
       </p>
     </div>
 
@@ -941,37 +1022,54 @@ const Parigi1888Section = () => (
           </p>
         </div>
 
-        {/* El bohemi - layout a due colonne */}
-        <div className="grid md:grid-cols-[0.6fr_1.4fr] gap-4 items-stretch">
-          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-            <img
-              src="/images/El_bohemi_by_Ramon_Casas-1.jpg"
-              alt="El bohemi di Ramon Casas"
-              className="w-full h-full object-contain p-2"
-            />
-          </div>
-          <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-between">
-            <div>
-              <h3 className="text-base font-semibold text-slate-100 mb-2">
+        {/* Vita bohémien */}
+        <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+          <h3 className="text-base font-semibold text-slate-100 mb-3">La vita bohémien</h3>
+          <p className="text-sm text-slate-300 leading-relaxed mb-4">
+            La bohème non era solo uno stile, ma un modo di stare al mondo: precarietà economica,
+            notti passate a discutere di estetica, amicizie e rivalità tra pittori e musicisti, gusto per
+            l'ironia e il paradosso. In questo ambiente, la musica smette di essere cerimonia ufficiale
+            e diventa linguaggio quotidiano, vicino alle persone e alle loro vite.
+          </p>
+
+          {/* Immagini affiancate: El Bohemi + Parigi Belle Époque */}
+          <div className="grid sm:grid-cols-2 gap-4">
+            {/* Colonna sinistra: El bohemi (verticale lunga) */}
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/El_bohemi_by_Ramon_Casas-1.jpg"
+                alt="El bohemi di Ramon Casas"
+                className="w-full object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
                 "El bohemi" (Ramon Casas, 1891)
-              </h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                Il ritratto di Casas coglie l'essenza della bohème di fine Ottocento: artisti, poeti e musicisti
-                che vivevano tra caffè, cabaret e atelier, lontani dalle regole accademiche. È lo stesso clima
-                di Montmartre in cui Satie suonava al Chat Noir, circondato da figure che mescolavano arte,
-                ironia e sperimentazione.
-              </p>
-              <p className="text-sm text-slate-300 leading-relaxed mt-3">
-                La bohème non era solo uno stile, ma un modo di stare al mondo: precarietà economica,
-                notti passate a discutere di estetica, amicizie e rivalità tra pittori e musicisti, gusto per
-                l'ironia e il paradosso. In questo ambiente, la musica smette di essere cerimonia ufficiale
-                e diventa linguaggio quotidiano, vicino alle persone e alle loro vite. Satie assorbe questa
-                libertà: scrive pagine essenziali, senza retorica, capaci di parlare con voce semplice e moderna.
               </p>
             </div>
-            <p className="text-sm text-slate-400 italic mt-3">
-              Un'icona visiva della libertà creativa che caratterizzava il quartiere.
-            </p>
+
+            {/* Colonna destra: due foto di Parigi */}
+            <div className="space-y-4">
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/paris-11-cafe-leroy-angle-rue-fontaine-au-roi-et-avenue-parmentier-1916.jpg"
+                  alt="Café Leroy a Parigi"
+                  className="w-full object-contain p-2"
+                />
+                <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                  Café Leroy, 1916: tipico café parigino frequentato da artisti
+                </p>
+              </div>
+
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/carte-postale-ancienne-paris-ii-boulevard-montmartre-autobus-a-plateforme.jpg"
+                  alt="Boulevard Montmartre con autobus"
+                  className="w-full object-contain p-2"
+                />
+                <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                  Boulevard Montmartre (Belle Époque): autobus e carrozze convivono nella Parigi moderna
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1129,7 +1227,7 @@ const SatieSection = () => {
       <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6">
         <h1 className="text-3xl font-bold text-slate-100 mb-3 flex items-center gap-3">
           <User className="w-7 h-7 text-blue-400" />
-          Erik Satie: l'outsider
+          Erik Satie: il bohémien
         </h1>
         <div className="flex items-center gap-3 mb-4">
           <span className="text-sm text-slate-400">1866 - 1925</span>
@@ -1147,7 +1245,7 @@ const SatieSection = () => {
           className="w-full h-72 md:h-96 object-cover"
         />
         <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-          Erik Satie con occhiali: l'outsider che rifiuta le convenzioni accademiche
+          Erik Satie: il bohémien che rifiuta le convenzioni accademiche
         </p>
       </div>
       {/* Il giovane ribelle */}
@@ -1157,20 +1255,47 @@ const SatieSection = () => {
           Il giovane ribelle (1866-1887)
         </h2>
         <div className="space-y-4">
-          <div className="grid sm:grid-cols-[200px_1fr] gap-4">
+          <div className="space-y-4">
             <div className="rounded-lg overflow-hidden border border-slate-600">
               <img
                 src="/images/Honfleur.jpg"
                 alt="Honfleur, città natale"
-                className="w-full h-32 sm:h-40 object-cover"
+                className="w-full object-contain bg-slate-950"
               />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                Honfleur, Normandia: porto pittoresco dove nacque Erik Satie nel 1866
+              </p>
             </div>
-            <div>
-              <h3 className="text-base font-semibold text-slate-100 mb-2">Honfleur, 17 maggio 1866</h3>
+
+            <div className="space-y-3">
+              <h3 className="text-base font-semibold text-slate-100">Honfleur, 17 maggio 1866</h3>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Erik Alfred Leslie Satie nasce a <strong>Honfleur</strong>, pittoresca cittadina portuale
-                in Normandia. La madre muore quando ha quattro anni. Il padre, agente marittimo,
-                si risposa con una pianista che gli dà le prime lezioni di musica.
+                <strong>Erik Alfred Leslie Satie</strong> nasce a <strong>Honfleur</strong>, pittoresca cittadina portuale
+                in Normandia. Il padre Alfred è agente marittimo, la madre Jane Leslie Anton è di origini scozzesi.
+              </p>
+
+              <h3 className="text-base font-semibold text-slate-100 mt-4">1870 (4 anni) — trasferimento a Parigi</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Durante la{" "}
+                <Tooltip text="Conflitto tra Francia e Prussia (1870-1871) che portò alla caduta di Napoleone III">
+                  <span>guerra Franco-Prussiana</span>
+                </Tooltip>, la famiglia si trasferisce a <strong>Parigi</strong>.
+                Ma nel <strong>1872</strong>, quando Erik ha appena <strong>sei anni</strong>, la madre <strong>muore</strong>.
+                Il padre, incapace di occuparsi dei quattro figli, li manda dai nonni materni a Honfleur.
+              </p>
+
+              <h3 className="text-base font-semibold text-slate-100 mt-4">1872-1878 (6-12 anni) — ritorno a Honfleur</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Erik cresce dai nonni in Normandia. La nonna gli dà le <strong>prime lezioni di pianoforte</strong>,
+                alimentando il suo talento musicale. Ma nel <strong>1878</strong>, quando ha <strong>12 anni</strong>,
+                anche la <strong>nonna muore</strong>.
+              </p>
+
+              <h3 className="text-base font-semibold text-slate-100 mt-4">1878 (12 anni) — di nuovo a Parigi</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Erik torna definitivamente a <strong>Parigi</strong> dal padre, che nel frattempo si è risposato
+                con Eugénie Barnetche, una <strong>pianista</strong> che diventa la sua prima vera insegnante di musica.
+                È lei a prepararlo per l'ingresso al Conservatorio l'anno seguente.
               </p>
             </div>
           </div>
@@ -1182,7 +1307,7 @@ const SatieSection = () => {
             </h3>
             <div className="space-y-3">
               <p className="text-sm text-slate-300 leading-relaxed">
-                Nel <strong>1879</strong>, a 13 anni, entra al <strong>Conservatorio di Parigi</strong>.
+                Nel <strong>1879 (13 anni)</strong>, entra al <strong>Conservatorio di Parigi</strong>.
                 Ma l'esperienza è un disastro. I professori lo giudicano:
               </p>
               <div className="bg-red-950/20 border border-red-700/30 rounded-lg p-3">
@@ -1202,8 +1327,8 @@ const SatieSection = () => {
                 </ul>
               </div>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Nel <strong>1882</strong>, dopo un'esecuzione mediocre del <em>Finale della Sonata Op. 26</em> di Beethoven,
-                viene <strong>espulso</strong>. Tenta un rientro nel 1885, ma abbandona definitivamente nel 1887.
+                Nel <strong>1882 (16 anni)</strong>, dopo un'esecuzione mediocre del <em>Finale della Sonata Op. 26</em> di Beethoven,
+                viene <strong>espulso</strong>. Tenta un rientro nel <strong>1885 (19 anni)</strong>, ma abbandona definitivamente nel <strong>1887 (21 anni)</strong>.
               </p>
             </div>
 
@@ -1220,12 +1345,29 @@ const SatieSection = () => {
           </div>
 
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-            <h3 className="text-base font-semibold text-slate-100 mb-2">Gli anni di formazione autodidatta</h3>
-            <p className="text-sm text-slate-300 leading-relaxed">
+            <h3 className="text-base font-semibold text-slate-100 mb-3">Gli anni di formazione autodidatta</h3>
+            <p className="text-sm text-slate-300 leading-relaxed mb-3">
               Tra il 1882 e il 1883, fuori dal Conservatorio, Satie si dedica alle <strong>letture</strong>:
               Voltaire, Dumas, Andersen. Sviluppa preferenze musicali personali per <strong>Bach, Chopin e Schumann</strong>.
               Rifiuta il wagnerismo dominante e cerca una strada alternativa.
             </p>
+
+            <h3 className="text-base font-semibold text-slate-100 mb-2 mt-4">1884 — il primo brano: <em>Allegro</em></h3>
+            <p className="text-sm text-slate-300 leading-relaxed mb-3">
+              La prima composizione nota per pianoforte è l'<strong><em>Allegro</em></strong>, scritta nel <strong>1884</strong> a 18 anni.
+              Seguono altre opere giovanili come la <em>Valse-Ballet</em> e la <em>Fantaisie-Valse</em> (<strong>1885-1887</strong>, 19-21 anni).
+            </p>
+
+            <div className="rounded-lg overflow-hidden border border-slate-600">
+              <img
+                src="/images/allegro-satie-1884.jpeg"
+                alt="Spartito dell'Allegro di Erik Satie"
+                className="w-full object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                "Allegro" (1884): la prima composizione ufficiale di Erik Satie
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1234,7 +1376,7 @@ const SatieSection = () => {
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
           <Music className="w-6 h-6 text-blue-400" />
-          Montmartre e le Gymnopédies (1887-1888)
+          Montmartre e le Gymnopédies (1887-1888, 21-22 anni)
         </h2>
         <div className="space-y-4">
           <p className="text-sm text-slate-300 leading-relaxed">
@@ -1289,11 +1431,22 @@ const SatieSection = () => {
               <Sparkles className="w-5 h-5" />
               Febbraio-aprile 1888 — la composizione
             </h3>
-            <p className="text-sm text-slate-300 leading-relaxed">
+            <p className="text-sm text-slate-300 leading-relaxed mb-3">
               In questo ambiente di libertà artistica, Satie compone le <strong>tre Gymnopédies</strong>.
               Pagine brevi, apparentemente semplici, ma rivoluzionarie: armonie sospese, forme svuotate di drammaticità,
               un suono "bianco" che oppone al wagnerismo dominante un'<strong>estetica dell'essenziale</strong>.
             </p>
+
+            <div className="rounded-lg overflow-hidden border border-slate-600 mt-3">
+              <img
+                src="/images/SATIE SCHIZZO AL PIANO.jpg"
+                alt="Ritratto di Erik Satie all'armonium"
+                className="w-full object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                Ritratto di Erik Satie che suona l'armonium (Santiago Rusiñol, senza data)
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1302,10 +1455,10 @@ const SatieSection = () => {
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
           <Sparkles className="w-6 h-6 text-amber-400" />
-          Il periodo rosacrociano (1891-1893)
+          Il periodo rosacrociano (1891-1893, 25-27 anni)
         </h2>
         <p className="text-sm text-slate-300 leading-relaxed mb-4">
-          In questi anni Satie entra nell'Ordine della Rosa-Croce di <strong>Joséphin Péladan</strong>, diventandone
+          Nel <strong>1891</strong> Satie entra nell'Ordine della Rosa-Croce del "Sâr" <strong>Joséphin Péladan</strong>, diventandone
           compositore ufficiale e maestro di cappella. È una fase di misticismo, simbolismo e disciplina estetica,
           in cui cerca una musica essenziale e rituale.
         </p>
@@ -1314,7 +1467,7 @@ const SatieSection = () => {
             <img
               src="/images/Peladan.jpg"
               alt="Joséphin Péladan"
-              className="w-full h-80 object-contain bg-slate-950 p-2"
+              className="w-full object-contain bg-slate-950 p-2"
             />
             <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
               Joséphin Péladan, fondatore dell'Ordine della Rosa-Croce
@@ -1324,20 +1477,115 @@ const SatieSection = () => {
             <img
               src="/images/erik-satie-son-of-stars_u-l-q1nt8j80.jpg"
               alt="Manoscritto Le Fils des Étoiles"
-              className="w-full h-80 object-contain bg-slate-950 p-2"
+              className="w-full object-contain bg-slate-950 p-2"
             />
             <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
               Manoscritto "Le Fils des Étoiles" (1891)
             </p>
           </div>
         </div>
-        <div className="mt-4 bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-          <h3 className="text-base font-semibold text-slate-100 mb-2">"Esoterik Satie"</h3>
-          <p className="text-sm text-slate-300 leading-relaxed">
-            A Montmartre, lo scrittore Alphonse Allais lo soprannominò <em>"Esoterik Satie"</em> — un gioco di parole
-            che univa il suo nome ai suoi interessi mistici. L'aspetto caratteristico: cappello a cilindro, lunghi capelli,
-            mantello nero.
+
+        <div className="rounded-lg overflow-hidden border border-slate-600 mt-4">
+          <img
+            src="/images/Le-Fils-des-etoiles.jpg"
+            alt="Spartito completo di Le Fils des Étoiles"
+            className="w-full object-contain bg-slate-950 p-2"
+          />
+          <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+            "Le Fils des Étoiles" (1891): preludio al primo atto del dramma caldeo di Péladan.
+            Musica statica, contemplativa, che cerca di evocare atmosfere esoteriche attraverso
+            armonie modali e un ritmo quasi inesistente
           </p>
+        </div>
+
+        <div className="mt-4 space-y-4">
+          <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-slate-100 mb-2">"Esoterik Satie"</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              A Montmartre, lo scrittore Alphonse Allais lo soprannominò <em>"Esoterik Satie"</em> — un gioco di parole
+              che univa il suo nome ai suoi interessi mistici. L'aspetto caratteristico: cappello a cilindro, lunghi capelli,
+              mantello nero.
+            </p>
+          </div>
+
+          <div className="bg-red-950/20 border border-red-700/30 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-red-200 mb-2 flex items-center gap-2">
+              <XCircle className="w-5 h-5" />
+              1892 (26 anni) — rottura con Péladan
+            </h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Nel <strong>1892 (26 anni)</strong>, dopo appena un anno, Satie rompe i rapporti con l'Ordine della Rosa-Croce
+              per divergenze estetiche e per la sua natura iconoclasta. Non sopporta l'autorità di Péladan
+              e decide di fondare una sua personale "chiesa".
+            </p>
+          </div>
+
+          <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-amber-200 mb-2">
+              1893 (27 anni) — l'Église Métropolitaine d'Art de Jésus Conducteur
+            </h3>
+            <p className="text-sm text-slate-300 leading-relaxed mb-3">
+              Nel <strong>1893 (27 anni)</strong> fonda la <strong>Église Métropolitaine d'Art de Jésus Conducteur</strong>
+              (Chiesa Metropolitana d'Arte di Gesù Conduttore). Satie ne è l'<strong>unico membro</strong> e Gran Sacerdote,
+              e utilizza questa "istituzione" principalmente per lanciare feroci attacchi ai critici musicali
+              attraverso bollettini e pamphlet (il <em>Cartulaire</em>).
+            </p>
+
+            <div className="rounded-lg overflow-hidden border border-amber-700/50 bg-slate-950">
+              <img
+                src="/images/Erik_Satie_eglise.jpeg"
+                alt="Erik Satie come leader della Chiesa"
+                className="w-full object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                Erik Satie, leader della Chiesa Metropolitana d'Arte (c. 1895)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Debussy e amicizia musicale */}
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+          <Music className="w-6 h-6 text-blue-400" />
+          Debussy e l'amicizia musicale (1891-1925)
+        </h2>
+
+        <div className="rounded-lg overflow-hidden border border-slate-600 mb-4">
+          <img
+            src="/images/satie e debussy.jpg"
+            alt="Erik Satie e Claude Debussy"
+            className="w-full object-contain bg-slate-950 p-2"
+          />
+          <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+            Erik Satie e Claude Debussy: un'amicizia profonda ma segnata da rivalità
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Satie e <strong>Claude Debussy</strong> stringono una profonda amicizia a partire dagli anni '90 a Montmartre.
+            Nonostante la grande stima reciproca (Debussy lo definì nel 1892 «<em>un musicista medievale e dolce smarrito in questo secolo</em>»),
+            il rapporto fu segnato da tensioni e frizioni.
+          </p>
+
+          <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-blue-200 mb-2">Il caso dei "brani senza forma"</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Un episodio celebre: Debussy disse a Satie che la sua musica peccava di <em>mancanza di forma</em>.
+              Per tutta risposta, Satie compose i <strong><em>Trois morceaux en forme de poire</em></strong> (Tre pezzi in forma di pera) per dimostrare, con ironia, di possedere una propria concezione formale.
+            </p>
+          </div>
+
+          <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-amber-200 mb-3">1896-1897 (30-31 anni) — Debussy orchestra le Gymnopédies</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Nel <strong>1896-1897 (30-31 anni)</strong>, Debussy orchestra le <strong>Gymnopédies n. 1 e n. 3</strong>,
+              portandole al grande pubblico e consacrandole come opere fondamentali del nuovo linguaggio musicale francese.
+              Questo gesto dimostra la sua profonda ammirazione per il lavoro di Satie, nonostante le divergenze personali.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -1345,7 +1593,7 @@ const SatieSection = () => {
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
           <User className="w-6 h-6 text-blue-400" />
-          Suzanne Valadon (1893)
+          Suzanne Valadon (1893, 27 anni)
         </h2>
         <p className="text-sm text-slate-300 leading-relaxed mb-3">
           Nel 1893 Satie vive una relazione intensa con <strong>Suzanne Valadon</strong>, pittrice e madre di Maurice
@@ -1357,36 +1605,53 @@ const SatieSection = () => {
           In quegli stessi mesi si scambiano ritratti: Valadon dipinge Satie, mentre lui la ritrae su carta da musica.
           Due immagini complementari che raccontano un momento intimo e raro nella biografia del compositore.
         </p>
-        <div className="grid sm:grid-cols-3 gap-4 mt-4">
-          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-            <img
-              src="/images/valadon-satie-1892-ritratto.jpg"
-              alt="Ritratto di Erik Satie di Suzanne Valadon"
-              className="w-full h-56 object-contain p-2"
-            />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-              Suzanne Valadon, "Ritratto di Erik Satie" (1892-93)
-            </p>
+        <div className="space-y-4 mt-4">
+          {/* Prima riga: ritratto di Satie e foto satie-valadon */}
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/valadon-satie-1892-ritratto.jpg"
+                alt="Ritratto di Erik Satie di Suzanne Valadon"
+                className="w-full object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                Suzanne Valadon, "Ritratto di Erik Satie" (1892-93)
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/satie-e-valadon.jpg"
+                alt="Erik Satie e Suzanne Valadon"
+                className="w-full object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                Erik Satie e Suzanne Valadon (1893)
+              </p>
+            </div>
           </div>
-          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-            <img
-              src="/images/Bonjour-Biquii.jpg"
-              alt="Spartito di Bonjour Biqui, Bonjour!"
-              className="w-full h-56 object-contain p-2"
-            />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-              "Bonjour Biqui, Bonjour!" (1893): canzone-regalo per Valadon
-            </p>
-          </div>
-          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-            <img
-              src="/images/Satie_portret_Valadon_1893.jpg"
-              alt="Ritratto di Suzanne Valadon disegnato da Erik Satie"
-              className="w-full h-56 object-contain p-2"
-            />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-              Disegno originale di Erik Satie raffigurante Suzanne Valadon (1893)
-            </p>
+
+          {/* Seconda riga: spartito Bonjour Biqui e disegno di Satie */}
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/Bonjour-Biquii.jpg"
+                alt="Spartito di Bonjour Biqui, Bonjour!"
+                className="w-full object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                "Bonjour Biqui, Bonjour!" (1893): canzone-regalo per Valadon
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/Satie_portret_Valadon_1893.jpg"
+                alt="Ritratto di Suzanne Valadon disegnato da Erik Satie"
+                className="w-full object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                Disegno originale di Erik Satie raffigurante Suzanne Valadon (1893)
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1395,7 +1660,7 @@ const SatieSection = () => {
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
           <Home className="w-6 h-6 text-blue-400" />
-          Arcueil e l'"Armadio" (1898-1925)
+          Arcueil e l'"Armadio" (1898-1925, 32-59 anni)
         </h2>
         <div className="grid sm:grid-cols-2 gap-4 items-stretch">
           <div className="rounded-lg overflow-hidden border border-slate-600">
@@ -1429,30 +1694,96 @@ const SatieSection = () => {
         </div>
       </div>
 
+      {/* Schola Cantorum */}
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+          <GraduationCap className="w-6 h-6 text-blue-400" />
+          Ritorno a scuola (1905-1908, 39-42 anni)
+        </h2>
+        <p className="text-sm text-slate-300 leading-relaxed">
+          Nel <strong>1905</strong>, a <strong>39 anni</strong>, Satie decide di tornare a studiare.
+          Si iscrive alla <strong>Schola Cantorum</strong> di Vincent d'Indy, dove studia contrappunto e fuga
+          per tre anni. Un gesto umile per chi era già considerato un innovatore, ma che dimostra
+          la sua ricerca costante di rigore e perfezionamento tecnico.
+        </p>
+      </div>
+
       {/* Parade e avanguardie */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
           <Sparkles className="w-6 h-6 text-amber-400" />
-          Parade e avanguardie (1917)
+          Parade e le avanguardie (1915-1917, 49-51 anni)
         </h2>
-        <div className="grid sm:grid-cols-[1.1fr_0.9fr] gap-4 items-stretch">
-          <div className="rounded-lg overflow-hidden border border-slate-600">
-            <img
-              src="/images/jean-cocteau---erik-satie--arcueil--mais-JKLTD-570.webp"
-              alt="Schizzo di Jean Cocteau su Erik Satie"
-              className="w-full h-72 object-contain bg-slate-950 p-2"
-            />
+
+        <div className="space-y-4">
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Nel <strong>1915 (49 anni)</strong> inizia la collaborazione con <strong>Jean Cocteau</strong>, poeta e artista d'avanguardia.
+            Insieme a <strong>Pablo Picasso</strong> (scene e costumi) e <strong>Léonide Massine</strong> (coreografia),
+            creano il balletto <strong><em>Parade</em></strong>, che debutta il <strong>18 maggio 1917</strong> (Satie ha 51 anni) al Théâtre du Châtelet.
+          </p>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="rounded-lg overflow-hidden border border-slate-600">
+              <img
+                src="/images/jean-cocteau---erik-satie--arcueil--mais-JKLTD-570.webp"
+                alt="Schizzo di Jean Cocteau su Erik Satie"
+                className="w-full object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                Schizzo di Cocteau dedicato a Satie
+              </p>
+            </div>
+
+            <div className="rounded-lg overflow-hidden border border-slate-600">
+              <img
+                src="/images/pARADE SATIE FRONTE.jpg"
+                alt="Spartito di Parade"
+                className="w-full object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                Spartito di "Parade" (1917)
+              </p>
+            </div>
           </div>
-          <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
-            <h3 className="text-base font-semibold text-slate-100 mb-2">Jean Cocteau</h3>
+
+          <div className="rounded-lg overflow-hidden border border-slate-600 mt-4">
+            <img
+              src="/images/RAGTIME PARADE.jpg"
+              alt="Spartito del Ragtime da Parade"
+              className="w-full object-contain bg-slate-950 p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              Spartito del Ragtime da "Parade": Satie incorpora elementi di musica popolare americana
+              nel linguaggio classico europeo, anticipando il jazz e la contaminazione tra generi musicali
+            </p>
+          </div>
+
+          <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4 mt-4">
+            <h3 className="text-base font-semibold text-amber-200 mb-2">Il successo e lo scandalo</h3>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Poeta, drammaturgo, artista e cineasta francese. Collaborò con Satie nel balletto <em>Parade</em> (1917),
-              insieme a Picasso e Massine. Fu una figura chiave dell'avanguardia parigina e un interprete precoce
-              dell'estetica essenziale di Satie.
+              <em>Parade</em> fu uno <strong>scandalo</strong>: la musica incorporava rumori quotidiani
+              (macchine da scrivere, sirene, pistole), le scene cubiste di Picasso sconvolgevano il pubblico,
+              e Cocteau parlava di "realismo surrealista". Ma proprio questo scandalo consacrò Satie
+              come patriarca delle nuove avanguardie.
             </p>
-            <p className="text-sm text-slate-400 italic mt-3">
-              Schizzo di Cocteau dedicato a Satie.
+          </div>
+
+          <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-blue-200 mb-2">Il Gruppo dei Sei</h3>
+            <p className="text-sm text-slate-300 leading-relaxed mb-3">
+              Dopo <em>Parade</em>, Satie diventa il <strong>patriarca spirituale</strong> del{" "}
+              <strong>Groupe des Six</strong> (Gruppo dei Sei), collettivo di sei giovani compositori francesi —{" "}
+              <strong>Francis Poulenc</strong>, <strong>Darius Milhaud</strong>, <strong>Arthur Honegger</strong>,{" "}
+              <strong>Georges Auric</strong>, <strong>Louis Durey</strong> e <strong>Germaine Tailleferre</strong> —
+              che negli anni '20 rifiutavano tanto il wagnerismo quanto l'impressionismo, cercando una musica moderna, urbana, ironica.
             </p>
+            <button
+              onClick={() => openModal("Il Gruppo dei Sei", <GroupeDesSixModal />)}
+              className="text-sm text-blue-400 hover:text-blue-300 font-semibold flex items-center group"
+            >
+              <span>Approfondisci</span>
+              <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+            </button>
           </div>
         </div>
       </div>
@@ -1866,8 +2197,8 @@ const EreditaSection = () => {
         <p className="text-sm text-slate-300 leading-relaxed mb-4">
           <strong>Claude Debussy</strong> intuì la forza di queste pagine e le orchestrò tra il 1896 e il 1897, rendendo
           la Gymnopédie n.1 un simbolo dell'estetica impressionista. <strong>Maurice Ravel</strong> ne ammirava la chiarezza
-          formale, mentre il <strong>Gruppo dei Sei</strong> lo considerava un padre spirituale: musica essenziale, quotidiana,
-          anti-wagneriana.
+          formale, mentre il <strong>Groupe des Six</strong> (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre)
+          lo considerava un padre spirituale: musica essenziale, quotidiana, anti-wagneriana.
         </p>
         <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
           <div className="flex items-center gap-2 text-slate-100 font-semibold mb-3">
@@ -2464,6 +2795,84 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
           </span>
         </li>
       </ul>
+    </div>
+  );
+
+  const GroupeDesSixModal = () => (
+    <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
+      <div className="bg-slate-900/50 p-4 rounded border-l-4 border-blue-500">
+        <p className="text-slate-200">
+          Il <strong>Groupe des Six</strong> (Gruppo dei Sei) fu un collettivo di sei giovani compositori francesi
+          che, negli anni '20, cercavano di rinnovare la musica francese rifiutando tanto il wagnerismo quanto
+          l'impressionismo di Debussy e Ravel.
+        </p>
+      </div>
+
+      <div className="space-y-3">
+        <h4 className="text-base font-semibold text-slate-100">I sei compositori</h4>
+        <ul className="space-y-3 ml-1">
+          <li className="flex items-start space-x-2">
+            <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
+            <span>
+              <strong className="text-blue-200">Francis Poulenc (1899-1963):</strong> il più noto del gruppo.
+              Compose musica raffinata e ironica, dal balletto <em>Les Biches</em> alle <em>Mélodies</em> per voce e pianoforte.
+            </span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
+            <span>
+              <strong className="text-blue-200">Darius Milhaud (1892-1974):</strong> prolifico compositore,
+              pioniere del politonalismo (sovrapposizione di tonalità diverse). Opere celebri: <em>La Création du monde</em> (1923).
+            </span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
+            <span>
+              <strong className="text-blue-200">Arthur Honegger (1892-1955):</strong> di origini svizzere,
+              celebre per <em>Pacific 231</em> (1923), composizione che imita una locomotiva a vapore.
+            </span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
+            <span>
+              <strong className="text-blue-200">Georges Auric (1899-1983):</strong> compose musiche per balletti
+              e per oltre 100 film, tra cui <em>Orfeo</em> di Jean Cocteau (1950).
+            </span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
+            <span>
+              <strong className="text-blue-200">Louis Durey (1888-1979):</strong> il meno conosciuto.
+              Abbandonò presto il gruppo per divergenze estetiche e si dedicò alla musica da camera.
+            </span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
+            <span>
+              <strong className="text-blue-200">Germaine Tailleferre (1892-1983):</strong> unica donna del gruppo.
+              Compose balletti, opere e musica da camera, lottando contro i pregiudizi di genere dell'epoca.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
+        <h4 className="text-base font-semibold text-blue-200 mb-2">Satie come padre spirituale</h4>
+        <p className="text-sm text-slate-300 leading-relaxed">
+          Dopo il successo di <em>Parade</em> (1917), Satie divenne il punto di riferimento per questi giovani compositori.
+          Lo consideravano un <strong>maestro dell'anti-romanticismo</strong>: musica essenziale, ironica, quotidiana,
+          liberata dalla grandiosità wagneriana e dalla complessità impressionista. Jean Cocteau, poeta e teorico del gruppo,
+          scrisse il manifesto <em>Le Coq et l'Arlequin</em> (1918) ispirandosi proprio all'estetica di Satie.
+        </p>
+      </div>
+
+      <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+        <h4 className="text-base font-semibold text-slate-100 mb-2">L'eredità del Gruppo dei Sei</h4>
+        <p className="text-sm text-slate-300 leading-relaxed">
+          Il gruppo si sciolse negli anni '30, ma l'influenza rimase: musica urbana, jazz, music-hall, ironia,
+          semplicità formale. Anticiparono la musica del Novecento: dalla musica da film alla canzone d'autore francese.
+        </p>
+      </div>
     </div>
   );
 
