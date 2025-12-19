@@ -952,10 +952,13 @@ const BenvenutoSection = ({ goTo }) => (
 
     {/* Cosa scoprirai */}
     <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+      <h2 className="text-2xl font-bold text-slate-100 mb-2">
+        Perché Gymnopédie n. 1
+      </h2>
+      <h3 className="text-xl font-semibold text-slate-200 mb-4 flex items-center gap-3">
         <BookOpen className="w-6 h-6 text-blue-400" />
         Cosa scoprirai
-      </h2>
+      </h3>
       <div className="grid gap-4 sm:grid-cols-2">
         {[
           { title: "Parigi 1888", desc: "La Belle Époque, Montmartre e il clima bohémien", icon: MapPin, tab: "parigi1888" },
@@ -2428,6 +2431,7 @@ const BranoSection = () => {
 
 // Sezione 5: Eredità
 const EreditaSection = () => {
+  const [showAmeublementModal, setShowAmeublementModal] = useState(false);
   const debussyOrchestrations = [
     {
       title: "Orchestrazione Debussy – versione classica (YouTube)",
@@ -2460,6 +2464,78 @@ const EreditaSection = () => {
 
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
+      {showAmeublementModal && (
+        <div
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setShowAmeublementModal(false)}
+        >
+          <div
+            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+                Musique d'ameublement: la musica come arredo
+              </h3>
+              <button
+                type="button"
+                onClick={() => setShowAmeublementModal(false)}
+                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+              >
+                chiudi
+              </button>
+            </div>
+            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p>
+                La <strong>musique d'ameublement</strong> (musica d'arredamento) e una delle idee piu radicali di Satie:
+                la musica non e il centro dell'attenzione, ma un elemento utile che si confonde con l'ambiente.
+              </p>
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
+                <p>
+                  L'idea nasce, secondo Fernand Leger, in un ristorante: Satie immagina una musica capace di
+                  <strong>ammorbidire i rumori</strong> (coltelli, forchette, strada) senza imporsi.
+                </p>
+              </div>
+              <p>
+                In una lettera a Jean Cocteau (1920) la definisce <strong>fondamentalmente industriale</strong>:
+                non per l'Arte, ma per bisogni utili, come luce e calore. E una reazione all'ascolto "devoto"
+                wagneriano: questa musica va <strong>ignorata</strong>, non ascoltata.
+              </p>
+              <p>
+                Musicalmente si basa su frammenti brevi ripetuti <em>ad libitum</em>, senza sviluppo o climax:
+                un meccanismo statico che elimina la narrazione.
+              </p>
+              <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+                <h4 className="text-sm font-semibold text-slate-100 mb-2">Opere (1917-1923)</h4>
+                <ul className="space-y-2">
+                  <li>• <strong>Tapisserie en fer forge</strong> (vestibolo per un grande ricevimento)</li>
+                  <li>• <strong>Carrelage phonique</strong> (pranzo o firma di un contratto)</li>
+                  <li>• <strong>Tenture de cabinet prefectoral</strong> (biblioteca, 12 battute da ripetere)</li>
+                  <li>• <strong>Chez un bistrot</strong></li>
+                  <li>• <strong>Un salon</strong></li>
+                </ul>
+              </div>
+              <p>
+                L'unica esecuzione pubblica (Galerie Barbazanges, 8 marzo 1920) fu un fiasco: il pubblico si sedette
+                ad ascoltare e Satie urlava <em>"Parlate! Circolate! Non ascoltate!"</em>.
+              </p>
+              <p>
+                Il concetto si compie nel cinema: per <em>Entr'acte</em> (1924) scrive musica fatta di ostinati brevi,
+                pensati come sfondo che amplifica le immagini senza chiedere attenzione.
+              </p>
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
+                <p>
+                  Eredi diretti: <strong>ambient</strong> (Brian Eno), <strong>minimalismo</strong>, John Cage, e persino
+                  la musica funzionale moderna (Muzak). Un'idea profetica che anticipa il modo in cui oggi viviamo il suono.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-3xl font-bold text-slate-100 mb-3 flex items-center gap-3">
@@ -2554,6 +2630,13 @@ const EreditaSection = () => {
               invadere. Nel 1978 <strong>Brian Eno</strong> pubblicò <em>Ambient 1: Music for Airports</em>, definendo l'ambient
               come musica che “può essere ignorata quanto ascoltata”: la stessa idea di Satie, un secolo prima.
             </p>
+            <button
+              type="button"
+              onClick={() => setShowAmeublementModal(true)}
+              className="mt-3 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+            >
+              approfondisci la musica d'arredamento <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
 
