@@ -10,6 +10,16 @@ const safeScrollTo = (target, options = { top: 0, behavior: 'smooth' }) => {
 };
 
 export default function Footer({ setActiveTab }) {
+  const footerTabs = [
+    { key: 'benvenuto', label: 'Benvenuto' },
+    { key: 'parigi1888', label: 'Parigi 1888' },
+    { key: 'satie', label: 'Erik Satie' },
+    { key: 'brano', label: 'Il Brano' },
+    { key: 'eredita', label: 'Eredità' },
+    { key: 'glossario', label: 'Glossario' },
+    { key: 'impara', label: 'Impara' },
+    { key: 'fonti', label: 'Fonti' },
+  ];
   const scrollToTop = () => {
     const main = document.querySelector('main');
     const doScroll = () => {
@@ -41,54 +51,16 @@ export default function Footer({ setActiveTab }) {
           />
           <hr className="w-32 border-t border-slate-700/60" />
           <div className="flex flex-wrap gap-2 justify-center w-full mt-2">
-            <button
-              onClick={() => goto('benvenuto')}
-              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
-            >
-              Benvenuto
-            </button>
-            <button
-              onClick={() => goto('parigi1888')}
-              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
-            >
-              Parigi 1888
-            </button>
-            <button
-              onClick={() => goto('satie')}
-              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
-            >
-              Erik Satie
-            </button>
-            <button
-              onClick={() => goto('brano')}
-              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
-            >
-              Il Brano
-            </button>
-            <button
-              onClick={() => goto('eredita')}
-              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
-            >
-              Eredità
-            </button>
-            <button
-              onClick={() => goto('glossario')}
-              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
-            >
-              Glossario
-            </button>
-            <button
-              onClick={() => goto('impara')}
-              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
-            >
-              Impara
-            </button>
-            <button
-              onClick={() => goto('fonti')}
-              className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
-            >
-              Fonti
-            </button>
+            {footerTabs.map((tab) => (
+              <button
+                key={tab.key}
+                type="button"
+                onClick={() => goto(tab.key)}
+                className="text-sm px-3 py-2 bg-slate-800 border border-blue-600 text-blue-400 rounded hover:bg-slate-700/50 transition-colors font-medium"
+              >
+                {tab.label}
+              </button>
+            ))}
           </div>
           <div className="flex items-center gap-8 justify-center mt-6">
             <a href="https://www.sognandoilpiano.it" target="_blank" rel="noopener noreferrer" title="Sognando il Piano - www.sognandoilpiano.it" className="transform transition-transform hover:scale-110">

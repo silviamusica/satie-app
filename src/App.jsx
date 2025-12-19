@@ -82,7 +82,7 @@ const Tooltip = ({ text, children }) => {
 };
 
 // Pulsante per i tab
-const TabButton = ({ active, label, icon: Icon, onClick }) => (
+const TabButton = ({ active, label, onClick }) => (
   <button
     type="button"
     onClick={onClick}
@@ -93,7 +93,6 @@ const TabButton = ({ active, label, icon: Icon, onClick }) => (
         : "bg-slate-900 text-slate-200 border-slate-700 hover:bg-slate-800",
     ].join(" ")}
   >
-    <Icon className="w-4 h-4" />
     {label}
   </button>
 );
@@ -815,36 +814,62 @@ const quizData = flashcardsData.map((card) => ({
 }));
 
 // Fonti: link a spartiti, registrazioni e note contestuali
-const sourcesData = [
+const bibliographyData = [
   {
-    group: "Spartito e dominio pubblico",
-    items: [
-      {
-        title: "IMSLP – 3 Gymnopédies (PDF)",
-        url: "https://imslp.org/wiki/3_Gymnop%C3%A9dies_(Satie,_Erik)",
-        note: "Partitura e riferimenti editoriali delle tre Gymnopédies.",
-      },
-      {
-        title: "Musopen – Gymnopédies (Audio e spartiti)",
-        url: "https://musopen.org/music/8010-3-gymnopedies/",
-        note: "Pagina con registrazioni e spartiti in pubblico dominio.",
-      },
-    ],
+    title: "Satie the Composer",
+    author: "Robert Orledge",
+    publication: "Cambridge University Press (1990)",
+    length: "456 pag.",
+    relevance: "Bibbia tecnica. Analizza i processi creativi e i manoscritti. Fondamentale per l'armonia.",
   },
   {
-    group: "Contesto e cronologia",
-    items: [
-      {
-        title: "Wikipedia – Gymnopédies",
-        url: "https://en.wikipedia.org/wiki/Gymnop%C3%A9dies",
-        note: "Panoramica generale su titolo, pubblicazione, metro e ricezione.",
-      },
-      {
-        title: "Hyperion – note discografiche (Debussy orchestrazioni)",
-        url: "https://www.hyperion-records.co.uk/dw.asp?dc=W408_GBAJY8936508",
-        note: "Approfondimento sulle orchestrazioni di Debussy e la loro prima esecuzione.",
-      },
-    ],
+    title: "Quaderni di un mammifero",
+    author: "Erik Satie (a cura di O. Volta)",
+    publication: "Adelphi (ed. it. 1980)",
+    length: "~300 pag.",
+    relevance: "Fonte primaria. Raccolta degli scritti, aforismi e provocazioni di Satie stesso.",
+  },
+  {
+    title: "Satie the Bohemian",
+    author: "Steven M. Whiting",
+    publication: "Clarendon Press (1999)",
+    length: "610 pag.",
+    relevance: "Contesto sociale. La fonte definitiva sul periodo di Montmartre e del cabaret.",
+  },
+  {
+    title: "Erik Satie tra ricerca e provocazione",
+    author: "Adriana Guarnieri Corazzol",
+    publication: "Marsilio (1979)",
+    length: "262 pag.",
+    relevance: "Pilastro italiano. Uno dei primi e più profondi studi accademici in lingua italiana.",
+  },
+  {
+    title: "Erik Satie",
+    author: "Mary E. Davis",
+    publication: "Reaktion Books (2007)",
+    length: "180 pag.",
+    relevance: "Biografia moderna. Ottima sintesi tra vita privata, estetica e influenze artistiche.",
+  },
+  {
+    title: "Rida senza dare nell'occhio",
+    author: "Luca Boero",
+    publication: "LeMus Edizioni (2020)",
+    length: "124 pag.",
+    relevance: "Analisi dell'ironia. Focus specifico sul \"doppio fondo\" ironico delle opere umoristiche.",
+  },
+  {
+    title: "Erik Satie: Music, Art and Literature",
+    author: "Caroline Potter (ed.)",
+    publication: "Ashgate Publishing, Ltd. (2013)",
+    length: "366 pag.",
+    relevance: "Interdisciplinare. Esplora i legami con la pittura, il cinema e la letteratura.",
+  },
+  {
+    title: "Erik Satie",
+    author: "Pierre-Daniel Templier",
+    publication: "Rieder (1932)",
+    length: "107 pag.",
+    relevance: "Storica. La prima vera biografia scritta dopo la sua morte, ricca di aneddoti originali.",
   },
 ];
 
@@ -932,7 +957,7 @@ const BenvenutoSection = ({ goTo }) => (
       </p>
       <div className="flex items-center justify-center gap-3">
         <Music className="w-6 h-6 text-blue-400" />
-        <span className="text-sm text-slate-400">Un percorso in 6 tappe</span>
+        <span className="text-sm text-slate-400">Un percorso in 7 tappe</span>
       </div>
     </div>
 
@@ -964,7 +989,7 @@ const BenvenutoSection = ({ goTo }) => (
         Ti guiderò alla scoperta di un brano che ha cambiato il corso della musica, della persona che lo compose e del
         contesto storico che lo rese possibile. Tutti i termini e i personaggi meno conosciuti sono spiegati nel{" "}
         <button
-          onClick={() => goTo("impara")}
+          onClick={() => goTo("glossario")}
           className="text-blue-400 hover:text-blue-300 font-semibold underline"
         >
           glossario
@@ -1034,20 +1059,51 @@ const Parigi1888Section = () => (
         e dove un giovane pianista stava per cambiare il corso della musica.
       </p>
     </div>
+    <div className="bg-slate-900/70 border border-slate-700 rounded-2xl p-6">
+      <h2 className="text-xl font-semibold text-slate-100 mb-3">Breve introduzione</h2>
+      <p className="text-sm text-slate-300 leading-relaxed mb-3">
+        La <strong>Belle Époque</strong> (circa 1871-1914) è un periodo di ottimismo, crescita economica e fiducia nel
+        progresso tecnico: Parigi diventa una capitale moderna, illuminata, piena di nuove invenzioni e di spinta verso il futuro.
+        La <strong>bohème</strong> è la controfaccia artistica di questa modernità: vita libera, notti nei caffè, rifiuto
+        delle regole borghesi, sperimentazione continua.
+      </p>
+      <p className="text-sm text-slate-300 leading-relaxed mb-3">
+        Il <strong>Simbolismo</strong> rompe con il realismo e privilegia immagini evocative, sogni, allusioni:
+        in letteratura spiccano <strong>Verlaine</strong> e <strong>Mallarmé</strong>, mentre in pittura e grafica
+        si affermano i manifesti e l'estetica notturna dei locali di Montmartre. In musica, l'<strong>Impressionismo</strong>
+        cerca colore timbrico e atmosfera: i nomi chiave sono <strong>Claude Debussy</strong> e <strong>Maurice Ravel</strong>.
+      </p>
+      <p className="text-sm text-slate-300 leading-relaxed mb-4">
+        Il <strong>cabaret francese</strong> (café-concert) è il punto di incontro tra arti diverse: musica dal vivo, poesia,
+        satira e pittura convivono nello stesso spazio. Locali come il <em>Chat Noir</em> e il <em>Lapin Agile</em> diventano
+        laboratori creativi dove gli artisti si contaminano a vicenda e dove Satie costruisce la sua identità musicale.
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <a href="#parigi-belle-epoque" className="text-sm text-blue-300 hover:text-blue-200 font-semibold">
+          La Belle Époque
+        </a>
+        <a href="#parigi-montmartre" className="text-sm text-blue-300 hover:text-blue-200 font-semibold">
+          Montmartre bohémien
+        </a>
+        <a href="#parigi-simbolismo" className="text-sm text-blue-300 hover:text-blue-200 font-semibold">
+          Il simbolismo
+        </a>
+      </div>
+    </div>
     <div className="rounded-2xl overflow-hidden border border-slate-700 bg-slate-950">
       <img
         src="/images/paris-10-place-de-la-republique-et-magasins-reunis.jpg"
         alt="Place de la Republique a Parigi"
         className="w-full h-72 md:h-96 object-contain p-2"
       />
-      <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+      <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
         Place de la Republique e Magasins Reunis: la Parigi urbana di fine Ottocento
       </p>
     </div>
 
     {/* La Belle Époque */}
     <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+      <h2 id="parigi-belle-epoque" className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3 scroll-mt-28">
         <Sparkles className="w-6 h-6 text-amber-400" />
         La Belle Époque
       </h2>
@@ -1096,7 +1152,7 @@ const Parigi1888Section = () => (
             alt="Costruzione Torre Eiffel"
             className="w-full object-contain bg-slate-950 p-2"
           />
-          <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
             Costruzione della Torre Eiffel (1887-1889)
           </p>
         </div>
@@ -1109,7 +1165,7 @@ const Parigi1888Section = () => (
               alt="Boulevard Montmartre"
               className="w-full h-48 object-contain p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
               Boulevard Montmartre dall'alto
             </p>
           </div>
@@ -1119,7 +1175,7 @@ const Parigi1888Section = () => (
               alt="Café Leroy 1916"
               className="w-full h-48 object-contain p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
               Café Leroy (1916)
             </p>
           </div>
@@ -1129,7 +1185,7 @@ const Parigi1888Section = () => (
 
     {/* Montmartre: il quartiere bohémien */}
     <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+      <h2 id="parigi-montmartre" className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3 scroll-mt-28">
         <MapPin className="w-6 h-6 text-blue-400" />
         Montmartre: il quartiere bohémien
       </h2>
@@ -1216,7 +1272,7 @@ const Parigi1888Section = () => (
                 alt="El bohemi di Ramon Casas"
                 className="w-full object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
                 "El bohemi" (Ramon Casas, 1891)
               </p>
             </div>
@@ -1229,7 +1285,7 @@ const Parigi1888Section = () => (
                   alt="Progetti rifiutati per la Tour Eiffel"
                   className="w-full object-contain p-2"
                 />
-                <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
                   Progetti rifiutati per l'Esposizione Universale del 1889
                 </p>
               </div>
@@ -1252,7 +1308,7 @@ const Parigi1888Section = () => (
 
     {/* Il clima artistico: simbolismo */}
     <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+      <h2 id="parigi-simbolismo" className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3 scroll-mt-28">
         <BookOpen className="w-6 h-6 text-purple-400" />
         Il simbolismo
       </h2>
@@ -1333,7 +1389,7 @@ const Parigi1888Section = () => (
             alt="The Arts and the Muses"
             className="w-full object-contain bg-slate-950 p-2"
           />
-          <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
             "The Arts and the Muses" di Puvis de Chavannes
           </p>
         </div>
@@ -1374,7 +1430,13 @@ const Parigi1888Section = () => (
 
 // Sezione 3: Erik Satie
 const SatieSection = () => {
+  const [satieTab, setSatieTab] = useState("vita");
   const [showFullTimeline, setShowFullTimeline] = useState(false);
+  const satieTabs = [
+    { key: "vita", label: "La vita" },
+    { key: "amicizie", label: "Amicizie" },
+    { key: "stramberie", label: "Stramberie" },
+  ];
 
   const satieLifeTimeline = [
     { year: "1866", event: "Nascita a Honfleur, Normandia" },
@@ -1419,10 +1481,29 @@ const SatieSection = () => {
           alt="Erik Satie con occhiali"
           className="w-full h-72 md:h-96 object-contain p-2"
         />
-        <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+        <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
           Erik Satie: il bohémien che rifiuta le convenzioni accademiche
         </p>
       </div>
+      <div className="bg-slate-900 border border-slate-700 rounded-xl p-3 flex flex-wrap gap-2">
+        {satieTabs.map((tab) => (
+          <button
+            key={tab.key}
+            type="button"
+            onClick={() => setSatieTab(tab.key)}
+            className={[
+              "px-4 py-2 rounded-lg text-sm font-semibold border transition-colors",
+              satieTab === tab.key
+                ? "bg-blue-600 text-white border-blue-500"
+                : "bg-slate-900 text-slate-200 border-slate-700 hover:bg-slate-800",
+            ].join(" ")}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+      {satieTab === "vita" && (
+      <>
       {/* Il giovane ribelle */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
@@ -1437,7 +1518,7 @@ const SatieSection = () => {
                 alt="Honfleur, città natale"
                 className="w-full object-contain bg-slate-950"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Honfleur, Normandia: porto pittoresco dove nacque Erik Satie nel 1866
               </p>
             </div>
@@ -1513,7 +1594,7 @@ const SatieSection = () => {
                 alt="Conservatoire de Paris"
                 className="w-full h-48 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Conservatoire de Paris: l'istituzione che giudicò Satie "il più pigro studente"
               </p>
             </div>
@@ -1539,7 +1620,7 @@ const SatieSection = () => {
                 alt="Spartito dell'Allegro di Erik Satie"
                 className="w-full object-contain bg-slate-950 p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 "Allegro" (1884): la prima composizione ufficiale di Erik Satie
               </p>
             </div>
@@ -1565,8 +1646,8 @@ const SatieSection = () => {
             <h3 className="text-base font-semibold text-blue-200 mb-3">L'ambiente che cambierà tutto</h3>
             <p className="text-sm text-slate-300 leading-relaxed mb-3">
               Il Chat Noir non è solo un locale dove bere, è un <strong>laboratorio di sperimentazione</strong>
-              dove poeti, pittori e musicisti si mescolano, discutono, collaborano. Vi passano
-              <strong> Claude Debussy</strong>, <strong>Paul Verlaine</strong>, <strong>Toulouse-Lautrec</strong>.
+              dove poeti, pittori e musicisti si mescolano, discutono, collaborano. Vi passano{" "}
+              <strong>Claude Debussy</strong>, <strong>Paul Verlaine</strong>, <strong>Toulouse-Lautrec</strong>.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
               Qui Satie incontra <strong>J. P. Contamine de Latour</strong>,{" "}
@@ -1584,7 +1665,7 @@ const SatieSection = () => {
                 alt="6 Rue Cortot, Montmartre"
                 className="w-full h-72 object-contain bg-slate-950 p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 6 Rue Cortot, Montmartre: abitazione di Satie durante gli anni delle Gymnopédies.
               </p>
             </div>
@@ -1595,7 +1676,7 @@ const SatieSection = () => {
                 alt="Erik Satie in abito bohémien"
                 className="w-full h-72 object-contain bg-slate-950 p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Erik Satie in abito bohémien: ritratto del compositore negli anni di Montmartre.
               </p>
             </div>
@@ -1618,7 +1699,7 @@ const SatieSection = () => {
                 alt="Ritratto di Erik Satie all'armonium"
                 className="w-full object-contain bg-slate-950 p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Ritratto di Erik Satie che suona l'armonium (Santiago Rusiñol, senza data)
               </p>
             </div>
@@ -1644,7 +1725,7 @@ const SatieSection = () => {
               alt="Joséphin Péladan"
               className="w-full object-contain bg-slate-950 p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
               Joséphin Péladan, fondatore dell'Ordine della Rosa-Croce
             </p>
           </div>
@@ -1654,7 +1735,7 @@ const SatieSection = () => {
               alt="Manoscritto Le Fils des Étoiles"
               className="w-full object-contain bg-slate-950 p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
               Manoscritto "Le Fils des Étoiles" (1891)
             </p>
           </div>
@@ -1666,7 +1747,7 @@ const SatieSection = () => {
             alt="Spartito completo di Le Fils des Étoiles"
             className="w-full object-contain bg-slate-950 p-2"
           />
-          <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
             "Le Fils des Étoiles" (1891): preludio al primo atto del dramma caldeo di Péladan.
             Musica statica, contemplativa, che cerca di evocare atmosfere esoteriche attraverso
             armonie modali e un ritmo quasi inesistente
@@ -1712,14 +1793,18 @@ const SatieSection = () => {
                 alt="Erik Satie come leader della Chiesa"
                 className="w-full object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Erik Satie, leader della Chiesa Metropolitana d'Arte (c. 1895)
               </p>
             </div>
           </div>
         </div>
       </div>
+      </>
+      )}
 
+      {satieTab === "amicizie" && (
+      <>
       {/* Debussy: un'amicizia fraterna e complessa */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
@@ -1734,7 +1819,7 @@ const SatieSection = () => {
               alt="Erik Satie e Claude Debussy"
               className="w-full h-72 md:h-full object-contain p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
               Erik Satie e Claude Debussy: un'amicizia che definì la musica moderna francese
             </p>
           </div>
@@ -1764,7 +1849,7 @@ const SatieSection = () => {
             <p className="text-sm text-slate-300 leading-relaxed">
               Tuttavia, il rapporto fu segnato da tensioni. Satie soffriva l'<strong>ombra del genio di Debussy</strong> e temeva
               che la propria originalità venisse scambiata per un sottoprodotto dell'Impressionismo. Un episodio celebre: Debussy
-              disse a Satie che la sua musica peccava di <em>mancanza di forma</em>. Per tutta risposta, Satie compose i
+              disse a Satie che la sua musica peccava di <em>mancanza di forma</em>. Per tutta risposta, Satie compose i{" "}
               <strong><em>Trois morceaux en forme de poire</em></strong> (Tre pezzi in forma di pera) per dimostrare, con ironia,
               di possedere una propria concezione formale.
             </p>
@@ -1774,7 +1859,7 @@ const SatieSection = () => {
                 alt="Trois morceaux en forme de poire"
                 className="w-full h-56 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
                 "Trois morceaux en forme de poire": risposta ironica alla critica di Debussy.
               </p>
             </div>
@@ -1819,47 +1904,11 @@ const SatieSection = () => {
         </div>
       </div>
 
-      {/* Francis Poulenc e il Gruppo dei Sei */}
-      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-        <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
-          <Users className="w-6 h-6 text-purple-400" />
-          Francis Poulenc e il "Gruppo dei Sei": "Le Bon Maître" (1920-1925)
-        </h2>
+      </>
+      )}
 
-        <div className="space-y-4">
-          <p className="text-sm text-slate-300 leading-relaxed">
-            Negli <strong>anni '20</strong>, <strong>Francis Poulenc</strong> e gli altri membri del <strong>Groupe des Six</strong>
-            guardavano a Satie come al loro <strong>"Bon Maître"</strong> (il Buon Maestro) — un mentore spirituale che incarnava
-            l'ideale di una <strong>musica francese moderna</strong>, liberata tanto dal wagnerismo quanto dall'impressionismo debussyano.
-          </p>
-
-          <div className="bg-purple-950/20 border border-purple-700/30 rounded-xl p-4">
-            <h3 className="text-base font-semibold text-purple-200 mb-2">L'<em>esprit nouveau</em> e Jean Cocteau</h3>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              Il poeta <strong>Jean Cocteau</strong> teorizzò questo nuovo spirito nel pamphlet <em><strong>Le Coq et l'Arlequin</strong></em> (1918),
-              in cui esaltava Satie come modello di <strong>chiarezza, semplicità e antiretoricalità</strong>.
-              I Sei — Poulenc, Milhaud, Honegger, Auric, Durey e Tailleferre — si riconoscevano in questa visione:
-              musica urbana, ironica, diretta, che rifiutava gli eccessi romantici e abbracciava il <strong>music-hall</strong>,
-              il <strong>jazz</strong> e la <strong>quotidianità</strong>.
-            </p>
-          </div>
-
-          <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
-            <h3 className="text-base font-semibold text-blue-200 mb-2">Il mentore riluttante</h3>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              Satie accettò con <strong>ironico distacco</strong> il ruolo di patriarca. Non amava essere trattato come
-              una "reliquia vivente", ma apprezzava che i giovani compositori riconoscessero in lui un <strong>innovatore autentico</strong>,
-              non un mero precursore dimenticato. Il rapporto con Poulenc in particolare fu affettuoso e reciprocamente rispettoso.
-            </p>
-          </div>
-
-          <p className="text-sm text-slate-300 leading-relaxed italic">
-            Attraverso il Gruppo dei Sei, Satie influenzò profondamente la musica francese del Novecento, incarnando
-            un <strong>modernismo alternativo</strong>: né accademico né impressionista, ma lucido, essenziale, antieroico.
-          </p>
-        </div>
-      </div>
-
+      {satieTab === "vita" && (
+      <>
       {/* Suzanne Valadon */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
@@ -1886,7 +1935,7 @@ const SatieSection = () => {
                 alt="Ritratto di Erik Satie di Suzanne Valadon"
                 className="w-full h-80 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Suzanne Valadon, "Ritratto di Erik Satie" (1892-93)
               </p>
             </div>
@@ -1898,7 +1947,7 @@ const SatieSection = () => {
                 alt="Erik Satie e Suzanne Valadon"
                 className="w-full h-80 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Erik Satie e Suzanne Valadon (1893)
               </p>
             </div>
@@ -1910,7 +1959,7 @@ const SatieSection = () => {
                 alt="Ritratto di Suzanne Valadon disegnato da Erik Satie"
                 className="w-full h-80 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Disegno originale di Erik Satie raffigurante Suzanne Valadon (1893)
               </p>
             </div>
@@ -1924,7 +1973,7 @@ const SatieSection = () => {
                 alt="Spartito di Bonjour Biqui, Bonjour!"
                 className="w-full h-48 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 "Bonjour Biqui, Bonjour!" (1893): canzone-regalo di 4 battute per Valadon
               </p>
             </div>
@@ -1945,7 +1994,7 @@ const SatieSection = () => {
               alt="Casa di Erik Satie ad Arcueil"
               className="w-full h-80 object-contain bg-slate-950 p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
               Arcueil: la casa di Satie per gli ultimi 27 anni della sua vita (1898-1925).
             </p>
           </div>
@@ -1983,7 +2032,11 @@ const SatieSection = () => {
           la sua ricerca costante di rigore e perfezionamento tecnico.
         </p>
       </div>
+      </>
+      )}
 
+      {satieTab === "amicizie" && (
+      <>
       {/* Parade e avanguardie */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
@@ -2005,7 +2058,7 @@ const SatieSection = () => {
                 alt="Schizzo di Jean Cocteau su Erik Satie"
                 className="w-full object-contain bg-slate-950 p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Schizzo di Cocteau dedicato a Satie
               </p>
             </div>
@@ -2016,7 +2069,7 @@ const SatieSection = () => {
                 alt="Spartito di Parade"
                 className="w-full object-contain bg-slate-950 p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Spartito di "Parade" (1917)
               </p>
             </div>
@@ -2028,7 +2081,7 @@ const SatieSection = () => {
               alt="Spartito del Ragtime da Parade"
               className="w-full object-contain bg-slate-950 p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
               Spartito del Ragtime da "Parade": Satie incorpora elementi di musica popolare americana
               nel linguaggio classico europeo, anticipando il jazz e la contaminazione tra generi musicali
             </p>
@@ -2044,26 +2097,65 @@ const SatieSection = () => {
             </p>
           </div>
 
+        </div>
+      </div>
+
+      {/* Francis Poulenc e il Gruppo dei Sei */}
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
+          <Users className="w-6 h-6 text-purple-400" />
+          Francis Poulenc e il "Gruppo dei Sei": "Le Bon Maître" (1920-1925)
+        </h2>
+
+        <div className="space-y-4">
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Negli <strong>anni '20</strong>, <strong>Francis Poulenc</strong> e gli altri membri del <strong>Groupe des Six</strong>
+            guardavano a Satie come al loro <strong>"Bon Maître"</strong> (il Buon Maestro) — un mentore spirituale che incarnava
+            l'ideale di una <strong>musica francese moderna</strong>, liberata tanto dal wagnerismo quanto dall'impressionismo debussyano.
+          </p>
+
           <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
             <h3 className="text-base font-semibold text-blue-200 mb-2">Il Gruppo dei Sei</h3>
-            <p className="text-sm text-slate-300 leading-relaxed mb-3">
+            <p className="text-sm text-slate-300 leading-relaxed">
               Dopo <em>Parade</em>, Satie diventa il <strong>patriarca spirituale</strong> del{" "}
               <strong>Groupe des Six</strong> (Gruppo dei Sei), collettivo di sei giovani compositori francesi —{" "}
               <strong>Francis Poulenc</strong>, <strong>Darius Milhaud</strong>, <strong>Arthur Honegger</strong>,{" "}
               <strong>Georges Auric</strong>, <strong>Louis Durey</strong> e <strong>Germaine Tailleferre</strong> —
               che negli anni '20 rifiutavano tanto il wagnerismo quanto l'impressionismo, cercando una musica moderna, urbana, ironica.
             </p>
-            <button
-              onClick={() => openModal("Il Gruppo dei Sei", <GroupeDesSixModal />)}
-              className="text-sm text-blue-400 hover:text-blue-300 font-semibold flex items-center group"
-            >
-              <span>Approfondisci</span>
-              <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-            </button>
           </div>
+
+          <div className="bg-purple-950/20 border border-purple-700/30 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-purple-200 mb-2">L'<em>esprit nouveau</em> e Jean Cocteau</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Il poeta <strong>Jean Cocteau</strong> teorizzò questo nuovo spirito nel pamphlet <em><strong>Le Coq et l'Arlequin</strong></em> (1918),
+              in cui esaltava Satie come modello di <strong>chiarezza, semplicità e antiretoricalità</strong>.
+              I Sei — Poulenc, Milhaud, Honegger, Auric, Durey e Tailleferre — si riconoscevano in questa visione:
+              musica urbana, ironica, diretta, che rifiutava gli eccessi romantici e abbracciava il <strong>music-hall</strong>,
+              il <strong>jazz</strong> e la <strong>quotidianità</strong>.
+            </p>
+          </div>
+
+          <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-blue-200 mb-2">Il mentore riluttante</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Satie accettò con <strong>ironico distacco</strong> il ruolo di patriarca. Non amava essere trattato come
+              una "reliquia vivente", ma apprezzava che i giovani compositori riconoscessero in lui un <strong>innovatore autentico</strong>,
+              non un mero precursore dimenticato. Il rapporto con Poulenc in particolare fu affettuoso e reciprocamente rispettoso.
+            </p>
+          </div>
+
+          <p className="text-sm text-slate-300 leading-relaxed italic">
+            Attraverso il Gruppo dei Sei, Satie influenzò profondamente la musica francese del Novecento, incarnando
+            un <strong>modernismo alternativo</strong>: né accademico né impressionista, ma lucido, essenziale, antieroico.
+          </p>
         </div>
       </div>
+      </>
+      )}
 
+      {satieTab === "vita" && (
+      <>
       {/* La vita di Satie - Timeline espandibile */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <div className="flex items-center justify-between mb-4">
@@ -2124,13 +2216,23 @@ const SatieSection = () => {
           </div>
         )}
       </div>
+      </>
+      )}
 
-      {/* CTA */}
-      <div className="text-center">
-        <p className="text-sm text-slate-400 mb-3">
-          Ora che conosci il contesto e l'uomo, scopriamo come nacque il capolavoro
-        </p>
-      </div>
+      {satieTab === "stramberie" && (
+        <div className="space-y-6">
+          <StramberieSection />
+          <IndicazioniSection />
+        </div>
+      )}
+
+      {satieTab !== "stramberie" && (
+        <div className="text-center">
+          <p className="text-sm text-slate-400 mb-3">
+            Ora che conosci il contesto e l'uomo, scopriamo come nacque il capolavoro
+          </p>
+        </div>
+      )}
     </div>
   );
 };
@@ -2204,7 +2306,7 @@ const BranoSection = () => {
             alt="Jeunes filles au bord de la mer di Puvis de Chavannes"
             className="w-full h-80 object-contain p-2"
           />
-          <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
             Pierre Puvis de Chavannes, "Jeunes filles au bord de la mer" (1879).
             L'atmosfera serena e atemporale dei dipinti simbolisti di Puvis de Chavannes ispirò Satie
             a comporre musica "decorativa": statica, contemplativa, senza narrazione.
@@ -2276,7 +2378,7 @@ const BranoSection = () => {
             alt="Analisi del Fa# collante armonico"
             className="w-full object-contain bg-slate-950 p-2"
           />
-          <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+          <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
             Il Fa# come "collante armonico"
           </p>
         </div>
@@ -2293,7 +2395,7 @@ const BranoSection = () => {
           alt="Diagramma accordi di settima maggiore"
           className="w-full object-contain bg-slate-950 p-2"
         />
-        <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+        <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
           Oscillazione tra Sol7+ e Re7+
         </p>
       </div>
@@ -2428,6 +2530,7 @@ const BranoSection = () => {
 // Sezione 5: Eredità
 const EreditaSection = () => {
   const [showAmeublementModal, setShowAmeublementModal] = useState(false);
+  const [showMinimalismoModal, setShowMinimalismoModal] = useState(false);
   const debussyOrchestrations = [
     {
       title: "Orchestrazione Debussy – versione classica (YouTube)",
@@ -2495,7 +2598,7 @@ const EreditaSection = () => {
 
               <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
                 <p>
-                  L'idea nasce (secondo Fernand Léger) in un ristorante: Satie immagina una musica capace di
+                  L'idea nasce (secondo Fernand Léger) in un ristorante: Satie immagina una musica capace di{" "}
                   <strong>ammorbidire i rumori</strong> di coltelli e forchette, senza imporsi.
                 </p>
               </div>
@@ -2540,6 +2643,54 @@ const EreditaSection = () => {
           </div>
         </div>
       )}
+      {showMinimalismoModal && (
+        <div
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setShowMinimalismoModal(false)}
+        >
+          <div
+            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+                Minimalismo: il filo che parte da Satie
+              </h3>
+              <button
+                type="button"
+                onClick={() => setShowMinimalismoModal(false)}
+                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+              >
+                chiudi
+              </button>
+            </div>
+            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p className="text-slate-200">
+                In sintesi: <strong>ripetizione, staticita e attenzione al tempo</strong> al posto dello sviluppo drammatico.
+              </p>
+              <p>
+                Le <em>Gymnopédies</em>, le <em>Gnossiennes</em> e soprattutto <em>Vexations</em> anticipano una logica
+                musicale basata su <strong>processi</strong> e <strong>durate</strong> piu che su climax narrativi.
+                Satie riduce la materia, lascia spazio al silenzio e al colore timbrico: elementi che diventeranno
+                centrali nel minimalismo del Novecento.
+              </p>
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
+                <p>
+                  <strong>John Cage</strong> fece eseguire <em>Vexations</em> nel 1963 (840 ripetizioni) e riconobbe
+                  in Satie un precursore della musica come processo. Da qui il ponte verso <strong>Steve Reich</strong>,
+                  <strong>Philip Glass</strong> e l'estetica della ripetizione.
+                </p>
+              </div>
+              <p>
+                Il minimalismo, come la musica d'arredamento, nasce anche da un rifiuto dell'enfasi romantica:
+                meno pathos, piu presenza. In questo senso Satie e un vero <strong>punto di origine</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Header */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
@@ -2558,7 +2709,7 @@ const EreditaSection = () => {
           alt="John Cage durante la maratona di Vexations"
           className="w-full h-80 md:h-96 object-contain p-2"
         />
-        <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+        <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
           John Cage durante la maratona di "Vexations" (New York, 1963)
         </p>
       </div>
@@ -2626,6 +2777,13 @@ const EreditaSection = () => {
               <strong>ripetizione di pattern</strong>, <strong>armonia statica</strong>, rifiuto del climax e{" "}
               <strong>economia di mezzi</strong> sono già presenti nella Gymnopédie n.1.
             </p>
+            <button
+              type="button"
+              onClick={() => setShowMinimalismoModal(true)}
+              className="mt-3 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+            >
+              Approfondisci <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
 
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
@@ -2640,7 +2798,7 @@ const EreditaSection = () => {
               onClick={() => setShowAmeublementModal(true)}
               className="mt-3 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
             >
-              approfondisci la musica d'arredamento <ChevronRight className="w-4 h-4" />
+              Approfondisci <ChevronRight className="w-4 h-4" />
             </button>
           </div>
         </div>
@@ -3116,8 +3274,8 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
       </p>
       <p>
         Nel <strong>1896–1897</strong> Claude Debussy, dopo aver ascoltato Satie suonare le tre pagine, decise di
-        orchestrare i numeri <strong>1</strong> e <strong>3</strong> (invertendo la numerazione). La prima esecuzione orchestrale si tenne il
-        <strong> 20 febbraio 1897</strong> in un concerto della Société Nationale, svelando a Parigi quanto la trasparenza di Satie potesse viaggiare oltre il pianoforte.
+        orchestrare i numeri <strong>1</strong> e <strong>3</strong> (invertendo la numerazione). La prima esecuzione orchestrale si tenne il{" "}
+        <strong>20 febbraio 1897</strong> in un concerto della Société Nationale, svelando a Parigi quanto la trasparenza di Satie potesse viaggiare oltre il pianoforte.
       </p>
       <p>
         La seconda Gymnopédie venne pubblicata solo nel <strong>1895</strong>, mentre l'edizione integrale dei tre
@@ -3338,13 +3496,13 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
             <p className="text-sm text-slate-300 mb-3">
               La vita del compositore (1866-1925): da Honfleur a Montmartre, fino ad Arcueil.
             </p>
-            <button
-              onClick={() => openModal("La vita di Erik Satie (1866-1925)", <LifeModal />)}
-              className="text-sm text-blue-400 hover:text-blue-300 font-semibold flex items-center group"
-            >
-              Apri timeline
-              <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-            </button>
+              <button
+                onClick={() => openModal("La vita di Erik Satie (1866-1925)", <LifeModal />)}
+                className="text-sm text-blue-400 hover:text-blue-300 font-semibold flex items-center group"
+              >
+                Approfondisci
+                <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </button>
           </div>
           <div className="bg-slate-800 p-5 rounded-lg shadow-lg border border-slate-700 hover:border-blue-500 transition-all">
             <h3 className="text-lg font-semibold text-slate-100 mb-2 flex items-center">
@@ -3358,7 +3516,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
               onClick={() => openModal("Storia della Gymnopédie n.1", <GymnopedieTimelineModal />)}
               className="text-sm text-blue-400 hover:text-blue-300 font-semibold flex items-center group"
             >
-              Apri
+              Approfondisci
               <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
@@ -3387,7 +3545,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
               onClick={() => openModal("Gymnopédie n. 1: impostazione esecutiva", <InterpretazioneModal />)}
               className="text-sm text-blue-400 hover:text-blue-300 font-semibold flex items-center group"
             >
-              Apri
+              Approfondisci
               <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
@@ -3444,7 +3602,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                       alt="Le Chat Noir cabaret"
                       className="w-full h-64 object-contain bg-slate-900 p-2"
                     />
-                    <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                    <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
                       Le Chat Noir: celebre cabaret di Montmartre fondato da Rodolphe Salis (1881), dove Satie lavorò come secondo pianista
                     </p>
                   </div>
@@ -3454,7 +3612,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                       alt="Auberge du Clou cabaret"
                       className="w-full h-64 object-contain bg-slate-900 p-2"
                     />
-                    <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                    <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
                       Auberge du Clou: altro celebre cabaret di Montmartre frequentato da artisti bohémien
                     </p>
                   </div>
@@ -3484,7 +3642,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                     alt="Parigi Belle Époque 1888"
                     className="w-full h-56 object-contain bg-slate-900 p-2"
                   />
-                  <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                  <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
                     Parigi 1888: Torre Eiffel in costruzione, Esposizione Universale
                   </p>
                 </div>
@@ -3538,7 +3696,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                     alt="Commento su esecuzione di Vexations"
                     className="w-full h-24 object-contain"
                   />
-                  <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                  <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
                     Placeholder: commento su un'esecuzione di Vexations.
                   </p>
                 </div>
@@ -3683,7 +3841,7 @@ const AnalysisSection = () => {
                 alt="Analisi armonica del Fa# collante"
                 className="w-full h-48 object-contain bg-slate-900 p-2"
               />
-              <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
                 Visualizzazione grafica del Fa# come ponte tra Sol maj7 e Re maj7 (placeholder)
               </p>
             </div>
@@ -3711,7 +3869,7 @@ const AnalysisSection = () => {
                 alt="Ritratto di Erik Satie giovane"
                 className="w-full h-56 object-contain bg-slate-900 p-2"
               />
-              <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
                 Erik Satie in gioventù: cappello a cilindro e aspetto bohémien (placeholder)
               </p>
             </div>
@@ -4031,6 +4189,289 @@ const GlossarySection = () => {
   );
 };
 
+// Sezione Stramberie
+const StramberieSection = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const curiosi = [
+    { titolo: "Trois morceaux en forme de poire", traduzione: "Tre pezzi a forma di pera", data: "1903", strumento: "Pianoforte a 4 mani" },
+    { titolo: "Véritables préludes flasques (pour un chien)", traduzione: "Veri preludi flaccidi (per un cane)", data: "1912", strumento: "Pianoforte" },
+    { titolo: "Embryons desséchés", traduzione: "Embrioni essiccati", data: "1913", strumento: "Pianoforte" },
+    { titolo: "Croquis et agaceries d'un gros bonhomme en bois", traduzione: "Schizzi e esasperazioni di un grosso uomo di legno", data: "1913", strumento: "Pianoforte" },
+    { titolo: "Vieux sequins et vieilles cuirasses", traduzione: "Vecchi zecchini e vecchie corazze", data: "1913", strumento: "Pianoforte" },
+    { titolo: "Chapitres tournés en tous sens", traduzione: "Capitoli voltati in tutti i sensi", data: "1913", strumento: "Pianoforte" },
+    { titolo: "Choses vues à droite et à gauche (sans lunettes)", traduzione: "Cose viste a destra e a sinistra (senza occhiali)", data: "1914", strumento: "Violino e pianoforte" },
+    { titolo: "Trois Valses distinguées du précieux dégoûté", traduzione: "Tre valzer distinti del prezioso disgustato", data: "1914", strumento: "Pianoforte" },
+    { titolo: "Aperçus désagréables", traduzione: "Sguardi sgradevoli", data: "1908-1912", strumento: "Pianoforte a 4 mani" },
+    { titolo: "Sonatine bureaucratique", traduzione: "Sonatina burocratica", data: "1917", strumento: "Pianoforte" },
+    { titolo: "Pièces froides (include Airs à faire fuir)", traduzione: "Pezzi freddi (include Arie per far scappare)", data: "1897", strumento: "Pianoforte" },
+  ];
+
+  return (
+    <div id="stramberie" className="space-y-6 max-w-5xl mx-auto">
+      {openModal && (
+        <div
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setOpenModal(false)}
+        >
+          <div
+            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+                Stramberie: contesto e curiosità
+              </h3>
+              <button
+                type="button"
+                onClick={() => setOpenModal(false)}
+                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+              >
+                chiudi
+              </button>
+            </div>
+            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p>
+                Molti di questi titoli appartengono al periodo "umoristico" di Satie (1912-1915), quando usa l'ironia per
+                prendere le distanze dal romanticismo e dall'impressionismo.
+              </p>
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
+                <p>
+                  <strong>La "pera" e Debussy:</strong> <em>Trois morceaux en forme de poire</em> nasce come risposta ironica
+                  alla critica di Debussy sulla "forma". In francese <em>poire</em> puo significare anche "sciocco".
+                </p>
+              </div>
+              <p>
+                Le partiture contengono annotazioni assurde (da non leggere ad alta voce), come "aprite la testa" o
+                "come un usignolo con il mal di denti".
+              </p>
+              <p>
+                Molti brani sono parodie: la <em>Sonatine bureaucratique</em> ironizza sulla sonatina di Clementi, mentre
+                <em>Embryons desséchés</em> prende in giro le code enfatiche romantiche.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-100 mb-3 flex items-center gap-3">
+          <Sparkles className="w-6 h-6 text-blue-400" />
+          Stramberie
+        </h2>
+        <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Selezione di titoli eccentrici e umoristici: il lato ironico di Satie, tra parodie e giochi linguistici.
+          </p>
+        </div>
+        <div className="mt-5 space-y-3">
+          {curiosi.map((c) => (
+            <div key={c.titolo} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
+              <div className="text-sm text-slate-100 font-semibold">{c.titolo}</div>
+              <div className="text-sm text-slate-300 mt-1">{c.traduzione}</div>
+              <div className="text-xs text-slate-400 mt-2">{c.data} · {c.strumento}</div>
+            </div>
+          ))}
+        </div>
+        <button
+          type="button"
+          onClick={() => setOpenModal(true)}
+          className="mt-5 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+        >
+          Approfondisci <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+  );
+};
+
+// Sezione Indicazioni sugli spartiti
+const IndicazioniSection = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const indicazioni = [
+    {
+      titolo: "Gnossiennes (n.1, 2, 3)",
+      frasi: [
+        "Con grande bontà (Avec une grande bonté)",
+        "Non siate orgogliosi (Sans orgueil)",
+        "Aprite la testa (Ouvrez la tête)",
+        "Seppellite il suono (Enfouissez le son)",
+        "Armatevi di chiaroveggenza (Munissez-vous de clairvoyance)",
+      ],
+      anno: "1890-1893",
+      strumento: "Pianoforte",
+    },
+    {
+      titolo: "Le Fils des étoiles (Preludi)",
+      frasi: [
+        "Bianco e immobile (White and motionless)",
+        "Pallido e sacerdotale (Pale and priest-like)",
+      ],
+      anno: "1891-1892",
+      strumento: "Pianoforte (o flauti e arpe)",
+    },
+    {
+      titolo: "Descriptions automatiques",
+      frasi: [
+        "Non salivate troppo (Ne pas trop saliver)",
+        "La barca fa una risata cattiva (The boat gives a nasty laugh)",
+      ],
+      anno: "1913",
+      strumento: "Pianoforte",
+    },
+    {
+      titolo: "Embryons desséchés",
+      frasi: [
+        "Come un usignolo con il mal di denti (Like a nightingale with a toothache)",
+        "Non ho tabacco, per fortuna non fumo (I haven't any tobacco)",
+        "Piccole fusa. Piccole fusa beffarde (Little purr...)",
+      ],
+      anno: "1913",
+      strumento: "Pianoforte",
+    },
+    {
+      titolo: "Le Piège de Méduse (Sette piccole danze)",
+      frasi: [
+        "Siate convenienti, per favore: una scimmia vi guarda",
+        "Mettetevi nell'ombra",
+        "Ridete senza farvi notare",
+        "Danzate interiormente",
+      ],
+      anno: "1913",
+      strumento: "Pianoforte (preparato)",
+    },
+    {
+      titolo: "Peccadilles importunes (da Enfantines)",
+      frasi: [
+        "Essere geloso del proprio compagno che ha la testa grossa",
+        "Mangiargli la tartina",
+        "Approfittare dei suoi calli ai piedi per prendergli il cerchio",
+      ],
+      anno: "1913",
+      strumento: "Pianoforte",
+    },
+    {
+      titolo: "Sports et divertissements",
+      frasi: [
+        "Dedico questo corale a coloro che non mi amano. Mi ritiro.",
+        "Non si veda nient'altro",
+        "Il colonnello è qui! Ora fa il suo swing: il suo bastone va in pezzi!",
+      ],
+      anno: "1914",
+      strumento: "Pianoforte",
+    },
+    {
+      titolo: "Heures séculaires et instantanées",
+      frasi: [
+        "Proibisco a chiunque di leggere il testo ad alta voce durante l'esecuzione musicale",
+        "A Sir William Grant-Plumot... personaggio immobile",
+      ],
+      anno: "1914",
+      strumento: "Pianoforte",
+    },
+    {
+      titolo: "Sonatine bureaucratique",
+      frasi: [
+        "Vivache (invece di Vivace)",
+        "Il piano continua",
+        "Ahimè! È ora di lasciare l'ufficio",
+        "Il piano vicino suona un pezzo di Clementi",
+      ],
+      anno: "1917",
+      strumento: "Pianoforte",
+    },
+  ];
+
+  return (
+    <div id="indicazioni" className="space-y-6 max-w-5xl mx-auto">
+      {openModal && (
+        <div
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setOpenModal(false)}
+        >
+          <div
+            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+                Indicazioni sugli spartiti: note strambe
+              </h3>
+              <button
+                type="button"
+                onClick={() => setOpenModal(false)}
+                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+              >
+                chiudi
+              </button>
+            </div>
+            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p>
+                Queste annotazioni paratestuali sono una firma di Satie: indicazioni impossibili o metaforiche,
+                pensate per influenzare la psicologia dell'esecutore più che la tecnica.
+              </p>
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
+                <p>
+                  <strong>Doppio fondo:</strong> Satie vietava spesso di leggere queste frasi ad alta voce durante
+                  l'esecuzione, creando un "segreto" tra compositore ed esecutore.
+                </p>
+              </div>
+              <p>
+                Alcune indicazioni sono apertamente ironiche; altre richiedono un'immaginazione poetica ("aprite la testa",
+                "seppellite il suono") o alludono a scene teatrali.
+              </p>
+              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
+                <p>
+                  <strong>Pianoforte preparato:</strong> Le <em>Sette piccole danze</em> di <em>Le Piège de Méduse</em>
+                  sono considerate un primo esempio di pianoforte preparato, anticipando John Cage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-100 mb-3 flex items-center gap-3">
+          <Sparkles className="w-6 h-6 text-blue-400" />
+          Indicazioni sugli spartiti
+        </h2>
+        <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Satie inseriva frasi assurde e poetiche tra i righi: indicazioni paratestuali che guidano l'immaginazione
+            dell'esecutore.
+          </p>
+        </div>
+
+        <div className="mt-5 space-y-3">
+          {indicazioni.map((item) => (
+            <div key={item.titolo} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
+              <div className="text-sm text-slate-100 font-semibold">{item.titolo}</div>
+              <div className="mt-2 text-sm text-slate-300 space-y-1">
+                {item.frasi.map((frase) => (
+                  <div key={frase}>• {frase}</div>
+                ))}
+              </div>
+              <div className="text-xs text-slate-400 mt-2">{item.anno} · {item.strumento}</div>
+            </div>
+          ))}
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setOpenModal(true)}
+          className="mt-5 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+        >
+          Approfondisci <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+  );
+};
+
 // Sezione Impara: flashcards per memorizzare
 const ImparaSection = () => {
   const [tab, setTab] = useState("flashcard");
@@ -4218,59 +4659,65 @@ const ImparaSection = () => {
 
 // Sezione Fonti: elenco dei link e note
 const FontiSection = () => {
-  const [openIndex, setOpenIndex] = useState(null);
   return (
     <div id="fonti" className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <BookOpen className="w-5 h-5 text-blue-400" />
-          Fonti
+          Bibliografia essenziale
         </h2>
-        <p className="text-sm text-slate-300 mt-2">
-          Link per spartiti, audio e note di contesto.
-        </p>
-        <div className="mt-6 space-y-4">
-          {sourcesData.map((g, i) => (
-            <div key={i} className="bg-slate-950/40 border border-slate-700 rounded-xl overflow-hidden">
-              <button
-                type="button"
-                onClick={() => setOpenIndex((v) => (v === i ? null : i))}
-                className="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-slate-900/60"
-              >
-                <div className="flex items-center gap-3">
-                  <Library className="w-5 h-5 text-blue-400" />
-                  <div>
-                    <div className="text-slate-100 font-semibold">{g.group}</div>
-                    <div className="text-sm text-slate-400">{g.items.length} elementi</div>
-                  </div>
-                </div>
-                <ChevronDown className={`w-5 h-5 text-slate-200 transition-transform ${openIndex === i ? "rotate-180" : ""}`} />
-              </button>
-              {openIndex === i && (
-                <div className="px-5 pb-5 pt-1 space-y-3">
-                  {g.items.map((it, j) => (
-                    <div key={j} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
-                      <div className="flex items-start justify-between gap-3">
-                        <div className="min-w-0">
-                          <div className="text-sm text-slate-100 font-semibold">{it.title}</div>
-                          <div className="text-sm text-slate-300 mt-1">{it.note}</div>
-                        </div>
-                        <a
-                          href={it.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
-                        >
-                          apri <ExternalLink className="w-3 h-3" />
-                        </a>
-                      </div>
-                      <div className="mt-2 text-sm text-slate-500 break-all">{it.url}</div>
-                    </div>
-                  ))}
-                </div>
-              )}
+        <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 mt-4">
+          <div className="text-sm text-slate-100 font-semibold mb-2">Spartito (IMSLP)</div>
+          <a
+            href="https://imslp.org/wiki/3_Gymnop%C3%A9dies_(Satie,_Erik)"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+          >
+            apri <ExternalLink className="w-3 h-3" />
+          </a>
+          <div className="mt-2 text-xs text-slate-500 break-all">
+            https://imslp.org/wiki/3_Gymnop%C3%A9dies_(Satie,_Erik)
+          </div>
+        </div>
+
+        <div className="md:hidden space-y-3">
+          {bibliographyData.map((row) => (
+            <div key={row.title} className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+              <div className="text-sm text-slate-100 font-semibold mb-1">{row.title}</div>
+              <div className="text-xs text-slate-400">{row.author}</div>
+              <div className="text-xs text-slate-400 mt-1">{row.publication}</div>
+              <div className="text-xs text-slate-400 mt-1">{row.length}</div>
+              <p className="text-sm text-slate-300 mt-2">{row.relevance}</p>
             </div>
           ))}
+        </div>
+
+        <div className="hidden md:block overflow-x-auto">
+          <table className="min-w-full text-left text-sm text-slate-300 border border-slate-700">
+            <thead className="bg-slate-950/60 text-slate-200">
+              <tr>
+                <th className="px-3 py-2 border-b border-slate-700">Titolo</th>
+                <th className="px-3 py-2 border-b border-slate-700">Autore</th>
+                <th className="px-3 py-2 border-b border-slate-700">Pubblicazione (Editore/Anno)</th>
+                <th className="px-3 py-2 border-b border-slate-700">Lunghezza</th>
+                <th className="px-3 py-2 border-b border-slate-700">Rilevanza</th>
+              </tr>
+            </thead>
+            <tbody>
+              {bibliographyData.map((row) => (
+                <tr key={row.title} className="odd:bg-slate-950/40">
+                  <td className="px-3 py-2 border-b border-slate-800 font-semibold text-slate-100">
+                    {row.title}
+                  </td>
+                  <td className="px-3 py-2 border-b border-slate-800">{row.author}</td>
+                  <td className="px-3 py-2 border-b border-slate-800">{row.publication}</td>
+                  <td className="px-3 py-2 border-b border-slate-800">{row.length}</td>
+                  <td className="px-3 py-2 border-b border-slate-800">{row.relevance}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -4346,7 +4793,6 @@ export default function App() {
                   key={t}
                   active={activeTab === t}
                   label={tabMeta[t].label}
-                  icon={tabMeta[t].icon}
                   onClick={() => setActiveTab(t)}
                 />
               ))}
@@ -4366,7 +4812,7 @@ export default function App() {
             <div className="text-center">
               {activeTab === "eredita" && (
                 <p className="text-sm text-slate-400 mb-3">
-                  Scopri i termini chiave nel glossario completo prima di passare ai quiz.
+                  Ora puoi passare al glossario per chiarire i termini chiave.
                 </p>
               )}
               {activeTab === "glossario" && (
