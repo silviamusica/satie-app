@@ -672,7 +672,7 @@ const indiceBlocks = [
 const BenvenutoSection = ({ goTo }) => (
   <div className="space-y-6 max-w-5xl mx-auto">
     {/* Hero */}
-    <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-8 text-center">
+    <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-8 text-center">
       <h1 className="text-4xl font-bold text-slate-100 mb-3">
         Gymnopédie n. 1
       </h1>
@@ -766,15 +766,25 @@ const BenvenutoSection = ({ goTo }) => (
 const Parigi1888Section = () => (
   <div className="space-y-6 max-w-5xl mx-auto">
     {/* Header */}
-    <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6">
+    <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6">
       <h1 className="text-3xl font-bold text-slate-100 mb-3 flex items-center gap-3">
         <MapPin className="w-7 h-7 text-blue-400" />
-        Parigi 1888: La Scena
+        Parigi 1888: la scena
       </h1>
       <p className="text-sm text-slate-300 leading-relaxed">
         Per capire le Gymnopédies, dobbiamo prima immergerci nella Parigi di fine Ottocento: una città in fermento,
         dove scienza e arte si rinnovavano, dove i café-cabaret di Montmartre erano laboratori di sperimentazione
         e dove un giovane pianista stava per cambiare il corso della musica.
+      </p>
+    </div>
+    <div className="rounded-2xl overflow-hidden border border-slate-700 bg-slate-950">
+      <img
+        src="/images/paris-10-place-de-la-republique-et-magasins-reunis.jpg"
+        alt="Place de la Republique a Parigi"
+        className="w-full h-72 md:h-96 object-cover"
+      />
+      <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+        Place de la Republique e Magasins Reunis: la Parigi urbana di fine Ottocento
       </p>
     </div>
 
@@ -942,16 +952,38 @@ const Parigi1888Section = () => (
           </p>
         </div>
 
-        {/* Immagine El Bohemi */}
-        <div className="rounded-lg overflow-hidden border border-slate-600">
-          <img
-            src="/images/El_bohemi_by_Ramon_Casas-1.jpg"
-            alt="El bohemi di Ramon Casas"
-            className="w-full object-contain bg-slate-950 p-2"
-          />
-          <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-            "El bohemi" (Ramon Casas, 1891)
-          </p>
+        {/* El bohemi - layout a due colonne */}
+        <div className="grid md:grid-cols-[0.6fr_1.4fr] gap-4 items-stretch">
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+            <img
+              src="/images/El_bohemi_by_Ramon_Casas-1.jpg"
+              alt="El bohemi di Ramon Casas"
+              className="w-full h-full object-contain p-2"
+            />
+          </div>
+          <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-between">
+            <div>
+              <h3 className="text-base font-semibold text-slate-100 mb-2">
+                "El bohemi" (Ramon Casas, 1891)
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Il ritratto di Casas coglie l'essenza della bohème di fine Ottocento: artisti, poeti e musicisti
+                che vivevano tra caffè, cabaret e atelier, lontani dalle regole accademiche. È lo stesso clima
+                di Montmartre in cui Satie suonava al Chat Noir, circondato da figure che mescolavano arte,
+                ironia e sperimentazione.
+              </p>
+              <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                La bohème non era solo uno stile, ma un modo di stare al mondo: precarietà economica,
+                notti passate a discutere di estetica, amicizie e rivalità tra pittori e musicisti, gusto per
+                l'ironia e il paradosso. In questo ambiente, la musica smette di essere cerimonia ufficiale
+                e diventa linguaggio quotidiano, vicino alle persone e alle loro vite. Satie assorbe questa
+                libertà: scrive pagine essenziali, senza retorica, capaci di parlare con voce semplice e moderna.
+              </p>
+            </div>
+            <p className="text-sm text-slate-400 italic mt-3">
+              Un'icona visiva della libertà creativa che caratterizzava il quartiere.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -1045,7 +1077,7 @@ const Parigi1888Section = () => (
         </div>
 
         {/* Contrasto con Wagner */}
-        <div className="bg-gradient-to-br from-amber-950/20 to-slate-950/40 border border-amber-700/30 rounded-xl p-4">
+        <div className="bg-linear-to-br from-amber-950/20 to-slate-950/40 border border-amber-700/30 rounded-xl p-4">
           <h3 className="text-base font-semibold text-amber-200 mb-3">La rivoluzione silenziosa di Satie</h3>
           <p className="text-sm text-slate-300 leading-relaxed">
             Mentre <strong>Wagner</strong> dominava l'Europa con{" "}
@@ -1105,10 +1137,10 @@ const SatieSection = () => {
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
       {/* Header */}
-      <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6">
+      <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6">
         <h1 className="text-3xl font-bold text-slate-100 mb-3 flex items-center gap-3">
           <User className="w-7 h-7 text-blue-400" />
-          Erik Satie: L'Outsider
+          Erik Satie: l'outsider
         </h1>
         <div className="flex items-center gap-3 mb-4">
           <span className="text-sm text-slate-400">1866 - 1925</span>
@@ -1117,6 +1149,16 @@ const SatieSection = () => {
         </div>
         <p className="text-sm text-slate-300 leading-relaxed italic">
           «Sono venuto al mondo molto giovane in un tempo molto vecchio»
+        </p>
+      </div>
+      <div className="rounded-2xl overflow-hidden border border-slate-700 bg-slate-950">
+        <img
+          src="/images/Satie con occhiali.jpg"
+          alt="Erik Satie con occhiali"
+          className="w-full h-72 md:h-96 object-cover"
+        />
+        <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+          Erik Satie con occhiali: l'outsider che rifiuta le convenzioni accademiche
         </p>
       </div>
 
@@ -1215,7 +1257,7 @@ const SatieSection = () => {
             </Tooltip>.
           </p>
 
-          <div className="bg-gradient-to-br from-blue-950/20 to-slate-950/40 border border-blue-700/30 rounded-xl p-4">
+          <div className="bg-linear-to-br from-blue-950/20 to-slate-950/40 border border-blue-700/30 rounded-xl p-4">
             <h3 className="text-base font-semibold text-blue-200 mb-3">L'ambiente che cambierà tutto</h3>
             <p className="text-sm text-slate-300 leading-relaxed mb-3">
               Il Chat Noir non è solo un locale dove bere, è un <strong>laboratorio di sperimentazione</strong>
@@ -1231,27 +1273,29 @@ const SatieSection = () => {
             </p>
           </div>
 
-          <div className="rounded-lg overflow-hidden border border-slate-600">
-            <img
-              src="/images/6_Rue_Cortot -.jpeg"
-              alt="6 Rue Cortot, Montmartre"
-              className="w-full h-64 object-cover"
-            />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-              6 Rue Cortot, Montmartre
-            </p>
-          </div>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="rounded-lg overflow-hidden border border-slate-600">
+              <img
+                src="/images/6_Rue_Cortot -.jpeg"
+                alt="6 Rue Cortot, Montmartre"
+                className="w-full h-72 object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                6 Rue Cortot, Montmartre
+              </p>
+            </div>
 
-          {/* Ritratto bohémien */}
-          <div className="rounded-lg overflow-hidden border border-slate-600">
-            <img
-              src="/images/The bohemien SATIE.jpg"
-              alt="Erik Satie in abito bohémien"
-              className="w-full h-96 object-contain bg-slate-950 p-2"
-            />
-            <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-              Erik Satie in abito bohémien
-            </p>
+            {/* Ritratto bohémien */}
+            <div className="rounded-lg overflow-hidden border border-slate-600">
+              <img
+                src="/images/The bohemien SATIE.jpg"
+                alt="Erik Satie in abito bohémien"
+                className="w-full h-72 object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+                Erik Satie in abito bohémien
+              </p>
+            </div>
           </div>
 
           <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4">
@@ -1484,18 +1528,11 @@ const BranoSection = () => (
 
         {/* Prima pubblicazione */}
         <div className="rounded-lg overflow-hidden border border-slate-600">
-          <img
-            src="/images/Bonjour-Biquii.jpg"
-            alt="Prima pubblicazione"
-            className="w-full object-contain bg-slate-950 p-2"
-          />
-          <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
-            Il brano composto da Erik Satie per Suzanne Valadon come regalo di Pasqua
-          </p>
+          {/* Immagine rimossa su richiesta: Bonjour Biqui non pertinente alle Gymnopédies */}
         </div>
 
         {/* Contesto compositivo */}
-        <div className="bg-gradient-to-br from-amber-950/20 to-slate-950/40 border border-amber-700/30 rounded-xl p-4">
+        <div className="bg-linear-to-br from-amber-950/20 to-slate-950/40 border border-amber-700/30 rounded-xl p-4">
           <h3 className="text-base font-semibold text-amber-200 mb-3">Il contesto rivoluzionario</h3>
           <p className="text-sm text-slate-300 leading-relaxed">
             Mentre <strong>Wagner</strong> dominava l'Europa con tensioni drammatiche e{" "}
@@ -1526,7 +1563,7 @@ const BranoSection = () => (
       </h2>
 
       {/* Il segreto del Fa# - BOX HERO */}
-      <div className="bg-gradient-to-br from-amber-900/20 via-slate-900 to-slate-900 border-2 border-amber-500/30 rounded-2xl p-6 shadow-xl">
+      <div className="bg-linear-to-br from-amber-900/20 via-slate-900 to-slate-900 border-2 border-amber-500/30 rounded-2xl p-6 shadow-xl">
         <h3 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-3">
           <span className="text-2xl">💎</span>
           Il segreto armonico
@@ -1740,6 +1777,16 @@ const EreditaSection = () => {
           ha cambiato il modo di ascoltare il silenzio.
         </p>
       </div>
+      <div className="rounded-2xl overflow-hidden border border-slate-700 bg-slate-950">
+        <img
+          src="/images/john_cage_playing_vexations.jpeg"
+          alt="John Cage durante la maratona di Vexations"
+          className="w-full h-80 md:h-96 object-cover"
+        />
+        <p className="text-sm text-slate-400 p-3 italic bg-slate-900/50">
+          John Cage durante la maratona di "Vexations" (New York, 1963)
+        </p>
+      </div>
 
       {/* 1. I contemporanei */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
@@ -1781,15 +1828,18 @@ const EreditaSection = () => {
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
             <h4 className="text-base font-semibold text-slate-100 mb-2">John Cage e l'avanguardia americana</h4>
             <p className="text-sm text-slate-300 leading-relaxed">
-              <strong>John Cage</strong> definì Satie “indispensabile” e lo riscoprì nel dopoguerra. Nel 1963 organizzò la prima
-              esecuzione integrale di <em>Vexations</em> (840 ripetizioni, circa 18 ore), anticipando la logica del processo
-              e della ripetizione che diventerà centrale nel minimalismo.
+              <strong>John Cage</strong> (1912-1992) è il compositore di <em>4'33"</em>, il celebre brano in cui il silenzio
+              diventa musica: il pubblico ascolta l'ambiente e scopre che ogni suono casuale fa parte dell'opera. Figura
+              eccentrica e radicale, sperimentò il <em>pianoforte preparato</em>, il caso e l'indeterminazione, mettendo in
+              discussione l'idea stessa di composizione. Cage definì Satie “indispensabile” e lo riscoprì nel dopoguerra.
+              Nel 1963 organizzò la prima esecuzione integrale di <em>Vexations</em> (840 ripetizioni, circa 18 ore),
+              anticipando la logica del processo e della ripetizione che diventerà centrale nel minimalismo.
             </p>
             <div className="rounded-lg overflow-hidden border border-slate-600 mt-3 bg-slate-950">
               <img
-                src="/images/Commento su esecuzione vexations.jpg"
-                alt="Esecuzione di Vexations"
-                className="w-full h-24 object-contain"
+                src="/images/Vexations.jpg"
+                alt="Manoscritto di Vexations"
+                className="w-full h-72 object-contain p-2"
               />
             </div>
           </div>
@@ -2168,7 +2218,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
       </div>
 
       {/* Box dedicato all'origine del titolo "Gymnopédie" */}
-      <div className="bg-gradient-to-br from-blue-900/30 via-slate-800 to-slate-800 border-2 border-blue-500/40 rounded-xl p-6 mb-4">
+      <div className="bg-linear-to-br from-blue-900/30 via-slate-800 to-slate-800 border-2 border-blue-500/40 rounded-xl p-6 mb-4">
         <h5 className="text-lg font-bold text-blue-300 mb-4 flex items-center gap-2">
           📜 L'origine del titolo "Gymnopédie"
         </h5>
@@ -2318,25 +2368,25 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
       </div>
       <ul className="space-y-2 ml-1">
         <li className="flex items-start space-x-2">
-          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
+          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
           <span>
             <strong>Pulsazione:</strong> 3/4 stabile, senza accenti marcati da danza.
           </span>
         </li>
         <li className="flex items-start space-x-2">
-          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
+          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
           <span>
             <strong>Voce superiore:</strong> canto semplice, leggero e continuo senza pesantezza.
           </span>
         </li>
         <li className="flex items-start space-x-2">
-          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
+          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
           <span>
             <strong>Pedale:</strong> cambi frequenti per evitare impasti; usare il pedale come filtro timbrico.
           </span>
         </li>
         <li className="flex items-start space-x-2">
-          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
+          <ChevronRight className="w-4 h-4 text-blue-400 mt-1 shrink-0" />
           <span>
             <strong>Dinamica:</strong> curva breve con crescendi e diminuendi contenuti; evitare forti improvvisi.
           </span>
@@ -2350,7 +2400,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
       {/* Modale principale */}
       {modalContent && (
         <div
-          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
           role="dialog"
           aria-modal="true"
           onClick={() => setModalContent(null)}
@@ -2377,7 +2427,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
       )}
 
       {/* Hero */}
-      <div className="bg-gradient-to-br from-slate-800 to-slate-900 text-slate-100 p-8 rounded-2xl shadow-2xl border border-slate-600">
+      <div className="bg-linear-to-br from-slate-800 to-slate-900 text-slate-100 p-8 rounded-2xl shadow-2xl border border-slate-600">
         <h2 className="text-center text-3xl font-[family:'Cinzel',serif] font-bold tracking-[0.14em] mb-6 text-blue-300 leading-tight">
           Gymnopédie n. 1 <br /> (Trois Gymnopédies)
         </h2>
@@ -2746,7 +2796,7 @@ const AnalysisSection = () => {
       </div>
 
       {/* Box Curiosità per intenditori */}
-      <div className="bg-gradient-to-br from-amber-900/20 via-slate-900 to-slate-900 border-2 border-amber-500/30 rounded-2xl p-6 shadow-xl">
+      <div className="bg-linear-to-br from-amber-900/20 via-slate-900 to-slate-900 border-2 border-amber-500/30 rounded-2xl p-6 shadow-xl">
         <h3 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-3">
           <span className="text-2xl">💎</span>
           Curiosità per intenditori
