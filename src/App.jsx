@@ -698,7 +698,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                 </p>
               </div>
             )}
-            {item.year === "1879–1887" && (
+            {item.year === "1887" && (
               <div className="ml-4 rounded-lg overflow-hidden border border-slate-600">
                 <img
                   src="/images/Conservatorio di Parigi.jpg"
@@ -706,7 +706,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                   className="w-full h-48 object-cover"
                 />
                 <p className="text-sm text-slate-400 p-2 italic bg-slate-800">
-                  Conservatoire de Paris: istituzione che giudicò Satie "il più pigro studente"
+                  Conservatoire de Paris: istituzione che giudicò Satie "il più pigro studente" e da cui fu espulso nel 1882, riammesso nel 1885, e abbandonato definitivamente nel 1887
                 </p>
               </div>
             )}
