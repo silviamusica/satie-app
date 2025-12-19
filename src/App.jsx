@@ -711,27 +711,15 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
               </div>
             )}
             {item.year === "1887–1888" && (
-              <div className="ml-4 grid sm:grid-cols-2 gap-3">
-                <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-                  <img
-                    src="/images/Le chat noir.jpg"
-                    alt="Le Chat Noir cabaret"
-                    className="w-full max-h-80 object-contain mx-auto"
-                  />
-                  <p className="text-sm text-slate-400 p-2 italic bg-slate-800">
-                    Le Chat Noir: celebre cabaret di Montmartre fondato da Rodolphe Salis (1881), dove Satie lavorò come secondo pianista
-                  </p>
-                </div>
-                <div className="rounded-lg overflow-hidden border border-slate-600">
-                  <img
-                    src="/images/Auberge du clou.jpg"
-                    alt="Auberge du Clou cabaret"
-                    className="w-full max-h-80 object-cover"
-                  />
-                  <p className="text-sm text-slate-400 p-2 italic bg-slate-800">
-                    Auberge du Clou: altro celebre cabaret di Montmartre dove Satie suonò
-                  </p>
-                </div>
+              <div className="ml-4 rounded-lg overflow-hidden border border-slate-600">
+                <img
+                  src="/images/Auberge du clou.jpg"
+                  alt="Auberge du Clou cabaret"
+                  className="w-full max-h-80 object-cover"
+                />
+                <p className="text-sm text-slate-400 p-2 italic bg-slate-800">
+                  Auberge du Clou: celebre cabaret di Montmartre dove Satie suonò dopo il Chat Noir
+                </p>
               </div>
             )}
             {item.year === "1888" && (
@@ -1209,6 +1197,16 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                   (dal quale uscì dopo essersi procurato deliberatamente una bronchite), Satie trova lavoro come <strong>secondo pianista</strong> al <strong>Chat Noir</strong>, cabaret artistico fondato nel 1881 da Rodolphe Salis. Non è solo un locale dove bere: è un luogo di sperimentazione dove poeti, pittori e musicisti si mescolano, discutono, collaborano. Vi passarono Claude Debussy, Paul Verlaine, Toulouse-Lautrec.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-2 my-3">
+                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                    <img
+                      src="/images/Le chat noir.jpg"
+                      alt="Le Chat Noir cabaret"
+                      className="w-full h-32 object-cover"
+                    />
+                    <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                      Le Chat Noir: celebre cabaret di Montmartre fondato da Rodolphe Salis (1881), dove Satie lavorò come secondo pianista
+                    </p>
+                  </div>
                   <div className="rounded-lg overflow-hidden border border-slate-600">
                     <img
                       src="/images/Auberge du clou.jpg"
@@ -1217,16 +1215,6 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                     />
                     <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
                       Auberge du Clou: altro celebre cabaret di Montmartre frequentato da artisti bohémien
-                    </p>
-                  </div>
-                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-                    <img
-                      src="/images/Bonjour-Biquii.jpg"
-                      alt="Stampa d'epoca parigina"
-                      className="w-full h-28 object-contain"
-                    />
-                    <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
-                      "Bonjour Biquii": stampa ironica della cultura visiva parigina fin de siècle
                     </p>
                   </div>
                 </div>
