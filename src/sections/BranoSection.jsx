@@ -1,7 +1,51 @@
 import { useState } from "react";
-import { Music } from "lucide-react";
+import { Music, Brain, XCircle, CheckCircle2 } from "lucide-react";
 import Tooltip from "../components/Tooltip";
 import PdfScoreViewer from "../components/PdfScoreViewer";
+
+// Schede di analisi: punti chiave per lo studio
+const analysisCards = [
+  {
+    title: "Struttura e materiali",
+    icon: Music,
+    bullets: [
+      "Pezzo breve per pianoforte solo con andamento ternario.",
+      "Ostinato regolare e melodia spoglia: la mano sinistra mantiene una pulsazione costante mentre la destra canta frasi essenziali.",
+      "Tre sezioni percepite (A–B–A′) con micro variazioni che evitano uno sviluppo tradizionale.",
+      "Uso di accordi planati e movimenti paralleli che creano un senso di sospensione.",
+    ],
+  },
+  {
+    title: "Focali esecutivi",
+    icon: Brain,
+    bullets: [
+      "Controllo del tempo: stabile ma non rigido; il ritmo non deve diventare da valzer.",
+      "Gestione del pedale a finestre per mantenere trasparenza fra le voci.",
+      "Separazione delle voci: il basso sostiene, gli accordi colorano e la melodia canta con semplicità.",
+      "Dinamica contenuta con curve brevi e respirate; l'espressività risiede nel timbro.",
+    ],
+  },
+  {
+    title: "Cosa evitare",
+    icon: XCircle,
+    bullets: [
+      "Trasformare il 3/4 in un valzer caricaturale.",
+      "Rubato ampio e romantico che appesantisce la linea.",
+      "Pedale continuo che impasta le voci e toglie purezza.",
+      "Sottolineare eccessivamente la progressione armonica: il brano vive di sospensioni.",
+    ],
+  },
+  {
+    title: "Cosa cercare",
+    icon: CheckCircle2,
+    bullets: [
+      "Sospensione e ambiguità tonale: la sensazione di percorso è attenuata.",
+      "Uniformità timbrica: ogni registro deve fondersi come in un'orchestrazione.",
+      "Legato omogeneo con piccole variazioni di respiro.",
+      "Colore e risonanza come elementi narrativi principali.",
+    ],
+  },
+];
 
 const BranoSection = () => {
   const [showScore, setShowScore] = useState(false);
