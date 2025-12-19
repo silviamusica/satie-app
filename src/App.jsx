@@ -214,7 +214,7 @@ const glossaryData = [
       {
         term: "Gymnopédie",
         definition:
-          "Neologismo francese dal greco Γυμνοπαιδίαι (Gymnopaedia), festività spartana annuale. 'Gymnos' significa 'nudo' o 'disarmato': giovani uomini danzavano nudi eseguendo esercizi ginnici e canti corali. Satie scelse questo titolo influenzato da: 1) il poema 'Les Antiques' di Contamine de Latour; 2) 'Salammbô' di Flaubert; 3) i dipinti simbolisti di Puvis de Chavannes, in particolare 'Jeunes filles au bord de la mer' (1879). La prima Gymnopédie fu originariamente intitolata 'Danse antique'.",
+          "Neologismo francese dal greco Γυμνοπαιδίαι (Gymnopaedia), festività spartana annuale. 'Gymnos' significa 'nudo' o 'disarmato': giovani uomini danzavano nudi eseguendo esercizi ginnici e canti corali. Satie scelse questo titolo influenzato da: 1) il poema 'Les Antiques' di Contamine de Latour; 2) 'Salammbô' di Flaubert; 3) l'estetica simbolista di Puvis de Chavannes (con un evidente parallelo a 'Jeunes filles au bord de la mer', 1879). La prima Gymnopédie fu originariamente intitolata 'Danse antique'.",
       },
       {
         term: "Lent et douloureux",
@@ -324,7 +324,7 @@ const glossaryData = [
       {
         term: "Puvis de Chavannes",
         definition:
-          "Pierre Puvis de Chavannes (1824-1898), pittore simbolista francese. I suoi dipinti, in particolare 'Jeunes filles au bord de la mer' (1879), potrebbero aver ispirato Satie per le Gymnopédies. Satie aspirava a comporre musica 'decorativa' come gli affreschi del pittore.",
+          "Pierre Puvis de Chavannes (1824-1898), pittore simbolista francese. Non c'è un'unica tela come fonte esclusiva, ma un forte legame estetico: parallelismi con 'Jeunes filles au bord de la mer' (1879) per staticità e struttura ternaria. Satie ammirava anche 'The Arts and the Muses' e per le 'Sonneries de la Rose+Croix' usò un frammento di 'La Guerre' per il frontespizio.",
       },
       {
         term: "Forme ternarie (ABA')",
@@ -1045,8 +1045,56 @@ const BenvenutoSection = ({ goTo }) => (
 );
 
 // Sezione 2: Parigi 1888
-const Parigi1888Section = () => (
+const Parigi1888Section = () => {
+  const [showAntiquesModal, setShowAntiquesModal] = useState(false);
+  return (
   <div className="space-y-6 max-w-5xl mx-auto">
+    {showAntiquesModal && (
+      <div
+        className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+        role="dialog"
+        aria-modal="true"
+        onClick={() => setShowAntiquesModal(false)}
+      >
+        <div
+          className="w-full max-w-3xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+            <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+              Les Antiques (J. P. Contamine de Latour)
+            </h3>
+            <button
+              type="button"
+              onClick={() => setShowAntiquesModal(false)}
+              className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+            >
+              chiudi
+            </button>
+          </div>
+          <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-6 text-sm text-slate-300 leading-relaxed">
+            <div>
+              <div className="text-sm font-semibold text-slate-100 mb-2">Testo originale (francese)</div>
+              <p className="whitespace-pre-line">
+                Oblique et coupant l'ombre un torrent éclatant{"\n"}
+                Ruisselait en flots d'or sur la dalle polie{"\n"}
+                Où les atomes d'ambre au feu se miroitant{"\n"}
+                Mêlaient leur sarabande à la gymnopédie
+              </p>
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-slate-100 mb-2">Traduzione (italiano)</div>
+              <p className="whitespace-pre-line">
+                Obliquo e fendente l'ombra, un torrente splendente{"\n"}
+                scorreva in flutti d'oro sulla lastra levigata{"\n"}
+                dove gli atomi d'ambra, specchiandosi nel fuoco,{"\n"}
+                mescolavano la loro sarabanda alla gymnopédie
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
     {/* Header */}
     <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6">
       <h1 className="text-3xl font-bold text-slate-100 mb-3 flex items-center gap-3">
@@ -1369,15 +1417,26 @@ const Parigi1888Section = () => (
               <Tooltip text="Movimento artistico e letterario che predilige simboli ed evocazioni rispetto alla rappresentazione diretta della realtà">
                 <span>Poeta simbolista</span>
               </Tooltip>, amico di Satie. La sua poesia <em>Les Antiques</em> fu pubblicata insieme
-              alla Gymnopédie n. 1 nell'estate del 1888 e ispirò il titolo arcaico.
+              alla Gymnopédie n. 1 nell'estate del 1888 e ispirò il titolo arcaico.{" "}
+              <button
+                type="button"
+                onClick={() => setShowAntiquesModal(true)}
+                className="text-blue-300 hover:text-blue-200 text-sm font-semibold"
+              >
+                Leggi la poesia
+              </button>
             </p>
           </div>
 
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
             <h3 className="text-base font-semibold text-slate-100 mb-2">Puvis de Chavannes</h3>
             <p className="text-sm text-slate-300">
-              Pittore simbolista le cui opere evocavano atmosfere antiche e sognanti.
-              Il suo quadro <em>The Arts and the Muses</em> influenzò l'immaginario di Satie.
+              Satie adorava il pittore simbolista Puvis. Non esiste un'unica "ispirazione", ma un chiaro parallelo
+              tra la sua musica statica e dipinti come <em>Jeune fille au bord de la mer</em> (1879). L'opera
+              <em>The Arts and the Muses</em> ("Les Muses") riassume bene la sua estetica di semplicità, mentre
+              Rusiñol scrisse che Satie cercava in musica la stessa essenzialità raggiunta da Puvis in pittura.
+              Templier parlò di "esatte rappresentazioni musicali" dei suoi quadri. Per le <em>Sonneries de la Rose+Croix</em>
+              Satie scelse un frammento di <em>La Guerre</em> per il frontespizio.
             </p>
           </div>
         </div>
@@ -1390,7 +1449,7 @@ const Parigi1888Section = () => (
             className="w-full object-contain bg-slate-950 p-2"
           />
           <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-            "The Arts and the Muses" di Puvis de Chavannes
+            "The Arts and the Muses" ("Les Muses") di Puvis de Chavannes
           </p>
         </div>
 
@@ -1426,7 +1485,8 @@ const Parigi1888Section = () => (
       </p>
     </div>
   </div>
-);
+  );
+};
 
 // Sezione 3: Erik Satie
 const SatieSection = () => {
@@ -2308,8 +2368,8 @@ const BranoSection = () => {
           />
           <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
             Pierre Puvis de Chavannes, "Jeunes filles au bord de la mer" (1879).
-            L'atmosfera serena e atemporale dei dipinti simbolisti di Puvis de Chavannes ispirò Satie
-            a comporre musica "decorativa": statica, contemplativa, senza narrazione.
+            Le fonti parlano di un evidente parallelo tra questa staticità pittorica e le strutture ternarie
+            delle Gymnopédies, più che di un'unica fonte esclusiva.
           </p>
         </div>
 
@@ -3202,9 +3262,10 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
             <li className="flex items-start gap-3">
               <span className="text-blue-400 font-bold mt-0.5">•</span>
               <div>
-                <strong className="text-blue-200">Puvis de Chavannes:</strong> I dipinti simbolisti del pittore Pierre Puvis de Chavannes,
-                in particolare <em>Jeunes filles au bord de la mer</em> (1879), potrebbero aver ispirato Satie.
-                Egli aspirava a comporre musica "decorativa" come gli affreschi del pittore: serena, atemporale, contemplativa.
+                <strong className="text-blue-200">Puvis de Chavannes:</strong> Non c'è un'unica tela come fonte esclusiva,
+                ma un forte legame estetico. C'è un parallelo con <em>Jeunes filles au bord de la mer</em> (1879) per staticità
+                e forma; <em>The Arts and the Muses</em> riassume la sua poetica visiva. Satie aspirava a comporre musica
+                "decorativa": serena, atemporale, contemplativa.
               </div>
             </li>
           </ul>
@@ -3245,7 +3306,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
             className="w-full max-h-64 object-contain mx-auto"
           />
           <p className="text-sm text-slate-400 p-2 italic bg-slate-900">
-            "The Arts and the Muses" (Pierre Puvis de Chavannes): pittura simbolista che ispirò Satie
+            "The Arts and the Muses" (Pierre Puvis de Chavannes): sintesi della sua estetica simbolista
           </p>
         </div>
       </div>
