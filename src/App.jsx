@@ -1201,17 +1201,17 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                     <img
                       src="/images/Le chat noir.jpg"
                       alt="Le Chat Noir cabaret"
-                      className="w-full h-32 object-cover"
+                      className="w-full h-64 object-contain bg-slate-900 p-2"
                     />
                     <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
                       Le Chat Noir: celebre cabaret di Montmartre fondato da Rodolphe Salis (1881), dove Satie lavorò come secondo pianista
                     </p>
                   </div>
-                  <div className="rounded-lg overflow-hidden border border-slate-600">
+                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
                     <img
                       src="/images/Auberge du clou.jpg"
                       alt="Auberge du Clou cabaret"
-                      className="w-full h-32 object-cover"
+                      className="w-full h-64 object-contain bg-slate-900 p-2"
                     />
                     <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
                       Auberge du Clou: altro celebre cabaret di Montmartre frequentato da artisti bohémien
