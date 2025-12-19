@@ -1707,7 +1707,7 @@ const BranoSection = () => (
 
         <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
           <img
-            src="/images/posizione-mani-pianoforte.jpg"
+            src="/images/IMMAGINE MANI.jpg"
             alt="Posizione delle mani"
             className="w-full object-contain bg-slate-950 p-2"
           />
@@ -2783,7 +2783,7 @@ const AnalysisSection = () => {
           </div>
           <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
             <img
-              src="/images/posizione-mani-pianoforte.jpg"
+              src="/images/IMMAGINE MANI.jpg"
               alt="Posizione delle mani al pianoforte"
               className="w-full h-64 object-contain"
             />
@@ -3378,7 +3378,11 @@ export default function App() {
     // Impedisce tab non validi
     if (!TABS.includes(activeTab)) setActiveTab("benvenuto");
   }, [activeTab]);
-const tabMeta = {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [activeTab]);
+
+  const tabMeta = {
     benvenuto: { label: "Benvenuto", icon: Home },
     parigi1888: { label: "Parigi 1888", icon: MapPin },
     satie: { label: "Erik Satie", icon: User },
