@@ -1,0 +1,19 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1e293b"/>
+  <rect x="20" y="20" width="360" height="260" fill="#334155" stroke="#475569" stroke-width="2" rx="8"/>
+
+  <!-- Microphone icon -->
+  <ellipse cx="200" cy="105" rx="20" ry="30" fill="#64748b"/>
+  <rect x="190" y="135" width="20" height="25" fill="#64748b"/>
+  <path d="M 175 125 Q 175 150 200 150 Q 225 150 225 125" stroke="#64748b" stroke-width="3" fill="none"/>
+  <line x1="200" y1="150" x2="200" y2="165" stroke="#64748b" stroke-width="3"/>
+  <rect x="185" y="165" width="30" height="5" fill="#64748b" rx="2"/>
+
+  <!-- Title -->
+  <text x="200" y="210" font-family="Arial, sans-serif" font-size="16" fill="#e2e8f0" text-anchor="middle" font-weight="bold">
+    Podcast Gymnopédies
+  </text>
+  <text x="200" y="235" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">
+    Inserire copertina podcast
+  </text>
+</svg>

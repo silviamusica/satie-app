@@ -1823,35 +1823,35 @@ const ImparaSection = () => {
         <div className="grid sm:grid-cols-3 gap-4">
           <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
             <img
-              src="/images/scheda-riassuntiva-gymnopedies.jpg"
+              src="/images/scheda-riassuntiva-gymnopedies.svg"
               alt="Scheda riassuntiva PDF"
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4">
               <p className="text-sm font-semibold text-slate-200 mb-1">Scheda riassuntiva PDF</p>
-              <p className="text-sm text-slate-400 italic">Download stampabile</p>
+              <p className="text-sm text-slate-400 italic">Download stampabile (placeholder)</p>
             </div>
           </div>
           <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
             <img
-              src="/images/video-tutorial-gymnopedies.jpg"
+              src="/images/video-tutorial-gymnopedies.svg"
               alt="Video tutorial esecuzione"
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4">
               <p className="text-sm font-semibold text-slate-200 mb-1">Video tutorial esecuzione</p>
-              <p className="text-sm text-slate-400 italic">Guida passo-passo</p>
+              <p className="text-sm text-slate-400 italic">Guida passo-passo (placeholder)</p>
             </div>
           </div>
           <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
             <img
-              src="/images/podcast-gymnopedies-cover.jpg"
+              src="/images/podcast-gymnopedies-cover.svg"
               alt="Podcast storia delle Gymnopédies"
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4">
               <p className="text-sm font-semibold text-slate-200 mb-1">Podcast: storia delle Gymnopédies</p>
-              <p className="text-sm text-slate-400 italic">Episodio dedicato (20 min)</p>
+              <p className="text-sm text-slate-400 italic">Episodio dedicato (placeholder)</p>
             </div>
           </div>
         </div>
