@@ -3,36 +3,16 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import Footer from "./Footer";
 import {
-  BookOpen,
-  Music,
-  Brain,
   GraduationCap,
   ChevronRight,
-  ChevronLeft,
-  ExternalLink,
   Library,
   User,
-  Users,
   FileText,
-  ZoomIn,
-  ZoomOut,
-  ChevronDown,
-  CheckCircle2,
-  XCircle,
   Home,
   MapPin,
   Sparkles,
+  Music,
 } from "lucide-react";
-import { Document, Page, pdfjs } from "react-pdf";
-
-// Import dati da file separati
-import { flashcardsData, quizData } from "./data/flashcards";
-import { glossaryData } from "./data/glossary";
-import { bibliographyData } from "./data/bibliography";
-import { satieLifeTimeline } from "./data/timeline";
-
-// Import componenti
-import Tooltip from "./components/Tooltip";
 
 // Import sezioni
 import BenvenutoSection from "./sections/BenvenutoSection";
@@ -44,10 +24,7 @@ import GlossarySection from "./sections/GlossarySection";
 import ImparaSection from "./sections/ImparaSection";
 import FontiSection from "./sections/FontiSection";
 
-// Configurazione worker per PDF.js
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
-
-// Tab principali - Nuova struttura in 7 sezioni
+// Tab principali
 const TABS = ["benvenuto", "parigi1888", "satie", "brano", "eredita", "glossario", "impara", "fonti"];
 
 // Error boundary per gestire errori a livello di componente
