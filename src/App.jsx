@@ -25,7 +25,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 // Tab principali
-const TABS = ["introduzione", "analysis", "interpreters", "glossary", "impara", "fonti"];
+const TABS = ["indice", "introduzione", "analysis", "interpreters", "glossary", "impara", "fonti"];
 
 // Error boundary per gestire errori a livello di componente
 class ErrorBoundary extends React.Component {
@@ -282,6 +282,16 @@ const glossaryData = [
         term: "Le Chat Noir",
         definition:
           "Celebre café-cabaret di Montmartre fondato nel 1881 da Rodolphe Salis. Satie vi lavorò come secondo pianista negli anni 1887-1888. Ambiente bohémien che ospitava artisti, poeti simbolisti e musicisti (Debussy, Verlaine, Toulouse-Lautrec). Luogo di sperimentazione dove l'arte 'alta' si mescolava con la cultura popolare.",
+      },
+      {
+        term: "Belle Époque",
+        definition:
+          "Periodo compreso tra fine Ottocento e l'inizio della Prima guerra mondiale, caratterizzato da ottimismo tecnologico, salotti artistici e fermenti culturali parigini. Qui nasce il contesto di Satie e delle Gymnopédies.",
+      },
+      {
+        term: "Bohémien",
+        definition:
+          "Artista o intellettuale che vive al margine delle regole sociali, predilige libertà creativa, movimento e rifiuto delle istituzioni: uno spirito che alimenta Chat Noir e Satie stesso.",
       },
       {
         term: "Suzanne Valadon",
@@ -592,6 +602,111 @@ const sourcesData = [
 /* ----------------------------------
    Componenti di sezione
 ----------------------------------- */
+
+const indiceBlocks = [
+  {
+    key: "introduzione",
+    title: "Introduzione",
+    summary:
+      "Esplora la nascita del brano a Montmartre, gli incontri con Debussy e Contamine de Latour e la ricezione simbolista.",
+      bullets: [
+        { label: "Contesto parigino e Montmartre", tooltip: "Riprendo l’atmosfera bohèmien del Chat Noir e il Simbolismo che ispira la scelta della gymnopédie come immagine sensoriale, mettendo in evidenza il contrasto con il wagnerismo e l’idea di ‘musica bianca’ di Satie." },
+        { label: "Timeline biografica", tooltip: "Racconto la traiettoria personale e pubblica: origini normanne, Conservatorio fallimentare, Rosa-Croce, il legame con Valadon, il ritiro ad Arcueil e la ricezione postuma da Cage a Eno." },
+        { label: "Approfondimenti esecutivi", tooltip: "Elenco ciò che studente e docente devono sapere: Debussy, la dieta bianca come manifesto, i pedali di Fa# e le curiosità pratiche che si celano dietro le note." },
+      ],
+  },
+  {
+    key: "analysis",
+    title: "Analisi operativa",
+    summary:
+      "Indica come leggere la forma, le tensioni armoniche e il controllo di tempo/pedale attraverso schede interattive e supporti visivi.",
+      bullets: [
+        { label: "Schede operative e Pdf", tooltip: "Ogni scheda è guida all’azione (struttura, controllo, errori da evitare, obiettivi tonal-ritmici) e il PdfScoreViewer mostra le pagine e i controlli di zoom utili alla lettura." },
+        { label: "Visuali e Fa#", tooltip: "Uso degli asset (spartiti annotati, diteggiature, Fa# come pedale interno, posizione mani) per coltivare l’attenzione timbrica e l’armonia sospesa." },
+      ],
+  },
+  {
+    key: "interpreters",
+    title: "Interpreti e ascolti",
+    summary:
+      "Dialoga su versioni emblematiche per piano e orchestra, suggerendo ciò che ascoltare per capire l'interpretazione.",
+      bullets: [
+        { label: "Piano solo", tooltip: "Parlo dei registri di Buniatishvili e Ciccolini: fraseggio contemporaneo, sviluppo dinamico e il tocco morbido della tradizione francese." },
+        { label: "Orchestrazioni Debussy", tooltip: "Menziono le due orchestrazioni, la scelta dei timbri (oboe, corni, arpe) e come l’adattamento amplia la tessitura pur mantenendo la leggerezza iniziale." },
+      ],
+  },
+  {
+    key: "glossary",
+    title: "Glossario",
+    summary:
+      "Chiude i termini chiave (Gymnopédie, lent et douloureux, settime maggiori) e i riferimenti culturali utili alla spiegazione.",
+      bullets: [
+        { label: "Termini musicali", tooltip: "Definisco Gymnopédie, lent et douloureux, ostinato, accordi planati, ambiguità tonale, pedale di risonanza e rubato sobrio per sostenere la narrazione video." },
+        { label: "Contesto storico", tooltip: "Racconto perché Montmartre era centrale, il ruolo di Debussy, la Rosa-Croce, la dieta bianca e il filo che porta dalle Gymnopédies all’ambient." },
+      ],
+  },
+  {
+    key: "impara",
+    title: "Impara",
+    summary:
+      "Flashcard interattive per fissare cronologia, titoli, significati e aneddoti legati al brano e al compositore.",
+      bullets: [
+        { label: "Flashcard", tooltip: "Le 20 flashcard servono a chiudere il video con richiami rapidi su date, titoli, persone e chiavi interpretative." },
+      ],
+  },
+  {
+    key: "fonti",
+    title: "Fonti",
+    summary:
+      "Organizza i collegamenti a spartiti, audio e note discografiche per riprodurre il percorso documentale.",
+      bullets: [
+        { label: "Spartito e dominio pubblico", tooltip: "Indico IMSLP e Musopen come sorgenti (PDF, audio) per scaricare e replicare il ragionamento del video." },
+        { label: "Contesto e cronologia", tooltip: "Segnalo Wikipedia e Hyperion per verificare date, titoli e orchestrazioni citate nella scaletta." },
+      ],
+  },
+];
+
+const IndiceSection = ({ goTo }) => (
+  <div className="space-y-6 max-w-5xl mx-auto">
+    <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+      <h2 className="text-2xl font-bold text-slate-100 flex items-center gap-3">
+        <BookOpen className="w-5 h-5 text-blue-400" />
+        Indice dei contenuti
+      </h2>
+      <p className="text-sm text-slate-400 mt-1">
+        Naviga le sezioni principali con una piccola sinossi e raggiungi subito il capitolo desiderato.
+      </p>
+      <div className="mt-5 space-y-4">
+        {indiceBlocks.map((block) => (
+          <div key={block.key} className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <div className="text-base font-semibold text-slate-100">{block.title}</div>
+                <p className="text-xs text-slate-400 mt-1">{block.summary}</p>
+                <ul className="mt-3 space-y-1 text-xs text-slate-400 list-disc list-inside">
+                  {block.bullets.map((bullet) => (
+                    <li key={`${block.key}-${bullet.label}`}>
+                      <Tooltip text={bullet.tooltip}>
+                        <span>{bullet.label}</span>
+                      </Tooltip>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <button
+                type="button"
+                onClick={() => goTo(block.key)}
+                className="text-sm px-3 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition"
+              >
+                Vai alla sezione
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+);
 
 // Sezione Introduzione
 const IntroduzioneSection = ({ onNavigateToFonti }) => {
@@ -1014,7 +1129,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
   );
 
   return (
-    <div className="space-y-6 animate-fadeIn max-w-4xl mx-auto">
+    <div id="introduzione" className="space-y-6 animate-fadeIn max-w-4xl mx-auto">
       {/* Modale principale */}
       {modalContent && (
         <div
@@ -1065,7 +1180,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
             con pochi elementi ripetuti e dissonanze controllate. Satie stesso scrisse: <em>«Sono venuto al mondo molto giovane in un tempo molto vecchio»</em>, una frase che riassume la sua posizione di outsider in un'epoca dominata dal wagnerismo.
           </p>
           <p>
-            Nel <strong>1888</strong> Parigi vive le trasformazioni della Belle Époque: la Torre Eiffel si costruisce, Pasteur e Hertz rompono paradigmi scientifici, e l'arte si spoglia dal romanticismo e dalle regole accademiche. In questo contesto, Satie — un ragazzo di 21 anni, pianista cabaret a <Tooltip text="Quartiere parigino dei café-cabaret dove Satie lavorò come pianista e trovò ispirazione per il suo stile sobrio.">Montmartre</Tooltip> — compone tre piccoli brani che diventano le basi per la musica impressionista, minimalista e d'ambiente. Quanti pianisti principianti e non hanno desiderato suonarle, scoprendo poi che non era poi così semplice!
+            Nel <strong>1888</strong> Parigi vive le trasformazioni della <Tooltip text="Periodo di grande fermento artistico, scientifico e culturale (fine Ottocento – 1914), con grandi saloni, progresso e fiducia nel futuro.">Belle Époque</Tooltip>: la Torre Eiffel si costruisce, Pasteur e Hertz rompono paradigmi scientifici, e l'arte si spoglia dal romanticismo e dalle regole accademiche. In questo contesto, Satie — un ragazzo di 21 anni, pianista cabaret a <Tooltip text="Quartiere parigino dei café-cabaret dove Satie lavorò come pianista e trovò ispirazione per il suo stile sobrio.">Montmartre</Tooltip> — compone tre piccoli brani che diventano le basi per la musica impressionista, minimalista e d'ambiente. Quanti pianisti principianti e non hanno desiderato suonarle, scoprendo poi che non era poi così semplice!
           </p>
           <p>
             Il titolo{' '}
@@ -1218,7 +1333,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                   </div>
                 </div>
                 <p className="mb-2">
-                  È in questo ambiente bohémien che Satie stringe amicizia con Claude Debussy e incontra il poeta <strong>Patrice Contamine de Latour</strong>, la cui influenza sarà determinante per la genesi delle Gymnopédies. La poesia <em>Les Antiques</em> di Contamine accompagnerà la prima pubblicazione della Gymnopédie n. 1 nell'estate 1888.
+                  È in questo <Tooltip text="Spirito libero, anti-accademico e nomade delle arti, che abbraccia irriverenza, performance e libertà espressiva.">ambiente bohémien</Tooltip> che Satie stringe amicizia con Claude Debussy e incontra il poeta <strong>Patrice Contamine de Latour</strong>, la cui influenza sarà determinante per la genesi delle Gymnopédies. La poesia <em>Les Antiques</em> di Contamine accompagnerà la prima pubblicazione della Gymnopédie n. 1 nell'estate 1888.
                 </p>
                 <p className="text-sm text-slate-400 italic">
                   L'ambiente di Montmartre, con i suoi café-cabarets, il simbolismo e l'esoterismo, gli offre una libertà
@@ -1358,7 +1473,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
 // Sezione Analisi: utilizza le schede definite sopra e il viewer PDF
 const AnalysisSection = () => {
   return (
-    <div className="space-y-6 max-w-5xl mx-auto">
+    <div id="analysis" className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <Brain className="w-5 h-5 text-blue-400" />
@@ -1632,7 +1747,7 @@ const InterpretersSection = () => {
     },
   ];
   return (
-    <div className="space-y-6 max-w-5xl mx-auto">
+    <div id="interpreters" className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <Music className="w-5 h-5 text-blue-400" />
@@ -1683,7 +1798,7 @@ const InterpretersSection = () => {
 // Sezione Glossario
 const GlossarySection = () => {
   return (
-    <div className="space-y-6 max-w-5xl mx-auto">
+    <div id="glossary" className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <Library className="w-5 h-5 text-blue-400" />
@@ -1809,7 +1924,7 @@ const ImparaSection = () => {
     setIdx((i) => (i - 1 + flashcardsData.length) % flashcardsData.length);
   };
   return (
-    <div className="space-y-6 max-w-5xl mx-auto">
+    <div id="impara" className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <GraduationCap className="w-5 h-5 text-blue-400" />
@@ -1916,7 +2031,7 @@ const ImparaSection = () => {
 const FontiSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
   return (
-    <div className="space-y-6 max-w-5xl mx-auto">
+    <div id="fonti" className="space-y-6 max-w-5xl mx-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-3">
           <BookOpen className="w-5 h-5 text-blue-400" />
@@ -1978,7 +2093,7 @@ const FontiSection = () => {
 ----------------------------------- */
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState("introduzione");
+  const [activeTab, setActiveTab] = useState("indice");
   const tabIndex = useMemo(() => TABS.indexOf(activeTab), [activeTab]);
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => {
@@ -1996,7 +2111,8 @@ export default function App() {
     // Impedisce tab non validi
     if (!TABS.includes(activeTab)) setActiveTab("introduzione");
   }, [activeTab]);
-  const tabMeta = {
+const tabMeta = {
+    indice: { label: "Indice", icon: BookOpen },
     introduzione: { label: "Introduzione", icon: BookOpen },
     analysis: { label: "Analisi", icon: Brain },
     interpreters: { label: "Interpreti", icon: Music },
@@ -2004,6 +2120,16 @@ export default function App() {
     impara: { label: "Impara", icon: GraduationCap },
     fonti: { label: "Fonti", icon: FileText },
   };
+  const handleIndiceNavigate = (tab) => {
+    setActiveTab(tab);
+    setTimeout(() => {
+      const el = document.getElementById(tab);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 200);
+  };
+
   return (
     <ErrorBoundary>
       <div className="min-h-screen bg-slate-950 text-slate-100" {...swipeHandlers}>
@@ -2030,6 +2156,9 @@ export default function App() {
           </div>
         </header>
         <main className="max-w-6xl mx-auto px-4 py-7">
+          {activeTab === "indice" && (
+            <IndiceSection goTo={handleIndiceNavigate} />
+          )}
           {activeTab === "introduzione" && (
             <IntroduzioneSection onNavigateToFonti={() => setActiveTab("fonti")} />
           )}
