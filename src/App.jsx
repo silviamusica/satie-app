@@ -385,7 +385,7 @@ const analysisCards = [
     bullets: [
       "Trasformare il 3/4 in un valzer caricaturale.",
       "Rubato ampio e romantico che appesantisce la linea.",
-      "Pedale continuo che impasta le voci e cancella le dissonanze.",
+      "Pedale continuo che impasta le voci e toglie purezza.",
       "Sottolineare eccessivamente la progressione armonica: il brano vive di sospensioni.",
     ],
   },
@@ -1163,8 +1163,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
             <div className="flex items-center space-x-3">
               <BookOpen className="w-5 h-5" />
               <div className="text-left">
-                <h3 className="text-lg font-semibold">Curiosità: Debussy e la svolta</h3>
-                <span className="text-sm opacity-90">Orchestrazioni e ricezione</span>
+                <h3 className="text-lg font-semibold">Curiosità: contesto e ricezione</h3>
               </div>
             </div>
             <ChevronDown className={`w-6 h-6 transition-transform ${openCuriosita ? "rotate-180" : ""}`} />
@@ -1236,6 +1235,17 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                 <p className="mb-2 text-sm">
                   In questo contesto di trasformazione, Parigi è la capitale mondiale dell'arte. L'Impressionismo ha già rivoluzionato la pittura, ma ora nascono nuove correnti. Il <strong>Simbolismo</strong> domina la letteratura e si infiltra nelle arti visive: i simbolisti rifiutano il realismo descrittivo in favore dell'evocazione, del sogno, della corrispondenza tra i sensi (sinestesia). Satie associa la sua musica al colore bianco, creando quello che definirà 'musica bianca': priva di ornamenti, trasparente, essenziale.
                 </p>
+                {/* Immagine Belle Époque */}
+                <div className="mt-4 rounded-lg overflow-hidden border border-emerald-500/30">
+                  <img
+                    src="/images/parigi-belle-epoque-1888.jpg"
+                    alt="Parigi Belle Époque 1888"
+                    className="w-full h-56 object-contain bg-slate-900 p-2"
+                  />
+                  <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                    Parigi 1888: Torre Eiffel in costruzione, Esposizione Universale
+                  </p>
+                </div>
               </div>
 
               <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-purple-500 mt-4">
@@ -1267,6 +1277,9 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                 <p className="text-sm text-slate-400 italic">
                   <strong>Scelte timbriche:</strong> Debussy scelse un organico contenuto per preservare il carattere intimo: 2 flauti, 1 oboe, 4 corni, 2 arpe, archi con sordina. L'oboe porta la linea melodica malinconica, le arpe ricreano le figure accompagnamentali gentili del pianoforte, gli archi con sordina forniscono supporto armonico mantenendo la trasparenza. Prima esecuzione: 20 febbraio 1897 alla Société Nationale. Riproposta il 25 marzo 1911 con la direzione dello stesso Debussy.
                 </p>
+                <p className="text-sm text-slate-400 italic">
+                  Placeholder: contenuti aggiuntivi sulla ricezione orchestrale.
+                </p>
               </div>
 
               <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-cyan-500 mt-4">
@@ -1284,7 +1297,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                     className="w-full h-24 object-contain"
                   />
                   <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
-                    Screenshot di un commento ironico sotto un video YouTube dell'esecuzione di Vexations: testimonianza dell'eredità cult di Satie
+                    Placeholder: commento su un'esecuzione di Vexations.
                   </p>
                 </div>
                 <p className="mb-2 text-sm">
@@ -1292,6 +1305,9 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                 </p>
                 <p className="text-sm text-slate-400 italic">
                   <strong>Brian Eno e la musica ambient:</strong> Nel 1917 Satie concepì la <em>Musique d'ameublement</em> (musica d'arredamento): composizioni pensate per far parte dell'ambiente, non per essere ascoltate attentamente. Nel 1978 Eno pubblicò <em>Ambient 1: Music for Airports</em>, riconoscendo il debito: <em>«La musica ambiente deve poter ospitare molti livelli di attenzione d'ascolto senza imporne uno in particolare»</em>. Le Gymnopédies, sebbene non pensate come musica d'arredamento, ne condividono l'estetica. Le playlist «Lo-fi beats to study to» che spopolano oggi devono molto a Satie.
+                </p>
+                <p className="text-sm text-slate-400 italic">
+                  Placeholder: approfondimento Cage & ambient.
                 </p>
               </div>
 
@@ -1369,6 +1385,32 @@ const AnalysisSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Immagini esemplificative tecniche */}
+        <div className="grid sm:grid-cols-2 gap-4 mt-6">
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
+            <img
+              src="/images/spartito-annotato-gymnopedies.jpg"
+              alt="Spartito annotato con indicazioni esecutive"
+              className="w-full h-64 object-contain"
+            />
+            <div className="p-3">
+              <p className="text-sm font-semibold text-slate-200 mb-1">Spartito annotato con indicazioni</p>
+              <p className="text-sm text-slate-400 italic">Esempi di pedale, fraseggio, dinamiche (placeholder)</p>
+            </div>
+          </div>
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
+            <img
+              src="/images/posizione-mani-pianoforte.jpg"
+              alt="Posizione delle mani al pianoforte"
+              className="w-full h-64 object-contain"
+            />
+            <div className="p-3">
+              <p className="text-sm font-semibold text-slate-200 mb-1">Posizione delle mani</p>
+              <p className="text-sm text-slate-400 italic">Tecnica pianistica per Gymnopédies (placeholder)</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Box Curiosità per intenditori */}
@@ -1392,6 +1434,17 @@ const AnalysisSection = () => {
             <p className="text-sm text-slate-400 mt-3 italic">
               💡 Questo stile era già stato abbozzato nelle <em>Sarabandes</em> (1887), composte l'anno precedente.
             </p>
+            {/* Immagine esemplificativa */}
+            <div className="mt-4 rounded-lg overflow-hidden border border-amber-500/20">
+              <img
+                src="/images/nota ricorrente-Fa-diesis-gymnopedie-.jpeg"
+                alt="Analisi armonica del Fa# collante"
+                className="w-full h-48 object-contain bg-slate-900 p-2"
+              />
+              <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                Visualizzazione grafica del Fa# come ponte tra Sol maj7 e Re maj7 (placeholder)
+              </p>
+            </div>
           </div>
 
           <div className="bg-slate-950/60 border border-amber-500/20 rounded-xl p-5">
@@ -1409,6 +1462,17 @@ const AnalysisSection = () => {
               <strong>TRE</strong> Gnossiennes iniziali (1890). Questa ossessione numerologica rivela l'influenza profonda
               dell'esoterismo sulla sua estetica compositiva.
             </p>
+            {/* Immagine esemplificativa */}
+            <div className="mt-4 rounded-lg overflow-hidden border border-amber-500/20">
+              <img
+                src="/images/satie-ritratto-giovane.jpg"
+                alt="Ritratto di Erik Satie giovane"
+                className="w-full h-56 object-contain bg-slate-900 p-2"
+              />
+              <p className="text-sm text-slate-400 p-2 italic bg-slate-900/50">
+                Erik Satie in gioventù: cappello a cilindro e aspetto bohémien (placeholder)
+              </p>
+            </div>
           </div>
 
           <div className="bg-slate-950/60 border border-amber-500/20 rounded-xl p-5">
@@ -1489,30 +1553,18 @@ const AnalysisSection = () => {
           <FileText className="w-5 h-5 text-amber-400" />
           Materiali di studio e analisi
         </h3>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-1 gap-4">
           <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
             <img
               src="/images/Modi greci.jpg"
-              alt="Schema dei modi greci"
+              alt="Schema dei modi greci e rappresentazione del Fa diesis"
               className="w-full h-48 object-contain bg-slate-950 p-3"
             />
             <div className="p-3">
-              <p className="text-sm font-semibold text-slate-200 mb-1">Schema dei modi greci</p>
+              <p className="text-sm font-semibold text-slate-200 mb-1">Schema dei modi greci e Fa diesis</p>
               <p className="text-sm text-slate-400 italic">
-                Dorico, frigio, lidio: i modi della musica antica greca che ispirarono Satie per l'ambientazione arcaica delle Gymnopédies. Il titolo stesso richiama le danze spartane della Grecia classica.
-              </p>
-            </div>
-          </div>
-          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
-            <img
-              src="/images/nota ricorrente-Fa-diesis-gymnopedie-.jpeg"
-              alt="Analisi della nota ricorrente Fa diesis"
-              className="w-full h-64 object-contain bg-slate-900 p-2"
-            />
-            <div className="p-3">
-              <p className="text-sm font-semibold text-slate-200 mb-1">Nota ricorrente: Fa diesis</p>
-              <p className="text-sm text-slate-400 italic">
-                Analisi della ricorrenza del Fa# nella Gymnopédie n.1: questa nota funziona da "collante" armonico tra gli accordi di Sol maggiore e Re maggiore con settima, creando l'effetto di altalena fluttuante caratteristico del brano.
+                Dorico, frigio, lidio: i modi della Grecia antica che ispirarono Satie fungono da cornice per il pedale interno di Fa diesis.
+                La nota Fa# attraversa simultaneamente gli accordi di Sol maggiore settima e Re maggiore settima, mantenendo il brano sospeso come un'altalena che non tocca mai terra.
               </p>
             </div>
           </div>
