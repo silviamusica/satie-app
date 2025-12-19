@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Music } from "lucide-react";
 import Tooltip from "../components/Tooltip";
+import PdfScoreViewer from "../components/PdfScoreViewer";
 
 const BranoSection = () => {
   const [showScore, setShowScore] = useState(false);
