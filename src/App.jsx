@@ -950,15 +950,34 @@ const BenvenutoSection = ({ goTo }) => (
       </div>
     </div>
 
+    {/* Perché questo brano */}
+    <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+      <h2 className="text-xl font-bold text-slate-100 mb-3">
+        Perché Gymnopédie n. 1?
+      </h2>
+      <p className="text-sm text-slate-300 leading-relaxed mb-3">
+        Nel 1888, un giovane pianista di 21 anni che lavorava nei café-cabaret di Montmartre compose tre brevi pagine per pianoforte.
+        Semplici in apparenza, nascondevano una rivoluzione: armonie sospese, forme svuotate di drammaticità, un suono "bianco" che
+        anticipava l'impressionismo, il minimalismo e la musica ambient.
+      </p>
+      <p className="text-sm text-slate-300 leading-relaxed">
+        Ti guiderò alla scoperta di un brano che ha cambiato il corso della musica, della persona che lo compose e del
+        contesto storico che lo rese possibile. Tutti i termini e i personaggi meno conosciuti sono spiegati nel{" "}
+        <button
+          onClick={() => goTo("impara")}
+          className="text-blue-400 hover:text-blue-300 font-semibold underline"
+        >
+          glossario
+        </button>.
+      </p>
+    </div>
+
     {/* Cosa scoprirai */}
     <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-2xl font-bold text-slate-100 mb-2">
-        Perché Gymnopédie n. 1
-      </h2>
-      <h3 className="text-xl font-semibold text-slate-200 mb-4 flex items-center gap-3">
+      <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
         <BookOpen className="w-6 h-6 text-blue-400" />
         Cosa scoprirai
-      </h3>
+      </h2>
       <div className="grid gap-4 sm:grid-cols-2">
         {[
           { title: "Parigi 1888", desc: "La Belle Époque, Montmartre e il clima bohémien", icon: MapPin, tab: "parigi1888" },
@@ -986,29 +1005,6 @@ const BenvenutoSection = ({ goTo }) => (
         ))}
       </div>
     </div>
-
-    {/* Perché questo brano */}
-    <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-xl font-bold text-slate-100 mb-3">
-        Perché Gymnopédie n. 1?
-      </h2>
-      <p className="text-sm text-slate-300 leading-relaxed mb-3">
-        Nel 1888, un giovane pianista di 21 anni che lavorava nei café-cabaret di Montmartre compose tre brevi pagine per pianoforte.
-        Semplici in apparenza, nascondevano una rivoluzione: armonie sospese, forme svuotate di drammaticità, un suono "bianco" che
-        anticipava l'impressionismo, il minimalismo e la musica ambient.
-      </p>
-      <p className="text-sm text-slate-300 leading-relaxed">
-        Ti guiderò alla scoperta di un brano che ha cambiato il corso della musica, della persona che lo compose e del
-        contesto storico che lo rese possibile. Tutti i termini e i personaggi meno conosciuti sono spiegati nel{" "}
-        <button
-          onClick={() => goTo("impara")}
-          className="text-blue-400 hover:text-blue-300 font-semibold underline"
-        >
-          glossario
-        </button>.
-      </p>
-    </div>
-
     {/* CTA */}
     <div className="text-center">
       <button
@@ -2488,47 +2484,56 @@ const EreditaSection = () => {
               </button>
             </div>
             <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
-              <p>
-                La <strong>musique d'ameublement</strong> (musica d'arredamento) e una delle idee piu radicali di Satie:
-                la musica non e il centro dell'attenzione, ma un elemento utile che si confonde con l'ambiente.
+              <p className="text-slate-200">
+                In sintesi: <strong>musica da ignorare</strong>, progettata per fondersi con l'ambiente.
               </p>
+              <p>
+                La <strong>musique d'ameublement</strong> (musica d'arredamento) è la proposta più radicale di Satie:
+                la musica <strong>non deve essere ascoltata</strong> come concerto, ma deve stare in sottofondo come
+                un mobile in una stanza.
+              </p>
+
               <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
                 <p>
-                  L'idea nasce, secondo Fernand Leger, in un ristorante: Satie immagina una musica capace di
-                  <strong>ammorbidire i rumori</strong> (coltelli, forchette, strada) senza imporsi.
+                  L'idea nasce (secondo Fernand Léger) in un ristorante: Satie immagina una musica capace di
+                  <strong>ammorbidire i rumori</strong> di coltelli e forchette, senza imporsi.
                 </p>
               </div>
-              <p>
-                In una lettera a Jean Cocteau (1920) la definisce <strong>fondamentalmente industriale</strong>:
-                non per l'Arte, ma per bisogni utili, come luce e calore. E una reazione all'ascolto "devoto"
-                wagneriano: questa musica va <strong>ignorata</strong>, non ascoltata.
-              </p>
-              <p>
-                Musicalmente si basa su frammenti brevi ripetuti <em>ad libitum</em>, senza sviluppo o climax:
-                un meccanismo statico che elimina la narrazione.
-              </p>
+
               <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-                <h4 className="text-sm font-semibold text-slate-100 mb-2">Opere (1917-1923)</h4>
+                <h4 className="text-sm font-semibold text-slate-100 mb-2">In parole semplici</h4>
                 <ul className="space-y-2">
-                  <li>• <strong>Tapisserie en fer forge</strong> (vestibolo per un grande ricevimento)</li>
-                  <li>• <strong>Carrelage phonique</strong> (pranzo o firma di un contratto)</li>
-                  <li>• <strong>Tenture de cabinet prefectoral</strong> (biblioteca, 12 battute da ripetere)</li>
+                  <li>• Non è “arte sacra”: è <strong>funzionale</strong>, come luce o riscaldamento.</li>
+                  <li>• È <strong>anti-ascolto</strong>: deve essere ignorata, non seguita con devozione.</li>
+                  <li>• Musicalmente usa <strong>frammenti brevi ripetuti</strong> senza sviluppo o climax.</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+                <h4 className="text-sm font-semibold text-slate-100 mb-2">Opere (1917–1923)</h4>
+                <ul className="space-y-2">
+                  <li>• <strong>Tapisserie en fer forgé</strong> – per un vestibolo di ricevimento.</li>
+                  <li>• <strong>Carrelage phonique</strong> – per un pranzo o una firma di contratto.</li>
+                  <li>• <strong>Tenture de cabinet préfectoral</strong> – 12 battute da ripetere all'infinito.</li>
                   <li>• <strong>Chez un bistrot</strong></li>
                   <li>• <strong>Un salon</strong></li>
                 </ul>
               </div>
+
               <p>
-                L'unica esecuzione pubblica (Galerie Barbazanges, 8 marzo 1920) fu un fiasco: il pubblico si sedette
-                ad ascoltare e Satie urlava <em>"Parlate! Circolate! Non ascoltate!"</em>.
+                L'unico esperimento pubblico (Galerie Barbazanges, 8 marzo 1920) fallì: il pubblico si sedette ad
+                ascoltare. Satie gridava: <em>"Parlate! Circolate! Non ascoltate!"</em>.
               </p>
+
               <p>
-                Il concetto si compie nel cinema: per <em>Entr'acte</em> (1924) scrive musica fatta di ostinati brevi,
-                pensati come sfondo che amplifica le immagini senza chiedere attenzione.
+                Il concetto torna nel cinema: per <em>Entr'acte</em> (1924) scrive musica a blocchi ripetuti, pensata
+                come sfondo che accompagna le immagini.
               </p>
+
               <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
                 <p>
-                  Eredi diretti: <strong>ambient</strong> (Brian Eno), <strong>minimalismo</strong>, John Cage, e persino
-                  la musica funzionale moderna (Muzak). Un'idea profetica che anticipa il modo in cui oggi viviamo il suono.
+                  Eredità: <strong>ambient</strong> (Brian Eno), <strong>minimalismo</strong>, John Cage e perfino la musica
+                  di sottofondo moderna (Muzak). Un'intuizione profetica su come oggi viviamo il suono.
                 </p>
               </div>
             </div>
