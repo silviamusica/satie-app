@@ -214,7 +214,7 @@ const glossaryData = [
       {
         term: "Gymnopédie",
         definition:
-          "Neologismo francese dal greco Γυμνοπαιδίαι (Gymnopaedia), festività spartana annuale. 'Gymnos' significa 'nudo' o 'disarmato': giovani uomini danzavano nudi eseguendo esercizi ginnici e canti corali. Satie scelse questo titolo influenzato da: 1) il poema 'Les Antiques' di Contamine de Latour; 2) 'Salammbô' di Flaubert; 3) l'estetica simbolista di Puvis de Chavannes (con un evidente parallelo a 'Jeunes filles au bord de la mer', 1879). La prima Gymnopédie fu originariamente intitolata 'Danse antique'.",
+          "Neologismo francese dal greco Γυμνοπαιδίαι (Gymnopaedia), festività spartana annuale. 'Gymnos' significa 'nudo' o 'disarmato': giovani uomini danzavano nudi eseguendo esercizi ginnici e canti corali. Satie usa il termine per evocare un clima arcaico e rituale. Nella prima edizione della Gymnopédie n. 1 (1888) fece stampare in calce un estratto di 'Les Antiques' di Contamine de Latour come epigrafe: il verso con 'gymnopédie' offre una chiave di lettura ma non prova un'ispirazione diretta. La prima Gymnopédie fu originariamente intitolata 'Danse antique'.",
       },
       {
         term: "Lent et douloureux",
@@ -329,7 +329,7 @@ const glossaryData = [
       {
         term: "Forme ternarie (ABA')",
         definition:
-          "Struttura musicale dove una sezione iniziale (A) è seguita da una sezione contrastante (B) e poi dalla ripresa della prima (A). La Gymnopédie n.1 segue questa forma modificata: Introduzione (batt. 1-4), Sezione A (batt. 5-15), Sezione A' estesa (batt. 16-39), Ripresa A, Coda. Satie usa questa forma ma la svuota di contrasto drammatico.",
+          "Struttura musicale dove una sezione iniziale (A) è seguita da una sezione contrastante (B) e poi dalla ripresa della prima (A). La Gymnopédie n.1 segue questa forma modificata: introduzione (batt. 1-4), sezione A (batt. 5-15), sezione A' estesa (batt. 16-39), ripresa A, coda. Satie usa questa forma ma la svuota di contrasto drammatico.",
       },
       {
         term: "Settima maggiore",
@@ -349,7 +349,7 @@ const glossaryData = [
       {
         term: "Musique d'ameublement",
         definition:
-          "Musica d'arredamento: concetto sviluppato da Satie nel 1917. Composizioni pensate per non essere ascoltate attentamente, ma per far parte dell'ambiente. Satie scrisse: 'Immagino una musica melodiosa che attenui il rumore di coltelli e forchette a cena, senza dominarli, senza imporsi'. Precorre la musica ambient di Brian Eno (Ambient 1: Music for Airports, 1978) che definì l'ambient come qualcosa che 'deve poter essere ignorata quanto ascoltata'.",
+          "Musica d'arredamento: concetto sviluppato da Satie nel 1917. Composizioni pensate per non essere ascoltate attentamente, ma per far parte dell'ambiente. Satie scrisse: 'immagino una musica melodiosa che attenui il rumore di coltelli e forchette a cena, senza dominarli, senza imporsi'. Precorre la musica ambient di Brian Eno (Ambient 1: Music for Airports, 1978) che definì l'ambient come qualcosa che 'deve poter essere ignorata quanto ascoltata'.",
       },
       {
         term: "John Cage",
@@ -364,12 +364,140 @@ const glossaryData = [
     ],
   },
   {
+    category: "Correnti artistiche",
+    items: [
+      {
+        term: "Mappa delle correnti francesi (1800-1945)",
+        definition: (
+          <div className="space-y-4">
+            <p>
+              Comprendere l'evoluzione artistica in Francia dal 1800 in poi e come guardare un'esplosione controllata:
+              ogni corrente nasce come reazione a quella precedente, cercando una liberta sempre maggiore.
+            </p>
+            <p className="text-slate-200 font-semibold">Mappa concettuale delle correnti francesi</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm border border-slate-700">
+                <thead className="bg-slate-900/70 text-slate-200">
+                  <tr>
+                    <th className="px-3 py-2 border-b border-slate-700">Corrente artistica</th>
+                    <th className="px-3 py-2 border-b border-slate-700">Anni (circa)</th>
+                    <th className="px-3 py-2 border-b border-slate-700">Rappresentanti</th>
+                    <th className="px-3 py-2 border-b border-slate-700">Caratteristiche</th>
+                    <th className="px-3 py-2 border-b border-slate-700">Opera simbolo</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="odd:bg-slate-950/40">
+                    <td className="px-3 py-2 border-b border-slate-800 font-semibold">Romanticismo</td>
+                    <td className="px-3 py-2 border-b border-slate-800">1800-1850</td>
+                    <td className="px-3 py-2 border-b border-slate-800">Delacroix, Gericault</td>
+                    <td className="px-3 py-2 border-b border-slate-800">Emozione, dramma, natura selvaggia, patriottismo</td>
+                    <td className="px-3 py-2 border-b border-slate-800">La Liberta che guida il popolo</td>
+                  </tr>
+                  <tr className="odd:bg-slate-950/40">
+                    <td className="px-3 py-2 border-b border-slate-800 font-semibold">Realismo</td>
+                    <td className="px-3 py-2 border-b border-slate-800">1840-1880</td>
+                    <td className="px-3 py-2 border-b border-slate-800">Courbet, Millet</td>
+                    <td className="px-3 py-2 border-b border-slate-800">
+                      Rifiuto dell'ideale, vita quotidiana, poveri e lavoro senza filtri
+                    </td>
+                    <td className="px-3 py-2 border-b border-slate-800">Gli spaccapietre</td>
+                  </tr>
+                  <tr className="odd:bg-slate-950/40">
+                    <td className="px-3 py-2 border-b border-slate-800 font-semibold">Impressionismo</td>
+                    <td className="px-3 py-2 border-b border-slate-800">1870-1890</td>
+                    <td className="px-3 py-2 border-b border-slate-800">Monet, Renoir, Degas</td>
+                    <td className="px-3 py-2 border-b border-slate-800">
+                      Studio della luce, plein air, pennellate rapide, attimo fuggente
+                    </td>
+                    <td className="px-3 py-2 border-b border-slate-800">Impressione, levar del sole</td>
+                  </tr>
+                  <tr className="odd:bg-slate-950/40">
+                    <td className="px-3 py-2 border-b border-slate-800 font-semibold">Post-impressionismo</td>
+                    <td className="px-3 py-2 border-b border-slate-800">1880-1905</td>
+                    <td className="px-3 py-2 border-b border-slate-800">Cezanne, Seurat, Gauguin</td>
+                    <td className="px-3 py-2 border-b border-slate-800">
+                      Ritorno alla struttura e alla forma, colore piu solido o simbolico
+                    </td>
+                    <td className="px-3 py-2 border-b border-slate-800">I giocatori di carte</td>
+                  </tr>
+                  <tr className="odd:bg-slate-950/40">
+                    <td className="px-3 py-2 border-b border-slate-800 font-semibold">Simbolismo</td>
+                    <td className="px-3 py-2 border-b border-slate-800">1880-1910</td>
+                    <td className="px-3 py-2 border-b border-slate-800">Moreau, Redon</td>
+                    <td className="px-3 py-2 border-b border-slate-800">
+                      Sogno, mito, inconscio, realta come velo
+                    </td>
+                    <td className="px-3 py-2 border-b border-slate-800">L'apparizione</td>
+                  </tr>
+                  <tr className="odd:bg-slate-950/40">
+                    <td className="px-3 py-2 border-b border-slate-800 font-semibold">Fauvismo</td>
+                    <td className="px-3 py-2 border-b border-slate-800">1904-1908</td>
+                    <td className="px-3 py-2 border-b border-slate-800">Matisse, Derain</td>
+                    <td className="px-3 py-2 border-b border-slate-800">
+                      Colori "selvaggi", non naturalistici, energia pura
+                    </td>
+                    <td className="px-3 py-2 border-b border-slate-800">La danza</td>
+                  </tr>
+                  <tr className="odd:bg-slate-950/40">
+                    <td className="px-3 py-2 border-b border-slate-800 font-semibold">Cubismo</td>
+                    <td className="px-3 py-2 border-b border-slate-800">1907-1914</td>
+                    <td className="px-3 py-2 border-b border-slate-800">Picasso, Braque</td>
+                    <td className="px-3 py-2 border-b border-slate-800">
+                      Scomposizione in volumi geometrici, visione simultanea
+                    </td>
+                    <td className="px-3 py-2 border-b border-slate-800">Les demoiselles d'Avignon</td>
+                  </tr>
+                  <tr className="odd:bg-slate-950/40">
+                    <td className="px-3 py-2 border-b border-slate-800 font-semibold">Surrealismo</td>
+                    <td className="px-3 py-2 border-b border-slate-800">1924-1945</td>
+                    <td className="px-3 py-2 border-b border-slate-800">Dali, Magritte, Ernst</td>
+                    <td className="px-3 py-2 border-b border-slate-800">
+                      Irrazionale, sogno, automatismo psichico
+                    </td>
+                    <td className="px-3 py-2 border-b border-slate-800">La persistenza della memoria</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <div className="text-slate-200 font-semibold mb-2">Come distinguere le svolte principali</div>
+              <ol className="list-decimal list-inside space-y-1 text-slate-300">
+                <li>I romantici volevano farti emozionare.</li>
+                <li>I realisti volevano mostrarti la verita, anche se dura o umile.</li>
+                <li>Gli impressionisti iniziarono a guardare la luce piu del soggetto.</li>
+                <li>I post-impressionisti ridiedero geometria e struttura alle forme.</li>
+                <li>I cubisti portarono la geometria all'estremo, frammentando l'oggetto.</li>
+              </ol>
+            </div>
+            <div>
+              <div className="text-slate-200 font-semibold mb-2">Il legame con Erik Satie</div>
+              <ul className="list-disc list-inside space-y-1 text-slate-300">
+                <li>Parte dal clima simbolista della Rosa-Croce.</li>
+                <li>Diventa un precursore musicale dell'impressionismo, che poi rifiuta.</li>
+                <li>Con <em>Parade</em> si avvicina al cubismo in musica.</li>
+                <li>Influenza anche surrealismo e dada.</li>
+              </ul>
+              <p className="mt-2 text-slate-300">
+                Senza questa evoluzione pittorica, la musica di Satie non sarebbe stata la stessa: "dipingeva" con i suoni,
+                cercando la stessa essenzialita di un quadro di Cezanne.
+              </p>
+              <p className="mt-2 text-slate-400 italic">
+                Ti piacerebbe approfondire il legame tra il cubismo di Picasso e la musica di Satie per <em>Parade</em>?
+              </p>
+            </div>
+          </div>
+        ),
+      },
+    ],
+  },
+  {
     category: "Personaggi",
     items: [
       {
         term: "Erik Satie (1866-1925)",
         definition:
-          "Compositore francese nato a Honfleur. Rivoluzionò la musica moderna con uno stile minimalista, ironico e anti-accademico. Espulso dal Conservatorio di Parigi, lavorò come pianista nei café-cabaret di Montmartre dove compose le tre Gymnopédies (1888). Visse una vita bohémien, segnata da relazioni intense (Suzanne Valadon), affiliazioni mistiche (Rosa-Croce), e collaborazioni d'avanguardia (Parade con Cocteau e Picasso, 1917). Considerato precursore dell'impressionismo, del minimalismo e della musica ambient.",
+          "Compositore francese nato a Honfleur. Rivoluzionò la musica moderna con uno stile minimalista, ironico e anti-accademico. Non fu ammesso alle classi superiori del Conservatorio di Parigi, lavorò come pianista nei café-cabaret di Montmartre dove compose le tre Gymnopédies (1888). Visse una vita bohémien, segnata da relazioni intense (Suzanne Valadon), affiliazioni mistiche (Rosa-Croce), e collaborazioni d'avanguardia (Parade con Cocteau e Picasso, 1917). Considerato precursore dell'impressionismo, del minimalismo e della musica ambient.",
       },
       {
         term: "Claude Debussy (1862-1918)",
@@ -379,7 +507,7 @@ const glossaryData = [
       {
         term: "Suzanne Valadon (1865-1938)",
         definition:
-          "Pittrice francese e madre del pittore Maurice Utrillo. Nel 1893 visse con Satie una relazione breve ma intensa, l'unico amore documentato della vita del compositore. Lei lo chiamava affettuosamente 'Biqui'. Quando la relazione finì, Satie ne rimase profondamente segnato e non ebbe più relazioni sentimentali. Si scambiarono ritratti: lei dipinse un olio su tela di Satie con binocoli e barba rossastra (1892-93), lui la disegnò su carta da musica (1893). Ex modella di Renoir e Toulouse-Lautrec, divenne una delle prime pittrici professioniste riconosciute in Francia.",
+          "Pittrice francese e madre del pittore Maurice Utrillo. Nel 1893 visse con Satie una relazione breve ma intensa, l'unico amore documentato della vita del compositore. Fu Satie a chiamarla affettuosamente 'biqui'. Quando la relazione finì, Satie ne rimase profondamente segnato e non ebbe più relazioni sentimentali. Si scambiarono ritratti: lei dipinse un olio su tela di Satie con binocoli e barba rossastra (1892-93), lui la disegnò su carta da musica (1893). Ex modella di Renoir e Toulouse-Lautrec, divenne una delle prime pittrici professioniste riconosciute in Francia.",
       },
       {
         term: "Joséphin Péladan (1858-1918)",
@@ -404,7 +532,7 @@ const glossaryData = [
       {
         term: "J. P. Contamine de Latour (1867-1926)",
         definition:
-          "Poeta simbolista francese, amico intimo di Satie a Montmartre. La sua poesia Les Antiques accompagnò la prima pubblicazione della Gymnopédie n. 1 nell'estate 1888 sulla rivista La Musique des familles. Il poema menziona esplicitamente il termine 'gymnopédie', ispirando probabilmente il titolo scelto da Satie. Frequentava il Chat Noir e condivideva con Satie l'interesse per l'antichità classica e il simbolismo.",
+          "Poeta simbolista francese, amico intimo di Satie a Montmartre. Nella prima pubblicazione della Gymnopédie n. 1 (estate 1888, La Musique des familles) comparve in calce un estratto della sua poesia Les Antiques, usato come epigrafe per evocare un'atmosfera arcaica e rituale. Frequentava il Chat Noir e condivideva con Satie l'interesse per l'antichità classica e il simbolismo.",
       },
       {
         term: "Rodolphe Salis (1851-1897)",
@@ -523,10 +651,10 @@ const flashcardsData = [
     details: "Satie lavorava in locali come Le Chat Noir e L'Auberge du Clou, frequentati da simbolisti e poeti. Aveva 21 anni e aveva appena abbandonato il Conservatorio.",
   },
   {
-    q: "Perché Satie venne espulso dal Conservatorio di Parigi?",
+    q: "Perché Satie non fu ammesso alle classi superiori del Conservatorio di Parigi?",
     a: "Per scarsi risultati e mancanza di impegno",
     level: "intermedio",
-    details: "Nel 1882, a 16 anni, venne espulso dopo un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven. Fu giudicato 'dotato ma indolente', 'il più pigro del Conservatorio', 'privo di valore'.",
+    details: "Nel 1882, a 16 anni, non fu ammesso alle classi superiori dopo un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven. Fu giudicato 'dotato ma indolente', 'il più pigro del Conservatorio', 'privo di valore'.",
   },
   {
     q: "Quando ebbero una prima esecuzione pubblica rilevante le orchestrazioni?",
@@ -544,7 +672,7 @@ const flashcardsData = [
     q: "Con quale poeta collaborò Satie per la prima pubblicazione?",
     a: "J. P. Contamine de Latour",
     level: "avanzato",
-    details: "La Gymnopédie n. 1 fu pubblicata nell'estate 1888 sulla rivista La Musique des familles accompagnata da un estratto della poesia Les Antiques di Contamine de Latour, amico simbolista di Satie.",
+    details: "La Gymnopédie n. 1 fu pubblicata nell'estate 1888 sulla rivista La Musique des familles con un estratto di Les Antiques stampato in calce come epigrafe.",
   },
   {
     q: "Chi fu Suzanne Valadon per Satie?",
@@ -652,7 +780,8 @@ const flashcardsData = [
     q: "Cosa significa la richiesta di musica 'senza crauti'?",
     a: "Una musica francese libera dal romanticismo tedesco",
     level: "intermedio",
-    details: "Satie voleva sottrarre la musica all'influenza wagneriana e riportare il suono a una nuda essenzialita.",
+    details:
+      "Ricordando l'incontro con Debussy all'Auberge du Clou, Satie chiese una musica francese senza 'choucroute', cioe libera dal wagnerismo e ispirata alla chiarezza dei pittori francesi (Monet, Cezanne, Toulouse-Lautrec).",
   },
   {
     q: "Quando ruppe con Peladan e la Rosa-Croce?",
@@ -1076,21 +1205,25 @@ const Parigi1888Section = () => {
             <div>
               <div className="text-sm font-semibold text-slate-100 mb-2">Testo originale (francese)</div>
               <p className="whitespace-pre-line">
-                Oblique et coupant l'ombre un torrent éclatant{"\n"}
-                Ruisselait en flots d'or sur la dalle polie{"\n"}
-                Où les atomes d'ambre au feu se miroitant{"\n"}
-                Mêlaient leur sarabande à la gymnopédie
+                Oblique et coupant l'ombre un torrent jaillissait{"\n"}
+                En rafales d'or sur la dalle polie,{"\n"}
+                Où les atomes d'ambre au feu se recueillant{"\n"}
+                Mêlaient leur sarabande à la gymnopédie.
               </p>
             </div>
             <div>
               <div className="text-sm font-semibold text-slate-100 mb-2">Traduzione (italiano)</div>
               <p className="whitespace-pre-line">
-                Obliquo e fendente l'ombra, un torrente splendente{"\n"}
-                scorreva in flutti d'oro sulla lastra levigata{"\n"}
-                dove gli atomi d'ambra, specchiandosi nel fuoco,{"\n"}
-                mescolavano la loro sarabanda alla gymnopédie
+                Obliquo e fendente l'ombra, un torrente sgorgava{"\n"}
+                in raffiche d'oro sulla lastra levigata,{"\n"}
+                dove gli atomi d'ambra, raccolti nel fuoco,{"\n"}
+                mescolavano la loro sarabanda alla gymnopédie.
               </p>
             </div>
+            <p className="text-xs text-slate-400">
+              Nota: nella prima edizione della Gymnopédie n. 1 (1888) comparve solo un estratto, scelto per evocare
+              un'atmosfera arcaica e rituale.
+            </p>
           </div>
         </div>
       </div>
@@ -1456,8 +1589,9 @@ const Parigi1888Section = () => {
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
             <h3 className="text-base font-semibold text-slate-100 mb-2">J. P. Contamine de Latour</h3>
             <p className="text-sm text-slate-300">
-              <span>Poeta simbolista</span>, amico di Satie. La sua poesia <em>Les Antiques</em> fu pubblicata insieme
-              alla Gymnopédie n. 1 nell'estate del 1888 e ispirò il titolo arcaico.{" "}
+              <span>Poeta simbolista</span>, amico di Satie. Nella prima edizione della Gymnopédie n. 1 (1888)
+              comparve solo un estratto di <em>Les Antiques</em>, scelto come dedica per evocare un'atmosfera
+              arcaica e rituale.{" "}
               <button
                 type="button"
                 onClick={() => setShowAntiquesModal(true)}
@@ -1467,10 +1601,9 @@ const Parigi1888Section = () => {
               </button>
             </p>
             <div className="mt-3 text-sm text-slate-400 leading-relaxed">
-              Satie e de Latour erano amici intimi e collaboravano spesso, condividendo i pochi averi e, a volte, pure l'unico paio di pantoloni "buoni".
-              La poesia appare accanto allo spartito nel 1888; alcuni studiosi ipotizzano che la musica
-              preceda il testo (con il verso sulla <em>sarabande</em> come omaggio alle <em>Sarabandes</em> del 1887),
-              altri pensano l'opposto.
+              Satie e de Latour erano amici intimi e collaboravano spesso, condividendo i pochi averi e, a volte,
+              pure l'unico paio di pantoloni "buoni". L'estratto pubblicato nel 1888 funziona da epigrafe evocativa,
+              non da prova di un'unica fonte d'ispirazione.
             </div>
           </div>
 
@@ -1535,8 +1668,10 @@ const Parigi1888Section = () => {
 };
 
 // Sezione 3: Erik Satie
-const SatieSection = () => {
-  const [satieTab, setSatieTab] = useState("vita");
+const SatieSection = ({ goTo, satieTab, setSatieTab }) => {
+  const [showFilsModal, setShowFilsModal] = useState(false);
+  const [showDoretModal, setShowDoretModal] = useState(false);
+  const [showParadeTranscriptModal, setShowParadeTranscriptModal] = useState(false);
   const [showFullTimeline, setShowFullTimeline] = useState(false);
   const satieTabs = [
     { key: "vita", label: "La vita" },
@@ -1547,10 +1682,10 @@ const SatieSection = () => {
   const satieLifeTimeline = [
     { year: "1866", event: "Nascita a Honfleur, Normandia" },
     { year: "1870", event: "Trasferimento a Parigi durante la guerra Franco-Prussiana" },
-    { year: "1872", event: "Morte della madre. Erik ha 6 anni, viene mandato dai nonni a Honfleur" },
-    { year: "1878", event: "Morte della nonna. Torna a Parigi dal padre" },
+    { year: "1872", event: "Morte della madre. Erik ha 6 anni, viene mandato dai nonni paterni a Honfleur" },
+    { year: "1878", event: "Morte della nonna. Torna a Parigi dal padre (che si risposerà poco dopo)" },
     { year: "1879", event: "Entra al Conservatorio di Parigi. Viene giudicato 'dotato ma indolente'" },
-    { year: "1882", event: "Espulso dal Conservatorio dopo esecuzione mediocre di Beethoven" },
+    { year: "1882", event: "Non ammesso alle classi superiori dopo un esame mediocre di Beethoven" },
     { year: "1885", event: "Rientro al Conservatorio. Giudizi continuano negativi" },
     { year: "1886", event: "Servizio militare nel 33º Reggimento di Fanteria" },
     { year: "1887", event: "Abbandona definitivamente il Conservatorio. Inizia a lavorare al Chat Noir" },
@@ -1566,6 +1701,184 @@ const SatieSection = () => {
 
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl p-4">
+        <p className="text-sm text-slate-300 mb-3">
+          La pagina "Erik Satie" e divisa in tre sezioni.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {satieTabs.map((tab) => (
+            <button
+              key={tab.key}
+              type="button"
+              onClick={() => setSatieTab(tab.key)}
+              className={[
+                "px-4 py-2 rounded-lg text-sm font-semibold border transition-colors",
+                satieTab === tab.key
+                  ? "bg-blue-600 text-white border-blue-500"
+                  : "bg-slate-900 text-slate-200 border-slate-700 hover:bg-slate-800",
+              ].join(" ")}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+      {showFilsModal && (
+        <div
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setShowFilsModal(false)}
+        >
+          <div
+            className="w-full max-w-3xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+                Erik Satie e la dedica di "Le Fils des étoiles"
+              </h3>
+              <button
+                type="button"
+                onClick={() => setShowFilsModal(false)}
+                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+              >
+                chiudi
+              </button>
+            </div>
+            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-5 text-sm text-slate-300 leading-relaxed">
+              <p>
+                Il manoscritto è un frammento del periodo mistico di Satie (1891-1893), quando collaborò con
+                Joséphin Péladan e compose una "Wagnérie" in tre atti. La dedica è una preghiera solenne, ma
+                con la tipica teatralità ironica di Satie, capace di mescolare sacro e profano.
+              </p>
+              <div>
+                <div className="text-sm font-semibold text-slate-100 mb-2">Cosa dice il testo</div>
+                <p>
+                  Satie si rivolge ai "convives" e ai suoi cari, offrendo il cuore e invocando misericordia e
+                  protezione divine. Chiude con un'invocazione contro i superbi e gli indecenti, firmando con il suo nome.
+                </p>
+              </div>
+              <div>
+                <div className="text-sm font-semibold text-slate-100 mb-2">Traduzione (italiano)</div>
+                <p className="whitespace-pre-line">
+                  Dedicatrice:{"\n"}
+                  Senza pregiudizio delle pratiche dei grandi imprecatori, miei cugini, offro questo cuore ai miei cari.
+                  Perciò, e per la precedenza degli esempi, non chiedo l'esaltazione. Invoco. Invoco sui miei commensali
+                  la misericordia del Padre, creatore delle cose visibili e invisibili; la protezione della Madre Augusta
+                  del Redentore, Regina degli Angeli; come le preghiere del glorioso coro degli Apostoli e dei Santi Ordini
+                  degli Spiriti beati.{"\n"}
+                  Che la giusta infiammazione di Dio schiacci i superbi e gli indecenti!{"\n"}
+                  [Firma:] Erik Satie
+                </p>
+              </div>
+              <p className="text-xs text-slate-400">
+                Lingua: francese. Contenuto: dedica personale e preghiera. Tono: solenne e religioso, con accento ironico.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+      {showDoretModal && (
+        <div
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setShowDoretModal(false)}
+        >
+          <div
+            className="w-full max-w-3xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+                L'episodio di Gustave Doret (1896)
+              </h3>
+              <button
+                type="button"
+                onClick={() => setShowDoretModal(false)}
+                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+              >
+                chiudi
+              </button>
+            </div>
+            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p>
+                L'orchestrazione delle <em>Gymnopédies</em> da parte di Claude Debussy non fu un semplice esercizio
+                accademico, ma il risultato di un episodio specifico avvenuto nel <strong>1896</strong> a casa del
+                direttore d'orchestra <strong>Gustave Doret</strong>.
+              </p>
+              <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 space-y-3">
+                <p>
+                  <strong>L'esecuzione fallimentare:</strong> Satie si mise al pianoforte per suonare le sue{" "}
+                  <em>Gymnopédies</em>, ma la sua esecuzione risultò mediocre e "tutt'altro che perfetta",
+                  incapace di rendere giustizia alla composizione.
+                </p>
+                <p>
+                  <strong>L'intervento di Debussy:</strong> Debussy, amico intimo di Satie, intervenne dicendo:
+                  <em> «Vieni, ti mostro come suona la tua musica»</em>. Sotto le sue dita, la bellezza, i colori
+                  e le sfumature dei brani emersero chiaramente, svelando il vero potenziale dell'opera.
+                </p>
+                <p>
+                  <strong>La decisione:</strong> colpito dall'esecuzione, Doret suggerì che il passo successivo
+                  doveva essere quello di orchestrarle. Debussy acconsentì immediatamente, affermando che se Satie
+                  non avesse avuto obiezioni, si sarebbe messo al lavoro il giorno seguente.
+                </p>
+              </div>
+              <p>
+                <strong>Il risultato e le conseguenze:</strong> Debussy orchestrò la <strong>prima</strong> e la{" "}
+                <strong>terza</strong> <em>Gymnopédie</em> (invertendone l'ordine nella pubblicazione). Le versioni
+                orchestrali furono eseguite per la prima volta il <strong>20 febbraio 1897</strong> in un concerto
+                della <em>Société Nationale</em>.
+              </p>
+              <p className="text-slate-400">
+                L'evento fu fondamentale per la carriera di Satie: pur essendo attivo nei cabaret di Montmartre,
+                fino ad allora era rimasto quasi sconosciuto al grande pubblico musicale; l'orchestrazione di Debussy
+                legittimò la sua opera e contribuì a portarlo alla ribalta.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+      {showParadeTranscriptModal && (
+        <div
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setShowParadeTranscriptModal(false)}
+        >
+          <div
+            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+                Trascrizione - Jean Cocteau racconta Parade (FR)
+              </h3>
+              <button
+                type="button"
+                onClick={() => setShowParadeTranscriptModal(false)}
+                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+              >
+                chiudi
+              </button>
+            </div>
+            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p className="whitespace-pre-line">
+                (00:00) alors ce canal de parader comme très intéressant parce que erik satie lorsqu'on a parlé de lui à propos de parade il peut pas jouer musiseine faut pas oublier qu'il était né en 1866 était un homme donc arriver et c'était un solitaire bien entendu c'était le match d'arcueil on a que mazda recueilli les atari un peu en bohême on se demandait un peu qui était ce personnage étrange brusquement et bien il est associé à cette oeuvre parade qui est une oeuvre table pirouette qui associe erik satie jean cocteau et picasso
+                {"\n"}
+                (00:35) j'ai pensé qu'il fallait avec ça qu'ils aillent voir picasso c'est alors que j'ai demandé à picasso de collaborer avec nous je lui ai demandé entre la rotonde et le dôme au milieu de la russe de dire qu'il fait pas beaucoup de voitures et il m'a dit veille puisque nous allons faire un rayon à rome rejoint diaghilev puisque nous allons faire un voyage de noces nous allons aller a annoncé le voyage de noces à gertrude stein nous avons été chez gertrude stein rue de fleurus et nuit av on l'y voit là nous partons en voyage de noces nous
+                {"\n"}
+                (01:06) avons acquis à rome et nous avons avait aidé par les faits le ballet parade mais satie les fait pas avec nous et pourquoi ce bar accès scandale c'est parce que c'est une oeuvre qui est une de dérision et qui est produite par par diaghilev stationnement pendant la guerre c'est à dire 1917 les gens meurent au combat sont au front et pendant ce temps à paris eh bien on accepte de persifler on accepte de se moquer de tous de se moquer des valeurs établies et rien de mieux qu'un vrai scandale pour qu'on parle de quelqu'un ça qui avait fait ses
+                {"\n"}
+                (01:42) études à la schola cantorum et il était tard ils vivaient parmi les impressionnistes mais il sa musique s'opposait à la musique impressionniste parce que au lieu d'être floués et frissonnante et et en sourdine sa musique que tu est linéaire et sans sauce sans sauce sans voile au point que quand les musiciens d'orchestre et belle parade il croyait répétées de la musique de baston j'étais au but est d'aller chercher ravel d'amener ravel pour qu'ils leur disent que cette musique était une manière de shader et là il
+                {"\n"}
+                (02:23) s'est passé ce serait drôle un flûtiste s'est levé et a dit assati monsieur satie il paraît que vous me prouvez idiot est répond non non je ne trouve pas lyon maintenant je peux me tromper
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
       {/* Header */}
       <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6">
         <h1 className="text-3xl font-bold text-slate-100 mb-3 flex items-center gap-3">
@@ -1590,23 +1903,6 @@ const SatieSection = () => {
         <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
           Erik Satie: il bohémien che rifiuta le convenzioni accademiche
         </p>
-      </div>
-      <div className="bg-slate-900 border border-slate-700 rounded-xl p-3 flex flex-wrap gap-2">
-        {satieTabs.map((tab) => (
-          <button
-            key={tab.key}
-            type="button"
-            onClick={() => setSatieTab(tab.key)}
-            className={[
-              "px-4 py-2 rounded-lg text-sm font-semibold border transition-colors",
-              satieTab === tab.key
-                ? "bg-blue-600 text-white border-blue-500"
-                : "bg-slate-900 text-slate-200 border-slate-700 hover:bg-slate-800",
-            ].join(" ")}
-          >
-            {tab.label}
-          </button>
-        ))}
       </div>
       {satieTab === "vita" && (
       <>
@@ -1643,7 +1939,8 @@ const SatieSection = () => {
                   <span>guerra Franco-Prussiana</span>
                 </Tooltip>, la famiglia si trasferisce a <strong>Parigi</strong>.
                 Ma nel <strong>1872</strong>, quando Erik ha appena <strong>sei anni</strong>, la madre <strong>muore</strong>.
-                Il padre, incapace di occuparsi dei quattro figli, li manda dai nonni materni a Honfleur.
+                Il padre, incapace di occuparsi dei tre figli superstiti, li manda dai nonni paterni a Honfleur.
+                I nonni materni, di origine scozzese, vivevano a Londra.
               </p>
 
               <h3 className="text-base font-semibold text-slate-100 mt-4">1872-1878 (6-12 anni) — ritorno a Honfleur</h3>
@@ -1655,7 +1952,7 @@ const SatieSection = () => {
 
               <h3 className="text-base font-semibold text-slate-100 mt-4">1878 (12 anni) — di nuovo a Parigi</h3>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Erik torna definitivamente a <strong>Parigi</strong> dal padre, che nel frattempo si è risposato
+                Erik torna definitivamente a <strong>Parigi</strong> dal padre, che pochi mesi dopo si risposerà
                 con Eugénie Barnetche, una <strong>pianista</strong> che diventa la sua prima vera insegnante di musica.
                 È lei a prepararlo per l'ingresso al Conservatorio l'anno seguente.
               </p>
@@ -1690,7 +1987,8 @@ const SatieSection = () => {
               </div>
               <p className="text-sm text-slate-300 leading-relaxed">
                 Nel <strong>1882 (16 anni)</strong>, dopo un'esecuzione mediocre del <em>Finale della Sonata Op. 26</em> di Beethoven,
-                viene <strong>espulso</strong>. Tenta un rientro nel <strong>1885 (19 anni)</strong>, ma abbandona definitivamente nel <strong>1887 (21 anni)</strong>.
+                viene giudicato <strong>incapace</strong> e non ammesso alle classi superiori. Tenta un rientro nel <strong>1885 (19 anni)</strong>,
+                ma abbandona definitivamente nel <strong>1887 (21 anni)</strong>.
               </p>
             </div>
 
@@ -1742,7 +2040,7 @@ const SatieSection = () => {
         </h2>
         <div className="space-y-4">
           <p className="text-sm text-slate-300 leading-relaxed">
-            A <strong>21 anni</strong>, dopo un breve servizio militare, Satie trova lavoro come <strong>secondo pianista</strong> al
+            A <strong>21 anni</strong>, dopo un breve servizio militare, Satie trova lavoro come <strong>secondo pianista</strong> al{" "}
             <Tooltip text="Celebre café-cabaret di Montmartre fondato nel 1881 da Rodolphe Salis">
               <strong className="text-slate-100">Chat Noir</strong>
             </Tooltip>.
@@ -1751,7 +2049,7 @@ const SatieSection = () => {
           <div className="bg-linear-to-br from-blue-950/20 to-slate-950/40 border border-blue-700/30 rounded-xl p-4">
             <h3 className="text-base font-semibold text-blue-200 mb-3">L'ambiente che cambierà tutto</h3>
             <p className="text-sm text-slate-300 leading-relaxed mb-3">
-              Il Chat Noir non è solo un locale dove bere, è un <strong>laboratorio di sperimentazione</strong>
+              Il Chat Noir non è solo un locale dove bere, è un <strong>laboratorio di sperimentazione</strong>{" "}
               dove poeti, pittori e musicisti si mescolano, discutono, collaborano. Vi passano{" "}
               <strong>Claude Debussy</strong>, <strong>Paul Verlaine</strong> e{" "}
               <Tooltip text="Pittore e illustratore (1864-1901), celebre per la vita notturna di Montmartre.">
@@ -1760,7 +2058,7 @@ const SatieSection = () => {
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
               Qui Satie incontra <strong>J. P. Contamine de Latour</strong>, <span>poeta simbolista</span>,
-              la cui poesia <em>Les Antiques</em> ispirerà il titolo <em>Gymnopédie</em>.
+              e farà stampare un estratto di <em>Les Antiques</em> in calce alla prima <em>Gymnopédie</em> come epigrafe.
             </p>
           </div>
 
@@ -1842,8 +2140,19 @@ const SatieSection = () => {
               className="w-full object-contain bg-slate-950 p-2"
             />
             <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-              Manoscritto "Le Fils des Étoiles" (1891)
+              Manoscritto originale di Erik Satie con la dedica per la sua opera "Le Fils des étoiles"
+              (Il figlio delle stelle), 1891. L'immagine mostra il testo scritto a mano in francese e firmato
+              dal compositore.
             </p>
+            <div className="bg-slate-900/50 px-3 pb-3 text-center">
+              <button
+                type="button"
+                onClick={() => setShowFilsModal(true)}
+                className="text-blue-300 hover:text-blue-200 text-sm font-semibold"
+              >
+                Leggi di più
+              </button>
+            </div>
           </div>
         </div>
 
@@ -1854,7 +2163,7 @@ const SatieSection = () => {
             className="w-full object-contain bg-slate-950 p-2"
           />
           <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-            "Le Fils des Étoiles" (1891): preludio al primo atto del dramma caldeo di Péladan.
+            "Le Fils des Étoiles" (1891): preludio al primo atto del dramma di Péladan.
             Musica statica, contemplativa, che cerca di evocare atmosfere esoteriche attraverso
             armonie modali e un ritmo quasi inesistente
           </p>
@@ -1915,7 +2224,7 @@ const SatieSection = () => {
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
           <Music className="w-6 h-6 text-blue-400" />
-          Claude Debussy: un'amicizia fraterna e complessa (1891-1925)
+          Claude Debussy (1862-1918): un'amicizia fraterna e complessa
         </h2>
 
         <div className="grid md:grid-cols-[1.05fr_1.35fr] gap-4 items-stretch mb-4">
@@ -1936,11 +2245,24 @@ const SatieSection = () => {
               un <strong>"precursore"</strong> capace di indicare nuove strade oltre il wagnerismo imperante.
               Nel 1892 lo definì «<em>un musicista medievale e dolce smarrito in questo secolo</em>».
             </p>
+            <p className="text-sm text-slate-300 leading-relaxed mt-3">
+              Debussy fu il protagonista dell'impressionismo musicale: un compositore che mise al centro colore timbrico,
+              ambiguita armonica e atmosfere sospese, rompendo con il romanticismo tedesco. Opere come <em>Pelléas et Mélisande</em>{" "}
+              o il <em>Prélude à l'après-midi d'un faune</em> segnarono una svolta decisiva per la musica del Novecento.
+            </p>
+            <div className="mt-4 bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+              <h3 className="text-base font-semibold text-slate-100 mb-2">"Senza crauti, se possibile"</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Satie ricordò il suo primo incontro con Debussy all'Auberge du Clou (circa 1891) con la celebre frase{" "}
+                <em>«sans choucroute, si possible»</em>. Era una metafora anti-wagneriana: chiedeva una musica francese
+                più chiara e personale, libera dal peso tedesco, ispirata ai metodi rappresentativi dei pittori francesi
+                (Monet, Cezanne, Toulouse-Lautrec) piuttosto che alla retorica romantica.
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="space-y-4">
-
           <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4">
             <h3 className="text-base font-semibold text-amber-200 mb-2">1896-1897 — Il gesto decisivo</h3>
             <p className="text-sm text-slate-300 leading-relaxed">
@@ -1948,6 +2270,13 @@ const SatieSection = () => {
               nel 1896-1897, presentandole al pubblico nel <strong>febbraio 1897</strong> e contribuendo in modo decisivo alla fama dell'amico.
               Fu l'unica volta che Debussy orchestrò l'opera di un altro compositore.
             </p>
+            <button
+              type="button"
+              onClick={() => setShowDoretModal(true)}
+              className="mt-3 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+            >
+              Approfondisci
+            </button>
           </div>
 
           <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
@@ -1971,6 +2300,20 @@ const SatieSection = () => {
             </div>
           </div>
 
+          <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-slate-100 mb-2">1917-1918 — rottura e silenzio</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Secondo le fonti, il rapporto si incrinò definitivamente tra il <strong>1917</strong> e il <strong>1918</strong>.
+              Satie, risentito per la scarsa attenzione di Debussy verso <em>Parade</em>, gli scrisse una lettera offensiva.
+              Debussy, già gravemente malato, la lesse e non rispose. Satie affermò poi di aver scritto una seconda lettera
+              di riconciliazione poco prima della morte dell'amico, ma non arrivò alcuna risposta.
+            </p>
+            <p className="text-sm text-slate-300 leading-relaxed mt-2">
+              Debussy morì nel <strong>1918</strong> e Satie non partecipò al funerale. In seguito, tuttavia, espresse
+              un rimpianto sincero e gli dedicò l'<em>Elégie</em> (1920), ricordando la loro "ammirata e dolce amicizia".
+            </p>
+          </div>
+
           <p className="text-sm text-slate-300 leading-relaxed italic">
             Nonostante un progressivo raffreddamento dovuto alle diverse visioni estetiche, la loro influenza reciproca
             resta un <strong>pilastro del passaggio dal Simbolismo al Modernismo francese</strong>.
@@ -1982,10 +2325,24 @@ const SatieSection = () => {
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-4 flex items-center gap-3">
           <Music className="w-6 h-6 text-emerald-400" />
-          Maurice Ravel: il promotore della riscoperta (1911)
+          Maurice Ravel (1875-1937): il promotore della riscoperta
         </h2>
 
         <div className="space-y-4">
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+            <img
+              src="/images/maurice_ravel.jpg"
+              alt="Maurice Ravel"
+              className="w-full h-64 object-contain p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+              Maurice Ravel, compositore francese e maestro dell'orchestrazione
+            </p>
+          </div>
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Ravel fu un compositore francese celebre per la chiarezza formale, l'eleganza timbrica e una scrittura
+            raffinata. Amico e ammiratore di Satie, ne valorizzò la musica con un rispetto che univa rigore e gusto moderno.
+          </p>
           <p className="text-sm text-slate-300 leading-relaxed">
             Nel <strong>1911</strong>, a più di vent'anni dalla composizione delle Gymnopédies, <strong>Maurice Ravel</strong>
             — allora già affermato compositore — decise di far eseguire la <strong>Gymnopédie n. 3</strong> in pubblico,
@@ -2023,7 +2380,7 @@ const SatieSection = () => {
         </h2>
         <p className="text-sm text-slate-300 leading-relaxed mb-3">
           Nel 1893 Satie vive una relazione intensa con <strong>Suzanne Valadon</strong>, pittrice e madre di Maurice
-          Utrillo. È l'unico amore documentato della sua vita: lei lo chiama affettuosamente <em>"Biqui"</em>, lui le
+          Utrillo. È l'unico amore documentato della sua vita: lui la chiama affettuosamente <em>"Biqui"</em>, e le
           dedica una minuscola canzone di quattro battute come regalo di Pasqua. Quando la relazione si interrompe,
           Satie ne rimane profondamente segnato.
         </p>
@@ -2151,58 +2508,145 @@ const SatieSection = () => {
         </h2>
 
         <div className="space-y-4">
-          <p className="text-sm text-slate-300 leading-relaxed">
-            Nel <strong>1915 (49 anni)</strong> inizia la collaborazione con <strong>Jean Cocteau</strong>, poeta e artista d'avanguardia.
-            Insieme a <strong>Pablo Picasso</strong> (scene e costumi) e <strong>Léonide Massine</strong> (coreografia),
-            creano il balletto <strong><em>Parade</em></strong>, che debutta il <strong>18 maggio 1917</strong> (Satie ha 51 anni) al Théâtre du Châtelet.
-          </p>
+          <div className="grid md:grid-cols-2 gap-4 items-stretch">
+            <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Nel <strong>1915 (49 anni)</strong> inizia la collaborazione con <strong>Jean Cocteau</strong>,
+                poeta e artista d'avanguardia. Insieme a <strong>Pablo Picasso</strong> (scene e costumi) e{" "}
+                <strong>Léonide Massine</strong> (coreografia), creano il balletto <strong><em>Parade</em></strong>,
+                che debutta il <strong>18 maggio 1917</strong> (Satie ha 51 anni) al Théâtre du Châtelet.
+              </p>
+              <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                È il progetto che porta il cubismo sul palcoscenico e trasforma lo spettacolo in un esperimento
+                di modernità: musica, arti visive e gesto scenico diventano un unico linguaggio.
+              </p>
+              <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                La trama è una "parata": artisti di strada si esibiscono fuori da un teatro per attirare il pubblico,
+                ma lo spettacolo vero non inizia mai.
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/parade-theredlist.jpg"
+                alt="Parade, materiale promozionale dell'epoca"
+                className="w-full h-64 object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+                <em>Parade</em>: materiale promozionale del 1917
+              </p>
+            </div>
+          </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4 items-stretch">
             <div className="rounded-lg overflow-hidden border border-slate-600">
               <img
                 src="/images/jean-cocteau---erik-satie--arcueil--mais-JKLTD-570.webp"
                 alt="Schizzo di Jean Cocteau su Erik Satie"
-                className="w-full object-contain bg-slate-950 p-2"
+                className="w-full h-64 object-contain bg-slate-950 p-2"
               />
               <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
                 Schizzo di Cocteau dedicato a Satie
               </p>
             </div>
-
-            <div className="rounded-lg overflow-hidden border border-slate-600">
-              <img
-                src="/images/pARADE SATIE FRONTE.jpg"
-                alt="Spartito di Parade"
-                className="w-full object-contain bg-slate-950 p-2"
-              />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-                Spartito di "Parade" (1917)
+            <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Il "dream team" delle avanguardie: <strong>Cocteau</strong> immagina il progetto,
+                <strong> Satie</strong> scrive una partitura secca e anti-sentimentale, <strong>Picasso</strong>
+                firma scene e costumi cubisti, <strong>Massine</strong> inventa movimenti meccanici e spezzati.
+              </p>
+              <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                I costumi cubisti, enormi e rigidi, trasformano i ballerini in figure geometriche quasi immobili.
               </p>
             </div>
           </div>
 
-          <div className="rounded-lg overflow-hidden border border-slate-600 mt-4">
-            <img
-              src="/images/RAGTIME PARADE.jpg"
-              alt="Spartito del Ragtime da Parade"
-              className="w-full object-contain bg-slate-950 p-2"
-            />
-            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-              Spartito del Ragtime da "Parade": Satie incorpora elementi di musica popolare americana
-              nel linguaggio classico europeo, anticipando il jazz e la contaminazione tra generi musicali
-            </p>
+          <div className="grid md:grid-cols-2 gap-4 items-stretch">
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/RAGTIME PARADE.jpg"
+                alt="Spartito del Ragtime da Parade"
+                className="w-full h-64 object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+                Spartito del Ragtime da <em>Parade</em>
+              </p>
+            </div>
+            <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Satie incorpora elementi di musica popolare americana nel linguaggio classico europeo,
+                anticipando il jazz e la contaminazione tra generi musicali.
+              </p>
+              <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                In partitura compaiono suoni "non musicali" (macchine da scrivere, sirene, pistole, megafoni),
+                un gesto radicale per l'epoca.
+              </p>
+            </div>
           </div>
 
-          <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4 mt-4">
-            <h3 className="text-base font-semibold text-amber-200 mb-2">Il successo e lo scandalo</h3>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              <em>Parade</em> fu uno <strong>scandalo</strong>: la musica incorporava rumori quotidiani
-              (macchine da scrivere, sirene, pistole), le scene cubiste di Picasso sconvolgevano il pubblico,
-              e Cocteau parlava di "realismo surrealista". Ma proprio questo scandalo consacrò Satie
-              come patriarca delle nuove avanguardie.
-            </p>
+          <div className="grid md:grid-cols-2 gap-4 items-stretch">
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/pARADE SATIE FRONTE.jpg"
+                alt="Spartito di Parade"
+                className="w-full h-64 object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+                Spartito di <em>Parade</em> (1917)
+              </p>
+            </div>
+            <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4 flex flex-col justify-center">
+              <h3 className="text-base font-semibold text-amber-200 mb-2">Il successo e lo scandalo</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                <em>Parade</em> fu uno <strong>scandalo</strong>: la musica incorporava rumori quotidiani
+                (macchine da scrivere, sirene, pistole), le scene cubiste di Picasso sconvolgevano il pubblico,
+                e Cocteau parlava di "realismo surrealista".
+              </p>
+              <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                Il critico Jean Poueigh scrisse una recensione feroce; Satie rispose con la cartolina del "sedere
+                senza musica" e fu condannato per ingiuria (pena sospesa). Nel programma di sala, Apollinaire coniò
+                il termine "surrealismo".
+              </p>
+            </div>
           </div>
 
+          <div className="bg-slate-900/60 border border-slate-700 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-slate-100 mb-3">
+              Video su <em>Parade</em>
+            </h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div>
+                <div className="text-sm text-slate-300 mb-2">Presentazione originale in francese</div>
+                <div className="aspect-video w-full max-w-sm overflow-hidden rounded-lg border border-slate-700 bg-black">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/Cz-0vf2Br-U"
+                    title="Jean Cocteau raconte - ballet PARADE (1917)"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="text-sm text-slate-300 mb-2">Rappresentazione originale (1917)</div>
+                <div className="aspect-video w-full max-w-sm overflow-hidden rounded-lg border border-slate-700 bg-black">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/ia1AAZzNzB4"
+                    title="Parade 1917 - rappresentazione originale"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setShowParadeTranscriptModal(true)}
+              className="mt-3 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+            >
+              Leggi la trascrizione
+            </button>
+          </div>
         </div>
       </div>
 
@@ -2332,11 +2776,51 @@ const SatieSection = () => {
         </div>
       )}
 
-      {satieTab !== "stramberie" && (
+      {satieTab === "vita" && (
         <div className="text-center">
           <p className="text-sm text-slate-400 mb-3">
-            Ora che conosci il contesto e l'uomo, scopriamo come nacque il capolavoro
+            Prosegui con le amicizie che hanno segnato il suo percorso
           </p>
+          <button
+            type="button"
+            onClick={() => setSatieTab("amicizie")}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+          >
+            Amicizie
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+      )}
+
+      {satieTab === "amicizie" && (
+        <div className="text-center">
+          <p className="text-sm text-slate-400 mb-3">
+            Ora scopriamo le sue stramberie e le indicazioni sugli spartiti
+          </p>
+          <button
+            type="button"
+            onClick={() => setSatieTab("stramberie")}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+          >
+            Stramberie
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+      )}
+
+      {satieTab === "stramberie" && (
+        <div className="text-center">
+          <p className="text-sm text-slate-400 mb-3">
+            Sei pronta per il brano: ascolto, analisi e spartito
+          </p>
+          <button
+            type="button"
+            onClick={() => goTo("brano")}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+          >
+            Prosegui
+            <ChevronRight className="w-5 h-5" />
+          </button>
         </div>
       )}
     </div>
@@ -2388,10 +2872,10 @@ const BranoSection = () => {
             <Tooltip text="Antiche feste spartane in onore di Apollo, con danze rituali eseguite da giovani nudi">
               <strong>gymnopédies</strong>
             </Tooltip>, danze cerimoniali dell'antica Sparta dove giovani danzavano nudi in onore di Apollo.
-            L'ispirazione viene dal poema <em>Les Antiques</em> di{" "}
+            Nella prima edizione della n. 1, Satie fece stampare in calce un estratto di <em>Les Antiques</em> di{" "}
             <Tooltip text="Poeta simbolista francese, amico di Satie a Montmartre">
               <span>J.P. Contamine de Latour</span>
-            </Tooltip>, amico di Satie a Montmartre, pubblicato insieme alla Gymnopédie n. 1 nell'estate del 1888.
+            </Tooltip>, amico di Satie a Montmartre: un'epigrafe evocativa, non la prova di un'ispirazione diretta.
           </p>
           <img
             src="/images/Gymnopedie greche.jpeg"
@@ -2460,11 +2944,11 @@ const BranoSection = () => {
           Perché la Gymnopédie n.1 suona così <strong>fluida e sospesa</strong>?
           Il segreto risiede in una singola nota, il <strong className="text-amber-300">Fa#</strong>.
           Questa nota appartiene <em>contemporaneamente</em> sia all'accordo di{" "}
-          <Tooltip text="Accordo di quattro note: Sol-Si-Re-Fa#">
+          <Tooltip text="Accordo di quattro note: sol-si-re-fa#">
             <strong>Sol maggiore settima</strong>
           </Tooltip>{" "}
           (Sol-Si-Re-Fa#) sia all'accordo di{" "}
-          <Tooltip text="Accordo di quattro note: Re-Fa#-La-Do#">
+          <Tooltip text="Accordo di quattro note: re-fa#-la-do#">
             <strong>Re maggiore settima</strong>
           </Tooltip>{" "}
           (Re-Fa#-La-Do#).
@@ -2637,6 +3121,7 @@ const BranoSection = () => {
 const EreditaSection = () => {
   const [showAmeublementModal, setShowAmeublementModal] = useState(false);
   const [showMinimalismoModal, setShowMinimalismoModal] = useState(false);
+  const [showVexationsModal, setShowVexationsModal] = useState(false);
   const debussyOrchestrations = [
     {
       title: "Orchestrazione Debussy – versione classica (YouTube)",
@@ -2797,6 +3282,69 @@ const EreditaSection = () => {
           </div>
         </div>
       )}
+      {showVexationsModal && (
+        <div
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setShowVexationsModal(false)}
+        >
+          <div
+            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
+                Vexations (1893): struttura, modernità e contesto
+              </h3>
+              <button
+                type="button"
+                onClick={() => setShowVexationsModal(false)}
+                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
+              >
+                chiudi
+              </button>
+            </div>
+            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p>
+                Composta nel <strong>1893</strong>, <em>Vexations</em> è un brano breve e intenso per pianoforte,
+                rimasto inedito fino alla morte di Satie. Il manoscritto fu ritrovato tra i suoi effetti personali.
+                Satie prescrive di ripetere il brano <strong>840 volte</strong>, invitando l'esecutore a prepararsi
+                "nel più profondo silenzio" e con "seria immobilità".
+              </p>
+              <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 space-y-2">
+                <p>
+                  <strong>Struttura e linguaggio:</strong> il tema usa <strong>11 dei 12 semitoni</strong> della scala cromatica.
+                  L'armonizzazione si basa su accordi diminuiti, creando una sospensione tonale quasi assoluta.
+                </p>
+                <p>
+                  <strong>Anticipazioni del serialismo:</strong> la suddivisione esacordale e il cromatismo totale
+                  anticipano tecniche poi associate a Webern e alla Seconda Scuola di Vienna.
+                </p>
+              </div>
+              <p>
+                <strong>Modernità e avanguardia:</strong> l'uso estremo della ripetizione rende <em>Vexations</em>
+                un prototipo di minimalismo e performance art. L'esecuzione del 1963 organizzata da John Cage
+                durò oltre 18 ore con pianisti a staffetta.
+              </p>
+              <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 space-y-2">
+                <p>
+                  <strong>Contesto biografico:</strong> il brano nasce poco dopo la rottura con Suzanne Valadon;
+                  alcuni studiosi leggono le ripetizioni come un rituale di dolore o auto-disciplina.
+                </p>
+                <p>
+                  <strong>Riferimenti esoterici:</strong> il titolo richiama le "Vexations" del <em>Coelum Philosophorum</em>
+                  di Paracelso, coerente con l'interesse di Satie per occultismo e simbolismo.
+                </p>
+                <p>
+                  <strong>Connessioni interne:</strong> il brano riprende gli accordi finali di <em>Bonjour Biqui, Bonjour!</em>,
+                  suggerendo una continuità ossessiva tra amore e tormento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Header */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
@@ -2873,6 +3421,15 @@ const EreditaSection = () => {
                 alt="Manoscritto di Vexations"
                 className="w-full h-72 object-contain p-2"
               />
+              <div className="p-3 bg-slate-900/50 text-center">
+                <button
+                  type="button"
+                  onClick={() => setShowVexationsModal(true)}
+                  className="text-blue-300 hover:text-blue-200 text-sm font-semibold"
+                >
+                  Approfondisci
+                </button>
+              </div>
             </div>
           </div>
 
@@ -3057,7 +3614,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
     },
     {
       year: "1882",
-      event: "Espulsione dal Conservatorio. A 16 anni viene espulso dopo un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven. I rapporti ufficiali parlano di esecuzione 'passabile' ma 'senza colore'. Tra il 1882 e il 1883 si dedica a letture voraci (Voltaire, Dumas, Andersen) e sviluppa le sue preferenze musicali: Bach sopra tutto, seguito da Chopin e Schumann."
+      event: "Esame al Conservatorio. A 16 anni non viene ammesso alle classi superiori dopo un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven. I rapporti ufficiali parlano di esecuzione 'passabile' ma 'senza colore'. Tra il 1882 e il 1883 si dedica a letture voraci (Voltaire, Dumas, Andersen) e sviluppa le sue preferenze musicali: Bach sopra tutto, seguito da Chopin e Schumann."
     },
     {
       year: "1885",
@@ -3134,7 +3691,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                   className="w-full h-48 object-contain p-2"
                 />
                 <p className="text-sm text-slate-400 p-2 italic bg-slate-800">
-                  Conservatoire de Paris: istituzione che giudicò Satie "il più pigro studente" e da cui fu espulso nel 1882, riammesso nel 1885, e abbandonato definitivamente nel 1887
+                  Conservatoire de Paris: istituzione che giudicò Satie "il più pigro studente" e non lo ammise alle classi superiori nel 1882; fu riammesso nel 1885 e abbandonò definitivamente nel 1887
                 </p>
               </div>
             )}
@@ -3259,7 +3816,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
           Satie compose le tre Gymnopédies tra <strong>febbraio e aprile 1888</strong>, completandole entro il <strong>2 aprile</strong>. Aveva 21 anni, era appena uscito dal Conservatorio e lavorava come pianista al Chat Noir.
         </p>
         <p className="text-sm text-slate-300 italic bg-slate-900/40 p-3 rounded border-l-2 border-blue-400">
-          <strong>L'aneddoto del dicembre 1887:</strong> Un amico di Satie lo presentò a Rodolphe Salis (proprietario del Chat Noir) annunciandolo come <em>«Erik Satie, gymnopediste»</em>. Salis, colto di sorpresa, commentò sarcastico: <em>«Davvero una bella professione!»</em> Due mesi dopo, Satie si sentì in dovere di produrre effettivamente queste composizioni.
+          <strong>L'aneddoto del dicembre 1887:</strong> un amico di Satie lo presentò a Rodolphe Salis (proprietario del Chat Noir) annunciandolo come <em>«Erik Satie, gymnopediste»</em>. Salis, colto di sorpresa, commentò sarcastico: <em>«Davvero una bella professione!»</em> Due mesi dopo, Satie si sentì in dovere di produrre effettivamente queste composizioni.
         </p>
       </div>
 
@@ -3282,9 +3839,9 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
             <li className="flex items-start gap-3">
               <span className="text-blue-400 font-bold mt-0.5">•</span>
               <div>
-                <strong className="text-blue-200">Il poema di Contamine de Latour:</strong> La prima Gymnopédie fu pubblicata nell'estate 1888
-                insieme a un estratto del poema <em>Les Antiques</em> del suo amico poeta J. P. Contamine de Latour, dove il termine appare esplicitamente.
-                La prima Gymnopédie aveva il titolo iniziale <em>Danse antique</em>.
+                <strong className="text-blue-200">Il poema di Contamine de Latour:</strong> La prima Gymnopédie (estate 1888)
+                uscì con un estratto di <em>Les Antiques</em> stampato in calce come epigrafe: il verso con "gymnopédie"
+                offre una chiave poetica, ma non prova l'origine del titolo. La prima Gymnopédie aveva il titolo iniziale <em>Danse antique</em>.
               </div>
             </li>
             <li className="flex items-start gap-3">
@@ -3301,7 +3858,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                 <strong className="text-blue-200">Salammbô di Flaubert:</strong> Satie stesso e il suo amico Alexis Roland-Manuel sostennero
                 che il titolo fu ispirato dalla lettura del romanzo <em>Salammbô</em> (1862) di Gustave Flaubert, ambientato nell'antica Cartagine.
                 <span className="block mt-1.5 text-sm text-amber-300 italic">
-                  ⚠️ Nota importante: Il termine "gymnopédie" NON appare nel testo di Salammbô. L'ispirazione fu probabilmente l'atmosfera arcaica e rituale del romanzo.
+                  ⚠️ Nota importante: il termine "gymnopédie" NON appare nel testo di Salammbô. L'ispirazione fu probabilmente l'atmosfera arcaica e rituale del romanzo.
                 </span>
               </div>
             </li>
@@ -3342,7 +3899,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
             className="w-full max-h-64 object-contain mx-auto"
           />
           <p className="text-sm text-slate-400 p-2 italic bg-slate-900">
-            J. P. Contamine de Latour: poeta simbolista, autore di "Les Antiques" pubblicata con la prima Gymnopédie
+            J. P. Contamine de Latour: poeta simbolista, estratto di "Les Antiques" stampato in calce alla prima Gymnopédie
           </p>
         </div>
         <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950 sm:col-span-2">
@@ -3360,7 +3917,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
       <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500 mb-3">
         <h5 className="text-base font-semibold text-slate-100 mb-2">Storia editoriale complessa</h5>
         <p className="mb-2 text-sm">
-          <strong>Prima Gymnopédie:</strong> Pubblicata il <strong>18 agosto 1888</strong> nel secondo supplemento di <em>La Musique des familles</em> (rivista diretta dal padre Alfred Satie). Originariamente intitolata <strong>«Danse antique»</strong>, dedicata a Jeanne de Bret. Accompagnata da un estratto della poesia <em>Les Antiques</em> di Contamine de Latour.
+          <strong>Prima Gymnopédie:</strong> Pubblicata il <strong>18 agosto 1888</strong> nel secondo supplemento di <em>La Musique des familles</em> (rivista diretta dal padre Alfred Satie). Originariamente intitolata <strong>«Danse antique»</strong>, dedicata a Jeanne de Bret. Con un estratto di <em>Les Antiques</em> di Contamine de Latour stampato in calce come epigrafe.
         </p>
         <p className="mb-2 text-sm">
           <strong>Terza Gymnopédie:</strong> Pubblicata nel <strong>novembre 1888</strong>, dedicata al compositore Charles Levadé.
@@ -3569,7 +4126,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
           <p>
             La <strong>Gymnopédie n. 1</strong> è la prima di tre pagine per pianoforte composte da Erik Satie e
             completate entro la primavera del <strong>1888</strong>. L'autore le definì "danze lente", costruite
-            con pochi elementi ripetuti e dissonanze controllate. Satie stesso scrisse: <em>«Sono venuto al mondo molto giovane in un tempo molto vecchio»</em>, una frase che riassume la sua posizione di outsider in un'epoca dominata dal wagnerismo.
+            con pochi elementi ripetuti e dissonanze controllate. Satie stesso scrisse: <em>«sono venuto al mondo molto giovane in un tempo molto vecchio»</em>, una frase che riassume la sua posizione di outsider in un'epoca dominata dal wagnerismo.
           </p>
           <p>
             Nel <strong>1888</strong> Parigi vive le trasformazioni della <strong>Belle Époque</strong>: la Torre Eiffel si
@@ -3580,8 +4137,8 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
           </p>
           <p>
             Il titolo <strong>Gymnopédie</strong> suggerisce un contesto arcaico senza chiarirlo. Secondo alcune testimonianze,
-            Satie trasse spunto dai <em>modi greci</em>, da romanzi di <em>Gustave Flaubert</em> e dalla poesia <em>Les Antiques</em>
-            di J. P. Contamine de Latour (amico simbolista), pubblicata insieme alla n. 1 nell'estate del 1888.
+            Satie guardò ai <em>modi greci</em> e all'atmosfera di <em>Salammbô</em> di Flaubert. Nella prima edizione della n. 1
+            fece stampare in calce un estratto di <em>Les Antiques</em> di J. P. Contamine de Latour, usato come epigrafe evocativa.
           </p>
           <p>
             La pagina uscì con l'indicazione <strong>Lent et douloureux</strong> e rimase quasi sconosciuta fino a quando{" "}
@@ -3683,8 +4240,8 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                 <p className="mb-2">
                   Satie frequentò il Conservatorio in due periodi (1879–1882 e 1885–1887) con risultati disastrosi.
                   Fu giudicato "dotato ma indolente" (1880), "lo studente più pigro del Conservatorio" (1881),
-                  "insignificante e laborioso" (1885), e "privo di valore". Nel 1882, a 16 anni, venne espulso dopo
-                  un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven.
+                  "insignificante e laborioso" (1885), e "privo di valore". Nel 1882, a 16 anni, non fu ammesso
+                  alle classi superiori dopo un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven.
                 </p>
                 <p className="text-sm text-slate-400 italic">
                   Tra il 1882 e il 1883, fuori dal Conservatorio, si dedicò a letture voraci (Voltaire, Dumas, Andersen)
@@ -3722,7 +4279,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                   </div>
                 </div>
                 <p className="mb-2">
-                  È in questo ambiente bohémien che Satie stringe amicizia con Claude Debussy e incontra il poeta <strong>Patrice Contamine de Latour</strong>, la cui influenza sarà determinante per la genesi delle Gymnopédies. La poesia <em>Les Antiques</em> di Contamine accompagnerà la prima pubblicazione della Gymnopédie n. 1 nell'estate 1888.
+                  È in questo ambiente bohémien che Satie stringe amicizia con Claude Debussy e incontra il poeta <strong>Patrice Contamine de Latour</strong>. Nella prima pubblicazione della Gymnopédie n. 1 (estate 1888) Satie fece stampare in calce un estratto di <em>Les Antiques</em> come epigrafe evocativa.
                 </p>
                 <p className="text-sm text-slate-400 italic">
                   L'ambiente di Montmartre, con i suoi café-cabarets, il simbolismo e l'esoterismo, gli offre una libertà
@@ -3808,7 +4365,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                   I <strong>minimalisti americani</strong> (Steve Reich, Philip Glass, Terry Riley) riconoscono in Satie un antenato. Le Gymnopédies anticipano: ripetizione di pattern, armonia statica, rifiuto del climax, economia di mezzi.
                 </p>
                 <p className="text-sm text-slate-400 italic">
-                  <strong>Brian Eno e la musica ambient:</strong> Nel 1917 Satie concepì la <em>Musique d'ameublement</em> (musica d'arredamento): composizioni pensate per far parte dell'ambiente, non per essere ascoltate attentamente. Nel 1978 Eno pubblicò <em>Ambient 1: Music for Airports</em>, riconoscendo il debito: <em>«La musica ambiente deve poter ospitare molti livelli di attenzione d'ascolto senza imporne uno in particolare»</em>. Le Gymnopédies, sebbene non pensate come musica d'arredamento, ne condividono l'estetica. Le playlist «Lo-fi beats to study to» che spopolano oggi devono molto a Satie.
+                  <strong>Brian Eno e la musica ambient:</strong> nel 1917 Satie concepì la <em>Musique d'ameublement</em> (musica d'arredamento): composizioni pensate per far parte dell'ambiente, non per essere ascoltate attentamente. Nel 1978 Eno pubblicò <em>Ambient 1: Music for Airports</em>, riconoscendo il debito: <em>«La musica ambiente deve poter ospitare molti livelli di attenzione d'ascolto senza imporne uno in particolare»</em>. Le Gymnopédies, sebbene non pensate come musica d'arredamento, ne condividono l'estetica. Le playlist «Lo-fi beats to study to» che spopolano oggi devono molto a Satie.
                 </p>
                 <p className="text-sm text-slate-400 italic">
                   Placeholder: approfondimento Cage & ambient.
@@ -3825,7 +4382,7 @@ const IntroduzioneSection = ({ onNavigateToFonti }) => {
                     <strong>Film:</strong> Fuoco fatuo (1963, Louis Malle - sequenza iconica), I Tenenbaum (2001, Wes Anderson), Man on Wire (2008, Philippe Petit), Un'altra donna (1988, Woody Allen), Hugo Cabret (2011, Scorsese), About Schmidt (2002), Chocolat (2000)
                   </div>
                   <div className="bg-slate-900/50 p-2 rounded">
-                    <strong>TV & Videogiochi:</strong> Serie 22.11.63 (Stephen King), spot pubblicitari (profumi, auto di lusso), Mother 3 (2006, «Leder's Gymnopedie»), The Legend of Zelda: Ocarina of Time (tema schermata titolo)
+                  <strong>TV & Videogiochi:</strong> serie 22.11.63 (Stephen King), spot pubblicitari (profumi, auto di lusso), Mother 3 (2006, «Leder's Gymnopedie»), The Legend of Zelda: Ocarina of Time (tema schermata titolo)
                   </div>
                 </div>
                 <p className="text-sm text-slate-400 italic">
@@ -4295,7 +4852,6 @@ const GlossarySection = () => {
 
 // Sezione Stramberie
 const StramberieSection = () => {
-  const [openModal, setOpenModal] = useState(false);
   const curiosi = [
     { titolo: "Trois morceaux en forme de poire", traduzione: "Tre pezzi a forma di pera", data: "1903", strumento: "Pianoforte a 4 mani" },
     { titolo: "Véritables préludes flasques (pour un chien)", traduzione: "Veri preludi flaccidi (per un cane)", data: "1912", strumento: "Pianoforte" },
@@ -4312,61 +4868,30 @@ const StramberieSection = () => {
 
   return (
     <div id="stramberie" className="space-y-6 max-w-5xl mx-auto">
-      {openModal && (
-        <div
-          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
-          role="dialog"
-          aria-modal="true"
-          onClick={() => setOpenModal(false)}
-        >
-          <div
-            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
-                Stramberie: contesto e curiosità
-              </h3>
-              <button
-                type="button"
-                onClick={() => setOpenModal(false)}
-                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
-              >
-                chiudi
-              </button>
-            </div>
-            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
-              <p>
-                Molti di questi titoli appartengono al periodo "umoristico" di Satie (1912-1915), quando usa l'ironia per
-                prendere le distanze dal romanticismo e dall'impressionismo.
-              </p>
-              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
-                <p>
-                  <strong>La "pera" e Debussy:</strong> <em>Trois morceaux en forme de poire</em> nasce come risposta ironica
-                  alla critica di Debussy sulla "forma". In francese <em>poire</em> puo significare anche "sciocco".
-                </p>
-              </div>
-              <p>
-                Le partiture contengono annotazioni assurde (da non leggere ad alta voce), come "aprite la testa" o
-                "come un usignolo con il mal di denti".
-              </p>
-              <p>
-                Molti brani sono parodie: la <em>Sonatine bureaucratique</em> ironizza sulla sonatina di Clementi, mentre
-                <em>Embryons desséchés</em> prende in giro le code enfatiche romantiche.
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
-
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-3 flex items-center gap-3">
           <Sparkles className="w-6 h-6 text-blue-400" />
           Stramberie
         </h2>
-        <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+        <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 space-y-3">
           <p className="text-sm text-slate-300 leading-relaxed">
-            Selezione di titoli eccentrici e umoristici: il lato ironico di Satie, tra parodie e giochi linguistici.
+            Molti di questi titoli appartengono al periodo "umoristico" di Satie (1912-1915), quando usa l'ironia per
+            prendere le distanze dal romanticismo e dall'impressionismo. Qui trovi una selezione di titoli eccentrici
+            e umoristici: il lato piu giocoso di Satie, tra parodie e giochi linguistici.
+          </p>
+          <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
+            <p className="text-sm text-slate-300 leading-relaxed">
+              <strong>La "pera" e Debussy:</strong> <em>Trois morceaux en forme de poire</em> nasce come risposta ironica
+              alla critica di Debussy sulla "forma". In francese <em>poire</em> puo significare anche "sciocco".
+            </p>
+          </div>
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Le partiture contengono annotazioni assurde (da non leggere ad alta voce), come "aprite la testa" o
+            "come un usignolo con il mal di denti".
+          </p>
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Molti brani sono parodie: la <em>Sonatine bureaucratique</em> ironizza sulla sonatina di Clementi, mentre
+            <em>Embryons desséchés</em> prende in giro le code enfatiche romantiche.
           </p>
         </div>
         <div className="mt-5 space-y-3">
@@ -4378,13 +4903,6 @@ const StramberieSection = () => {
             </div>
           ))}
         </div>
-        <button
-          type="button"
-          onClick={() => setOpenModal(true)}
-          className="mt-5 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
-        >
-          Approfondisci <ChevronRight className="w-4 h-4" />
-        </button>
       </div>
     </div>
   );
@@ -4834,6 +5352,7 @@ const FontiSection = () => {
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("indice");
+  const [satieSubTab, setSatieSubTab] = useState("vita");
   const tabIndex = useMemo(() => TABS.indexOf(activeTab), [activeTab]);
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => {
@@ -4865,6 +5384,11 @@ export default function App() {
     impara: { label: "Impara", icon: GraduationCap },
     fonti: { label: "Fonti", icon: FileText },
   };
+  const satieSubTabs = [
+    { key: "vita", label: "La vita" },
+    { key: "amicizie", label: "Amicizie" },
+    { key: "stramberie", label: "Stramberie" },
+  ];
   const handleIndiceNavigate = (tab) => {
     setActiveTab(tab);
     setTimeout(() => {
@@ -4906,13 +5430,15 @@ export default function App() {
         <main className="max-w-6xl mx-auto px-4 py-7 space-y-10">
           {activeTab === "benvenuto" && <BenvenutoSection goTo={setActiveTab} />}
           {activeTab === "parigi1888" && <Parigi1888Section />}
-          {activeTab === "satie" && <SatieSection />}
+          {activeTab === "satie" && (
+            <SatieSection goTo={setActiveTab} satieTab={satieSubTab} setSatieTab={setSatieSubTab} />
+          )}
           {activeTab === "brano" && <BranoSection />}
           {activeTab === "eredita" && <EreditaSection />}
           {activeTab === "glossario" && <GlossarySection />}
           {activeTab === "impara" && <ImparaSection />}
           {activeTab === "fonti" && <FontiSection />}
-          {activeTab !== "benvenuto" && tabIndex < TABS.length - 1 && (
+          {activeTab !== "benvenuto" && activeTab !== "satie" && tabIndex < TABS.length - 1 && (
             <div className="text-center">
               {activeTab === "eredita" && (
                 <p className="text-sm text-slate-400 mb-3">
