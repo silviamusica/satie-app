@@ -48,57 +48,53 @@ const GlossarySection = () => {
                 </div>
               </div>
 
-              {/* Immagini per arricchire visivamente il glossario */}
-              {cat.category === "Tecnica" && (
+              {cat.category === "Termini musicali" && (
+                <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                  <img
+                    src="/images/Modi greci.jpg"
+                    alt="Modi greci"
+                    className="w-full h-56 sm:h-64 object-contain p-2"
+                  />
+                  <div className="p-3 bg-slate-900/50 text-center">
+                    <p className="text-sm text-slate-300">Modi greci: suggestioni classiche nell'immaginario musicale</p>
+                  </div>
+                </div>
+              )}
+
+              {cat.category === "Contesto" && (
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
+                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
                     <img
-                      src="/images/diteggiatura-gymnopedies.jpg"
-                      alt="Esempio di diteggiatura pianistica"
-                      className="w-full h-64 object-contain bg-slate-950 p-3"
+                      src="/images/mappa-montmartre-1880-1900.jpg"
+                      alt="Mappa di Montmartre (1880-1900)"
+                      className="w-full h-56 sm:h-64 object-contain p-2"
                     />
-                    <div className="p-3">
-                      <p className="text-sm font-semibold text-slate-200 mb-1">Esempio di diteggiatura pianistica</p>
-                      <p className="text-sm text-slate-400 italic">Spartito con indicazioni tecniche</p>
+                    <div className="p-3 bg-slate-900/50 text-center">
+                      <p className="text-sm text-slate-300">Mappa di Montmartre (1880-1900)</p>
                     </div>
                   </div>
-                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
+                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
                     <img
-                      src="/images/diagramma-accordi-settima.jpg"
-                      alt="Diagramma accordi di settima"
-                      className="w-full h-64 object-contain bg-slate-950 p-3"
+                      src="/images/carte-postale-ancienne-paris-ii-boulevard-montmartre-autobus-a-plateforme.jpg"
+                      alt="Cartolina di Boulevard Montmartre"
+                      className="w-full h-56 sm:h-64 object-contain p-2"
                     />
-                    <div className="p-3">
-                      <p className="text-sm font-semibold text-slate-200 mb-1">Diagramma accordi di settima</p>
-                      <p className="text-sm text-slate-400 italic">Visualizzazione armonica</p>
+                    <div className="p-3 bg-slate-900/50 text-center">
+                      <p className="text-sm text-slate-300">Boulevard Montmartre: cartolina d'epoca</p>
                     </div>
                   </div>
                 </div>
               )}
 
-              {cat.category === "Estetica" && (
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-                    <img
-                      src="/images/puvis-de-chavannes-jeunes-filles.jpg"
-                      alt="Dipinto di Puvis de Chavannes"
-                      className="w-full h-64 object-contain p-2"
-                    />
-                    <div className="p-3 bg-slate-800/50">
-                      <p className="text-sm font-semibold text-slate-200 mb-1">Dipinto di Puvis de Chavannes</p>
-                      <p className="text-sm text-slate-400 italic">"Jeunes filles au bord de la mer" (1879)</p>
-                    </div>
-                  </div>
-                  <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-800/50">
-                    <img
-                      src="/images/salammbo-flaubert-copertina-1862.jpg"
-                      alt="Copertina Salammbô di Flaubert"
-                      className="w-full h-64 object-contain bg-slate-950 p-3"
-                    />
-                    <div className="p-3">
-                      <p className="text-sm font-semibold text-slate-200 mb-1">Copertina "Salammbô" di Flaubert</p>
-                      <p className="text-sm text-slate-400 italic">Edizione originale (1862)</p>
-                    </div>
+              {cat.category === "Personaggi" && (
+                <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                  <img
+                    src="/images/Zabaleta Portrait of Erik Satie.jpg"
+                    alt="Ritratto di Erik Satie"
+                    className="w-full h-64 sm:h-72 object-contain p-2"
+                  />
+                  <div className="p-3 bg-slate-900/50 text-center">
+                    <p className="text-sm text-slate-300">Ritratto di Erik Satie (Zabaleta)</p>
                   </div>
                 </div>
               )}
@@ -119,7 +115,30 @@ const GlossarySection = () => {
               <p className="text-sm text-slate-300 leading-relaxed mb-3">
                 Monet incarna la ricerca sulla luce che influenzo la prima fase di Satie e Debussy.
               </p>
-              <div className="overflow-x-auto">
+              <div className="md:hidden space-y-3">
+                <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+                  <div className="text-slate-100 font-semibold">Impressione, levar del sole</div>
+                  <div className="text-xs text-slate-400 mt-1">1872</div>
+                  <p className="text-sm text-slate-300 mt-2">
+                    L'opera che diede il nome al movimento impressionista. Rappresenta il porto di Le Havre.
+                  </p>
+                </div>
+                <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+                  <div className="text-slate-100 font-semibold">La serie delle Ninfee</div>
+                  <div className="text-xs text-slate-400 mt-1">1897-1926</div>
+                  <p className="text-sm text-slate-300 mt-2">
+                    Ciclo monumentale di circa 250 dipinti sui riflessi dell'acqua nel giardino di Giverny.
+                  </p>
+                </div>
+                <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+                  <div className="text-slate-100 font-semibold">La Cattedrale di Rouen</div>
+                  <div className="text-xs text-slate-400 mt-1">1892-1894</div>
+                  <p className="text-sm text-slate-300 mt-2">
+                    Serie di oltre 30 tele con la facciata della cattedrale in diverse ore e condizioni atmosferiche.
+                  </p>
+                </div>
+              </div>
+              <div className="hidden md:block overflow-x-auto">
                 <table className="w-full text-sm text-slate-300 border border-slate-700">
                   <thead className="bg-slate-900/60 text-slate-100">
                     <tr>
@@ -155,7 +174,30 @@ const GlossarySection = () => {
                 Cezanne e considerato il padre dell'arte moderna. La sua ricerca di rigore geometrico e vicina
                 all'essenzialita delle Gymnopedies.
               </p>
-              <div className="overflow-x-auto">
+              <div className="md:hidden space-y-3">
+                <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+                  <div className="text-slate-100 font-semibold">I giocatori di carte</div>
+                  <div className="text-xs text-slate-400 mt-1">1890-1895</div>
+                  <p className="text-sm text-slate-300 mt-2">
+                    Serie di cinque dipinti con contadini provenzali, forme sempre piu monumentali.
+                  </p>
+                </div>
+                <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+                  <div className="text-slate-100 font-semibold">Il monte Sainte-Victoire</div>
+                  <div className="text-xs text-slate-400 mt-1">1904-1906</div>
+                  <p className="text-sm text-slate-300 mt-2">
+                    La montagna dipinta decine di volte, semplificata in volumi geometrici.
+                  </p>
+                </div>
+                <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+                  <div className="text-slate-100 font-semibold">Le grandi bagnanti</div>
+                  <div className="text-xs text-slate-400 mt-1">1894-1905</div>
+                  <p className="text-sm text-slate-300 mt-2">
+                    Opera monumentale che fonde nudi femminili e paesaggio in una struttura architettonica.
+                  </p>
+                </div>
+              </div>
+              <div className="hidden md:block overflow-x-auto">
                 <table className="w-full text-sm text-slate-300 border border-slate-700">
                   <thead className="bg-slate-900/60 text-slate-100">
                     <tr>
@@ -190,7 +232,30 @@ const GlossarySection = () => {
               <p className="text-sm text-slate-300 leading-relaxed mb-3">
                 Lautrec e l'artista piu vicino al mondo di Satie: stesso cabaret, stesso immaginario bohemien.
               </p>
-              <div className="overflow-x-auto">
+              <div className="md:hidden space-y-3">
+                <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+                  <div className="text-slate-100 font-semibold">Moulin Rouge: La Goulue</div>
+                  <div className="text-xs text-slate-400 mt-1">1891</div>
+                  <p className="text-sm text-slate-300 mt-2">
+                    Manifesto che definisce l'estetica del cartellone pubblicitario moderno.
+                  </p>
+                </div>
+                <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+                  <div className="text-slate-100 font-semibold">Al Moulin Rouge</div>
+                  <div className="text-xs text-slate-400 mt-1">1892</div>
+                  <p className="text-sm text-slate-300 mt-2">
+                    Dipinto che cattura l'atmosfera decadente e psicologica del locale.
+                  </p>
+                </div>
+                <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+                  <div className="text-slate-100 font-semibold">Aristide Bruant nel suo cabaret</div>
+                  <div className="text-xs text-slate-400 mt-1">1892</div>
+                  <p className="text-sm text-slate-300 mt-2">
+                    Celebre litografia dello chansonnier con sciarpa rossa e cappello nero.
+                  </p>
+                </div>
+              </div>
+              <div className="hidden md:block overflow-x-auto">
                 <table className="w-full text-sm text-slate-300 border border-slate-700">
                   <thead className="bg-slate-900/60 text-slate-100">
                     <tr>
@@ -238,7 +303,7 @@ const GlossarySection = () => {
             principali nell'arte francese tra Ottocento e primo Novecento.
           </p>
 
-          <div className="overflow-x-auto mb-5">
+          <div className="hidden md:block overflow-x-auto mb-5">
             <table className="w-full text-sm text-slate-300 border border-slate-700">
               <thead className="bg-slate-900/60 text-slate-100">
                 <tr>
@@ -308,6 +373,56 @@ const GlossarySection = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div className="md:hidden space-y-3 mb-5">
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+              <div className="text-slate-100 font-semibold">Romanticismo</div>
+              <div className="text-xs text-slate-400 mt-1">1800-1850 · Delacroix, Gericault</div>
+              <p className="text-sm text-slate-300 mt-2">Emozione, dramma, natura selvaggia, patriottismo.</p>
+              <p className="text-xs text-slate-400 mt-1">Opera simbolo: La Liberta che guida il popolo</p>
+            </div>
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+              <div className="text-slate-100 font-semibold">Realismo</div>
+              <div className="text-xs text-slate-400 mt-1">1840-1880 · Courbet, Millet, Zola</div>
+              <p className="text-sm text-slate-300 mt-2">Vita quotidiana, lavoro, verita senza idealizzazione.</p>
+              <p className="text-xs text-slate-400 mt-1">Opera simbolo: Gli spaccapietre</p>
+            </div>
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+              <div className="text-slate-100 font-semibold">Impressionismo</div>
+              <div className="text-xs text-slate-400 mt-1">1870-1890 · Monet, Renoir, Degas</div>
+              <p className="text-sm text-slate-300 mt-2">Luce, en plein air, pennellate rapide, attimo fuggente.</p>
+              <p className="text-xs text-slate-400 mt-1">Opera simbolo: Impressione, levar del sole</p>
+            </div>
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+              <div className="text-slate-100 font-semibold">Post-impressionismo</div>
+              <div className="text-xs text-slate-400 mt-1">1880-1905 · Cezanne, Seurat, Gauguin</div>
+              <p className="text-sm text-slate-300 mt-2">Struttura, colore come costruzione, simbolismo.</p>
+              <p className="text-xs text-slate-400 mt-1">Opera simbolo: I giocatori di carte</p>
+            </div>
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+              <div className="text-slate-100 font-semibold">Simbolismo</div>
+              <div className="text-xs text-slate-400 mt-1">1880-1910 · Moreau, Redon</div>
+              <p className="text-sm text-slate-300 mt-2">Sogno, mito, inconscio, realta come velo.</p>
+              <p className="text-xs text-slate-400 mt-1">Opera simbolo: L'apparizione</p>
+            </div>
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+              <div className="text-slate-100 font-semibold">Fauvismo</div>
+              <div className="text-xs text-slate-400 mt-1">1904-1908 · Matisse, Derain</div>
+              <p className="text-sm text-slate-300 mt-2">Colori selvaggi, anti-naturalismo, energia pura.</p>
+              <p className="text-xs text-slate-400 mt-1">Opera simbolo: La danza</p>
+            </div>
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+              <div className="text-slate-100 font-semibold">Cubismo</div>
+              <div className="text-xs text-slate-400 mt-1">1907-1914 · Picasso, Braque</div>
+              <p className="text-sm text-slate-300 mt-2">Scomposizione in volumi, visione simultanea.</p>
+              <p className="text-xs text-slate-400 mt-1">Opera simbolo: Les demoiselles d'Avignon</p>
+            </div>
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
+              <div className="text-slate-100 font-semibold">Surrealismo</div>
+              <div className="text-xs text-slate-400 mt-1">1924-1945 · Dali, Magritte, Ernst</div>
+              <p className="text-sm text-slate-300 mt-2">Sogno, irrazionale, automatismo psichico.</p>
+              <p className="text-xs text-slate-400 mt-1">Opera simbolo: La persistenza della memoria</p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">

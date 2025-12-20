@@ -137,11 +137,19 @@ export default function App() {
   }, [activeTab]);
   useEffect(() => {
     if (!lightboxImage) return;
+    const prevBodyOverflow = document.body.style.overflow;
+    const prevHtmlOverflow = document.documentElement.style.overflow;
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
     const handleKeyDown = (event) => {
       if (event.key === "Escape") setLightboxImage(null);
     };
     document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = prevBodyOverflow;
+      document.documentElement.style.overflow = prevHtmlOverflow;
+    };
   }, [lightboxImage]);
 
   const handleImageClick = (event) => {

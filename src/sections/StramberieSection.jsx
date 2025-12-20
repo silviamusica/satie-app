@@ -39,6 +39,16 @@ const StramberieSection = () => {
             <li>• bollitura del vino: raccontava di bollire il vino e berlo freddo con succo di fucsia.</li>
           </ul>
         </div>
+        <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950 mt-4">
+          <img
+            src="/images/Progetto per busto di SATIE.jpg"
+            alt="Progetto per il busto di Erik Satie"
+            className="w-full h-64 object-contain bg-slate-950 p-2"
+          />
+          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+            Progetto per il busto di Erik Satie: una memoria visiva delle sue eccentricità
+          </p>
+        </div>
         <div className="mt-5 space-y-3">
           {curiosi.map((c) => (
             <div key={c.titolo} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">

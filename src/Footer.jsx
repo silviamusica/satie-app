@@ -44,11 +44,6 @@ export default function Footer({ setActiveTab }) {
     <footer className="mt-12">
       <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col items-center text-sm text-slate-300">
         <div className="mb-6 w-full flex flex-col items-center gap-4">
-          <img
-            src="/images/satie_signature.png"
-            alt="Firma di Erik Satie"
-            className="h-24 w-auto opacity-90 hover:opacity-100 transition-opacity"
-          />
           <hr className="w-32 border-t border-slate-700/60" />
           <div className="flex flex-wrap gap-2 justify-center w-full mt-2">
             {footerTabs.map((tab) => (

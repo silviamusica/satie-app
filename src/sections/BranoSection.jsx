@@ -147,6 +147,15 @@ const BranoSection = () => {
             condiviso con Latour. La parola "sarabande" nei versi richiama le <em>Sarabandes</em> del 1887, suggerendo
             un dialogo creativo tra i due amici.
           </p>
+          <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
+            <h3 className="text-sm font-semibold text-slate-100 mb-2">Approfondisci: Flaubert, dizionari, studiosi</h3>
+            <ul className="text-sm text-slate-300 space-y-2">
+              <li>• <strong>Flaubert e Salammbô:</strong> il termine "gymnopédie" non compare nel romanzo. Satie cita Flaubert come atmosfera, non come fonte letterale.</li>
+              <li>• <strong>Ipotesi dei dizionari (Mary E. Davis):</strong> il termine probabilmente deriva da dizionari musicali dell'epoca (Mondo o Rousseau), che definivano erroneamente la gymnopédie come danza di giovani fanciulle spartane.</li>
+              <li>• <strong>Ipotesi della poesia (Orledge e Davis):</strong> l'estratto di Latour, pubblicato con la prima Gymnopédie, contiene il verso sulla "sarabanda", in dialogo con le Sarabandes di Satie (1887).</li>
+              <li>• <strong>Etimologia storica (Orledge):</strong> danze rituali di giovani nudi nell'antica Sparta durante le celebrazioni annuali.</li>
+            </ul>
+          </div>
         </div>
       </Modal>
 
@@ -172,23 +181,33 @@ const BranoSection = () => {
           <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
             <h3 className="text-base font-semibold text-slate-100 mb-2">Da dove viene il nome "Gymnopédie"</h3>
             <p className="text-sm text-slate-300 leading-relaxed mb-3">
-              Le fonti non indicano un'unica ispirazione, ma convergono su alcuni riferimenti probabili che Satie
-              conosceva gia prima della pubblicazione del brano.
+              Le fonti non indicano un'unica ispirazione, ma convergono su riferimenti diversi che Satie conosceva
+              gia prima della pubblicazione del brano. La parola rimanda alle feste spartane delle Gimnopedie, danze
+              rituali eseguite da giovani nudi in onore di Apollo. Il legame con <em>Salammbô</em> di Flaubert e reale
+              sul piano dell'atmosfera, ma in realta nel romanzo la parola "gymnopédie" non compare: Satie evocava
+              Flaubert come clima estetico, non come fonte letterale del termine.
             </p>
             <ul className="space-y-2 text-sm text-slate-300">
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-1">•</span>
-                <span>il termine nelle danze spartane dell'antica Grecia (feste in onore di Apollo).</span>
+                <span>un termine greco registrato nei dizionari musicali ottocenteschi.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-1">•</span>
-                <span>un dizionario musicale ottocentesco (Rousseau o Mondo), dove la voce era gia attestata.</span>
+                <span>il riferimento a <em>Salammbô</em> come suggestione simbolista, non come citazione.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-1">•</span>
-                <span><em>Salammbô</em> di Flaubert, che circolava nell'ambiente simbolista.</span>
+                <span>l'estratto di <em>Les Antiques</em> pubblicato accanto alla prima Gymnopédie.</span>
               </li>
             </ul>
+            <p className="text-sm text-slate-300 leading-relaxed mt-3">
+              Secondo Mary E. Davis, il termine fu probabilmente trovato in dizionari musicali o enciclopedici
+              (Rousseau o Mondo), dove la "gymnopédie" era definita in modo impreciso come danza nuda accompagnata dal
+              canto, talvolta attribuita a giovani fanciulle spartane. Orledge concorda sull'origine lessicografica e
+              sottolinea che Satie si presentava gia come "gymnopédiste" prima di aver scritto la musica, segno che il
+              titolo nacque come idea concettuale e solo dopo fu rafforzato dalla pubblicazione con Latour.
+            </p>
           </div>
         </div>
 

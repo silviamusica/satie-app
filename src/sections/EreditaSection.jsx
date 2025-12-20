@@ -229,6 +229,46 @@ const EreditaSection = () => {
               invadere. Nel 1978 <strong>Brian Eno</strong> pubblicò <em>Ambient 1: Music for Airports</em>, definendo l'ambient
               come musica che “può essere ignorata quanto ascoltata”: la stessa idea di Satie, un secolo prima.
             </p>
+            <div className="grid md:grid-cols-2 gap-4 mt-4">
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/Brian_Eno_2015.png"
+                  alt="Brian Eno"
+                  className="w-full h-56 object-contain bg-slate-950 p-2"
+                />
+                <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+                  Brian Eno (2015), pioniere dell'ambient e teorico della musica come ambiente.
+                </p>
+              </div>
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/Music_for_Airports.jpg"
+                  alt="Ambient 1: Music for Airports"
+                  className="w-full h-56 object-contain bg-slate-950 p-2"
+                />
+                <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+                  <em>Ambient 1: Music for Airports</em> (1978): manifesto della musica d'ambiente.
+                </p>
+              </div>
+            </div>
+            <p className="text-sm text-slate-300 leading-relaxed mt-4">
+              Eno rende esplicito il principio gia formulato da Satie: una musica funzionale, che non chiede attenzione
+              ma modella lo spazio con discrezione.
+            </p>
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-900/60 mt-4">
+              <div className="aspect-video w-full">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/vNwYtllyt3Q"
+                  title="Brian Eno - Music for Airports"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <div className="p-3">
+                <p className="text-sm text-slate-300">Brian Eno, <em>Music for Airports</em></p>
+              </div>
+            </div>
             <button
               type="button"
               onClick={() => setShowAmeublementModal(true)}
@@ -248,15 +288,86 @@ const EreditaSection = () => {
             {modernInterpreters.map((item, index) => (
               <div key={index} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
                 <div className="text-sm text-slate-100 font-semibold mb-1">{item.title}</div>
-                <p className="text-sm text-slate-300 mb-3">{item.description}</p>
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
-                >
-                  apri <ExternalLink className="w-3 h-3" />
-                </a>
+                {item.title.includes("Aldo Ciccolini") ? (
+                  <div className="grid md:grid-cols-[1fr_1.3fr] gap-4 items-stretch">
+                    <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                      <img
+                        src="/images/satie_ciccolini.jpg"
+                        alt="Aldo Ciccolini"
+                        className="w-full h-48 object-contain bg-slate-950 p-2"
+                      />
+                      <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+                        Aldo Ciccolini, interprete chiave per la riscoperta di Satie.
+                      </p>
+                    </div>
+                    <div className="flex flex-col justify-center">
+                      <p className="text-sm text-slate-300 mb-3">
+                        Ciccolini non si limita a eseguire le Gymnopédies: le porta in sala da concerto con una
+                        lettura limpida e controllata, che restituisce la loro modernita senza romanticismi.
+                      </p>
+                      <p className="text-sm text-slate-300 mb-3">
+                        Le sue incisioni e i recital della seconda meta del Novecento hanno consolidato Satie
+                        nel repertorio pianistico, presentandolo come autore essenziale e non solo come curiosita
+                        da cabaret.
+                      </p>
+                      <p className="text-sm text-slate-300">
+                        In questo senso la sua interpretazione ha funzionato come vero atto di riscoperta: ha
+                        mostrato che la semplicità di Satie era una scelta estetica radicale.
+                      </p>
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+                      >
+                        Ascolta su YouTube <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </div>
+                  </div>
+                ) : item.title.includes("Khatia Buniatishvili") ? (
+                  <div className="grid md:grid-cols-[1fr_1.3fr] gap-4 items-stretch">
+                    <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                      <img
+                        src="/images/kathia Labyrinh.jpg"
+                        alt="Khatia Buniatishvili"
+                        className="w-full h-48 object-contain bg-slate-950 p-2"
+                      />
+                      <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+                        Khatia Buniatishvili: lettura intensa e contemporanea delle Gymnopédies.
+                      </p>
+                    </div>
+                    <div className="flex flex-col justify-center">
+                      <p className="text-sm text-slate-300 mb-3">
+                        La sua interpretazione mette in luce il lato piu emotivo e cinematografico di Satie,
+                        con un suono ampio ma controllato e un fraseggio che resta sospeso.
+                      </p>
+                      <p className="text-sm text-slate-300">
+                        In questo modo le Gymnopédies diventano accessibili a un pubblico nuovo, senza perdere
+                        la loro essenzialita e la loro delicatezza originale.
+                      </p>
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+                      >
+                        Ascolta su YouTube <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-sm text-slate-300 mb-3">{item.description}</p>
+                )}
+                {!item.title.includes("Aldo Ciccolini") && !item.title.includes("Khatia Buniatishvili") && (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+                  >
+                    apri <ExternalLink className="w-3 h-3" />
+                  </a>
+                )}
               </div>
             ))}
           </div>

@@ -18,6 +18,16 @@ const SatieSection = ({ goTo }) => {
     { key: "stramberie", label: "Stramberie" },
   ];
 
+  const scrollToTop = () => {
+    const main = document.querySelector("main");
+    if (main && typeof main.scrollTo === "function") {
+      main.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  };
+
   // Timeline ora importata da ./data/timeline.js
 
   return (
@@ -361,6 +371,16 @@ const SatieSection = ({ goTo }) => {
               </button>
             </div>
           </div>
+        </div>
+        <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950 mt-4">
+          <img
+            src="/images/Trois-Sonneries-de-la-RoseCroix.jpg"
+            alt="Trois Sonneries de la Rose-Croix"
+            className="w-full h-64 object-contain bg-slate-950 p-2"
+          />
+          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+            "Trois Sonneries de la Rose+Croix": musica ieratica del periodo rosacrociano
+          </p>
         </div>
         <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 mt-4">
           <h3 className="text-base font-semibold text-slate-100 mb-2">Joséphin Péladan e il misticismo estetico</h3>
@@ -880,6 +900,33 @@ const SatieSection = ({ goTo }) => {
             </div>
           </div>
 
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/Cocteau schizzo Satie.jpg"
+                alt="Schizzo di Cocteau su Satie"
+                className="w-full h-64 object-contain bg-slate-950 p-2"
+              />
+              <div className="p-3 bg-slate-900/50 text-center">
+                <p className="text-sm text-slate-300">
+                  Jean Cocteau ritrae Satie con un segno rapido e ironico.
+                </p>
+              </div>
+            </div>
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/SAtie adulto.jpg"
+                alt="Erik Satie in eta adulta"
+                className="w-full h-64 object-contain bg-slate-950 p-2"
+              />
+              <div className="p-3 bg-slate-900/50 text-center">
+                <p className="text-sm text-slate-300">
+                  Erik Satie in eta adulta: il volto del compositore tra rigore e ironia.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-[1.1fr_1fr] gap-4 items-stretch">
             <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
               <img
@@ -1126,7 +1173,10 @@ const SatieSection = ({ goTo }) => {
           </p>
           <button
             type="button"
-            onClick={() => setSatieTab("amicizie")}
+            onClick={() => {
+              setSatieTab("amicizie");
+              scrollToTop();
+            }}
             className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
           >
             Amicizie
@@ -1140,7 +1190,10 @@ const SatieSection = ({ goTo }) => {
           </p>
           <button
             type="button"
-            onClick={() => setSatieTab("stramberie")}
+            onClick={() => {
+              setSatieTab("stramberie");
+              scrollToTop();
+            }}
             className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
           >
             Stramberie
