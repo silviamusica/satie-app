@@ -22,6 +22,7 @@ const ImparaSection = () => {
   const [showQuizResult, setShowQuizResult] = useState(false);
   const [shuffledQuiz, setShuffledQuiz] = useState([]);
   const [quizAnswers, setQuizAnswers] = useState([]);
+  const [quizCount, setQuizCount] = useState("tutte");
   const quiz = shuffledQuiz[quizIdx] || shuffledQuiz[0];
 
   const next = () => {
@@ -63,6 +64,13 @@ const ImparaSection = () => {
     setShowQuizResult(false);
     setQuizAnswers([]);
   };
+  const handleQuizCountChange = (nextCount) => {
+    setQuizCount(nextCount);
+    setQuizIdx(0);
+    setSelected(null);
+    setShowQuizResult(false);
+    setQuizAnswers([]);
+  };
 
   const handleQuizAnswer = (optionIndex) => {
     if (!shuffledQuiz.length || selected !== null) return;
@@ -89,12 +97,18 @@ const ImparaSection = () => {
       return;
     }
     const shuffled = [...filteredQuiz].sort(() => Math.random() - 0.5);
+    const count =
+      quizCount === "tutte"
+        ? shuffled.length
+        : Math.min(parseInt(quizCount, 10), shuffled.length);
+    const trimmed = shuffled.slice(0, count);
     setShuffledQuiz(shuffled);
     setQuizIdx(0);
     setSelected(null);
     setShowQuizResult(false);
     setQuizAnswers([]);
-  }, [tab, level, filteredQuiz.length]);
+    setShuffledQuiz(trimmed);
+  }, [tab, level, quizCount, filteredQuiz.length]);
 
   return (
     <div id="impara" className="space-y-6 max-w-5xl mx-auto">
@@ -281,6 +295,18 @@ const ImparaSection = () => {
               <div className="text-sm text-slate-400">
                 Domanda {shuffledQuiz.length ? quizIdx + 1 : 0} / {shuffledQuiz.length}
               </div>
+              <label className="text-sm text-slate-300 font-semibold">
+                Numero domande
+                <select
+                  value={quizCount}
+                  onChange={(event) => handleQuizCountChange(event.target.value)}
+                  className="ml-3 bg-slate-900 text-slate-100 border border-slate-700 rounded px-2 py-1 text-sm"
+                >
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="tutte">Tutte</option>
+                </select>
+              </label>
             </div>
             <div className="mt-5">
               <div className="text-slate-100 font-semibold">Domanda</div>
