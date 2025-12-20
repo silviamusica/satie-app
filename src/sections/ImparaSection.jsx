@@ -183,36 +183,22 @@ const ImparaSection = () => {
               {filteredFlashcards.length ? (
                 <>
                   <p className="text-sm text-slate-400 mb-3 text-center">
-                    Clicca sulla carta per girarla
+                    Clicca sulla carta per mostrare la risposta
                   </p>
                   <div
-                    onClick={() => setIsFlipped((v) => !v)}
-                    className="relative h-80 w-full cursor-pointer"
-                    style={{ perspective: "1000px" }}
+                    onClick={() => {
+                      if (isFlipped) setIsExpanded(false);
+                      setIsFlipped((v) => !v);
+                    }}
+                    className="rounded-3xl p-8 flex flex-col justify-center items-center border border-slate-600 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 shadow-2xl cursor-pointer"
                   >
-                    <div
-                      className="relative w-full h-full duration-500"
-                      style={{
-                        transition: "transform 0.6s",
-                        transformStyle: "preserve-3d",
-                        transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
-                      }}
-                    >
-                      <div
-                        className="absolute w-full h-full rounded-3xl p-8 flex flex-col justify-center items-center border border-slate-600 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 shadow-2xl"
-                        style={{ backfaceVisibility: "hidden" }}
-                      >
-                        <div className="text-xs uppercase tracking-wide text-slate-400 mb-3">Domanda</div>
-                        <div className="text-lg sm:text-xl text-slate-100 leading-relaxed text-center font-semibold">
-                          {card.q}
-                        </div>
-                      </div>
-                      <div
-                        className="absolute w-full h-full rounded-3xl p-8 flex flex-col justify-center items-center border border-slate-600 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 shadow-2xl overflow-y-auto"
-                        style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
-                        onClick={(event) => event.stopPropagation()}
-                      >
-                        <div className="text-xs uppercase tracking-wide text-slate-300 mb-3">Risposta</div>
+                    <div className="text-xs uppercase tracking-wide text-slate-400 mb-3">Domanda</div>
+                    <div className="text-lg sm:text-xl text-slate-100 leading-relaxed text-center font-semibold">
+                      {card.q}
+                    </div>
+                    {isFlipped && (
+                      <div className="w-full mt-6 pt-4 border-t border-slate-700">
+                        <div className="text-xs uppercase tracking-wide text-slate-300 mb-3 text-center">Risposta</div>
                         <div className="text-base sm:text-lg text-slate-100 leading-relaxed text-center mb-4">
                           {card.a}
                         </div>
@@ -251,7 +237,7 @@ const ImparaSection = () => {
                           </div>
                         )}
                       </div>
-                    </div>
+                    )}
                   </div>
                   <div className="mt-4 grid grid-cols-2 gap-3 w-full sm:w-auto">
                     <button

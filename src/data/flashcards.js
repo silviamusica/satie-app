@@ -226,13 +226,13 @@ export const flashcardsData = [
   },
   {
     q: "Quale raccolta include bozzetti autobiografici ironici?",
-    a: "Memoires d'un amnesique",
+    a: "Mémoires d'un amnésique",
     level: "intermedio",
     details: "Pubblicati tra il 1912 e il 1914.",
   },
   {
     q: "Come si intitola l'altra raccolta di scritti brevi?",
-    a: "Cahiers d'un mammifere",
+    a: "Cahiers d'un mammifère",
     level: "intermedio",
     details: "Aforismi e parodie della critica musicale.",
   },
@@ -252,7 +252,7 @@ export const flashcardsData = [
     q: "Quali brani del 1887 anticipano la scrittura sospesa?",
     a: "Sarabandes",
     level: "intermedio",
-    details: "Tre pezzi del 1887 che prefigurano la poetica delle Gymnopedies.",
+    details: "Tre pezzi del 1887 che prefigurano la poetica delle Gymnopédies.",
   },
   {
     q: "Quale raccolta di brani senza battute scrisse nel 1890-97?",
@@ -345,7 +345,7 @@ export const flashcardsData = [
     details: "La serie fu completata nel 1888.",
   },
   {
-    q: "Quando fu pubblicata la Gymnopédie n. 1?",
+    q: "Quando fu pubblicata la Gymnopédie n. 1 (il brano)?",
     a: "Estate 1888",
     level: "base",
     details: "Nel supplemento di La Musique des familles.",
@@ -387,7 +387,7 @@ export const flashcardsData = [
     details: "Morì all'ospedale Saint-Joseph di Parigi.",
   },
   {
-    q: "Quale opera ballettistica debuttò nel 1917 al Chatelet?",
+    q: "Quale opera ballettistica debuttò nel 1917 al Châtelet?",
     a: "Parade",
     level: "base",
     details: "Con Cocteau, Picasso e Massine.",
@@ -628,7 +628,7 @@ export const flashcardsData = [
   },
   {
     q: "Quale opera contiene le Sette piccole danze?",
-    a: "Le Piege de Meduse",
+    a: "Le Piège de Méduse",
     level: "avanzato",
     details: "Le Sette piccole danze fanno parte dell'opera teatrale Le Piège de Méduse (1913).",
   },
@@ -652,7 +652,7 @@ export const flashcardsData = [
   },
   {
     q: "Quale opera di Satie è definita \"Wagnerie\"?",
-    a: "Le Fils des Etoiles",
+    a: "Le Fils des Étoiles",
     level: "intermedio",
     details: "Periodo rosacrociano e dediche rituali.",
   },
@@ -676,7 +676,7 @@ export const flashcardsData = [
   },
   {
     q: "Quale luogo ospitò la prima di Parade?",
-    a: "Theatre du Chatelet, Parigi",
+    a: "Théâtre du Châtelet, Parigi",
     level: "intermedio",
     details: "18 maggio 1917 con i Ballets Russes.",
   },
@@ -1047,7 +1047,7 @@ const CUSTOM_OPTIONS = {
     "Sarabandes",
   ],
   "Quale opera contiene le Sette piccole danze?": [
-    "Le Piege de Meduse",
+    "Le Piège de Méduse",
     "Parade",
     "Socrate",
     "Mercure",
@@ -1066,7 +1066,7 @@ const CUSTOM_OPTIONS = {
   ],
   "Quale gesto di Debussy spinse Doret a proporre l'orchestrazione?": [
     "Suono le Gymnopédies al pianoforte al posto di Satie",
-    "Dirisse Parade al Theatre du Chatelet",
+    "Dirisse Parade al Théâtre du Châtelet",
     "Propose a Satie un incarico al Conservatorio",
     "Pubblicò la n.2 nel 1895",
   ],
@@ -1222,14 +1222,14 @@ const CUSTOM_OPTIONS = {
     "Ballets Russes",
   ],
   "Quale raccolta include bozzetti autobiografici ironici?": [
-    "Memoires d'un amnesique",
-    "Cahiers d'un mammifere",
+    "Mémoires d'un amnésique",
+    "Cahiers d'un mammifère",
     "Cartulaire",
     "Sports et divertissements",
   ],
   "Come si intitola l'altra raccolta di scritti brevi?": [
-    "Cahiers d'un mammifere",
-    "Memoires d'un amnesique",
+    "Cahiers d'un mammifère",
+    "Mémoires d'un amnésique",
     "Cartulaire",
     "Descriptions automatiques",
   ],
@@ -1293,11 +1293,11 @@ const CUSTOM_OPTIONS = {
     "Sports et divertissements",
     "Vieux sequins et vieilles cuirasses",
   ],
-  "Quale opera ballettistica debuttò nel 1917 al Chatelet?": [
+  "Quale opera ballettistica debuttò nel 1917 al Châtelet?": [
     "Parade",
     "Mercure",
     "Relâche",
-    "Le Fils des Etoiles",
+    "Le Fils des Étoiles",
   ],
   "Chi è l'autore di 4'33\"?": [
     "John Cage",
@@ -1360,7 +1360,7 @@ const CUSTOM_OPTIONS = {
     "Gnossiennes n. 1 e n. 2",
   ],
   "Quale opera di Satie è definita \"Wagnerie\"?": [
-    "Le Fils des Etoiles",
+    "Le Fils des Étoiles",
     "Messe des pauvres",
     "Socrate",
     "Parade",
@@ -1378,7 +1378,7 @@ const CUSTOM_OPTIONS = {
     "Trattato di armonia",
   ],
   "Quale luogo ospitò la prima di Parade?": [
-    "Theatre du Chatelet, Parigi",
+    "Théâtre du Châtelet, Parigi",
     "Opera di Parigi",
     "Salle Pleyel",
     "Théâtre des Champs-Élysées",
