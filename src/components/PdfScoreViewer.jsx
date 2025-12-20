@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { ZoomIn, ZoomOut, FileText } from "lucide-react";
-import { Document, Page } from "react-pdf";
+
+import { Document, Page, pdfjs } from "react-pdf";
+// Usa il worker locale per evitare problemi CORS
+import workerSrc from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
 const PdfScoreViewer = () => {
   const [numPages, setNumPages] = useState(null);
   const [scale, setScale] = useState(1.2);
   const [pdfError, setPdfError] = useState(false);
 
-  // Percorso del PDF
-  const pdfUrl = '/gymnopedie-1-annotata.pdf';
+  // Percorso del PDF in public/
+  const pdfUrl = "/gymnopedie-1-annotata.pdf";
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -16,7 +20,7 @@ const PdfScoreViewer = () => {
   }
 
   function onDocumentLoadError(error) {
-    console.error('Errore caricamento PDF:', error);
+    console.error("Errore caricamento PDF:", error);
     setPdfError(true);
   }
 
