@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Music, Brain, XCircle, CheckCircle2 } from "lucide-react";
+import { Music, Brain, XCircle, CheckCircle2, ChevronDown } from "lucide-react";
 import Tooltip from "../components/Tooltip";
 import PdfScoreViewer from "../components/PdfScoreViewer";
 

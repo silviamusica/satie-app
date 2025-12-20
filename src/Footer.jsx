@@ -64,7 +64,7 @@ export default function Footer({ setActiveTab }) {
           </div>
           <div className="flex items-center gap-8 justify-center mt-6">
             <a href="https://www.sognandoilpiano.it" target="_blank" rel="noopener noreferrer" title="Sognando il Piano - www.sognandoilpiano.it" className="transform transition-transform hover:scale-110">
-              <img src="/images/Logo sip bianco verticale cp.png" alt="Sognando il Piano logo" title="Sognando il Piano" className="h-20 w-auto" />
+              <img src="/images/Logo sip bianco verticale cp.png" alt="Sognandoilpiano logo" title="Sognando il Piano" className="h-20 w-auto" />
             </a>
           </div>
         </div>

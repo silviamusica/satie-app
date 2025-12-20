@@ -1,5 +1,5 @@
 /* eslint-disable no-irregular-whitespace */
-import React, { useEffect, useMemo, useState } from "react";
+import React, { Suspense, useEffect, useMemo, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import Footer from "./Footer";
 import {
@@ -14,15 +14,15 @@ import {
   Music,
 } from "lucide-react";
 
-// Import sezioni
-import BenvenutoSection from "./sections/BenvenutoSection";
-import Parigi1888Section from "./sections/Parigi1888Section";
-import SatieSection from "./sections/SatieSection";
-import BranoSection from "./sections/BranoSection";
-import EreditaSection from "./sections/EreditaSection";
-import GlossarySection from "./sections/GlossarySection";
-import ImparaSection from "./sections/ImparaSection";
-import FontiSection from "./sections/FontiSection";
+// Import sezioni (lazy)
+const BenvenutoSection = React.lazy(() => import("./sections/BenvenutoSection"));
+const Parigi1888Section = React.lazy(() => import("./sections/Parigi1888Section"));
+const SatieSection = React.lazy(() => import("./sections/SatieSection"));
+const BranoSection = React.lazy(() => import("./sections/BranoSection"));
+const EreditaSection = React.lazy(() => import("./sections/EreditaSection"));
+const GlossarySection = React.lazy(() => import("./sections/GlossarySection"));
+const ImparaSection = React.lazy(() => import("./sections/ImparaSection"));
+const FontiSection = React.lazy(() => import("./sections/FontiSection"));
 
 // Tab principali
 const TABS = ["benvenuto", "parigi1888", "satie", "brano", "eredita", "glossario", "impara", "fonti"];
@@ -165,14 +165,23 @@ export default function App() {
           </div>
         </header>
         <main className="max-w-6xl mx-auto px-4 py-7 space-y-10">
-          {activeTab === "benvenuto" && <BenvenutoSection goTo={setActiveTab} />}
-          {activeTab === "parigi1888" && <Parigi1888Section />}
-          {activeTab === "satie" && <SatieSection />}
-          {activeTab === "brano" && <BranoSection />}
-          {activeTab === "eredita" && <EreditaSection />}
-          {activeTab === "glossario" && <GlossarySection />}
-          {activeTab === "impara" && <ImparaSection />}
-          {activeTab === "fonti" && <FontiSection />}
+          <Suspense
+            fallback={
+              <div className="flex items-center justify-center gap-3 py-16 text-sm text-slate-400">
+                <div className="h-6 w-6 rounded-full border-2 border-slate-700 border-t-blue-400 animate-spin" />
+                <span>Caricamento sezione...</span>
+              </div>
+            }
+          >
+            {activeTab === "benvenuto" && <BenvenutoSection goTo={setActiveTab} />}
+            {activeTab === "parigi1888" && <Parigi1888Section />}
+            {activeTab === "satie" && <SatieSection />}
+            {activeTab === "brano" && <BranoSection />}
+            {activeTab === "eredita" && <EreditaSection />}
+            {activeTab === "glossario" && <GlossarySection />}
+            {activeTab === "impara" && <ImparaSection />}
+            {activeTab === "fonti" && <FontiSection />}
+          </Suspense>
           {activeTab !== "benvenuto" && tabIndex < TABS.length - 1 && (
             <div className="text-center">
               {activeTab === "eredita" && (
