@@ -60,6 +60,17 @@ const BenvenutoSection = ({ goTo }) => (
           glossario
         </button>.
       </p>
+      <p className="text-sm text-slate-300 leading-relaxed">
+        <span className="block h-3" />
+        In un viaggio ci si ferma, si rilegge il percorso e si trasformano le tappe in ricordi. La sezione{" "}
+        <button
+          onClick={() => goTo("impara")}
+          className="text-blue-400 hover:text-blue-300 font-semibold underline"
+        >
+          Impara
+        </button>{" "}
+        e la nostra pausa-gioco: qui il cammino diventa divertimento e le scoperte si fissano come foto ricordo.
+      </p>
     </div>
 
     {/* Cosa scoprirai */}
@@ -75,7 +86,7 @@ const BenvenutoSection = ({ goTo }) => (
           { title: "Il Brano", desc: "Genesi, linguaggio musicale e come suonarlo", icon: Music, tab: "brano" },
           { title: "L'Eredità", desc: "Dal minimalismo all'ambient: l'impatto di Satie", icon: Sparkles, tab: "eredita" },
           { title: "Glossario", desc: "Termini musicali e contesto in schede rapide", icon: Library, tab: "glossario" },
-          { title: "Impara", desc: "Quiz interattivo e flashcard", icon: GraduationCap, tab: "impara" },
+          { title: "Impara", desc: "Per fissare il viaggio: ricordi da portare con te", icon: GraduationCap, tab: "impara" },
           { title: "Bibliografia", desc: "Libri e riferimenti essenziali", icon: FileText, tab: "fonti" },
         ].map((item) => (
           <button

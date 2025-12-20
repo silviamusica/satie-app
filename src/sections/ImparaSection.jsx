@@ -121,6 +121,11 @@ const ImparaSection = () => {
           Metti alla prova la tua conoscenza della Gymnopédie n. 1 attraverso flashcard interattive e quiz a difficolta
           crescente.
         </p>
+        <p className="text-sm text-slate-300 mt-2">
+          La questione dell'apprendimento e centrale: si passa dalla comprensione alla memorizzazione, poi al
+          recupero attivo. E proprio la fase in cui chiediamo al cervello di richiamare le informazioni
+          (recall) che consolida davvero cio che abbiamo imparato.
+        </p>
         <p className="text-sm text-slate-400 mt-2">
           Un buon livello di preparazione e gia raggiunto con il livello base.
         </p>
