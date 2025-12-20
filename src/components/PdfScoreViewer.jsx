@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ZoomIn, ZoomOut, FileText } from "lucide-react";
 
 import { Document, Page, pdfjs } from "react-pdf";
@@ -10,6 +10,26 @@ const PdfScoreViewer = () => {
   const [numPages, setNumPages] = useState(null);
   const [scale, setScale] = useState(1.2);
   const [pdfError, setPdfError] = useState(false);
+
+  // Set initial scale based on screen width
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        // mobile
+        setScale(0.5);
+      } else if (window.innerWidth < 1024) {
+        // tablet
+        setScale(0.8);
+      } else {
+        // desktop
+        setScale(1.2);
+      }
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Percorso del PDF in public/
   const pdfUrl = "/gymnopedie-1-annotata.pdf";
@@ -25,11 +45,11 @@ const PdfScoreViewer = () => {
   }
 
   const zoomIn = () => {
-    setScale(prev => Math.min(prev + 0.2, 2.5));
+    setScale(prev => Math.min(prev + 0.2, 3.0));
   };
 
   const zoomOut = () => {
-    setScale(prev => Math.max(prev - 0.2, 0.5));
+    setScale(prev => Math.max(prev - 0.2, 0.3));
   };
 
   return (
@@ -78,8 +98,8 @@ const PdfScoreViewer = () => {
           </div>
 
           {/* Visualizzatore PDF con scroll continuo */}
-          <div className="bg-slate-900 p-4 max-h-200 overflow-y-auto">
-            <div className="flex flex-col items-center gap-6">
+          <div className="bg-slate-900 p-2 sm:p-4 max-h-[600px] overflow-y-auto overflow-x-auto">
+            <div className="flex flex-col items-center gap-4 sm:gap-6">
               <Document
                 file={pdfUrl}
                 onLoadSuccess={onDocumentLoadSuccess}
@@ -92,12 +112,13 @@ const PdfScoreViewer = () => {
                 }
               >
                 {Array.from(new Array(numPages), (el, index) => (
-                  <div key={`page_${index + 1}`} className="shadow-lg mb-4">
+                  <div key={`page_${index + 1}`} className="shadow-lg mb-2 sm:mb-4">
                     <Page
                       pageNumber={index + 1}
                       scale={scale}
                       renderTextLayer={false}
                       renderAnnotationLayer={false}
+                      className="max-w-full"
                     />
                   </div>
                 ))}

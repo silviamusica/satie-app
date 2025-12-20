@@ -12,6 +12,8 @@ import {
   MapPin,
   Sparkles,
   Music,
+  Menu,
+  X,
 } from "lucide-react";
 
 // Import sezioni (lazy)
@@ -102,18 +104,22 @@ const getTabFromHash = () => {
 export default function App() {
   const [activeTab, setActiveTab] = useState(getTabFromHash);
   const [lightboxImage, setLightboxImage] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const tabIndex = useMemo(() => TABS.indexOf(activeTab), [activeTab]);
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => {
+      if (activeTab === "impara") return; // Prevent swipe in quiz/flashcard section
       const nextIndex = Math.min(TABS.length - 1, tabIndex + 1);
       setActiveTab(TABS[nextIndex]);
     },
     onSwipedRight: () => {
+      if (activeTab === "impara") return; // Prevent swipe in quiz/flashcard section
       const prevIndex = Math.max(0, tabIndex - 1);
       setActiveTab(TABS[prevIndex]);
     },
-    trackMouse: true,
-    preventScrollOnSwipe: true,
+    trackMouse: false, // Disable mouse tracking to avoid conflicts on mobile
+    preventScrollOnSwipe: false, // Allow vertical scrolling
+    delta: 50, // Require more movement to trigger swipe
   });
   useEffect(() => {
     // Impedisce tab non validi
@@ -185,19 +191,40 @@ export default function App() {
     if (nextIndex !== tabIndex) setActiveTab(TABS[nextIndex]);
   };
 
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    setMobileMenuOpen(false);
+  };
+
   return (
     <ErrorBoundary>
       <div className="min-h-screen bg-slate-950 text-slate-100" {...swipeHandlers}>
         <header className="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
-          <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3">
+          <div className="max-w-6xl mx-auto px-4 py-4">
             <div className="flex items-center justify-between gap-3">
               <div className="min-w-0">
                 <div className="text-lg sm:text-xl font-bold text-slate-100 truncate">
                   Gymnopédie n. 1
                 </div>
               </div>
+
+              {/* Hamburger button - visible only on mobile */}
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="md:hidden p-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-colors"
+                aria-label="Toggle menu"
+              >
+                {mobileMenuOpen ? (
+                  <X className="w-6 h-6 text-slate-100" />
+                ) : (
+                  <Menu className="w-6 h-6 text-slate-100" />
+                )}
+              </button>
             </div>
-            <nav className="flex gap-2 overflow-x-auto pb-1">
+
+            {/* Desktop navigation - horizontal scroll */}
+            <nav className="hidden md:flex gap-2 overflow-x-auto pb-1 mt-3">
               {TABS.map((t) => (
                 <TabButton
                   key={t}
@@ -207,6 +234,31 @@ export default function App() {
                 />
               ))}
             </nav>
+
+            {/* Mobile navigation - dropdown menu */}
+            {mobileMenuOpen && (
+              <nav className="md:hidden mt-3 flex flex-col gap-2 bg-slate-900 rounded-lg border border-slate-700 p-3">
+                {TABS.map((t) => {
+                  const Icon = tabMeta[t].icon;
+                  return (
+                    <button
+                      key={t}
+                      type="button"
+                      onClick={() => handleTabChange(t)}
+                      className={[
+                        "flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-semibold transition-colors text-left",
+                        activeTab === t
+                          ? "bg-blue-600 text-white"
+                          : "bg-slate-800 text-slate-200 hover:bg-slate-700",
+                      ].join(" ")}
+                    >
+                      <Icon className="w-5 h-5 flex-shrink-0" />
+                      <span>{tabMeta[t].label}</span>
+                    </button>
+                  );
+                })}
+              </nav>
+            )}
           </div>
         </header>
         <main

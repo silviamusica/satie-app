@@ -54,8 +54,13 @@ const BenvenutoSection = ({ goTo }) => (
         Ti guiderò alla scoperta di un brano che ha cambiato il corso della musica, della persona che lo compose e del
         contesto storico che lo rese possibile. Tutti i termini e i personaggi meno conosciuti sono spiegati nel{" "}
         <button
+          type="button"
           onClick={() => goTo("glossario")}
-          className="text-blue-400 hover:text-blue-300 font-semibold underline"
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            goTo("glossario");
+          }}
+          className="text-blue-400 hover:text-blue-300 active:text-blue-200 font-semibold underline bg-transparent border-none p-0 cursor-pointer"
         >
           glossario
         </button>.
@@ -64,8 +69,13 @@ const BenvenutoSection = ({ goTo }) => (
         <span className="block h-3" />
         In un viaggio ci si ferma, si rilegge il percorso e si trasformano le tappe in ricordi. La sezione{" "}
         <button
+          type="button"
           onClick={() => goTo("impara")}
-          className="text-blue-400 hover:text-blue-300 font-semibold underline"
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            goTo("impara");
+          }}
+          className="text-blue-400 hover:text-blue-300 active:text-blue-200 font-semibold underline bg-transparent border-none p-0 cursor-pointer"
         >
           Impara
         </button>{" "}
@@ -93,7 +103,11 @@ const BenvenutoSection = ({ goTo }) => (
             key={item.tab}
             type="button"
             onClick={() => goTo(item.tab)}
-            className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 text-left hover:bg-slate-800 hover:border-blue-500 transition-all group"
+            onTouchEnd={(e) => {
+              e.preventDefault();
+              goTo(item.tab);
+            }}
+            className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 text-left hover:bg-slate-800 active:bg-slate-700 hover:border-blue-500 transition-all group"
           >
             <div className="flex items-start gap-3">
               <item.icon className="w-5 h-5 text-blue-400 mt-0.5 group-hover:scale-110 transition-transform" />
@@ -111,7 +125,11 @@ const BenvenutoSection = ({ goTo }) => (
       <button
         type="button"
         onClick={() => goTo("parigi1888")}
-        className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+        onTouchEnd={(e) => {
+          e.preventDefault();
+          goTo("parigi1888");
+        }}
+        className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white rounded-lg font-semibold transition-colors"
       >
         Inizia il viaggio
         <ChevronRight className="w-5 h-5" />

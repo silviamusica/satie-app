@@ -1208,7 +1208,11 @@ const SatieSection = ({ goTo }) => {
           <button
             type="button"
             onClick={() => goTo?.("brano")}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+            onTouchEnd={(e) => {
+              e.preventDefault();
+              goTo?.("brano");
+            }}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white rounded-lg font-semibold transition-colors"
           >
             Prosegui
           </button>
