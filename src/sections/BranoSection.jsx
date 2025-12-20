@@ -10,40 +10,40 @@ const analysisCards = [
     title: "Struttura e materiali",
     icon: Music,
     bullets: [
-      "Pezzo breve per pianoforte solo con andamento ternario.",
-      "Ostinato regolare e melodia spoglia: la mano sinistra mantiene una pulsazione costante mentre la destra canta frasi essenziali.",
-      "Tre sezioni percepite (A–B–A′) con micro variazioni che evitano uno sviluppo tradizionale.",
-      "Uso di accordi planati e movimenti paralleli che creano un senso di sospensione.",
+      "Pezzo breve per pianoforte solo con andamento ternario;",
+      "ostinato regolare e melodia spoglia: la mano sinistra mantiene una pulsazione costante mentre la destra canta frasi essenziali;",
+      "tre sezioni percepite (A–B–A′) con micro variazioni che evitano uno sviluppo tradizionale;",
+      "uso di accordi planati e movimenti paralleli che creano un senso di sospensione.",
     ],
   },
   {
     title: "Focali esecutivi",
     icon: Brain,
     bullets: [
-      "Controllo del tempo: stabile ma non rigido; il ritmo non deve diventare da valzer.",
-      "Gestione del pedale a finestre per mantenere trasparenza fra le voci.",
-      "Separazione delle voci: il basso sostiene, gli accordi colorano e la melodia canta con semplicità.",
-      "Dinamica contenuta con curve brevi e respirate; l'espressività risiede nel timbro.",
+      "Controllo del tempo: stabile ma non rigido; il ritmo non deve diventare da valzer;",
+      "gestione del pedale a finestre per mantenere trasparenza fra le voci;",
+      "separazione delle voci: il basso sostiene, gli accordi colorano e la melodia canta con semplicità;",
+      "dinamica contenuta con curve brevi e respirate; l'espressività risiede nel timbro.",
     ],
   },
   {
     title: "Cosa evitare",
     icon: XCircle,
     bullets: [
-      "Trasformare il 3/4 in un valzer caricaturale.",
-      "Rubato ampio e romantico che appesantisce la linea.",
-      "Pedale continuo che impasta le voci e toglie purezza.",
-      "Sottolineare eccessivamente la progressione armonica: il brano vive di sospensioni.",
+      "Trasformare il 3/4 in un valzer caricaturale;",
+      "rubato ampio e romantico che appesantisce la linea;",
+      "pedale continuo che impasta le voci e toglie purezza;",
+      "sottolineare eccessivamente la progressione armonica: il brano vive di sospensioni.",
     ],
   },
   {
     title: "Cosa cercare",
     icon: CheckCircle2,
     bullets: [
-      "Sospensione e ambiguità tonale: la sensazione di percorso è attenuata.",
-      "Uniformità timbrica: ogni registro deve fondersi come in un'orchestrazione.",
-      "Legato omogeneo con piccole variazioni di respiro.",
-      "Colore e risonanza come elementi narrativi principali.",
+      "Sospensione e ambiguità tonale: la sensazione di percorso è attenuata;",
+      "uniformità timbrica: ogni registro deve fondersi come in un'orchestrazione;",
+      "legato omogeneo con piccole variazioni di respiro;",
+      "colore e risonanza come elementi narrativi principali.",
     ],
   },
 ];
@@ -72,11 +72,11 @@ const BranoSection = () => {
 
       <div className="space-y-4">
         <p className="text-sm text-slate-300 leading-relaxed">
-          Nella primavera del <strong>1888</strong>, Erik Satie — a soli 21 anni, pianista di{" "}
+          Nella primavera del <strong>1888</strong>, Erik Satie, a soli 21 anni, pianista di{" "}
           <Tooltip text="Locali parigini che combinavano caffè, spettacolo e arte, frequentati da artisti bohémien">
             <span>cabaret</span>
           </Tooltip>{" "}
-          a Montmartre — compone le{" "}
+          a Montmartre, compone le{" "}
           <Tooltip text="Serie di tre brevi composizioni per pianoforte caratterizzate da armonie sospese e atmosfera meditativa">
             <strong>tre Gymnopédies</strong>
           </Tooltip>.
@@ -150,9 +150,9 @@ const BranoSection = () => {
           <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
             <h3 className="text-sm font-semibold text-slate-100 mb-2">Approfondisci: Flaubert, dizionari, studiosi</h3>
             <ul className="text-sm text-slate-300 space-y-2">
-              <li>• <strong>Flaubert e Salammbô:</strong> il termine "gymnopédie" non compare nel romanzo. Satie cita Flaubert come atmosfera, non come fonte letterale.</li>
-              <li>• <strong>Ipotesi dei dizionari (Mary E. Davis):</strong> il termine probabilmente deriva da dizionari musicali dell'epoca (Mondo o Rousseau), che definivano erroneamente la gymnopédie come danza di giovani fanciulle spartane.</li>
-              <li>• <strong>Ipotesi della poesia (Orledge e Davis):</strong> l'estratto di Latour, pubblicato con la prima Gymnopédie, contiene il verso sulla "sarabanda", in dialogo con le Sarabandes di Satie (1887).</li>
+              <li>• <strong>Flaubert e Salammbô:</strong> il termine "gymnopédie" non compare nel romanzo; Satie cita Flaubert come atmosfera, non come fonte letterale;</li>
+              <li>• <strong>Ipotesi dei dizionari (Mary E. Davis):</strong> il termine probabilmente deriva da dizionari musicali dell'epoca (Mondo o Rousseau), che definivano erroneamente la gymnopédie come danza di giovani fanciulle spartane;</li>
+              <li>• <strong>Ipotesi della poesia (Orledge e Davis):</strong> l'estratto di Latour, pubblicato con la prima Gymnopédie, contiene il verso sulla "sarabanda", in dialogo con le Sarabandes di Satie (1887);</li>
               <li>• <strong>Etimologia storica (Orledge):</strong> danze rituali di giovani nudi nell'antica Sparta durante le celebrazioni annuali.</li>
             </ul>
           </div>
@@ -173,9 +173,7 @@ const BranoSection = () => {
               className="w-full h-full object-contain p-2"
             />
             <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-              Pierre Puvis de Chavannes, "Jeunes filles au bord de la mer" (1879).
-              Le fonti parlano di un evidente parallelo tra questa staticità pittorica e le strutture ternarie
-              delle Gymnopédies, più che di un'unica fonte esclusiva.
+              Pierre Puvis de Chavannes (1824-1898), <em>Jeunes Filles au bord de la mer</em>, 1879, olio su tela, Musée d'Orsay.
             </p>
           </div>
           <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
@@ -284,6 +282,18 @@ const BranoSection = () => {
         <p className="text-sm text-slate-400 mt-3 italic">
           💡 Questo stile era già stato abbozzato nelle <em>Sarabandes</em> (1887), composte l'anno precedente.
         </p>
+
+        {/* Immagine Sarabande 1884 */}
+        <div className="mt-6 rounded-xl overflow-hidden border border-slate-700">
+          <img
+            src="/images/Sarabande 1884.jpg"
+            alt="Manoscritto della Sarabande del 1884 di Erik Satie"
+            className="w-full object-contain bg-slate-950 p-2"
+          />
+          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+            Manoscritto della Sarabande n. 1 (1884): uno dei primi esperimenti di Satie con armonie sospese.
+          </p>
+        </div>
       </div>
 
       {/* Diagramma accordi */}

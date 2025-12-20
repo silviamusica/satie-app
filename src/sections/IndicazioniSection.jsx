@@ -108,6 +108,16 @@ const IndicazioniSection = () => {
             dell'esecutore.
           </p>
         </div>
+        <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950 mt-4">
+          <img
+            src="/images/Come un usignolo con il mal di denti.jpg"
+            alt="Come un usignolo con il mal di denti"
+            className="w-full h-auto object-cover"
+          />
+          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+            Da <em>Embryons desséchés</em>: "come un usignolo con il mal di denti".
+          </p>
+        </div>
         <div className="mt-5 space-y-3">
           {indicazioni.map((item) => (
             <div key={item.titolo} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">

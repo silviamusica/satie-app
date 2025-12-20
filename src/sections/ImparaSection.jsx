@@ -399,8 +399,8 @@ const ImparaSection = () => {
 
         <div className="mt-8 rounded-xl overflow-hidden border border-slate-700 bg-slate-950">
           <img
-            src="/images/Satie con occhiali.jpg"
-            alt="Erik Satie con occhiali"
+            src="/images/satie-impara.jpg"
+            alt="Erik Satie"
             className="w-full h-56 sm:h-72 object-contain bg-slate-950 p-2"
           />
           <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">

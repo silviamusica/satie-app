@@ -1,6 +1,5 @@
 /* eslint-disable no-irregular-whitespace */
 import React, { Suspense, useEffect, useMemo, useState } from "react";
-import { useSwipeable } from "react-swipeable";
 import Footer from "./Footer";
 import {
   GraduationCap,
@@ -98,29 +97,14 @@ const TabButton = ({ active, label, onClick }) => (
 const getTabFromHash = () => {
   if (typeof window === "undefined") return "benvenuto";
   const raw = window.location.hash.replace("#", "");
-  return TABS.includes(raw) ? raw : "benvenuto";
+  return TABS.includes(raw) ? raw : null;
 };
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState(getTabFromHash);
+  const [activeTab, setActiveTab] = useState(() => getTabFromHash() || "benvenuto");
   const [lightboxImage, setLightboxImage] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const tabIndex = useMemo(() => TABS.indexOf(activeTab), [activeTab]);
-  const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => {
-      if (activeTab === "impara") return; // Prevent swipe in quiz/flashcard section
-      const nextIndex = Math.min(TABS.length - 1, tabIndex + 1);
-      setActiveTab(TABS[nextIndex]);
-    },
-    onSwipedRight: () => {
-      if (activeTab === "impara") return; // Prevent swipe in quiz/flashcard section
-      const prevIndex = Math.max(0, tabIndex - 1);
-      setActiveTab(TABS[prevIndex]);
-    },
-    trackMouse: false, // Disable mouse tracking to avoid conflicts on mobile
-    preventScrollOnSwipe: false, // Allow vertical scrolling
-    delta: 50, // Require more movement to trigger swipe
-  });
   useEffect(() => {
     // Impedisce tab non validi
     if (!TABS.includes(activeTab)) setActiveTab("benvenuto");
@@ -128,7 +112,7 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const nextTab = getTabFromHash();
-      if (nextTab !== activeTab) setActiveTab(nextTab);
+      if (nextTab && nextTab !== activeTab) setActiveTab(nextTab);
     };
     window.addEventListener("hashchange", handleHashChange);
     return () => window.removeEventListener("hashchange", handleHashChange);
@@ -198,7 +182,7 @@ export default function App() {
 
   return (
     <ErrorBoundary>
-      <div className="min-h-screen bg-slate-950 text-slate-100" {...swipeHandlers}>
+      <div className="min-h-screen bg-slate-950 text-slate-100">
         <header className="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
           <div className="max-w-6xl mx-auto px-4 py-4">
             <div className="flex items-center justify-between gap-3">

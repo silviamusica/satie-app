@@ -63,20 +63,20 @@ const EreditaSection = () => {
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
             <h4 className="text-sm font-semibold text-slate-100 mb-2">In parole semplici</h4>
             <ul className="space-y-2">
-              <li>• Non è “arte sacra”: è <strong>funzionale</strong>, come luce o riscaldamento.</li>
-              <li>• È <strong>anti-ascolto</strong>: deve essere ignorata, non seguita con devozione.</li>
-              <li>• Musicalmente usa <strong>frammenti brevi ripetuti</strong> senza sviluppo o climax.</li>
+              <li>• non è "arte sacra": è <strong>funzionale</strong>, come luce o riscaldamento;</li>
+              <li>• è <strong>anti-ascolto</strong>: deve essere ignorata, non seguita con devozione;</li>
+              <li>• musicalmente usa <strong>frammenti brevi ripetuti</strong> senza sviluppo o climax.</li>
             </ul>
           </div>
 
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
             <h4 className="text-sm font-semibold text-slate-100 mb-2">Opere (1917–1923)</h4>
             <ul className="space-y-2">
-              <li>• <strong>Tapisserie en fer forgé</strong> – per un vestibolo di ricevimento.</li>
-              <li>• <strong>Carrelage phonique</strong> – per un pranzo o una firma di contratto.</li>
-              <li>• <strong>Tenture de cabinet préfectoral</strong> – 12 battute da ripetere all'infinito.</li>
-              <li>• <strong>Chez un bistrot</strong></li>
-              <li>• <strong>Un salon</strong></li>
+              <li>• <strong>Tapisserie en fer forgé</strong> – per un vestibolo di ricevimento;</li>
+              <li>• <strong>Carrelage phonique</strong> – per un pranzo o una firma di contratto;</li>
+              <li>• <strong>Tenture de cabinet préfectoral</strong> – 12 battute da ripetere all'infinito;</li>
+              <li>• <strong>Chez un bistrot</strong>;</li>
+              <li>• <strong>Un salon</strong>.</li>
             </ul>
           </div>
 

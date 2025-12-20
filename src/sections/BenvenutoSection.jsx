@@ -35,7 +35,7 @@ const BenvenutoSection = ({ goTo }) => (
       />
       <div className="bg-slate-900 p-4 text-center">
         <p className="text-sm text-slate-300 italic">
-          Manoscritto autografo di Erik Satie — tre pagine che hanno cambiato il corso della musica moderna
+          Manoscritto autografo di Erik Satie, tre pagine che hanno cambiato il corso della musica moderna
         </p>
       </div>
     </div>
@@ -46,8 +46,8 @@ const BenvenutoSection = ({ goTo }) => (
         Perché Gymnopédie n. 1?
       </h2>
       <p className="text-sm text-slate-300 leading-relaxed mb-3">
-        Nel 1888, un giovane pianista di 21 anni che lavorava nei café-cabaret di Montmartre compose tre brevi pagine per pianoforte.
-        Semplici in apparenza, nascondevano una rivoluzione: armonie sospese, forme svuotate di drammaticità, un suono "bianco" che
+        Nel 1888, un giovane pianista di 21 anni che lavorava nei café-cabaret di Montmartre compose tre brevi pagine per pianoforte:
+        semplici in apparenza, nascondevano una rivoluzione; armonie sospese, forme svuotate di drammaticità, un suono "bianco" che
         anticipava l'impressionismo, il minimalismo e la musica ambient.
       </p>
       <p className="text-sm text-slate-300 leading-relaxed">

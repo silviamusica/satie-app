@@ -30,24 +30,14 @@ const StramberieSection = () => {
         <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 mt-4">
           <h3 className="text-base font-semibold text-slate-100 mb-2">Curiosità</h3>
           <ul className="text-sm text-slate-300 space-y-2">
-            <li>• il gentiluomo di velluto: acquistò sette abiti identici di velluto a coste color castagna per evitare la scelta quotidiana.</li>
-            <li>• il fonometrografo: rifiutava la parola “musicista” e preferiva definirsi misuratore di suoni.</li>
-            <li>• il paradosso dell'ombrello: amava così tanto i suoi ombrelli che, se pioveva, li proteggeva sotto il cappotto.</li>
-            <li>• il martello da difesa: camminava di notte fino ad Arcueil portando un martello pesante in tasca.</li>
-            <li>• castelli di piombo: disegnava planimetrie di edifici medievali e pubblicava annunci finti per venderli.</li>
-            <li>• odio per il sole: preferiva uscire con il tempo cupo o sotto la pioggia.</li>
-            <li>• bollitura del vino: raccontava di bollire il vino e berlo freddo con succo di fucsia.</li>
+            <li>• Il gentiluomo di velluto: acquistò sette abiti identici di velluto a coste color castagna per evitare la scelta quotidiana.</li>
+            <li>• Il fonometrografo: rifiutava la parola “musicista” e preferiva definirsi misuratore di suoni.</li>
+            <li>• Il paradosso dell'ombrello: amava così tanto i suoi ombrelli che, se pioveva, li proteggeva sotto il cappotto.</li>
+            <li>• Il martello da difesa: camminava di notte fino ad Arcueil portando un martello pesante in tasca.</li>
+            <li>• Castelli di piombo: disegnava planimetrie di edifici medievali e pubblicava annunci finti per venderli.</li>
+            <li>• Odio per il sole: preferiva uscire con il tempo cupo o sotto la pioggia.</li>
+            <li>• Bollitura del vino: raccontava di bollire il vino e berlo freddo con succo di fucsia.</li>
           </ul>
-        </div>
-        <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950 mt-4">
-          <img
-            src="/images/Progetto per busto di SATIE.jpg"
-            alt="Progetto per il busto di Erik Satie"
-            className="w-full h-64 object-contain bg-slate-950 p-2"
-          />
-          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-            Progetto per il busto di Erik Satie: una memoria visiva delle sue eccentricità
-          </p>
         </div>
         <div className="mt-5 space-y-3">
           {curiosi.map((c) => (

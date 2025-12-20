@@ -46,7 +46,7 @@ const Parigi1888Section = () => {
       </p>
     </div>
     <div className="bg-slate-900/70 border border-slate-700 rounded-2xl p-6">
-      <h2 className="text-xl font-semibold text-slate-100 mb-3">Breve introduzione</h2>
+      <h2 className="text-xl font-semibold text-slate-100 mb-3">Un salto nella Parigi della Belle Époque</h2>
       <p className="text-sm text-slate-300 leading-relaxed mb-3">
         La <strong>Belle Époque</strong> (circa 1871-1914) è un periodo di ottimismo, crescita economica e fiducia nel
         progresso tecnico: Parigi diventa una capitale moderna, illuminata, piena di nuove invenzioni e di spinta verso il futuro.
@@ -78,7 +78,10 @@ const Parigi1888Section = () => {
         <Tooltip text="Compositore francese (1862-1918), padre dell'impressionismo musicale.">
           <strong>Claude Debussy</strong>
         </Tooltip>{" "}
-        e <strong>Maurice Ravel</strong>.
+        e{" "}
+        <Tooltip text="Compositore francese (1875-1937), maestro dell'orchestrazione e della chiarezza formale.">
+          <strong>Maurice Ravel</strong>
+        </Tooltip>.
       </p>
       <p className="text-sm text-slate-300 leading-relaxed mb-4">
         Il <strong>cabaret francese</strong> (café-concert) è il punto di incontro tra arti diverse: musica dal vivo, poesia,
@@ -126,11 +129,11 @@ const Parigi1888Section = () => {
             <li className="flex items-start gap-2">
               <span className="text-blue-400 mt-1">•</span>
               <span>
-                La <strong>Torre Eiffel</strong> è in costruzione per l'
+                la <strong>Torre Eiffel</strong> è in costruzione per l'
                 <Tooltip text="Grande esposizione internazionale a Parigi (1889) che celebra il progresso tecnico e industriale.">
                   <span>Esposizione Universale</span>
                 </Tooltip>{" "}
-                del 1889
+                del 1889;
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -139,7 +142,7 @@ const Parigi1888Section = () => {
                 <Tooltip text="Chimico e microbiologo francese; pioniere della vaccinazione e della teoria dei germi.">
                   <strong>Louis Pasteur</strong>
                 </Tooltip>{" "}
-                fonda l'Istituto Pasteur, rivoluzionando la medicina
+                fonda l'Istituto Pasteur, rivoluzionando la medicina;
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -148,7 +151,7 @@ const Parigi1888Section = () => {
                 <Tooltip text="Fisico tedesco che dimostra sperimentalmente le onde elettromagnetiche.">
                   <strong>Heinrich Hertz</strong>
                 </Tooltip>{" "}
-                dimostra l'esistenza delle onde elettromagnetiche
+                dimostra l'esistenza delle onde elettromagnetiche;
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -157,17 +160,17 @@ const Parigi1888Section = () => {
                 <Tooltip text="Imprenditore statunitense; fondatore della Eastman Kodak Company.">
                   <strong>George Eastman</strong>
                 </Tooltip>{" "}
-                brevetta la prima fotocamera portatile Kodak
+                brevetta la prima fotocamera portatile Kodak;
               </span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-blue-400 mt-1">•</span>
               <span>
-                L'arte si libera dal{" "}
+                l'arte si libera dal{" "}
                 <Tooltip text="Corrente ottocentesca caratterizzata da enfasi emotiva e culto del genio artistico.">
                   <strong>romanticismo</strong>
                 </Tooltip>{" "}
-                e dalle regole accademiche
+                e dalle regole accademiche.
               </span>
             </li>
           </ul>
@@ -312,16 +315,28 @@ const Parigi1888Section = () => {
 
           {/* Immagini affiancate: El Bohemi + Parigi Belle Époque */}
           <div className="grid sm:grid-cols-2 gap-4 items-stretch">
-            {/* Colonna sinistra: El bohemi (verticale lunga) */}
-            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-              <img
-                src="/images/El_bohemi_by_Ramon_Casas-1.jpg"
-                alt="El bohemi di Ramon Casas"
-                className="w-full h-full object-contain p-2"
-              />
-              <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50 min-h-[3.5rem]">
-                "El bohemi" (Ramon Casas, 1891)
-              </p>
+            {/* Colonna sinistra: El bohemi + Satie bohémien */}
+            <div className="space-y-4">
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/El_bohemi_by_Ramon_Casas-1.jpg"
+                  alt="El bohemi di Ramon Casas"
+                  className="w-full h-full object-contain p-2"
+                />
+                <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                  Ramon Casas (1866-1932), <em>El Bohemio, Poet of Montmartre</em>, 1891, olio su tela.
+                </p>
+              </div>
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/The bohemien SATIE.jpg"
+                  alt="Erik Satie in abito bohémien"
+                  className="w-full h-full object-contain p-2"
+                />
+                <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                  Erik Satie in abito bohémien, anni di Montmartre.
+                </p>
+              </div>
             </div>
 
             {/* Colonna destra: foto Tour Eiffel + testo */}
@@ -380,32 +395,32 @@ const Parigi1888Section = () => {
           <ul className="space-y-2 text-sm text-slate-300">
             <li className="flex items-start gap-2">
               <span className="text-purple-400 mt-1">•</span>
-              <span><strong>Evocazione</strong> invece di descrizione</span>
+              <span><strong>Evocazione</strong> invece di descrizione;</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-purple-400 mt-1">•</span>
               <span>
                 <Tooltip text="Uso di accordi e progressioni che non seguono le regole tonali tradizionali, creando incertezza">
-                  <strong>Ambiguità armonica</strong>
+                  <strong>ambiguità armonica</strong>
                 </Tooltip>{" "}
-                invece di progressioni chiare
+                invece di progressioni chiare;
               </span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-purple-400 mt-1">•</span>
               <span>
                 <Tooltip text="Timbro e atmosfera sonora come elementi principali della composizione">
-                  <strong>Colore</strong>
+                  <strong>colore</strong>
                 </Tooltip>{" "}
                 invece di{" "}
                 <Tooltip text="Elaborazione e variazione di un tema musicale attraverso diverse sezioni del brano">
                   <span>sviluppo tematico</span>
-                </Tooltip>
+                </Tooltip>;
               </span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-purple-400 mt-1">•</span>
-              <span>L'idea di <strong>"musica bianca"</strong> senza ornamenti, essenziale</span>
+              <span>l'idea di <strong>"musica bianca"</strong> senza ornamenti, essenziale.</span>
             </li>
           </ul>
         </div>
@@ -415,7 +430,7 @@ const Parigi1888Section = () => {
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
             <h3 className="text-base font-semibold text-slate-100 mb-2">J. P. Contamine de Latour</h3>
             <p className="text-sm text-slate-300">
-              <span>Poeta simbolista</span>, amico di Satie. La sua poesia <em>Les Antiques</em> fu pubblicata insieme
+              <span>Poeta simbolista</span>. La sua poesia <em>Les Antiques</em> fu pubblicata insieme
               alla Gymnopédie n. 1 nell'estate del 1888 e ispirò il titolo arcaico.{" "}
               <button
                 type="button"
@@ -426,10 +441,19 @@ const Parigi1888Section = () => {
               </button>
             </p>
             <div className="mt-3 text-sm text-slate-400 leading-relaxed">
-              Satie e de Latour erano amici intimi e collaboravano spesso, condividendo i pochi averi e, a volte, pure l'unico paio di pantoloni "buoni".
               La poesia appare accanto allo spartito nel 1888; alcuni studiosi ipotizzano che la musica
               preceda il testo (con il verso sulla <em>sarabande</em> come omaggio alle <em>Sarabandes</em> del 1887),
               altri pensano l'opposto.
+            </div>
+            <div className="rounded-lg overflow-hidden border border-slate-600 mt-4 bg-slate-950">
+              <img
+                src="/images/PatriceContamine.jpg"
+                alt="Patrice Contamine de Latour"
+                className="w-full h-56 object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+                Patrice Contamine de Latour, poeta simbolista
+              </p>
             </div>
           </div>
 
@@ -439,10 +463,23 @@ const Parigi1888Section = () => {
               Satie adorava il pittore simbolista Puvis. Non esiste un'unica "ispirazione", ma un chiaro parallelo
               tra la sua musica statica e dipinti come <em>Jeune fille au bord de la mer</em> (1879). <br /> L'opera
               <em>"Les Muses"</em> riassume bene la sua estetica di semplicità, mentre
-              Rusiñol scrisse che Satie cercava in musica la stessa essenzialità raggiunta da Puvis in pittura.
+              <Tooltip text="Pittore e scrittore catalano (1861-1931), vicino al simbolismo.">
+                <span>Rusiñol</span>
+              </Tooltip>{" "}
+              scrisse che Satie cercava in musica la stessa essenzialità raggiunta da Puvis in pittura.
               <br /> <br /> Templier parlò di "esatte rappresentazioni musicali" dei suoi quadri. Per le <em>Sonneries de la Rose+Croix</em>
               Satie scelse un frammento di <em>La Guerre</em> per il frontespizio.
             </p>
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950 mt-4">
+              <img
+                src="/images/puvis-de-chavannes.jpeg"
+                alt="Puvis de Chavannes"
+                className="w-full h-56 object-contain p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+                Puvis de Chavannes, pittore simbolista
+              </p>
+            </div>
           </div>
         </div>
 
@@ -454,7 +491,7 @@ const Parigi1888Section = () => {
             className="w-full object-contain bg-slate-950 p-2"
           />
           <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-            "Les Muses" di Puvis de Chavannes
+            Pierre Puvis de Chavannes (1824-1898), <em>Le bois sacré cher aux arts et aux muses</em>, 1884-1889, olio su tela, Art Institute of Chicago.
           </p>
         </div>
 
@@ -466,7 +503,7 @@ const Parigi1888Section = () => {
             <Tooltip text="Tensioni create da dissonanze che richiedono risoluzione">
               <span>tensioni armoniche drammatiche</span>
             </Tooltip>{" "}
-            e risoluzioni potenti, Satie — a 21 anni, pianista di cabaret — oppone{" "}
+            e risoluzioni potenti, Satie, a 21 anni, pianista di cabaret, oppone{" "}
             <Tooltip text="Accordi che non si risolvono secondo le regole tonali tradizionali, creando un senso di galleggiamento">
               <strong>armonie sospese</strong>
             </Tooltip>,{" "}

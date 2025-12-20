@@ -288,8 +288,8 @@ const GlossarySection = () => {
             <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
               <h4 className="text-base font-semibold text-blue-200 mb-2">Perche sono importanti per il progetto</h4>
               <ul className="space-y-2 text-sm text-slate-300">
-                <li>• Monet: legame con acqua e luce, vicini alla fluidita delle Gymnopedies.</li>
-                <li>• Cezanne: passaggio verso il cubismo, geometrizzazione del suono in Satie.</li>
+                <li>• Monet: legame con acqua e luce, vicini alla fluidita delle Gymnopedies;</li>
+                <li>• Cezanne: passaggio verso il cubismo, geometrizzazione del suono in Satie;</li>
                 <li>• Lautrec: immaginario visivo del cabaret, i personaggi e la notte di Montmartre.</li>
               </ul>
             </div>
@@ -429,19 +429,19 @@ const GlossarySection = () => {
             <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
               <h4 className="text-base font-semibold text-slate-100 mb-2">Come distinguere le svolte</h4>
               <ul className="space-y-2 text-sm text-slate-300">
-                <li>• I romantici puntano sull'emozione e il dramma.</li>
-                <li>• I realisti cercano la verita quotidiana, anche dura.</li>
-                <li>• Gli impressionisti guardano alla luce piu che al soggetto.</li>
-                <li>• I post-impressionisti riportano struttura e geometria.</li>
-                <li>• I cubisti scompongono la realta per vederla da piu lati.</li>
+                <li>• i romantici puntano sull'emozione e il dramma;</li>
+                <li>• i realisti cercano la verita quotidiana, anche dura;</li>
+                <li>• gli impressionisti guardano alla luce piu che al soggetto;</li>
+                <li>• i post-impressionisti riportano struttura e geometria;</li>
+                <li>• i cubisti scompongono la realta per vederla da piu lati.</li>
               </ul>
             </div>
             <div className="bg-blue-950/20 border border-blue-700/30 rounded-lg p-4">
               <h4 className="text-base font-semibold text-blue-200 mb-2">Legame con Satie</h4>
               <ul className="space-y-2 text-sm text-slate-300">
-                <li>• parte dal simbolismo (Rosa-Croce).</li>
-                <li>• anticipa l'impressionismo e poi se ne distacca.</li>
-                <li>• e vicino al cubismo con <em>Parade</em>.</li>
+                <li>• parte dal simbolismo (Rosa-Croce);</li>
+                <li>• anticipa l'impressionismo e poi se ne distacca;</li>
+                <li>• è vicino al cubismo con <em>Parade</em>;</li>
                 <li>• influenza l'avanguardia e il clima surrealista e dada.</li>
               </ul>
             </div>
