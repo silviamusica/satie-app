@@ -51,7 +51,7 @@ const IndicazioniSection = () => {
         "Danzate interiormente",
       ],
       anno: "1913",
-      strumento: "Pianoforte (preparato)",
+      strumento: "Pianoforte",
     },
     {
       titolo: "Peccadilles importunes (da Enfantines)",
@@ -148,8 +148,8 @@ const IndicazioniSection = () => {
           </p>
           <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
             <p>
-              <strong>Pianoforte preparato:</strong> Le <em>Sette piccole danze</em> di <em>Le Piège de Méduse</em>
-              sono considerate un primo esempio di pianoforte preparato, anticipando John Cage.
+              <strong>Teatro e ironia:</strong> Le <em>Sette piccole danze</em> di <em>Le Piège de Méduse</em> nascono
+              in un contesto teatrale e accentuano il lato surreale e beffardo delle indicazioni.
             </p>
           </div>
         </div>

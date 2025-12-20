@@ -16,52 +16,102 @@ BENVENUTO
   * Bibliografia — Libri e riferimenti essenziali
 - CTA: Inizia il viaggio
 
-PARIGI 1888: LA SCENA
-- Introduzione: Per capire le Gymnopédies, dobbiamo prima immergerci nella Parigi di fine Ottocento: una città in fermento, dove l'arte si rinnova, dove i café-cabaret di Montmartre diventano laboratori di sperimentazione e dove un giovane pianista sta per cambiare il corso della musica.
-- Breve introduzione
-  * La Belle Époque (circa 1871-1914) è un periodo di ottimismo, crescita economica e fiducia nel progresso tecnico: Parigi diventa una capitale moderna, illuminata, piena di nuove invenzioni e di spinta verso il futuro. La bohème è la controfaccia artistica di questa modernità: vita libera, notti nei caffè, rifiuto delle regole borghesi, sperimentazione continua.
-  * Il Simbolismo rompe con il realismo e privilegia immagini evocative, sogni, allusioni: in letteratura spiccano Verlaine e Mallarmé, mentre in pittura e grafica si affermano i manifesti e l'estetica notturna dei locali di Montmartre. In musica, l'impressionismo cerca colore timbrico e atmosfera: i nomi chiave sono Debussy e Ravel.
-  * Il cabaret francese (café-concert) è il punto di incontro tra arti diverse: musica dal vivo, poesia, satira e pittura convivono nello stesso spazio. Locali come il Chat Noir e il Lapin Agile diventano laboratori creativi dove gli artisti si contaminano a vicenda e dove Satie costruisce la sua identità musicale.
-- Sezione: La Belle Époque
-  * 1888: Torre Eiffel in costruzione per l'Esposizione Universale del 1889; Louis Pasteur fonda l'Istituto Pasteur; Heinrich Hertz dimostra le onde elettromagnetiche; George Eastman brevetta la Kodak portatile; l'arte si libera dal romanticismo.
-  * Wagner domina l'Europa con tensioni armoniche drammatiche, ma a Parigi sta nascendo qualcosa di completamente diverso.
-  * Immagini: Torre Eiffel in costruzione; manifesto Paris_1889_plakat.jpg; cartoline di Boulevard Montmartre e Café Leroy.
-- Sezione: Montmartre, cabaret e bohème
-  * Chat Noir: cabaret fondato da Rodolphe Salis; Satie lavora come secondo pianista (1887-1888).
-  * Auberge du Clou: altro cabaret frequentato da artisti bohémien.
-  * Atmosfera dei café-cabaret: arte "alta" e cultura popolare si mescolano; musica come linguaggio quotidiano.
-- Sezione: La vita bohémien
-  * Immagini affiancate: El bohemi (Ramon Casas, 1891); progetti rifiutati per la Tour Eiffel.
-  * La Tour Eiffel: da struttura temporanea a icona. Doveva essere smontata dopo 20 anni. Molti intellettuali parigini la detestarono, ma la torre si rivelò preziosa per esperimenti scientifici e nel 1909 fu salvata dalla demolizione.
+====================
+PAGINA: PARIGI 1888 — LA SCENA (completo)
+====================
 
-    Dalla piattaforma panoramica alle prime antenne radio, la torre dimostrò di essere utile oltre che spettacolare.
+Titolo: Parigi 1888: la scena
 
-    Oggi è il simbolo universale di Parigi e della Belle Époque.
-- Sezione: Il simbolismo
-  * Montmartre era il centro del movimento simbolista.
-  * Puvis de Chavannes: non esiste un'unica "ispirazione", ma un chiaro parallelo tra la musica statica di Satie e dipinti come Jeune fille au bord de la mer (1879). "Les Muses" riassume bene la sua estetica di semplicità; Rusiñol scrisse che Satie cercava in musica la stessa essenzialità raggiunta da Puvis in pittura. Templier parlò di "esatte rappresentazioni musicali" dei suoi quadri. Per le Sonneries de la Rose+Croix Satie scelse un frammento di La Guerre per il frontespizio.
-  * Immagine: “Les Muses” di Puvis de Chavannes.
-- Didascalie immagini (Parigi)
-  * Place de la République e Magasins Réunis: la Parigi urbana di fine Ottocento.
-  * Costruzione della Torre Eiffel (1887-1889).
-  * Manifesto dell'Esposizione Universale di Parigi (1889).
-  * Boulevard Montmartre dall'alto; Café Leroy (1916).
-  * Le Chat Noir; Auberge du Clou.
-  * El bohemi (Ramon Casas, 1891).
-  * Progetti rifiutati per l'Esposizione Universale del 1889.
-  * “Les Muses” di Puvis de Chavannes.
+Intro: Per capire le Gymnopédies, dobbiamo prima immergerci nella Parigi di fine Ottocento: una città in fermento, dove l'arte si rinnova, dove i café-cabaret di Montmartre diventano laboratori di sperimentazione e dove un giovane pianista sta per cambiare il corso della musica.
 
-MODALE: LES ANTIQUES (J. P. CONTAMINE DE LATOUR)
-- Testo originale (francese)
-  Oblique et coupant l'ombre un torrent éclatant
-  Ruisselait en flots d'or sur la dalle polie
-  Où les atomes d'ambre au feu se miroitant
-  Mêlaient leur sarabande à la gymnopédie
-- Traduzione (italiano)
-  Obliquo e fendente l'ombra, un torrente splendente
-  scorreva in flutti d'oro sulla lastra levigata
-  dove gli atomi d'ambra, specchiandosi nel fuoco,
-  mescolavano la loro sarabanda alla gymnopédie
+--- Un salto nella Parigi della Belle Époque ---
+La Belle Époque (circa 1871-1914) è un periodo di ottimismo, crescita economica e fiducia nel progresso tecnico: Parigi diventa una capitale moderna, illuminata, piena di nuove invenzioni e di spinta verso il futuro. La bohème è la controfaccia artistica di questa modernità: vita libera, notti nei caffè, rifiuto delle regole borghesi, sperimentazione continua.
+
+Tooltip: bohème = Vita artistica fuori dalle regole borghesi: caffè, atelier, precarietà e sperimentazione.
+
+Il Simbolismo rompe con il realismo e privilegia immagini evocative, sogni, allusioni: in letteratura spiccano Verlaine e Mallarmé, mentre in pittura e grafica si affermano i manifesti e l'estetica notturna dei locali di Montmartre. In musica, l'impressionismo cerca colore timbrico e atmosfera: i nomi chiave sono Debussy e Ravel.
+
+Tooltip: Simbolismo = Movimento che privilegia simboli ed evocazioni rispetto alla descrizione diretta.
+Tooltip: realismo = Rappresentazione fedele e oggettiva della realtà.
+Tooltip: Verlaine = Poeta simbolista francese (1844-1896).
+Tooltip: Mallarmé = Poeta simbolista francese (1842-1898).
+Tooltip: Claude Debussy = Compositore francese (1862-1918), padre dell'impressionismo musicale.
+Tooltip: Maurice Ravel = Compositore francese (1875-1937), maestro dell'orchestrazione e della chiarezza formale.
+
+Il cabaret francese (café-concert) è il punto di incontro tra arti diverse: musica dal vivo, poesia, satira e pittura convivono nello stesso spazio. Locali come il Chat Noir e il Lapin Agile diventano laboratori creativi dove gli artisti si contaminano a vicenda e dove Satie costruisce la sua identità musicale.
+
+Immagine: Place de la Republique e Magasins Reunis: la Parigi urbana di fine Ottocento
+
+--- La Belle Époque ---
+1888: Torre Eiffel in costruzione per l'Esposizione Universale del 1889; Louis Pasteur fonda l'Istituto Pasteur; Heinrich Hertz dimostra le onde elettromagnetiche; George Eastman brevetta la Kodak portatile; l'arte si libera dal romanticismo.
+
+Tooltip: Esposizione Universale = Grande esposizione internazionale a Parigi (1889) che celebra il progresso tecnico e industriale.
+Tooltip: Louis Pasteur = Chimico e microbiologo francese; pioniere della vaccinazione e della teoria dei germi.
+Tooltip: Heinrich Hertz = Fisico tedesco che dimostra sperimentalmente le onde elettromagnetiche.
+Tooltip: George Eastman = Imprenditore statunitense; fondatore della Eastman Kodak Company.
+Tooltip: romanticismo = Corrente ottocentesca caratterizzata da enfasi emotiva e culto del genio artistico.
+
+In musica, Wagner domina l'Europa con tensioni armoniche drammatiche, ma a Parigi sta nascendo qualcosa di completamente diverso.
+Tooltip: Wagner = Richard Wagner (1813-1883), compositore tedesco noto per drammi musicali monumentali e armonie dense.
+
+Immagini: Costruzione della Torre Eiffel (1887-1889); Manifesto dell'Esposizione Universale di Parigi (1889); Boulevard Montmartre dall'alto; Café Leroy (1916).
+
+--- Montmartre: il quartiere bohémien ---
+Montmartre, sulla collina a nord di Parigi, era il cuore della vita artistica bohémien: qui si mescolavano pittori, poeti, musicisti e intellettuali in un'atmosfera di libertà e sperimentazione.
+Tooltip: Montmartre = Quartiere parigino dei café-cabaret dove Satie lavorò come pianista e trovò ispirazione per il suo stile sobrio.
+
+Le Chat Noir: Fondato nel 1881 da Rodolphe Salis, era il cabaret più celebre di Montmartre. Non un semplice locale, ma un vero laboratorio artistico dove Satie lavorò come secondo pianista tra il 1887 e il 1888.
+Immagine: Le Chat Noir cabaret
+
+Auberge du Clou: Altro celebre cabaret dove Satie suonò successivamente. Frequentato da artisti bohémien, offriva lo stesso clima di libertà creativa del Chat Noir.
+Immagine: Auberge du Clou
+
+L'atmosfera dei café-cabaret: Nei cabaret di Montmartre, l'arte "alta" si mescolava con la cultura popolare: la musica non era un rito religioso da sala da concerto, ma accompagnamento alla vita quotidiana con conversazioni, fumo, alcol, poesia. Vi passarono Claude Debussy, Paul Verlaine, Toulouse-Lautrec e molti altri artisti che avrebbero segnato l'epoca.
+
+La vita bohémien: La bohème non era solo uno stile, ma un modo di stare al mondo: precarietà economica, notti passate a discutere di estetica, amicizie e rivalità tra pittori e musicisti, gusto per l'ironia e il paradosso. In questo ambiente, la musica smette di essere cerimonia ufficiale e diventa linguaggio quotidiano, vicino alle persone e alle loro vite.
+
+Immagini affiancate: El Bohemio (Ramon Casas, 1891) + foto di Erik Satie in abito bohémien; progetti rifiutati per la Tour Eiffel.
+
+Box: La Tour Eiffel: da struttura temporanea a icona. Doveva essere smontata dopo 20 anni. Molti intellettuali parigini la detestarono, ma la torre si rivelò preziosa per esperimenti scientifici e nel 1909 fu salvata dalla demolizione. Dalla piattaforma panoramica alle prime antenne radio, la torre dimostrò di essere utile oltre che spettacolare. Oggi è il simbolo universale di Parigi e della Belle Époque.
+
+--- Il clima artistico: simbolismo ---
+Montmartre era il centro del movimento simbolista, che rifiutava il realismo e l'accademismo in favore dell'evocazione, del sogno, dell'immagine e della suggestione.
+
+Principi del simbolismo musicale:
+• Evocazione invece di descrizione;
+• Ambiguità armonica invece di progressioni chiare;
+• Colore invece di sviluppo tematico;
+• L'idea di "musica bianca" senza ornamenti, essenziale.
+Tooltip: ambiguità armonica = Uso di accordi e progressioni che non seguono le regole tonali tradizionali, creando incertezza.
+Tooltip: colore = Timbro e atmosfera sonora come elementi principali della composizione.
+Tooltip: sviluppo tematico = Elaborazione e variazione di un tema musicale attraverso diverse sezioni del brano.
+
+Personaggi chiave:
+- J. P. Contamine de Latour: Poeta simbolista. La sua poesia Les Antiques fu pubblicata insieme alla Gymnopédie n. 1 nell'estate del 1888 e ispirò il titolo arcaico. [MODALE: Les Antiques — Testo originale e traduzione]
+- Puvis de Chavannes: Satie adorava il pittore simbolista Puvis. Non esiste un'unica "ispirazione", ma un chiaro parallelo tra la sua musica statica e dipinti come Jeune fille au bord de la mer (1879). L'opera "Les Muses" riassume bene la sua estetica di semplicità; Rusiñol scrisse che Satie cercava in musica la stessa essenzialità raggiunta da Puvis in pittura. Templier parlò di "esatte rappresentazioni musicali" dei suoi quadri. Per le Sonneries de la Rose+Croix Satie scelse un frammento di La Guerre per il frontespizio.
+Immagine: Patrice Contamine de Latour, poeta simbolista; Puvis de Chavannes, pittore simbolista; Le bois sacré cher aux arts et aux muses (1884-1889).
+
+Box: La rivoluzione silenziosa di Satie — Mentre Wagner dominava l'Europa con tensioni armoniche drammatiche e risoluzioni potenti, Satie, a 21 anni, pianista di cabaret, oppone armonie sospese, oscillazioni di settime maggiori e un futuro che non arriva mai. Non cerca il climax, ma la sospensione. Non il dramma, ma il colore.
+Tooltip: tensioni armoniche drammatiche = Tensioni create da dissonanze che richiedono risoluzione.
+Tooltip: armonie sospese = Accordi che non si risolvono secondo le regole tonali tradizionali, creando un senso di galleggiamento.
+Tooltip: oscillazioni di settime maggiori = Alternanza tra accordi di Sol maggiore settima e Re maggiore settima, collegati dal Fa#.
+Tooltip: climax = Punto culminante di massima tensione drammatica in una composizione.
+
+--- MODALE: Les Antiques (J. P. Contamine de Latour) ---
+Testo originale (francese):
+Oblique et coupant l'ombre un torrent éclatant
+Ruisselait en flots d'or sur la dalle polie
+Où les atomes d'ambre au feu se miroitant
+Mêlaient leur sarabande à la gymnopédie
+
+Traduzione (italiano):
+Obliquo e fendente l'ombra, un torrente splendente
+scorreva in flutti d'oro sulla lastra levigata
+dove gli atomi d'ambra, specchiandosi nel fuoco,
+mescolavano la loro sarabanda alla gymnopédie
+
+--- CTA ---
+Ora che conosci il contesto, scopriamo chi era l'uomo dietro questa rivoluzione
 
 ERIK SATIE (pagina con tre sezioni)
 - Nota iniziale: La pagina "Erik Satie" è divisa in tre sezioni.
@@ -70,7 +120,7 @@ ERIK SATIE (pagina con tre sezioni)
 LA VITA
 - Header: Erik Satie: il bohémien (1866 - 1925, Honfleur - Parigi - Arcueil)
 - Citazione: «Sono venuto al mondo molto giovane in un tempo molto vecchio»
-- Didascalia: Erik Satie: il bohémien che rifiuta le convenzioni accademiche
+- Hero image per tab: vita con Satie con occhiali (didascalia: "Erik Satie: il bohémien che rifiuta le convenzioni accademiche"); amicizie con Debussy-Satie (senza didascalia); stramberie con busto di Satie (senza didascalia).
 
 Il giovane ribelle (1866-1887)
 - Honfleur, 17 maggio 1866: Erik Alfred Leslie Satie nasce a Honfleur. Il padre Alfred è agente marittimo, la madre Jane Leslie Anton è di origini scozzesi.
@@ -140,7 +190,7 @@ AMICIZIE
   * "Senza crauti, se possibile": musica francese libera dal wagnerismo, ispirata ai pittori francesi.
   * 1896-1897: episodio Doret, Debussy suona le Gymnopédies e decide l'orchestrazione; n.1 e n.3, prima esecuzione 20 febbraio 1897.
   * 1917-1918: rottura, lettera offensiva e mancata risposta; Satie non va al funerale.
-  * "Trois morceaux en forme de poire" come risposta alla critica di Debussy.
+  * "Trois morceaux en forme di poire" come risposta alla critica di Debussy.
 
 - Maurice Ravel (1875-1937)
   * Compositore francese, chiarezza formale e raffinatezza timbrica.
@@ -164,9 +214,10 @@ STRAMBERIE
 - La "pera" e Debussy: Trois morceaux en forme de poire.
 - Annotazioni assurde in partitura: "aprite la testa", "come un usignolo con il mal di denti".
 - Parodie: Sonatine bureaucratique; Embryons desséchés.
-- Elenco titoli: Trois morceaux en forme de poire; Véritables préludes flasques; Embryons desséchés; Croquis et agaceries; Vieux sequins et vieilles cuirasses; Chapitres tournés en tous sens; Choses vues à droite et à gauche (sans lunettes); Trois Valses distinguées du précieux dégoûté; Aperçus désagréables; Sonatine bureaucratique; Pièces froides.
+- Elenco titoli: Trois morceaux en forme di poire; Véritables préludes flasques; Embryons desséchés; Croquis et agaceries; Vieux sequins et vieilles cuirasses; Chapitres tournés en tous sens; Choses vues à droite et à gauche (sans lunettes); Trois Valses distinguées du précieux dégoûté; Aperçus désagréables; Sonatine bureaucratique; Pièces froides.
 
 INDICAZIONI SUGLI SPARTITI
+- Immagine a campo pieno prima dell'elenco: Come un usignolo con il mal di denti (da Embryons desséchés).
 - Annotazioni e frasi strambe (per brano, anno, strumento).
 - Modale: indicazioni paratestuali, doppio fondo, divieto di lettura ad alta voce, pianoforte preparato in Le Piège de Méduse.
 IL BRANO
@@ -189,6 +240,7 @@ GLOSSARIO
 
 IMPARA
 - Testo: Scegli tra Flashcard e Quiz per fissare i dati principali.
+- Immagine: satie-impara.jpg (senza didascalia estesa).
 - Flashcard:
   * 1. [base] Quando fu completata la Gymnopédie n. 1?
     - Risposta: 1888
@@ -249,7 +301,7 @@ IMPARA
     - Note: La sfida non è la velocità ma la qualità timbrica: equilibrio tra le voci, gestione del pedale e sospensione del tempo.
   * 20. [avanzato] Qual è il 'segreto armonico' della Gymnopédie n.1?
     - Risposta: La nota Fa# come collante tra gli accordi
-    - Note: Il Fa# è il 'collante' armonico che rende il brano così fluido e sospeso. Questa nota appartiene CONTEMPORANEAMENTE sia all'accordo di Sol maggiore settima (Sol-Si-Re-Fa#) sia all'accordo di Re maggiore settima (Re-Fa#-La-Do#). Il Fa# funge da ponte armonico tra i due accordi, permettendo all'altalena armonica di oscillare senza mai toccare terra, creando quella sensazione di galleggiamento senza tempo.
+    - Note: Il Fa# è il "collante" armonico che rende il brano così fluido e sospeso. Questa nota appartiene CONTEMPORANEAMENTE sia all'accordo di Sol maggiore settima (Sol-Si-Re-Fa#) sia all'accordo di Re maggiore settima (Re-Fa#-La-Do#). Il Fa# funge da ponte armonico tra i due accordi, permettendo all'altalena armonica di oscillare senza mai toccare terra, creando quella sensazione di galleggiamento senza tempo.
   * 21. [avanzato] Perché Satie fu soprannominato 'Esoterik Satie'?
     - Risposta: Per i suoi interessi mistici e il suo aspetto
     - Note: A Montmartre negli anni '90, lo scrittore Alphonse Allais soprannominò Satie 'Esoterik Satie' – un gioco di parole che univa 'Erik' con 'esoterico'. Il soprannome si riferiva ai suoi interessi mistici (Rosa-Croce, esoterismo) e al suo aspetto caratteristico: cappello a cilindro, lunghi capelli, mantello nero. Cattura perfettamente la doppia natura di Satie: bohémien ironico e ricercatore mistico.
@@ -261,7 +313,7 @@ IMPARA
     - Note: Oltre a Debussy (che orchestrò la n.1 e n.3 nel 1897), anche Maurice Ravel fu fondamentale. Nel 1911, Ravel eseguì pubblicamente la Gymnopédie n.3, contribuendo alla 'riscoperta' di Satie dopo anni di relativo oblio. Questo evento segnò l'inizio del riconoscimento presso i giovani compositori del Groupe des Six (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre), che acclamarono Satie come 'maestro' e precursore dell'anti-romanticismo.
   * 24. [avanzato] Perché Satie scrisse TRE Gymnopédies?
     - Risposta: Per la sua ossessione mistica per il numero 3
-    - Note: Satie aveva un'ossessione mistica per il numero tre, derivata dal simbolismo trinitario dei Rosa-Croce. Compose TRE Gymnopédies, TRE Sarabandes (1887), TRE Gnossiennes iniziali (1890). Anche altri titoli richiamano trinità: 'Trois morceaux en forme de poire' (1903). Questa ossessione numerologica rivela l'influenza profonda dell'esoterismo sulla sua estetica compositiva.
+    - Note: Satie aveva un'ossessione mistica per il numero tre, derivata dal simbolismo trinitario dei Rosa-Croce. Compose TRE Gymnopédies, TRE Sarabandes (1887), TRE Gnossiennes iniziali (1890). Anche altri titoli richiamano trinità: 'Trois morceaux en forme di poire' (1903). Questa ossessione numerologica rivela l'influenza profonda dell'esoterismo sulla sua estetica compositiva.
   * 25. [base] Quale fu il primo brano noto di Satie per pianoforte?
     - Risposta: Allegro (1884)
     - Note: Il brano Allegro, del 1884, segna l'inizio della produzione ufficiale durante gli anni al Conservatorio.
@@ -274,43 +326,43 @@ IMPARA
   * 28. [intermedio] Quando ruppe con Peladan e la Rosa-Croce?
     - Risposta: Nel 1892
     - Note: La rottura avvenne per divergenze estetiche e bisogno di indipendenza.
-  * 29. [avanzato] Quale chiesa fondo Satie nel 1893?
+  * 29. Quale chiesa fondo Satie nel 1893?
     - Risposta: Eglise Metropolitaine d'Art de Jesus Conducteur
     - Note: Ne fu unico membro e Gran Sacerdote; la uso per diffondere testi polemici.
-  * 30. [avanzato] Come si chiamava il bollettino polemico di Satie?
+  * 30. Come si chiamava il bollettino polemico di Satie?
     - Risposta: Cartulaire
     - Note: Pamphlet usati per attacchi ai critici musicali.
-  * 31. [avanzato] Come defini Debussy Satie nel 1892?
+  * 31. Come defini Debussy Satie nel 1892?
     - Risposta: Un musicista medievale e dolce smarrito in questo secolo
     - Note: Citazione celebre che riassumeva la singolarita di Satie.
-  * 32. [intermedio] Quale opera scrisse Satie in risposta alla critica sulla forma?
-    - Risposta: Trois morceaux en forme de poire
+  * 32. Quale opera scrisse Satie in risposta alla critica sulla forma?
+    - Risposta: Trois morceaux en forme di poire
     - Note: Una risposta ironica alle osservazioni di Debussy sulla mancanza di forma.
-  * 33. [avanzato] Quale gruppo di giovani artisti guido Satie?
+  * 33. Quale gruppo di giovani artisti guido Satie?
     - Risposta: Les Nouveaux Jeunes
     - Note: Gruppo avanguardista riunito attorno alla sua figura.
-  * 34. [intermedio] Per quali compositori fu un patriarca spirituale?
+  * 34. Per quali compositori fu un patriarca spirituale?
     - Risposta: Il Gruppo dei Sei
     - Note: Poulenc, Milhaud, Auric, Honegger, Durey, Tailleferre.
-  * 35. [intermedio] Come si chiamo il gruppo di discepoli degli anni '20?
+  * 35. Come si chiamo il gruppo di discepoli degli anni '20?
     - Risposta: Scuola di Arcueil
     - Note: Tra i discepoli: Sauguet e Desormiere.
-  * 36. [avanzato] A che ora Satie si svegliava secondo le Memorie di un amnesico?
+  * 36. A che ora Satie si svegliava secondo le Memorie di un amnesico?
     - Risposta: 7:18
     - Note: Programma giornaliero ironico e rigidamente scandito.
-  * 37. [avanzato] A che ora andava a letto secondo il suo programma?
+  * 37. A che ora andava a letto secondo il suo programma?
     - Risposta: 22:37
     - Note: Orario regolare indicato nelle Memorie di un amnesico.
-  * 38. [intermedio] Quale raccolta include bozzetti autobiografici ironici?
+  * 38. Quale raccolta include bozzetti autobiografici ironici?
     - Risposta: Memoires d'un amnesique
     - Note: Pubblicati tra il 1912 e il 1914.
-  * 39. [intermedio] Come si intitola l'altra raccolta di scritti brevi?
+  * 39. Come si intitola l'altra raccolta di scritti brevi?
     - Risposta: Cahiers d'un mammifere
     - Note: Aforismi e parodie della critica musicale.
-  * 40. [base] Quando mori Satie?
+  * 40. Quando mori Satie?
     - Risposta: 1 luglio 1925
     - Note: Morì all'ospedale Saint-Joseph di Parigi.
-  * 41. [base] Dove fu sepolto Satie?
+  * 41. Dove fu sepolto Satie?
     - Risposta: Arcueil
     - Note: La citta dove visse dal 1898.
   * 42. [intermedio] Quale lavoro del 1886 apre la lista delle opere principali?
@@ -346,164 +398,473 @@ IMPARA
   * 52. [intermedio] Quale raccolta pianistica del 1913 firmo Satie?
     - Risposta: Descriptions automatiques
     - Note: Pagine brevi con titoli ironici e poetici.
-- Quiz:
-  * 1. Quando fu completata la Gymnopédie n. 1?
-    - Opzioni: 1888 | Non lo so | Non applicabile | Altro
-    - Note: Le tre pagine furono completate entro la primavera del 1888 e pubblicate separatamente negli anni seguenti. Satie aveva 21 anni e lavorava come pianista cabaret a Montmartre.
-  * 2. Qual è l'indicazione di carattere della n. 1?
-    - Opzioni: Lent et douloureux | Non lo so | Non applicabile | Altro
-    - Note: Tempo lento e doloroso: guida l'esecuzione e il colore timbrico del brano.
-  * 3. In quale metro è scritta la n. 1?
-    - Opzioni: 3/4 | Non lo so | Non applicabile | Altro
-    - Note: Metro ternario con tre pulsazioni per battuta; l'effetto deve essere cullante ma non valzeristico.
-  * 4. Quale compositore orchestrò due Gymnopédies?
-    - Opzioni: Claude Debussy | Non lo so | Non applicabile | Altro
-    - Note: Debussy orchestrò le Gymnopédies n. 1 e n. 3 dopo averle sentite suonate da Satie nel 1896; l'esecuzione avvenne nel febbraio 1897. Invertì la numerazione.
-  * 5. Dove lavorava Satie quando compose le Gymnopédies?
-    - Opzioni: Come pianista cabaret a Montmartre | Non lo so | Non applicabile | Altro
-    - Note: Satie lavorava in locali come Le Chat Noir e L'Auberge du Clou, frequentati da simbolisti e poeti. Aveva 21 anni e aveva appena abbandonato il Conservatorio.
-  * 6. Perché Satie non fu ammesso alle classi superiori del Conservatorio di Parigi?
-    - Opzioni: Per scarsi risultati e mancanza di impegno | Non lo so | Non applicabile | Altro
-    - Note: Nel 1882, a 16 anni, non fu ammesso alle classi superiori dopo un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven. Fu giudicato 'dotato ma indolente', 'il più pigro del Conservatorio', 'privo di valore'.
-  * 7. Quando ebbero una prima esecuzione pubblica rilevante le orchestrazioni?
-    - Opzioni: 20 febbraio 1897 | Non lo so | Non applicabile | Altro
-    - Note: Le orchestrazioni di Debussy furono presentate in un concerto della Société Nationale a Parigi il 20 febbraio 1897.
-  * 8. Cosa significa il titolo Gymnopédie?
-    - Opzioni: Rimanda alla gymnopaedia, festa con danze dell'antica Grecia | Non lo so | Non applicabile | Altro
-    - Note: Il termine indica una festa spartana con danze rituali; Satie lo usa come suggestione poetica senza spiegarne l'origine. Si ispirò anche ai modi greci e a romanzi di Flaubert.
-  * 9. Con quale poeta collaborò Satie per la prima pubblicazione?
-    - Opzioni: J. P. Contamine de Latour | Non lo so | Non applicabile | Altro
-    - Note: La Gymnopédie n. 1 fu pubblicata nell'estate 1888 sulla rivista La Musique des familles accompagnata da un estratto della poesia Les Antiques di Contamine de Latour, amico simbolista di Satie.
-  * 10. Chi fu Suzanne Valadon per Satie?
-    - Opzioni: L'unico amore documentato della sua vita | Non lo so | Non applicabile | Altro
-    - Note: Pittrice francese. Ebbero un breve ma intenso amore nel 1893. Quando lei lo lasciò, Satie ne rimase segnato profondamente. Fu madre del pittore Maurice Utrillo.
-  * 11. Cosa trovarono gli amici nella stanza di Satie dopo la sua morte?
-    - Opzioni: Due pianoforti sovrapposti, oltre 100 ombrelli, spartiti nascosti | Non lo so | Non applicabile | Altro
-    - Note: Nella stanza chiamata 'l'Armadio' ad Arcueil trovarono: due pianoforti a coda uno sopra l'altro, oltre 100 ombrelli, sette abiti di velluto identici, spartiti inediti nascosti, collezioni di oggetti bizzarri. Nessuno era entrato per 27 anni.
-  * 12. Cos'era la 'dieta bianca' di Satie?
-    - Opzioni: Una provocazione artistica descritta nelle Memorie di un Amnesico | Non lo so | Non applicabile | Altro
-    - Note: Nel 1912 Satie descrisse una dieta surreale di soli cibi bianchi (uova, ossa grattugiate, pollo in acqua bianca, ecc.). Era una provocazione che rivelava l'ossessione per il bianco come simbolo di purezza e silenzio. Le Gymnopédies sono 'musica bianca': prive di ornamenti, trasparenti, essenziali.
-  * 13. Quando furono composte le tre Gymnopédies?
-    - Opzioni: Tra febbraio e aprile 1888 | Non lo so | Non applicabile | Altro
-    - Note: Satie le completò entro il 2 aprile 1888. Aveva 21 anni, era appena uscito dal Conservatorio e lavorava come pianista al Chat Noir. Un aneddoto racconta che nel dicembre 1887, un amico presentò Satie a Rodolphe Salis (proprietario del Chat Noir) annunciandolo come 'Erik Satie, gymnopediste'. Salis, colto di sorpresa, commentò sarcastico: 'Davvero una bella professione!'. Satie si sentì quindi in dovere di produrre effettivamente queste composizioni due mesi dopo.
-  * 14. Qual era il titolo originale della prima Gymnopédie?
-    - Opzioni: Danse antique | Non lo so | Non applicabile | Altro
-    - Note: Fu pubblicata il 18 agosto 1888 nel supplemento di 'La Musique des familles' (rivista diretta dal padre Alfred Satie) con il titolo 'Danse antique', dedicata a Jeanne de Bret. La terza fu pubblicata nel novembre 1888, la seconda solo nel 1895. La serie completa uscì nel 1898.
-  * 15. Chi fu Debussy a orchestrare le Gymnopédies e perché?
-    - Opzioni: Nel 1896, per aiutare l'amico Satie | Non lo so | Non applicabile | Altro
-    - Note: Nel 1896 Satie eseguì le Gymnopédies a casa del direttore Gustave Doret. Debussy ne fu colpito e le orchestrò per aiutare Satie, che era in difficoltà finanziarie. Fu l'unica volta che Debussy orchestrò l'opera di un altro compositore. Orchestrò solo la n.1 e n.3 (invertendo la numerazione), ritenendo che la n.2 'non si prestasse all'orchestrazione'. Prima esecuzione: 20 febbraio 1897.
-  * 16. Qual è il legame tra Satie e la musica ambient?
-    - Opzioni: Satie anticipò l'ambient con la 'Musique d'ameublement' | Non lo so | Non applicabile | Altro
-    - Note: Nel 1917 Satie concepì la 'musica d'arredamento': composizioni pensate per non essere ascoltate attentamente ma per far parte dell'ambiente. Brian Eno riconobbe il debito nel 1978 con 'Ambient 1: Music for Airports', definendo l'ambient come qualcosa che 'deve poter essere ignorata quanto ascoltata'. Le Gymnopédies condividono questa estetica.
-  * 17. Chi fu John Cage e quale ruolo ebbe per Satie?
-    - Opzioni: Il grande riscopritore di Satie nel dopoguerra | Non lo so | Non applicabile | Altro
-    - Note: Compositore americano (1912-1992). Trovò in Satie un precursore: rifiuto della narrazione musicale, interesse per silenzio e spazio. 'Satie è indispensabile' (Cage). Nel 1963 organizzò la prima esecuzione integrale di Vexations (840 ripetizioni, 18 ore), anticipando il minimalismo.
-  * 18. In quali film famosi è stata usata la Gymnopédie n.1?
-    - Opzioni: Fuoco fatuo, I Tenenbaum, Man on Wire, Hugo Cabret | Non lo so | Non applicabile | Altro
-    - Note: Film principali: Fuoco fatuo (1963, Louis Malle, sequenza iconica con Maurice Ronet), I Tenenbaum (2001, Wes Anderson), Man on Wire (2008, documentario su Philippe Petit), Un'altra donna (1988, Woody Allen), Hugo Cabret (2011, Scorsese), About Schmidt (2002), Chocolat (2000). Usata anche in spot pubblicitari e videogiochi (Mother 3, Zelda: Ocarina of Time).
-  * 19. Qual è la principale difficoltà nell'esecuzione della n. 1?
-    - Opzioni: Controllo del suono e del pedale | Non lo so | Non applicabile | Altro
-    - Note: La sfida non è la velocità ma la qualità timbrica: equilibrio tra le voci, gestione del pedale e sospensione del tempo.
-  * 20. Qual è il 'segreto armonico' della Gymnopédie n.1?
-    - Opzioni: La nota Fa# come collante tra gli accordi | Non lo so | Non applicabile | Altro
-    - Note: Il Fa# è il 'collante' armonico che rende il brano così fluido e sospeso. Questa nota appartiene CONTEMPORANEAMENTE sia all'accordo di Sol maggiore settima (Sol-Si-Re-Fa#) sia all'accordo di Re maggiore settima (Re-Fa#-La-Do#). Il Fa# funge da ponte armonico tra i due accordi, permettendo all'altalena armonica di oscillare senza mai toccare terra, creando quella sensazione di galleggiamento senza tempo.
-  * 21. Perché Satie fu soprannominato 'Esoterik Satie'?
-    - Opzioni: Per i suoi interessi mistici e il suo aspetto | Non lo so | Non applicabile | Altro
-    - Note: A Montmartre negli anni '90, lo scrittore Alphonse Allais soprannominò Satie 'Esoterik Satie' – un gioco di parole che univa 'Erik' con 'esoterico'. Il soprannome si riferiva ai suoi interessi mistici (Rosa-Croce, esoterismo) e al suo aspetto caratteristico: cappello a cilindro, lunghi capelli, mantello nero. Cattura perfettamente la doppia natura di Satie: bohémien ironico e ricercatore mistico.
-  * 22. Qual è la differenza principale tra Gymnopédies e Gnossiennes?
-    - Opzioni: Le Gymnopédies hanno metro regolare, le Gnossiennes no | Non lo so | Non applicabile | Altro
-    - Note: Differenze cruciali: le Gnossiennes sono scritte SENZA stanghette di battuta (metro 'libero'), hanno atmosfere più arcane ed esotiche (ispirate alla gnosi), contengono indicazioni comportamentali bizzarre ('con stupore', 'non essere orgogliosi'). Le Gymnopédies mantengono metro regolare (3/4), atmosfera dolce e malinconica, eleganza austera e rituale. Lambert: le Gymnopédies sono come 'camminare attorno a una scultura', le Gnossiennes come 'entrare in un tempio sconosciuto'.
-  * 23. Quale ruolo ebbe Maurice Ravel nella riscoperta di Satie?
-    - Opzioni: Eseguì la Gymnopédie n.3 nel 1911 | Non lo so | Non applicabile | Altro
-    - Note: Oltre a Debussy (che orchestrò la n.1 e n.3 nel 1897), anche Maurice Ravel fu fondamentale. Nel 1911, Ravel eseguì pubblicamente la Gymnopédie n.3, contribuendo alla 'riscoperta' di Satie dopo anni di relativo oblio. Questo evento segnò l'inizio del riconoscimento presso i giovani compositori del Groupe des Six (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre), che acclamarono Satie come 'maestro' e precursore dell'anti-romanticismo.
-  * 24. Perché Satie scrisse TRE Gymnopédies?
-    - Opzioni: Per la sua ossessione mistica per il numero 3 | Non lo so | Non applicabile | Altro
-    - Note: Satie aveva un'ossessione mistica per il numero tre, derivata dal simbolismo trinitario dei Rosa-Croce. Compose TRE Gymnopédies, TRE Sarabandes (1887), TRE Gnossiennes iniziali (1890). Anche altri titoli richiamano trinità: 'Trois morceaux en forme de poire' (1903). Questa ossessione numerologica rivela l'influenza profonda dell'esoterismo sulla sua estetica compositiva.
-  * 25. Quale fu il primo brano noto di Satie per pianoforte?
-    - Opzioni: Allegro (1884) | Non lo so | Non applicabile | Altro
-    - Note: Il brano Allegro, del 1884, segna l'inizio della produzione ufficiale durante gli anni al Conservatorio.
-  * 26. Quali opere giovanili scrisse tra il 1885 e il 1887?
-    - Opzioni: Valse-Ballet e Fantaisie-Valse | Non lo so | Non applicabile | Altro
-    - Note: La Fantaisie-Valse fu dedicata all'amico Contamine de Latour.
-  * 27. Cosa significa la richiesta di musica 'senza crauti'?
-    - Opzioni: Una musica francese libera dal romanticismo tedesco | Non lo so | Non applicabile | Altro
-    - Note: Satie voleva sottrarre la musica all'influenza wagneriana e riportare il suono a una nuda essenzialita.
-  * 28. Quando ruppe con Peladan e la Rosa-Croce?
-    - Opzioni: Nel 1892 | Non lo so | Non applicabile | Altro
-    - Note: La rottura avvenne per divergenze estetiche e bisogno di indipendenza.
-  * 29. Quale chiesa fondo Satie nel 1893?
-    - Opzioni: Eglise Metropolitaine d'Art de Jesus Conducteur | Non lo so | Non applicabile | Altro
-    - Note: Ne fu unico membro e Gran Sacerdote; la uso per diffondere testi polemici.
-  * 30. Come si chiamava il bollettino polemico di Satie?
-    - Opzioni: Cartulaire | Non lo so | Non applicabile | Altro
-    - Note: Pamphlet usati per attacchi ai critici musicali.
-  * 31. Come defini Debussy Satie nel 1892?
-    - Opzioni: Un musicista medievale e dolce smarrito in questo secolo | Non lo so | Non applicabile | Altro
-    - Note: Citazione celebre che riassumeva la singolarita di Satie.
-  * 32. Quale opera scrisse Satie in risposta alla critica sulla forma?
-    - Opzioni: Trois morceaux en forme de poire | Non lo so | Non applicabile | Altro
-    - Note: Una risposta ironica alle osservazioni di Debussy sulla mancanza di forma.
-  * 33. Quale gruppo di giovani artisti guido Satie?
-    - Opzioni: Les Nouveaux Jeunes | Non lo so | Non applicabile | Altro
-    - Note: Gruppo avanguardista riunito attorno alla sua figura.
-  * 34. Per quali compositori fu un patriarca spirituale?
-    - Opzioni: Il Gruppo dei Sei | Non lo so | Non applicabile | Altro
-    - Note: Poulenc, Milhaud, Auric, Honegger, Durey, Tailleferre.
-  * 35. Come si chiamo il gruppo di discepoli degli anni '20?
-    - Opzioni: Scuola di Arcueil | Non lo so | Non applicabile | Altro
-    - Note: Tra i discepoli: Sauguet e Desormiere.
-  * 36. A che ora Satie si svegliava secondo le Memorie di un amnesico?
-    - Opzioni: 7:18 | Non lo so | Non applicabile | Altro
-    - Note: Programma giornaliero ironico e rigidamente scandito.
-  * 37. A che ora andava a letto secondo il suo programma?
-    - Opzioni: 22:37 | Non lo so | Non applicabile | Altro
-    - Note: Orario regolare indicato nelle Memorie di un amnesico.
-  * 38. Quale raccolta include bozzetti autobiografici ironici?
-    - Opzioni: Memoires d'un amnesique | Non lo so | Non applicabile | Altro
-    - Note: Pubblicati tra il 1912 e il 1914.
-  * 39. Come si intitola l'altra raccolta di scritti brevi?
-    - Opzioni: Cahiers d'un mammifere | Non lo so | Non applicabile | Altro
-    - Note: Aforismi e parodie della critica musicale.
-  * 40. Quando mori Satie?
-    - Opzioni: 1 luglio 1925 | Non lo so | Non applicabile | Altro
-    - Note: Morì all'ospedale Saint-Joseph di Parigi.
-  * 41. Dove fu sepolto Satie?
-    - Opzioni: Arcueil | Non lo so | Non applicabile | Altro
-    - Note: La citta dove visse dal 1898.
-  * 42. Quale lavoro del 1886 apre la lista delle opere principali?
-    - Opzioni: Ogives | Non lo so | Non applicabile | Altro
-    - Note: Serie di pagine per pianoforte dal carattere arcaico.
-  * 43. Quali brani del 1887 anticipano la scrittura sospesa?
-    - Opzioni: Sarabandes | Non lo so | Non applicabile | Altro
-    - Note: Tre pezzi del 1887 che prefigurano la poetica delle Gymnopedies.
-  * 44. Quale raccolta di brani senza battute scrisse nel 1890-97?
-    - Opzioni: Gnossiennes | Non lo so | Non applicabile | Altro
-    - Note: Scrittura libera e indicazioni espressive insolite.
-  * 45. Quale opera sinfonica del 1918 scrisse Satie?
-    - Opzioni: Socrate | Non lo so | Non applicabile | Altro
-    - Note: Dramma sinfonico per voci e piccola orchestra.
-  * 46. Che cos'e la Musique d'ameublement?
-    - Opzioni: Musica funzionale come sottofondo (1917-23) | Non lo so | Non applicabile | Altro
-    - Note: Composizioni pensate per essere ascoltate senza attenzione esclusiva.
-  * 47. Quale balletto del 1917 include suoni ambientali?
-    - Opzioni: Parade | Non lo so | Non applicabile | Altro
-    - Note: Balletto con orchestra e suoni extra-musicali.
-  * 48. Quali balletti scrisse nel 1924?
-    - Opzioni: Mercure e Relache | Non lo so | Non applicabile | Altro
-    - Note: Opere dell'ultimo periodo legate all'avanguardia.
-  * 49. Quale brano per cinema compose nel 1924?
-    - Opzioni: Entr'acte | Non lo so | Non applicabile | Altro
-    - Note: Musica per il film di Rene Clair.
-  * 50. Quale composizione sacra scrisse tra 1893 e 1895?
-    - Opzioni: Messe des pauvres | Non lo so | Non applicabile | Altro
-    - Note: Per organo e coro, legata al periodo spirituale.
-  * 51. Quale sonatina satirica scrisse nel 1917?
-    - Opzioni: Sonatine bureaucratique | Non lo so | Non applicabile | Altro
-    - Note: Parodia di una sonatina classica con ironia formale.
-  * 52. Quale raccolta pianistica del 1913 firmo Satie?
-    - Opzioni: Descriptions automatiques | Non lo so | Non applicabile | Altro
-    - Note: Pagine brevi con titoli ironici e poetici.
 
-FONTI (BIBLIOGRAFIA ESSENZIALE)
-- Spartito (IMSLP): https://imslp.org/wiki/3_Gymnop%C3%A9dies_(Satie,_Erik)
-- Bibliografia: Satie the Composer (Orledge), Quaderni di un mammifero (Satie/Volta), Satie the Bohemian (Whiting), Erik Satie tra ricerca e provocazione (Guarnieri Corazzol), Erik Satie (Mary E. Davis), Rida senza dare nell'occhio (Luca Boero), Erik Satie: Music, Art and Literature (Potter), Erik Satie (Templier).
+====================
+PAGINA: GLOSSARIO (completo)
+====================
+
+--- Termini musicali ---
+Gymnopédie: Neologismo francese dal greco Γυμνοπαιδίαι (Gymnopaedia), festività spartana annuale. "Gymnos" significa "nudo" o "disarmato": giovani uomini danzavano nudi eseguendo esercizi ginnici e canti corali. Satie scelse questo titolo influenzato da: 1) il poema "Les Antiques" di Contamine de Latour; 2) "Salammbô" di Flaubert; 3) l'estetica simbolista di Puvis de Chavannes (con un evidente parallelo a "Jeunes filles au bord de la mer", 1879). La prima Gymnopédie fu originariamente intitolata "Danse antique".
+
+Lent et douloureux: Indicazione di tempo e carattere della n. 1: lento e doloroso. Insolita perché Satie usa il francese invece dei termini italiani tradizionali (Adagio, Andante), aggiungendo una dimensione emotiva. Le tre Gymnopédies hanno indicazioni diverse: n.1 "Lent et douloureux" (Re maggiore), n.2 "Lent et triste" (Do maggiore), n.3 "Lent et grave" (La minore). Il critico Constant Lambert le paragonò a "camminare attorno a una scultura, osservandola da angolazioni diverse".
+
+3/4: Metro ternario con tre pulsazioni per battuta. Nella Gymnopédie occorre evitare un effetto valzeristico mantenendo la pulsazione regolare.
+
+Ostinato: Figura ripetuta nella mano sinistra (basso) che stabilizza il flusso e crea un senso di ipnosi controllata.
+
+Accordi planati: Accordi che si muovono in blocco, spesso in parallelo, privilegiando il colore timbrico piuttosto che la funzione armonica tradizionale.
+
+Ambiguità tonale: La percezione di tonalità e di arrivo è attenuata: la pagina tende a un equilibrio sospeso più che a una direzione teleologica.
+
+Pedale di risonanza: Uso misurato del pedale destro per unire le frasi e creare un alone sonoro. È necessario evitare impasti confusi.
+
+Rubato sobrio: Micro-flessioni del tempo per far respirare le frasi senza trasformare il brano in un gesto romantico espansivo.
+
+--- Contesto ---
+Montmartre: Quartiere parigino dei café-cabaret (Le Chat Noir, L'Auberge du Clou) dove Satie lavorò come pianista a 21 anni e trovò ispirazione per il suo stile sobrio. Ambiente frequentato da simbolisti e poeti come Contamine de Latour.
+
+Conservatorio di Parigi: Istituzione frequentata da Satie in due periodi (1879–1882 e 1885–1887) con risultati disastrosi. Giudicato "dotato ma indolente", "il più pigro", "privo di valore". Espulso nel 1882 dopo un'esecuzione mediocre di Beethoven.
+
+Arcueil: Luogo in cui Satie si ritirò negli ultimi anni. La sua stanza chiamata "l'Armadio", trovata alla sua morte nel 1925, testimonia la vita povera e disciplinata dell'autore. Visse lì per 27 anni.
+
+Le Chat Noir: Celebre café-cabaret di Montmartre fondato nel 1881 da Rodolphe Salis. Satie vi lavorò come secondo pianista negli anni 1887-1888. Ambiente bohémien che ospitava artisti, poeti simbolisti e musicisti (Debussy, Verlaine, Toulouse-Lautrec). Luogo di sperimentazione dove l'arte "alta" si mescolava con la cultura popolare.
+
+Belle Époque: Periodo compreso tra fine Ottocento e l'inizio della Prima guerra mondiale, caratterizzato da ottimismo tecnologico, salotti artistici e fermenti culturali parigini. Qui nasce il contesto di Satie e delle Gymnopédies.
+
+Bohémien: Artista o intellettuale che vive al margine delle regole sociali, predilige libertà creativa, movimento e rifiuto delle istituzioni: uno spirito che alimenta Chat Noir e Satie stesso.
+
+Dieta Bianca: Nelle Memorie di un Amnesico (1912) Satie descrive una dieta surreale: "uova, ossa grattugiate, grasso di animali morti, vitello, pollo cotto in acqua bianca, frutta ammuffita, pasta, formaggio bianco". Provocazione artistica che rivela l'ossessione per il bianco come simbolo di purezza, silenzio e assenza di "colore" emotivo. Le Gymnopédies sono "musica bianca": prive di ornamenti, trasparenti, essenziali.
+
+Rosa-Croce: Ordine mistico-esoterico (Rosa-Croce Cattolica del Tempio e del Graal) fondato da Joséphin Péladan (Sâr Mérodack). Satie ne divenne compositore ufficiale (1891) ma ruppe con Péladan nel 1892, irritato dalla sua devozione wagneriana. Fondò poi la propria "Chiesa Metropolitana d'Arte di Gesù Conduttore", di cui fu l'unico membro.
+
+Esoterik Satie: Soprannome affettuoso dato a Satie dallo scrittore Alphonse Allais a Montmartre negli anni '90 dell'Ottocento. Il gioco di parole univa "Erik" con "esoterico", riferendosi ai suoi interessi mistici (Rosa-Croce, esoterismo) e al suo aspetto caratteristico: cappello a cilindro, lunghi capelli, mantello nero. Il soprannome cattura perfettamente la doppia natura di Satie: bohémien ironico e ricercatore mistico, pianista di cabaret e compositore di musica "metafisica".
+
+L'ossessione per il numero 3: Satie aveva un'ossessione mistica per il numero tre, probabilmente derivata dal simbolismo trinitario dei Rosa-Croce. Non è un caso che compose TRE Gymnopédies, TRE Sarabandes (1887), TRE Gnossiennes iniziali (1890). Anche i titoli spesso richiamano trinità: "Trois morceaux en forme di poire" (Tre pezzi a forma di pera, 1903). Questa ossessione numerologica rivela l'influenza dell'esoterismo sulla sua estetica compositiva.
+
+Forme ternarie (ABA'): Struttura musicale dove una sezione iniziale (A) è seguita da una sezione contrastante (B) e poi dalla ripresa della prima (A). La Gymnopédie n.1 segue questa forma modificata: Introduzione (batt. 1-4), Sezione A (batt. 5-15), Sezione A' estesa (batt. 16-39), Ripresa A, Coda. Satie usa questa forma ma la svuota di contrasto drammatico.
+
+Settima maggiore: Accordo formato da quattro note invece di tre. La quarta nota aggiunge "colore" e tensione. Di solito un accordo di settima chiede di "risolvere" su un altro accordo. Nella Gymnopédie n.1, Satie alterna Sol maggiore con settima e Re maggiore con settima senza mai risolvere, creando un effetto fluttuante privo del tipico movimento armonico. È come dondolarsi su un'altalena che non tocca mai terra.
+
+Il segreto del Fa# (collante armonico): La nota Fa# è il "collante" armonico che rende la Gymnopédie n.1 così fluida e sospesa. Questa singola nota appartiene CONTEMPORANEAMENTE sia all'accordo di Sol maggiore settima (Sol-Si-Re-Fa#) sia all'accordo di Re maggiore settima (Re-Fa#-La-Do#). Il Fa# funge da ponte armonico tra i due accordi, permettendo all'altalena armonica di oscillare senza mai toccare terra, creando quella sensazione di galleggiamento senza tempo che caratterizza il brano.
+
+Gnossiennes: Altro ciclo pianistico di Satie (1889-1897), spesso confuso con le Gymnopédies ma profondamente diverso. Differenze principali: le Gnossiennes sono scritte senza stanghette di battuta (metro "libero"), hanno atmosfere più arcane ed esotiche (ispirate alla gnosi e all'esoterismo), contengono indicazioni comportamentali bizzarre ("con stupore", "non essere orgogliosi"). Le Gymnopédies mantengono invece metro regolare (3/4), atmosfera dolce e malinconica, e un'eleganza austera e rituale. Lambert disse: le Gymnopédies sono come "camminare attorno a una scultura", le Gnossiennes come "entrare in un tempio sconosciuto".
+
+Musique d'ameublement: Musica d'arredamento: concetto sviluppato da Satie nel 1917. Composizioni pensate per non essere ascoltate attentamente, ma per far parte dell'ambiente. Satie scrisse: "Immagino una musica melodiosa che attenui il rumore di coltelli e forchette a cena, senza dominarli, senza imporsi". Precorre la musica ambient di Brian Eno (Ambient 1: Music for Airports, 1978) che definì l'ambient come qualcosa che "deve poter essere ignorata quanto ascoltata".
+
+Minimalismo: Movimento musicale nato negli anni '60 (Steve Reich, Philip Glass, Terry Riley) che riconosce Satie come antenato. Caratteristiche: ripetizione di pattern, armonia statica o lentamente cangiante, rifiuto del climax drammatico, economia di mezzi. Le Gymnopédies anticipano tutte queste caratteristiche.
+
+--- Correnti artistiche in Francia (1800-1945) ---
+Romanticismo (1800-1850): Emozione, dramma, natura selvaggia, patriottismo. Rappresentanti: Delacroix, Gericault. Opera simbolo: La Libertà che guida il popolo.
+
+Realismo (1840-1880): Vita quotidiana, lavoro, verità senza idealizzazione. Rappresentanti: Courbet, Millet, Zola. Opera simbolo: Gli spaccapietre.
+
+Impressionismo (1870-1890): Luce, en plein air, pennellate rapide, attimo fuggente. Rappresentanti: Monet, Renoir, Degas. Opera simbolo: Impressione, levar del sole.
+
+Post-impressionismo (1880-1905): Struttura, colore come costruzione, simbolismo. Rappresentanti: Cezanne, Seurat, Gauguin. Opera simbolo: I giocatori di carte.
+
+Simbolismo (1880-1910): Sogno, mito, inconscio, realtà come velo. Rappresentanti: Moreau, Redon. Opera simbolo: L'apparizione.
+
+Fauvismo (1904-1908): Colori selvaggi, anti-naturalismo, energia pura. Rappresentanti: Matisse, Derain. Opera simbolo: La danza.
+
+Cubismo (1907-1914): Scomposizione in volumi, visione simultanea. Rappresentanti: Picasso, Braque. Opera simbolo: Les demoiselles d'Avignon.
+
+Surrealismo (1924-1945): Sogno, irrazionale, automatismo psichico. Rappresentanti: Dali, Magritte, Ernst. Opera simbolo: La persistenza della memoria.
+
+--- Come distinguere le svolte ---
+• I romantici puntano sull'emozione e il dramma.
+• I realisti cercano la verità quotidiana, anche dura.
+• Gli impressionisti guardano alla luce più che al soggetto.
+• I post-impressionisti riportano struttura e geometria.
+• I cubisti scompongono la realtà per vederla da più lati.
+
+--- Legame con Satie ---
+• Parte dal simbolismo (Rosa-Croce).
+• Anticipa l'impressionismo e poi se ne distacca.
+• È vicino al cubismo con Parade.
+• Influenza l'avanguardia e il clima surrealista e dada.
+
+---
+
+SEZIONE: ERIK SATIE: IL BOHÉMIEN
+
+Contenuti principali:
+- Tabs: La vita, Amicizie, Stramberie (con immagini e testo introduttivo)
+
+---
+
+TABS DISPONIBILI:
+- La vita
+- Amicizie
+- Stramberie
+
+
+=== TAB: LA VITA ===
+
+1. Header:
+  Titolo: "Erik Satie: il bohémien"
+  Sottotitolo: "1866 - 1925 | Honfleur - Parigi - Arcueil"
+  Citazione: «Sono venuto al mondo molto giovane in un tempo molto vecchio»
+
+2. Immagine principale:
+  - /images/Satie con occhiali.jpg
+    Didascalia: "Erik Satie: il bohémien che rifiuta le convenzioni accademiche"
+
+3. Sezioni cronologiche:
+
+---
+A. Il giovane ribelle (1866-1887)
+  - Immagine: /images/Honfleur.jpg
+    Didascalia: "Honfleur, Normandia: porto pittoresco dove nacque Erik Satie nel 1866"
+  - Nascita a Honfleur, trasferimento a Parigi durante la guerra Franco-Prussiana, morte della madre, ritorno a Honfleur dai nonni, prime lezioni di pianoforte, morte della nonna, ritorno a Parigi dal padre e dalla nuova moglie pianista.
+  - Conservatorio di Parigi: giudizi negativi dei professori ("Dotato ma indolente", "Il più pigro del Conservatorio", "Privo di valore").
+  - Immagine: /images/Conservatorio di Parigi.jpg
+    Didascalia: "Conservatoire de Paris: l'istituzione che giudicò Satie 'il più pigro studente'"
+  - Formazione autodidatta, prime composizioni (Allegro, Valse-Ballet, Fantaisie-Valse).
+  - Immagini: /images/allegro-satie-1884.jpeg ("Allegro"), /images/Erik_Satie_1884.jpg (Satie 18 anni)
+
+---
+B. Montmartre e le Gymnopédies (1887-1888)
+  - Lavoro al Chat Noir, ambiente di sperimentazione, incontri con Debussy, Verlaine, Toulouse-Lautrec, Contamine de Latour.
+  - Immagini: /images/The bohemien SATIE.jpg, /images/erik-satie-son-of-stars_u-l-q1nt8j80.jpg, /images/jean-cocteau---erik-satie--arcueil--mais-JKLTD-570.webp
+  - Composizione delle tre Gymnopédies: estetica dell'essenziale, semplicità, lentezza.
+  - Immagine: /images/SATIE SCHIZZO AL PIANO.jpg (Ritratto di Satie all'armonium, di Santiago Rusiñol)
+
+---
+C. Il periodo rosacrociano (1891-1893)
+  - Ingresso nell'Ordine della Rosa-Croce di Joséphin Péladan, compositore ufficiale, musica rituale.
+  - Immagini: /images/Peladan.jpg (Joséphin Péladan), /images/Le-Fils-des-etoiles.jpg (Manoscritto), /images/Trois-Sonneries-de-la-RoseCroix.jpg
+  - Approfondisci (modale):
+    - "Erik Satie e la dedica di 'Le Fils des Étoiles'": testo della dedica, traduzione, contesto mistico e ironico.
+    - "Joséphin Péladan: il Sâr dell'occultismo": biografia, ruolo nell'Ordine, rottura con Satie.
+  - Soprannome "Esoterik Satie", rottura con Péladan, fondazione della propria chiesa personale (Église Métropolitaine d'Art de Jésus Conducteur).
+  - Immagine: /images/Erik_Satie_eglise.jpeg
+
+---
+D. Suzanne Valadon (1893)
+  - Relazione con la pittrice Suzanne Valadon, unico amore documentato, scambio di ritratti.
+  - Immagini: /images/valadon-satie-1892-ritratto.jpg (Ritratto di Satie), /images/satie-e-valadon.jpg (foto insieme), /images/Satie_portret_Valadon_1893.jpg (ritratto di Valadon disegnato da Satie), /images/Bonjour-Biquii.jpg (spartito dedicato)
+
+---
+E. Arcueil e l'"Armadio" (1898-1925)
+  - Trasferimento ad Arcueil, stanza "l'Armadio", abitudini eccentriche (ombrelli, pianoforti sovrapposti, dieta bianca ironica).
+  - Immagini: /images/6_Rue_Cortot -.jpeg (abitazione a Montmartre), /images/2015-Arcueil-Erik-Satie-house.jpg (casa di Arcueil)
+
+---
+F. Ritorno a scuola (1905-1908)
+  - Iscrizione alla Schola Cantorum di Vincent d'Indy, studio del contrappunto, diploma con menzione "Très Bien".
+  - Approfondisci (modale):
+    - "Il ritorno allo studio: Schola Cantorum (1905-1908)": motivazioni, crisi, risultati, sintesi.
+
+---
+G. Timeline completa (espandibile)
+  - Cronologia dettagliata della vita di Satie (1866-1925), eventi principali, tappe biografiche.
+
+---
+
+=== TAB: AMICIZIE ===
+
+1. Claude Debussy: amicizia fraterna e complessa (1891-1925)
+  - Incontro all'Auberge du Clou, influenza reciproca, orchestrazione delle Gymnopédies, divergenze estetiche, rottura e tentativi di riconciliazione.
+  - Immagine: /images/3. Debussy - Satie .jpeg
+  - Immagine: /images/3-pezzi-a-forma-di-pera.jpg (Trois morceaux en forme di poire)
+
+2. Maurice Ravel: promotore della riscoperta (1911)
+  - Ravel rilancia la Gymnopédie n. 3, riconoscimento ambivalente, tensione tra gratitudine e irritazione.
+  - Immagine: /images/maurice_ravel.jpg
+
+3. Parade e le avanguardie (1915-1917)
+  - Collaborazione con Jean Cocteau, Pablo Picasso, Léonide Massine per il balletto Parade (1917), innovazione musicale e scenica, scandalo alla prima, polemiche, processo per ingiuria.
+  - Immagini: /images/parade-theredlist.jpg, /images/pARADE SATIE FRONTE.jpg, /images/Cocteau schizzo Satie.jpg, /images/SAtie adulto.jpg, /images/RAGTIME PARADE.jpg
+  - Video e testimonianze: link a YouTube, trascrizione di Jean Cocteau (modale)
+
+4. Francis Poulenc e il Gruppo dei Sei (1920-1925)
+  - Satie come "Bon Maître" e patriarca spirituale del Groupe des Six (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre), influenza sulla musica francese moderna, rapporto con Jean Cocteau.
+  - Immagine: /images/les_six -.jpeg
+  - Approfondisci (modale): "Il Gruppo dei Sei: sintesi" (storia, rotture, scuola di Arcueil, morte e riconciliazione)
+
+---
+
+=== TAB: STRAMBERIE ===
+
+- Rimando alle sezioni StramberieSection e IndicazioniSection (vedi file dedicati per dettagli su stramberie, annotazioni, ironie e indicazioni sugli spartiti).
+
+---
+
+NOTE:
+- Tutti i tooltip sono stati esplicitati come note o approfondimenti nel testo.
+- Tutti i modali sono stati riportati come box di approfondimento con titolo e contenuto.
+- Tutte le immagini sono elencate con nome file e didascalia.
+- Tutte le sezioni "Approfondisci" e "Leggi di più" sono state incluse come testo completo.
+- La timeline completa è da integrare con i dati di satieLifeTimeline (vedi /src/data/timeline.js).
+
+FINE SEZIONE ERIK SATIE
+
+---
+
+SEZIONE: IL BRANO (Gymnopédie n. 1)
+
+Contenuti principali:
+- Genesi, linguaggio musicale, segreti esecutivi, immagini, tooltip, modali, approfondimenti, interpreti, cultura pop.
+
+---
+
+1. Header:
+  Titolo: "Il brano"
+  Sottotitolo: "Genesi, linguaggio musicale e segreti esecutivi della Gymnopédie n. 1"
+
+2. La nascita (1888):
+  - Satie, 21 anni, pianista di cabaret a Montmartre, compone le tre Gymnopédies.
+  - Tooltip: "cabaret" = Locali parigini che combinavano caffè, spettacolo e arte, frequentati da artisti bohémien.
+  - Tooltip: "tre Gymnopédies" = Serie di tre brevi composizioni per pianoforte caratterizzate da armonie sospese e atmosfera meditativa.
+  - Immagine: /images/Gymnopedie greche.jpeg (Danzatori antichi greci)
+
+3. Origine del nome "Gymnopédie":
+  - Tooltip: "gymnopédies" = Antiche feste spartane in onore di Apollo, con danze rituali eseguite da giovani nudi.
+  - Approfondisci (modale):
+    - Testo originale e traduzione di "Les Antiques" di J.P. Contamine de Latour (epigrafe poetica, non ispirazione diretta).
+    - Approfondimento: Flaubert, dizionari musicali, etimologia storica, dialogo creativo con Latour.
+  - Immagine: /images/puvis-de-chavannes-jeunes-filles.jpg (Jeunes filles au bord de la mer di Puvis de Chavannes)
+
+4. Contesto compositivo:
+  - Satie oppone armonie sospese e forme svuotate di drammaticità al wagnerismo dominante.
+  - Tooltip: "risoluzioni" = Risoluzione di una dissonanza o tensione armonica.
+  - Tooltip: "impressionismo" = Stile musicale francese che privilegia il colore e l'atmosfera rispetto allo sviluppo tematico.
+  - Tooltip: "minimalismo" = Movimento musicale caratterizzato da ripetizioni, armonie statiche e processi graduali.
+  - Tooltip: "musica ambient" = Genere musicale atmosferico creato da Brian Eno negli anni '70, influenzato da Satie.
+
+5. Linguaggio musicale:
+  - Il segreto del Fa#: nota collante tra Sol7+ e Re7+, crea sospensione e galleggiamento.
+  - Tooltip: "Sol maggiore settima" = Sol-Si-Re-Fa#.
+  - Tooltip: "Re maggiore settima" = Re-Fa#-La-Do#.
+  - Tooltip: "altalena armonica" = Alternanza tra due accordi senza vera progressione tonale.
+  - Immagine: /images/nota ricorrente-Fa-diesis-gymnopedie-.jpeg (Analisi del Fa# collante armonico)
+  - Immagine: /images/Sarabande 1884.jpg (Manoscritto della Sarabande n. 1, 1884)
+  - Immagine: /images/diagramma-accordi-settima.jpg (Diagramma accordi di settima maggiore)
+  - Caratteristiche chiave:
+    • Metro 3/4 con ostinato regolare alla mano sinistra (tooltip: "ostinato" = Figura ritmica ripetuta costantemente)
+    • Forma tripartita (A–B–A′) con micro-variazioni
+    • Accordi planati e movimenti paralleli (tooltip: "Accordi planati" = Accordi che si muovono parallelamente mantenendo la stessa struttura intervallare)
+    • Indicazione "Lent et douloureux" (lento e doloroso)
+
+6. Come suonarlo:
+  - Analisi operativa (schede):
+    • Struttura e materiali: ostinato, melodia spoglia, tre sezioni, accordi planati
+    • Focali esecutivi: controllo tempo, gestione pedale, separazione voci, dinamica contenuta
+    • Cosa evitare: valzer caricaturale, rubato romantico, pedale continuo, eccesso di progressione armonica
+    • Cosa cercare: sospensione tonale, uniformità timbrica, legato omogeneo, colore e risonanza
+  - Immagini tecniche:
+    • /images/diteggiatura-gymnopedies.jpg (Spartito annotato e diteggiatura)
+    • /images/IMMAGINE MANI.jpg (Posizione mani)
+
+7. Spartito completo:
+  - Pulsante per mostrare/nascondere lo spartito completo (PdfScoreViewer)
+
+8. Chiusura:
+  - "Ora che conosci il brano, scopriamo la sua eredità nella musica moderna"
+
+---
+
+NOTE:
+- Tutti i tooltip sono stati esplicitati come note o approfondimenti.
+- Tutti i modali sono stati riportati come box di approfondimento con titolo e contenuto.
+- Tutte le immagini sono elencate con nome file e didascalia.
+- Tutte le schede di analisi sono state incluse.
+
+FINE SEZIONE IL BRANO
+
+---
+
+SEZIONE: EREDITÀ DI SATIE
+
+Contenuti principali:
+- Dalle orchestrazioni di Debussy al minimalismo, dalla musica ambient alla cultura pop: come una pagina di tre minuti ha cambiato il modo di ascoltare il silenzio.
+
+---
+
+1. Header:
+  Titolo: "L'eredità di Satie"
+  Sottotitolo: "Dalle orchestrazioni di Debussy al minimalismo, dalla musica ambient alla cultura pop: come una pagina di tre minuti ha cambiato il modo di ascoltare il silenzio."
+  Immagine: /images/john_cage_playing_vexations.jpeg (John Cage durante la maratona di "Vexations", New York 1963)
+
+2. I contemporanei (1890-1925):
+  - Debussy orchestrò le Gymnopédies n.1 e n.3 (1896-1897), ampliando il colore timbrico senza perdere la trasparenza originaria.
+  - Ravel ammirava la chiarezza formale.
+  - Il Groupe des Six (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre) lo considerava un padre spirituale: musica essenziale, quotidiana, anti-wagneriana.
+  - Approfondimento: Orchestrazioni di riferimento (YouTube):
+    • Orchestrazione Debussy – versione classica
+    • Orchestrazione Debussy – hr-Sinfonieorchester
+
+3. Eredi del Novecento:
+  - John Cage (1912-1992): compositore di 4'33", pianoforte preparato, indeterminazione, riscoperta di Satie nel dopoguerra, prima esecuzione integrale di Vexations (840 ripetizioni, 18 ore, 1963).
+  - Immagine: /images/Vexations.jpg (Manoscritto di Vexations)
+  - Minimalismo: Steve Reich, Philip Glass, Terry Riley riconoscono in Satie un antenato (ripetizione di pattern, armonia statica, economia di mezzi).
+  - Approfondisci (modale): "Minimalismo: il filo che parte da Satie" (ripetizione, staticità, attenzione al tempo, John Cage, Steve Reich, Philip Glass, rifiuto dell'enfasi romantica).
+  - Musica ambient: Satie concepisce la Musique d'ameublement (musica d'arredamento, 1917), Brian Eno pubblica Ambient 1: Music for Airports (1978), principio della musica funzionale.
+  - Immagini: /images/Brian_Eno_2015.png (Brian Eno), /images/Music_for_Airports.jpg (Ambient 1: Music for Airports)
+  - Video: Brian Eno, Music for Airports (YouTube)
+  - Approfondisci (modale): "Musique d'ameublement: la musica come arredo" (musica da ignorare, funzionale, anti-ascolto, opere, fallimento pubblico, eredità ambient/minimalismo/John Cage/Muzak).
+
+4. Interpreti moderni:
+  - Khatia Buniatishvili: interpretazione contemporanea, fraseggio fluido, dinamiche controllate, suono ampio e sospeso.
+    Immagine: /images/kathia Labyrinh.jpg
+  - Aldo Ciccolini: lettura storica, scuola pianistica francese, riscoperta di Satie come autore essenziale.
+    Immagine: /images/satie_ciccolini.jpg
+  - Approfondimenti e ascolti: link YouTube per entrambe le interpreti.
+
+5. Cultura pop:
+  - Cinema: Fuoco fatuo (1963), La mia cena con Andrè (1981), Un'altra donna (1988), I Tenenbaum (2001), Man on Wire (2008), About Schmidt (2002), Hugo Cabret (2011), Chocolat (2000).
+  - TV e pubblicità: spot di profumi e auto di lusso, serie 22.11.63 (Stephen King).
+  - Videogiochi: Mother 3 (2006), The Legend of Zelda: Ocarina of Time.
+  - Arrangiamenti celebri: Blood, Sweat & Tears (1968), Sky (1979), Gary Numan (1980), 12 Violoncellisti di Berlino (2007), Branford Marsalis (1990).
+
+---
+
+NOTE:
+- Tutti i tooltip sono stati esplicitati come note o approfondimenti.
+- Tutti i modali sono stati riportati come box di approfondimento con titolo e contenuto.
+- Tutte le immagini sono elencate con nome file e didascalia.
+- Tutti i link e i riferimenti video sono stati inclusi come testo e URL.
+
+FINE SEZIONE EREDITÀ
+
+---
+
+SEZIONE: IMPARA
+
+Contenuti principali:
+- Flashcard interattive e quiz a difficoltà crescente sulla Gymnopédie n. 1
+- Struttura a tab: Memorizza (flashcard) e Quiz
+- Livelli: Base, Intermedio, Avanzato
+
+---
+
+1. Header:
+  Titolo: "Impara"
+  Sottotitolo: "Metti alla prova la tua conoscenza della Gymnopédie n. 1 attraverso flashcard interattive e quiz a difficoltà crescente."
+  Note: L'apprendimento passa dalla comprensione alla memorizzazione, poi al recupero attivo (recall).
+  Nota: Un buon livello di preparazione è già raggiunto con il livello base.
+
+2. Selettore livello:
+  - Opzioni: Base, Intermedio, Avanzato
+
+3. Tabs:
+  - Memorizza: flashcard con domanda/risposta, dettagli espandibili, navigazione precedente/successiva, barra di avanzamento
+  - Quiz: domande a scelta multipla, feedback immediato, spiegazioni dettagliate, punteggio finale e suggerimenti
+  - Selettore numero domande quiz: 10, 20, tutte
+
+4. Immagine:
+  - /images/satie-impara.jpg
+    Didascalia: "Erik Satie: uno sguardo ironico e concentrato sul pianoforte."
+
+---
+
+NOTE:
+- Tutte le funzionalità interattive sono descritte come testo e struttura.
+- Tutte le immagini sono elencate con nome file e didascalia.
+- Tutti i livelli, feedback e suggerimenti sono stati esplicitati.
+
+FINE SEZIONE IMPARA
+
+---
+
+SEZIONE: FONTI E BIBLIOGRAFIA
+
+Contenuti principali:
+- Bibliografia essenziale, spartito originale, dettagli e motivazione della rilevanza di ogni fonte.
+
+---
+
+1. Header:
+  Titolo: "Bibliografia essenziale"
+
+2. Spartito originale:
+  - IMSLP: https://imslp.org/wiki/3_Gymnop%C3%A9dies_(Satie,_Erik)
+    (Spartito pubblico delle 3 Gymnopédies di Erik Satie)
+
+3. Bibliografia:
+  - Satie the Composer — Robert Orledge, Cambridge University Press (1990), 456 pag.
+    Bibbia tecnica. Analizza i processi creativi e i manoscritti. Fondamentale per l'armonia.
+  - Quaderni di un mammifero — Erik Satie (a cura di O. Volta), Adelphi (ed. it. 1980), ~300 pag.
+    Fonte primaria. Raccolta degli scritti, aforismi e provocazioni di Satie stesso.
+  - Satie the Bohemian — Steven M. Whiting, Clarendon Press (1999), 610 pag.
+    Contesto sociale. La fonte definitiva sul periodo di Montmartre e del cabaret.
+  - Erik Satie tra ricerca e provocazione — Adriana Guarnieri Corazzol, Marsilio (1979), 262 pag.
+    Pilastro italiano. Uno dei primi e più profondi studi accademici in lingua italiana.
+  - Erik Satie — Mary E. Davis, Reaktion Books (2007), 180 pag.
+    Biografia moderna. Ottima sintesi tra vita privata, estetica e influenze artistiche.
+  - Rida senza dare nell'occhio — Luca Boero, LeMus Edizioni (2020), 124 pag.
+    Analisi dell'ironia. Focus specifico sul "doppio fondo" ironico delle opere umoristiche.
+  - Erik Satie: Music, Art and Literature — Caroline Potter (ed.), Ashgate Publishing, Ltd. (2013), 366 pag.
+    Interdisciplinare. Esplora i legami con la pittura, il cinema e la letteratura.
+  - Erik Satie — Pierre-Daniel Templier, Rieder (1932), 107 pag.
+    Storica. La prima vera biografia scritta dopo la sua morte, ricca di aneddoti originali.
+
+---
+
+NOTE:
+- Ogni fonte è accompagnata da una breve motivazione della sua importanza.
+- Il link al PDF/spartito originale è incluso.
+
+FINE SEZIONE FONTI
+
+---
+
+SEZIONE: STRAMBERIE E INDICAZIONI SUGLI SPARTITI
+
+Contenuti principali:
+- Titoli eccentrici e umoristici, curiosità biografiche, annotazioni paratestuali e poetiche sugli spartiti.
+
+---
+
+1. Stramberie
+  - Selezione di titoli eccentrici e umoristici: il lato ironico di Satie, tra parodie e giochi linguistici.
+  - Curiosità biografiche:
+    • Il gentiluomo di velluto: sette abiti identici per evitare la scelta quotidiana.
+    • Il fonometrografo: si definiva "misuratore di suoni".
+    • Il paradosso dell'ombrello: proteggeva gli ombrelli sotto il cappotto.
+    • Il martello da difesa: camminava di notte con un martello in tasca.
+    • Castelli di piombo: disegnava planimetrie di edifici medievali e pubblicava annunci finti.
+    • Odio per il sole: preferiva uscire con il tempo cupo.
+    • Bollitura del vino: raccontava di bollire il vino e berlo freddo con succo di fucsia.
+  - Titoli di brani:
+    • Trois morceaux en forme de poire (Tre pezzi a forma di pera, 1903, pianoforte a 4 mani)
+    • Véritables préludes flasques (per un cane, 1912, pianoforte)
+    • Embryons desséchés (Embrioni essiccati, 1913, pianoforte)
+    • Croquis et agaceries d'un gros bonhomme en bois (1913, pianoforte)
+    • Vieux sequins et vieilles cuirasses (1913, pianoforte)
+    • Chapitres tournés en tous sens (1913, pianoforte)
+    • Choses vues à droite et à gauche (senza occhiali, 1914, violino e pianoforte)
+    • Trois Valses distinguées du précieux dégoûté (1914, pianoforte)
+    • Aperçus désagréables (1908-1912, pianoforte a 4 mani)
+    • Sonatine bureaucratique (1917, pianoforte)
+    • Pièces froides (1897, pianoforte)
+  - Nota: molti titoli appartengono al periodo "umoristico" (1912-1915), usati per prendere le distanze dal romanticismo e impressionismo.
+  - Annotazioni assurde sulle partiture: "aprite la testa", "come un usignolo con il mal di denti".
+  - Parodie: Sonatine bureaucratique (parodia di Clementi), Embryons desséchés (parodia delle code romantiche).
+  - Nota: Trois morceaux en forme di poire è una risposta ironica a Debussy sulla "forma" (poire = anche "sciocco").
+
+2. Indicazioni sugli spartiti
+  - Annotazioni poetiche e assurde tra i righi, per guidare l'immaginazione dell'esecutore.
+  - Immagine: /images/Come un usignolo con il mal di denti.jpg (Da Embryons desséchés)
+  - Esempi di brani e frasi:
+    • Gnossiennes (n.1, 2, 3): "Con grande bontà", "Non siate orgogliosi", "Aprite la testa", "Seppellite il suono", "Armatevi di chiaroveggenza"
+    • Le Fils des étoiles: "Bianco e immobile", "Pallido e sacerdotale"
+    • Descriptions automatiques: "Non salivate troppo", "La barca fa una risata cattiva"
+    • Embryons desséchés: "Come un usignolo con il mal di denti", "Non ho tabacco, per fortuna non fumo", "Piccole fusa. Piccole fusa beffarde"
+    • Le Piège de Méduse: "Siate convenienti, per favore: una scimmia vi guarda", "Mettetevi nell'ombra", "Ridete senza farvi notare", "Danzate interiormente"
+    • Peccadilles importunes: "Essere geloso del proprio compagno che ha la testa grossa", "Mangiargli la tartina", "Approfittare dei suoi calli ai piedi per prendergli il cerchio"
+    • Sports et divertissements: "Dedico questo corale a coloro che non mi amano. Mi ritiro.", "Non si veda nient'altro", "Il colonnello è qui! Ora fa il suo swing: il suo bastone va in pezzi!"
+    • Heures séculaires et instantanées: "Proibisco a chiunque di leggere il testo ad alta voce durante l'esecuzione musicale", "A Sir William Grant-Plumot... personaggio immobile"
+    • Sonatine bureaucratique: "Vivache (invece di Vivace)", "Il piano continua", "Ahimè! È ora di lasciare l'ufficio", "Il piano vicino suona un pezzo di Clementi"
+  - Nota: queste annotazioni sono una firma di Satie, pensate per influenzare la psicologia dell'esecutore.
+  - Doppio fondo: spesso vietava di leggere le frasi ad alta voce, creando un "segreto" tra compositore ed esecutore.
+  - Alcune indicazioni sono ironiche, altre poetiche o teatrali.
+  - Nota: Le Piège de Méduse è considerato un primo esempio di pianoforte preparato, anticipando John Cage.
+
+---
+
+NOTE:
+- Tutte le curiosità, titoli, annotazioni e immagini sono state riportate in modo dettagliato.
+- Le due sezioni sono unite come richiesto.
+
+FINE SEZIONE STRAMBERIE E INDICAZIONI

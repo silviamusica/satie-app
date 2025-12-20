@@ -21,12 +21,6 @@ export const flashcardsData = [
     details: "Tempo lento e doloroso: guida l'esecuzione e il colore timbrico del brano.",
   },
   {
-    q: "In quale metro è scritta la n. 1?",
-    a: "3/4",
-    level: "base",
-    details: "Metro ternario con tre pulsazioni per battuta; l'effetto deve essere cullante ma non valzeristico.",
-  },
-  {
     q: "Quale compositore orchestrò due Gymnopédies?",
     a: "Claude Debussy",
     level: "intermedio",
@@ -34,7 +28,7 @@ export const flashcardsData = [
   },
   {
     q: "Dove lavorava Satie quando compose le Gymnopédies?",
-    a: "Come pianista cabaret a Montmartre",
+    a: "Nei café-cabaret di Montmartre (Chat Noir e Auberge du Clou)",
     level: "intermedio",
     details: "Satie lavorava in locali come Le Chat Noir e L'Auberge du Clou, frequentati da simbolisti e poeti. Aveva 21 anni e aveva appena abbandonato il Conservatorio.",
   },
@@ -45,8 +39,8 @@ export const flashcardsData = [
     details: "Nel 1882, a 16 anni, non fu ammesso alle classi superiori dopo un'esecuzione mediocre del Finale della Sonata Op. 26 di Beethoven. Fu giudicato 'dotato ma indolente', 'il più pigro del Conservatorio', 'privo di valore'.",
   },
   {
-    q: "Quando ebbero una prima esecuzione pubblica rilevante le orchestrazioni?",
-    a: "20 febbraio 1897",
+    q: "In quale anno ebbero una prima esecuzione pubblica rilevante le orchestrazioni?",
+    a: "1897",
     level: "intermedio",
     details: "Le orchestrazioni di Debussy furono presentate in un concerto della Société Nationale a Parigi il 20 febbraio 1897.",
   },
@@ -93,7 +87,7 @@ export const flashcardsData = [
     details: "Fu pubblicata il 18 agosto 1888 nel supplemento di 'La Musique des familles' (rivista diretta dal padre Alfred Satie) con il titolo 'Danse antique', dedicata a Jeanne de Bret. La terza fu pubblicata nel novembre 1888, la seconda solo nel 1895. La serie completa uscì nel 1898.",
   },
   {
-    q: "Chi fu Debussy a orchestrare le Gymnopédies e perché?",
+    q: "Quando e perché Debussy orchestrò le Gymnopédies?",
     a: "Nel 1896, per aiutare l'amico Satie",
     level: "avanzato",
     details: "Nel 1896 Satie eseguì le Gymnopédies a casa del direttore Gustave Doret. Debussy ne fu colpito e le orchestrò per aiutare Satie, che era in difficoltà finanziarie. Fu l'unica volta che Debussy orchestrò l'opera di un altro compositore. Orchestrò solo la n.1 e n.3 (invertendo la numerazione), ritenendo che la n.2 'non si prestasse all'orchestrazione'. Prima esecuzione: 20 febbraio 1897.",
@@ -154,7 +148,7 @@ export const flashcardsData = [
   },
   {
     q: "Quale fu il primo brano noto di Satie per pianoforte?",
-    a: "Allegro (1884)",
+    a: "Allegro",
     level: "base",
     details: "Il brano Allegro, del 1884, segna l'inizio della produzione ufficiale durante gli anni al Conservatorio.",
   },
@@ -171,8 +165,8 @@ export const flashcardsData = [
     details: "Satie voleva sottrarre la musica all'influenza wagneriana e riportare il suono a una nuda essenzialita.",
   },
   {
-    q: "Quando ruppe con Peladan e la Rosa-Croce?",
-    a: "Nel 1892",
+    q: "In quale anno ruppe con Peladan e la Rosa-Croce?",
+    a: "1892",
     level: "intermedio",
     details: "La rottura avvenne per divergenze estetiche e bisogno di indipendenza.",
   },
@@ -243,12 +237,6 @@ export const flashcardsData = [
     details: "Aforismi e parodie della critica musicale.",
   },
   {
-    q: "Quando mori Satie?",
-    a: "1 luglio 1925",
-    level: "base",
-    details: "Morì all'ospedale Saint-Joseph di Parigi.",
-  },
-  {
     q: "Dove fu sepolto Satie?",
     a: "Arcueil",
     level: "base",
@@ -315,7 +303,7 @@ export const flashcardsData = [
     details: "Parodia di una sonatina classica con ironia formale.",
   },
   {
-    q: "Quale raccolta pianistica del 1913 firmo Satie?",
+    q: "Quale raccolta pianistica del 1913 firmò Satie?",
     a: "Descriptions automatiques",
     level: "intermedio",
     details: "Pagine brevi con titoli ironici e poetici.",
@@ -339,7 +327,7 @@ export const flashcardsData = [
     details: "I nonni materni vivevano a Londra.",
   },
   {
-    q: "Chi preparo Satie per il Conservatorio dopo il ritorno a Parigi?",
+    q: "Chi preparò Satie per il Conservatorio dopo il ritorno a Parigi?",
     a: "La matrigna Eugénie Barnetche",
     level: "base",
     details: "Era pianista e divenne la prima vera insegnante di Satie.",
@@ -352,7 +340,7 @@ export const flashcardsData = [
   },
   {
     q: "Quante Gymnopédies compose Satie?",
-    a: "Tre",
+    a: "3",
     level: "base",
     details: "La serie fu completata nel 1888.",
   },
@@ -363,22 +351,16 @@ export const flashcardsData = [
     details: "Nel supplemento di La Musique des familles.",
   },
   {
-    q: "Qual e il tempo indicato per la n. 1?",
+    q: "Qual è il tempo indicato per la n. 1?",
     a: "Lent et douloureux",
     level: "base",
     details: "Indicazione in francese, non in italiano.",
   },
   {
-    q: "Qual e il metro della Gymnopédie n. 1?",
-    a: "3/4",
-    level: "base",
-    details: "Deve restare regolare, senza effetto valzer.",
-  },
-  {
-    q: "Quale compositore e legato al cabaret e al mondo di Satie a Montmartre?",
+    q: "Quale artista e legato al cabaret e al mondo di Satie a Montmartre?",
     a: "Henri de Toulouse-Lautrec",
     level: "base",
-    details: "Frequentava gli stessi ambienti di cabaret.",
+    details: "Pittore e illustratore: frequentava gli stessi ambienti di cabaret.",
   },
   {
     q: "In quale anno Satie entro nella Rosa-Croce?",
@@ -399,16 +381,10 @@ export const flashcardsData = [
     details: "Ne fu l'unico membro e Gran Sacerdote.",
   },
   {
-    q: "Quando mori Erik Satie?",
+    q: "Quando morì Erik Satie?",
     a: "1 luglio 1925",
     level: "base",
-    details: "Mori all'ospedale Saint-Joseph di Parigi.",
-  },
-  {
-    q: "Dove fu sepolto Satie?",
-    a: "Ad Arcueil",
-    level: "base",
-    details: "La citta in cui visse gli ultimi 27 anni.",
+    details: "Morì all'ospedale Saint-Joseph di Parigi.",
   },
   {
     q: "Quale opera ballettistica debuttò nel 1917 al Chatelet?",
@@ -423,34 +399,22 @@ export const flashcardsData = [
     details: "Compositore americano legato alla riscoperta di Satie.",
   },
   {
-    q: "Quale pianista rilancio Satie nel 1911?",
+    q: "Quale pianista rilanciò Satie nel 1911?",
     a: "Maurice Ravel",
     level: "base",
     details: "Eseguì la Gymnopédie n. 3.",
   },
   {
-    q: "Qual e l'unico amore documentato di Satie?",
+    q: "Qual è l'unico amore documentato di Satie?",
     a: "Suzanne Valadon",
     level: "base",
     details: "Relazione breve e intensa nel 1893.",
   },
   {
-    q: "Qual e il titolo del ciclo pianistico scritto senza stanghette di battuta?",
+    q: "Qual è il titolo del ciclo pianistico scritto senza stanghette di battuta?",
     a: "Gnossiennes",
     level: "base",
     details: "Atmosfera arcana e indicazioni eccentriche.",
-  },
-  {
-    q: "Quale opera di Satie e musica per cinema del 1924?",
-    a: "Entr'acte",
-    level: "base",
-    details: "Per il film di Rene Clair.",
-  },
-  {
-    q: "Quale concetto di Satie anticipa la musica ambient?",
-    a: "Musique d'ameublement",
-    level: "base",
-    details: "Musica d'arredamento, da non ascoltare attivamente.",
   },
   {
     q: "Dove Satie si iscrisse a 39 anni per studiare contrappunto?",
@@ -477,7 +441,7 @@ export const flashcardsData = [
     details: "Con menzione \"Tres Bien\".",
   },
   {
-    q: "Perche la frase \"sans choucroute\" e significativa?",
+    q: "Perché la frase \"sans choucroute\" è significativa?",
     a: "Richiama l'anti-wagnerismo di Satie",
     level: "intermedio",
     details: "Invito a una musica francese libera dall'influenza tedesca.",
@@ -501,13 +465,13 @@ export const flashcardsData = [
     details: "Ideatore del progetto con i Ballets Russes.",
   },
   {
-    q: "Chi disegno scene e costumi di Parade?",
+    q: "Chi disegnò scene e costumi di Parade?",
     a: "Pablo Picasso",
     level: "intermedio",
     details: "Costumi cubisti rigidi e monumentali.",
   },
   {
-    q: "Quale coreografo firmo Parade?",
+    q: "Quale coreografo firmò Parade?",
     a: "Leonide Massine",
     level: "intermedio",
     details: "Movimenti meccanici e spezzati.",
@@ -519,7 +483,7 @@ export const flashcardsData = [
     details: "La parola compare nel programma di sala del 1917.",
   },
   {
-    q: "Quale rivista pubblico la Gymnopédie n. 1 con Les Antiques?",
+    q: "Quale rivista pubblicò la Gymnopédie n. 1 con Les Antiques?",
     a: "La Musique des familles",
     level: "intermedio",
     details: "Estate 1888.",
@@ -604,7 +568,7 @@ export const flashcardsData = [
   },
   {
     q: "Quante volte va ripetuto Vexations secondo Satie?",
-    a: "840 volte",
+    a: "840",
     level: "avanzato",
     details: "Esecuzione integrale del 1963 durò circa 18 ore.",
   },
@@ -657,16 +621,16 @@ export const flashcardsData = [
     details: "Indicazione scritta da Satie nel manoscritto.",
   },
   {
-    q: "Qual e la definizione di musique d'ameublement?",
+    q: "Qual è la definizione di musique d'ameublement?",
     a: "Musica da ignorare, funzionale all'ambiente",
     level: "avanzato",
     details: "Arreda lo spazio sonoro come un mobile.",
   },
   {
-    q: "Quale strumento fu definito \"pianoforte preparato\" ante litteram?",
+    q: "Quale opera contiene le Sette piccole danze?",
     a: "Le Piege de Meduse",
     level: "avanzato",
-    details: "Carta tra le corde per suono meccanico.",
+    details: "Le Sette piccole danze fanno parte dell'opera teatrale Le Piège de Méduse (1913).",
   },
   {
     q: "Quale composizione anticipa l'ambient per metodo e idea?",
@@ -675,13 +639,13 @@ export const flashcardsData = [
     details: "Brian Eno ne e l'erede diretto.",
   },
   {
-    q: "Quale brano fu orchestrato da Debussy e pubblico nel 1897?",
+    q: "Quale brano fu orchestrato da Debussy e pubblicato nel 1897?",
     a: "Gymnopédies n. 1 e n. 3",
     level: "intermedio",
     details: "Debussy inverti la numerazione nella pubblicazione.",
   },
   {
-    q: "Quale luogo ospito la prima integrale di Vexations?",
+    q: "Quale luogo ospitò la prima integrale di Vexations?",
     a: "New York, 1963",
     level: "intermedio",
     details: "Organizzata da John Cage con team di pianisti.",
@@ -711,13 +675,13 @@ export const flashcardsData = [
     details: "Usato per attacchi ai critici musicali.",
   },
   {
-    q: "Quale luogo ospito la prima di Parade?",
+    q: "Quale luogo ospitò la prima di Parade?",
     a: "Theatre du Chatelet, Parigi",
     level: "intermedio",
     details: "18 maggio 1917 con i Ballets Russes.",
   },
   {
-    q: "Quale artista conio il termine \"surrealismo\"?",
+    q: "Quale artista coniò il termine \"surrealismo\"?",
     a: "Guillaume Apollinaire",
     level: "intermedio",
     details: "Nel programma di sala di Parade.",
@@ -729,7 +693,7 @@ export const flashcardsData = [
     details: "Parallelismo con Jeunes filles au bord de la mer.",
   },
   {
-    q: "Quale rivista pubblico l'estratto di Les Antiques?",
+    q: "Quale rivista pubblicò l'estratto di Les Antiques?",
     a: "La Musique des familles",
     level: "intermedio",
     details: "Estate 1888 insieme alla Gymnopédie n. 1.",
@@ -742,13 +706,862 @@ export const flashcardsData = [
   },
 ];
 
+const PEOPLE_POOL = [
+  "Claude Debussy",
+  "Maurice Ravel",
+  "John Cage",
+  "Suzanne Valadon",
+  "Pierre Puvis de Chavannes",
+  "Jean Cocteau",
+  "Pablo Picasso",
+  "Léonide Massine",
+  "Guillaume Apollinaire",
+  "Joséphin Péladan",
+  "Vincent d'Indy",
+  "Albert Roussel",
+  "Francis Poulenc",
+  "Darius Milhaud",
+  "Arthur Honegger",
+  "Georges Auric",
+  "Germaine Tailleferre",
+  "Louis Durey",
+  "Henri Sauguet",
+  "Alphonse Allais",
+  "Patrice Contamine de Latour",
+  "J. P. Contamine de Latour",
+  "La matrigna Eugénie Barnetche",
+  "Brian Eno",
+];
+
+const COMPOSER_POOL = [
+  "Claude Debussy",
+  "Maurice Ravel",
+  "Erik Satie",
+  "Francis Poulenc",
+  "Darius Milhaud",
+  "Arthur Honegger",
+  "Georges Auric",
+  "Louis Durey",
+  "Germaine Tailleferre",
+  "John Cage",
+];
+
+const POET_POOL = [
+  "J. P. Contamine de Latour",
+  "Paul Verlaine",
+  "Stéphane Mallarmé",
+  "Jean Cocteau",
+  "Guillaume Apollinaire",
+];
+
+const PAINTER_POOL = [
+  "Pierre Puvis de Chavannes",
+  "Henri de Toulouse-Lautrec",
+  "Santiago Rusiñol",
+  "Suzanne Valadon",
+  "Claude Monet",
+  "Paul Cézanne",
+  "Pablo Picasso",
+];
+
+const CRITIC_POOL = [
+  "Jean Poueigh",
+  "Henry Prunières",
+  "Louis Laloy",
+  "Willy",
+];
+
+const CHOREOGRAPHER_POOL = [
+  "Leonide Massine",
+  "Michel Fokine",
+  "Bronislava Nijinska",
+  "George Balanchine",
+];
+
+const PLACE_POOL = [
+  "Parigi",
+  "Montmartre",
+  "Honfleur",
+  "Arcueil",
+  "Théâtre du Châtelet",
+  "Auberge du Clou",
+  "Le Chat Noir",
+  "Schola Cantorum",
+  "Musée d'Orsay",
+  "New York",
+];
+
+const WORK_POOL = [
+  "Gymnopédies",
+  "Gnossiennes",
+  "Sarabandes",
+  "Ogives",
+  "Valse-Ballet",
+  "Fantaisie-Valse",
+  "Trois morceaux en forme de poire",
+  "Sonatine bureaucratique",
+  "Embryons desséchés",
+  "Descriptions automatiques",
+  "Parade",
+  "Vexations",
+  "Socrate",
+  "Messe des pauvres",
+  "Musique d'ameublement",
+  "Entr'acte",
+  "Le Fils des étoiles",
+  "Le Piège de Méduse",
+  "Les Antiques",
+  "La Musique des familles",
+  "Cartulaire",
+  "Église Métropolitaine d'Art de Jésus Conducteur",
+];
+
+const CONCEPT_POOL = [
+  "Musica francese libera dal wagnerismo",
+  "Accordi che si muovono in parallelo",
+  "Figura ripetuta nel basso",
+  "Assenza di risoluzione tonale",
+  "Danza rituale spartana",
+  "Musica da ignorare, funzionale all'ambiente",
+  "Misuratore di suoni, non musicista",
+  "Ripetizione estrema e tempo dilatato",
+  "Indicazioni paratestuali ironiche",
+  "Alternanza di settime maggiori sospese",
+];
+
+const DATE_POOL = [
+  "17 maggio 1866",
+  "1870",
+  "1872",
+  "1878",
+  "1884",
+  "1887",
+  "1888",
+  "Estate 1888",
+  "Tra febbraio e aprile 1888",
+  "1891",
+  "1892",
+  "1893",
+  "1896-1897",
+  "20 febbraio 1897",
+  "1898",
+  "1905",
+  "1908",
+  "1911",
+  "1917",
+  "1925",
+  "1 luglio 1925",
+  "1963",
+];
+
+const TIME_POOL = ["7:18", "10:23", "12:11", "19:16", "21:50", "22:37"];
+const NUMBER_POOL = ["Due", "Tre", "Sette", "27", "840", "100"];
+const METER_POOL = ["2/4", "3/4", "4/4", "6/8"];
+const YESNO_POOL = ["Sì", "No", "Solo in traduzione", "Solo nel sottotitolo"];
+
+const CUSTOM_OPTIONS = {
+  "Qual è l'indicazione di carattere della n. 1?": [
+    "Lent et douloureux",
+    "Lent et grave",
+    "Très lent",
+    "Modéré",
+  ],
+  "Qual è il tempo indicato per la n. 1?": [
+    "Lent et douloureux",
+    "Lent et grave",
+    "Très lent",
+    "Modéré",
+  ],
+  "Dove lavorava Satie quando compose le Gymnopédies?": [
+    "Nei café-cabaret di Montmartre (Chat Noir e Auberge du Clou)",
+    "Al Conservatorio di Parigi",
+    "Alla Schola Cantorum",
+    "All'Opéra di Parigi",
+  ],
+  "Perché Satie non fu ammesso alle classi superiori del Conservatorio di Parigi?": [
+    "Per scarsi risultati e mancanza di impegno",
+    "Per indisciplina e assenze prolungate",
+    "Per scelta del padre di ritirarlo",
+    "Per problemi di salute",
+  ],
+  "Cosa significa il titolo Gymnopédie?": [
+    "Rimanda alla gymnopaedia, festa con danze dell'antica Grecia",
+    "Indica una danza medievale francese",
+    "È un termine inventato senza riferimenti",
+    "È il titolo di un romanzo di Flaubert",
+  ],
+  "Cosa trovarono gli amici nella stanza di Satie dopo la sua morte?": [
+    "Due pianoforti sovrapposti, oltre 100 ombrelli, spartiti nascosti",
+    "Solo spartiti ordinati e un pianoforte",
+    "Una collezione di strumenti a fiato e arpe",
+    "Un archivio di recensioni e giornali",
+  ],
+  "Cos'era la 'dieta bianca' di Satie?": [
+    "Una provocazione artistica descritta nelle Memorie di un Amnesico",
+    "Una dieta prescritta da un medico della Schola Cantorum",
+    "Un regime vegetariano imposto dall'Ordine della Rosa-Croce",
+    "Un esercizio di digiuno legato a Vexations",
+  ],
+  "Qual era il titolo originale della prima Gymnopédie?": [
+    "Danse antique",
+    "Danse sacrée",
+    "Danse grecque",
+    "Danse lente",
+  ],
+  "Qual è il legame tra Satie e la musica ambient?": [
+    "Satie anticipò l'ambient con la 'Musique d'ameublement'",
+    "Satie fondò un gruppo ambient negli anni '20",
+    "Satie compose la prima “Music for Airports”",
+    "Satie usò sintetizzatori per creare paesaggi sonori",
+  ],
+  "Chi fu John Cage e quale ruolo ebbe per Satie?": [
+    "Il grande riscopritore di Satie nel dopoguerra",
+    "Il primo direttore delle Gymnopédies al Conservatorio",
+    "Un critico che attaccò Satie per Parade",
+    "Un pianista che dedicò a Satie l'Album des Six",
+  ],
+  "In quali film famosi è stata usata la Gymnopédie n.1?": [
+    "Fuoco fatuo, I Tenenbaum, Man on Wire, Hugo Cabret",
+    "La La Land, Amélie, Il pianista, Il discorso del re",
+    "Il padrino, Pulp Fiction, Matrix, Titanic",
+    "2001: Odissea nello spazio, Blade Runner, Inception, Interstellar",
+  ],
+  "Qual è la principale difficoltà nell'esecuzione della n. 1?": [
+    "Controllo del suono e del pedale",
+    "Velocità digitale e articolazione virtuosistica",
+    "Uso di trilli continui e ottave",
+    "Cambi di tempo improvvisi",
+  ],
+  "Qual è il 'segreto armonico' della Gymnopédie n.1?": [
+    "La nota Fa# come collante tra gli accordi",
+    "Il pedale di tonica costante in Do",
+    "Un basso cromatico discendente",
+    "Moduli diatonici senza alterazioni",
+  ],
+  "Perché Satie fu soprannominato 'Esoterik Satie'?": [
+    "Per i suoi interessi mistici e il suo aspetto",
+    "Perché apparteneva ai Balletti Russi",
+    "Per la sua ossessione per il minimalismo",
+    "Perché lavorava alla Schola Cantorum",
+  ],
+  "Qual è la differenza principale tra Gymnopédies e Gnossiennes?": [
+    "Le Gymnopédies hanno metro regolare, le Gnossiennes no",
+    "Le Gymnopédies sono orchestrali, le Gnossiennes per quartetto",
+    "Le Gymnopédies sono in tonalità maggiore, le Gnossiennes in minore",
+    "Le Gymnopédies hanno canto, le Gnossiennes sono solo strumentali",
+  ],
+  "Quale ruolo ebbe Maurice Ravel nella riscoperta di Satie?": [
+    "Eseguì la Gymnopédie n.3 nel 1911",
+    "Orchestrò le Gymnopédies nel 1897",
+    "Pubblicò Les Antiques con Satie",
+    "Fondò la Schola Cantorum",
+  ],
+  "Perché Satie scrisse TRE Gymnopédies?": [
+    "Per la sua ossessione mistica per il numero 3",
+    "Per una commissione dell'Opera di Parigi",
+    "Per imitare le suite di Debussy",
+    "Per completare un ciclo di 12 pezzi",
+  ],
+  "Cosa significa la richiesta di musica 'senza crauti'?": [
+    "Una musica francese libera dal romanticismo tedesco",
+    "Una musica da eseguire con strumenti a fiato",
+    "Una musica allegra e popolare da cabaret",
+    "Una musica ispirata alla cucina alsaziana",
+  ],
+  "Come defini Debussy Satie nel 1892?": [
+    "Un musicista medievale e dolce smarrito in questo secolo",
+    "Un pianista virtuoso dalla tecnica impeccabile",
+    "Un compositore romantico di grande pathos",
+    "Un innovatore futurista del suono",
+  ],
+  "Quale indicazione descrive la dinamica sobria di Satie?": [
+    "Rubato sobrio",
+    "Forte marcato",
+    "Crescendo agitato",
+    "Staccato brillante",
+  ],
+  "Cosa sono gli accordi planati?": [
+    "Accordi che si muovono in blocco in parallelo",
+    "Accordi costruiti solo su quinte vuote",
+    "Accordi spezzati tra le mani",
+    "Accordi con pedale cromatico fisso",
+  ],
+  "Che cosa significa \"ostinato\" nella n. 1?": [
+    "Figura ripetuta nel basso",
+    "Una melodia improvvisata a ogni battuta",
+    "Un cambio di tempo improvviso",
+    "Una cadenza finale improvvisata",
+  ],
+  "Che cosa significa \"ambiguita tonale\"?": [
+    "Assenza di un chiaro arrivo armonico",
+    "Uso esclusivo di tonalità minori",
+    "Dominanza continua della tonica",
+    "Modulazioni rapide a ogni battuta",
+  ],
+  "Quale accordo accompagna il Fa# nella Gymnopédie n. 1?": [
+    "Sol maggiore settima e Re maggiore settima",
+    "Do maggiore settima e Fa maggiore settima",
+    "La minore settima e Mi maggiore",
+    "Re minore settima e Sol minore",
+  ],
+  "Quale rapporto armonico rende sospesa la n. 1?": [
+    "Alternanza tra Sol7+ e Re7+ senza risoluzione",
+    "Cadenza perfetta tonica-dominante",
+    "Basso cromatico discendente continuo",
+    "Modulazioni improvvise a tonalità lontane",
+  ],
+  "Cosa trovarono nella stanza di Arcueil oltre ai pianoforti?": [
+    "Ombrelli e abiti identici",
+    "Violini e strumenti a fiato",
+    "Libri di armonia e manuali di composizione",
+    "Tele e materiali da pittura",
+  ],
+  "Quale oggetto conteneva migliaia di disegni di castelli?": [
+    "Una scatola di sigari",
+    "Un baule da viaggio",
+    "Una cartella di cuoio",
+    "Una valigia militare",
+  ],
+  "Quale termine uso Satie per definirsi anziche musicista?": [
+    "Fonometrografo",
+    "Pianista di cabaret",
+    "Maestro di cappella",
+    "Compositore simbolista",
+  ],
+  "Quale oggetto proteggeva Satie sotto la pioggia?": [
+    "L'ombrello",
+    "Il cappello a cilindro",
+    "Il mantello",
+    "Il colletto rigido",
+  ],
+  "Quale titolo usa Satie nel periodo umoristico?": [
+    "Embryons desseches",
+    "La mer",
+    "Bolero",
+    "Le sacre du printemps",
+  ],
+  "Quale composizione richiede \"seria immobilita\" prima di suonare?": [
+    "Vexations",
+    "Ogives",
+    "Gnossiennes",
+    "Sarabandes",
+  ],
+  "Quale opera contiene le Sette piccole danze?": [
+    "Le Piege de Meduse",
+    "Parade",
+    "Socrate",
+    "Mercure",
+  ],
+  "Quale pittore influenzo l'estetica di Satie per la semplicità?": [
+    "Puvis de Chavannes",
+    "Monet",
+    "Degas",
+    "Picasso",
+  ],
+  "Quale dizionario e citato come possibile fonte del termine?": [
+    "Dictionnaire de Musique (Mondo o Rousseau)",
+    "Larousse gastronomique",
+    "Dictionnaire philosophique (Voltaire)",
+    "Dictionnaire d'architecture",
+  ],
+  "Quale gesto di Debussy spinse Doret a proporre l'orchestrazione?": [
+    "Suono le Gymnopédies al pianoforte al posto di Satie",
+    "Dirisse Parade al Theatre du Chatelet",
+    "Propose a Satie un incarico al Conservatorio",
+    "Pubblicò la n.2 nel 1895",
+  ],
+  "Quale composizione e legata alla frase \"in forma di pera\"?": [
+    "Trois morceaux en forme de poire",
+    "Sonatine bureaucratique",
+    "Descriptions automatiques",
+    "Sports et divertissements",
+  ],
+  "Quale brano per pianoforte e teatro anticipo il minimalismo?": [
+    "Vexations",
+    "Parade",
+    "Socrate",
+    "Ogives",
+  ],
+  "Quante volte va ripetuto Vexations secondo Satie?": [
+    "840",
+    "120",
+    "360",
+    "1000",
+  ],
+  "Quale rivista pubblico la Gymnopédie n. 1 con Les Antiques?": [
+    "La Musique des familles",
+    "Le Figaro",
+    "La Revue blanche",
+    "Le Temps",
+  ],
+  "Che tipo di testo e Les Antiques?": [
+    "Una poesia simbolista",
+    "Un romanzo storico",
+    "Un trattato musicale",
+    "Una commedia teatrale",
+  ],
+  "Il termine gymnopédie compare in Salammbô?": YESNO_POOL,
+  "Con quale poeta collaborò Satie per la prima pubblicazione?": [
+    "J. P. Contamine de Latour",
+    "Paul Verlaine",
+    "Stéphane Mallarmé",
+    "Guillaume Apollinaire",
+  ],
+  "Quando e perché Debussy orchestrò le Gymnopédies?": [
+    "Nel 1896, per aiutare l'amico Satie",
+    "Nel 1888, per la prima pubblicazione in rivista",
+    "Nel 1911, su richiesta di Ravel",
+    "Nel 1920, per i Ballets Russes",
+  ],
+  "In quale locale lavorava Satie come pianista a Montmartre?": [
+    "Le Chat Noir",
+    "Auberge du Clou",
+    "Moulin Rouge",
+    "Lapin Agile",
+  ],
+  "Chi fu Suzanne Valadon per Satie?": [
+    "L'unico amore documentato della sua vita",
+    "Una compositrice del Groupe des Six",
+    "Una mecenate della Schola Cantorum",
+    "Una critica musicale di Montmartre",
+  ],
+  "Qual è l'unico amore documentato di Satie?": [
+    "Suzanne Valadon",
+    "Jeanne de Bret",
+    "Jane Leslie Anton",
+    "Eugénie Barnetche",
+  ],
+  "Qual è il titolo del ciclo pianistico scritto senza stanghette di battuta?": [
+    "Gnossiennes",
+    "Gymnopédies",
+    "Sarabandes",
+    "Ogives",
+  ],
+  "Dopo la morte della madre nel 1872, dove andarono i figli?": [
+    "Dai nonni paterni a Honfleur",
+    "Dai nonni materni a Londra",
+    "Con il padre a Parigi",
+    "In collegio a Rouen",
+  ],
+  "Chi preparò Satie per il Conservatorio dopo il ritorno a Parigi?": [
+    "La matrigna Eugénie Barnetche",
+    "La madre Jane Leslie Anton",
+    "Il maestro del Chat Noir",
+    "Vincent d'Indy",
+  ],
+  "Chi fu John Cage e quale ruolo ebbe per Satie?": [
+    "Il grande riscopritore di Satie nel dopoguerra",
+    "Un editore delle Gymnopédies a Parigi",
+    "Il direttore della Schola Cantorum",
+    "Un pianista del Chat Noir",
+  ],
+  "Quale artista e legato al cabaret e al mondo di Satie a Montmartre?": [
+    "Henri de Toulouse-Lautrec",
+    "Pablo Picasso",
+    "Claude Monet",
+    "Paul Cézanne",
+  ],
+  "Quale fu il primo brano noto di Satie per pianoforte?": [
+    "Allegro",
+    "Valse-Ballet",
+    "Fantaisie-Valse",
+    "Ogives",
+  ],
+  "Quali opere giovanili scrisse tra il 1885 e il 1887?": [
+    "Valse-Ballet e Fantaisie-Valse",
+    "Ogives e Sarabandes",
+    "Gymnopédies e Gnossiennes",
+    "Sonatine bureaucratique e Parade",
+  ],
+  "In quale anno ebbero una prima esecuzione pubblica rilevante le orchestrazioni?": [
+    "1897",
+    "1891",
+    "1901",
+    "1911",
+  ],
+  "Quando furono composte le tre Gymnopédies?": [
+    "Tra febbraio e aprile 1888",
+    "Tra febbraio e aprile 1887",
+    "Tra febbraio e aprile 1890",
+    "Tra febbraio e aprile 1893",
+  ],
+  "In quale anno ruppe con Peladan e la Rosa-Croce?": [
+    "1892",
+    "1891",
+    "1893",
+    "1895",
+  ],
+  "Quando morì Erik Satie?": [
+    "1 luglio 1925",
+    "25 marzo 1918",
+    "18 maggio 1917",
+    "2 aprile 1888",
+  ],
+  "Quali balletti scrisse nel 1924?": [
+    "Mercure e Relache",
+    "Parade e Mercure",
+    "Relache e Parade",
+    "Socrate e Parade",
+  ],
+  "Quale gruppo di giovani artisti guido Satie?": [
+    "Les Nouveaux Jeunes",
+    "Il Gruppo dei Sei",
+    "Scuola di Arcueil",
+    "Ballets Russes",
+  ],
+  "Per quali compositori fu un patriarca spirituale?": [
+    "Il Gruppo dei Sei",
+    "Les Nouveaux Jeunes",
+    "Scuola di Arcueil",
+    "Schola Cantorum",
+  ],
+  "Come si chiamo il gruppo di discepoli degli anni '20?": [
+    "Scuola di Arcueil",
+    "Les Nouveaux Jeunes",
+    "Il Gruppo dei Sei",
+    "Ballets Russes",
+  ],
+  "Quale raccolta include bozzetti autobiografici ironici?": [
+    "Memoires d'un amnesique",
+    "Cahiers d'un mammifere",
+    "Cartulaire",
+    "Sports et divertissements",
+  ],
+  "Come si intitola l'altra raccolta di scritti brevi?": [
+    "Cahiers d'un mammifere",
+    "Memoires d'un amnesique",
+    "Cartulaire",
+    "Descriptions automatiques",
+  ],
+  "Quale lavoro del 1886 apre la lista delle opere principali?": [
+    "Ogives",
+    "Sarabandes",
+    "Gymnopédies",
+    "Gnossiennes",
+  ],
+  "Quali brani del 1887 anticipano la scrittura sospesa?": [
+    "Sarabandes",
+    "Ogives",
+    "Gymnopédies",
+    "Gnossiennes",
+  ],
+  "Quale raccolta di brani senza battute scrisse nel 1890-97?": [
+    "Gnossiennes",
+    "Gymnopédies",
+    "Sarabandes",
+    "Ogives",
+  ],
+  "Quale opera sinfonica del 1918 scrisse Satie?": [
+    "Socrate",
+    "Parade",
+    "Mercure",
+    "Messe des pauvres",
+  ],
+  "Che cos'e la Musique d'ameublement?": [
+    "Musica funzionale come sottofondo (1917-23)",
+    "Una raccolta di danze antiche per pianoforte",
+    "Un ciclo orchestrale dedicato a Debussy",
+    "Un manifesto del Gruppo dei Sei",
+  ],
+  "Quale balletto del 1917 include suoni ambientali?": [
+    "Parade",
+    "Mercure",
+    "Relache",
+    "Socrate",
+  ],
+  "Quale brano per cinema compose nel 1924?": [
+    "Entr'acte",
+    "Parade",
+    "Mercure",
+    "Socrate",
+  ],
+  "Quale composizione sacra scrisse tra 1893 e 1895?": [
+    "Messe des pauvres",
+    "Socrate",
+    "Ogives",
+    "Parade",
+  ],
+  "Quale sonatina satirica scrisse nel 1917?": [
+    "Sonatine bureaucratique",
+    "Trois morceaux en forme de poire",
+    "Descriptions automatiques",
+    "Ogives",
+  ],
+  "Quale raccolta pianistica del 1913 firmò Satie?": [
+    "Descriptions automatiques",
+    "Embryons desséchés",
+    "Sports et divertissements",
+    "Vieux sequins et vieilles cuirasses",
+  ],
+  "Quale opera ballettistica debuttò nel 1917 al Chatelet?": [
+    "Parade",
+    "Mercure",
+    "Relache",
+    "Le Fils des Etoiles",
+  ],
+  "Chi e l'autore di 4'33\"?": [
+    "John Cage",
+    "Erik Satie",
+    "Philip Glass",
+    "Steve Reich",
+  ],
+  "Quale pianista rilanciò Satie nel 1911?": [
+    "Maurice Ravel",
+    "Claude Debussy",
+    "Ricardo Viñes",
+    "Alfred Cortot",
+  ],
+  "Quale diploma ottenne Satie nel 1908?": [
+    "Diploma di contrappunto",
+    "Diploma di fuga",
+    "Diploma di composizione",
+    "Diploma di pianoforte",
+  ],
+  "Perché la frase \"sans choucroute\" è significativa?": [
+    "Richiama l'anti-wagnerismo di Satie",
+    "Indica un gusto per la musica tedesca",
+    "Si riferisce alla cucina alsaziana",
+    "Era il titolo di un brano satirico",
+  ],
+  "Che cosa successe alla prima esecuzione della musique d'ameublement?": [
+    "Il pubblico si sedette ad ascoltare",
+    "Il pubblico parlò e passeggiò come richiesto",
+    "La musica fu interrotta dagli attori",
+    "L'esecuzione venne annullata",
+  ],
+  "Quale termine uso Apollinaire per descrivere Parade?": [
+    "Surrealismo",
+    "Futurismo",
+    "Impressionismo",
+    "Simbolismo",
+  ],
+  "Quale periodo artistico influenza Satie alla Rosa-Croce?": [
+    "Simbolismo",
+    "Realismo",
+    "Fauvismo",
+    "Cubismo",
+  ],
+  "Quale danza antica compare nei versi di Les Antiques?": [
+    "La sarabanda",
+    "La gavotta",
+    "La pavana",
+    "La polacca",
+  ],
+  "Qual è la definizione di musique d'ameublement?": [
+    "Musica da ignorare, funzionale all'ambiente",
+    "Musica da concerto con grande orchestra",
+    "Musica sacra per organo e coro",
+    "Musica da ballo per il cabaret",
+  ],
+  "Quale brano fu orchestrato da Debussy e pubblicato nel 1897?": [
+    "Gymnopédies n. 1 e n. 3",
+    "Gymnopédies n. 2 e n. 3",
+    "Sarabandes n. 1 e n. 3",
+    "Gnossiennes n. 1 e n. 2",
+  ],
+  "Quale opera di Satie e definita \"Wagnerie\"?": [
+    "Le Fils des Etoiles",
+    "Messe des pauvres",
+    "Socrate",
+    "Parade",
+  ],
+  "Quale opera contiene indicazioni bizzarre come \"aprite la testa\"?": [
+    "Gnossiennes",
+    "Gymnopédies",
+    "Sarabandes",
+    "Ogives",
+  ],
+  "Quale funzione ebbe il Cartulaire?": [
+    "Bollettino polemico della sua chiesa",
+    "Raccolta di spartiti per pianoforte",
+    "Manifesto dei Balletti Russi",
+    "Trattato di armonia",
+  ],
+  "Quale luogo ospitò la prima di Parade?": [
+    "Theatre du Chatelet, Parigi",
+    "Opera di Parigi",
+    "Salle Pleyel",
+    "Théâtre des Champs-Élysées",
+  ],
+  "Quale luogo ospitò la prima integrale di Vexations?": [
+    "New York, 1963",
+    "Parigi, 1897",
+    "Arcueil, 1925",
+    "Londra, 1911",
+  ],
+  "Quale rivista pubblicò l'estratto di Les Antiques?": [
+    "La Musique des familles",
+    "Le Figaro",
+    "La Revue blanche",
+    "Le Temps",
+  ],
+  "Quante Gymnopédies compose Satie?": [
+    "3",
+    "2",
+    "4",
+    "6",
+  ],
+  "Quale compositore e legato al cabaret e al mondo di Satie a Montmartre?": [
+    "Henri de Toulouse-Lautrec",
+    "Pablo Picasso",
+    "Claude Monet",
+    "Paul Cézanne",
+  ],
+};
+
+const hashString = (value) => {
+  let hash = 0;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+};
+
+const seededRandom = (seed) => {
+  let value = seed % 2147483647;
+  if (value <= 0) value += 2147483646;
+  return () => {
+    value = (value * 16807) % 2147483647;
+    return (value - 1) / 2147483646;
+  };
+};
+
+const shuffleWithSeed = (items, seed) => {
+  const result = [...items];
+  const random = seededRandom(seed);
+  for (let i = result.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+};
+
+const pickDistractors = (pool, answer, count, seed) => {
+  const filtered = pool.filter((item) => item !== answer);
+  if (!filtered.length) return [];
+  const picks = new Set();
+  let idx = seed % filtered.length;
+  while (picks.size < Math.min(count, filtered.length)) {
+    picks.add(filtered[idx]);
+    idx = (idx + 7) % filtered.length;
+  }
+  return Array.from(picks);
+};
+
+const classifyQuestion = (q, a) => {
+  const lowerQ = q.toLowerCase();
+  if (COMPOSER_POOL.includes(a)) return "composer";
+  if (POET_POOL.includes(a) || a.includes("Contamine")) return "poet";
+  if (PAINTER_POOL.includes(a)) return "painter";
+  if (CRITIC_POOL.includes(a)) return "critic";
+  if (PEOPLE_POOL.includes(a)) return "person";
+  if (/^\d{1,2}:\d{2}$/.test(a)) return "time";
+  if (/^\d\/\d$/.test(a)) return "meter";
+  if (a === "Sì" || a === "No") return "yesno";
+  if (lowerQ.startsWith("a che ora")) return "time";
+  if (lowerQ.startsWith("quando") || lowerQ.includes("in quale anno") || lowerQ.includes("anno") || lowerQ.includes("data"))
+    return "date";
+  if (lowerQ.startsWith("dove") || lowerQ.includes("luogo")) return "place";
+  if (lowerQ.includes("compositore")) return "composer";
+  if (lowerQ.includes("poeta")) return "poet";
+  if (lowerQ.includes("pittore")) return "painter";
+  if (lowerQ.includes("critico")) return "critic";
+  if (lowerQ.includes("coreografo")) return "choreographer";
+  if (lowerQ.startsWith("chi") || lowerQ.includes("autore")) return "person";
+  if (lowerQ.includes("quante") || lowerQ.includes("quanti") || lowerQ.includes("numero")) return "number";
+  if (
+    lowerQ.includes("quale opera") ||
+    lowerQ.includes("quale brano") ||
+    lowerQ.includes("quale balletto") ||
+    lowerQ.includes("quale composizione") ||
+    lowerQ.includes("quale raccolta") ||
+    lowerQ.includes("quale sonatina") ||
+    lowerQ.includes("quale titolo") ||
+    lowerQ.includes("quale ciclo") ||
+    lowerQ.includes("quale musica") ||
+    lowerQ.includes("quale rivista") ||
+    lowerQ.includes("quale istituzione") ||
+    lowerQ.includes("quale lavoro") ||
+    lowerQ.includes("quale bollettino") ||
+    lowerQ.includes("brano") ||
+    lowerQ.includes("opere") ||
+    lowerQ.includes("opera") ||
+    lowerQ.includes("sonatina") ||
+    lowerQ.includes("balletto") ||
+    lowerQ.includes("raccolta") ||
+    lowerQ.includes("ciclo") ||
+    lowerQ.includes("chiesa") ||
+    lowerQ.includes("bollettino") ||
+    lowerQ.includes("rivista")
+  )
+    return "work";
+  return "concept";
+};
+
+const getPool = (type) => {
+  switch (type) {
+    case "time":
+      return TIME_POOL;
+    case "meter":
+      return METER_POOL;
+    case "yesno":
+      return YESNO_POOL;
+    case "date":
+      return DATE_POOL;
+    case "place":
+      return PLACE_POOL;
+    case "composer":
+      return COMPOSER_POOL;
+    case "poet":
+      return POET_POOL;
+    case "painter":
+      return PAINTER_POOL;
+    case "critic":
+      return CRITIC_POOL;
+    case "choreographer":
+      return CHOREOGRAPHER_POOL;
+    case "person":
+      return PEOPLE_POOL;
+    case "number":
+      return NUMBER_POOL;
+    case "work":
+      return WORK_POOL;
+    default:
+      return CONCEPT_POOL;
+  }
+};
+
+const buildOptions = (card) => {
+  if (CUSTOM_OPTIONS[card.q]) {
+    const baseOptions = CUSTOM_OPTIONS[card.q];
+    const answerIndex = baseOptions.indexOf(card.a);
+    const normalized = answerIndex === -1 ? [card.a, ...baseOptions.slice(0, 3)] : baseOptions;
+    const seed = hashString(card.q);
+    const shuffled = shuffleWithSeed(normalized, seed + 17);
+    return {
+      options: shuffled,
+      answerIndex: shuffled.indexOf(card.a),
+    };
+  }
+  const type = classifyQuestion(card.q, card.a);
+  const pool = getPool(type);
+  const seed = hashString(card.q);
+  const distractors = pickDistractors(pool, card.a, 3, seed);
+  const options = shuffleWithSeed([card.a, ...distractors], seed + 13);
+  const answerIndex = options.indexOf(card.a);
+  return { options, answerIndex };
+};
+
 /**
  * Quiz generato automaticamente dalle flashcard
- * Ogni quiz ha 4 opzioni di risposta
+ * Ogni quiz ha 4 opzioni di risposta verosimili
  */
-export const quizData = flashcardsData.map((card) => ({
-  q: card.q,
-  options: [card.a, "Non lo so", "Non applicabile", "Altro"],
-  answer: 0,
-  details: card.details,
-}));
+export const quizData = flashcardsData.map((card) => {
+  const { options, answerIndex } = buildOptions(card);
+  return {
+    q: card.q,
+    options,
+    answer: answerIndex,
+    details: card.details,
+  };
+});

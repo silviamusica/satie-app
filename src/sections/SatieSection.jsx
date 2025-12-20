@@ -72,7 +72,7 @@ const SatieSection = ({ goTo }) => {
           </p>
           <ul className="space-y-2">
             <li>
-              • <strong>Allontanamento artistico:</strong> Il "padre spirituale" non voleva seguaci; il successo del gruppo
+              • <strong>Allontanamento artistico:</strong> il "padre spirituale" non voleva seguaci; il successo del gruppo
               lo convinse che stava diventando parte dell'accademia che lui rifiutava.
             </li>
             <li>
@@ -80,7 +80,7 @@ const SatieSection = ({ goTo }) => {
               di essersi "venduto" al gusto borghese; con <strong>Francis Poulenc</strong> ci furono tensioni e lunghi silenzi.
             </li>
             <li>
-              • <strong>Scuola di Arcueil:</strong> Nel 1923 adottò un nuovo gruppo di giovani (tra cui <strong>Henri Sauguet</strong>),
+              • <strong>Scuola di Arcueil:</strong> nel 1923 adottò un nuovo gruppo di giovani (tra cui <strong>Henri Sauguet</strong>),
               segnale del definitivo distacco dai Sei ormai affermati.
             </li>
             <li>
