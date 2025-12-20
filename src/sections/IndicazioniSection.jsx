@@ -1,8 +1,6 @@
-import { useState } from "react";
-import { Sparkles, ChevronRight } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const IndicazioniSection = () => {
-  const [openModal, setOpenModal] = useState(false);
   const indicazioni = [
     {
       titolo: "Gnossiennes (n.1, 2, 3)",
@@ -99,55 +97,6 @@ const IndicazioniSection = () => {
 
   return (
     <div id="indicazioni" className="space-y-6 max-w-5xl mx-auto">
-      {openModal && (
-        <div
-          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
-          role="dialog"
-          aria-modal="true"
-          onClick={() => setOpenModal(false)}
-        >
-          <div
-            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
-                Indicazioni sugli spartiti: note strambe
-              </h3>
-              <button
-                type="button"
-                onClick={() => setOpenModal(false)}
-                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
-              >
-                chiudi
-              </button>
-            </div>
-            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
-              <p>
-                Queste annotazioni paratestuali sono una firma di Satie: indicazioni impossibili o metaforiche,
-                pensate per influenzare la psicologia dell'esecutore più che la tecnica.
-              </p>
-              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
-                <p>
-                  <strong>Doppio fondo:</strong> Satie vietava spesso di leggere queste frasi ad alta voce durante
-                  l'esecuzione, creando un "segreto" tra compositore ed esecutore.
-                </p>
-              </div>
-              <p>
-                Alcune indicazioni sono apertamente ironiche; altre richiedono un'immaginazione poetica ("aprite la testa",
-                "seppellite il suono") o alludono a scene teatrali.
-              </p>
-              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
-                <p>
-                  <strong>Pianoforte preparato:</strong> Le <em>Sette piccole danze</em> di <em>Le Piège de Méduse</em>
-                  sono considerate un primo esempio di pianoforte preparato, anticipando John Cage.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-slate-100 mb-3 flex items-center gap-3">
           <Sparkles className="w-6 h-6 text-blue-400" />
@@ -159,7 +108,6 @@ const IndicazioniSection = () => {
             dell'esecutore.
           </p>
         </div>
-
         <div className="mt-5 space-y-3">
           {indicazioni.map((item) => (
             <div key={item.titolo} className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
@@ -173,14 +121,29 @@ const IndicazioniSection = () => {
             </div>
           ))}
         </div>
+        <div className="space-y-4 text-sm text-slate-300 leading-relaxed mt-6">
+          <p>
+            Queste annotazioni paratestuali sono una firma di Satie: indicazioni impossibili o metaforiche,
+            pensate per influenzare la psicologia dell'esecutore più che la tecnica.
+          </p>
+          <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
+            <p>
+              <strong>Doppio fondo:</strong> Satie vietava spesso di leggere queste frasi ad alta voce durante
+              l'esecuzione, creando un "segreto" tra compositore ed esecutore.
+            </p>
+          </div>
+          <p>
+            Alcune indicazioni sono apertamente ironiche; altre richiedono un'immaginazione poetica ("aprite la testa",
+            "seppellite il suono") o alludono a scene teatrali.
+          </p>
+          <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
+            <p>
+              <strong>Pianoforte preparato:</strong> Le <em>Sette piccole danze</em> di <em>Le Piège de Méduse</em>
+              sono considerate un primo esempio di pianoforte preparato, anticipando John Cage.
+            </p>
+          </div>
+        </div>
 
-        <button
-          type="button"
-          onClick={() => setOpenModal(true)}
-          className="mt-5 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
-        >
-          Approfondisci <ChevronRight className="w-4 h-4" />
-        </button>
       </div>
     </div>
   );

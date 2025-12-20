@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Sparkles, Music, Library, ExternalLink, ChevronRight } from "lucide-react";
+import Modal from "../components/Modal";
 
 const EreditaSection = () => {
   const [showAmeublementModal, setShowAmeublementModal] = useState(false);
@@ -36,134 +37,96 @@ const EreditaSection = () => {
 
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
-      {showAmeublementModal && (
-        <div
-          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
-          role="dialog"
-          aria-modal="true"
-          onClick={() => setShowAmeublementModal(false)}
-        >
-          <div
-            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
-                Musique d'ameublement: la musica come arredo
-              </h3>
-              <button
-                type="button"
-                onClick={() => setShowAmeublementModal(false)}
-                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
-              >
-                chiudi
-              </button>
-            </div>
-            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
-              <p className="text-slate-200">
-                In sintesi: <strong>musica da ignorare</strong>, progettata per fondersi con l'ambiente.
-              </p>
-              <p>
-                La <strong>musique d'ameublement</strong> (musica d'arredamento) è la proposta più radicale di Satie:
-                la musica <strong>non deve essere ascoltata</strong> come concerto, ma deve stare in sottofondo come
-                un mobile in una stanza.
-              </p>
+      <Modal
+        isOpen={showAmeublementModal}
+        onClose={() => setShowAmeublementModal(false)}
+        title="Musique d'ameublement: la musica come arredo"
+        maxWidth="max-w-4xl"
+      >
+        <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
+          <p className="text-slate-200">
+            In sintesi: <strong>musica da ignorare</strong>, progettata per fondersi con l'ambiente.
+          </p>
+          <p>
+            La <strong>musique d'ameublement</strong> (musica d'arredamento) è la proposta più radicale di Satie:
+            la musica <strong>non deve essere ascoltata</strong> come concerto, ma deve stare in sottofondo come
+            un mobile in una stanza.
+          </p>
 
-              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
-                <p>
-                  L'idea nasce (secondo Fernand Léger) in un ristorante: Satie immagina una musica capace di{" "}
-                  <strong>ammorbidire i rumori</strong> di coltelli e forchette, senza imporsi.
-                </p>
-              </div>
+          <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-blue-500">
+            <p>
+              L'idea nasce (secondo Fernand Léger) in un ristorante: Satie immagina una musica capace di{" "}
+              <strong>ammorbidire i rumori</strong> di coltelli e forchette, senza imporsi.
+            </p>
+          </div>
 
-              <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-                <h4 className="text-sm font-semibold text-slate-100 mb-2">In parole semplici</h4>
-                <ul className="space-y-2">
-                  <li>• Non è “arte sacra”: è <strong>funzionale</strong>, come luce o riscaldamento.</li>
-                  <li>• È <strong>anti-ascolto</strong>: deve essere ignorata, non seguita con devozione.</li>
-                  <li>• Musicalmente usa <strong>frammenti brevi ripetuti</strong> senza sviluppo o climax.</li>
-                </ul>
-              </div>
+          <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+            <h4 className="text-sm font-semibold text-slate-100 mb-2">In parole semplici</h4>
+            <ul className="space-y-2">
+              <li>• Non è “arte sacra”: è <strong>funzionale</strong>, come luce o riscaldamento.</li>
+              <li>• È <strong>anti-ascolto</strong>: deve essere ignorata, non seguita con devozione.</li>
+              <li>• Musicalmente usa <strong>frammenti brevi ripetuti</strong> senza sviluppo o climax.</li>
+            </ul>
+          </div>
 
-              <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
-                <h4 className="text-sm font-semibold text-slate-100 mb-2">Opere (1917–1923)</h4>
-                <ul className="space-y-2">
-                  <li>• <strong>Tapisserie en fer forgé</strong> – per un vestibolo di ricevimento.</li>
-                  <li>• <strong>Carrelage phonique</strong> – per un pranzo o una firma di contratto.</li>
-                  <li>• <strong>Tenture de cabinet préfectoral</strong> – 12 battute da ripetere all'infinito.</li>
-                  <li>• <strong>Chez un bistrot</strong></li>
-                  <li>• <strong>Un salon</strong></li>
-                </ul>
-              </div>
+          <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+            <h4 className="text-sm font-semibold text-slate-100 mb-2">Opere (1917–1923)</h4>
+            <ul className="space-y-2">
+              <li>• <strong>Tapisserie en fer forgé</strong> – per un vestibolo di ricevimento.</li>
+              <li>• <strong>Carrelage phonique</strong> – per un pranzo o una firma di contratto.</li>
+              <li>• <strong>Tenture de cabinet préfectoral</strong> – 12 battute da ripetere all'infinito.</li>
+              <li>• <strong>Chez un bistrot</strong></li>
+              <li>• <strong>Un salon</strong></li>
+            </ul>
+          </div>
 
-              <p>
-                L'unico esperimento pubblico (Galerie Barbazanges, 8 marzo 1920) fallì: il pubblico si sedette ad
-                ascoltare. Satie gridava: <em>"Parlate! Circolate! Non ascoltate!"</em>.
-              </p>
+          <p>
+            L'unico esperimento pubblico (Galerie Barbazanges, 8 marzo 1920) fallì: il pubblico si sedette ad
+            ascoltare. Satie gridava: <em>"Parlate! Circolate! Non ascoltate!"</em>.
+          </p>
 
-              <p>
-                Il concetto torna nel cinema: per <em>Entr'acte</em> (1924) scrive musica a blocchi ripetuti, pensata
-                come sfondo che accompagna le immagini.
-              </p>
+          <p>
+            Il concetto torna nel cinema: per <em>Entr'acte</em> (1924) scrive musica a blocchi ripetuti, pensata
+            come sfondo che accompagna le immagini.
+          </p>
 
-              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
-                <p>
-                  Eredità: <strong>ambient</strong> (Brian Eno), <strong>minimalismo</strong>, John Cage e perfino la musica
-                  di sottofondo moderna (Muzak). Un'intuizione profetica su come oggi viviamo il suono.
-                </p>
-              </div>
-            </div>
+          <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
+            <p>
+              Eredità: <strong>ambient</strong> (Brian Eno), <strong>minimalismo</strong>, John Cage e perfino la musica
+              di sottofondo moderna (Muzak). Un'intuizione profetica su come oggi viviamo il suono.
+            </p>
           </div>
         </div>
-      )}
-      {showMinimalismoModal && (
-        <div
-          className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
-          role="dialog"
-          aria-modal="true"
-          onClick={() => setShowMinimalismoModal(false)}
-        >
-          <div
-            className="w-full max-w-4xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-100">
-                Minimalismo: il filo che parte da Satie
-              </h3>
-              <button
-                type="button"
-                onClick={() => setShowMinimalismoModal(false)}
-                className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
-              >
-                chiudi
-              </button>
-            </div>
-            <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
-              <p className="text-slate-200">
-                In sintesi: <strong>ripetizione, staticita e attenzione al tempo</strong> al posto dello sviluppo drammatico.
-              </p>
-              <p>
-                Le <em>Gymnopédies</em>, le <em>Gnossiennes</em> e soprattutto <em>Vexations</em> anticipano una logica
-                musicale basata su <strong>processi</strong> e <strong>durate</strong> piu che su climax narrativi.
-                Satie riduce la materia, lascia spazio al silenzio e al colore timbrico: elementi che diventeranno
-                centrali nel minimalismo del Novecento.
-              </p>
-              <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
-                <p>
-                  <strong>John Cage</strong> fece eseguire <em>Vexations</em> nel 1963 (840 ripetizioni) e riconobbe
-                  in Satie un precursore della musica come processo. Da qui il ponte verso <strong>Steve Reich</strong>,
-                  <strong>Philip Glass</strong> e l'estetica della ripetizione.
-                </p>
-              </div>
-              <p>
-                Il minimalismo, come la musica d'arredamento, nasce anche da un rifiuto dell'enfasi romantica:
-                meno pathos, piu presenza. In questo senso Satie e un vero <strong>punto di origine</strong>.
-              </p>
-            </div>
+      </Modal>
+      <Modal
+        isOpen={showMinimalismoModal}
+        onClose={() => setShowMinimalismoModal(false)}
+        title="Minimalismo: il filo che parte da Satie"
+        maxWidth="max-w-4xl"
+      >
+        <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
+          <p className="text-slate-200">
+            In sintesi: <strong>ripetizione, staticita e attenzione al tempo</strong> al posto dello sviluppo drammatico.
+          </p>
+          <p>
+            Le <em>Gymnopédies</em>, le <em>Gnossiennes</em> e soprattutto <em>Vexations</em> anticipano una logica
+            musicale basata su <strong>processi</strong> e <strong>durate</strong> piu che su climax narrativi.
+            Satie riduce la materia, lascia spazio al silenzio e al colore timbrico: elementi che diventeranno
+            centrali nel minimalismo del Novecento.
+          </p>
+          <div className="bg-slate-800/50 p-4 rounded-lg border-l-2 border-emerald-500">
+            <p>
+              <strong>John Cage</strong> fece eseguire <em>Vexations</em> nel 1963 (840 ripetizioni) e riconobbe
+              in Satie un precursore della musica come processo. Da qui il ponte verso <strong>Steve Reich</strong>,
+              <strong>Philip Glass</strong> e l'estetica della ripetizione.
+            </p>
           </div>
+          <p>
+            Il minimalismo, come la musica d'arredamento, nasce anche da un rifiuto dell'enfasi romantica:
+            meno pathos, piu presenza. In questo senso Satie e un vero <strong>punto di origine</strong>.
+          </p>
         </div>
-      )}
+      </Modal>
 
       {/* Header */}
       <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">

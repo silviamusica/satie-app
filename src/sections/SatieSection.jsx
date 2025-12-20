@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import { User, Users, Music, BookOpen, GraduationCap, Sparkles, ChevronDown, XCircle, Home } from "lucide-react";
 import Tooltip from "../components/Tooltip";
+import Modal from "../components/Modal";
 import { satieLifeTimeline } from "../data/timeline";
 import StramberieSection from "./StramberieSection";
 import IndicazioniSection from "./IndicazioniSection";
 
-const SatieSection = () => {
+const SatieSection = ({ goTo }) => {
   const [satieTab, setSatieTab] = useState("vita");
   const [showFullTimeline, setShowFullTimeline] = useState(false);
+  const [showFilsModal, setShowFilsModal] = useState(false);
+  const [showParadeTranscript, setShowParadeTranscript] = useState(false);
+  const [showScholaModal, setShowScholaModal] = useState(false);
   const satieTabs = [
     { key: "vita", label: "La vita" },
     { key: "amicizie", label: "Amicizie" },
@@ -37,12 +41,15 @@ const SatieSection = () => {
         <img
           src="/images/Satie con occhiali.jpg"
           alt="Erik Satie con occhiali"
-          className="w-full h-72 md:h-96 object-contain p-2"
+          className="w-full object-contain p-2"
         />
-        <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+        <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
           Erik Satie: il bohémien che rifiuta le convenzioni accademiche
         </p>
       </div>
+      <p className="text-sm text-slate-400">
+        Tre sezioni da esplorare: la vita, le amicizie, le stramberie.
+      </p>
       <div className="bg-slate-900 border border-slate-700 rounded-xl p-3 flex flex-wrap gap-2">
         {satieTabs.map((tab) => (
           <button
@@ -70,7 +77,7 @@ const SatieSection = () => {
         </h2>
         <div className="space-y-4">
           <div className="space-y-4">
-            <div className="rounded-lg overflow-hidden border border-slate-600">
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
               <img
                 src="/images/Honfleur.jpg"
                 alt="Honfleur, città natale"
@@ -80,7 +87,6 @@ const SatieSection = () => {
                 Honfleur, Normandia: porto pittoresco dove nacque Erik Satie nel 1866
               </p>
             </div>
-
             <div className="space-y-3">
               <h3 className="text-base font-semibold text-slate-100">Honfleur, 17 maggio 1866</h3>
               <p className="text-sm text-slate-300 leading-relaxed">
@@ -148,15 +154,30 @@ const SatieSection = () => {
               </p>
             </div>
 
-            <div className="mt-4 rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-              <img
-                src="/images/Conservatorio di Parigi.jpg"
-                alt="Conservatoire de Paris"
-                className="w-full h-48 object-contain p-2"
-              />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-                Conservatoire de Paris: l'istituzione che giudicò Satie "il più pigro studente"
+            <div className="mt-4 grid md:grid-cols-[1fr_1.3fr] gap-4 items-start">
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/Conservatorio di Parigi.jpg"
+                  alt="Conservatoire de Paris"
+                  className="w-full h-56 object-contain p-2"
+                />
+                <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                  Conservatoire de Paris: l'istituzione che giudicò Satie "il più pigro studente"
+                </p>
+              </div>
+            <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+              <h3 className="text-base font-semibold text-slate-100 mb-2">Appunti dai registri</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                I giudizi sul talento pianistico di Satie erano durissimi, ma l'esperienza al Conservatorio
+                diventa il primo grande attrito con l'accademia: un rifiuto che plasmerà la sua estetica
+                anti-retorica e indipendente.
               </p>
+              <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                Le annotazioni dei docenti parlano di un allievo "dotato ma indolente" e "privo di valore".
+                Il verdetto del 1882 dopo l'Op. 26 di Beethoven sancì di fatto la sua uscita dalle classi superiori,
+                trasformando la frustrazione in un motore creativo fuori dai canoni ufficiali.
+              </p>
+            </div>
             </div>
           </div>
 
@@ -167,22 +188,32 @@ const SatieSection = () => {
               Voltaire, Dumas, Andersen. Sviluppa preferenze musicali personali per <strong>Bach, Chopin e Schumann</strong>.
               Rifiuta il wagnerismo dominante e cerca una strada alternativa.
             </p>
-
             <h3 className="text-base font-semibold text-slate-100 mb-2 mt-4">1884 — il primo brano: <em>Allegro</em></h3>
-            <p className="text-sm text-slate-300 leading-relaxed mb-3">
+            <p className="text-sm text-slate-300 leading-relaxed mb-4">
               La prima composizione nota per pianoforte è l'<strong><em>Allegro</em></strong>, scritta nel <strong>1884</strong> a 18 anni.
               Seguono altre opere giovanili come la <em>Valse-Ballet</em> e la <em>Fantaisie-Valse</em> (<strong>1885-1887</strong>, 19-21 anni).
             </p>
-
-            <div className="rounded-lg overflow-hidden border border-slate-600">
-              <img
-                src="/images/allegro-satie-1884.jpeg"
-                alt="Spartito dell'Allegro di Erik Satie"
-                className="w-full object-contain bg-slate-950 p-2"
-              />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-                "Allegro" (1884): la prima composizione ufficiale di Erik Satie
-              </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/allegro-satie-1884.jpeg"
+                  alt="Spartito dell'Allegro di Erik Satie"
+                  className="w-full h-56 object-contain bg-slate-950 p-2"
+                />
+                <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                  "Allegro" (1884): la prima composizione ufficiale di Erik Satie
+                </p>
+              </div>
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/Erik_Satie_1884.jpg"
+                  alt="Erik Satie nel 1884"
+                  className="w-full h-56 object-contain bg-slate-950 p-2"
+                />
+                <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                  Erik Satie nel 1884 (18 anni), a Parigi
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -218,26 +249,35 @@ const SatieSection = () => {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="rounded-lg overflow-hidden border border-slate-600">
-              <img
-                src="/images/6_Rue_Cortot -.jpeg"
-                alt="6 Rue Cortot, Montmartre"
-                className="w-full h-72 object-contain bg-slate-950 p-2"
-              />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-                6 Rue Cortot, Montmartre: abitazione di Satie durante gli anni delle Gymnopédies.
-              </p>
-            </div>
-
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="rounded-lg overflow-hidden border border-slate-600">
               <img
                 src="/images/The bohemien SATIE.jpg"
                 alt="Erik Satie in abito bohémien"
-                className="w-full h-72 object-contain bg-slate-950 p-2"
+                className="w-full h-56 object-contain bg-slate-950 p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
                 Erik Satie in abito bohémien: ritratto del compositore negli anni di Montmartre.
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden border border-slate-600">
+              <img
+                src="/images/erik-satie-son-of-stars_u-l-q1nt8j80.jpg"
+                alt="Citazione di Erik Satie"
+                className="w-full h-56 object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                «Sono venuto al mondo molto giovane in un tempo molto vecchio».
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden border border-slate-600">
+              <img
+                src="/images/jean-cocteau---erik-satie--arcueil--mais-JKLTD-570.webp"
+                alt="Schizzo di Jean Cocteau su Erik Satie"
+                className="w-full h-56 object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                Jean Cocteau, poeta e artista d'avanguardia, ritrae Satie con un tratto affettuoso.
               </p>
             </div>
           </div>
@@ -253,15 +293,28 @@ const SatieSection = () => {
               un suono "bianco" che oppone al wagnerismo dominante un'<strong>estetica dell'essenziale</strong>.
             </p>
 
-            <div className="rounded-lg overflow-hidden border border-slate-600 mt-3">
-              <img
-                src="/images/SATIE SCHIZZO AL PIANO.jpg"
-                alt="Ritratto di Erik Satie all'armonium"
-                className="w-full object-contain bg-slate-950 p-2"
-              />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-                Ritratto di Erik Satie che suona l'armonium (Santiago Rusiñol, senza data)
-              </p>
+            <div className="grid md:grid-cols-[1fr_1.2fr] gap-4 items-start">
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+                <img
+                  src="/images/SATIE SCHIZZO AL PIANO.jpg"
+                  alt="Ritratto di Erik Satie all'armonium"
+                  className="w-full h-56 object-contain bg-slate-950 p-2"
+                />
+                <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                  Ritratto di Erik Satie che suona l'armonium (Santiago Rusiñol, senza data)
+                </p>
+              </div>
+              <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+                <h3 className="text-base font-semibold text-slate-100 mb-2">L'estetica della semplicità</h3>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  Rusiñol descriveva Satie come un musicista che cercava la stessa semplicità austera dei quadri di
+                  Puvis de Chavannes. L'immagine all'armonium rende bene questa idea di suono contenuto e rituale.
+                </p>
+                <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                  In queste pagine non c'è enfasi romantica: c'è una lentezza deliberata, un gesto minimo che lascia
+                  spazio al silenzio e alla risonanza. È il modo con cui Satie scolpisce il tempo, più che riempirlo.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -283,36 +336,90 @@ const SatieSection = () => {
             <img
               src="/images/Peladan.jpg"
               alt="Joséphin Péladan"
-              className="w-full object-contain bg-slate-950 p-2"
+              className="w-full h-56 object-contain bg-slate-950 p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
               Joséphin Péladan, fondatore dell'Ordine della Rosa-Croce
             </p>
           </div>
-          <div className="rounded-lg overflow-hidden border border-slate-600">
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
             <img
-              src="/images/erik-satie-son-of-stars_u-l-q1nt8j80.jpg"
-              alt="Manoscritto Le Fils des Étoiles"
-              className="w-full object-contain bg-slate-950 p-2"
+              src="/images/Le-Fils-des-etoiles.jpg"
+              alt="Manoscritto di Le Fils des Étoiles"
+              className="w-full h-56 object-contain bg-slate-950 p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-              Manoscritto "Le Fils des Étoiles" (1891)
-            </p>
+            <div className="p-3 bg-slate-900/50 text-center">
+              <p className="text-sm text-slate-400 italic min-h-[3.5rem]">
+                Manoscritto originale di Erik Satie con la dedica per "Le Fils des Étoiles" (1891).
+              </p>
+              <button
+                type="button"
+                onClick={() => setShowFilsModal(true)}
+                className="mt-2 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+              >
+                Leggi di più
+              </button>
+            </div>
           </div>
         </div>
-
-        <div className="rounded-lg overflow-hidden border border-slate-600 mt-4">
-          <img
-            src="/images/Le-Fils-des-etoiles.jpg"
-            alt="Spartito completo di Le Fils des Étoiles"
-            className="w-full object-contain bg-slate-950 p-2"
-          />
-          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-            "Le Fils des Étoiles" (1891): preludio al primo atto del dramma di Péladan.
-            Musica statica, contemplativa, che cerca di evocare atmosfere esoteriche attraverso
-            armonie modali e un ritmo quasi inesistente
+        <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4 mt-4">
+          <h3 className="text-base font-semibold text-slate-100 mb-2">Joséphin Péladan e il misticismo estetico</h3>
+          <p className="text-sm text-slate-300 leading-relaxed mb-3">
+            Il periodo rosacrociano è una delle fasi più mistiche e visivamente affascinanti di Satie, dominata dalla figura
+            ingombrante di <strong>Joséphin Péladan</strong>, che amava farsi chiamare <strong>Sâr Péladan</strong>. Vestito con abiti
+            di velluto e pizzo, predicava l'arte come via di salvezza spirituale e nel 1891 fondò l'Ordine della
+            Rose-Croix Catholique du Temple et du Graal, nominando Satie compositore ufficiale.
+          </p>
+          <p className="text-sm text-slate-300 leading-relaxed mb-3">
+            Il sodalizio fu breve perché le loro visioni erano opposte: Péladan era un wagneriano convinto, mentre Satie
+            cercava di depurare la musica francese da ogni influenza germanica. Nel 1892 ruppe pubblicamente con il Sâr,
+            definendolo un ridicolo istrione, e questa separazione lo spinse a fondare la sua chiesa personale per non
+            rispondere più ad altre autorità.
+          </p>
+          <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
+            <h4 className="text-sm font-semibold text-slate-100 mb-2">punti chiave del sodalizio Péladan-Satie</h4>
+            <ul className="text-sm text-slate-300 space-y-2">
+              <li>• il ruolo: Satie agiva come maestro di cappella, scrivendo fanfare e preludi per le cerimonie esoteriche.</li>
+              <li>• l'estetica: musica statica, ieratica, con rifiuto dello sviluppo melodico tradizionale.</li>
+              <li>• la rottura: insofferenza verso il culto della personalità di Péladan e la sua ossessione wagneriana.</li>
+            </ul>
+          </div>
+          <p className="text-sm text-slate-300 leading-relaxed mt-3">
+            lo sapevi? Satie era così immerso in questo clima da farsi crescere i capelli e adottare un abbigliamento
+            sacerdotale già prima di fondare la sua Église Métropolitaine d'Art.
           </p>
         </div>
+
+        <Modal
+          isOpen={showFilsModal}
+          onClose={() => setShowFilsModal(false)}
+          title="Erik Satie e la dedica di “Le Fils des Étoiles”"
+          maxWidth="max-w-4xl"
+        >
+          <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
+            <p>
+              Il manoscritto è una dedica scritta a mano in francese per l'opera <em>Le Fils des Étoiles</em> (1891),
+              una “Wagnérie” in tre atti su testo di Joséphin Péladan. È un frammento emblematico del periodo rosacrociano
+              di Satie, in cui misticismo e teatralità si intrecciano con una vena di ironia personale.
+            </p>
+            <p>
+              Il testo è solenne e rituale, ma contiene anche un tono provocatorio tipico di Satie. Invoca benedizioni
+              sui “convitati” e sulla famiglia, per poi concludere con una formula severa contro i superbi e gli indecenti.
+            </p>
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-4">
+              <div className="text-sm font-semibold text-slate-100 mb-2">Traduzione della dedica</div>
+              <p className="whitespace-pre-line text-slate-300">
+                Senza pregiudizio delle pratiche dei grandi imprecatori, miei cugini, offro questo cuore ai miei cari.{"\n"}
+                Perciò, e per la precedenza degli esempi, non chiedo l'esaltazione. Invoco. Invoco sui miei commensali
+                la misericordia del Padre, creatore delle cose visibili e invisibili; la protezione della Madre Augusta
+                del Redentore, Regina degli Angeli; come le preghiere del glorioso coro degli Apostoli e dei Santi Ordini
+                degli Spiriti beati.{"\n"}
+                Che la giusta infiammazione di Dio schiacci i superbi e gli indecenti!{"\n"}
+                [Firma:] Erik Satie
+              </p>
+            </div>
+          </div>
+        </Modal>
 
         <div className="mt-4 space-y-4">
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
@@ -351,9 +458,9 @@ const SatieSection = () => {
               <img
                 src="/images/Erik_Satie_eglise.jpeg"
                 alt="Erik Satie come leader della Chiesa"
-                className="w-full object-contain p-2"
+                className="w-full h-56 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
                 Erik Satie, leader della Chiesa Metropolitana d'Arte (c. 1895)
               </p>
             </div>
@@ -372,23 +479,39 @@ const SatieSection = () => {
           Claude Debussy: un'amicizia fraterna e complessa (1891-1925)
         </h2>
 
-        <div className="grid md:grid-cols-[1.05fr_1.35fr] gap-4 items-stretch mb-4">
+        <div className="grid md:grid-cols-[1.3fr_1fr] gap-4 items-stretch mb-4">
           <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
             <img
               src="/images/satie e debussy.jpg"
               alt="Erik Satie e Claude Debussy"
-              className="w-full h-72 md:h-full object-contain p-2"
+              className="w-full object-contain p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
               Erik Satie e Claude Debussy: un'amicizia che definì la musica moderna francese
             </p>
           </div>
           <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
             <p className="text-sm text-slate-300 leading-relaxed">
-              Il legame tra Satie e <strong>Claude Debussy</strong> nacque nel <strong>1891 all'Auberge du Clou</strong> a Montmartre
-              e fu uno dei più significativi della musica moderna. Debussy, già avviato verso il successo, riconobbe in Satie
-              un <strong>"precursore"</strong> capace di indicare nuove strade oltre il wagnerismo imperante.
-              Nel 1892 lo definì «<em>un musicista medievale e dolce smarrito in questo secolo</em>».
+              <strong>Claude Debussy (1862-1918)</strong> è il compositore che ha ridefinito il suono francese moderno:
+              colore timbrico, armonie sospese, attenzione all'atmosfera più che allo sviluppo drammatico. Il legame con
+              Satie nacque nel <strong>1891 all'Auberge du Clou</strong> a Montmartre e fu uno dei più significativi della
+              musica moderna. Debussy, già avviato verso il successo, riconobbe in Satie un <strong>"precursore"</strong>
+              capace di indicare nuove strade oltre il wagnerismo imperante. Nel 1892 lo definì
+              «<em>un musicista medievale e dolce smarrito in questo secolo</em>».
+            </p>
+            <div className="mt-3 bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+              <h3 className="text-sm font-semibold text-slate-100 mb-2">«Senza crauti, se possibile»</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Satie raccontò che, al loro primo incontro, invitò Debussy a creare una musica francese libera
+                dall'ombra wagneriana. Con "crauti" alludeva ironicamente alla cultura tedesca e proponeva di guardare
+                ai pittori francesi (Monet, Cézanne, Toulouse-Lautrec) per trovare un linguaggio più chiaro e visivo.
+              </p>
+            </div>
+            <p className="text-sm text-slate-300 leading-relaxed mt-3">
+              Negli anni Dieci il rapporto si incrina: divergenze estetiche, risentimenti e l'episodio di <em>Parade</em>.
+              Dopo una lettera offensiva di Satie nel 1917, Debussy — già gravemente malato — non rispose più.
+              Satie affermò di aver tentato una riconciliazione nel 1918, ma non ci fu risposta e non partecipò
+              al funerale dell'amico.
             </p>
           </div>
         </div>
@@ -397,11 +520,16 @@ const SatieSection = () => {
 
           <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4">
             <h3 className="text-base font-semibold text-amber-200 mb-2">1896-1897 — Il gesto decisivo</h3>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              In un gesto di profonda stima e <strong>supporto economico</strong>, Debussy orchestrò la <strong>prima e la terza Gymnopédie</strong>
-              nel 1896-1897, presentandole al pubblico nel <strong>febbraio 1897</strong> e contribuendo in modo decisivo alla fama dell'amico.
-              Fu l'unica volta che Debussy orchestrò l'opera di un altro compositore.
+            <p className="text-sm text-slate-300 leading-relaxed mb-2">
+              Nel 1896, a casa del direttore d'orchestra <strong>Gustave Doret</strong>, Satie eseguì le Gymnopédies al pianoforte,
+              ma la sua esecuzione risultò incerta. Debussy intervenne dicendo «vieni, ti mostro come suona la tua musica»,
+              rivelando il vero potenziale timbrico dei brani. Doret suggerì subito l'orchestrazione e Debussy accettò.
             </p>
+            <ul className="text-sm text-slate-300 space-y-2">
+              <li>• Debussy orchestrò la <strong>n.1</strong> e la <strong>n.3</strong>, invertendo la numerazione.</li>
+              <li>• prima esecuzione il <strong>20 febbraio 1897</strong> alla Société Nationale.</li>
+              <li>• fu l'unica volta in cui Debussy orchestrò l'opera di un altro compositore.</li>
+            </ul>
           </div>
 
           <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
@@ -417,9 +545,9 @@ const SatieSection = () => {
               <img
                 src="/images/3-pezzi-a-forma-di-pera.jpg"
                 alt="Trois morceaux en forme de poire"
-                className="w-full h-56 object-contain p-2"
+                className="w-full object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50 min-h-[3.5rem]">
                 "Trois morceaux en forme de poire": risposta ironica alla critica di Debussy.
               </p>
             </div>
@@ -439,13 +567,33 @@ const SatieSection = () => {
           Maurice Ravel: il promotore della riscoperta (1911)
         </h2>
 
-        <div className="space-y-4">
-          <p className="text-sm text-slate-300 leading-relaxed">
-            Nel <strong>1911</strong>, a più di vent'anni dalla composizione delle Gymnopédies, <strong>Maurice Ravel</strong>
-            — allora già affermato compositore — decise di far eseguire la <strong>Gymnopédie n. 3</strong> in pubblico,
-            contribuendo a rilanciare l'interesse per la musica di Satie in un momento in cui era caduto in un relativo oblio.
-          </p>
+        <div className="grid md:grid-cols-[1fr_1.3fr] gap-4 items-stretch mb-4">
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+            <img
+              src="/images/maurice_ravel.jpg"
+              alt="Maurice Ravel"
+              className="w-full h-56 object-contain p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+              Maurice Ravel (1875-1937), figura chiave della musica francese
+            </p>
+          </div>
+          <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
+            <p className="text-sm text-slate-300 leading-relaxed">
+              <strong>Maurice Ravel (1875-1937)</strong> è celebre per la precisione formale, l'orchestrazione luminosa
+              e uno stile nitido, quasi architettonico. Nel <strong>1911</strong>, a più di vent'anni dalla composizione
+              delle Gymnopédies, decise di far eseguire la <strong>Gymnopédie n. 3</strong> in pubblico, rilanciando
+              l'interesse per Satie in un momento di relativo oblio.
+            </p>
+            <p className="text-sm text-slate-300 leading-relaxed mt-3">
+              In quell'epoca Ravel era già un punto di riferimento della musica francese e il suo gesto
+              ebbe un forte peso simbolico: riportò Satie al centro del dibattito e aprì la strada alla sua
+              consacrazione come maestro di una modernità sobria e anti-retorica.
+            </p>
+          </div>
+        </div>
 
+        <div className="space-y-4">
           <div className="bg-emerald-950/20 border border-emerald-700/30 rounded-xl p-4">
             <h3 className="text-base font-semibold text-emerald-200 mb-2">Un riconoscimento ambivalente</h3>
             <p className="text-sm text-slate-300 leading-relaxed">
@@ -493,9 +641,9 @@ const SatieSection = () => {
               <img
                 src="/images/valadon-satie-1892-ritratto.jpg"
                 alt="Ritratto di Erik Satie di Suzanne Valadon"
-                className="w-full h-80 object-contain p-2"
+                className="w-full h-56 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
                 Suzanne Valadon, "Ritratto di Erik Satie" (1892-93)
               </p>
             </div>
@@ -505,9 +653,9 @@ const SatieSection = () => {
               <img
                 src="/images/satie-e-valadon.jpg"
                 alt="Erik Satie e Suzanne Valadon"
-                className="w-full h-80 object-contain p-2"
+                className="w-full h-56 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
                 Erik Satie e Suzanne Valadon (1893)
               </p>
             </div>
@@ -517,9 +665,9 @@ const SatieSection = () => {
               <img
                 src="/images/Satie_portret_Valadon_1893.jpg"
                 alt="Ritratto di Suzanne Valadon disegnato da Erik Satie"
-                className="w-full h-80 object-contain p-2"
+                className="w-full h-56 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
                 Disegno originale di Erik Satie raffigurante Suzanne Valadon (1893)
               </p>
             </div>
@@ -531,9 +679,9 @@ const SatieSection = () => {
               <img
                 src="/images/Bonjour-Biquii.jpg"
                 alt="Spartito di Bonjour Biqui, Bonjour!"
-                className="w-full h-48 object-contain p-2"
+                className="w-full object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
                 "Bonjour Biqui, Bonjour!" (1893): canzone-regalo di 4 battute per Valadon
               </p>
             </div>
@@ -547,18 +695,30 @@ const SatieSection = () => {
           <Home className="w-6 h-6 text-blue-400" />
           Arcueil e l'"Armadio" (1898-1925, 32-59 anni)
         </h2>
-        <div className="grid sm:grid-cols-2 gap-4 items-stretch">
-          <div className="rounded-lg overflow-hidden border border-slate-600">
-            <img
-              src="/images/2015-Arcueil-Erik-Satie-house.jpg"
-              alt="Casa di Erik Satie ad Arcueil"
-              className="w-full h-80 object-contain bg-slate-950 p-2"
-            />
-            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-              Arcueil: la casa di Satie per gli ultimi 27 anni della sua vita (1898-1925).
-            </p>
+        <div className="space-y-4">
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="rounded-lg overflow-hidden border border-slate-600">
+              <img
+                src="/images/6_Rue_Cortot -.jpeg"
+                alt="6 Rue Cortot, Montmartre"
+                className="w-full h-56 object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                6 Rue Cortot, Montmartre: abitazione di Satie durante gli anni delle Gymnopédies.
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden border border-slate-600">
+              <img
+                src="/images/2015-Arcueil-Erik-Satie-house.jpg"
+                alt="Casa di Erik Satie ad Arcueil"
+                className="w-full h-56 object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                Arcueil: la casa di Satie per gli ultimi 27 anni della sua vita (1898-1925).
+              </p>
+            </div>
           </div>
-          <div className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
               <h3 className="text-base font-semibold text-slate-100 mb-2">La stanza "l'Armadio"</h3>
               <p className="text-sm text-slate-300 leading-relaxed">
@@ -591,7 +751,63 @@ const SatieSection = () => {
           per tre anni. Un gesto umile per chi era già considerato un innovatore, ma che dimostra
           la sua ricerca costante di rigore e perfezionamento tecnico.
         </p>
+        <button
+          type="button"
+          onClick={() => setShowScholaModal(true)}
+          className="mt-3 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+        >
+          Approfondisci <ChevronDown className="w-4 h-4" />
+        </button>
       </div>
+
+      <Modal
+        isOpen={showScholaModal}
+        onClose={() => setShowScholaModal(false)}
+        title="Il ritorno allo studio: Schola Cantorum (1905-1908)"
+        maxWidth="max-w-4xl"
+      >
+        <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
+          <p>
+            L'iscrizione alla <strong>Schola Cantorum</strong> a quasi quarant'anni non fu un gesto accademico, ma
+            un atto di ribellione verso l'immagine del "dilettante da cabaret" che la critica gli aveva cucito addosso.
+            Satie voleva dimostrare di conoscere le regole così bene da poterle infrangere con piena consapevolezza.
+          </p>
+          <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-slate-100 mb-2">La crisi e la decisione</h3>
+            <p>
+              Nei primi anni del Novecento si sentiva in stallo, oscurato dal prestigio accademico di Debussy.
+              Tornare sui banchi significava sottrarsi all'etichetta di intrattenitore e rivendicare un rigore
+              tecnico spesso negato ai suoi lavori.
+            </p>
+          </div>
+          <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-slate-100 mb-2">L'umiltà del "vecchio" studente</h3>
+            <p>
+              Nel 1905 si presentò alla scuola di <strong>Vincent d'Indy</strong>, ambiente severo e anti-bohémien,
+              studiando con docenti più giovani, tra cui <strong>Albert Roussel</strong>. Camminava ogni giorno
+              da Arcueil per non mancare alle lezioni, con quaderni di esercizi scritti in modo quasi maniacale.
+            </p>
+          </div>
+          <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-slate-100 mb-2">Il risultato e le conseguenze</h3>
+            <p>
+              Nel 1908 ottenne il <strong>Diplôme de Contrepoint</strong> con menzione "Très Bien". Lo studio non
+              spense la sua originalità, al contrario la rese più secca e limpida: nasce il Satie delle opere
+              umoristiche, capace di parodiare l'accademismo con strumenti tecnici impeccabili.
+            </p>
+          </div>
+          <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-blue-200 mb-2">In sintesi</h3>
+            <ul className="space-y-2">
+              <li>• iscrizione: ottobre 1905, a 39 anni</li>
+              <li>• scuola: Schola Cantorum di Parigi</li>
+              <li>• docente chiave: Albert Roussel (contrappunto)</li>
+              <li>• diploma: 1908, menzione "Très Bien"</li>
+              <li>• effetto: musica più lineare, ironica, anti-impressionista</li>
+            </ul>
+          </div>
+        </div>
+      </Modal>
       </>
       )}
 
@@ -611,51 +827,168 @@ const SatieSection = () => {
             creano il balletto <strong><em>Parade</em></strong>, che debutta il <strong>18 maggio 1917</strong> (Satie ha 51 anni) al Théâtre du Châtelet.
           </p>
 
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="rounded-lg overflow-hidden border border-slate-600">
+          <div className="grid md:grid-cols-[1.05fr_1.35fr] gap-4 items-stretch">
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+            <img
+              src="/images/parade-theredlist.jpg"
+              alt="Locandina di Parade"
+              className="w-full h-56 object-contain p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+              "Parade" (1917): l'incontro tra musica, danza e cubismo
+            </p>
+          </div>
+            <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
+              <h3 className="text-base font-semibold text-slate-100 mb-2">Il "dream team" delle avanguardie</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Cocteau immagina un balletto che porti la strada in teatro. Satie compone una partitura asciutta,
+                Picasso costruisce costumi cubisti monumentali, Diaghilev produce con i Ballets Russes e Massine
+                inventa movimenti meccanici e spezzati.
+              </p>
+              <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                La trama è minimale: una troupe di artisti di strada prova a convincere il pubblico a entrare
+                nello spettacolo, ma resta fuori a recitare il suo stesso richiamo.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
               <img
                 src="/images/jean-cocteau---erik-satie--arcueil--mais-JKLTD-570.webp"
                 alt="Schizzo di Jean Cocteau su Erik Satie"
-                className="w-full object-contain bg-slate-950 p-2"
+                className="w-full h-56 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-                Schizzo di Cocteau dedicato a Satie
-              </p>
+              <div className="p-3 bg-slate-900/50 text-center">
+                <p className="text-sm text-slate-300">
+                  Jean Cocteau, scrittore e regista, è il regista concettuale dell'operazione Parade.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-lg overflow-hidden border border-slate-600">
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
               <img
                 src="/images/pARADE SATIE FRONTE.jpg"
                 alt="Spartito di Parade"
-                className="w-full object-contain bg-slate-950 p-2"
+                className="w-full h-56 object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-                Spartito di "Parade" (1917)
+              <div className="p-3 bg-slate-900/50 text-center">
+                <p className="text-sm text-slate-300">
+                  Lo spartito integra rumori quotidiani e ritmi popolari, rompendo con l'idea di musica “pura”.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-[1.1fr_1fr] gap-4 items-stretch">
+            <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+              <img
+                src="/images/RAGTIME PARADE.jpg"
+                alt="Spartito del Ragtime da Parade"
+                className="w-full h-56 object-contain bg-slate-950 p-2"
+              />
+              <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+                Ragtime da "Parade": ritmo americano e contaminazione con il music-hall
+              </p>
+            </div>
+            <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
+              <h3 className="text-base font-semibold text-slate-100 mb-2">Ragtime e suoni moderni</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Satie inserisce sirene, macchine da scrivere e suoni “non musicali” per evocare la città moderna.
+                Il risultato è un linguaggio ibrido che anticipa il jazz e rende la partitura un manifesto della
+                modernità urbana.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=ia1AAZzNzB4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+              >
+                Guarda la rappresentazione originale (1917)
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-amber-200 mb-2">Accoglienza e polemiche</h3>
+            <p className="text-sm text-slate-300 leading-relaxed mb-2">
+              La prima del 1917 provocò uno <strong>scandalo</strong> in piena guerra: il pubblico fu diviso
+              e la critica reagì con durezza. Satie rispose a un recensore con la celebre cartolina
+              «vous n'êtes qu'un cul, mais un cul sans musique», cioè{" "}
+              <em>"non siete che un sedere, ma un sedere senza musica"</em>.
+              La cartolina era leggibile da chiunque, e proprio per questo finì in tribunale per ingiuria.
+            </p>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Nel programma di sala, Guillaume Apollinaire usò per la prima volta la parola
+              <strong> surrealismo</strong> per descrivere lo spettacolo.
+            </p>
+            <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-4 mt-3">
+              <p className="text-sm text-slate-300 leading-relaxed">
+                satie fu condannato a <strong>8 giorni di prigione</strong> (pena poi sospesa). durante il processo,
+                jean cocteau venne arrestato perché continuava a urlare «sedere!» in aula per difendere l'amico.
               </p>
             </div>
           </div>
 
-          <div className="rounded-lg overflow-hidden border border-slate-600 mt-4">
-            <img
-              src="/images/RAGTIME PARADE.jpg"
-              alt="Spartito del Ragtime da Parade"
-              className="w-full object-contain bg-slate-950 p-2"
-            />
-            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-              Spartito del Ragtime da "Parade": Satie incorpora elementi di musica popolare americana
-              nel linguaggio classico europeo, anticipando il jazz e la contaminazione tra generi musicali
+          <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
+            <h3 className="text-base font-semibold text-slate-100 mb-2">Video d'archivio e testimonianze</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Un documento storico con Jean Cocteau che racconta la genesi di <em>Parade</em> e una ripresa dello
+              spettacolo originale del 1917.
             </p>
+            <div className="grid md:grid-cols-2 gap-4 mt-4">
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-900/60">
+                <div className="aspect-video w-full">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/Cz-0vf2Br-U"
+                    title="Jean Cocteau raconte - ballet PARADE (1917)"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="p-3 flex items-center justify-between gap-3">
+                  <p className="text-sm text-slate-300">Jean Cocteau racconta Parade (documento d'epoca)</p>
+                  <button
+                    type="button"
+                    onClick={() => setShowParadeTranscript(true)}
+                    className="text-blue-300 hover:text-blue-200 text-sm font-semibold shrink-0"
+                  >
+                    Leggi la trascrizione
+                  </button>
+                </div>
+              </div>
+              <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-900/60">
+                <div className="aspect-video w-full">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/ia1AAZzNzB4"
+                    title="Parade - rappresentazione originale (1917)"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="p-3">
+                  <p className="text-sm text-slate-300">Parade, rappresentazione originale del 1917</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-amber-950/20 border border-amber-700/30 rounded-xl p-4 mt-4">
-            <h3 className="text-base font-semibold text-amber-200 mb-2">Il successo e lo scandalo</h3>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              <em>Parade</em> fu uno <strong>scandalo</strong>: la musica incorporava rumori quotidiani
-              (macchine da scrivere, sirene, pistole), le scene cubiste di Picasso sconvolgevano il pubblico,
-              e Cocteau parlava di "realismo surrealista". Ma proprio questo scandalo consacrò Satie
-              come patriarca delle nuove avanguardie.
-            </p>
-          </div>
+          <Modal
+            isOpen={showParadeTranscript}
+            onClose={() => setShowParadeTranscript(false)}
+            title="Trascrizione: Jean Cocteau raconte - ballet PARADE (1917)"
+            maxWidth="max-w-4xl"
+          >
+            <div className="text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              (00:00) alors ce canal de parader comme très intéressant parce que erik satie lorsqu'on a parlé de lui à propos de parade il peut pas jouer musiseine faut pas oublier qu'il était né en 1866 était un homme donc arriver et c'était un solitaire bien entendu c'était le match d'arcueil on a que mazda recueilli les atari un peu en bohême on se demandait un peu qui était ce personnage étrange brusquement et bien il est associé à cette oeuvre parade qui est une oeuvre table pirouette qui associe erik satie jean cocteau et picasso
+              (00:35) j'ai pensé qu'il fallait avec ça qu'ils aillent voir picasso c'est alors que j'ai demandé à picasso de collaborer avec nous je lui ai demandé entre la rotonde et le dôme au milieu de la russe de dire qu'il fait pas beaucoup de voitures et il m'a dit veille puisque nous allons faire un rayon à rome rejoint diaghilev puisque nous allons faire un voyage de noces nous allons aller a annoncé le voyage de noces à gertrude stein nous avons été chez gertrude stein rue de fleurus et nuit av on l'y voit là nous partons en voyage de noces nous
+              (01:06) avons acquis à rome et nous avons avait aidé par les faits le ballet parade mais satie les fait pas avec nous et pourquoi ce bar accès scandale c'est parce que c'est une oeuvre qui est une de dérision et qui est produite par par diaghilev stationnement pendant la guerre c'est à dire 1917 les gens meurent au combat sont au front et pendant ce temps à paris eh bien on accepte de persifler on accepte de se moquer de tous de se moquer des valeurs établies et rien de mieux qu'un vrai scandale pour qu'on parle de quelqu'un ça qui avait fait ses
+              (01:42) études à la schola cantorum et il était tard ils vivaient parmi les impressionnistes mais il sa musique s'opposait à la musique impressionniste parce que au lieu d'être floués et frissonnante et et en sourdine sa musique que tu est linéaire et sans sauce sans sauce sans voile au point que quand les musiciens d'orchestre et belle parade il croyait répétées de la musique de baston j'étais au but est d'aller chercher ravel d'amener ravel pour qu'ils leur disent que cette musique était une manière de shader et là il
+              (02:23) s'est passé ce serait drôle un flûtiste s'est levé et a dit assati monsieur satie il paraît que vous me prouvez idiot est répond non non je ne trouve pas lyon maintenant je peux me tromper
+            </div>
+          </Modal>
 
         </div>
       </div>
@@ -737,7 +1070,7 @@ const SatieSection = () => {
           <div className="space-y-3">
             <p className="text-sm text-slate-300 leading-relaxed">
               Dopo le Gymnopédies, la vita di Satie continua tra alti e bassi, incontri straordinari
-              e scelte eccentriche. Scopri la timeline completa per conoscere:
+              e scelte eccentriche. Apri la timeline completa per orientarti nei suoi passaggi chiave:
             </p>
             <ul className="space-y-2 text-sm text-slate-300">
               <li className="flex items-start gap-2">
@@ -786,11 +1119,46 @@ const SatieSection = () => {
         </div>
       )}
 
-      {satieTab !== "stramberie" && (
+      {satieTab === "vita" && (
         <div className="text-center">
           <p className="text-sm text-slate-400 mb-3">
-            Ora che conosci il contesto e l'uomo, scopriamo come nacque il capolavoro
+            Quando vuoi, prosegui con le amicizie e le collaborazioni.
           </p>
+          <button
+            type="button"
+            onClick={() => setSatieTab("amicizie")}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+          >
+            Amicizie
+          </button>
+        </div>
+      )}
+      {satieTab === "amicizie" && (
+        <div className="text-center">
+          <p className="text-sm text-slate-400 mb-3">
+            Ora puoi passare alle stramberie e alle indicazioni sugli spartiti.
+          </p>
+          <button
+            type="button"
+            onClick={() => setSatieTab("stramberie")}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+          >
+            Stramberie
+          </button>
+        </div>
+      )}
+      {satieTab === "stramberie" && (
+        <div className="text-center">
+          <p className="text-sm text-slate-400 mb-3">
+            Ora che conosci il contesto e l'uomo, scopriamo come nacque il capolavoro.
+          </p>
+          <button
+            type="button"
+            onClick={() => goTo?.("brano")}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
+          >
+            Prosegui
+          </button>
         </div>
       )}
     </div>

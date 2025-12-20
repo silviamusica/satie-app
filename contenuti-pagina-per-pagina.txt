@@ -20,26 +20,36 @@ PARIGI 1888: LA SCENA
 - Introduzione: Per capire le Gymnopédies, dobbiamo prima immergerci nella Parigi di fine Ottocento: una città in fermento, dove l'arte si rinnova, dove i café-cabaret di Montmartre diventano laboratori di sperimentazione e dove un giovane pianista sta per cambiare il corso della musica.
 - Breve introduzione
   * La Belle Époque (circa 1871-1914) è un periodo di ottimismo, crescita economica e fiducia nel progresso tecnico: Parigi diventa una capitale moderna, illuminata, piena di nuove invenzioni e di spinta verso il futuro. La bohème è la controfaccia artistica di questa modernità: vita libera, notti nei caffè, rifiuto delle regole borghesi, sperimentazione continua.
-  * Il Simbolismo nasce come reazione alla freddezza del Realismo. Non vuole descrivere la realtà, ma evocare ciò che sta dietro, come un sogno o un mito. I pittori simbolisti (Moreau, Redon) e i poeti (Verlaine, Mallarmé) cercavano immagini interiori, sospese, allusive.
-  * Il Realismo, poco prima, aveva imposto una rottura: rappresentare la realtà nuda, la vita quotidiana, i lavoratori e i poveri. Da questa frattura nasce la spinta verso nuove forme di espressione artistica.
-  * In musica, si affacciano gli impressionisti francesi (Debussy, Ravel): attenzione al timbro, al colore armonico, a forme più libere. È in questo contesto che Satie, outsider e cabarettista, scrive le Gymnopédies.
-- Sezione: Il cabaret francese
-  * Montmartre è il centro del movimento simbolista e bohémien. I café-cabaret sono luoghi di sperimentazione: poesia, musica e arti visive convivono. Le Chat Noir, l'Auberge du Clou, cabaret, fumo, assenzio, notti interminabili e amicizie eccentriche.
-- Sezione: Personaggi chiave
-  * J. P. Contamine de Latour: poeta simbolista, amico di Satie. Nella prima edizione della Gymnopédie n. 1 (1888) comparve solo un estratto di Les Antiques, scelto come dedica per evocare un'atmosfera arcaica e rituale. Leggi la poesia.
-  * Puvis de Chavannes: Satie adorava il pittore simbolista Puvis. Non esiste un'unica "ispirazione", ma un chiaro parallelo tra la sua musica statica e dipinti come Jeune fille au bord de la mer (1879). L'opera "Les Muses" riassume bene la sua estetica di semplicità, mentre Rusiñol scrisse che Satie cercava in musica la stessa essenzialità raggiunta da Puvis in pittura. Templier parlò di "esatte rappresentazioni musicali" dei suoi quadri. Per le Sonneries de la Rose+Croix Satie scelse un frammento di La Guerre per il frontespizio.
-- Sezione: Belle Époque, bohéme, simbolismo, realismo, impressionismo
-  * Parigi 1888: Torre Eiffel in costruzione, Esposizione Universale, Louis Pasteur, Heinrich Hertz, George Eastman.
-  * Cabaret come laboratorio di sperimentazione.
+  * Il Simbolismo rompe con il realismo e privilegia immagini evocative, sogni, allusioni: in letteratura spiccano Verlaine e Mallarmé, mentre in pittura e grafica si affermano i manifesti e l'estetica notturna dei locali di Montmartre. In musica, l'impressionismo cerca colore timbrico e atmosfera: i nomi chiave sono Debussy e Ravel.
+  * Il cabaret francese (café-concert) è il punto di incontro tra arti diverse: musica dal vivo, poesia, satira e pittura convivono nello stesso spazio. Locali come il Chat Noir e il Lapin Agile diventano laboratori creativi dove gli artisti si contaminano a vicenda e dove Satie costruisce la sua identità musicale.
+- Sezione: La Belle Époque
+  * 1888: Torre Eiffel in costruzione per l'Esposizione Universale del 1889; Louis Pasteur fonda l'Istituto Pasteur; Heinrich Hertz dimostra le onde elettromagnetiche; George Eastman brevetta la Kodak portatile; l'arte si libera dal romanticismo.
+  * Wagner domina l'Europa con tensioni armoniche drammatiche, ma a Parigi sta nascendo qualcosa di completamente diverso.
+  * Immagini: Torre Eiffel in costruzione; manifesto Paris_1889_plakat.jpg; cartoline di Boulevard Montmartre e Café Leroy.
+- Sezione: Montmartre, cabaret e bohème
+  * Chat Noir: cabaret fondato da Rodolphe Salis; Satie lavora come secondo pianista (1887-1888).
+  * Auberge du Clou: altro cabaret frequentato da artisti bohémien.
+  * Atmosfera dei café-cabaret: arte "alta" e cultura popolare si mescolano; musica come linguaggio quotidiano.
+- Sezione: La vita bohémien
+  * Immagini affiancate: El bohemi (Ramon Casas, 1891); progetti rifiutati per la Tour Eiffel.
+  * La Tour Eiffel: da struttura temporanea a icona. Doveva essere smontata dopo 20 anni. Molti intellettuali parigini la detestarono, ma la torre si rivelò preziosa per esperimenti scientifici e nel 1909 fu salvata dalla demolizione.
+
+    Dalla piattaforma panoramica alle prime antenne radio, la torre dimostrò di essere utile oltre che spettacolare.
+
+    Oggi è il simbolo universale di Parigi e della Belle Époque.
+- Sezione: Il simbolismo
+  * Montmartre era il centro del movimento simbolista.
+  * Puvis de Chavannes: non esiste un'unica "ispirazione", ma un chiaro parallelo tra la musica statica di Satie e dipinti come Jeune fille au bord de la mer (1879). "Les Muses" riassume bene la sua estetica di semplicità; Rusiñol scrisse che Satie cercava in musica la stessa essenzialità raggiunta da Puvis in pittura. Templier parlò di "esatte rappresentazioni musicali" dei suoi quadri. Per le Sonneries de la Rose+Croix Satie scelse un frammento di La Guerre per il frontespizio.
+  * Immagine: “Les Muses” di Puvis de Chavannes.
 - Didascalie immagini (Parigi)
-  * El bohemi (Ramon Casas, 1891) — layout a due colonne con testo descrittivo.
-  * Parigi Belle Époque: atmosfera della città di fine Ottocento.
-  * 6 Rue Cortot, Montmartre: abitazione di Satie durante gli anni delle Gymnopédies.
-  * Arcueil: casa di Satie per gli ultimi 27 anni della sua vita (1898-1925).
-  * Erik Satie in abito bohémien: ritratto del compositore negli anni di Montmartre.
-  * Jean Cocteau: schizzo su Erik Satie.
-  * “Jeunes filles au bord de la mer” (Puvis de Chavannes, 1879).
-  * “The Arts and the Muses” (Puvis de Chavannes).
+  * Place de la République e Magasins Réunis: la Parigi urbana di fine Ottocento.
+  * Costruzione della Torre Eiffel (1887-1889).
+  * Manifesto dell'Esposizione Universale di Parigi (1889).
+  * Boulevard Montmartre dall'alto; Café Leroy (1916).
+  * Le Chat Noir; Auberge du Clou.
+  * El bohemi (Ramon Casas, 1891).
+  * Progetti rifiutati per l'Esposizione Universale del 1889.
+  * “Les Muses” di Puvis de Chavannes.
 
 MODALE: LES ANTIQUES (J. P. CONTAMINE DE LATOUR)
 - Testo originale (francese)
@@ -68,31 +78,37 @@ Il giovane ribelle (1866-1887)
 - 1872-1878: la nonna dà lezioni di pianoforte. 1878: muore la nonna.
 - 1878: ritorno a Parigi; il padre si risposa con Eugénie Barnetche, pianista che prepara Satie al Conservatorio.
 - Il fallimento al Conservatorio: 1879 ingresso. 1882 non ammesso alle classi superiori dopo esecuzione mediocre della Sonata Op. 26 di Beethoven. Tenta rientro nel 1885; abbandono definitivo nel 1887.
+- Appunti dai registri: giudizi durissimi; il verdetto del 1882 trasforma la frustrazione in motore creativo fuori dai canoni ufficiali.
 - Anni di formazione autodidatta (1882-1883): Voltaire, Dumas, Andersen; Bach, Chopin, Schumann.
 - 1884: primo brano Allegro. Seguono Valse-Ballet e Fantaisie-Valse.
+- Didascalie immagini: Honfleur; Conservatorio di Parigi; "Allegro"; Erik Satie nel 1884 (18 anni), a Parigi.
 
 Montmartre e le Gymnopédies (1887-1888)
 - Satie trova lavoro come secondo pianista al Chat Noir.
 - Il Chat Noir è laboratorio di sperimentazione: Debussy, Verlaine, Toulouse-Lautrec.
 - Incontra Contamine de Latour; in calce alla prima Gymnopédie un estratto di Les Antiques.
-- Immagini: 6 Rue Cortot; Erik Satie in abito bohémien; ritratto di Satie all’armonium (Rusiñol).
+- Immagini: Erik Satie in abito bohémien; citazione "Sono venuto al mondo molto giovane..."; schizzo di Jean Cocteau.
+- Febbraio-aprile 1888: composizione delle tre Gymnopédies; estetica dell'essenziale.
+- Immagine: ritratto di Satie all'armonium (Rusiñol) + box "L'estetica della semplicità" (gesto minimo, spazio al silenzio e alla risonanza).
 
 Periodo rosacrociano (1891-1893)
 - Satie entra nell’Ordine della Rosa-Croce di Joséphin Péladan.
-- Immagini: Péladan; manoscritto Le Fils des étoiles; spartito Le Fils des étoiles.
+- Immagini: Péladan; manoscritto "Le Fils des Étoiles".
 - “Esoterik Satie” e rottura con Péladan (1892).
+- 1893: Église Métropolitaine d'Art de Jésus Conducteur.
 
 MODALE: LE FILS DES ETOILES
-- Manoscritto: dedica personale e preghiera. Lingua francese. Contenuto: dedica personale e preghiera. Firma: Erik Satie.
+- Dedica scritta a mano in francese; testo solenne con invocazioni e chiusura contro i superbi.
 - Traduzione (italiano):
-  Dedicatrice: Senza pregiudizio delle pratiche dei grandi imprecatori, miei cugini, offro questo cuore ai miei cari. Perciò, e per la precedenza degli esempi, non chiedo l'esaltazione. Invoco. Invoco sui miei commensali la misericordia del Padre, creatore delle cose visibili e invisibili; la protezione della Madre Augusta del Redentore, Regina degli Angeli; come le preghiere del glorioso coro degli Apostoli e dei Santi Ordini degli Spiriti beati. Che la giusta infiammazione di Dio schiacci i superbi e gli indecenti! [Firma:] Erik Satie
+  Senza pregiudizio delle pratiche dei grandi imprecatori, miei cugini, offro questo cuore ai miei cari. Perciò, e per la precedenza degli esempi, non chiedo l'esaltazione. Invoco. Invoco sui miei commensali la misericordia del Padre, creatore delle cose visibili e invisibili; la protezione della Madre Augusta del Redentore, Regina degli Angeli; come le preghiere del glorioso coro degli Apostoli e dei Santi Ordini degli Spiriti beati. Che la giusta infiammazione di Dio schiacci i superbi e gli indecenti! [Firma:] Erik Satie
 
 Suzanne Valadon (1893)
 - Relazione intensa con Suzanne Valadon. È l'unico amore documentato: lui la chiama "Biqui" e le dedica la canzone "Bonjour Biqui, Bonjour!".
 - Immagini: ritratto di Satie di Valadon; foto Satie-Valadon; ritratto di Valadon disegnato da Satie; spartito "Bonjour Biqui, Bonjour!".
 
 Arcueil e l'Armadio (1898-1925)
-- Arcueil: casa per gli ultimi 27 anni. Stanza "l'Armadio"; oggetti bizzarri.
+- Case affiancate: 6 Rue Cortot e Arcueil (casa per gli ultimi 27 anni).
+- Stanza "l'Armadio": oggetti bizzarri, pianoforti sovrapposti, ombrelli, spartiti nascosti.
 - Dieta bianca: cibi bianchi come provocazione estetica.
 
 Ritorno a scuola (1905-1908)
@@ -120,23 +136,23 @@ Timeline sintetica
 AMICIZIE
 - Claude Debussy (1862-1918): amicizia fraterna e complessa.
   * Nascita del legame all'Auberge du Clou (1891). Debussy lo definisce "un musicista medievale e dolce smarrito in questo secolo".
-  * Debussy: impressionismo musicale, colore timbrico, armonie sospese (Pelléas et Mélisande; Prélude à l'après-midi d'un faune).
+  * Debussy: impressionismo musicale, colore timbrico, armonie sospese.
   * "Senza crauti, se possibile": musica francese libera dal wagnerismo, ispirata ai pittori francesi.
-  * 1896-1897: Debussy orchestra la n.1 e n.3.
-  * 1917-1918: rottura, lettera offensiva e mancata risposta; Satie non va al funerale. Dedica l'Elégie (1920).
-  * Modale: episodio Doret e decisione di orchestrare.
+  * 1896-1897: episodio Doret, Debussy suona le Gymnopédies e decide l'orchestrazione; n.1 e n.3, prima esecuzione 20 febbraio 1897.
+  * 1917-1918: rottura, lettera offensiva e mancata risposta; Satie non va al funerale.
+  * "Trois morceaux en forme de poire" come risposta alla critica di Debussy.
 
 - Maurice Ravel (1875-1937)
   * Compositore francese, chiarezza formale e raffinatezza timbrica.
   * Nel 1911 esegue la Gymnopédie n.3, contribuendo alla riscoperta di Satie.
-  * Immagine: Maurice Ravel.
+  * Il gesto di Ravel riporta Satie al centro del dibattito e lo consacra come maestro di una modernità sobria.
 
 - Parade e le avanguardie (1915-1917)
-  * Collaborazione con Cocteau, Picasso, Massine.
+  * Collaborazione con Cocteau, Picasso, Massine e i Ballets Russes.
   * Trama: “parata” fuori dal teatro, spettacolo che non inizia mai.
-  * Costumi cubisti rigidi e movimenti meccanici.
-  * Ragtime e suoni non musicali (macchine da scrivere, sirene, pistole, megafoni).
-  * Scandalo, recensione di Poueigh, cartolina del “sedere senza musica”, condanna per ingiuria, Apollinaire conia “surrealismo”.
+  * Ragtime e suoni non musicali (macchine da scrivere, sirene, pistole).
+  * Scandalo, Apollinaire conia “surrealismo”.
+  * Cartolina "vous n'êtes qu'un cul, mais un cul sans musique" (traduzione: "non siete che un sedere, ma un sedere senza musica"); la cartolina era leggibile da chiunque e per questo finì in tribunale.
   * Video: presentazione originale in francese (Cocteau) e rappresentazione del 1917.
   * Modale: Trascrizione (FR) del video "Jean Cocteau raconte - ballet PARADE (1917)".
 
@@ -153,7 +169,6 @@ STRAMBERIE
 INDICAZIONI SUGLI SPARTITI
 - Annotazioni e frasi strambe (per brano, anno, strumento).
 - Modale: indicazioni paratestuali, doppio fondo, divieto di lettura ad alta voce, pianoforte preparato in Le Piège de Méduse.
-
 IL BRANO
 - Genesi, linguaggio musicale e segreti esecutivi della Gymnopédie n. 1.
 - Sezioni: La nascita (1888), Origine del nome, Storia editoriale, Analisi musicale, Interpretazione, Spartito completo (mostra/reader PDF).

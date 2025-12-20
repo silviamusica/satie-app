@@ -1,57 +1,38 @@
 import { useState } from "react";
 import { MapPin, Sparkles, BookOpen, Music } from "lucide-react";
 import Tooltip from "../components/Tooltip";
+import Modal from "../components/Modal";
 
 const Parigi1888Section = () => {
   const [showAntiquesModal, setShowAntiquesModal] = useState(false);
   return (
   <div className="space-y-6 max-w-5xl mx-auto">
-    {showAntiquesModal && (
-      <div
-        className="fixed inset-0 z-999 flex items-center justify-center bg-black/70 p-4 overflow-y-auto"
-        role="dialog"
-        aria-modal="true"
-        onClick={() => setShowAntiquesModal(false)}
-      >
-        <div
-          className="w-full max-w-3xl my-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <div className="sticky top-0 z-10 flex items-center justify-between px-5 py-4 border-b border-slate-700 bg-slate-900">
-            <h3 className="text-base sm:text-lg font-semibold text-slate-100">
-              Les Antiques (J. P. Contamine de Latour)
-            </h3>
-            <button
-              type="button"
-              onClick={() => setShowAntiquesModal(false)}
-              className="text-slate-300 hover:text-white text-sm font-semibold px-3 py-1 rounded hover:bg-slate-800"
-            >
-              chiudi
-            </button>
-          </div>
-          <div className="p-5 max-h-[calc(90vh-8rem)] overflow-y-auto space-y-6 text-sm text-slate-300 leading-relaxed">
-            <div>
-              <div className="text-sm font-semibold text-slate-100 mb-2">Testo originale (francese)</div>
-              <p className="whitespace-pre-line">
-                Oblique et coupant l'ombre un torrent éclatant{"\n"}
-                Ruisselait en flots d'or sur la dalle polie{"\n"}
-                Où les atomes d'ambre au feu se miroitant{"\n"}
-                Mêlaient leur sarabande à la gymnopédie
-              </p>
-            </div>
-            <div>
-              <div className="text-sm font-semibold text-slate-100 mb-2">Traduzione (italiano)</div>
-              <p className="whitespace-pre-line">
-                Obliquo e fendente l'ombra, un torrente splendente{"\n"}
-                scorreva in flutti d'oro sulla lastra levigata{"\n"}
-                dove gli atomi d'ambra, specchiandosi nel fuoco,{"\n"}
-                mescolavano la loro sarabanda alla gymnopédie
-              </p>
-            </div>
-          </div>
+    <Modal
+      isOpen={showAntiquesModal}
+      onClose={() => setShowAntiquesModal(false)}
+      title="Les Antiques (J. P. Contamine de Latour)"
+    >
+      <div className="space-y-6 text-sm text-slate-300 leading-relaxed">
+        <div>
+          <div className="text-sm font-semibold text-slate-100 mb-2">Testo originale (francese)</div>
+          <p className="whitespace-pre-line">
+            Oblique et coupant l'ombre un torrent éclatant{"\n"}
+            Ruisselait en flots d'or sur la dalle polie{"\n"}
+            Où les atomes d'ambre au feu se miroitant{"\n"}
+            Mêlaient leur sarabande à la gymnopédie
+          </p>
+        </div>
+        <div>
+          <div className="text-sm font-semibold text-slate-100 mb-2">Traduzione (italiano)</div>
+          <p className="whitespace-pre-line">
+            Obliquo e fendente l'ombra, un torrente splendente{"\n"}
+            scorreva in flutti d'oro sulla lastra levigata{"\n"}
+            dove gli atomi d'ambra, specchiandosi nel fuoco,{"\n"}
+            mescolavano la loro sarabanda alla gymnopédie
+          </p>
         </div>
       </div>
-    )}
+    </Modal>
     {/* Header */}
     <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6">
       <h1 className="text-3xl font-bold text-slate-100 mb-3 flex items-center gap-3">
@@ -120,7 +101,7 @@ const Parigi1888Section = () => {
       <img
         src="/images/paris-10-place-de-la-republique-et-magasins-reunis.jpg"
         alt="Place de la Republique a Parigi"
-        className="w-full h-72 md:h-96 object-contain p-2"
+        className="w-full object-contain p-2"
       />
       <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
         Place de la Republique e Magasins Reunis: la Parigi urbana di fine Ottocento
@@ -201,16 +182,28 @@ const Parigi1888Section = () => {
           nei café-cabaret di Montmartre, sta nascendo qualcosa di completamente diverso.
         </p>
 
-        {/* Immagine Belle Époque */}
-        <div className="rounded-lg overflow-hidden border border-slate-600">
-          <img
-            src="/images/parigi-belle-epoque-1888.jpg"
-            alt="Costruzione Torre Eiffel"
-            className="w-full object-contain bg-slate-950 p-2"
-          />
-          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-            Costruzione della Torre Eiffel (1887-1889)
-          </p>
+        {/* Immagini Belle Époque */}
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="rounded-lg overflow-hidden border border-slate-600">
+            <img
+              src="/images/parigi-belle-epoque-1888.jpg"
+              alt="Costruzione Torre Eiffel"
+              className="w-full h-56 object-contain bg-slate-950 p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+              Costruzione della Torre Eiffel (1887-1889)
+            </p>
+          </div>
+          <div className="rounded-lg overflow-hidden border border-slate-600">
+            <img
+              src="/images/Paris_1889_plakat.jpg"
+              alt="Manifesto dell'Esposizione Universale di Parigi 1889"
+              className="w-full h-56 object-contain bg-slate-950 p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
+              Manifesto dell'Esposizione Universale di Parigi (1889)
+            </p>
+          </div>
         </div>
 
         {/* Cartoline Parigi Belle Époque */}
@@ -219,9 +212,9 @@ const Parigi1888Section = () => {
             <img
               src="/images/499-paris-paris-e-boulevard-montmartre.jpg"
               alt="Boulevard Montmartre"
-              className="w-full h-48 object-contain p-2"
+              className="w-full h-56 object-contain p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
               Boulevard Montmartre dall'alto
             </p>
           </div>
@@ -229,9 +222,9 @@ const Parigi1888Section = () => {
             <img
               src="/images/paris-11-cafe-leroy-angle-rue-fontaine-au-roi-et-avenue-parmentier-1916.jpg"
               alt="Café Leroy 1916"
-              className="w-full h-48 object-contain p-2"
+              className="w-full h-56 object-contain p-2"
             />
-            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50 min-h-[3.5rem]">
               Café Leroy (1916)
             </p>
           </div>
@@ -270,7 +263,7 @@ const Parigi1888Section = () => {
             <img
               src="/images/Le chat noir.jpg"
               alt="Le Chat Noir cabaret"
-              className="w-full h-64 object-contain bg-slate-950 p-2"
+              className="w-full h-56 object-contain bg-slate-950 p-2"
             />
           </div>
 
@@ -289,7 +282,7 @@ const Parigi1888Section = () => {
             <img
               src="/images/Auberge du clou.jpg"
               alt="Auberge du Clou"
-              className="w-full h-64 object-contain p-2"
+              className="w-full h-56 object-contain p-2"
             />
           </div>
         </div>
@@ -318,15 +311,15 @@ const Parigi1888Section = () => {
           </p>
 
           {/* Immagini affiancate: El Bohemi + Parigi Belle Époque */}
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 gap-4 items-stretch">
             {/* Colonna sinistra: El bohemi (verticale lunga) */}
             <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
               <img
                 src="/images/El_bohemi_by_Ramon_Casas-1.jpg"
                 alt="El bohemi di Ramon Casas"
-                className="w-full object-contain p-2"
+                className="w-full h-full object-contain p-2"
               />
-              <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
+              <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50 min-h-[3.5rem]">
                 "El bohemi" (Ramon Casas, 1891)
               </p>
             </div>
@@ -337,9 +330,9 @@ const Parigi1888Section = () => {
                 <img
                   src="/images/progetti-rifiutati-tour.jpg"
                   alt="Progetti rifiutati per la Tour Eiffel"
-                  className="w-full object-contain p-2"
+                  className="w-full h-full object-contain p-2"
                 />
-                <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50">
+                <p className="text-sm text-slate-400 p-2 italic text-center bg-slate-900/50 min-h-[3.5rem]">
                   Progetti rifiutati per l'Esposizione Universale del 1889
                 </p>
               </div>
@@ -348,9 +341,18 @@ const Parigi1888Section = () => {
                 <h4 className="text-sm font-semibold text-slate-100 mb-2">La Tour Eiffel: da struttura temporanea a icona</h4>
                 <p className="text-sm text-slate-300 leading-relaxed">
                   La Torre Eiffel fu costruita come <strong>struttura temporanea</strong> per l'Esposizione Universale
-                  del 1889, celebrazione del centenario della Rivoluzione Francese. Doveva essere <strong>smontata dopo 20 anni</strong>.
+                  del 1889, celebrazione del centenario della Rivoluzione Francese.{" "}
+                  <br />
+                  Doveva essere <strong>smontata dopo 20 anni</strong>.
                   Molti intellettuali parigini la detestarono, chiamandola "mostro di ferro". Ma la torre si rivelò preziosa
                   per esperimenti scientifici (telegrafo senza fili, meteorologia) e nel 1909 fu salvata dalla demolizione.
+                  La sua ossatura in ferro, inizialmente percepita come provocazione, divenne presto un emblema di modernità,
+                  ingegneria e fiducia nel progresso.{" "}
+                  <br />
+                  Dalla piattaforma panoramica alle prime antenne radio, la torre dimostrò
+                  di essere utile oltre che spettacolare.{" "}
+                  <br />
+                  <br />
                   Oggi è il simbolo universale di Parigi e della Belle Époque.
                 </p>
               </div>

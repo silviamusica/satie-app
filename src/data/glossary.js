@@ -59,11 +59,6 @@ export const glossaryData = [
           "Quartiere parigino dei café-cabaret (Le Chat Noir, L'Auberge du Clou) dove Satie lavorò come pianista a 21 anni e trovò ispirazione per il suo stile sobrio. Ambiente frequentato da simbolisti e poeti come Contamine de Latour.",
       },
       {
-        term: "Debussy",
-        definition:
-          "Claude Debussy orchestrò le Gymnopédies n. 1 e n. 3 nel 1896-1897 (invertendo la numerazione), favorendone la circolazione concertistica. Prima esecuzione: 20 febbraio 1897, Société Nationale.",
-      },
-      {
         term: "Conservatorio di Parigi",
         definition:
           "Istituzione frequentata da Satie in due periodi (1879–1882 e 1885–1887) con risultati disastrosi. Giudicato 'dotato ma indolente', 'il più pigro', 'privo di valore'. Espulso nel 1882 dopo un'esecuzione mediocre di Beethoven.",
@@ -89,11 +84,6 @@ export const glossaryData = [
           "Artista o intellettuale che vive al margine delle regole sociali, predilige libertà creativa, movimento e rifiuto delle istituzioni: uno spirito che alimenta Chat Noir e Satie stesso.",
       },
       {
-        term: "Suzanne Valadon",
-        definition:
-          "Pittrice francese (1865-1938). Ebbe nel 1893 un breve ma intenso amore con Satie, l'unico documentato della sua vita. Quando lei lo lasciò, Satie ne rimase segnato profondamente. Fu madre del pittore Maurice Utrillo.",
-      },
-      {
         term: "Dieta Bianca",
         definition:
           "Nelle Memorie di un Amnesico (1912) Satie descrive una dieta surreale: 'uova, ossa grattugiate, grasso di animali morti, vitello, pollo cotto in acqua bianca, frutta ammuffita, pasta, formaggio bianco'. Provocazione artistica che rivela l'ossessione per il bianco come simbolo di purezza, silenzio e assenza di 'colore' emotivo. Le Gymnopédies sono 'musica bianca': prive di ornamenti, trasparenti, essenziali.",
@@ -112,16 +102,6 @@ export const glossaryData = [
         term: "L'ossessione per il numero 3",
         definition:
           "Satie aveva un'ossessione mistica per il numero tre, probabilmente derivata dal simbolismo trinitario dei Rosa-Croce. Non è un caso che compose TRE Gymnopédies, TRE Sarabandes (1887), TRE Gnossiennes iniziali (1890). Anche i titoli spesso richiamano trinità: 'Trois morceaux en forme de poire' (Tre pezzi a forma di pera, 1903). Questa ossessione numerologica rivela l'influenza dell'esoterismo sulla sua estetica compositiva.",
-      },
-      {
-        term: "Maurice Ravel e la riscoperta (1911)",
-        definition:
-          "Oltre a Debussy (che orchestrò la n.1 e n.3 nel 1897), anche Maurice Ravel fu fondamentale per la fama delle Gymnopédies. Nel 1911, Ravel eseguì pubblicamente la Gymnopédie n.3, contribuendo alla 'riscoperta' di Satie dopo anni di relativo oblio. Questo evento segnò l'inizio del riconoscimento di Satie presso i giovani compositori del Groupe des Six (Poulenc, Milhaud, Honegger, Auric, Durey, Tailleferre), che lo acclamarono come 'maestro' e precursore dell'anti-romanticismo.",
-      },
-      {
-        term: "Puvis de Chavannes",
-        definition:
-          "Pierre Puvis de Chavannes (1824-1898), pittore simbolista francese. Non c'è un'unica tela come fonte esclusiva, ma un forte legame estetico: parallelismi con 'Jeunes filles au bord de la mer' (1879) per staticità e struttura ternaria. Satie ammirava anche 'The Arts and the Muses' e per le 'Sonneries de la Rose+Croix' usò un frammento di 'La Guerre' per il frontespizio.",
       },
       {
         term: "Forme ternarie (ABA')",
@@ -147,11 +127,6 @@ export const glossaryData = [
         term: "Musique d'ameublement",
         definition:
           "Musica d'arredamento: concetto sviluppato da Satie nel 1917. Composizioni pensate per non essere ascoltate attentamente, ma per far parte dell'ambiente. Satie scrisse: 'Immagino una musica melodiosa che attenui il rumore di coltelli e forchette a cena, senza dominarli, senza imporsi'. Precorre la musica ambient di Brian Eno (Ambient 1: Music for Airports, 1978) che definì l'ambient come qualcosa che 'deve poter essere ignorata quanto ascoltata'.",
-      },
-      {
-        term: "John Cage",
-        definition:
-          "Compositore americano (1912-1992), grande riscopritore di Satie nel dopoguerra. Trovò in Satie un precursore: rifiuto della narrazione musicale, interesse per silenzio e spazio, musica come processo. 'Satie è indispensabile' (John Cage). Nel 1963 organizzò la prima esecuzione integrale di Vexations (tema ripetuto 840 volte, circa 18 ore), anticipando il minimalismo.",
       },
       {
         term: "Minimalismo",

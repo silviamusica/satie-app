@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Music, Brain, XCircle, CheckCircle2, ChevronDown } from "lucide-react";
 import Tooltip from "../components/Tooltip";
 import PdfScoreViewer from "../components/PdfScoreViewer";
+import Modal from "../components/Modal";
 
 // Schede di analisi: punti chiave per lo studio
 const analysisCards = [
@@ -49,6 +50,7 @@ const analysisCards = [
 
 const BranoSection = () => {
   const [showScore, setShowScore] = useState(false);
+  const [showAntiquesModal, setShowAntiquesModal] = useState(false);
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
     {/* Header */}
@@ -91,35 +93,103 @@ const BranoSection = () => {
             <Tooltip text="Antiche feste spartane in onore di Apollo, con danze rituali eseguite da giovani nudi">
               <strong>gymnopédies</strong>
             </Tooltip>, danze cerimoniali dell'antica Sparta dove giovani danzavano nudi in onore di Apollo.
-            L'ispirazione viene dal poema <em>Les Antiques</em> di{" "}
-            <Tooltip text="Poeta simbolista francese, amico di Satie a Montmartre">
-              <span>J.P. Contamine de Latour</span>
-            </Tooltip>, amico di Satie a Montmartre, pubblicato insieme alla Gymnopédie n. 1 nell'estate del 1888.
+          L'espressione nasce da un termine dell'antica Grecia (preso da un dizionario musicale o da <em>Salammbô</em>),
+          non da un poema epico. <em>Les Antiques</em> di{" "}
+          <Tooltip text="Poeta simbolista francese, amico di Satie a Montmartre">
+            <span>J.P. Contamine de Latour</span>
+          </Tooltip>{" "}
+          e una poesia simbolista: la parte legata alle Gymnopédies e un estratto stampato in calce alla prima
+          edizione (1888) per creare un'atmosfera arcaica e rituale, non un vero testo ispiratore.
+        </p>
+        <button
+          type="button"
+          onClick={() => setShowAntiquesModal(true)}
+          className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-semibold"
+        >
+          Leggi l'estratto
+        </button>
+        <img
+          src="/images/Gymnopedie greche.jpeg"
+          alt="Danzatori antichi greci"
+          className="w-full object-contain rounded-lg border border-slate-600 bg-slate-950"
+        />
+      </div>
+      <Modal
+        isOpen={showAntiquesModal}
+        onClose={() => setShowAntiquesModal(false)}
+        title="Les Antiques (J. P. Contamine de Latour)"
+        maxWidth="max-w-3xl"
+      >
+        <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
+          <div>
+            <div className="text-slate-100 font-semibold mb-2">Testo originale</div>
+            <div className="whitespace-pre-line">
+              Oblique et coupant l'ombre un torrent jaillissait
+              {"\n"}En rafales d'or sur la dalle polie,
+              {"\n"}Où les atomes d'ambre au feu se recueillant
+              {"\n"}Mêlaient leur sarabande à la gymnopédie.
+            </div>
+          </div>
+          <div>
+            <div className="text-slate-100 font-semibold mb-2">Traduzione</div>
+            <div className="whitespace-pre-line">
+              Obliquo e tagliente l'ombra, un torrente zampillava
+              {"\n"}in raffiche d'oro sulla lastra levigata,
+              {"\n"}dove gli atomi d'ambra, raccogliendosi nel fuoco,
+              {"\n"}mescolavano la loro sarabanda alla gymnopédie.
+            </div>
+          </div>
+          <p className="text-slate-400">
+            L'estratto funge da epigrafe poetica e crea l'atmosfera arcaica del brano, non ne rappresenta l'ispirazione diretta.
           </p>
-          <img
-            src="/images/Gymnopedie greche.jpeg"
-            alt="Danzatori antichi greci"
-            className="w-full object-contain rounded-lg border border-slate-600 bg-slate-950"
-          />
+          <p className="text-slate-400">
+            In alcune fonti Satie si definisce "gymnopédiste" gia prima di comporre il pezzo, segno di un gioco linguistico
+            condiviso con Latour. La parola "sarabande" nei versi richiama le <em>Sarabandes</em> del 1887, suggerendo
+            un dialogo creativo tra i due amici.
+          </p>
         </div>
+      </Modal>
 
         {/* Prima pubblicazione */}
         <div className="rounded-lg overflow-hidden border border-slate-600">
           {/* Immagine rimossa su richiesta: Bonjour Biqui non pertinente alle Gymnopédies */}
         </div>
 
-        {/* Immagine Puvis de Chavannes */}
-        <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
-          <img
-            src="/images/puvis-de-chavannes-jeunes-filles.jpg"
-            alt="Jeunes filles au bord de la mer di Puvis de Chavannes"
-            className="w-full h-80 object-contain p-2"
-          />
-          <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-            Pierre Puvis de Chavannes, "Jeunes filles au bord de la mer" (1879).
-            Le fonti parlano di un evidente parallelo tra questa staticità pittorica e le strutture ternarie
-            delle Gymnopédies, più che di un'unica fonte esclusiva.
-          </p>
+        {/* Puvis de Chavannes + fonti del nome */}
+        <div className="grid md:grid-cols-[1.2fr_1fr] gap-4 items-stretch">
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950">
+            <img
+              src="/images/puvis-de-chavannes-jeunes-filles.jpg"
+              alt="Jeunes filles au bord de la mer di Puvis de Chavannes"
+              className="w-full h-full object-contain p-2"
+            />
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+              Pierre Puvis de Chavannes, "Jeunes filles au bord de la mer" (1879).
+              Le fonti parlano di un evidente parallelo tra questa staticità pittorica e le strutture ternarie
+              delle Gymnopédies, più che di un'unica fonte esclusiva.
+            </p>
+          </div>
+          <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
+            <h3 className="text-base font-semibold text-slate-100 mb-2">Da dove viene il nome "Gymnopédie"</h3>
+            <p className="text-sm text-slate-300 leading-relaxed mb-3">
+              Le fonti non indicano un'unica ispirazione, ma convergono su alcuni riferimenti probabili che Satie
+              conosceva gia prima della pubblicazione del brano.
+            </p>
+            <ul className="space-y-2 text-sm text-slate-300">
+              <li className="flex items-start gap-2">
+                <span className="text-blue-400 mt-1">•</span>
+                <span>il termine nelle danze spartane dell'antica Grecia (feste in onore di Apollo).</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-400 mt-1">•</span>
+                <span>un dizionario musicale ottocentesco (Rousseau o Mondo), dove la voce era gia attestata.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-400 mt-1">•</span>
+                <span><em>Salammbô</em> di Flaubert, che circolava nell'ambiente simbolista.</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Contesto compositivo */}

@@ -93,8 +93,15 @@ const TabButton = ({ active, label, onClick }) => (
    App principale
 ----------------------------------- */
 
+const getTabFromHash = () => {
+  if (typeof window === "undefined") return "benvenuto";
+  const raw = window.location.hash.replace("#", "");
+  return TABS.includes(raw) ? raw : "benvenuto";
+};
+
 export default function App() {
-  const [activeTab, setActiveTab] = useState("indice");
+  const [activeTab, setActiveTab] = useState(getTabFromHash);
+  const [lightboxImage, setLightboxImage] = useState(null);
   const tabIndex = useMemo(() => TABS.indexOf(activeTab), [activeTab]);
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => {
@@ -113,8 +120,38 @@ export default function App() {
     if (!TABS.includes(activeTab)) setActiveTab("benvenuto");
   }, [activeTab]);
   useEffect(() => {
+    const handleHashChange = () => {
+      const nextTab = getTabFromHash();
+      if (nextTab !== activeTab) setActiveTab(nextTab);
+    };
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, [activeTab]);
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const desiredHash = `#${activeTab}`;
+    if (window.location.hash !== desiredHash) window.location.hash = desiredHash;
+  }, [activeTab]);
+  useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [activeTab]);
+  useEffect(() => {
+    if (!lightboxImage) return;
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") setLightboxImage(null);
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [lightboxImage]);
+
+  const handleImageClick = (event) => {
+    const target = event.target;
+    if (!target || target.tagName !== "IMG") return;
+    const src = target.getAttribute("src");
+    if (!src) return;
+    const alt = target.getAttribute("alt") || "Immagine";
+    setLightboxImage({ src, alt });
+  };
 
   const tabMeta = {
     benvenuto: { label: "Benvenuto", icon: Home },
@@ -164,7 +201,10 @@ export default function App() {
             </nav>
           </div>
         </header>
-        <main className="max-w-6xl mx-auto px-4 py-7 space-y-10">
+        <main
+          className="max-w-6xl mx-auto px-4 py-7 space-y-10 lightbox-scope"
+          onClick={handleImageClick}
+        >
           <Suspense
             fallback={
               <div className="flex items-center justify-center gap-3 py-16 text-sm text-slate-400">
@@ -175,14 +215,14 @@ export default function App() {
           >
             {activeTab === "benvenuto" && <BenvenutoSection goTo={setActiveTab} />}
             {activeTab === "parigi1888" && <Parigi1888Section />}
-            {activeTab === "satie" && <SatieSection />}
+            {activeTab === "satie" && <SatieSection goTo={setActiveTab} />}
             {activeTab === "brano" && <BranoSection />}
             {activeTab === "eredita" && <EreditaSection />}
             {activeTab === "glossario" && <GlossarySection />}
             {activeTab === "impara" && <ImparaSection />}
             {activeTab === "fonti" && <FontiSection />}
           </Suspense>
-          {activeTab !== "benvenuto" && tabIndex < TABS.length - 1 && (
+          {activeTab !== "benvenuto" && activeTab !== "satie" && tabIndex < TABS.length - 1 && (
             <div className="text-center">
               {activeTab === "eredita" && (
                 <p className="text-sm text-slate-400 mb-3">
@@ -210,6 +250,24 @@ export default function App() {
             </div>
           )}
         </main>
+        {lightboxImage && (
+          <div
+            className="fixed inset-0 z-[999] bg-black/80 flex items-center justify-center p-4"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Visualizzazione immagine a schermo intero"
+            onClick={() => setLightboxImage(null)}
+          >
+            <div className="max-w-6xl w-full max-h-[90vh] flex items-center justify-center">
+              <img
+                src={lightboxImage.src}
+                alt={lightboxImage.alt}
+                className="max-h-[90vh] w-auto max-w-full object-contain bg-slate-950/20"
+                onClick={(event) => event.stopPropagation()}
+              />
+            </div>
+          </div>
+        )}
         <Footer setActiveTab={setActiveTab} />
       </div>
     </ErrorBoundary>
