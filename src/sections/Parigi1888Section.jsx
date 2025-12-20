@@ -103,11 +103,11 @@ const Parigi1888Section = () => {
     <div className="rounded-2xl overflow-hidden border border-slate-700 bg-slate-950">
       <img
         src="/images/paris-10-place-de-la-republique-et-magasins-reunis.jpg"
-        alt="Place de la Republique a Parigi"
+        alt="Place de la République a Parigi"
         className="w-full object-contain p-2"
       />
       <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
-        Place de la Republique e Magasins Reunis: la Parigi urbana di fine Ottocento
+        Place de la République e Magasins Réunis: la Parigi urbana di fine Ottocento
       </p>
     </div>
 

@@ -105,7 +105,7 @@ const GlossarySection = () => {
         <div className="mt-8 bg-slate-950/40 border border-slate-700 rounded-xl p-5">
           <h3 className="text-lg font-semibold text-slate-100 mb-3">Tre artisti chiave della Parigi di Satie</h3>
           <p className="text-sm text-slate-300 leading-relaxed mb-5">
-            Ecco una selezione delle opere piu iconiche di tre giganti dell'arte, contemporanei di Erik Satie,
+            Ecco una selezione delle opere più iconiche di tre giganti dell'arte, contemporanei di Erik Satie,
             che hanno definito l'estetica della Parigi tra fine Ottocento e inizio Novecento.
           </p>
 
@@ -113,7 +113,7 @@ const GlossarySection = () => {
             <div>
               <h4 className="text-base font-semibold text-slate-100 mb-2">Claude Monet: l'impressionismo e la luce</h4>
               <p className="text-sm text-slate-300 leading-relaxed mb-3">
-                Monet incarna la ricerca sulla luce che influenzo la prima fase di Satie e Debussy.
+                Monet incarna la ricerca sulla luce che influenzò la prima fase di Satie e Debussy.
               </p>
               <div className="md:hidden space-y-3">
                 <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
@@ -169,17 +169,17 @@ const GlossarySection = () => {
             </div>
 
             <div>
-              <h4 className="text-base font-semibold text-slate-100 mb-2">Paul Cezanne: la struttura e il post-impressionismo</h4>
+              <h4 className="text-base font-semibold text-slate-100 mb-2">Paul Cézanne: la struttura e il post-impressionismo</h4>
               <p className="text-sm text-slate-300 leading-relaxed mb-3">
-                Cezanne e considerato il padre dell'arte moderna. La sua ricerca di rigore geometrico e vicina
-                all'essenzialita delle Gymnopedies.
+                Cézanne è considerato il padre dell'arte moderna. La sua ricerca di rigore geometrico è vicina
+                all'essenzialità delle Gymnopédies.
               </p>
               <div className="md:hidden space-y-3">
                 <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
                   <div className="text-slate-100 font-semibold">I giocatori di carte</div>
                   <div className="text-xs text-slate-400 mt-1">1890-1895</div>
                   <p className="text-sm text-slate-300 mt-2">
-                    Serie di cinque dipinti con contadini provenzali, forme sempre piu monumentali.
+                    Serie di cinque dipinti con contadini provenzali, forme sempre più monumentali.
                   </p>
                 </div>
                 <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
@@ -210,7 +210,7 @@ const GlossarySection = () => {
                     <tr className="border-b border-slate-700">
                       <td className="px-3 py-2"><strong>I giocatori di carte</strong></td>
                       <td className="px-3 py-2">1890-1895</td>
-                      <td className="px-3 py-2">Serie di cinque dipinti con contadini provenzali, forme sempre piu monumentali.</td>
+                      <td className="px-3 py-2">Serie di cinque dipinti con contadini provenzali, forme sempre più monumentali.</td>
                     </tr>
                     <tr className="border-b border-slate-700">
                       <td className="px-3 py-2"><strong>Il monte Sainte-Victoire</strong></td>
@@ -230,7 +230,7 @@ const GlossarySection = () => {
             <div>
               <h4 className="text-base font-semibold text-slate-100 mb-2">Henri de Toulouse-Lautrec: la vita notturna di Montmartre</h4>
               <p className="text-sm text-slate-300 leading-relaxed mb-3">
-                Lautrec e l'artista piu vicino al mondo di Satie: stesso cabaret, stesso immaginario bohemien.
+                Lautrec è l'artista più vicino al mondo di Satie: stesso cabaret, stesso immaginario bohémien.
               </p>
               <div className="md:hidden space-y-3">
                 <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
@@ -286,10 +286,10 @@ const GlossarySection = () => {
             </div>
 
             <div className="bg-blue-950/20 border border-blue-700/30 rounded-xl p-4">
-              <h4 className="text-base font-semibold text-blue-200 mb-2">Perche sono importanti per il progetto</h4>
+              <h4 className="text-base font-semibold text-blue-200 mb-2">Perché sono importanti per il progetto</h4>
               <ul className="space-y-2 text-sm text-slate-300">
-                <li>• Monet: legame con acqua e luce, vicini alla fluidita delle Gymnopedies;</li>
-                <li>• Cezanne: passaggio verso il cubismo, geometrizzazione del suono in Satie;</li>
+                <li>• Monet: legame con acqua e luce, vicini alla fluidità delle Gymnopédies;</li>
+                <li>• Cézanne: passaggio verso il cubismo, geometrizzazione del suono in Satie;</li>
                 <li>• Lautrec: immaginario visivo del cabaret, i personaggi e la notte di Montmartre.</li>
               </ul>
             </div>
@@ -318,15 +318,15 @@ const GlossarySection = () => {
                 <tr className="border-b border-slate-700">
                   <td className="px-3 py-2"><strong>Romanticismo</strong></td>
                   <td className="px-3 py-2">1800-1850</td>
-                  <td className="px-3 py-2">Delacroix, Gericault</td>
+                  <td className="px-3 py-2">Delacroix, Géricault</td>
                   <td className="px-3 py-2">Emozione, dramma, natura selvaggia, patriottismo.</td>
-                  <td className="px-3 py-2"><em>La Liberta che guida il popolo</em></td>
+                  <td className="px-3 py-2"><em>La Libertà che guida il popolo</em></td>
                 </tr>
                 <tr className="border-b border-slate-700">
                   <td className="px-3 py-2"><strong>Realismo</strong></td>
                   <td className="px-3 py-2">1840-1880</td>
                   <td className="px-3 py-2">Courbet, Millet, Zola</td>
-                  <td className="px-3 py-2">Vita quotidiana, lavoro, verita senza idealizzazione.</td>
+                  <td className="px-3 py-2">Vita quotidiana, lavoro, verità senza idealizzazione.</td>
                   <td className="px-3 py-2"><em>Gli spaccapietre</em></td>
                 </tr>
                 <tr className="border-b border-slate-700">
@@ -339,7 +339,7 @@ const GlossarySection = () => {
                 <tr className="border-b border-slate-700">
                   <td className="px-3 py-2"><strong>Post-impressionismo</strong></td>
                   <td className="px-3 py-2">1880-1905</td>
-                  <td className="px-3 py-2">Cezanne, Seurat, Gauguin</td>
+                  <td className="px-3 py-2">Cézanne, Seurat, Gauguin</td>
                   <td className="px-3 py-2">Struttura, colore come costruzione, simbolismo.</td>
                   <td className="px-3 py-2"><em>I giocatori di carte</em></td>
                 </tr>
@@ -347,7 +347,7 @@ const GlossarySection = () => {
                   <td className="px-3 py-2"><strong>Simbolismo</strong></td>
                   <td className="px-3 py-2">1880-1910</td>
                   <td className="px-3 py-2">Moreau, Redon</td>
-                  <td className="px-3 py-2">Sogno, mito, inconscio, realta come velo.</td>
+                  <td className="px-3 py-2">Sogno, mito, inconscio, realtà come velo.</td>
                   <td className="px-3 py-2"><em>L'apparizione</em></td>
                 </tr>
                 <tr className="border-b border-slate-700">
@@ -377,14 +377,14 @@ const GlossarySection = () => {
           <div className="md:hidden space-y-3 mb-5">
             <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
               <div className="text-slate-100 font-semibold">Romanticismo</div>
-              <div className="text-xs text-slate-400 mt-1">1800-1850 · Delacroix, Gericault</div>
+              <div className="text-xs text-slate-400 mt-1">1800-1850 · Delacroix, Géricault</div>
               <p className="text-sm text-slate-300 mt-2">Emozione, dramma, natura selvaggia, patriottismo.</p>
-              <p className="text-xs text-slate-400 mt-1">Opera simbolo: La Liberta che guida il popolo</p>
+              <p className="text-xs text-slate-400 mt-1">Opera simbolo: La Libertà che guida il popolo</p>
             </div>
             <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
               <div className="text-slate-100 font-semibold">Realismo</div>
               <div className="text-xs text-slate-400 mt-1">1840-1880 · Courbet, Millet, Zola</div>
-              <p className="text-sm text-slate-300 mt-2">Vita quotidiana, lavoro, verita senza idealizzazione.</p>
+              <p className="text-sm text-slate-300 mt-2">Vita quotidiana, lavoro, verità senza idealizzazione.</p>
               <p className="text-xs text-slate-400 mt-1">Opera simbolo: Gli spaccapietre</p>
             </div>
             <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
@@ -395,14 +395,14 @@ const GlossarySection = () => {
             </div>
             <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
               <div className="text-slate-100 font-semibold">Post-impressionismo</div>
-              <div className="text-xs text-slate-400 mt-1">1880-1905 · Cezanne, Seurat, Gauguin</div>
+              <div className="text-xs text-slate-400 mt-1">1880-1905 · Cézanne, Seurat, Gauguin</div>
               <p className="text-sm text-slate-300 mt-2">Struttura, colore come costruzione, simbolismo.</p>
               <p className="text-xs text-slate-400 mt-1">Opera simbolo: I giocatori di carte</p>
             </div>
             <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
               <div className="text-slate-100 font-semibold">Simbolismo</div>
               <div className="text-xs text-slate-400 mt-1">1880-1910 · Moreau, Redon</div>
-              <p className="text-sm text-slate-300 mt-2">Sogno, mito, inconscio, realta come velo.</p>
+              <p className="text-sm text-slate-300 mt-2">Sogno, mito, inconscio, realtà come velo.</p>
               <p className="text-xs text-slate-400 mt-1">Opera simbolo: L'apparizione</p>
             </div>
             <div className="bg-slate-900/60 border border-slate-700 rounded-lg p-3">
@@ -430,10 +430,10 @@ const GlossarySection = () => {
               <h4 className="text-base font-semibold text-slate-100 mb-2">Come distinguere le svolte</h4>
               <ul className="space-y-2 text-sm text-slate-300">
                 <li>• i romantici puntano sull'emozione e il dramma;</li>
-                <li>• i realisti cercano la verita quotidiana, anche dura;</li>
-                <li>• gli impressionisti guardano alla luce piu che al soggetto;</li>
+                <li>• i realisti cercano la verità quotidiana, anche dura;</li>
+                <li>• gli impressionisti guardano alla luce più che al soggetto;</li>
                 <li>• i post-impressionisti riportano struttura e geometria;</li>
-                <li>• i cubisti scompongono la realta per vederla da piu lati.</li>
+                <li>• i cubisti scompongono la realtà per vederla da più lati.</li>
               </ul>
             </div>
             <div className="bg-blue-950/20 border border-blue-700/30 rounded-lg p-4">

@@ -15,7 +15,7 @@ export const satieLifeTimeline = [
   { year: "1888", event: "Compone le tre Gymnopédies a 21 anni" },
   { year: "1891-1893", event: "Periodo Rosa-Croce. Compositore ufficiale dell'Ordine" },
   { year: "1893", event: "Breve relazione con Suzanne Valadon, unico amore documentato" },
-  { year: "1896-1897", event: "Debussy orchestra le Gymnopédies n. 1 e n. 3" },
+  { year: "1896-1897", event: "Debussy orchestrò le Gymnopédies n. 1 e n. 3" },
   { year: "1898", event: "Trasferimento ad Arcueil nella stanza 'l'Armadio'" },
   { year: "1905", event: "Ritorna a studiare alla Schola Cantorum a 39 anni" },
   { year: "1917", event: "Successo con il balletto 'Parade' (Cocteau, Picasso, Massine)" },

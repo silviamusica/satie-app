@@ -56,21 +56,21 @@ Tooltip: Wagner = Richard Wagner (1813-1883), compositore tedesco noto per dramm
 
 Immagini: Costruzione della Torre Eiffel (1887-1889); Manifesto dell'Esposizione Universale di Parigi (1889); Boulevard Montmartre dall'alto; Café Leroy (1916).
 
---- Montmartre: il quartiere bohémien ---
-Montmartre, sulla collina a nord di Parigi, era il cuore della vita artistica bohémien: qui si mescolavano pittori, poeti, musicisti e intellettuali in un'atmosfera di libertà e sperimentazione.
+--- Montmartre: il quartiere bohémienne ---
+Montmartre, sulla collina a nord di Parigi, era il cuore della vita artistica bohémienne: qui si mescolavano pittori, poeti, musicisti e intellettuali in un'atmosfera di libertà e sperimentazione.
 Tooltip: Montmartre = Quartiere parigino dei café-cabaret dove Satie lavorò come pianista e trovò ispirazione per il suo stile sobrio.
 
 Le Chat Noir: Fondato nel 1881 da Rodolphe Salis, era il cabaret più celebre di Montmartre. Non un semplice locale, ma un vero laboratorio artistico dove Satie lavorò come secondo pianista tra il 1887 e il 1888.
 Immagine: Le Chat Noir cabaret
 
-Auberge du Clou: Altro celebre cabaret dove Satie suonò successivamente. Frequentato da artisti bohémien, offriva lo stesso clima di libertà creativa del Chat Noir.
+Auberge du Clou: Altro celebre cabaret dove Satie suonò successivamente. Frequentato da artisti bohémienne, offriva lo stesso clima di libertà creativa del Chat Noir.
 Immagine: Auberge du Clou
 
 L'atmosfera dei café-cabaret: Nei cabaret di Montmartre, l'arte "alta" si mescolava con la cultura popolare: la musica non era un rito religioso da sala da concerto, ma accompagnamento alla vita quotidiana con conversazioni, fumo, alcol, poesia. Vi passarono Claude Debussy, Paul Verlaine, Toulouse-Lautrec e molti altri artisti che avrebbero segnato l'epoca.
 
-La vita bohémien: La bohème non era solo uno stile, ma un modo di stare al mondo: precarietà economica, notti passate a discutere di estetica, amicizie e rivalità tra pittori e musicisti, gusto per l'ironia e il paradosso. In questo ambiente, la musica smette di essere cerimonia ufficiale e diventa linguaggio quotidiano, vicino alle persone e alle loro vite.
+La vita bohémienne: La bohème non era solo uno stile, ma un modo di stare al mondo: precarietà economica, notti passate a discutere di estetica, amicizie e rivalità tra pittori e musicisti, gusto per l'ironia e il paradosso. In questo ambiente, la musica smette di essere cerimonia ufficiale e diventa linguaggio quotidiano, vicino alle persone e alle loro vite.
 
-Immagini affiancate: El Bohemio (Ramon Casas, 1891) + foto di Erik Satie in abito bohémien; progetti rifiutati per la Tour Eiffel.
+Immagini affiancate: El Bohemio (Ramon Casas, 1891) + foto di Erik Satie in abito bohémienne; progetti rifiutati per la Tour Eiffel.
 
 Box: La Tour Eiffel: da struttura temporanea a icona. Doveva essere smontata dopo 20 anni. Molti intellettuali parigini la detestarono, ma la torre si rivelò preziosa per esperimenti scientifici e nel 1909 fu salvata dalla demolizione. Dalla piattaforma panoramica alle prime antenne radio, la torre dimostrò di essere utile oltre che spettacolare. Oggi è il simbolo universale di Parigi e della Belle Époque.
 
@@ -153,11 +153,11 @@ MODALE: LE FILS DES ETOILES
   Senza pregiudizio delle pratiche dei grandi imprecatori, miei cugini, offro questo cuore ai miei cari. Perciò, e per la precedenza degli esempi, non chiedo l'esaltazione. Invoco. Invoco sui miei commensali la misericordia del Padre, creatore delle cose visibili e invisibili; la protezione della Madre Augusta del Redentore, Regina degli Angeli; come le preghiere del glorioso coro degli Apostoli e dei Santi Ordini degli Spiriti beati. Che la giusta infiammazione di Dio schiacci i superbi e gli indecenti! [Firma:] Erik Satie
 
 Suzanne Valadon (1893)
-- Relazione intensa con Suzanne Valadon. È l'unico amore documentato: lui la chiama "Biqui" e le dedica la canzone "Bonjour Biqui, Bonjour!".
-- Immagini: ritratto di Satie di Valadon; foto Satie-Valadon; ritratto di Valadon disegnato da Satie; spartito "Bonjour Biqui, Bonjour!".
+- Relazione intensa con Suzanne Valadon. È l'unico amore documentato: lui la chiama "Biqui" e le dedica la canzone "Bonjour Biqui, bonjour !".
+- Immagini: ritratto di Satie di Valadon; foto Satie-Valadon; ritratto di Valadon disegnato da Satie; spartito "Bonjour Biqui, bonjour !".
 
 Arcueil e l'Armadio (1898-1925)
-- Case affiancate: 6 Rue Cortot e Arcueil (casa per gli ultimi 27 anni).
+- Case affiancate: 6 rue Cortot e Arcueil (casa per gli ultimi 27 anni).
 - Stanza "l'Armadio": oggetti bizzarri, pianoforti sovrapposti, ombrelli, spartiti nascosti.
 - Dieta bianca: cibi bianchi come provocazione estetica.
 
@@ -206,7 +206,7 @@ AMICIZIE
   * Video: presentazione originale in francese (Cocteau) e rappresentazione del 1917.
   * Modale: Trascrizione (FR) del video "Jean Cocteau raconte - ballet PARADE (1917)".
 
-- Francis Poulenc e il Gruppo dei Sei
+- Francis Poulenc e il Groupe des Six
   * Satie come "Bon Maître"; modernismo francese urbano e ironico.
 
 STRAMBERIE
@@ -221,7 +221,7 @@ INDICAZIONI SUGLI SPARTITI
 - Annotazioni e frasi strambe (per brano, anno, strumento).
 - Modale: indicazioni paratestuali, doppio fondo, divieto di lettura ad alta voce, pianoforte preparato in Le Piège de Méduse.
 IL BRANO
-- Genesi, linguaggio musicale e segreti esecutivi della Gymnopédie n. 1.
+- Genesi, linguaggio musicale e segreti esecutivi della Gymnopédie n° 1.
 - Sezioni: La nascita (1888), Origine del nome, Storia editoriale, Analisi musicale, Interpretazione, Spartito completo (mostra/reader PDF).
 - Box "Origine del nome" e immagini contestuali (gymnopédie spartane; Contamine de Latour; Puvis de Chavannes).
 - Modali: cronologia, interpretazione, indicazioni esecutive.
@@ -242,13 +242,13 @@ IMPARA
 - Testo: Scegli tra Flashcard e Quiz per fissare i dati principali.
 - Immagine: satie-impara.jpg (senza didascalia estesa).
 - Flashcard:
-  * 1. [base] Quando fu completata la Gymnopédie n. 1?
+  * 1. [base] Quando fu completata la Gymnopédie n° 1?
     - Risposta: 1888
     - Note: Le tre pagine furono completate entro la primavera del 1888 e pubblicate separatamente negli anni seguenti. Satie aveva 21 anni e lavorava come pianista cabaret a Montmartre.
-  * 2. [base] Qual è l'indicazione di carattere della n. 1?
+  * 2. [base] Qual è l'indicazione di carattere della n° 1?
     - Risposta: Lent et douloureux
     - Note: Tempo lento e doloroso: guida l'esecuzione e il colore timbrico del brano.
-  * 3. [base] In quale metro è scritta la n. 1?
+  * 3. [base] In quale metro è scritta la n° 1?
     - Risposta: 3/4
     - Note: Metro ternario con tre pulsazioni per battuta; l'effetto deve essere cullante ma non valzeristico.
   * 4. [intermedio] Quale compositore orchestrò due Gymnopédies?
@@ -268,7 +268,7 @@ IMPARA
     - Note: Il termine indica una festa spartana con danze rituali; Satie lo usa come suggestione poetica senza spiegarne l'origine. Si ispirò anche ai modi greci e a romanzi di Flaubert.
   * 9. [avanzato] Con quale poeta collaborò Satie per la prima pubblicazione?
     - Risposta: J. P. Contamine de Latour
-    - Note: La Gymnopédie n. 1 fu pubblicata nell'estate 1888 sulla rivista La Musique des familles accompagnata da un estratto della poesia Les Antiques di Contamine de Latour, amico simbolista di Satie.
+    - Note: La Gymnopédie n° 1 fu pubblicata nell'estate 1888 sulla rivista La Musique des familles accompagnata da un estratto della poesia Les Antiques di Contamine de Latour, amico simbolista di Satie.
   * 10. [avanzato] Chi fu Suzanne Valadon per Satie?
     - Risposta: L'unico amore documentato della sua vita
     - Note: Pittrice francese. Ebbero un breve ma intenso amore nel 1893. Quando lei lo lasciò, Satie ne rimase segnato profondamente. Fu madre del pittore Maurice Utrillo.
@@ -293,7 +293,7 @@ IMPARA
   * 17. [avanzato] Chi fu John Cage e quale ruolo ebbe per Satie?
     - Risposta: Il grande riscopritore di Satie nel dopoguerra
     - Note: Compositore americano (1912-1992). Trovò in Satie un precursore: rifiuto della narrazione musicale, interesse per silenzio e spazio. 'Satie è indispensabile' (Cage). Nel 1963 organizzò la prima esecuzione integrale di Vexations (840 ripetizioni, 18 ore), anticipando il minimalismo.
-  * 18. [intermedio] In quali film famosi è stata usata la Gymnopédie n.1?
+  * 18. [intermedio] In quali film famosi è stata usata la Gymnopédie n° 1?
     - Risposta: Fuoco fatuo, I Tenenbaum, Man on Wire, Hugo Cabret
     - Note: Film principali: Fuoco fatuo (1963, Louis Malle, sequenza iconica con Maurice Ronet), I Tenenbaum (2001, Wes Anderson), Man on Wire (2008, documentario su Philippe Petit), Un'altra donna (1988, Woody Allen), Hugo Cabret (2011, Scorsese), About Schmidt (2002), Chocolat (2000). Usata anche in spot pubblicitari e videogiochi (Mother 3, Zelda: Ocarina of Time).
   * 19. [avanzato] Qual è la principale difficoltà nell'esecuzione della n. 1?
@@ -326,27 +326,27 @@ IMPARA
   * 28. [intermedio] Quando ruppe con Peladan e la Rosa-Croce?
     - Risposta: Nel 1892
     - Note: La rottura avvenne per divergenze estetiche e bisogno di indipendenza.
-  * 29. Quale chiesa fondo Satie nel 1893?
-    - Risposta: Eglise Metropolitaine d'Art de Jesus Conducteur
-    - Note: Ne fu unico membro e Gran Sacerdote; la uso per diffondere testi polemici.
+  * 29. Quale chiesa fondò Satie nel 1893?
+    - Risposta: Église Métropolitaine d'Art de Jésus Conducteur
+    - Note: Ne fu unico membro e Gran Sacerdote; la usò per diffondere testi polemici.
   * 30. Come si chiamava il bollettino polemico di Satie?
     - Risposta: Cartulaire
     - Note: Pamphlet usati per attacchi ai critici musicali.
-  * 31. Come defini Debussy Satie nel 1892?
+  * 31. Come definì Debussy Satie nel 1892?
     - Risposta: Un musicista medievale e dolce smarrito in questo secolo
-    - Note: Citazione celebre che riassumeva la singolarita di Satie.
+    - Note: Citazione celebre che riassumeva la singolarità di Satie.
   * 32. Quale opera scrisse Satie in risposta alla critica sulla forma?
-    - Risposta: Trois morceaux en forme di poire
+    - Risposta: Trois morceaux en forme de poire
     - Note: Una risposta ironica alle osservazioni di Debussy sulla mancanza di forma.
   * 33. Quale gruppo di giovani artisti guido Satie?
     - Risposta: Les Nouveaux Jeunes
     - Note: Gruppo avanguardista riunito attorno alla sua figura.
   * 34. Per quali compositori fu un patriarca spirituale?
-    - Risposta: Il Gruppo dei Sei
+    - Risposta: Il Groupe des Six
     - Note: Poulenc, Milhaud, Auric, Honegger, Durey, Tailleferre.
-  * 35. Come si chiamo il gruppo di discepoli degli anni '20?
+  * 35. Come si chiamò il gruppo di discepoli degli anni '20?
     - Risposta: Scuola di Arcueil
-    - Note: Tra i discepoli: Sauguet e Desormiere.
+    - Note: Tra i discepoli: Sauguet e Desormière.
   * 36. A che ora Satie si svegliava secondo le Memorie di un amnesico?
     - Risposta: 7:18
     - Note: Programma giornaliero ironico e rigidamente scandito.
@@ -354,17 +354,17 @@ IMPARA
     - Risposta: 22:37
     - Note: Orario regolare indicato nelle Memorie di un amnesico.
   * 38. Quale raccolta include bozzetti autobiografici ironici?
-    - Risposta: Memoires d'un amnesique
+    - Risposta: Mémoires d'un amnésique
     - Note: Pubblicati tra il 1912 e il 1914.
   * 39. Come si intitola l'altra raccolta di scritti brevi?
-    - Risposta: Cahiers d'un mammifere
+    - Risposta: Cahiers d'un mammifère
     - Note: Aforismi e parodie della critica musicale.
-  * 40. Quando mori Satie?
+  * 40. Quando morì Satie?
     - Risposta: 1 luglio 1925
     - Note: Morì all'ospedale Saint-Joseph di Parigi.
   * 41. Dove fu sepolto Satie?
     - Risposta: Arcueil
-    - Note: La citta dove visse dal 1898.
+    - Note: La città dove visse dal 1898.
   * 42. [intermedio] Quale lavoro del 1886 apre la lista delle opere principali?
     - Risposta: Ogives
     - Note: Serie di pagine per pianoforte dal carattere arcaico.
@@ -377,7 +377,7 @@ IMPARA
   * 45. [avanzato] Quale opera sinfonica del 1918 scrisse Satie?
     - Risposta: Socrate
     - Note: Dramma sinfonico per voci e piccola orchestra.
-  * 46. [avanzato] Che cos'e la Musique d'ameublement?
+  * 46. [avanzato] Che cos'è la Musique d'ameublement?
     - Risposta: Musica funzionale come sottofondo (1917-23)
     - Note: Composizioni pensate per essere ascoltate senza attenzione esclusiva.
   * 47. [intermedio] Quale balletto del 1917 include suoni ambientali?
@@ -395,7 +395,7 @@ IMPARA
   * 51. [intermedio] Quale sonatina satirica scrisse nel 1917?
     - Risposta: Sonatine bureaucratique
     - Note: Parodia di una sonatina classica con ironia formale.
-  * 52. [intermedio] Quale raccolta pianistica del 1913 firmo Satie?
+  * 52. [intermedio] Quale raccolta pianistica del 1913 firmò Satie?
     - Risposta: Descriptions automatiques
     - Note: Pagine brevi con titoli ironici e poetici.
 

@@ -143,7 +143,7 @@ const BranoSection = () => {
             L'estratto funge da epigrafe poetica e crea l'atmosfera arcaica del brano, non ne rappresenta l'ispirazione diretta.
           </p>
           <p className="text-slate-400">
-            In alcune fonti Satie si definisce "gymnopédiste" gia prima di comporre il pezzo, segno di un gioco linguistico
+            In alcune fonti Satie si definisce "gymnopédiste" già prima di comporre il pezzo, segno di un gioco linguistico
             condiviso con Latour. La parola "sarabande" nei versi richiama le <em>Sarabandes</em> del 1887, suggerendo
             un dialogo creativo tra i due amici.
           </p>
@@ -180,9 +180,9 @@ const BranoSection = () => {
             <h3 className="text-base font-semibold text-slate-100 mb-2">Da dove viene il nome "Gymnopédie"</h3>
             <p className="text-sm text-slate-300 leading-relaxed mb-3">
               Le fonti non indicano un'unica ispirazione, ma convergono su riferimenti diversi che Satie conosceva
-              gia prima della pubblicazione del brano. La parola rimanda alle feste spartane delle Gimnopedie, danze
-              rituali eseguite da giovani nudi in onore di Apollo. Il legame con <em>Salammbô</em> di Flaubert e reale
-              sul piano dell'atmosfera, ma in realta nel romanzo la parola "gymnopédie" non compare: Satie evocava
+              già prima della pubblicazione del brano. La parola rimanda alle feste spartane delle Gimnopedie, danze
+              rituali eseguite da giovani nudi in onore di Apollo. Il legame con <em>Salammbô</em> di Flaubert è reale
+              sul piano dell'atmosfera, ma in realtà nel romanzo la parola "gymnopédie" non compare: Satie evocava
               Flaubert come clima estetico, non come fonte letterale del termine.
             </p>
             <ul className="space-y-2 text-sm text-slate-300">
@@ -203,8 +203,65 @@ const BranoSection = () => {
               Secondo Mary E. Davis, il termine fu probabilmente trovato in dizionari musicali o enciclopedici
               (Rousseau o Mondo), dove la "gymnopédie" era definita in modo impreciso come danza nuda accompagnata dal
               canto, talvolta attribuita a giovani fanciulle spartane. Orledge concorda sull'origine lessicografica e
-              sottolinea che Satie si presentava gia come "gymnopédiste" prima di aver scritto la musica, segno che il
+              sottolinea che Satie si presentava già come "gymnopédiste" prima di aver scritto la musica, segno che il
               titolo nacque come idea concettuale e solo dopo fu rafforzato dalla pubblicazione con Latour.
+            </p>
+          </div>
+        </div>
+
+        {/* Gymnopédies vs Gnossiennes */}
+        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-4 items-stretch">
+          <div className="rounded-lg border border-slate-600 bg-slate-900/60 p-4 flex flex-col justify-center">
+            <h3 className="text-base font-semibold text-slate-100 mb-3">
+              Gymnopédies e Gnossiennes: differenze essenziali
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm text-slate-300 border border-slate-700">
+                <thead className="bg-slate-800 text-slate-200">
+                  <tr>
+                    <th className="text-left p-2 border-b border-slate-700">Aspetto</th>
+                    <th className="text-left p-2 border-b border-slate-700">Gymnopédies</th>
+                    <th className="text-left p-2 border-b border-slate-700">Gnossiennes</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-700">
+                  <tr>
+                    <td className="p-2 font-semibold text-slate-200">Periodo</td>
+                    <td className="p-2">1888 (tre brani)</td>
+                    <td className="p-2">1890-1893 (n. 1-3)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 font-semibold text-slate-200">Notazione</td>
+                    <td className="p-2">Con stanghette e metro regolare</td>
+                    <td className="p-2">Senza stanghette di battuta</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 font-semibold text-slate-200">Forma</td>
+                    <td className="p-2">Frasi equilibrate, quasi ternarie</td>
+                    <td className="p-2">Più libera, frammentaria, improvvisativa</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 font-semibold text-slate-200">Atmosfera</td>
+                    <td className="p-2">Rituale, calma, danza lenta</td>
+                    <td className="p-2">Ipnotica, enigmatica, più interiore</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 font-semibold text-slate-200">Armonia</td>
+                    <td className="p-2">Accordi sospesi e plananti</td>
+                    <td className="p-2">Modalità ambigue e colori più scuri</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-950 flex flex-col">
+            <img
+              src="/images/gnossiene 1 senza metro.png"
+              alt="Estratto della Gnossienne n. 1 senza stanghette di battuta"
+              className="w-full h-full object-contain p-3"
+            />
+            <p className="text-sm text-slate-400 p-3 italic text-center bg-slate-900/50">
+              <em>Gnossienne n. 1</em> (1890): notazione senza stanghette di battuta.
             </p>
           </div>
         </div>

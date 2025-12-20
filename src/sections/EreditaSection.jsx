@@ -48,7 +48,7 @@ const EreditaSection = () => {
             In sintesi: <strong>musica da ignorare</strong>, progettata per fondersi con l'ambiente.
           </p>
           <p>
-            La <strong>musique d'ameublement</strong> (musica d'arredamento) è la proposta più radicale di Satie:
+            La <strong>musique d’ameublement</strong> (musica d'arredamento) è la proposta più radicale di Satie:
             la musica <strong>non deve essere ascoltata</strong> come concerto, ma deve stare in sottofondo come
             un mobile in una stanza.
           </p>
@@ -106,11 +106,11 @@ const EreditaSection = () => {
       >
         <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
           <p className="text-slate-200">
-            In sintesi: <strong>ripetizione, staticita e attenzione al tempo</strong> al posto dello sviluppo drammatico.
+            In sintesi: <strong>ripetizione, staticità e attenzione al tempo</strong> al posto dello sviluppo drammatico.
           </p>
           <p>
             Le <em>Gymnopédies</em>, le <em>Gnossiennes</em> e soprattutto <em>Vexations</em> anticipano una logica
-            musicale basata su <strong>processi</strong> e <strong>durate</strong> piu che su climax narrativi.
+            musicale basata su <strong>processi</strong> e <strong>durate</strong> più che su climax narrativi.
             Satie riduce la materia, lascia spazio al silenzio e al colore timbrico: elementi che diventeranno
             centrali nel minimalismo del Novecento.
           </p>
@@ -123,7 +123,7 @@ const EreditaSection = () => {
           </div>
           <p>
             Il minimalismo, come la musica d'arredamento, nasce anche da un rifiuto dell'enfasi romantica:
-            meno pathos, piu presenza. In questo senso Satie e un vero <strong>punto di origine</strong>.
+            meno pathos, più presenza. In questo senso Satie è un vero <strong>punto di origine</strong>.
           </p>
         </div>
       </Modal>
@@ -225,7 +225,7 @@ const EreditaSection = () => {
           <div className="bg-slate-950/40 border border-slate-700 rounded-xl p-4">
             <h4 className="text-base font-semibold text-slate-100 mb-2">Musica ambient</h4>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Nel 1917 Satie concepì la <em>Musique d'ameublement</em> (musica d'arredamento), pensata per accompagnare senza
+              Nel 1917 Satie concepì la <em>Musique d’ameublement</em> (musica d'arredamento), pensata per accompagnare senza
               invadere. Nel 1978 <strong>Brian Eno</strong> pubblicò <em>Ambient 1: Music for Airports</em>, definendo l'ambient
               come musica che “può essere ignorata quanto ascoltata”: la stessa idea di Satie, un secolo prima.
             </p>
@@ -252,7 +252,7 @@ const EreditaSection = () => {
               </div>
             </div>
             <p className="text-sm text-slate-300 leading-relaxed mt-4">
-              Eno rende esplicito il principio gia formulato da Satie: una musica funzionale, che non chiede attenzione
+              Eno rende esplicito il principio già formulato da Satie: una musica funzionale, che non chiede attenzione
               ma modella lo spazio con discrezione.
             </p>
             <div className="rounded-lg overflow-hidden border border-slate-600 bg-slate-900/60 mt-4">
@@ -338,12 +338,12 @@ const EreditaSection = () => {
                     </div>
                     <div className="flex flex-col justify-center">
                       <p className="text-sm text-slate-300 mb-3">
-                        La sua interpretazione mette in luce il lato piu emotivo e cinematografico di Satie,
+                        La sua interpretazione mette in luce il lato più emotivo e cinematografico di Satie,
                         con un suono ampio ma controllato e un fraseggio che resta sospeso.
                       </p>
                       <p className="text-sm text-slate-300">
                         In questo modo le Gymnopédies diventano accessibili a un pubblico nuovo, senza perdere
-                        la loro essenzialita e la loro delicatezza originale.
+                        la loro essenzialità e la loro delicatezza originale.
                       </p>
                       <a
                         href={item.url}

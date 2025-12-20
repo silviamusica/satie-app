@@ -162,19 +162,19 @@ export const flashcardsData = [
     q: "Cosa significa la richiesta di musica 'senza crauti'?",
     a: "Una musica francese libera dal romanticismo tedesco",
     level: "intermedio",
-    details: "Satie voleva sottrarre la musica all'influenza wagneriana e riportare il suono a una nuda essenzialita.",
+    details: "Satie voleva sottrarre la musica all'influenza wagneriana e riportare il suono a una nuda essenzialità.",
   },
   {
-    q: "In quale anno ruppe con Peladan e la Rosa-Croce?",
+    q: "In quale anno ruppe con Péladan e la Rosa-Croce?",
     a: "1892",
     level: "intermedio",
     details: "La rottura avvenne per divergenze estetiche e bisogno di indipendenza.",
   },
   {
-    q: "Quale chiesa fondo Satie nel 1893?",
-    a: "Eglise Metropolitaine d'Art de Jesus Conducteur",
+    q: "Quale chiesa fondò Satie nel 1893?",
+    a: "Église Métropolitaine d'Art de Jésus Conducteur",
     level: "avanzato",
-    details: "Ne fu unico membro e Gran Sacerdote; la uso per diffondere testi polemici.",
+    details: "Ne fu unico membro e Gran Sacerdote; la usò per diffondere testi polemici.",
   },
   {
     q: "Come si chiamava il bollettino polemico di Satie?",
@@ -183,10 +183,10 @@ export const flashcardsData = [
     details: "Pamphlet usati per attacchi ai critici musicali.",
   },
   {
-    q: "Come defini Debussy Satie nel 1892?",
+    q: "Come definì Debussy Satie nel 1892?",
     a: "Un musicista medievale e dolce smarrito in questo secolo",
     level: "avanzato",
-    details: "Citazione celebre che riassumeva la singolarita di Satie.",
+    details: "Citazione celebre che riassumeva la singolarità di Satie.",
   },
   {
     q: "Quale opera scrisse Satie in risposta alla critica sulla forma?",
@@ -195,7 +195,7 @@ export const flashcardsData = [
     details: "Una risposta ironica alle osservazioni di Debussy sulla mancanza di forma.",
   },
   {
-    q: "Quale gruppo di giovani artisti guido Satie?",
+    q: "Quale gruppo di giovani artisti guidò Satie?",
     a: "Les Nouveaux Jeunes",
     level: "avanzato",
     details: "Gruppo avanguardista riunito attorno alla sua figura.",
@@ -207,10 +207,10 @@ export const flashcardsData = [
     details: "Poulenc, Milhaud, Auric, Honegger, Durey, Tailleferre.",
   },
   {
-    q: "Come si chiamo il gruppo di discepoli degli anni '20?",
+    q: "Come si chiamò il gruppo di discepoli degli anni '20?",
     a: "Scuola di Arcueil",
     level: "intermedio",
-    details: "Tra i discepoli: Sauguet e Desormiere.",
+    details: "Tra i discepoli: Sauguet e Désormière.",
   },
   {
     q: "A che ora Satie si svegliava secondo le Memorie di un amnesico?",
@@ -240,7 +240,7 @@ export const flashcardsData = [
     q: "Dove fu sepolto Satie?",
     a: "Arcueil",
     level: "base",
-    details: "La citta dove visse dal 1898.",
+    details: "La città dove visse dal 1898.",
   },
   {
     q: "Quale lavoro del 1886 apre la lista delle opere principali?",
@@ -267,7 +267,7 @@ export const flashcardsData = [
     details: "Dramma sinfonico per voci e piccola orchestra.",
   },
   {
-    q: "Che cos'e la Musique d'ameublement?",
+    q: "Che cos'è la Musique d'ameublement?",
     a: "Musica funzionale come sottofondo (1917-23)",
     level: "avanzato",
     details: "Composizioni pensate per essere ascoltate senza attenzione esclusiva.",
@@ -280,7 +280,7 @@ export const flashcardsData = [
   },
   {
     q: "Quali balletti scrisse nel 1924?",
-    a: "Mercure e Relache",
+    a: "Mercure e Relâche",
     level: "avanzato",
     details: "Opere dell'ultimo periodo legate all'avanguardia.",
   },
@@ -357,7 +357,7 @@ export const flashcardsData = [
     details: "Indicazione in francese, non in italiano.",
   },
   {
-    q: "Quale artista e legato al cabaret e al mondo di Satie a Montmartre?",
+    q: "Quale artista è legato al cabaret e al mondo di Satie a Montmartre?",
     a: "Henri de Toulouse-Lautrec",
     level: "base",
     details: "Pittore e illustratore: frequentava gli stessi ambienti di cabaret.",
@@ -375,8 +375,8 @@ export const flashcardsData = [
     details: "Per divergenze estetiche e indipendenza personale.",
   },
   {
-    q: "Quale istituzione fondo Satie nel 1893?",
-    a: "L'Eglise Metropolitaine d'Art de Jesus Conducteur",
+    q: "Quale istituzione fondò Satie nel 1893?",
+    a: "L'Église Métropolitaine d'Art de Jésus Conducteur",
     level: "base",
     details: "Ne fu l'unico membro e Gran Sacerdote.",
   },
@@ -393,7 +393,7 @@ export const flashcardsData = [
     details: "Con Cocteau, Picasso e Massine.",
   },
   {
-    q: "Chi e l'autore di 4'33\"?",
+    q: "Chi è l'autore di 4'33\"?",
     a: "John Cage",
     level: "base",
     details: "Compositore americano legato alla riscoperta di Satie.",
@@ -432,7 +432,7 @@ export const flashcardsData = [
     q: "Con quale docente studio contrappunto Satie alla Schola?",
     a: "Albert Roussel",
     level: "intermedio",
-    details: "Docente piu giovane di lui.",
+    details: "Docente più giovane di lui.",
   },
   {
     q: "Quale diploma ottenne Satie nel 1908?",
@@ -477,7 +477,7 @@ export const flashcardsData = [
     details: "Movimenti meccanici e spezzati.",
   },
   {
-    q: "Quale termine uso Apollinaire per descrivere Parade?",
+    q: "Quale termine usò Apollinaire per descrivere Parade?",
     a: "Surrealismo",
     level: "intermedio",
     details: "La parola compare nel programma di sala del 1917.",
@@ -513,7 +513,7 @@ export const flashcardsData = [
     details: "Episodio del 1896 a casa di Gustave Doret.",
   },
   {
-    q: "Quale composizione e legata alla frase \"in forma di pera\"?",
+    q: "Quale composizione è legata alla frase \"in forma di pera\"?",
     a: "Trois morceaux en forme de poire",
     level: "intermedio",
     details: "Risposta ironica alle critiche sulla \"forma\".",
@@ -591,7 +591,7 @@ export const flashcardsData = [
     details: "Musica ieratica e staticita rituale.",
   },
   {
-    q: "Quale termine uso Satie per definirsi anziche musicista?",
+    q: "Quale termine usò Satie per definirsi anziché musicista?",
     a: "Fonometrografo",
     level: "avanzato",
     details: "Misuratore di suoni, non arte sentimentale.",
@@ -651,7 +651,7 @@ export const flashcardsData = [
     details: "Organizzata da John Cage con team di pianisti.",
   },
   {
-    q: "Quale opera di Satie e definita \"Wagnerie\"?",
+    q: "Quale opera di Satie è definita \"Wagnerie\"?",
     a: "Le Fils des Etoiles",
     level: "intermedio",
     details: "Periodo rosacrociano e dediche rituali.",
@@ -968,7 +968,7 @@ const CUSTOM_OPTIONS = {
     "Una musica allegra e popolare da cabaret",
     "Una musica ispirata alla cucina alsaziana",
   ],
-  "Come defini Debussy Satie nel 1892?": [
+  "Come definì Debussy Satie nel 1892?": [
     "Un musicista medievale e dolce smarrito in questo secolo",
     "Un pianista virtuoso dalla tecnica impeccabile",
     "Un compositore romantico di grande pathos",
@@ -1022,7 +1022,7 @@ const CUSTOM_OPTIONS = {
     "Una cartella di cuoio",
     "Una valigia militare",
   ],
-  "Quale termine uso Satie per definirsi anziche musicista?": [
+  "Quale termine usò Satie per definirsi anziché musicista?": [
     "Fonometrografo",
     "Pianista di cabaret",
     "Maestro di cappella",
@@ -1070,7 +1070,7 @@ const CUSTOM_OPTIONS = {
     "Propose a Satie un incarico al Conservatorio",
     "Pubblicò la n.2 nel 1895",
   ],
-  "Quale composizione e legata alla frase \"in forma di pera\"?": [
+  "Quale composizione è legata alla frase \"in forma di pera\"?": [
     "Trois morceaux en forme de poire",
     "Sonatine bureaucratique",
     "Descriptions automatiques",
@@ -1155,7 +1155,7 @@ const CUSTOM_OPTIONS = {
     "Il direttore della Schola Cantorum",
     "Un pianista del Chat Noir",
   ],
-  "Quale artista e legato al cabaret e al mondo di Satie a Montmartre?": [
+  "Quale artista è legato al cabaret e al mondo di Satie a Montmartre?": [
     "Henri de Toulouse-Lautrec",
     "Pablo Picasso",
     "Claude Monet",
@@ -1185,7 +1185,7 @@ const CUSTOM_OPTIONS = {
     "Tra febbraio e aprile 1890",
     "Tra febbraio e aprile 1893",
   ],
-  "In quale anno ruppe con Peladan e la Rosa-Croce?": [
+  "In quale anno ruppe con Péladan e la Rosa-Croce?": [
     "1892",
     "1891",
     "1893",
@@ -1198,12 +1198,12 @@ const CUSTOM_OPTIONS = {
     "2 aprile 1888",
   ],
   "Quali balletti scrisse nel 1924?": [
-    "Mercure e Relache",
+    "Mercure e Relâche",
     "Parade e Mercure",
-    "Relache e Parade",
+    "Relâche e Parade",
     "Socrate e Parade",
   ],
-  "Quale gruppo di giovani artisti guido Satie?": [
+  "Quale gruppo di giovani artisti guidò Satie?": [
     "Les Nouveaux Jeunes",
     "Il Gruppo dei Sei",
     "Scuola di Arcueil",
@@ -1215,7 +1215,7 @@ const CUSTOM_OPTIONS = {
     "Scuola di Arcueil",
     "Schola Cantorum",
   ],
-  "Come si chiamo il gruppo di discepoli degli anni '20?": [
+  "Come si chiamò il gruppo di discepoli degli anni '20?": [
     "Scuola di Arcueil",
     "Les Nouveaux Jeunes",
     "Il Gruppo dei Sei",
@@ -1257,7 +1257,7 @@ const CUSTOM_OPTIONS = {
     "Mercure",
     "Messe des pauvres",
   ],
-  "Che cos'e la Musique d'ameublement?": [
+  "Che cos'è la Musique d'ameublement?": [
     "Musica funzionale come sottofondo (1917-23)",
     "Una raccolta di danze antiche per pianoforte",
     "Un ciclo orchestrale dedicato a Debussy",
@@ -1266,7 +1266,7 @@ const CUSTOM_OPTIONS = {
   "Quale balletto del 1917 include suoni ambientali?": [
     "Parade",
     "Mercure",
-    "Relache",
+    "Relâche",
     "Socrate",
   ],
   "Quale brano per cinema compose nel 1924?": [
@@ -1296,10 +1296,10 @@ const CUSTOM_OPTIONS = {
   "Quale opera ballettistica debuttò nel 1917 al Chatelet?": [
     "Parade",
     "Mercure",
-    "Relache",
+    "Relâche",
     "Le Fils des Etoiles",
   ],
-  "Chi e l'autore di 4'33\"?": [
+  "Chi è l'autore di 4'33\"?": [
     "John Cage",
     "Erik Satie",
     "Philip Glass",
@@ -1329,7 +1329,7 @@ const CUSTOM_OPTIONS = {
     "La musica fu interrotta dagli attori",
     "L'esecuzione venne annullata",
   ],
-  "Quale termine uso Apollinaire per descrivere Parade?": [
+  "Quale termine usò Apollinaire per descrivere Parade?": [
     "Surrealismo",
     "Futurismo",
     "Impressionismo",
@@ -1359,7 +1359,7 @@ const CUSTOM_OPTIONS = {
     "Sarabandes n. 1 e n. 3",
     "Gnossiennes n. 1 e n. 2",
   ],
-  "Quale opera di Satie e definita \"Wagnerie\"?": [
+  "Quale opera di Satie è definita \"Wagnerie\"?": [
     "Le Fils des Etoiles",
     "Messe des pauvres",
     "Socrate",
@@ -1401,7 +1401,7 @@ const CUSTOM_OPTIONS = {
     "4",
     "6",
   ],
-  "Quale compositore e legato al cabaret e al mondo di Satie a Montmartre?": [
+  "Quale compositore è legato al cabaret e al mondo di Satie a Montmartre?": [
     "Henri de Toulouse-Lautrec",
     "Pablo Picasso",
     "Claude Monet",

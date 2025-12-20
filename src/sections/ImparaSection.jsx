@@ -118,16 +118,16 @@ const ImparaSection = () => {
           Impara
         </h2>
         <p className="text-sm text-slate-300 mt-2">
-          Metti alla prova la tua conoscenza della Gymnopédie n. 1 attraverso flashcard interattive e quiz a difficolta
+          Metti alla prova la tua conoscenza della Gymnopédie n. 1 attraverso flashcard interattive e quiz a difficoltà
           crescente.
         </p>
         <p className="text-sm text-slate-300 mt-2">
-          La questione dell'apprendimento e centrale: si passa dalla comprensione alla memorizzazione, poi al
+          La questione dell'apprendimento è centrale: si passa dalla comprensione alla memorizzazione, poi al
           recupero attivo. E proprio la fase in cui chiediamo al cervello di richiamare le informazioni
           (recall) che consolida davvero cio che abbiamo imparato.
         </p>
         <p className="text-sm text-slate-400 mt-2">
-          Un buon livello di preparazione e gia raggiunto con il livello base.
+          Un buon livello di preparazione è già raggiunto con il livello base.
         </p>
         <div className="mt-4">
           <label className="text-sm text-slate-300 font-semibold">
@@ -366,7 +366,7 @@ const ImparaSection = () => {
                     {getQuizScore() === shuffledQuiz.length
                       ? "Perfetto! Livello eccellente."
                       : getQuizScore() >= Math.ceil(shuffledQuiz.length * 0.7)
-                      ? "Ottimo risultato. Sei gia a un livello avanzato."
+                      ? "Ottimo risultato. Sei già a un livello avanzato."
                       : getQuizScore() >= Math.ceil(shuffledQuiz.length * 0.4)
                       ? "Buon lavoro. Ripassa le parti chiave e riprova."
                       : "Consiglio: riparti dal livello base e torna qui dopo il ripasso."}
